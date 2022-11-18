@@ -3,18 +3,17 @@
 import sqlite3
 from sqlite3 import Error
 
-LOGGING = "Logging sqlite db: "
 PATH = "./scrap.db"
 
 def create_database():
-    # Create a connectio to db
+    # Create a connection to db
     
-    print(LOGGING + "Create " + PATH + "...")
+    print("Version Database:" + sqlite3.version)
+    print("Creating " + PATH + "...")
 
     conn = None
     try:
         conn = sqlite3.connect(PATH)
-        print("Version Database:" + sqlite3.version)
     except Error as e:
         print(e)
     finally:
@@ -26,7 +25,7 @@ def get_connection():
     # :param db_file: database file
     # :return: Connection object or None
 
-    print(LOGGING + "Getting connection...")
+    print("Getting database connection...")
 
     conn = None
     try:
@@ -43,36 +42,38 @@ def create_tables(conn):
     # :param create_table_sql: a CREATE TABLE statement
     # :return:
 
-    print(LOGGING + "Create Tables...")
+    print("Creating Tables...")
 
     vehicles_table = '''CREATE TABLE IF NOT EXISTS "Vehicles" (
 	"Vehicle_Name"	TEXT NOT NULL UNIQUE,
+	"HRef"	TEXT NOT NULL,
 	PRIMARY KEY("Vehicle_Name")
     )'''
 
     tracks_table = '''CREATE TABLE IF NOT EXISTS "Tracks" (
 	"Track_Name"	TEXT NOT NULL UNIQUE,
-	PRIMARY KEY("Trak_Name")
+	"HRef"	TEXT NOT NULL,
+	PRIMARY KEY("Track_Name")
     )'''
 
     laps_table = '''CREATE TABLE IF NOT EXISTS "Laps" (
-	"Lap_ID"	INTEGER,
-	"Time_Lap"	INTEGER NOT NULL,
+	"Lap_Time"	REAL NOT NULL,
+	"Driver"	TEXT NOT NULL,
+	"PS_KG"	TEXT NOT NULL,
 	"Track"	TEXT NOT NULL,
 	"Vehicle"	TEXT NOT NULL,
-	FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name"),
 	FOREIGN KEY("Track") REFERENCES "Tracks"("Track_Name"),
-	PRIMARY KEY("Lap_ID" AUTOINCREMENT)
+    FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name")
     )'''
 
     try:
         c = conn.cursor()
-        print(LOGGING + "Creating vehicles table...")
+        print("Creating vehicles table...")
         c.execute(vehicles_table)
-        print(LOGGING + "Creating tracks table...")
+        print("Creating tracks table...")
         c.execute(tracks_table)
-        print(LOGGING + "Creating laps table...")
-        c.exeute(laps_table)
+        print("Creating laps table...")
+        c.execute(laps_table)
         print("Table Created.")
     except Error as e:
         print(e)
@@ -83,8 +84,8 @@ def insert_new_lap(conn, lap):
     # :param lap: is a tuple.
     # :return: last row id.
 
-    sql = ''' INSERT INTO Laps(Lap_Time,Track,Vehicle)
-              VALUES(?,?,?) '''
+    sql = ''' INSERT OR IGNORE INTO Laps(Lap_Time,Driver,PS_KG,Track,Vehicle)
+              VALUES(?,?,?,?,?) '''
 
     cur = conn.cursor()
     cur.execute(sql, lap)
@@ -93,14 +94,14 @@ def insert_new_lap(conn, lap):
     print("Insert: " + sql)
     return cur.lastrowid
 
-def insert_new_tracks(conn, track):
+def insert_new_track(conn, track):
     # Create a new lap into the laps table
     # :param conn: db connection.
     # :param track: is a tuple.
     # :return: last row id.
 
-    sql = ''' INSERT INTO Tracks(Track_Name)
-              VALUES(?) '''
+    sql = ''' INSERT OR IGNORE INTO Tracks(Track_Name,HRef)
+              VALUES(?,?) '''
               
     cur = conn.cursor()
     cur.execute(sql, track)
@@ -115,8 +116,8 @@ def insert_new_vehichle(conn, vehicle):
     # :param vehicle: is a tuple.
     # :return: last row id.
 
-    sql = ''' INSERT INTO Vehicles(Vehicle_Name)
-              VALUES(?) '''
+    sql = ''' INSERT OR IGNORE INTO Vehicles(Vehicle_Name,Href)
+              VALUES(?,?) '''
               
     cur = conn.cursor()
     cur.execute(sql, vehicle)
@@ -124,3 +125,10 @@ def insert_new_vehichle(conn, vehicle):
 
     print("Insert: " + sql)
     return cur.lastrowid
+
+
+def insert_new_record(lap, track, vehicle):
+    conn = get_connection()
+    insert_new_vehichle(conn,vehicle)
+    insert_new_track(conn,track)
+    insert_new_lap(conn,lap)
