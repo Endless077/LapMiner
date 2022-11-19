@@ -56,14 +56,14 @@ def create_tables(conn):
 	PRIMARY KEY("Track_Name")
     )'''
 
-    laps_table = '''CREATE TABLE IF NOT EXISTS "Laps" (
+    laps_table = '''CREATE TABLE "Laps" (
 	"Lap_Time"	REAL NOT NULL,
 	"Driver"	TEXT NOT NULL,
 	"PS_KG"	TEXT NOT NULL,
 	"Track"	TEXT NOT NULL,
 	"Vehicle"	TEXT NOT NULL,
-	FOREIGN KEY("Track") REFERENCES "Tracks"("Track_Name"),
-    FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name")
+	FOREIGN KEY("Track") REFERENCES "Tracks"("Track_Name") ON DELETE CASCADE,
+    FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name") ON DELETE CASCADE
     )'''
 
     try:

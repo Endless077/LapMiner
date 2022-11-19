@@ -27,6 +27,9 @@ def main():
       print("Initial laps record creator:")
       scrap.record_creator(laps, track)
       print("######################")
+   
+   # Delete all motobike
+   # delete all motobike from dataset database
 
 # Definition NAME
 if __name__ == "__main__":

@@ -14,11 +14,8 @@ HEADERS = {
     # other headers allowed.
 }
 
-#def check_motorbiKE():
-#   check if is a motobike
-
 def change_laptime(laptime):
-    check = re.compile('^\d*:\d*.\d*')
+    check = re.compile('^\d*:\d*\.\d*$')
     res = [substr for substr in laptime.split() if check.match(substr)  ]
     if(len(res)>0):
         m, s = res[0].split(':')
@@ -75,18 +72,18 @@ def get_laps_time(track):
     soup = BeautifulSoup(response.text, 'html.parser')
     tag = soup.find(class_=re.compile("table table-striped fl-laptimes-trackpage"))
 
-    check = lambda input : input!=None
+    check1 = lambda input : input!=None
+    check2 = lambda chk : 1 if(chk[1].contents[0].text.strip() == "Modified") else 0
 
     laps_time = []
 
-    if(check(tag)):
+    if(check1(tag)):
         laps = tag.findAll('tr')
         laps.pop(0)
         print("--Found " + str(len(laps)) + " laps, track " + track['name'] + " processed.")
         for lap in laps:
             lap_record = lap.findAll('td')
-            check = lambda chk : 1 if(chk[1].contents[0].text.strip() == "Modified") else 0
-            index_vehicle = check(lap_record)
+            index_vehicle = check2(lap_record)
             
             try:    
                 if(lap_record[1].contents[index_vehicle].has_attr('href')):
