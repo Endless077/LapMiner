@@ -91,7 +91,7 @@ def insert_new_lap(conn, lap):
     cur.execute(sql, lap)
     conn.commit()
 
-    print("Insert: " + sql)
+    print("Insert: " + str(lap))
     return cur.lastrowid
 
 def insert_new_track(conn, track):
@@ -107,7 +107,7 @@ def insert_new_track(conn, track):
     cur.execute(sql, track)
     conn.commit()
 
-    print("Insert: " + sql)
+    print("Insert: " + str(track))
     return cur.lastrowid
 
 def insert_new_vehichle(conn, vehicle):
@@ -123,7 +123,7 @@ def insert_new_vehichle(conn, vehicle):
     cur.execute(sql, vehicle)
     conn.commit()
 
-    print("Insert: " + sql)
+    print("Insert: " + str(vehicle))
     return cur.lastrowid
 
 
