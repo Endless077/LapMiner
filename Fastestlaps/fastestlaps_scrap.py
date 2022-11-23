@@ -24,6 +24,35 @@ def change_laptime(laptime):
         print("Impossible parsing laptime.")
         return 0.0
 
+def parse_vehicle(record):
+    check1 = lambda chk : 1 if(chk[1].contents[0].text.strip() == "Modified") else 0
+    check2 = lambda chk: True if("Unplugged Performance" in chk) else False
+    check3 = lambda chk: True if("Performance" in chk) else False
+
+    index_vehicle = check1(record)
+            
+    try:    
+        if(record[1].contents[index_vehicle].has_attr('href')):
+            vehicle_href = record[1].contents[index_vehicle].get('href')
+    except:
+        vehicle_href = "Non presente"
+            
+    if(check2(record[1].contents[index_vehicle].text)):
+        vehicle_name = re.sub("Unplugged Performance", "", record[1].contents[index_vehicle].text).strip()
+    else:
+        vehicle_name = record[1].contents[index_vehicle].text
+
+    if(check3(record[1].contents[index_vehicle].text)):
+        vehicle_name = re.sub("Performance", "", vehicle_name).strip()
+
+    return (vehicle_name, vehicle_href)
+
+def parse_track(record):
+    raise  NotImplementedError
+
+def parse_lap(record):
+    raise NotImplementedError
+
 def record_creator(laps, track):
     if(len(laps)>0):
         for lap in laps:
@@ -72,33 +101,24 @@ def get_laps_time(track):
     soup = BeautifulSoup(response.text, 'html.parser')
     tag = soup.find(class_=re.compile("table table-striped fl-laptimes-trackpage"))
 
-    check1 = lambda input : input!=None
-    check2 = lambda chk : 1 if(chk[1].contents[0].text.strip() == "Modified") else 0
-
+    check_null = lambda chk : chk!=None
     laps_time = []
 
-    if(check1(tag)):
+    if(check_null(tag)):
         laps = tag.findAll('tr')
         laps.pop(0)
         print("--Found " + str(len(laps)) + " laps, track " + track['name'] + " processed.")
         for lap in laps:
             lap_record = lap.findAll('td')
-            index_vehicle = check2(lap_record)
-            
-            try:    
-                if(lap_record[1].contents[index_vehicle].has_attr('href')):
-                    vehicle_href = lap_record[1].contents[index_vehicle].get('href')
-            except:
-                vehicle_href = "Non presente"
-            
-            vehicle_name = lap_record[1].contents[index_vehicle].text
+
+            vehicle = parse_vehicle(lap_record)
             new_lap = {
                 'laptime': str(lap_record[3].contents[0].text),
                 'driver': str(lap_record[2].contents[0].text),
-                'track': str("a caso"),
+                'track': str(track['name']),
                 'ps_kg': str("".join(str(lap_record[4].contents[0]).split())),
-                'vehicle_href': str(vehicle_href),
-                'vehicle': str(vehicle_name)
+                'vehicle_href': str(vehicle[1]),
+                'vehicle': str(vehicle[0])
             }
             print("----Laptime: " + str(new_lap))
             laps_time.append(new_lap)
@@ -106,4 +126,3 @@ def get_laps_time(track):
         print("--Found 0 laps, track " + track['name'] + " not processed.")
     
     return laps_time
-    

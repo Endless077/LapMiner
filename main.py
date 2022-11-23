@@ -2,6 +2,7 @@
 
 # IMPORT
 import sys
+import os
 
 sys.path.append("./Fastestlaps")
 
@@ -10,7 +11,10 @@ import fastestlaps_scrap as scrap
 
 # Defination MAIN
 def main():
-   # Create database
+   # Create database (if exist, delete and create)
+   if os.path.exists(db.PATH):
+    os.remove(db.PATH)
+   
    print("######################")
    db.create_database()
    conn =  db.get_connection()
@@ -27,7 +31,7 @@ def main():
       print("Initial laps record creator:")
       scrap.record_creator(laps, track)
       print("######################")
-   
+      
    # Delete all motobike
    # delete all motobike from dataset database
 
