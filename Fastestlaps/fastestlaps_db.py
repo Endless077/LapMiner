@@ -46,23 +46,24 @@ def create_tables(conn):
     print("Creating Tables...")
 
     vehicles_table = '''CREATE TABLE IF NOT EXISTS "Vehicles" (
-	"Vehicle_Name"	TEXT NOT NULL UNIQUE,
-	"HRef"	TEXT NOT NULL,
+	"Vehicle_Name"  TEXT NOT NULL UNIQUE,
+	"HRef"          TEXT NOT NULL,
 	PRIMARY KEY("Vehicle_Name")
     )'''
 
     tracks_table = '''CREATE TABLE IF NOT EXISTS "Tracks" (
-	"Track_Name"	TEXT NOT NULL UNIQUE,
-	"HRef"	TEXT NOT NULL,
-	"Total_Length"	REAL NOT NULL,
+	"Track_Name"    TEXT NOT NULL UNIQUE,
+	"HRef"          TEXT NOT NULL,
+    "Country"       TEXT NOT NULL,
+	"Total_Length"  REAL NOT NULL,
 	PRIMARY KEY("Track_Name")
     )'''
 
     laps_table = '''CREATE TABLE IF NOT EXISTS "Laps" (
-	"Lap_Time"	REAL NOT NULL,
-	"Driver"	TEXT NOT NULL,
-	"PS_KG"	TEXT NOT NULL,
-	"Track"	TEXT NOT NULL,
+	"Lap_Time"  REAL NOT NULL,
+	"Driver"    TEXT NOT NULL,
+	"PS_KG"     TEXT NOT NULL,
+	"Track"     TEXT NOT NULL,
 	"Vehicle"	TEXT NOT NULL,
 	FOREIGN KEY("Track") REFERENCES "Tracks"("Track_Name") ON DELETE CASCADE,
     FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name") ON DELETE CASCADE
@@ -126,8 +127,8 @@ def insert_new_track(conn, track):
     # :param track: is a tuple.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Tracks(Track_Name,HRef,Total_Length)
-              VALUES(?,?,?) '''
+    sql = ''' INSERT OR IGNORE INTO Tracks(Track_Name,HRef,Country,Total_Length)
+              VALUES(?,?,?,?) '''
               
     cur = conn.cursor()
     cur.execute(sql, track)
@@ -157,7 +158,6 @@ def insert_new_record(lap, track, vehicle):
     insert_new_vehichle(conn,vehicle)
     insert_new_track(conn,track)
     insert_new_lap(conn,lap)
-
 
 def get_all_laps(conn):
     # Get all laps from the laps table

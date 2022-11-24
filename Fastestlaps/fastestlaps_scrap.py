@@ -15,6 +15,10 @@ HEADERS = {
 }
 
 def change_laptime(laptime):
+    # Change a laptime "mm:ss.ms" in seconds
+    # :param laptime: a string.
+    # :return: laptime converted in seconds or 0.
+
     check = re.compile('^\d*:\d*\.\d*$')
     res = [substr for substr in laptime.split() if check.match(substr)]
     if(len(res)>0):
@@ -24,41 +28,68 @@ def change_laptime(laptime):
         print("Impossible parsing laptime.")
         return 0.0
 
-def get_track_length(soup):
-    print("Getting track length...")
+def info_attr(soup, attribute):
+    # Get a specific INFO attrbute
+    # :param soup: a html page.
+    # :param attribute: a specific fastestlap INFO attribute.
+    # :return: attribute value or None.
+
+    print("Getting " + attribute + "...")
     tag = soup.find(class_=re.compile("table fl-datasheet"))
     table = tag.findAll('tr')
 
-    is_present = False
-    length = ""
+    attr = None
 
     for record in table:
-    
         new_line_count = record.contents.count('\n')
-        for i in range(new_line_count):
+        for value in range(new_line_count):
             record.contents.remove('\n')
 
-        if(record.contents[0].text == 'Track length'):
-            is_present = True
-            length = record.contents[1].text
+        if(record.contents[0].text == attribute):
+            attr = record.contents[1].text
             break
-    
+
+    return attr
+
+def get_track_length(value):
+    # Extract the correct value from a specific scrap length value
+    # :param value: a scrap value.
+    # :return: (km_length, miles_length) or (0.0, 0.0).
+
     track_length = (0.0, 0.0)
 
-    if(is_present):
-        all_length = length.split('/')
-        ret = []
+    if(value!=None):
+        all_length = value.split('/')
+        return_value = []
         match = re.compile('[+-]?\d+\.\d+')
         for length in all_length:
             matches = re.findall(match, length.strip())
-            ret.append(matches[0])
-        track_length = tuple(ret)
+            return_value.append(matches[0])
+        track_length = tuple(return_value)
     else:
-        print("Lunghezza del tracciato: non presente.")
+        print("Impossible parsing track length.")
         
     return track_length
 
+def get_track_country(value):
+    # Extract the correct value from a specific scrap country value
+    # :param value: a scrap value.
+    # :return: the extract country or "Non Presente"".
+
+    country = "Non Presente"
+
+    if(value!=None):
+        country = value.strip()
+    else:
+        print("Impossible parsing track length.")
+        
+    return country
+    
 def parse_vehicle(record):
+    # Extract the correct value from a specific scrap length value
+    # :param record: a record value from html page.
+    # :return: (vehicle_name, vehicle_href) or corrispective default value.
+
     check1 = lambda chk : 1 if(chk[1].contents[0].text.strip() == "Modified") else 0
     check2 = lambda chk: True if("Unplugged Performance" in chk) else False
     check3 = lambda chk: True if("Performance" in chk) else False
@@ -87,20 +118,26 @@ def parse_track(record):
 def parse_lap(record):
     raise NotImplementedError
 
-def record_creator(laps, track):
+def record_creator(laps, track_record):
+    # Get all track info (i.e Country, length and laps), ignore track if it haven't laptime
+    # :param laps: a given laps dict list with some info (laptime, driver, track, ps_kg, vehicle_href, vehicle).
+    # :param track_record: a given track tuple with some info (name, href, country, length).
+    # :return:
+
     if(len(laps)>0):
         for lap in laps:
             vehicle_record = (lap['vehicle'], lap['vehicle_href'])
-            track_record = list(track)
-            track_record.append(lap['track_length'])
-            track_record = tuple(track_record)
-            lap_record = (change_laptime(lap['laptime']), lap['driver'], lap['ps_kg'], track[0], lap['vehicle'])
+            lap_record = (change_laptime(lap['laptime']), lap['driver'], lap['ps_kg'], track_record[0], lap['vehicle'])
             db.insert_new_record(lap_record, track_record, vehicle_record)
 
 def record_updater(vehicle):
     raise NotImplementedError
 
 def get_all_tracks():
+    # Get all tracks from the main track page of fastestlaps.com
+    # :param:
+    # :return: a list of all track dict (name, href).
+
     try:
         response = requests.get(LINK, headers=HEADERS, timeout=10)
         response.raise_for_status()
@@ -126,7 +163,11 @@ def get_all_tracks():
 
     return all_track
 
-def get_laps_time(track):
+def get_track_info(track):
+    # Get all track info (i.e Country, length and laps), ignore track if it haven't laptime
+    # :param track: a dict with two keys (name and href).
+    # :return: a dict with two keys (laps_time that is a list and track_info that is a tuple).
+
     track_link = BASE_LINK + track['href']
     try:
         response = requests.get(track_link, headers=HEADERS, timeout=10)
@@ -139,7 +180,10 @@ def get_laps_time(track):
     print("Parsing html...")
     soup = BeautifulSoup(response.text, 'html.parser')
     
-    track_length = get_track_length(soup)
+    track_country = get_track_country(info_attr(soup, "Country"))
+    track_length = get_track_length(info_attr(soup, "Track length"))
+
+    track_info = (track_country, track_length)
 
     tag = soup.find(class_=re.compile("table table-striped fl-laptimes-trackpage"))
 
@@ -158,14 +202,15 @@ def get_laps_time(track):
                 'laptime': lap_record[3].contents[0].text,
                 'driver': lap_record[2].contents[0].text,
                 'track': track['name'],
-                'track_length': track_length[0],
                 'ps_kg': "".join(str(lap_record[4].contents[0]).split()),
                 'vehicle_href': vehicle[1],
                 'vehicle': vehicle[0]
             }
             print("----Laptime: " + str(new_lap))
+
             laps_time.append(new_lap)
     else:
         print("--Found 0 laps, track " + track['name'] + " not processed.")
     
-    return laps_time
+    ret = {'laps_time': laps_time, 'track_info': track_info}
+    return ret
