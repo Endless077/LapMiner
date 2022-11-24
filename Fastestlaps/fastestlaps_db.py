@@ -54,6 +54,7 @@ def create_tables(conn):
     tracks_table = '''CREATE TABLE IF NOT EXISTS "Tracks" (
 	"Track_Name"	TEXT NOT NULL UNIQUE,
 	"HRef"	TEXT NOT NULL,
+	"Total_Length"	REAL NOT NULL,
 	PRIMARY KEY("Track_Name")
     )'''
 
@@ -125,8 +126,8 @@ def insert_new_track(conn, track):
     # :param track: is a tuple.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Tracks(Track_Name,HRef)
-              VALUES(?,?) '''
+    sql = ''' INSERT OR IGNORE INTO Tracks(Track_Name,HRef,Total_Length)
+              VALUES(?,?,?) '''
               
     cur = conn.cursor()
     cur.execute(sql, track)
@@ -304,11 +305,27 @@ def delete_specific_vehicle(conn, vehicle_name):
 
     print("Delete: " + vehicle_name)
 
-def update_specific_lap(conn, track_name, vehicle_name):
+def update_specific_lap(conn, track_name, vehicle_name, values):
+    # Delete a vehicle by track name and vehicle name
+    # :param conn: db connection.
+    # :param track_name: track name string.
+    # :param vehicle_name: vehicle name string.
+    # :return: number of updatetd row.
+
     raise NotImplementedError
     
-def update_specific_track(conn, track_name):
+def update_specific_track(conn, track_name, values):
+    # Delete a vehicle by track name
+    # :param conn: db connection.
+    # :param vehicle_name: vehicle name string.
+    # :return: number of updatetd row.
+
     raise NotImplementedError
 
-def update_specific_vehicle(conn, vehicle_name):
+def update_specific_vehicle(conn, vehicle_name, values):
+    # Delete a vehicle by vehicle name
+    # :param conn: db connection.
+    # :param vehicle_name: vehicle name string.
+    # :return: number of updatetd row.
+
     raise NotImplementedError

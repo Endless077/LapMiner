@@ -16,13 +16,47 @@ HEADERS = {
 
 def change_laptime(laptime):
     check = re.compile('^\d*:\d*\.\d*$')
-    res = [substr for substr in laptime.split() if check.match(substr)  ]
+    res = [substr for substr in laptime.split() if check.match(substr)]
     if(len(res)>0):
         m, s = res[0].split(':')
         return round(int(m) * 60 + float(s), 2)
     else:
         print("Impossible parsing laptime.")
         return 0.0
+
+def get_track_length(soup):
+    print("Getting track length...")
+    tag = soup.find(class_=re.compile("table fl-datasheet"))
+    table = tag.findAll('tr')
+
+    is_present = False
+    length = ""
+
+    for record in table:
+    
+        new_line_count = record.contents.count('\n')
+        for i in range(new_line_count):
+            record.contents.remove('\n')
+
+        if(record.contents[0].text == 'Track length'):
+            is_present = True
+            length = record.contents[1].text
+            break
+    
+    track_length = (0.0, 0.0)
+
+    if(is_present):
+        all_length = length.split('/')
+        ret = []
+        match = re.compile('[+-]?\d+\.\d+')
+        for length in all_length:
+            matches = re.findall(match, length.strip())
+            ret.append(matches[0])
+        track_length = tuple(ret)
+    else:
+        print("Lunghezza del tracciato: non presente.")
+        
+    return track_length
 
 def parse_vehicle(record):
     check1 = lambda chk : 1 if(chk[1].contents[0].text.strip() == "Modified") else 0
@@ -56,10 +90,15 @@ def parse_lap(record):
 def record_creator(laps, track):
     if(len(laps)>0):
         for lap in laps:
-            vehicle = (lap['vehicle'], lap['vehicle_href'])
-            laptime = change_laptime(lap['laptime'])
-            lap = (laptime, lap['driver'], lap['ps_kg'], track[0], lap['vehicle'])
-            db.insert_new_record(lap, track, vehicle)
+            vehicle_record = (lap['vehicle'], lap['vehicle_href'])
+            track_record = list(track)
+            track_record.append(lap['track_length'])
+            track_record = tuple(track_record)
+            lap_record = (change_laptime(lap['laptime']), lap['driver'], lap['ps_kg'], track[0], lap['vehicle'])
+            db.insert_new_record(lap_record, track_record, vehicle_record)
+
+def record_updater(vehicle):
+    raise NotImplementedError
 
 def get_all_tracks():
     try:
@@ -80,7 +119,7 @@ def get_all_tracks():
     print("Processing tracks...")
     for track in tracks:
         new_track = {}
-        new_track['name'] = track.contents[0]
+        new_track['name'] = track.contents[0].title()
         new_track['href'] = track.get('href')
         all_track.append(new_track)
         print("--New Track Found: " + new_track['name'])
@@ -99,6 +138,9 @@ def get_laps_time(track):
 
     print("Parsing html...")
     soup = BeautifulSoup(response.text, 'html.parser')
+    
+    track_length = get_track_length(soup)
+
     tag = soup.find(class_=re.compile("table table-striped fl-laptimes-trackpage"))
 
     check_null = lambda chk : chk!=None
@@ -113,12 +155,13 @@ def get_laps_time(track):
 
             vehicle = parse_vehicle(lap_record)
             new_lap = {
-                'laptime': str(lap_record[3].contents[0].text),
-                'driver': str(lap_record[2].contents[0].text),
-                'track': str(track['name']),
-                'ps_kg': str("".join(str(lap_record[4].contents[0]).split())),
-                'vehicle_href': str(vehicle[1]),
-                'vehicle': str(vehicle[0])
+                'laptime': lap_record[3].contents[0].text,
+                'driver': lap_record[2].contents[0].text,
+                'track': track['name'],
+                'track_length': track_length[0],
+                'ps_kg': "".join(str(lap_record[4].contents[0]).split()),
+                'vehicle_href': vehicle[1],
+                'vehicle': vehicle[0]
             }
             print("----Laptime: " + str(new_lap))
             laps_time.append(new_lap)
