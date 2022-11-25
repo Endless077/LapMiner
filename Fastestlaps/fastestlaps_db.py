@@ -60,15 +60,20 @@ def create_tables(conn):
     )'''
 
     laps_table = '''CREATE TABLE IF NOT EXISTS "Laps" (
-	"Lap_Time"  REAL NOT NULL,
-	"Driver"    TEXT NOT NULL,
-	"PS_KG"     TEXT NOT NULL,
-	"Track"     TEXT NOT NULL,
+	"Lap_Time"	REAL NOT NULL,
+	"Driver"	TEXT NOT NULL,
+	"PS_KG"	TEXT NOT NULL,
+	"Track"	TEXT NOT NULL,
 	"Vehicle"	TEXT NOT NULL,
-	FOREIGN KEY("Track") REFERENCES "Tracks"("Track_Name") ON DELETE CASCADE,
-    FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name") ON DELETE CASCADE
+	FOREIGN KEY("Track") REFERENCES "Tracks"("Track_Name") ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name") ON DELETE CASCADE ON UPDATE CASCADE
     )'''
 
+    specs_table = '''CREATE TABLE IF NOT EXISTS "Specs" (
+	"Vehicle"	TEXT NOT NULL,
+	FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name") ON DELETE CASCADE ON UPDATE CASCADE
+    )'''
+    
     try:
         c = conn.cursor()
         print("Creating vehicles table...")
@@ -77,6 +82,8 @@ def create_tables(conn):
         c.execute(tracks_table)
         print("Creating laps table...")
         c.execute(laps_table)
+        print("Creating specs table...")
+        c.execute(specs_table)
         print("Table created.")
     except Error as e:
         print(e)
@@ -90,7 +97,8 @@ def clear_database(conn):
 
     del1 = ''' DELETE FROM Laps '''
     del2 = ''' DELETE FROM Tracks '''
-    del3 = ''' DELETE FROM Vehicles '''
+    del3 = ''' DELETE FROM Specs '''
+    del4 = ''' DELETE FROM Vehicles '''
 
     try:
         c = conn.cursor()
@@ -98,8 +106,10 @@ def clear_database(conn):
         c.execute(del1)
         print("Deleting tracks table...")
         c.execute(del2)
-        print("Deleting vehicles table...")
+        print("Deleting specs table...")
         c.execute(del3)
+        print("Deleting vehicles table...")
+        c.execute(del4)
         conn.commit()
         print("Clear complete.")
     except Error as e:
@@ -193,6 +203,23 @@ def get_all_tracks(conn):
     print("SELECT all tracks complete.")
     return output
 
+def get_all_specs(conn):
+    # Get all specs from the specs table
+    # :param conn: db connection.
+    # :return: list of all record.
+    
+    print("Getting all laps data...")
+
+    sql = ''' SELECT * FROM Specs '''
+              
+    cur = conn.cursor()
+    cur.execute(sql)
+
+    output = cur.fetchall()
+
+    print("SELECT all laps complete.")
+    return output
+
 def get_all_vehicles(conn):
     # Get all vehicles from the vehicles table
     # :param conn: db connection.
@@ -247,6 +274,24 @@ def get_specific_track(conn, track_name):
     print("SELECT specific track complete.")
     return output
 
+def get_secific_stats(conn, vehicle_name):
+    # Get specific stats from the stats table
+    # :param conn: db connection.
+    # :param vehicle_name: vehicle name string.
+    # :return: list of all specific record.
+
+    print("Getting " + vehicle_name +" vehicle data...")
+
+    sql = ''' SELECT * FROM Specs WHERE Vehicle = ? '''
+              
+    cur = conn.cursor()
+    cur.execute(sql, (vehicle_name, ))
+
+    output = cur.fetchall()
+
+    print("SELECT specific vehicle complete.")
+    return output
+
 def get_specific_vehicle(conn, vehicle_name):
     # Get specific vehicles from the vehicles table
     # :param conn: db connection.
@@ -292,6 +337,19 @@ def delete_specific_track(conn, track_name):
 
     print("Delete: " + track_name)
 
+def delete_specific_specs(conn, vehicle_name):
+    # Delete a specs by vehicle name
+    # :param conn: db connection.
+    # :param vehicle_name: vehicle name string.
+    # :return:
+    
+    sql = ''' DELETE FROM Specs WHERE Vehicle = ? '''
+    cur = conn.cursor()
+    cur.execute(sql, (vehicle_name,))
+    conn.commit()
+
+    print("Delete: " + vehicle_name)
+
 def delete_specific_vehicle(conn, vehicle_name):
     # Delete a vehicle by vehicle name
     # :param conn: db connection.
@@ -306,7 +364,7 @@ def delete_specific_vehicle(conn, vehicle_name):
     print("Delete: " + vehicle_name)
 
 def update_specific_lap(conn, track_name, vehicle_name, values):
-    # Delete a vehicle by track name and vehicle name
+    # Update a vehicle by track name and vehicle name
     # :param conn: db connection.
     # :param track_name: track name string.
     # :param vehicle_name: vehicle name string.
@@ -315,7 +373,15 @@ def update_specific_lap(conn, track_name, vehicle_name, values):
     raise NotImplementedError
     
 def update_specific_track(conn, track_name, values):
-    # Delete a vehicle by track name
+    # Update a vehicle by track name
+    # :param conn: db connection.
+    # :param vehicle_name: vehicle name string.
+    # :return: number of updatetd row.
+
+    raise NotImplementedError
+
+def update_specific_specs(conn, vehicle_name, values):
+    # Update a specs by vehicle name
     # :param conn: db connection.
     # :param vehicle_name: vehicle name string.
     # :return: number of updatetd row.
@@ -323,7 +389,7 @@ def update_specific_track(conn, track_name, values):
     raise NotImplementedError
 
 def update_specific_vehicle(conn, vehicle_name, values):
-    # Delete a vehicle by vehicle name
+    # Update a vehicle by vehicle name
     # :param conn: db connection.
     # :param vehicle_name: vehicle name string.
     # :return: number of updatetd row.

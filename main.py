@@ -8,6 +8,7 @@ sys.path.append("./Fastestlaps")
 
 import fastestlaps_db as db
 import fastestlaps_scrap as scrap
+import utils
 
 # Defination MAIN
 def main():
@@ -21,16 +22,20 @@ def main():
    db.create_tables(conn)
    print("######################")
    
+   # Generate a user-agent generator
+   user_agent_generator = utils.random_user_agent()
    # Scraping from fastestlaps.com,
    # first phase: getting all track name and href.
-   all_tracks = scrap.get_all_tracks()
+   user_agent = user_agent_generator.get_random_user_agent()
+   all_tracks = scrap.get_all_tracks(user_agent)
    print("######################")
    
    # Scraping from fastestlaps.com,
    # second phase: getting all track information (i.e Country, length and all laps).
    print("Initial laps scraping:")
    for track in all_tracks:
-      value = scrap.get_track_info(track)
+      user_agent = user_agent_generator.get_random_user_agent()
+      value = scrap.get_track_info(user_agent, track)
       laps = value['laps_time']
       track = (track['name'], track['href'], value['track_info'][0], value['track_info'][1][0])
       print("######################")
@@ -41,6 +46,17 @@ def main():
       scrap.record_creator(laps, track)
       print("######################")
 
+   # Printing some scraping stats
+   n_laps = len(db.get_all_laps(conn))
+   n_tracks = len(db.get_all_tracks(conn))
+   n_vehicles = len(db.get_all_vehicles(conn))
+   
+   print("######################")
+   print("Laps n°: " + str(n_laps) + ".")
+   print("Tracks n°: " + str(n_tracks) + ".")
+   print("Vehicles n°: " + str(n_vehicles) + ".")
+   print("######################")
+   
    # Scraping from fastestlaps.com,
    # fourth phase: getting all vehicle information (i.e Country, power, etc...).
    

@@ -4,12 +4,11 @@ import requests
 import re
 import fastestlaps_db as db
 from bs4 import BeautifulSoup
-from urllib.error import HTTPError
 
 LINK = "https://fastestlaps.com/tracks"
 BASE_LINK = "https://fastestlaps.com"
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+    'User-Agent': 'user-agent',
     "Content-Type": "text/html"
     # other headers allowed.
 }
@@ -133,16 +132,26 @@ def record_creator(laps, track_record):
 def record_updater(vehicle):
     raise NotImplementedError
 
-def get_all_tracks():
+def get_all_tracks(user_agent):
     # Get all tracks from the main track page of fastestlaps.com
     # :param:
     # :return: a list of all track dict (name, href).
 
     try:
+        HEADERS["User-Agent"] = user_agent
         response = requests.get(LINK, headers=HEADERS, timeout=10)
         response.raise_for_status()
-    except HTTPError as e:
+    except requests.ConnectionError as e:
+        print("Error (connection):")
         print(e)
+    except requests.Timeout as e:
+        print("Error (timeout):")
+        print(e)
+    except requests.HTTPError as e:
+        print("Error (http):")
+        print(e)
+    except:
+            print("Someting goes wrong here.")
     else:
         print("HTTP Status request: " + str(response.status_code))
 
@@ -163,17 +172,28 @@ def get_all_tracks():
 
     return all_track
 
-def get_track_info(track):
+def get_track_info(user_agent, track):
     # Get all track info (i.e Country, length and laps), ignore track if it haven't laptime
     # :param track: a dict with two keys (name and href).
     # :return: a dict with two keys (laps_time that is a list and track_info that is a tuple).
 
     track_link = BASE_LINK + track['href']
+
     try:
+        HEADERS["User-Agent"] = user_agent
         response = requests.get(track_link, headers=HEADERS, timeout=10)
         response.raise_for_status()
-    except HTTPError as e:
+    except requests.ConnectionError as e:
+        print("Error (connection):")
         print(e)
+    except requests.Timeout as e:
+        print("Error (timeout):")
+        print(e)
+    except requests.HTTPError as e:
+        print("Error (http):")
+        print(e)
+    except:
+            print("Someting goes wrong here.")
     else:
         print("HTTP Status request: " + str(response.status_code))
 
