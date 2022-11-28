@@ -59,7 +59,15 @@ def main():
    
    # Scraping from fastestlaps.com,
    # fourth phase: getting all vehicle information (i.e Country, power, etc...).
-   
+   all_vehicle = db.get_all_vehicles(conn)
+   user_agent_generator = utils.random_user_agent()
+   for vehicle in all_vehicle:
+      user_agent = user_agent_generator.get_random_user_agent()
+      vehicle_specs = scrap.get_vehicle_info(user_agent, vehicle)
+      #extracted_specs = scrap.extract_specs(vehicle_specs)
+      print("######################")
+      #db.insert_new_specs(conn,extracted_specs)
+
 # Definition NAME
 if __name__ == "__main__":
     main()

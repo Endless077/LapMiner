@@ -25,7 +25,19 @@ def change_laptime(laptime):
         return round(int(m) * 60 + float(s), 2)
     else:
         print("Impossible parsing laptime.")
-        return 0.0
+        return "Non presente."
+
+def clean_record(record):
+    new_line_count = record.contents.count('\n')
+    for value in range(new_line_count):
+        record.contents.remove('\n')
+
+def extract_specs(specs):
+    # Get a specific vehicle specs attribute
+    # :param specs: a given vehicle specs dict.
+    # :return: attribute value or None.
+
+    raise NotImplementedError
 
 def info_attr(soup, attribute):
     # Get a specific INFO attrbute
@@ -50,12 +62,26 @@ def info_attr(soup, attribute):
 
     return attr
 
+def get_track_country(value):
+    # Extract the correct value from a specific scrap country value
+    # :param value: a scrap value.
+    # :return: the extract country or "Non Presente"".
+
+    country = "Non Presente"
+
+    if(value!=None):
+        country = value.strip().title()
+    else:
+        print("Impossible parsing track length.")
+        
+    return country
+
 def get_track_length(value):
     # Extract the correct value from a specific scrap length value
     # :param value: a scrap value.
-    # :return: (km_length, miles_length) or (0.0, 0.0).
+    # :return: (km_length, miles_length) or (Non Presente, Non Presente).
 
-    track_length = (0.0, 0.0)
+    track_length = ("Non Presente", "Non Presente")
 
     if(value!=None):
         all_length = value.split('/')
@@ -70,20 +96,6 @@ def get_track_length(value):
         
     return track_length
 
-def get_track_country(value):
-    # Extract the correct value from a specific scrap country value
-    # :param value: a scrap value.
-    # :return: the extract country or "Non Presente"".
-
-    country = "Non Presente"
-
-    if(value!=None):
-        country = value.strip()
-    else:
-        print("Impossible parsing track length.")
-        
-    return country
-    
 def parse_vehicle(record):
     # Extract the correct value from a specific scrap length value
     # :param record: a record value from html page.
@@ -129,12 +141,12 @@ def record_creator(laps, track_record):
             lap_record = (change_laptime(lap['laptime']), lap['driver'], lap['ps_kg'], track_record[0], lap['vehicle'])
             db.insert_new_record(lap_record, track_record, vehicle_record)
 
-def record_updater(vehicle):
+def record_updater():
     raise NotImplementedError
 
 def get_all_tracks(user_agent):
     # Get all tracks from the main track page of fastestlaps.com
-    # :param:
+    # :param user-agent: a user agent random string.
     # :return: a list of all track dict (name, href).
 
     try:
@@ -174,6 +186,7 @@ def get_all_tracks(user_agent):
 
 def get_track_info(user_agent, track):
     # Get all track info (i.e Country, length and laps), ignore track if it haven't laptime
+    # :param user-agent: a user agent random string.
     # :param track: a dict with two keys (name and href).
     # :return: a dict with two keys (laps_time that is a list and track_info that is a tuple).
 
@@ -234,3 +247,43 @@ def get_track_info(user_agent, track):
     
     ret = {'laps_time': laps_time, 'track_info': track_info}
     return ret
+
+def get_vehicle_info(user_agent, vehicle):
+    # Get all vheicle info (i.e Country, engine, pwer....), ignore if value don't exist
+    # :param user-agent: a user agent random string.
+    # :param vheicle: a dict with two keys (name and href).
+    # :return: a dict with a lot of keys (key = attribute).
+
+    vehicle_link = BASE_LINK + vehicle[1]
+
+    try:
+        HEADERS["User-Agent"] = user_agent
+        response = requests.get(vehicle_link, headers=HEADERS, timeout=10)
+        response.raise_for_status()
+    except requests.ConnectionError as e:
+        print("Error (connection):")
+        print(e)
+    except requests.Timeout as e:
+        print("Error (timeout):")
+        print(e)
+    except requests.HTTPError as e:
+        print("Error (http):")
+        print(e)
+    except:
+            print("Someting goes wrong here.")
+    else:
+        print("HTTP Status request: " + str(response.status_code))
+
+    vehicle_record = {'name': vehicle[0]}
+    soup = BeautifulSoup(response.text, 'html.parser')
+    tables = soup.findAll(class_=re.compile("table fl-datasheet"))
+
+    for table in tables:
+        rows = table.findAll('tr')
+        for record in rows:
+            clean_record(record)
+            key = record.contents[0].text.strip()
+            value = record.contents[1].text.strip()
+            vehicle_record[key] = value
+
+    return vehicle_record

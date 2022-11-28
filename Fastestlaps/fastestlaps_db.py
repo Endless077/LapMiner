@@ -70,9 +70,31 @@ def create_tables(conn):
     )'''
 
     specs_table = '''CREATE TABLE IF NOT EXISTS "Specs" (
-	"Vehicle"	TEXT NOT NULL,
+	"Vehicle"	    TEXT NOT NULL,
+	"Country"	    TEXT,
+	"Type"	        TEXT,
+	"Type_Usage"	TEXT,
+	"Curb_Weight"	REAL,
+	"Wheelbase"	    REAL,
+	"Dim_Long"	    REAL,
+	"Dim_Wide"	    REAL,
+	"Dim_High"	    REAL,
+	"0_100"	        REAL,
+	"100_0"	        REAL,
+	"Top_Speed"	    INTEGER,
+	"Engine_Type"	TEXT,
+	"Displacement"	REAL,
+	"Power_PS"	    INTEGER,
+	"Power_BHP"	    INTEGER,
+	"Power_KW"	    INTEGER,
+	"Torque"	    INTEGER,
+	"Power_Weight"	INTEGER,
+	"Torque_Weight"	INTEGER,
+	"Efficiency"	INTEGER,
+	"Trasmissions"	TEXT,
+	"Layout"	    TEXT,
 	FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name") ON DELETE CASCADE ON UPDATE CASCADE
-    )'''
+)'''
     
     try:
         c = conn.cursor()
@@ -145,6 +167,24 @@ def insert_new_track(conn, track):
     conn.commit()
 
     print("Insert: " + str(track))
+    return cur.lastrowid
+
+def insert_new_specs(conn, specs):
+    # Create a new specs into the specs table
+    # :param conn: db connection.
+    # :param specs: is a tuple.
+    # :return: last row id.
+
+    sql = ''' INSERT OR IGNORE INTO Specs(Vehicle,Country,Type,Type_Usage,Curb_Weight,Wheelbase,Dim_Long,Dim_Wide,Dim_High,
+    	0_100,100_0,Top_Speed,Engine_Type,Displacement,Power_PS,Power_BHP,Power_KW,
+        Torque,Power_Weight,Torque_Weight,Efficiency,Trasmissions,Layout)     
+        VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) '''
+
+    cur = conn.cursor()
+    cur.execute(sql, specs)
+    conn.commit()
+
+    print("Insert: " + str(specs))
     return cur.lastrowid
 
 def insert_new_vehichle(conn, vehicle):
