@@ -24,6 +24,7 @@ def main():
    
    # Generate a user-agent generator
    user_agent_generator = utils.random_user_agent()
+
    # Scraping from fastestlaps.com,
    # first phase: getting all track name and href.
    user_agent = user_agent_generator.get_random_user_agent()
@@ -36,15 +37,19 @@ def main():
    for track in all_tracks:
       user_agent = user_agent_generator.get_random_user_agent()
       value = scrap.get_track_info(user_agent, track)
-      laps = value['laps_time']
-      track = (track['name'], track['href'], value['track_info'][0], value['track_info'][1][0])
-      print("######################")
+      if(value['track_info'] is not None):
+         laps = value['laps_time']
+         track = (track['name'], track['href'], value['track_info'][0], value['track_info'][1][0])
+         print("######################")
 
       # Adding in sqlite database all scraps,
       # third phase: adding all info and laps of current track.
-      print("Initial laps record creator:")
-      scrap.record_creator(laps, track)
-      print("######################")
+         print("Initial laps record creator:")
+         scrap.record_creator(laps, track)
+         print("######################")
+      else:
+         print(f"Error during {track['name']} record process. Skipped.")
+         print("######################")
 
    # Printing some scraping stats
    n_laps = len(db.get_all_laps(conn))
@@ -60,13 +65,22 @@ def main():
    # Scraping from fastestlaps.com,
    # fourth phase: getting all vehicle information (i.e Country, power, etc...).
    all_vehicle = db.get_all_vehicles(conn)
-   user_agent_generator = utils.random_user_agent()
    for vehicle in all_vehicle:
       user_agent = user_agent_generator.get_random_user_agent()
-      vehicle_specs = scrap.get_vehicle_info(user_agent, vehicle)
-      #extracted_specs = scrap.extract_specs(vehicle_specs)
-      print("######################")
-      #db.insert_new_specs(conn,extracted_specs)
+      if(vehicle[1] != "Non presente"):
+         vehicle_specs = scrap.get_vehicle_info(user_agent, vehicle)
+         if(len(vehicle_specs) != 1):
+            extracted_specs = scrap.extract_specs(vehicle_specs)
+            print("######################")
+            db.insert_new_specs(conn, extracted_specs)
+            print("######################")
+         else:
+            print(f"Error during {vehicle[0]} specs record process. Skipped.")
+            print("######################")
+      else:
+         print(f"Vehicle {vehicle[0]} page, don't exist. Skipped.")
+         print("######################")
+
 
 # Definition NAME
 if __name__ == "__main__":

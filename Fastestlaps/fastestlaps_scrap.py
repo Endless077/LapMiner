@@ -5,7 +5,8 @@ import re
 import fastestlaps_db as db
 from bs4 import BeautifulSoup
 
-LINK = "https://fastestlaps.com/tracks"
+LINK1 = "https://fastestlaps.com/tracks"
+LINK2 = "https://fastestlaps.com/makes"
 BASE_LINK = "https://fastestlaps.com"
 HEADERS = {
     'User-Agent': 'user-agent',
@@ -28,6 +29,10 @@ def change_laptime(laptime):
         return "Non presente."
 
 def clean_record(record):
+    # Clear a BS4 record (delete \n)
+    # :param record: a given record to clear.
+    # :return:
+
     new_line_count = record.contents.count('\n')
     for value in range(new_line_count):
         record.contents.remove('\n')
@@ -36,8 +41,176 @@ def extract_specs(specs):
     # Get a specific vehicle specs attribute
     # :param specs: a given vehicle specs dict.
     # :return: attribute value or None.
+    
+    vehicle_record = []
+    vehicle_record.append(specs['name'])
 
-    raise NotImplementedError
+    if("Car Type" in specs.keys()):
+        vehicle_record.append("Car")
+        vehicle_record.append(specs['Car Type'])
+    else:
+        vehicle_record.append("Motorcycle")
+        vehicle_record.append(specs['Motorcycle Type'])
+
+    attr_list = ["Introduced","Origin country","Curb weight","Wheelbase","Dimensions","0 - 100 kph","100 kph - 0",
+                 "Top speed","Engine type","Displacement","Power","Torque","Power / weight","Torque / weight",
+                 "Efficiency","Transmission","Layout"]
+
+    for attr in attr_list:
+        if(attr.title() in specs.keys()):
+            ret = parse_specs(attr, specs[attr.title()])
+            vehicle_record.extend(ret)
+        elif(attr.title() == "Power" or attr.title() == "Dimensions"):
+            vehicle_record.extend(["Non presente","Non presente","Non presente"])
+        else:
+            vehicle_record.append("Non presente")
+
+    return tuple(vehicle_record)
+
+def parse_specs(attr_key, attr_value):
+    # Parse a specific vehicle specs attribute
+    # :param attr_key: a given vehicle specs attribute key.
+    # :param attr_value: a given vehicle specs attribute value.
+    # :return: a parse attribute value (or values) in a list.
+    parse_attr = []
+
+    if attr_key == "Introduced":
+        match = re.compile('[+-]?\d+')
+
+        result = match.findall(attr_value)
+        parse_attr.append(int(result[0]))
+    elif attr_key == "Origin country":
+        match = re.compile('.*')
+
+        result = match.findall(attr_value)
+        parse_attr.append(result[0])        
+    elif attr_key == "Curb weight":
+        match = re.compile('(\d+) *[Kk]+[Gg]+.*')
+
+        result = match.findall(attr_value)
+        parse_attr.append(round(float(result[0]), 2))
+    elif attr_key == "Wheelbase":
+        match = re.compile('(\d+\.{0,1}\d{0,}) *[Mm]+.*')
+
+        result = match.findall(attr_value)
+        parse_attr.append(round(float(result[0]), 2))
+    elif attr_key == "Dimensions":
+        match = re.compile('(\d+\.{0,1}\d{0,}) *[Mm]+.*long|(\d+\.{0,1}\d{0,}) *[Mm]+.*wide|(\d+\.{0,1}\d{0,}) *[Mm]+.*high')
+
+        all_dim = match.finditer(attr_value)
+        all_dim = list(all_dim)
+        discovered_dim = len(all_dim)
+        group = 0
+
+        for dim in all_dim:
+            match_group = dim.groups()    
+            if(discovered_dim == 3):
+                parse_attr.append(round(float(match_group[group]), 2))
+                group += 1
+            elif(discovered_dim == 2):
+                if(match_group[group] is not None):
+                    parse_attr.append(round(float(match_group[group]), 2))
+                    if(group == 1):
+                        parse_attr.append("Non presente")
+                    group +=1
+                else:
+                    parse_attr.append("Non presente")
+                    parse_attr.append(round(float(match_group[int(group+1)]), 2))
+                    group = group+2 if(group+1 == 1) else group+1
+            elif(discovered_dim == 1):
+                if(match_group[group] is not None):
+                    parse_attr.append(round(float(match_group[group]), 2))
+                    parse_attr.extend(["Non Presente","[Non Presente]"])
+                elif(match_group[group+1] is not None):
+                    parse_attr.append("Non presente")
+                    parse_attr.append(round(float(match_group[int(group+1)]), 2))
+                    parse_attr.append("Non presente")
+                else:
+                    parse_attr.extend(["Non Presente","[Non Presente]"])
+                    parse_attr.append(round(float(match_group[int(group+2)]), 2))
+
+    elif attr_key == "0 - 100 kph":
+        match = re.compile('(\d+\.{0,1}\d{0,}) *[Ss]+.*')
+
+        result = match.findall(attr_value)
+        parse_attr.append(round(float(result[0]), 2))
+    elif attr_key == "100 kph - 0":
+        match = re.compile('(\d+\.{0,1}\d{0,}) *[Mm]+.*')
+
+        result = match.findall(attr_value)
+        parse_attr.append(round(float(result[0]), 2))
+    elif attr_key == "Top speed":
+        kph_match = re.compile('(\d+) *[Kk]+[Pp]+[Hh]+.*')
+        mph_match = re.compile('(\d+) *[Mm]+[Pp]+[Hh]+.*')
+
+        match = kph_match if kph_match.search(attr_value) is not None else mph_match
+        result = match.findall(attr_value)
+        parse_attr.append(int(result[0]))
+    elif attr_key == "Engine type":
+        match = re.compile('.*')
+
+        result = match.findall(attr_value)
+        parse_attr.append(result[0])
+    elif attr_key == "Displacement":
+        cc_match = re.compile('(\d+\.{0,1}\d{0,}) *[Cc]+[Cc]+.*') 
+        ci_match = re.compile('(\d+\.{0,1}\d{0,}) *[Cc]+[Ii]+.*')
+        ll_match = re.compile('(\d+\.{0,1}\d{0,}) *[Ll]+.*')
+
+        cc = re.findall(cc_match, attr_value)
+        ci = re.findall(ci_match, attr_value)
+        ll = re.findall(ll_match, attr_value)
+
+        if(len(ll)>0):
+            result = round(float(ll[0]), 2)
+        elif(len(cc)>0):
+            result = round(float(cc[0]) * 0.001, 2)
+        elif(len(ci)>0):
+            result = round(float(ci[0]) * 0.01638706, 2)
+
+        parse_attr.append(result)
+    elif attr_key == "Power":
+        match = re.compile('((\d+) *[Pp]+[Ss]+)|((\d+) *[Bb]+[Hh]+[Pp]+)|((\d+) *[Kk]+[Ww]+)')
+        
+        all_power = match.findall(attr_value)
+        group = 1
+        for item in all_power:
+            parse_attr.append(int(item[group]))
+            group += 2
+
+    elif attr_key == "Torque":
+        match = re.compile('(\d+) *[Nn]+[Mm]+.*')
+
+        result = match.findall(attr_value)
+        parse_attr.append(int(result[0]))
+    elif attr_key == "Power / weight":
+        match = re.compile('(\d+) *[Pp]+[Ss]+.*')
+
+        result = match.findall(attr_value)
+        parse_attr.append(int(result[0]))
+    elif attr_key == "Torque / weight":
+        match = re.compile('(\d+) *[Nn]+[Mm]+.*')
+
+        result = match.findall(attr_value)
+        parse_attr.append(int(result[0]))
+    elif attr_key == "Efficiency":
+        match = re.compile('(\d+) *[Pp]+[Ss]+.*')
+
+        result = match.findall(attr_value)
+        parse_attr.append(int(result[0]))
+    elif attr_key == "Transmission":
+        match = re.compile('.*')
+
+        result = match.findall(attr_value)
+        parse_attr.append(result[0])
+    elif attr_key == "Layout":
+        match = re.compile('.*')
+
+        result = match.findall(attr_value)
+        parse_attr.append(result[0])
+    else:
+        parse_attr.append("Non presente")
+
+    return parse_attr
 
 def info_attr(soup, attribute):
     # Get a specific INFO attrbute
@@ -149,9 +322,11 @@ def get_all_tracks(user_agent):
     # :param user-agent: a user agent random string.
     # :return: a list of all track dict (name, href).
 
+    all_track = []
+    
     try:
         HEADERS["User-Agent"] = user_agent
-        response = requests.get(LINK, headers=HEADERS, timeout=10)
+        response = requests.get(LINK1, headers=HEADERS, timeout=10)
         response.raise_for_status()
     except requests.ConnectionError as e:
         print("Error (connection):")
@@ -167,20 +342,18 @@ def get_all_tracks(user_agent):
     else:
         print("HTTP Status request: " + str(response.status_code))
 
-    print("Parsing html...")
-    soup = BeautifulSoup(response.text, 'html.parser')
-    tag = soup.find(class_=re.compile("section"))
-    tracks = tag.findAll('a')
-    
-    all_track = []
+        print("Parsing html...")
+        soup = BeautifulSoup(response.text, 'html.parser')
+        tag = soup.find(class_=re.compile("section"))
+        tracks = tag.findAll('a')
 
-    print("Processing tracks...")
-    for track in tracks:
-        new_track = {}
-        new_track['name'] = track.contents[0].title()
-        new_track['href'] = track.get('href')
-        all_track.append(new_track)
-        print("--New Track Found: " + new_track['name'])
+        print("Processing tracks...")
+        for track in tracks:
+            new_track = {}
+            new_track['name'] = track.contents[0].title()
+            new_track['href'] = track.get('href')
+            all_track.append(new_track)
+            print("--New Track Found: " + new_track['name'])
 
     return all_track
 
@@ -190,11 +363,13 @@ def get_track_info(user_agent, track):
     # :param track: a dict with two keys (name and href).
     # :return: a dict with two keys (laps_time that is a list and track_info that is a tuple).
 
-    track_link = BASE_LINK + track['href']
+    laps_time = []
+    track_info = (None, None)
+    track_LINK = BASE_LINK + track['href']
 
     try:
         HEADERS["User-Agent"] = user_agent
-        response = requests.get(track_link, headers=HEADERS, timeout=10)
+        response = requests.get(track_LINK, headers=HEADERS, timeout=10)
         response.raise_for_status()
     except requests.ConnectionError as e:
         print("Error (connection):")
@@ -210,40 +385,39 @@ def get_track_info(user_agent, track):
     else:
         print("HTTP Status request: " + str(response.status_code))
 
-    print("Parsing html...")
-    soup = BeautifulSoup(response.text, 'html.parser')
-    
-    track_country = get_track_country(info_attr(soup, "Country"))
-    track_length = get_track_length(info_attr(soup, "Track length"))
+        print("Parsing html...")
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        track_country = get_track_country(info_attr(soup, "Country"))
+        track_length = get_track_length(info_attr(soup, "Track length"))
 
-    track_info = (track_country, track_length)
+        track_info = (track_country, track_length)
 
-    tag = soup.find(class_=re.compile("table table-striped fl-laptimes-trackpage"))
+        tag = soup.find(class_=re.compile("table table-striped fl-laptimes-trackpage"))
 
-    check_null = lambda chk : chk!=None
-    laps_time = []
+        check_null = lambda chk : chk is not None
 
-    if(check_null(tag)):
-        laps = tag.findAll('tr')
-        laps.pop(0)
-        print("--Found " + str(len(laps)) + " laps, track " + track['name'] + " processed.")
-        for lap in laps:
-            lap_record = lap.findAll('td')
+        if(check_null(tag)):
+            laps = tag.findAll('tr')
+            laps.pop(0)
+            print(f"--Found {str(len(laps))} laps, track {track['name']} processed.")
+            for lap in laps:
+                lap_record = lap.findAll('td')
 
-            vehicle = parse_vehicle(lap_record)
-            new_lap = {
-                'laptime': lap_record[3].contents[0].text,
-                'driver': lap_record[2].contents[0].text,
-                'track': track['name'],
-                'ps_kg': "".join(str(lap_record[4].contents[0]).split()),
-                'vehicle_href': vehicle[1],
-                'vehicle': vehicle[0]
-            }
-            print("----Laptime: " + str(new_lap))
+                vehicle = parse_vehicle(lap_record)
+                new_lap = {
+                    'laptime': lap_record[3].contents[0].text,
+                    'driver': lap_record[2].contents[0].text,
+                    'track': track['name'],
+                    'ps_kg': "".join(str(lap_record[4].contents[0]).split()),
+                    'vehicle_href': vehicle[1],
+                    'vehicle': vehicle[0]
+                }
+                print("----Laptime: " + str(new_lap))
 
-            laps_time.append(new_lap)
-    else:
-        print("--Found 0 laps, track " + track['name'] + " not processed.")
+                laps_time.append(new_lap)
+        else:
+            print(f"--Found 0 laps, track {track['name']} not processed.")
     
     ret = {'laps_time': laps_time, 'track_info': track_info}
     return ret
@@ -254,11 +428,12 @@ def get_vehicle_info(user_agent, vehicle):
     # :param vheicle: a dict with two keys (name and href).
     # :return: a dict with a lot of keys (key = attribute).
 
-    vehicle_link = BASE_LINK + vehicle[1]
+    vehicle_record = {'name': vehicle[0]}
+    vehicle_LINK = BASE_LINK + vehicle[1]
 
     try:
         HEADERS["User-Agent"] = user_agent
-        response = requests.get(vehicle_link, headers=HEADERS, timeout=10)
+        response = requests.get(vehicle_LINK, headers=HEADERS, timeout=10)
         response.raise_for_status()
     except requests.ConnectionError as e:
         print("Error (connection):")
@@ -274,16 +449,17 @@ def get_vehicle_info(user_agent, vehicle):
     else:
         print("HTTP Status request: " + str(response.status_code))
 
-    vehicle_record = {'name': vehicle[0]}
-    soup = BeautifulSoup(response.text, 'html.parser')
-    tables = soup.findAll(class_=re.compile("table fl-datasheet"))
+        soup = BeautifulSoup(response.text, 'html.parser')
+        tables = soup.findAll(class_=re.compile("table fl-datasheet"))
 
-    for table in tables:
-        rows = table.findAll('tr')
-        for record in rows:
-            clean_record(record)
-            key = record.contents[0].text.strip()
-            value = record.contents[1].text.strip()
-            vehicle_record[key] = value
+        print(f"Getting {vehicle[0]} specs...")
+        for table in tables:
+            rows = table.findAll('tr')
+            for record in rows:
+                clean_record(record)
+                key = record.contents[0].text.strip().title()
+                value = record.contents[1].text.strip()
+                print(f"--Found attribute: {key} with value {value}" )
+                vehicle_record[key] = value
 
     return vehicle_record
