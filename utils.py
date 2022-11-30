@@ -7,9 +7,28 @@ import os
 import sys
 import re
 from bs4 import BeautifulSoup
+from datetime import datetime as dt
 from random_user_agent.user_agent import UserAgent
 from random_user_agent.params import HardwareType, SoftwareEngine, SoftwareName, SoftwareType, OperatingSystem, Popularity
 
+# Logging class
+class Logger(object):
+    def __init__(self):
+        if not os.path.exists("./logs"):
+            os.mkdir("./logs")
+        curr_date = dt.now().isoformat()
+        self.terminal = sys.stdout
+        self.log = open(f"./logs/logging_{curr_date}.txt", "x")
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+        
+    def flush(self):
+        self.terminal.flush()
+        self.log.flush()
+
+# Some utils
 def random_user_agent():
     user_agent_rotator = None
 

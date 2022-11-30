@@ -2,6 +2,7 @@
 
 # IMPORT
 import sys
+import time
 import os
 
 sys.path.append("./Fastestlaps")
@@ -12,6 +13,10 @@ import utils
 
 # Defination MAIN
 def main():
+
+   # Logging
+   sys.stdout = utils.Logger()
+
    # Create database (if exist, delete and create).
    if os.path.exists(db.PATH):
     os.remove(db.PATH)
@@ -64,6 +69,10 @@ def main():
    
    # Scraping from fastestlaps.com,
    # fourth phase: getting all vehicle information (i.e Country, power, etc...).
+   time.sleep(10)
+   [print("") for index in range(10)]
+   print("######################")
+   time.sleep(10)
    all_vehicle = db.get_all_vehicles(conn)
    for vehicle in all_vehicle:
       user_agent = user_agent_generator.get_random_user_agent()
@@ -81,6 +90,10 @@ def main():
          print(f"Vehicle {vehicle[0]} page, don't exist. Skipped.")
          print("######################")
 
+
+   # Close logging
+   sys.stdout.log.close()
+   sys.stdout = sys.__stdout__
 
 # Definition NAME
 if __name__ == "__main__":

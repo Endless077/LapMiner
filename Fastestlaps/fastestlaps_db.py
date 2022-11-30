@@ -10,7 +10,7 @@ def create_database():
     # :param:
     # :return: connection object or None.
     
-    print("Version Database:" + sqlite3.version)
+    print("Version Database: " + sqlite3.version)
     print("Creating " + PATH + "...")
 
     conn = None
@@ -80,8 +80,8 @@ def create_tables(conn):
 	"Dim_Long"	        REAL,
 	"Dim_Wide"	        REAL,
 	"Dim_High"	        REAL,
-	"0_100"	            REAL,
-	"100_0"	            REAL,
+	"Zero_Hundred"	    REAL,
+	"Hundred_Zero"	    REAL,
 	"Top_Speed"	        INTEGER,
 	"Engine_Type"	    TEXT,
 	"Displacement"	    REAL,
