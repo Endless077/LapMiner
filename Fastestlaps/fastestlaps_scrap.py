@@ -120,13 +120,13 @@ def parse_specs(attr_key, attr_value):
             elif(discovered_dim == 1):
                 if(match_group[group] is not None):
                     parse_attr.append(round(float(match_group[group]), 2))
-                    parse_attr.extend(["Non Presente","[Non Presente]"])
+                    parse_attr.extend(["Non presente","Non presente"])
                 elif(match_group[group+1] is not None):
                     parse_attr.append("Non presente")
                     parse_attr.append(round(float(match_group[int(group+1)]), 2))
                     parse_attr.append("Non presente")
                 else:
-                    parse_attr.extend(["Non Presente","[Non Presente]"])
+                    parse_attr.extend(["Non presente","Non presente"])
                     parse_attr.append(round(float(match_group[int(group+2)]), 2))
 
     elif attr_key == "0 - 100 kph":
@@ -240,7 +240,7 @@ def get_track_country(value):
     # :param value: a scrap value.
     # :return: the extract country or "Non Presente"".
 
-    country = "Non Presente"
+    country = "Non presente"
 
     if(value!=None):
         country = value.strip().title()
@@ -254,7 +254,7 @@ def get_track_length(value):
     # :param value: a scrap value.
     # :return: (km_length, miles_length) or (Non Presente, Non Presente).
 
-    track_length = ("Non Presente", "Non Presente")
+    track_length = ("Non presente", "Non presente")
 
     if(value!=None):
         all_length = value.split('/')
