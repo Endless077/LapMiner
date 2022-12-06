@@ -1,9 +1,9 @@
 # Ecco lo scrap del progetto :)
 
 # IMPORT
+import os
 import sys
 import time
-import os
 
 sys.path.append("./Fastestlaps")
 
@@ -15,7 +15,7 @@ import utils
 def main():
 
    # Logging
-   sys.stdout = utils.Logger()
+   sys.stdout = utils.Logger("scraping")
 
    # Create database (if exist, delete and create).
    if os.path.exists(db.PATH):
@@ -55,24 +55,9 @@ def main():
       else:
          print(f"Error during {track['name']} record process. Skipped.")
          print("######################")
-
-   # Printing some scraping stats
-   n_laps = len(db.get_all_laps(conn))
-   n_tracks = len(db.get_all_tracks(conn))
-   n_vehicles = len(db.get_all_vehicles(conn))
-   
-   print("######################")
-   print("Laps n°: " + str(n_laps) + ".")
-   print("Tracks n°: " + str(n_tracks) + ".")
-   print("Vehicles n°: " + str(n_vehicles) + ".")
-   print("######################")
    
    # Scraping from fastestlaps.com,
    # fourth phase: getting all vehicle information (i.e Country, power, etc...).
-   time.sleep(10)
-   [print("") for index in range(10)]
-   print("######################")
-   time.sleep(10)
    all_vehicle = db.get_all_vehicles(conn)
    for vehicle in all_vehicle:
       user_agent = user_agent_generator.get_random_user_agent()
@@ -90,6 +75,16 @@ def main():
          print(f"Vehicle {vehicle[0]} page, don't exist. Skipped.")
          print("######################")
 
+
+   # Printing some scraping stats
+   n_laps = len(db.get_all_laps(conn))
+   n_tracks = len(db.get_all_tracks(conn))
+   n_vehicles = len(db.get_all_vehicles(conn))
+   
+   print("Laps n°: " + str(n_laps) + ".")
+   print("Tracks n°: " + str(n_tracks) + ".")
+   print("Vehicles n°: " + str(n_vehicles) + ".")
+   print("######################")
 
    # Close logging
    sys.stdout.log.close()

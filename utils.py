@@ -20,6 +20,13 @@ class Logger(object):
         self.terminal = sys.stdout
         self.log = open(f"./logs/logging_{curr_date}.txt", "x")
 
+    def __init__(self, file):
+        if not os.path.exists("./logs"):
+            os.mkdir("./logs")
+        curr_date = dt.now().isoformat()
+        self.terminal = sys.stdout
+        self.log = open(f"./logs/{file}_{curr_date}.txt", "x")
+
     def write(self, message):
         self.terminal.write(message)
         self.log.write(message)

@@ -5,6 +5,111 @@ from sqlite3 import Error
 
 PATH = "./scrap.db"
 
+def extract_database(conn, min_vehicle_laps, min_track_laps):
+    # Create a table from the create_table_sql statement
+    # :param conn: db connection.
+    # :return:
+
+    print("Creating Views...")
+
+    cars = '''
+    CREATE TEMP VIEW List_Cars
+    AS
+    SELECT * FROM Specs
+    WHERE Specs.Type = 'Car'
+    '''
+    # motorcycle = '''
+    #             CREATE TEMP VIEW List_Motorcycles
+    #             AS
+    #             SELECT * FROM Specs
+    #             WHERE Specs.Type = 'Motorcycle'
+    #             '''
+    # count_track = '''
+    #             CREATE TEMP VIEW Track_Lap_Count
+    #             AS
+    #             SELECT
+    #                 Laps.Track, COUNT(Laps.Vehicle)
+    #             FROM
+    #                 Laps INNER JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
+    #             GROUP BY
+    #                 Laps.Track
+    #             ORDER BY
+    #                 Laps.Track ASC
+    #             '''
+    # count_vehicle = '''
+    #                 CREATE TEMP VIEW Vehicle_Lap_Count
+    #                 AS
+    #                 SELECT
+    #                     List_Cars.Vehicle, COUNT(Laps.Track)
+    #                 FROM
+    #                     Laps INNER JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
+    #                 GROUP BY
+    #                     List_Cars.Vehicle
+    #                 ORDER BY
+    #                     List_Cars.Vehicle ASC
+    #                 '''
+    extract_track = f'''
+    CREATE TEMP VIEW Extract_Track_List
+    AS
+    SELECT
+        Tracks.Track_Name, Tracks.Country, Tracks.Total_Length
+    FROM
+        Laps JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
+        JOIN Tracks ON Laps.Track = Tracks.Track_Name
+    GROUP BY
+        Laps.Track
+    HAVING
+        COUNT(Laps.Vehicle) >= {min_track_laps}
+    ORDER BY
+        Laps.Track ASC
+    '''
+    extract_vehicle = f'''
+    CREATE TEMP VIEW Extract_Vehicle_List
+    AS
+    SELECT
+        List_Cars.*
+    FROM
+        Laps JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
+        JOIN Tracks ON Laps.Track = Tracks.Track_Name
+    GROUP BY
+        Laps.Vehicle
+    HAVING
+        COUNT(Laps.Track) >= {min_vehicle_laps}
+    ORDER BY
+        Laps.Track ASC
+    '''
+    extract_laps = '''
+    CREATE TEMP VIEW Extract_Laps_List
+    AS
+    SELECT
+        Laps.*
+    FROM
+        Laps JOIN Extract_Vehicle_List AS EVL ON Laps.Vehicle = EVL.Vehicle
+        JOIN Extract_Track_List AS ETL ON Laps.Track = ETL.Track_Name
+    ORDER BY
+        Laps.Track ASC
+    '''
+
+    try:
+        cur = conn.cursor()
+        print("Creating List Cars view...")
+        cur.execute(cars)
+        # print("Creating List Motorcycles view...")
+        # c.execute(motorcycle)
+        # print("Creating Track Lap Count view...")
+        # c.execute(count_track)
+        # print("Creating Vehicle Lap Count view...")
+        # c.execute(count_vehicle)
+        print("Creating Merge Track List view...")
+        cur.execute(extract_track)
+        print("Creating Merge Vehicle List view...")
+        cur.execute(extract_vehicle)
+        print("Creating Merge Lap List view...")
+        cur.execute(extract_laps)
+        print("View created.")
+    except Error as e:
+        print(e)
+
 def create_database():
     # Create a connection to db
     # :param:
@@ -92,21 +197,21 @@ def create_tables(conn):
 	"Power_Weight"	    INTEGER,
 	"Torque_Weight"	    INTEGER,
 	"Efficiency"	    INTEGER,
-	"Trasmissions"	    TEXT,
+	"Trasmission"	    TEXT,
 	"Layout"	        TEXT,
 	FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name") ON DELETE CASCADE ON UPDATE CASCADE
 )'''
     
     try:
-        c = conn.cursor()
+        cur = conn.cursor()
         print("Creating vehicles table...")
-        c.execute(vehicles_table)
+        cur.execute(vehicles_table)
         print("Creating tracks table...")
-        c.execute(tracks_table)
+        cur.execute(tracks_table)
         print("Creating laps table...")
-        c.execute(laps_table)
+        cur.execute(laps_table)
         print("Creating specs table...")
-        c.execute(specs_table)
+        cur.execute(specs_table)
         print("Table created.")
     except Error as e:
         print(e)
@@ -124,15 +229,15 @@ def clear_database(conn):
     del4 = ''' DELETE FROM Vehicles '''
 
     try:
-        c = conn.cursor()
+        cur = conn.cursor()
         print("Deleting laps table...")
-        c.execute(del1)
+        cur.execute(del1)
         print("Deleting tracks table...")
-        c.execute(del2)
+        cur.execute(del2)
         print("Deleting specs table...")
-        c.execute(del3)
+        cur.execute(del3)
         print("Deleting vehicles table...")
-        c.execute(del4)
+        cur.execute(del4)
         conn.commit()
         print("Clear complete.")
     except Error as e:
@@ -179,7 +284,7 @@ def insert_new_specs(conn, specs):
     sql = ''' INSERT OR IGNORE INTO Specs(Vehicle,Type,Type_Usage,Introduced_Year,Country,
     Curb_Weight,Wheelbase,Dim_Long,Dim_Wide,Dim_High,Zero_Hundred,Hundred_Zero,Top_Speed,
     Engine_Type,Displacement,Power_PS,Power_BHP,Power_KW,Torque,
-    Power_Weight,Torque_Weight,Efficiency,Trasmissions,Layout)
+    Power_Weight,Torque_Weight,Efficiency,Trasmission,Layout)
     VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) '''
 
     cur = conn.cursor()
