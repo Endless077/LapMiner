@@ -69,7 +69,6 @@ def report_generator():
     raise NotImplementedError
 
 def report_csv(conn):
-    print("Generating excel and csv dataset...")
     excel_path = PATH + '/excel'
     csv_path = PATH + '/csv'
     
@@ -81,11 +80,13 @@ def report_csv(conn):
     tracks_dataframe.rename(columns=TRACK_HEADERS, inplace=True)
     vehicles_dataframe.rename(columns=VEHICLE_HEADERS, inplace=True)
     
+    print("Generating excel dataset...")
     with pd.ExcelWriter(excel_path + 'dataset.xlsx') as writer:
         laps_dataframe.to_excel(writer, sheet_name="Laps_Time")
         tracks_dataframe.to_excel(writer, sheet_name="Tracks")
         vehicles_dataframe.to_excel(writer, sheet_name="Vehicles")
 
+    print("Generating csv dataset...")
     laps_dataframe.to_csv(csv_path + 'laps_time.csv')
     tracks_dataframe.to_csv(csv_path + 'tracks.csv')
     vehicles_dataframe.to_csv(csv_path + 'vehicles.csv')

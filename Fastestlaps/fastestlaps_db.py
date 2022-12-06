@@ -106,6 +106,8 @@ def extract_database(conn, min_vehicle_laps, min_track_laps):
         cur.execute(extract_vehicle)
         print("Creating Merge Lap List view...")
         cur.execute(extract_laps)
+        cur.close()
+        conn.commit()
         print("View created.")
     except Error as e:
         print(e)
@@ -212,6 +214,8 @@ def create_tables(conn):
         cur.execute(laps_table)
         print("Creating specs table...")
         cur.execute(specs_table)
+        cur.close()
+        conn.commit()
         print("Table created.")
     except Error as e:
         print(e)
@@ -238,6 +242,7 @@ def clear_database(conn):
         cur.execute(del3)
         print("Deleting vehicles table...")
         cur.execute(del4)
+        cur.close()
         conn.commit()
         print("Clear complete.")
     except Error as e:
@@ -254,6 +259,7 @@ def insert_new_lap(conn, lap):
 
     cur = conn.cursor()
     cur.execute(sql, lap)
+    cur.close()
     conn.commit()
 
     print("Insert: " + str(lap))
@@ -270,6 +276,7 @@ def insert_new_track(conn, track):
               
     cur = conn.cursor()
     cur.execute(sql, track)
+    cur.close()
     conn.commit()
 
     print("Insert: " + str(track))
@@ -289,6 +296,7 @@ def insert_new_specs(conn, specs):
 
     cur = conn.cursor()
     cur.execute(sql, specs)
+    cur.close()
     conn.commit()
 
     print("Insert: " + str(specs))
@@ -305,6 +313,7 @@ def insert_new_vehichle(conn, vehicle):
               
     cur = conn.cursor()
     cur.execute(sql, vehicle)
+    cur.close()
     conn.commit()
 
     print("Insert: " + str(vehicle))
@@ -315,6 +324,7 @@ def insert_new_record(lap, track, vehicle):
     insert_new_vehichle(conn,vehicle)
     insert_new_track(conn,track)
     insert_new_lap(conn,lap)
+    conn.close()
 
 def get_all_laps(conn):
     # Get all laps from the laps table
@@ -327,6 +337,7 @@ def get_all_laps(conn):
               
     cur = conn.cursor()
     cur.execute(sql)
+    cur.close()
 
     output = cur.fetchall()
 
@@ -344,6 +355,7 @@ def get_all_tracks(conn):
               
     cur = conn.cursor()
     cur.execute(sql)
+    cur.close()
 
     output = cur.fetchall()
 
@@ -361,6 +373,7 @@ def get_all_specs(conn):
               
     cur = conn.cursor()
     cur.execute(sql)
+    cur.close()
 
     output = cur.fetchall()
 
@@ -378,6 +391,7 @@ def get_all_vehicles(conn):
               
     cur = conn.cursor()
     cur.execute(sql)
+    cur.close()
 
     output = cur.fetchall()
 
@@ -397,6 +411,7 @@ def get_specific_lap(conn, track_name, vehicle_name):
               
     cur = conn.cursor()
     cur.execute(sql, (track_name, vehicle_name))
+    cur.close()
 
     output = cur.fetchall()
 
@@ -415,6 +430,7 @@ def get_specific_track(conn, track_name):
               
     cur = conn.cursor()
     cur.execute(sql, (track_name, ))
+    cur.close()
 
     output = cur.fetchall()
 
@@ -433,6 +449,7 @@ def get_secific_stats(conn, vehicle_name):
               
     cur = conn.cursor()
     cur.execute(sql, (vehicle_name, ))
+    cur.close()
 
     output = cur.fetchall()
 
@@ -451,6 +468,7 @@ def get_specific_vehicle(conn, vehicle_name):
               
     cur = conn.cursor()
     cur.execute(sql, (vehicle_name, ))
+    cur.close()
 
     output = cur.fetchall()
 
@@ -467,6 +485,7 @@ def delete_specific_lap(conn, track_name, vehicle_name):
     sql = ''' DELETE FROM Laps WHERE Track = ? AND Vehicle = ? '''
     cur = conn.cursor()
     cur.execute(sql, (track_name, vehicle_name))
+    cur.close()
     conn.commit()
 
     print("Delete: " + sql)
@@ -480,6 +499,7 @@ def delete_specific_track(conn, track_name):
     sql = ''' DELETE FROM Tracks WHERE Track_Name = ? '''
     cur = conn.cursor()
     cur.execute(sql, (track_name,))
+    cur.close()
     conn.commit()
 
     print("Delete: " + track_name)
@@ -493,6 +513,7 @@ def delete_specific_specs(conn, vehicle_name):
     sql = ''' DELETE FROM Specs WHERE Vehicle = ? '''
     cur = conn.cursor()
     cur.execute(sql, (vehicle_name,))
+    cur.close()
     conn.commit()
 
     print("Delete: " + vehicle_name)
@@ -506,6 +527,7 @@ def delete_specific_vehicle(conn, vehicle_name):
     sql = ''' DELETE FROM Vehicles WHERE Vehicles_Name = ? '''
     cur = conn.cursor()
     cur.execute(sql, (vehicle_name,))
+    cur.close()
     conn.commit()
 
     print("Delete: " + vehicle_name)

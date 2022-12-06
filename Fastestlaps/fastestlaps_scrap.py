@@ -3,11 +3,14 @@
 import requests
 import re
 import fastestlaps_db as db
+
 from bs4 import BeautifulSoup
 
 LINK1 = "https://fastestlaps.com/tracks"
 LINK2 = "https://fastestlaps.com/makes"
+
 BASE_LINK = "https://fastestlaps.com"
+
 HEADERS = {
     'User-Agent': 'user-agent',
     "Content-Type": "text/html"

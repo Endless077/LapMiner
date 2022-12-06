@@ -15,7 +15,7 @@ import utils
 def main():
 
    # Logging
-   sys.stdout = utils.Logger("scraping")
+   sys.stdout = utils.Logger("scraping", "logs")
 
    # Create database (if exist, delete and create).
    if os.path.exists(db.PATH):
@@ -86,6 +86,9 @@ def main():
    print("Vehicles n°: " + str(n_vehicles) + ".")
    print("######################")
 
+   # Close database connection
+   conn.close()
+   
    # Close logging
    sys.stdout.log.close()
    sys.stdout = sys.__stdout__

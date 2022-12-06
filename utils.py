@@ -1,11 +1,11 @@
 # Utils
 
+import re
 import requests
 import contextlib
-import time
 import os
 import sys
-import re
+
 from bs4 import BeautifulSoup
 from datetime import datetime as dt
 from random_user_agent.user_agent import UserAgent
@@ -20,12 +20,12 @@ class Logger(object):
         self.terminal = sys.stdout
         self.log = open(f"./logs/logging_{curr_date}.txt", "x")
 
-    def __init__(self, file):
-        if not os.path.exists("./logs"):
-            os.mkdir("./logs")
+    def __init__(self, file, dir):
+        if not os.path.exists(f"./{dir}"):
+            os.mkdir(f"./{dir}")
         curr_date = dt.now().isoformat()
         self.terminal = sys.stdout
-        self.log = open(f"./logs/{file}_{curr_date}.txt", "x")
+        self.log = open(f"./{dir}/{file}_{curr_date}.txt", "x")
 
     def write(self, message):
         self.terminal.write(message)

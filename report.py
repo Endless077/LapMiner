@@ -17,7 +17,7 @@ import utils
 def main():
 
     # Logging
-    sys.stdout = utils.Logger("report")
+    sys.stdout = utils.Logger("report", "report")
 
     # Create folders tree (if exist, delete and create).
     check_tree_struct()
@@ -26,6 +26,9 @@ def main():
     conn = report.extract_dataset()
     report.report_csv(conn)
 
+    # Close database connection
+    conn.close()
+    
     # Close logging
     sys.stdout.log.close()
     sys.stdout = sys.__stdout__
