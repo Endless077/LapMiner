@@ -5,113 +5,6 @@ from sqlite3 import Error
 
 PATH = "./scrap.db"
 
-def extract_database(conn, min_vehicle_laps, min_track_laps):
-    # Create a table from the create_table_sql statement
-    # :param conn: db connection.
-    # :return:
-
-    print("Creating Views...")
-
-    cars = '''
-    CREATE TEMP VIEW List_Cars
-    AS
-    SELECT * FROM Specs
-    WHERE Specs.Type = 'Car'
-    '''
-    # motorcycle = '''
-    #             CREATE TEMP VIEW List_Motorcycles
-    #             AS
-    #             SELECT * FROM Specs
-    #             WHERE Specs.Type = 'Motorcycle'
-    #             '''
-    # count_track = '''
-    #             CREATE TEMP VIEW Track_Lap_Count
-    #             AS
-    #             SELECT
-    #                 Laps.Track, COUNT(Laps.Vehicle)
-    #             FROM
-    #                 Laps INNER JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
-    #             GROUP BY
-    #                 Laps.Track
-    #             ORDER BY
-    #                 Laps.Track ASC
-    #             '''
-    # count_vehicle = '''
-    #                 CREATE TEMP VIEW Vehicle_Lap_Count
-    #                 AS
-    #                 SELECT
-    #                     List_Cars.Vehicle, COUNT(Laps.Track)
-    #                 FROM
-    #                     Laps INNER JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
-    #                 GROUP BY
-    #                     List_Cars.Vehicle
-    #                 ORDER BY
-    #                     List_Cars.Vehicle ASC
-    #                 '''
-    extract_track = f'''
-    CREATE TEMP VIEW Extract_Track_List
-    AS
-    SELECT
-        Tracks.Track_Name, Tracks.Country, Tracks.Total_Length
-    FROM
-        Laps JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
-        JOIN Tracks ON Laps.Track = Tracks.Track_Name
-    GROUP BY
-        Laps.Track
-    HAVING
-        COUNT(Laps.Vehicle) >= {min_track_laps}
-    ORDER BY
-        Laps.Track ASC
-    '''
-    extract_vehicle = f'''
-    CREATE TEMP VIEW Extract_Vehicle_List
-    AS
-    SELECT
-        List_Cars.*
-    FROM
-        Laps JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
-        JOIN Tracks ON Laps.Track = Tracks.Track_Name
-    GROUP BY
-        Laps.Vehicle
-    HAVING
-        COUNT(Laps.Track) >= {min_vehicle_laps}
-    ORDER BY
-        Laps.Track ASC
-    '''
-    extract_laps = '''
-    CREATE TEMP VIEW Extract_Laps_List
-    AS
-    SELECT
-        Laps.*
-    FROM
-        Laps JOIN Extract_Vehicle_List AS EVL ON Laps.Vehicle = EVL.Vehicle
-        JOIN Extract_Track_List AS ETL ON Laps.Track = ETL.Track_Name
-    ORDER BY
-        Laps.Track ASC
-    '''
-
-    try:
-        cur = conn.cursor()
-        print("Creating List Cars view...")
-        cur.execute(cars)
-        # print("Creating List Motorcycles view...")
-        # c.execute(motorcycle)
-        # print("Creating Track Lap Count view...")
-        # c.execute(count_track)
-        # print("Creating Vehicle Lap Count view...")
-        # c.execute(count_vehicle)
-        print("Creating Merge Track List view...")
-        cur.execute(extract_track)
-        print("Creating Merge Vehicle List view...")
-        cur.execute(extract_vehicle)
-        print("Creating Merge Lap List view...")
-        cur.execute(extract_laps)
-        cur.close()
-        conn.commit()
-        print("View created.")
-    except Error as e:
-        print(e)
-
 def create_database():
     # Create a connection to db
     # :param:
@@ -216,7 +109,120 @@ def create_tables(conn):
         cur.execute(specs_table)
         cur.close()
         conn.commit()
-        print("Table created.")
+        print("Tables created.")
+    except Error as e:
+        print(e)
+
+def filter(conn, min_track_laps, min_vehicle_laps):
+    # Create a table from the create_table_sql statement
+    # :param conn: db connection.
+    # :return:
+
+    print("Creating Views...")
+
+    cars = '''
+    CREATE TEMP VIEW List_Cars
+    AS
+    SELECT * FROM Specs
+    WHERE Specs.Type = 'Car'
+    '''
+
+    # motorcycle = '''
+    # CREATE TEMP VIEW List_Motorcycles
+    # AS
+    # SELECT * FROM Specs
+    # WHERE Specs.Type = 'Motorcycle'
+    # '''
+    #
+    # count_track = '''
+    # CREATE TEMP VIEW Track_Lap_Count
+    # AS
+    # SELECT
+    #     Laps.Track, COUNT(Laps.Vehicle)
+    # FROM
+    #     Laps INNER JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
+    # GROUP BY
+    #     Laps.Track
+    # ORDER BY
+    #     Laps.Track ASC
+    # '''
+    #
+    # count_vehicle = '''
+    # CREATE TEMP VIEW Vehicle_Lap_Count
+    # AS
+    # SELECT
+    #     List_Cars.Vehicle, COUNT(Laps.Track)
+    # FROM
+    #     Laps INNER JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
+    # GROUP BY
+    #     List_Cars.Vehicle
+    # ORDER BY
+    #     List_Cars.Vehicle ASC
+    # '''
+
+    extract_track = f'''
+    CREATE TEMP VIEW Extract_Track_List
+    AS
+    SELECT
+        Tracks.Track_Name, Tracks.Country, Tracks.Total_Length
+    FROM
+        Laps INNER JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
+        INNER JOIN Tracks ON Laps.Track = Tracks.Track_Name
+    GROUP BY
+        Laps.Track
+    HAVING
+        COUNT(Laps.Vehicle) >= {min_track_laps}
+    ORDER BY
+        Laps.Track ASC
+    '''
+
+    extract_vehicle = f'''
+    CREATE TEMP VIEW Extract_Vehicle_List
+    AS
+    SELECT
+        List_Cars.*
+    FROM
+        Laps INNER JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
+        INNER JOIN Tracks ON Laps.Track = Tracks.Track_Name
+    GROUP BY
+        Laps.Vehicle
+    HAVING
+        COUNT(Laps.Track) >= {min_vehicle_laps}
+    ORDER BY
+        Laps.Vehicle ASC
+    '''
+    
+    extract_laps = '''
+    CREATE TEMP VIEW Extract_Laps_List
+    AS
+    SELECT
+        Laps.*
+    FROM
+        Laps INNER JOIN Extract_Vehicle_List AS EVL ON Laps.Vehicle = EVL.Vehicle
+        INNER JOIN Extract_Track_List AS ETL ON Laps.Track = ETL.Track_Name
+    ORDER BY
+        Laps.Track ASC
+    '''
+
+    try:
+        cur = conn.cursor()
+        print("Creating List Cars view...")
+        cur.execute(cars)
+        # print("Creating List Motorcycles view...")
+        # c.execute(motorcycle)
+        # print("Creating Track Lap Count view...")
+        # c.execute(count_track)
+        # print("Creating Vehicle Lap Count view...")
+        # c.execute(count_vehicle)
+        print("Creating Merge Track List view...")
+        cur.execute(extract_track)
+        print("Creating Merge Vehicle List view...")
+        cur.execute(extract_vehicle)
+        print("Creating Merge Lap List view...")
+        cur.execute(extract_laps)
+        cur.close()
+        conn.commit()
+        print("View created.")
     except Error as e:
         print(e)
 

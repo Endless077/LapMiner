@@ -13,6 +13,8 @@ import fastestlaps_scrap as scrap
 import fastestlaps_report as report
 import utils
 
+import pandas as pd
+
 # Defination MAIN
 def main():
 
@@ -23,9 +25,16 @@ def main():
     check_tree_struct()
 
     print("######################")
+    # Create TEMP view to get a filtered dataset
     conn = report.extract_dataset()
-    report.report_csv(conn)
+    # Generate excel, csv and json file format of all filtered dataset
+    report.dataset_generator(conn)
+    print("######################")
 
+    # Create a stats report
+    report.report()
+    print("######################")
+    
     # Close database connection
     conn.close()
     

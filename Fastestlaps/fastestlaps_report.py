@@ -7,6 +7,8 @@ import numpy as np
 import pandas as pd
 import fastestlaps_db as db
 
+from IPython.display import display
+
 LAPS_HEADERS = {
     'Lap_Time': 'Lap Time',
     'Driver': 'Driver',
@@ -23,7 +25,7 @@ VEHICLE_HEADERS = {
 	'Vehicle': 'Vehicle Name',
 	'Type': 'Type',
 	'Type_Usage': 'Type Usage',
-    'Introduced_Year': 'Introduced_Year',
+    'Introduced_Year': 'Introduced Year',
     'Country': 'Country',
 	'Curb_Weight': 'Curb Weight (kg)',
 	'Wheelbase': 'Wheelbase (m)',
@@ -51,45 +53,127 @@ PATH = "./report"
 def extract_dataset():
     print("Extracting dataset...")
     while True:
-        min_vehicle_laps = input("Inserire numero minimo di laptime per veicolo: ")
-        min_track_laps = input("Inserire numero minimo di laptime per circuito: ")
+        min_vehicle_laps = input("Insert min number of laptime per vehicle: ")
+        min_track_laps = input("Insert min number of laptime per track: ")
         try:
             int(min_vehicle_laps)
             int(min_track_laps)
         except ValueError:
-            print("Errore di input, inserire valori validi.")
+            print("Error input, insert valid value.")
         else:
             break
     
     conn = db.get_connection()
-    db.extract_database(conn, min_track_laps, min_vehicle_laps)
+    db.filter(conn, min_track_laps, min_vehicle_laps)
     return conn
-
-def report_generator():
-    raise NotImplementedError
-
-def report_csv(conn):
-    excel_path = PATH + '/excel'
-    csv_path = PATH + '/csv'
+        
+def dataset_generator(conn):
     
     laps_dataframe = pd.read_sql_query('SELECT * FROM Extract_Laps_List', conn)
     tracks_dataframe = pd.read_sql_query('SELECT * FROM Extract_Track_List', conn)
-    vehicles_dataframe = pd.read_sql_query('SELECT * FROM Extract_Vheicle_List', conn)
+    vehicles_dataframe = pd.read_sql_query('SELECT * FROM Extract_Vehicle_List', conn)
 
     laps_dataframe.rename(columns=LAPS_HEADERS, inplace=True)
     tracks_dataframe.rename(columns=TRACK_HEADERS, inplace=True)
     vehicles_dataframe.rename(columns=VEHICLE_HEADERS, inplace=True)
+
+    print("######################")
+    display(laps_dataframe)
+    print("######################")
+    display(tracks_dataframe)
+    print("######################")
+    display(vehicles_dataframe)
+    print("######################")
     
+    datasets = {
+    'Laps_Dataset': laps_dataframe,
+    'Tracks_Dataset': tracks_dataframe,
+    'Vehicle_Dataset': vehicles_dataframe
+    }
+
+    export_excel(datasets)
+    export_csv(datasets)
+    export_json(datasets)
+
+    print("Dataset exported in excel, csv and json format.")
+
+def export_excel(datasets):
+    excel_path = PATH + '/excel/'
+
     print("Generating excel dataset...")
     with pd.ExcelWriter(excel_path + 'dataset.xlsx') as writer:
-        laps_dataframe.to_excel(writer, sheet_name="Laps_Time")
-        tracks_dataframe.to_excel(writer, sheet_name="Tracks")
-        vehicles_dataframe.to_excel(writer, sheet_name="Vehicles")
+        for key,value in datasets.items():
+            value.to_excel(writer, sheet_name=key, index=False)
 
+def export_csv(datasets):
+    csv_path = PATH + '/csv/'
+    
     print("Generating csv dataset...")
-    laps_dataframe.to_csv(csv_path + 'laps_time.csv')
-    tracks_dataframe.to_csv(csv_path + 'tracks.csv')
-    vehicles_dataframe.to_csv(csv_path + 'vehicles.csv')
+    for key,value in datasets.items():
+        value.to_csv(f'{csv_path}{key}.csv', index=False)
 
-def report_json():
+def export_json(datasets):
+    json_path = PATH + '/json/'
+
+    laps_df = datasets['Laps_Dataset']
+    tracks_df = datasets['Tracks_Dataset']
+    vehicles_df = datasets['Vehicle_Dataset']
+
+    print("Generating json dataset...")
+    tracks = json_track(laps_df.copy(), tracks_df.copy())
+    vehicles = json_vehicle(laps_df, vehicles_df)
+
+    json_object_tracks = json.dumps(tracks, indent = 4)
+    json_object_vehicles = json.dumps(vehicles, indent = 4)
+
+    with open(f"{json_path}tracks.json", "w") as outfile:
+        outfile.write(json_object_tracks)
+
+    with open(f"{json_path}vehicle.json", "w") as outfile:
+        outfile.write(json_object_vehicles)
+
+def json_track(laps_df, tracks_df):
+    tracks_json = {}
+
+    for track_row in tracks_df.itertuples(name=None):
+        tracks_json[track_row[1]] = {}
+
+        tracks_json[track_row[1]]["Laps"] = {}
+        tracks_json[track_row[1]]["Country"] = track_row[2]
+        tracks_json[track_row[1]]["Track Length"] = track_row[3]
+
+        curr_track = laps_df.loc[(laps_df["Track Name"] == track_row[1]), ["Vehicle Name", "Lap Time"]].sort_values(by="Lap Time")
+
+        for lap_row in curr_track.itertuples(name=None):
+            if(lap_row[1] in tracks_json[track_row[1]]["Laps"].keys()):
+                tracks_json[track_row[1]]["Laps"][lap_row[1]].append(lap_row[2])
+            else:
+             tracks_json[track_row[1]]["Laps"][lap_row[1]] = [lap_row[2]]
+    
+    return tracks_json
+
+def json_vehicle(laps_df, vehicles_df):
+    vehicle_json = {}
+
+    for vehicle_row in vehicles_df.itertuples(name=None):
+        vehicle_json[vehicle_row[1]] = {}
+        vehicle_json[vehicle_row[1]]["Laps"] = {}
+        vehicle_json[vehicle_row[1]]["Specs"] = {}
+        attr = 1
+
+        for key,value in VEHICLE_HEADERS.items():
+            vehicle_json[vehicle_row[1]]["Specs"][value] = vehicle_row[attr]
+            attr += 1
+
+        curr_vehicle = laps_df.loc[(laps_df["Vehicle Name"] == vehicle_row[1]), ["Track Name", "Lap Time"]].sort_values(by="Lap Time")
+        
+        for lap_row in curr_vehicle.itertuples(name=None):
+            if(lap_row[1] in vehicle_json[vehicle_row[1]]["Laps"].keys()):
+                vehicle_json[vehicle_row[1]]["Laps"][lap_row[1]].append(lap_row[2])
+            else:
+             vehicle_json[vehicle_row[1]]["Laps"][lap_row[1]] = [lap_row[2]]
+
+    return vehicle_json
+
+def report():
     raise NotImplementedError
