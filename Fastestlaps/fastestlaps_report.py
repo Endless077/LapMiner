@@ -121,10 +121,10 @@ def export_json(datasets):
 
     print("Generating json dataset...")
     tracks = json_track(laps_df.copy(), tracks_df.copy())
-    vehicles = json_vehicle(laps_df, vehicles_df)
+    vehicles = json_vehicle(laps_df.copy(), vehicles_df.copy())
 
-    json_object_tracks = json.dumps(tracks, indent = 4)
-    json_object_vehicles = json.dumps(vehicles, indent = 4)
+    json_object_tracks = json.dumps(tracks, ensure_ascii=False, indent = 3)
+    json_object_vehicles = json.dumps(vehicles, ensure_ascii=False, indent = 3)
 
     with open(f"{json_path}tracks.json", "w") as outfile:
         outfile.write(json_object_tracks)
