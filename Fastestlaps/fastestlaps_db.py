@@ -95,7 +95,7 @@ def create_tables(conn):
 	"Trasmission"	    TEXT,
 	"Layout"	        TEXT,
 	FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name") ON DELETE CASCADE ON UPDATE CASCADE
-)'''
+    )'''
     
     try:
         cur = conn.cursor()

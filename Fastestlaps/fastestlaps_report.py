@@ -176,4 +176,15 @@ def json_vehicle(laps_df, vehicles_df):
     return vehicle_json
 
 def report():
-    raise NotImplementedError
+    
+    print("Getting datasets...")
+    with open('../report/json/vehicle.json',) as f1:
+        json_vehicle = json.load(f1)
+    with open('../report/json/vehicle.json',) as f2:
+        json_track = json.load(f1)
+    
+    df_laps = pd.read_csv("../report/csv/Laps_Dataset.csv")
+    df_tracks = pd.read_csv("../report/csv/Tracks_Dataset.csv")
+    df_vehicles = pd.read_csv("../report/csv/Vehicle_Dataset.csv")
+
+
