@@ -8,6 +8,7 @@ import pandas as pd
 import fastestlaps_db as db
 
 from IPython.display import display
+import plotly.express as px
 
 LAPS_HEADERS = {
     'Lap_Time': 'Lap Time',
@@ -178,13 +179,48 @@ def json_vehicle(laps_df, vehicles_df):
 def report():
     
     print("Getting datasets...")
-    with open('../report/json/vehicle.json',) as f1:
+    with open('./report/json/vehicle.json') as f1:
         json_vehicle = json.load(f1)
-    with open('../report/json/vehicle.json',) as f2:
-        json_track = json.load(f1)
+    with open('./report/json/tracks.json') as f2:
+        json_track = json.load(f2)
     
-    df_laps = pd.read_csv("../report/csv/Laps_Dataset.csv")
-    df_tracks = pd.read_csv("../report/csv/Tracks_Dataset.csv")
-    df_vehicles = pd.read_csv("../report/csv/Vehicle_Dataset.csv")
+    df_laps = pd.read_csv("./report/csv/Laps_Dataset.csv")
+    df_tracks = pd.read_csv("./report/csv/Tracks_Dataset.csv")
+    df_vehicles = pd.read_csv("./report/csv/Vehicle_Dataset.csv")
 
+    report = open('./report/output/report.txt', 'w')
+    report.write("report.txt\n\n")
 
+    print("Getting laps stats...")
+    report_laps(report, df_laps.copy(), df_tracks.copy(), df_vehicles.copy(), json_track, json_vehicle)
+    print("Getting tracks stats...")
+    report_tracks(report, df_laps.copy(), df_tracks.copy(), df_vehicles.copy(), json_track, json_vehicle)
+    print("Getting vehicles stats...")
+    report_vehicles(report, df_laps.copy(), df_tracks.copy(), df_vehicles.copy(), json_track, json_vehicle)
+
+    report.write("######################\n")
+    report.close()
+
+def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
+    file.write("######################\n")
+    file.write("-Laps report:\n")
+    file.write("--Laps count: "+ str(laps.shape[0]) +"\n")
+
+def report_laps_plot():
+    raise NotImplementedError
+
+def report_tracks(file, laps, tracks, vehicles, json_tracks, json_vehicles):
+    file.write("######################\n")
+    file.write("-Tracks report:\n")
+    file.write("--Tracks count: "+ str(tracks.shape[0]) +"\n")
+
+def report_tracks_plot():
+    raise NotImplementedError
+
+def report_vehicles(file, laps, tracks, vehicles, json_tracks, json_vehicles):
+    file.write("######################\n")
+    file.write("-Vehicle report:\n")
+    file.write("--Vehicle count: "+ str(vehicles.shape[0]) +"\n")
+
+def report_vehicles_plot():
+    raise NotImplementedError

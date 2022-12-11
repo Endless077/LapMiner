@@ -43,7 +43,7 @@ def main():
     sys.stdout = sys.__stdout__
 
 def check_tree_struct():
-    paths = [report.PATH + "/excel", report.PATH + "/csv", report.PATH + "/json"]
+    paths = [report.PATH + "/excel", report.PATH + "/csv", report.PATH + "/json", report.PATH + "/output"]
 
     if(not os.path.exists(report.PATH)):
         os.mkdir(report.PATH)
