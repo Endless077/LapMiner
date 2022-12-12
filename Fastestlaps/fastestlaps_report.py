@@ -20,7 +20,7 @@ LAPS_HEADERS = {
 TRACK_HEADERS = {
     'Track_Name': 'Track Name',
     'Country': 'Country',
-    'Total_Lenght': 'Length (km)'
+    'Total_Length': 'Length (km)'
 }
 VEHICLE_HEADERS = {
 	'Vehicle': 'Vehicle Name',
@@ -54,13 +54,13 @@ PATH = "./report"
 def extract_dataset():
     print("Extracting dataset...")
     while True:
-        min_vehicle_laps = input("Insert min number of laptime per vehicle: ")
-        min_track_laps = input("Insert min number of laptime per track: ")
+        min_vehicle_laps = input("Insert min number of laptime per vehicle:\n")
+        min_track_laps = input("Insert min number of laptime per track:\n")
         try:
             int(min_vehicle_laps)
             int(min_track_laps)
         except ValueError:
-            print("Error input, insert valid value.")
+            print("Error input, insert a valid value.")
         else:
             break
     
@@ -188,7 +188,7 @@ def report():
     df_tracks = pd.read_csv("./report/csv/Tracks_Dataset.csv")
     df_vehicles = pd.read_csv("./report/csv/Vehicle_Dataset.csv")
 
-    report = open('./report/output/report.txt', 'w')
+    report = open('./report/report.txt', 'w')
     report.write("report.txt\n\n")
 
     print("Getting laps stats...")
@@ -204,7 +204,7 @@ def report():
 def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
     file.write("######################\n")
     file.write("-Laps report:\n")
-    file.write("--Laps count: "+ str(laps.shape[0]) +"\n")
+    file.write(f"--Laps count: {laps.shape[0]}\n")
 
 def report_laps_plot():
     raise NotImplementedError
@@ -212,7 +212,7 @@ def report_laps_plot():
 def report_tracks(file, laps, tracks, vehicles, json_tracks, json_vehicles):
     file.write("######################\n")
     file.write("-Tracks report:\n")
-    file.write("--Tracks count: "+ str(tracks.shape[0]) +"\n")
+    file.write(f"--Tracks count: {tracks.shape[0]}\n")
 
 def report_tracks_plot():
     raise NotImplementedError
@@ -220,7 +220,7 @@ def report_tracks_plot():
 def report_vehicles(file, laps, tracks, vehicles, json_tracks, json_vehicles):
     file.write("######################\n")
     file.write("-Vehicle report:\n")
-    file.write("--Vehicle count: "+ str(vehicles.shape[0]) +"\n")
+    file.write(f"--Vehicle count: {vehicles.shape[0]}\n")
 
 def report_vehicles_plot():
     raise NotImplementedError

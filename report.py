@@ -19,7 +19,7 @@ import pandas as pd
 def main():
 
     # Logging
-    sys.stdout = utils.Logger("report", "report")
+    sys.stdout = utils.Logger("report", "logs")
 
     # Create folders tree (if exist, delete and create).
     check_tree_struct()
@@ -43,7 +43,7 @@ def main():
     sys.stdout = sys.__stdout__
 
 def check_tree_struct():
-    paths = [report.PATH + "/excel", report.PATH + "/csv", report.PATH + "/json", report.PATH + "/output"]
+    paths = [report.PATH + "/excel", report.PATH + "/csv", report.PATH + "/json"]
 
     if(not os.path.exists(report.PATH)):
         os.mkdir(report.PATH)

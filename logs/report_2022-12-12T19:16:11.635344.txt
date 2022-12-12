@@ -1,0 +1,67 @@
+######################
+Extracting dataset...
+Insert min number of laptime per vehicle:
+Insert min number of laptime per track:
+Getting database connection...
+Creating Views...
+Creating List Cars view...
+Creating Merge Track List view...
+Creating Merge Vehicle List view...
+Creating Merge Lap List view...
+View created.
+######################
+       Lap Time             Driver     PS/KG        Track Name                  Vehicle Name
+0        112.70  Boris Shulmeister  400/1535     Adm Miachkovo      911 Carrera 4S Cabriolet
+1        109.73            unknown  525/1671     Adm Miachkovo    Audi R8 V10 5.2 FSI (Mk I)
+2        117.80            unknown  333/1754     Adm Miachkovo                  Audi S4 (B8)
+3        120.99     Kirill Ladygin  250/1448     Adm Miachkovo   Audi TT 3.2 quattro (Mk II)
+4        120.99            unknown  250/1539     Adm Miachkovo  Audi TT Roadster 3.2 (Mk II)
+...         ...                ...       ...               ...                           ...
+10645    120.17            unknown  571/2660  Zhejiang Circuit          Rolls-Royce Cullinan
+10646    118.64     Zhendong Zhang  200/1253  Zhejiang Circuit                    Subaru BRZ
+10647    111.84     Zhendong Zhang  320/1470  Zhejiang Circuit   Subaru Impreza WRX STI R205
+10648    116.75             Leo Ye  200/1236  Zhejiang Circuit                   Toyota GT86
+10649    101.68            unknown  340/1524  Zhejiang Circuit    Toyota Supra (Mk V 340 PS)
+
+[10650 rows x 5 columns]
+######################
+                                           Track Name               Country  Length (km)
+0                                       Adm Miachkovo                Russia         3.27
+1                                         Albert Park             Australia         5.30
+2   Algarve International Circuit Portimao (Grand ...              Portugal         4.65
+3                                    Anglesey Coastal        United Kingdom         2.49
+4                           Anglesey International Gp        United Kingdom         3.40
+..                                                ...                   ...          ...
+86                                     Willow Springs         United States         3.90
+87                 Willow Springs - Streets Of Willow         United States         2.49
+88                          Winton (National Circuit)             Australia         3.00
+89                              Yas Marina (Pre 2021)  United Arab Emirates         5.55
+90                                   Zhejiang Circuit                 China         3.20
+
+[91 rows x 3 columns]
+######################
+                         Vehicle Name Type  ...                         Trasmission                           Layout
+0                145 Quadrifoglio 2.0  Car  ...                                   5  front engine, front wheel drive
+1                 190E 2.5-16V Evo II  Car  ...                                   5   front engine, rear wheel drive
+2     208 GTi Peugeot Sport Anniver..  Car  ...                    Six-speed manual  front engine, front wheel drive
+3           212 MM Vignale Berlinetta  Car  ...                      5 speed Manual   front engine, rear wheel drive
+4            300C 5.7 HEMI V8 TOURING  Car  ...                                   6   front engine, rear wheel drive
+...                               ...  ...  ...                                 ...                              ...
+2602                      Zenos E10 S  Car  ...                      6 speed manual   front engine, rear wheel drive
+2603                        Zenvo ST1  Car  ...                   7 speed automatic  middle engine, rear wheel drive
+2604   Zonda C12-F Clubsport Roadster  Car  ...                                   6  middle engine, rear wheel drive
+2605                  i30 N  Fastback  Car  ...                      6 speed manual  front engine, front wheel drive
+2606                   ligier JS P217  Car  ...  TLS-200 6-speed sequential gearbox  middle engine, rear wheel drive
+
+[2607 rows x 24 columns]
+######################
+Generating excel dataset...
+Generating csv dataset...
+Generating json dataset...
+Dataset exported in excel, csv and json format.
+######################
+Getting datasets...
+Getting laps stats...
+Getting tracks stats...
+Getting vehicles stats...
+######################

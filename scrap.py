@@ -61,7 +61,7 @@ def main():
    all_vehicle = db.get_all_vehicles(conn)
    for vehicle in all_vehicle:
       user_agent = user_agent_generator.get_random_user_agent()
-      if(vehicle[1] != "Non presente"):
+      if(vehicle[1] != None):
          vehicle_specs = scrap.get_vehicle_info(user_agent, vehicle)
          if(len(vehicle_specs) != 1):
             extracted_specs = scrap.extract_specs(vehicle_specs)
@@ -81,6 +81,7 @@ def main():
    n_tracks = len(db.get_all_tracks(conn))
    n_vehicles = len(db.get_all_vehicles(conn))
    
+   print("######################")
    print("Laps n°: " + str(n_laps) + ".")
    print("Tracks n°: " + str(n_tracks) + ".")
    print("Vehicles n°: " + str(n_vehicles) + ".")

@@ -29,7 +29,7 @@ def change_laptime(laptime):
         return round(int(m) * 60 + float(s), 2)
     else:
         print("Impossible parsing laptime.")
-        return "Non presente."
+        return None
 
 def clean_record(record):
     # Clear a BS4 record (delete \n)
@@ -64,9 +64,9 @@ def extract_specs(specs):
             ret = parse_specs(attr, specs[attr.title()])
             vehicle_record.extend(ret)
         elif(attr.title() == "Power" or attr.title() == "Dimensions"):
-            vehicle_record.extend(["Non presente","Non presente","Non presente"])
+            vehicle_record.extend([None,None,None])
         else:
-            vehicle_record.append("Non presente")
+            vehicle_record.append(None)
 
     return tuple(vehicle_record)
 
@@ -114,22 +114,22 @@ def parse_specs(attr_key, attr_value):
                 if(match_group[group] is not None):
                     parse_attr.append(round(float(match_group[group]), 2))
                     if(group == 1):
-                        parse_attr.append("Non presente")
+                        parse_attr.append(None)
                     group +=1
                 else:
-                    parse_attr.append("Non presente")
+                    parse_attr.append(None)
                     parse_attr.append(round(float(match_group[int(group+1)]), 2))
                     group = group+2 if(group+1 == 1) else group+1
             elif(discovered_dim == 1):
                 if(match_group[group] is not None):
                     parse_attr.append(round(float(match_group[group]), 2))
-                    parse_attr.extend(["Non presente","Non presente"])
+                    parse_attr.extend([None,None])
                 elif(match_group[group+1] is not None):
-                    parse_attr.append("Non presente")
+                    parse_attr.append(None)
                     parse_attr.append(round(float(match_group[int(group+1)]), 2))
-                    parse_attr.append("Non presente")
+                    parse_attr.append(None)
                 else:
-                    parse_attr.extend(["Non presente","Non presente"])
+                    parse_attr.extend([None,None])
                     parse_attr.append(round(float(match_group[int(group+2)]), 2))
 
     elif attr_key == "0 - 100 kph":
@@ -211,7 +211,7 @@ def parse_specs(attr_key, attr_value):
         result = match.findall(attr_value)
         parse_attr.append(result[0])
     else:
-        parse_attr.append("Non presente")
+        parse_attr.append(None)
 
     return parse_attr
 
@@ -241,9 +241,9 @@ def info_attr(soup, attribute):
 def get_track_country(value):
     # Extract the correct value from a specific scrap country value
     # :param value: a scrap value.
-    # :return: the extract country or "Non Presente"".
+    # :return: the extract country or None".
 
-    country = "Non presente"
+    country = None
 
     if(value!=None):
         country = value.strip().title()
@@ -257,7 +257,7 @@ def get_track_length(value):
     # :param value: a scrap value.
     # :return: (km_length, miles_length) or (Non Presente, Non Presente).
 
-    track_length = ("Non presente", "Non presente")
+    track_length = (None, None)
 
     if(value!=None):
         all_length = value.split('/')
@@ -287,7 +287,7 @@ def parse_vehicle(record):
         if(record[1].contents[index_vehicle].has_attr('href')):
             vehicle_href = record[1].contents[index_vehicle].get('href')
     except:
-        vehicle_href = "Non presente"
+        vehicle_href = None
             
     if(check2(record[1].contents[index_vehicle].text)):
         vehicle_name = re.sub("Unplugged Performance", "", record[1].contents[index_vehicle].text).strip()

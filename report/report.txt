@@ -1,0 +1,12 @@
+report.txt
+
+######################
+-Laps report:
+--Laps count: 10650
+######################
+-Tracks report:
+--Tracks count: 91
+######################
+-Vehicle report:
+--Vehicle count: 2607
+######################
