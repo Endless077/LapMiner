@@ -13,8 +13,6 @@ import fastestlaps_scrap as scrap
 import fastestlaps_report as report
 import utils
 
-import pandas as pd
-
 # Defination MAIN
 def main():
 
