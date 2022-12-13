@@ -8,7 +8,6 @@ import pandas as pd
 import fastestlaps_db as db
 
 from IPython.display import display
-import plotly.express as px
 
 LAPS_HEADERS = {
     'Lap_Time': 'Lap Time',
@@ -194,33 +193,102 @@ def report():
     print("Getting laps stats...")
     report_laps(report, df_laps.copy(), df_tracks.copy(), df_vehicles.copy(), json_track, json_vehicle)
     print("Getting tracks stats...")
-    report_tracks(report, df_laps.copy(), df_tracks.copy(), df_vehicles.copy(), json_track, json_vehicle)
+    report_tracks(report, df_tracks.copy(), json_track)
     print("Getting vehicles stats...")
-    report_vehicles(report, df_laps.copy(), df_tracks.copy(), df_vehicles.copy(), json_track, json_vehicle)
+    report_vehicles(report,df_vehicles.copy(), json_vehicle)
 
-    report.write("######################\n")
+    report.write("####################################################################################################################################\n\n")
     report.close()
 
 def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
-    file.write("######################\n")
+
+    #report_laps_plot()
+
+    file.write("####################################################################################################################################\n\n")
     file.write("-Laps report:\n")
-    file.write(f"--Laps count: {laps.shape[0]}\n")
+    file.write(f"--Laps count: {laps.shape[0]}\n\n")
+
+    file.write("######################\n\n")
+
+    file.write("--Track laps stats (count, best time, worse time):\n\n")
+    df = tracks.join(laps.set_index('Track Name'), on="Track Name").groupby('Track Name')
+    file.write(df['Lap Time'].agg(['count','mean','max','min']).to_markdown() + '\n\n')
+    
+    file.write("######################\n\n")
+
+    file.write("--Track best and worse vehicle (track, best vehicle, worse vehicle):\n\n")
+    df = tracks.join(laps.set_index('Track Name'), on="Track Name").set_index('Vehicle Name').groupby('Track Name')
+    file.write(df['Lap Time'].agg(Best='idxmax', Worse='idxmin')[['Worse','Best']].to_markdown() + '\n\n')
 
 def report_laps_plot():
     raise NotImplementedError
 
-def report_tracks(file, laps, tracks, vehicles, json_tracks, json_vehicles):
-    file.write("######################\n")
+def report_tracks(file, tracks, json_tracks):
+    
+    #report_tracks_plot()
+
+    file.write("####################################################################################################################################\n\n")
     file.write("-Tracks report:\n")
-    file.write(f"--Tracks count: {tracks.shape[0]}\n")
+    file.write(f"--Tracks count: {tracks.shape[0]}\n\n")
+
+    file.write("######################\n\n")
+
+    file.write("--Tracks country stats:\n\n")
+    df = tracks.groupby('Country')
+    file.write(df['Length (km)'].agg(['count','mean','max','min']).to_markdown() + '\n\n')
+
+    file.write("######################\n\n")
+
+    file.write("--Track max and min length (region - max track, min track):\n\n")
+    df = tracks.set_index('Track Name').groupby('Country')
+    file.write(df['Length (km)'].agg(Max='idxmax', Min='idxmin')[['Max','Min']].to_markdown() + '\n\n')
 
 def report_tracks_plot():
     raise NotImplementedError
 
-def report_vehicles(file, laps, tracks, vehicles, json_tracks, json_vehicles):
-    file.write("######################\n")
+def report_vehicles(file, vehicles, json_vehicles):
+
+    #report_vehicles_plot()
+
+    file.write("####################################################################################################################################\n\n")
     file.write("-Vehicle report:\n")
-    file.write(f"--Vehicle count: {vehicles.shape[0]}\n")
+    file.write(f"--Vehicle count: {vehicles.shape[0]}\n\n")
+
+    file.write("######################\n\n")
+    
+    file.write("--Vehicle type count:\n\n")
+    df = vehicles.groupby("Type Usage")['Vehicle Name'].agg(Vehicle='count')[['Vehicle']]
+    file.write(df.to_markdown() + '\n\n')
+
+    file.write("######################\n\n")
+
+    file.write("--Vehicle country count:\n\n")
+    df = vehicles.groupby(["Country","Type Usage"])['Vehicle Name'].agg(Vehicle='count')[['Vehicle']]
+    file.write(df.to_markdown() + '\n\n')
+
+    file.write("######################\n\n")
+
+    file.write("--Vehicle type dimensions:\n\n")
+    df = vehicles.groupby('Type Usage')[["Curb Weight (kg)","Wheelbase (m)","Long (m)","Wide (m)","High (m)"]].agg(['mean','max','min'])
+    file.write(df.to_markdown() + '\n\n')
+
+    file.write("######################\n\n")
+
+    file.write("--Vehicle type performance:\n\n")
+    df = vehicles.groupby('Type Usage')[["Top Speed (s)","0-100 kph (s)","Power (ps)","Torque (Nm)"]].agg(['mean','max','min'])
+    file.write(df.to_markdown() + '\n\n')
+
+    file.write("######################\n\n")
+
+    file.write("--Vehicle country dimensions:\n\n")
+    df = vehicles.groupby('Country')[["Curb Weight (kg)","Wheelbase (m)","Long (m)","Wide (m)","High (m)"]].agg(['mean','max','min'])
+    file.write(df.to_markdown() + '\n\n')
+
+    file.write("######################\n\n")
+
+    file.write("--Vehicle country performance:\n\n")
+    df = vehicles.groupby('Country')[["Top Speed (s)","0-100 kph (s)","Power (ps)","Torque (Nm)"]].agg(['mean','max','min'])
+    file.write(df.to_markdown() + '\n\n')
 
 def report_vehicles_plot():
     raise NotImplementedError

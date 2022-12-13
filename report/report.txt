@@ -1,12 +1,1096 @@
 report.txt
 
-######################
+####################################################################################################################################
+
 -Laps report:
---Laps count: 10650
+--Laps count: 14265
+
 ######################
+
+--Track laps stats (count, best time, worse time):
+
+| Track Name                                                      |   count |     mean |    max |    min |
+|:----------------------------------------------------------------|--------:|---------:|-------:|-------:|
+| Adams Motorsports Park                                          |       4 |  51.7    |  53.4  |  50.6  |
+| Adm Miachkovo                                                   |      44 | 119.363  | 132.5  | 108.77 |
+| Adria                                                           |      12 |  90.9142 |  95.13 |  83.21 |
+| Alastaro Circuit                                                |       1 |  91.98   |  91.98 |  91.98 |
+| Albert Park                                                     |     100 |  83.4682 |  89.64 |  77.87 |
+| Aldo Scribante                                                  |      10 |  71.78   |  74.3  |  68.9  |
+| Algarve International Circuit (Short)                           |       2 | 115.73   | 116.76 | 114.7  |
+| Algarve International Circuit Portimao (Grand Prix)             |      61 |  91.3608 | 130.7  |  76.47 |
+| Ams Driving Center Gross Dolln                                  |      16 |  87.3144 |  93.6  |  81.64 |
+| Anglesey                                                        |      42 |  54.1424 |  59.06 |  48.82 |
+| Anglesey Coastal                                                |     112 |  80.2979 |  96.1  |  66.94 |
+| Anglesey International Gp                                       |      47 |  99.5281 | 121.4  |  91    |
+| Anglesey National                                               |      92 |  65.5141 |  75.2  |  59.2  |
+| Anneau Du Rhin                                                  |      12 |  85.8233 |  88.08 |  81.2  |
+| Anneau Du Rhin 3.7 Km                                           |       3 | 101.967  | 104.5  |  99.5  |
+| Anneau Du Rhin Short                                            |      46 |  61.4976 |  67.7  |  56.03 |
+| Aragon                                                          |       1 | 140      | 140    | 140    |
+| Aragon Motogp                                                   |       5 |  88.296  | 121.9  |  77.58 |
+| Arctic Circle Raceway                                           |      17 | 110.582  | 119    |  96.29 |
+| Area 27                                                         |       4 | 163.5    | 182    | 146    |
+| Ascari                                                          |       1 | 124.91   | 124.91 | 124.91 |
+| Ascari Race Resort                                              |       7 | 145.673  | 157.16 | 123.54 |
+| Assen                                                           |      16 | 117.804  | 134.7  | 104.83 |
+| Auto Club Speedway                                              |      10 |  54.629  |  60    |  50.94 |
+| Auto Motor Und Sport Handling                                   |      16 |  25.4325 |  26.7  |  24.76 |
+| Auto Motor Und Sport Snowy Handling Course                      |       5 |  73.65   |  83.4  |  63    |
+| Autobild Sportscars Snowy Track                                 |       6 |  67.625  |  70    |  62.7  |
+| Autobild Sportscars Snowy Track (2018)                          |       4 |  95.9475 |  99.86 |  93.72 |
+| Autocar Dry Handling Track                                      |     138 |  74.1743 |  92.2  |  63.6  |
+| Autocar Snake                                                   |       3 |  37.6133 |  38.26 |  36.95 |
+| Autocar Wet Handling Track                                      |     122 |  74.6648 |  96.2  |  64.3  |
+| Autoclub Speedway Sportcar                                      |       8 | 105.623  | 112    | 101.5  |
+| Autodromo Del Levante Bari                                      |      11 |  56.9782 |  61.66 |  53.86 |
+| Autodromo Vallelunga                                            |       1 | 113.6    | 113.6  | 113.6  |
+| Autopartner Test Route                                          |      16 |  73.6069 |  77.34 |  70.18 |
+| Autozeitung Test Track                                          |     275 | 100.038  | 103.9  |  89.6  |
+| Autódromo De Tocancipá                                          |      20 |  77.9065 |  95.1  |  70    |
+| Autódromo Hermanos Rodríguez Gp                                 |     120 |  78.2699 |  92.76 |  74.76 |
+| Autódromo Internacional De Las Américas                         |       2 |  93.835  |  96.28 |  91.39 |
+| Bahrain Inner Circuit                                           |      20 |  68.464  |  74.98 |  64    |
+| Bahrain International Circuit                                   |     154 |  92.6505 | 139    |  87.26 |
+| Bahrain Outer Circuit                                           |      21 |  54.1848 |  55.43 |  53.38 |
+| Baku City Circuit                                               |     119 | 103.45   | 121.95 | 100.49 |
+| Balocco                                                         |     299 | 181.884  | 196.39 | 156.62 |
+| Balocco Alfa Romeo                                              |       6 | 144.415  | 152.56 | 139.25 |
+| Barber Motorsports Park                                         |      11 |  98.82   | 110.97 |  93.1  |
+| Barcelona Catalunya F1 (2007-2020)                              |     111 |  81.2553 | 105.87 |  75.41 |
+| Barcelona Catalunya F1 (Post 2018)                              |      40 |  79.2745 |  85.93 |  76.74 |
+| Baskerville Raceway                                             |      11 |  60.7609 |  65.75 |  58.06 |
+| Battersea Park Street Circuit                                   |      20 |  85.5685 |  88.15 |  83.9  |
+| Bedford Autodrome East Circuit                                  |       9 |  67.4333 |  80.4  |  62.75 |
+| Bedford Autodrome Gt                                            |       1 | 159.38   | 159.38 | 159.38 |
+| Bedford Autodrome South Circuit                                 |      20 |  57.9065 |  66.43 |  53    |
+| Bedford Autodrome West (Post 5/2015)                            |      19 |  82.7684 |  94.11 |  76.63 |
+| Bedford Autodrome West Circuit (06/2008 - 05/2015)              |     150 |  87.458  |  97.9  |  70.8  |
+| Bedford Autodrome West Circuit (2004 - 06/2008)                 |      82 |  89.2613 | 105.8  |  77.1  |
+| Bedford Autodrome West Circuit (Pre 2004)                       |      24 |  84.4746 |  93.9  |  67.29 |
+| Bedford Autodrome Wet Handling Test                             |       9 |  56.0833 |  69.8  |  51.95 |
+| Beijing Olympic Green Circuit (2014)                            |      19 | 104.036  | 112.6  | 102.2  |
+| Bend West Circuit                                               |      12 |  96.6025 | 103.69 |  89.5  |
+| Best Motoring Oval                                              |       6 |  96.2    | 102.41 |  89.21 |
+| Bilster Berg                                                    |      11 | 110.231  | 120.96 | 103.07 |
+| Biscayne Bay Street Circuit                                     |      20 |  66.8065 |  68.39 |  65.95 |
+| Biķernieki (High Speed)                                         |      20 |  83.105  |  87    |  77.1  |
+| Blyton Park Circuit                                             |      49 |  65.8386 |  79.2  |  56.15 |
+| Blyton Park Outer Circuit                                       |      35 |  72.3086 |  75.6  |  66.4  |
+| Bordeaux Merignac                                               |       5 |  56.24   |  57.9  |  54.7  |
+| Boxberg Bosch Test Track                                        |      11 |  45.6545 |  46.9  |  44.4  |
+| Brands Hatch (Indy Circuit)                                     |      33 |  55.8239 |  63.85 |  50.52 |
+| Brands Hatch Gp                                                 |       1 | 105.71   | 105.71 | 105.71 |
+| Bridgehampton Circuit                                           |       7 | 126.307  | 128.5  | 120.85 |
+| Bruntingthorpe                                                  |      39 |  83.2956 |  90.3  |  72.9  |
+| Bryant Park Hillclimb                                           |       2 |  61.4    |  61.7  |  61.1  |
+| Buddh International Circuit Autox                               |      27 |  74.2889 |  83.4  |  63.1  |
+| Buttonwillow Configuration 1                                    |       5 | 116.794  | 124.29 | 110.69 |
+| Buttonwillow Configuration 1 Ccw                                |       3 | 122.143  | 124.65 | 117.94 |
+| Buttonwillow Configuration 13                                   |      53 | 116.668  | 134.77 |  99.11 |
+| Buttonwillow Configuration 13 A                                 |       1 | 123.16   | 123.16 | 123.16 |
+| Buttonwillow Configuration 13 A Ccw                             |       1 | 123.81   | 123.81 | 123.81 |
+| Buttonwillow Configuration 13 Ccw                               |       2 | 118.835  | 120.7  | 116.97 |
+| Buttonwillow Configuration 26                                   |       3 | 125      | 127    | 122.9  |
+| Buttonwillow East Loop                                          |       5 |  58.736  |  60.06 |  57.6  |
+| Buttonwillow West Loop (Config 24)                              |      10 |  68.109  |  70.86 |  65.18 |
+| Cadwell Park (Full Circuit)                                     |      39 | 102.37   | 110.7  |  93.79 |
+| Cadwell Park Club Circuit                                       |       7 |  78.1729 |  81.75 |  75.2  |
+| Cadwell Park Woodland                                           |      20 |  64.335  |  68    |  53.3  |
+| Calabogie Motorsports Park                                      |      20 | 130.775  | 138    | 122    |
+| Camden Airport (Post 10/2010)                                   |      11 | 150.279  | 757.56 |  84    |
+| Camden Airport (Pre 10/2010)                                    |      28 |  76.3157 | 151.46 |  66.92 |
+| Canadian Tire Motorsport Park                                   |       6 |  69.625  |  82.36 |  64.09 |
+| Castelloli Circuit                                              |       1 | 117.38   | 117.38 | 117.38 |
+| Castle Combe                                                    |      44 |  83.6686 | 118    |  70.7  |
+| Castle Combe (Pre 1999)                                         |      48 |  79.4813 |  94.81 |  69.37 |
+| Charade                                                         |      17 | 139.665  | 148.31 | 129    |
+| Chuckwalla Valley Raceway                                       |      14 | 119.106  | 124.53 | 111.91 |
+| Chuckwalla Valley Raceway Ccw                                   |       1 | 111.1    | 111.1  | 111.1  |
+| Circuit Chambley                                                |       2 | 130.42   | 141.84 | 119    |
+| Circuit De La Sarthe                                            |      38 | 209.792  | 237.18 | 194.79 |
+| Circuit De La Sarthe (1932 - 1971)                              |      62 | 266.982  | 382.7  | 199.8  |
+| Circuit De La Sarthe (1972 - 1978) (13.640 Km)                  |      14 | 236.864  | 274.4  | 215.7  |
+| Circuit De La Sarthe (1979-1985)                                |      10 | 234.679  | 245.92 | 223.9  |
+| Circuit De La Sarthe (1987-1989)                                |       2 | 218.095  | 221.48 | 214.71 |
+| Circuit De Ledenon                                              |       1 | 122.5    | 122.5  | 122.5  |
+| Circuit De Nevers Magny-Cours Club                              |     254 |  85.1632 | 102.05 |  73.81 |
+| Circuit De Nevers Magny-Cours Gp                                |      58 | 115.842  | 131.15 | 102.99 |
+| Circuit D´ Issoire                                              |       7 |  78.8814 |  83.89 |  73.92 |
+| Circuit Gilles Villeneuve                                       |      80 |  74.0541 |  81.96 |  70.24 |
+| Circuit Of The Americas                                         |     130 |  96.128  | 114.81 |  92.03 |
+| Circuit Paul Ricard (Post 2018)                                 |      79 |  91.8325 |  98.98 |  88.32 |
+| Circuit Paul Ricard (Pre 2018)                                  |      13 | 102.435  | 132    |  97.03 |
+| Circuito Tazio Nuvolari                                         |      18 |  87.7661 |  96.2  |  83.01 |
+| Circuti Di Cremona                                              |       1 | 100.1    | 100.1  | 100.1  |
+| Contidrom (3.3 Km)                                              |     192 |  98.5021 | 118.9  |  86    |
+| Contidrom (3.63 Km)                                             |      47 | 102.764  | 115.6  |  89.6  |
+| Contidrom (3.8 Km)                                              |      41 |  94.2017 | 104.1  |  85.72 |
+| Contidrom Handling Track (1.9 Km)                               |      22 |  78.2305 |  88.5  |  69.6  |
+| Croft                                                           |      21 | 101.051  | 107.55 |  91.53 |
+| Croft (Pre 1997)                                                |      14 |  79.4371 |  85.3  |  74.6  |
+| Croix En Ternois                                                |       9 |  75.1922 |  79.6  |  68.21 |
+| Curborough Sprint                                               |       4 |  74.375  |  78.9  |  71.4  |
+| Daimler-Chrysler Proving Ground                                 |      10 |  78.897  |  84.13 |  65.53 |
+| Daytona Road Course                                             |       3 | 115.313  | 125.28 | 108.86 |
+| Dijon-Prenois                                                   |      20 |  82.209  |  88.97 |  75.71 |
+| Donington Park Gp (Post 1985)                                   |       1 | 111.23   | 111.23 | 111.23 |
+| Donington Park National                                         |      24 |  80.9796 |  91.7  |  72.41 |
+| Dreux                                                           |       9 |  60.3689 |  70.69 |  54.38 |
+| Dubai Autodrome Gp Circuit                                      |       1 | 131.73   | 131.73 | 131.73 |
+| Dubai Autodrome International Circuit                           |       1 | 107.17   | 107.17 | 107.17 |
+| Dubai Autodrome National Circuit                                |       2 |  94.455  |  95.31 |  93.6  |
+| Dunnville Autodrome                                             |      36 |  73.5381 |  80.8  |  67.52 |
+| Ebisu                                                           |      18 |  74.7261 |  82.25 |  69.41 |
+| El Toro                                                         |      14 |  42.8279 |  47.16 |  39.89 |
+| El Toro Topgear Us                                              |      18 |  86.3    |  90    |  82    |
+| Estoril                                                         |      19 | 113.773  | 124.08 | 106    |
+| European Bridgestone Proving Ground                             |       2 |  67.33   |  68.12 |  66.54 |
+| Eurospeedway Lausitz                                            |     105 |  96.435  | 108.39 |  85.23 |
+| Eurospeedway Lausitz Dekra Handling                             |      10 |  69.509  |  76.89 |  65.35 |
+| Eurospeedway Lausitz Gp                                         |       1 | 121.07   | 121.07 | 121.07 |
+| Ferte Gaucher                                                   |      44 | 126.79   | 142.5  | 112.66 |
+| Fiorano                                                         |      38 |  86.55   | 100.6  |  79    |
+| Florida International Rally & Motorsport Park                   |       1 |  87.01   |  87.01 |  87.01 |
+| Folembray                                                       |       8 |  58.5375 |  60.45 |  54.39 |
+| Forestburn Speed Hill Climb                                     |       2 |  49.865  |  50.09 |  49.64 |
+| Franciacorta                                                    |      42 |  86.1569 |  94.72 |  75.59 |
+| Fuji Raceway                                                    |      21 | 111.96   | 128.96 | 105.82 |
+| Fuji Speedway (Post 2005)                                       |      66 | 114.013  | 136.08 |  82.64 |
+| Gingerman Raceway                                               |      25 |  99.8084 | 106.58 |  86.7  |
+| Goodwood                                                        |      57 |  92.7088 | 108.6  |  75.03 |
+| Goodwood Hill Climb                                             |      55 |  58.5704 |  72.51 |  47.07 |
+| Gotland Ring (Gp Track)                                         |       1 | 204.39   | 204.39 | 204.39 |
+| Gotland Ring (Northern Loop)                                    |      41 |  99.6837 | 110.2  |  87.9  |
+| Grand Sambuc                                                    |       1 |  74.9    |  74.9  |  74.9  |
+| Grand Tour Eboladrome                                           |      36 |  84.9444 |  99.7  |  72.9  |
+| Grand Tour Rallycross                                           |      19 |  83.1211 |  99.3  |  77.2  |
+| Grattan Raceway                                                 |      49 |  91.591  |  99.58 |  82.09 |
+| Gunsai                                                          |      47 |  27.7719 |  30.41 |  25.77 |
+| Hachi Highland Hillclimb                                        |       2 |  79.935  |  80.06 |  79.81 |
+| Haras Tuiuti                                                    |       1 |  72.81   |  72.81 |  72.81 |
+| Harewood Hill Climb                                             |      11 |  68.5791 |  70.86 |  65.51 |
+| Haute Saintonge                                                 |      23 |  64.0883 |  68.42 |  59.78 |
+| Hockenheim Gp                                                   |     263 | 110.506  | 126.7  |  71.21 |
+| Hockenheim Gp 1981                                              |       2 | 161.75   | 163.94 | 159.56 |
+| Hockenheim Short                                                |     280 |  71.2286 |  74    |  63.8  |
+| Hockenheim Short "Powercar Layout"                              |      16 |  77.8113 |  81.66 |  72.86 |
+| Hungaroring                                                     |     186 |  96.4094 | 221.2  |  73.45 |
+| Imola (1981-1994)                                               |       1 | 134.08   | 134.08 | 134.08 |
+| Imola (Post 2008)                                               |      69 |  82.2684 | 130.8  |  73.61 |
+| Inde Motorsports Ranch Configuration 4                          |       6 |  99.3717 | 103.74 |  93.75 |
+| Indianapolis Motor Speedway Road Course                         |       2 |  92.01   |  94.4  |  89.62 |
+| Inta                                                            |     127 |  73.0162 |  81.39 |  67.26 |
+| Inta Long                                                       |       7 | 103.359  | 104.39 | 101.47 |
+| Inta Long (Conf 2)                                              |      15 |  88.128  |  92.57 |  84.47 |
+| Interlagos                                                      |     141 |  77.9159 | 135.69 |  67.28 |
+| Istanbul Park                                                   |      47 |  99.9187 | 180.83 |  82.87 |
+| Jarama                                                          |      82 | 118.521  | 131.63 |  97.77 |
+| Jeddah Corniche Circuit                                         |      39 |  89.0387 |  91.82 |  87.51 |
+| Jerez                                                           |       2 | 116.48   | 120.8  | 112.16 |
+| Kakucs Ring                                                     |      38 |  50.8876 |  55.2  |  47.09 |
+| Killarney                                                       |     102 |  87.7636 |  97.95 |  77.9  |
+| Knockhill International Circuit                                 |       1 |  57.02   |  57.02 |  57.02 |
+| Kotarr                                                          |       7 |  78.3757 |  80.9  |  76.13 |
+| Kyalami                                                         |      70 | 130.911  | 144.3  | 116.5  |
+| Kyalami (New)                                                   |      28 | 121.837  | 138.5  | 103    |
+| Kühtai Bergstraße                                               |       4 |  90.925  |  92.9  |  86.7  |
+| La Chatre                                                       |       2 |  47.975  |  48.07 |  47.88 |
+| Laguna Seca (Post 1988)                                         |     197 | 100.153  | 132.67 |  70.1  |
+| Laguna Seca (Pre 1988)                                          |       5 |  86.54   |  89.9  |  80.5  |
+| Laquais                                                         |      12 |  85.2175 |  90.23 |  76    |
+| Las Vegas Motor Speedway Inside Road Course                     |       5 |  57.34   |  58.1  |  56.2  |
+| Las Vegas Motor Speedway Inside Road Course Short               |       8 |  39.875  |  41.1  |  38.8  |
+| Le Mans (Bugatti)                                               |      99 | 110.949  | 119.1  |  98.48 |
+| Le Mans (Bugatti) (1976-1986)                                   |       2 | 119.09   | 120.18 | 118    |
+| Lime Rock Park                                                  |      18 |  70.6822 | 101.2  |  59.9  |
+| Lime Rock Park With Uphill Chicane                              |      10 |  64.694  |  76.78 |  57.6  |
+| Linas-Montlhery                                                 |      43 | 179.532  | 205.08 | 149.9  |
+| Linas-Montlhery (9Km)                                           |      26 | 279.009  | 303.88 | 241    |
+| Linas-Montlhery 9181 M                                          |       1 | 261      | 261    | 261    |
+| Llandow                                                         |      71 |  46.5152 |  51.43 |  42.29 |
+| Long Beach Eprix Circuit                                        |      20 |  57.4845 |  59.96 |  56.94 |
+| Long Beach Grand Prix Circuit                                   |       9 |  77.2878 |  94.37 |  71.33 |
+| Los Arcos (Navarra)                                             |       2 | 127.24   | 127.89 | 126.59 |
+| Losail International Circuit                                    |      21 |  84.9543 | 136    |  80.83 |
+| Luk Driving Center                                              |      34 |  72.2209 | 122.94 |  64.82 |
+| Madras Motor Race Track                                         |      59 | 117.124  | 123.4  | 107.01 |
+| Magione                                                         |      18 |  78.1111 |  82    |  73    |
+| Magny Cours                                                     |       3 | 112.113  | 119.5  | 108.15 |
+| Mallory Park                                                    |       3 |  64.5733 |  68    |  60.02 |
+| Mantorp Park                                                    |      19 |  93.0474 |  99.72 |  87.5  |
+| Marcoussis                                                      |      32 |  87.1206 | 105.46 |  78.54 |
+| Marina Bay                                                      |     102 | 103.164  | 117.53 |  96.01 |
+| Marlboro Motor Raceway                                          |       2 | 106.25   | 107.5  | 105    |
+| Megara                                                          |      36 |  73.8594 |  82.6  |  61.29 |
+| Memphis International Raceway                                   |       3 |  73.3867 |  75.49 |  71.58 |
+| Mendig Afb Circuit                                              |     119 | 114.585  | 138.4  | 101    |
+| Miami International Autodrome                                   |      20 |  90.1575 |  93.16 |  88.79 |
+| Milford Road Course                                             |       6 | 116.027  | 119.97 | 108    |
+| Millbrook Alpine Hill Route                                     |      14 | 111.296  | 115.95 | 103.18 |
+| Millbrook Handling Circuit                                      |      33 |  46.2115 |  52.9  |  41.2  |
+| Miller Motorsports Park                                         |       8 | 127.504  | 135.57 | 119.99 |
+| Mira Dry Handling Track                                         |      21 |  46.1819 |  72    |  40.66 |
+| Miramas Handling Course                                         |       9 |  86.2222 |  90.8  |  82.5  |
+| Mireval                                                         |      92 |  98.2045 | 116.21 |  87.56 |
+| Mireval (1994)                                                  |      20 |  85.875  |  95.3  |  80    |
+| Mittsverigebanan                                                |       9 |  65.4133 |  72    |  60.3  |
+| Mnevniki Airfield                                               |      13 |  84.1923 | 143.25 |  72    |
+| Modena Aerautodromo (1950-1972)                                 |       2 |  67.45   |  70.4  |  64.5  |
+| Modena Autodrome                                                |      11 |  78.6018 |  88.71 |  59.28 |
+| Monaco (Post 2014)                                              |     120 |  73.0312 |  82.47 |  70.17 |
+| Monaco Formula E (2014-2019)                                    |      20 |  54.256  |  56.94 |  53.48 |
+| Monteblanco Wet Handling                                        |       4 |  54.6125 |  56.8  |  51.37 |
+| Monticello Motor Club (Full Length)                             |       1 | 153.25   | 153.25 | 153.25 |
+| Monticello Motor Club North Course                              |      10 |  86.948  |  96.21 |  79.42 |
+| Monza                                                           |     159 |  88.0693 | 157    |  78.89 |
+| Mornay                                                          |      10 |  90.898  |  95.7  |  87.86 |
+| Moroso Motorsports Park                                         |       2 |  92.1    |  94.8  |  89.4  |
+| Mortefontaine                                                   |      58 |  97.8619 | 122.19 |  82.86 |
+| Moscow Raceway Gp                                               |      20 | 117.05   | 136.36 | 102.22 |
+| Moscow Street Circuit                                           |      20 |  70.408  |  71.97 |  69.43 |
+| Motortrend Figure-8                                             |     251 |  23.6721 |  24.6  |  21.8  |
+| Motortrend Ice Handling Course                                  |       2 |  66.1    |  66.8  |  65.4  |
+| Motovision Handling Course                                      |      51 |  19.8292 |  20.91 |  18.43 |
+| Motown Mile                                                     |      46 |  56.2333 |  62.8  |  51.17 |
+| Mugello                                                         |      26 |  88.9092 | 143    |  75.14 |
+| Nardo Handling Course                                           |       9 | 165.111  | 176.6  | 149.8  |
+| Nardo Handling Course Conf 2 (2.8 Km)                           |       5 |  75      |  78.8  |  71.5  |
+| Ncm Motorsport Park                                             |      20 |  92.172  | 102.52 |  83.34 |
+| Ncm Motorsports Park                                            |       8 | 122.879  | 130.66 | 118.14 |
+| Ncm Motorsports Park Grand Full                                 |      36 | 137.933  | 158.63 | 122.83 |
+| Nelson Ledges Raceway                                           |      22 |  79.4709 |  85    |  66.21 |
+| New Jersey Motorsports Park (Thunderbolt)                       |       1 |  98.77   |  98.77 |  98.77 |
+| Nihonkai Maze                                                   |      26 |  73.8904 |  87.86 |  63.45 |
+| Nikko                                                           |      16 |  43.0981 |  44.47 |  41.73 |
+| Nufenen Pass                                                    |       6 |  88.7017 |  98.67 |  82.06 |
+| Nürburgring Gp (3.1 Km)                                         |      11 | 109.523  | 129.44 |  87.15 |
+| Nürburgring Gp (5.15 Km)                                        |      34 | 104.426  | 148.23 |  85.27 |
+| Nürburgring Gp Sprint                                           |      83 | 103.336  | 179.1  |  88.27 |
+| Nürburgring Nordschleife                                        |     281 | 461.915  | 493    | 390.7  |
+| Nürburgring Nordschleife (1927-1966)                            |       1 | 515.4    | 515.4  | 515.4  |
+| Nürburgring Nordschleife (1973-1982)                            |       3 | 534.567  | 594.9  | 420.8  |
+| Nürburgring Nordschleife Btg                                    |      20 | 468.934  | 597.38 | 414    |
+| Nürburgring Nordschleife Full                                   |      54 | 477.858  | 687.5  | 395.18 |
+| Old Highway                                                     |      10 |  29.812  |  37.8  |  24.85 |
+| Ontario Motor Speedway                                          |      14 | 124.086  | 154    | 114.1  |
+| Oregon Raceway Park Ccw                                         |       1 | 110      | 110    | 110    |
+| Oregon Raceway Park Cw                                          |       1 | 111      | 111    | 111    |
+| Oschersleben                                                    |     154 | 111.322  | 128.44 |  95.86 |
+| Oulton Park (Full Circuit)                                      |      24 | 120.735  | 133    | 105    |
+| Oulton Park (Island Circuit)                                    |       1 |  91.42   |  91.42 |  91.42 |
+| Pacific Raceways                                                |       1 |  92.26   |  92.26 |  92.26 |
+| Palm Beach International Raceway                                |       1 |  79.45   |  79.45 |  79.45 |
+| Palma Renn Arena                                                |      20 | 102.663  | 128.46 |  94    |
+| Pannonia Ring                                                   |      20 | 120.317  | 133.77 | 111.11 |
+| Papenburg Handling Course                                       |       4 |  76.475  |  78.2  |  74.3  |
+| Pembrey (Post 2017)                                             |       4 |  72.8175 |  76.83 |  66.53 |
+| Pembrey (Pre 2017)                                              |       7 |  75.9614 |  79.4  |  73.7  |
+| Pferdsfeld                                                      |       6 |  77.6967 |  81.42 |  74.66 |
+| Phillip Island                                                  |      76 | 117.062  | 132.98 |  98.02 |
+| Pikes Peak                                                      |       1 | 708.26   | 708.26 | 708.26 |
+| Pittsburgh International Race Complex                           |       1 | 100.49   | 100.49 | 100.49 |
+| Pocono Raceway Road Course Short Counterclockwise (Pre 1985)    |       3 |  82.9    |  83.9  |  82    |
+| Puerto Madero Street Circuit                                    |      20 |  70.375  |  73.05 |  69.13 |
+| Punta Del Este Formula E (Pre 2015)                             |      20 |  77.345  |  81.49 |  75.41 |
+| Putnam Park                                                     |       1 |  74.75   |  74.75 |  74.75 |
+| Putrajaya Street Circuit                                        |      20 |  83.255  |  85.82 |  81.78 |
+| Queensland Raceway Sprint Circuit                               |      31 |  59.401  |  64.74 |  54.31 |
+| Raceland                                                        |      60 |  58.791  |  63.42 |  53.35 |
+| Red Bull Ring                                                   |     142 |  65.7452 |  79.75 |  62.94 |
+| Reno-Fernley Raceway Conf 1 (2.74 M)                            |      10 | 155.603  | 164    | 146    |
+| Reno-Fernley Raceway Conf 2 (1.7M)                              |       5 |  94.24   |  95.7  |  92.7  |
+| Ridge Motorsports Park                                          |      10 | 115.48   | 124.05 | 104.24 |
+| Ring Knutstorp                                                  |      83 |  75.2155 |  90.5  |  61.1  |
+| Ring Knutstrop (Conf 2)                                         |     149 |  75.9493 |  92.6  |  63.05 |
+| Riverside Raceway                                               |       2 | 159.5    | 167    | 152    |
+| Road America                                                    |       5 | 119.634  | 138.57 | 106.93 |
+| Road Atlanta                                                    |      13 |  94.2638 | 111    |  84.88 |
+| Rockingham International Super Sportscar                        |      34 |  94.8035 | 104.52 |  88.3  |
+| Rockingham National                                             |      90 |  86.7518 | 152.09 |  74.2  |
+| Rockingham Oval Circuit                                         |       3 |  45.7667 |  46.2  |  45.5  |
+| Roebling Road Raceway                                           |       3 |  86.46   |  89.8  |  82.28 |
+| Rudskogen (Post 2012)                                           |       2 | 109.5    | 116    | 103    |
+| Rudskogen (Pre 2012)                                            |       8 |  67.125  |  70    |  64    |
+| Rustavi International Motorpark                                 |       2 | 112.6    | 116.85 | 108.35 |
+| Sachsenring                                                     |     103 |  92.367  |  95.18 |  85.19 |
+| Salzburgring                                                    |       3 |  95.65   | 101.45 |  89.5  |
+| Sandown                                                         |       1 |  83      |  83    |  83    |
+| Sebring International Raceway                                   |      19 | 114.277  | 141.48 | 100.12 |
+| Sepang                                                          |      42 |  95.4898 | 163    |  90.07 |
+| Serres Racing Circuit                                           |     144 |  98.1142 | 107.2  |  80.46 |
+| Shanghai International Circuit                                  |      88 |  96.4516 | 139.88 |  91.09 |
+| Silverstone                                                     |      24 | 138.837  | 174.81 | 128.1  |
+| Silverstone (International)                                     |       3 |  68.6467 |  70.09 |  66.38 |
+| Silverstone (National Circuit)                                  |      28 |  70.8504 | 104.2  |  58.24 |
+| Silverstone Gp (Post 2011)                                      |     150 |  90.1597 | 119.51 |  84.3  |
+| Silverstone Southern Loop                                       |      18 |  82.8333 |  96.08 |  66    |
+| Silverstone Stowe                                               |       6 |  57.4883 |  63.2  |  54.6  |
+| Smolensk Ring                                                   |      57 | 111.118  | 132.2  |  95.1  |
+| Snetterton 200                                                  |       1 |  76.2    |  76.2  |  76.2  |
+| Snetterton 300                                                  |      19 | 138.655  | 152.01 | 120.28 |
+| Sochi Autodrom                                                  |     120 |  95.6452 | 101.71 |  91.3  |
+| Sodegaura Forest Raceway                                        |       1 |  77.16   |  77.16 |  77.16 |
+| Solo Ii Autocross Circuit                                       |       3 |  47.9133 |  48.22 |  47.72 |
+| Sonoma Raceway (Full)                                           |       6 | 106.99   | 121.02 |  98.3  |
+| Spa Francorchamps                                               |     182 | 116.888  | 178    | 101.25 |
+| Sportauto Wet Handling Test                                     |      85 |  94.4094 | 109.8  |  87.2  |
+| Spring Mountain                                                 |       2 | 106.65   | 107.9  | 105.4  |
+| Spring Mountain (Mansell C)                                     |       1 | 148.76   | 148.76 | 148.76 |
+| Spring Mountain (Radical Loop Section)                          |      27 |  83.7211 |  92.2  |  75.15 |
+| Streets Of Willow (0.96 Mile)                                   |      39 |  69.0779 |  99.94 |  60.41 |
+| Sturup Raceway                                                  |       3 |  75.6667 |  80    |  69    |
+| Sugo                                                            |      50 | 103.393  | 132.03 |  93.76 |
+| Summit Point                                                    |       1 |  87.76   |  87.76 |  87.76 |
+| Suzuka                                                          |     128 | 104.917  | 170    |  87.06 |
+| Tempelhof Airport Street Circuit (2014 - 2015)                  |      20 |  82.106  |  82.8  |  81.55 |
+| Texas World Speedway                                            |       6 | 117.502  | 130.72 | 105.84 |
+| Thermal Club Raceway                                            |      18 |  83.4672 |  94.3  |  77.18 |
+| Thermal Club Raceway Long                                       |      20 | 136.592  | 145    | 128    |
+| Thruxton                                                        |      20 |  93.801  | 103.24 |  81    |
+| Thunder Hill Raceway                                            |       2 |  84.6    |  85.38 |  83.82 |
+| Thunderhill Park East                                           |      23 | 130.66   | 140.3  | 116.84 |
+| Thunderhill Park West                                           |      25 |  87.6332 | 100.91 |  80    |
+| Tochigi Honda Test Course                                       |       2 |  94.13   |  94.59 |  93.67 |
+| Top Gear Rallycross Track                                       |      11 | 125.845  | 147.1  | 112.6  |
+| Top Gear Track                                                  |     278 |  87.1377 | 109.1  |  70.6  |
+| Tor Poznan                                                      |       2 | 109.05   | 112.2  | 105.9  |
+| Toronto Motorsports Park                                        |      36 |  85.2914 | 103    |  70.06 |
+| Tsukuba                                                         |     251 |  66.1853 |  69.9  |  58.25 |
+| Twin Ring Motegi East                                           |      11 |  99.14   | 106.31 |  95.73 |
+| Twin Ring Motegi Gp                                             |      20 | 134.018  | 143.71 | 127    |
+| U-Drag                                                          |      10 |  35.91   |  42    |  30.9  |
+| Vairano Handling Course                                         |     294 |  80.264  |  88.56 |  67.68 |
+| Vairano Pro                                                     |       7 |  83.59   |  88.61 |  80.71 |
+| Val De Vienne                                                   |       9 | 110.093  | 115.81 | 102.8  |
+| Vallelunga International Circuit                                |       1 | 131.65   | 131.65 | 131.65 |
+| Vasco Sameiro (Braga)                                           |       1 |  93.68   |  93.68 |  93.68 |
+| Velo Citta (1.68 Km)                                            |     101 |  68.6443 |  81.07 |  54.63 |
+| Virginia International Raceway                                  |       3 | 118.097  | 120.96 | 116.3  |
+| Virginia International Raceway Grand East Course (Post 01/2014) |     157 | 178.189  | 200.8  | 154.9  |
+| Virginia International Raceway Grand East Course (Pre 01/2014)  |     126 | 187.461  | 209.3  | 165.63 |
+| Wakefield Park                                                  |     140 |  72.0261 |  81.53 |  58.2  |
+| Waterford Hills                                                 |      18 |  82.4656 |  92.4  |  70.89 |
+| Willow Springs                                                  |     188 |  96.4796 | 121.7  |  81.08 |
+| Willow Springs - Horse Thief Mile                               |       2 |  64.08   |  64.15 |  64.01 |
+| Willow Springs - Streets Of Willow                              |     131 |  86.9754 | 100.05 |  76.45 |
+| Willow Springs - Streets Of Willow (1.7 Miles)                  |      14 |  74.0243 |  87.48 |  68.45 |
+| Willow Springs - Streets Of Willow Ccw                          |      10 |  82.192  |  92.37 |  75.79 |
+| Winterfahrtraining.At Eishandlingkurs                           |       8 |  64.9625 |  72.54 |  60.44 |
+| Winton (National Circuit)                                       |     162 | 102.68   | 112.9  |  85.6  |
+| Yas Marina (Post 2021)                                          |      40 |  84.3477 |  86.05 |  82.11 |
+| Yas Marina (Pre 2021)                                           |      82 |  97.8507 | 102.64 |  94.78 |
+| Yas Marina Short                                                |      20 |  70.67   |  74    |  67    |
+| Zandvoort Gp (Post 2019)                                        |      40 |  70.7893 |  73.35 |  68.88 |
+| Zandvoort Gp (Pre 2020)                                         |      20 | 124.64   | 178.44 | 113.41 |
+| Zhejiang Circuit                                                |      79 | 104.232  | 127    |  86.18 |
+| Zolder                                                          |      41 | 110.552  | 149.94 |  99.13 |
+| Zwartkops                                                       |      13 |  75.4423 |  80.92 |  70.01 |
+
+######################
+
+--Track best and worse vehicle (track, best vehicle, worse vehicle):
+
+| Track Name                                                      | Worse                           | Best                            |
+|:----------------------------------------------------------------|:--------------------------------|:--------------------------------|
+| Adams Motorsports Park                                          | VW Golf GTI (Mk VI 200 HP)      | Honda Fit Sport                 |
+| Adm Miachkovo                                                   | Porsche 911 Turbo               | Mazda 3 MPS (Mk II)             |
+| Adria                                                           | Ferrari 458 Italia              | Bentley Continental GT (Mk II)  |
+| Alastaro Circuit                                                | Toyota GR Yaris (Mk IV)         | Toyota GR Yaris (Mk IV)         |
+| Albert Park                                                     | Ferrari F1-75                   | Manor MRT05                     |
+| Aldo Scribante                                                  | Audi R8 V10                     | Jaguar F-Pace SVR               |
+| Algarve International Circuit (Short)                           | McLaren 675LT                   | Porsche 911 GT3 RS (991)        |
+| Algarve International Circuit Portimao (Grand Prix)             | W11 EQ                          | BMW M3 (F80)                    |
+| Ams Driving Center Gross Dolln                                  | Radical SR3 SL (road-legal)     | Audi TT 2.0 TFSI (facelift)     |
+| Anglesey                                                        | Mosler MT900S Photon            | Ford Focus ST                   |
+| Anglesey Coastal                                                | BAC Mono R                      | Mini One                        |
+| Anglesey International Gp                                       | BAC Mono                        | Morgan Super 3                  |
+| Anglesey National                                               | Ferrari 458 Italia              | Fiat Panda 1.4 (Mk II)          |
+| Anneau Du Rhin                                                  | Mercedes-Benz SL 63 AMG (2022)  | Dodge Viper SRT-10 Roadster     |
+| Anneau Du Rhin 3.7 Km                                           | Alpina B3 Touring (G21)         | BMW M135i xDrive (F40)          |
+| Anneau Du Rhin Short                                            | AMG GT Black Series             | Range Rover Sport SVR           |
+| Aragon                                                          | Porsche 911 GT3 RS              | Porsche 911 GT3 RS              |
+| Aragon Motogp                                                   | BR Engineering Dallara BR1 AER  | KTM X-Bow                       |
+| Arctic Circle Raceway                                           | Ford GT (Mk II 656 PS)          | VW Golf R32 (Mk V)              |
+| Area 27                                                         | BMW M3 (F80)                    | Range Rover Velar SI6           |
+| Ascari                                                          | Audi RS7 Sportback              | Audi RS7 Sportback              |
+| Ascari Race Resort                                              | Radical RXC V8                  | Porsche Cayenne GTS             |
+| Assen                                                           | Ferrari 488 Pista               | Jaguar XF 3.0 V6 Diesel         |
+| Auto Club Speedway                                              | Porsche 911 GT2 (997)           | Lotus Exige S 240               |
+| Auto Motor Und Sport Handling                                   | Opel Admiral 2800 E             | Renault 16 TS                   |
+| Auto Motor Und Sport Snowy Handling Course                      | Audi Quattro (UR Quattro)       | Mercedes-Benz 500 SL            |
+| Autobild Sportscars Snowy Track                                 | Porsche 911 Turbo               | Mitsubishi Lancer Evo X MR      |
+| Autobild Sportscars Snowy Track (2018)                          | Ford Focus RS                   | BMW M140i xDrive                |
+| Autocar Dry Handling Track                                      | Ferrari SF90 Stradale           | Renault Zoe                     |
+| Autocar Snake                                                   | Porsche Panamera Turbo (Mk II)  | Mercedes-Benz S63 AMG Coupe     |
+| Autocar Wet Handling Track                                      | Megane Sport F1-Team R26        | Ariel Nomad                     |
+| Autoclub Speedway Sportcar                                      | Porsche 911 GT3 (991)           | Porsche Cayman S (981)          |
+| Autodromo Del Levante Bari                                      | Porsche Carrera GT              | Bentley Continental GT (Mk I)   |
+| Autodromo Vallelunga                                            | Lotus Elise Sport 220 (Mk III)  | Lotus Elise Sport 220 (Mk III)  |
+| Autopartner Test Route                                          | Mitsubishi Lancer Evo X GSR     | Toyota Auris 2.2 D-cat          |
+| Autozeitung Test Track                                          | Huracán Performante             | Audi Q7 50 TDI                  |
+| Autódromo De Tocancipá                                          | Porsche 911 GT2 RS (991)        | Palio 1.6 16V MPi (3 doors)     |
+| Autódromo Hermanos Rodríguez Gp                                 | Red Bull RB14                   | Oreca 07                        |
+| Autódromo Internacional De Las Américas                         | Honda S2000 (AP2)               | Mitsubishi GTO MR (Mk II)       |
+| Bahrain Inner Circuit                                           | Porsche 911 GT2 RS (991)        | Porsche Cayman GT4 (981)        |
+| Bahrain International Circuit                                   | W11 EQ                          | Porsche 911 GT3 (991)           |
+| Bahrain Outer Circuit                                           | W11 EQ                          | Haas VF-20                      |
+| Baku City Circuit                                               | Mercedes-Benz W10 EQ Power+     | Mercedes-Benz F1 W07 Hybrid     |
+| Balocco                                                         | Lamborghini Huracán STO         | Opel Astra 1.9 CDTi (150 PS)    |
+| Balocco Alfa Romeo                                              | Ferrari 430 Scuderia            | Bentley Continental GT Speed    |
+| Barber Motorsports Park                                         | McLaren MP4-12C (625 PS)        | Lexus IS-F                      |
+| Barcelona Catalunya F1 (2007-2020)                              | Mercedes-Benz W10 EQ Power+     | Radical RXC Turbo 500R (Mk I)   |
+| Barcelona Catalunya F1 (Post 2018)                              | W12 E                           | Alpine A522                     |
+| Baskerville Raceway                                             | HSV Gen F GTS-R W1              | Abarth 124 Spider               |
+| Battersea Park Street Circuit                                   | Spark SRT01-e                   | Spark SRT01-e                   |
+| Bedford Autodrome East Circuit                                  | Lotus 2-Eleven                  | BMW 123d Coupe                  |
+| Bedford Autodrome Gt                                            | Ariel Atom 4                    | Ariel Atom 4                    |
+| Bedford Autodrome South Circuit                                 | Porsche 911 GT2 RS (991)        | BMW i8                          |
+| Bedford Autodrome West (Post 5/2015)                            | Radical Rapture                 | Morgan Plus Four CX-T           |
+| Bedford Autodrome West Circuit (06/2008 - 05/2015)              | Caparo T1                       | Porsche 911 Carrera S (991)     |
+| Bedford Autodrome West Circuit (2004 - 06/2008)                 | Radical SR3                     | Ford Focus 1.6 Zetec (Mk I)     |
+| Bedford Autodrome West Circuit (Pre 2004)                       | Radical SR3 Turbo               | Ford SportKa                    |
+| Bedford Autodrome Wet Handling Test                             | Audi R8 4.2 FSI Quattro (Mk I)  | BMW 123d Coupe                  |
+| Beijing Olympic Green Circuit (2014)                            | Spark SRT01-e                   | Spark SRT01-e                   |
+| Bend West Circuit                                               | Mercedes-Benz AMG GT 63 S       | Ford Fiesta ST200               |
+| Best Motoring Oval                                              | Ferrari F40                     | Porsche 911 Carrera RS (993)    |
+| Bilster Berg                                                    | AMG GT Black Series             | BMW M3 (E30)                    |
+| Biscayne Bay Street Circuit                                     | Spark SRT01-e                   | Spark SRT01-e                   |
+| Biķernieki (High Speed)                                         | McLaren P1                      | Ferrari 599 GTB Fiorano         |
+| Blyton Park Circuit                                             | Radical RXC V8 Spyder (Mk1)     | Morgan 3 Wheeler                |
+| Blyton Park Outer Circuit                                       | McLaren 650 S Spider            | VW Golf GTI (Mk VII 220 PS)     |
+| Bordeaux Merignac                                               | Peugeot 106 GTi/S16             | VW Polo GTI                     |
+| Boxberg Bosch Test Track                                        | Porsche 718 Cayman S            | VW Golf R (Mk VII)              |
+| Brands Hatch (Indy Circuit)                                     | Subaru Impreza RA SPEC C        | Hyundai Coupe F2                |
+| Brands Hatch Gp                                                 | Ariel Atom 3.5 (314 PS)         | Ariel Atom 3.5 (314 PS)         |
+| Bridgehampton Circuit                                           | Ferrari 330 GT 2+2 S1           | Buick Skylark Gran Sport        |
+| Bruntingthorpe                                                  | Porsche 911 Turbo Cabriolet     | Subaru Impreza WRX              |
+| Bryant Park Hillclimb                                           | Toyota Supra (Mk V 387 PS)      | Mercedes - AMG A45 S (W177)     |
+| Buddh International Circuit Autox                               | Ferrari 296 GTB                 | Suzuki Alto K10                 |
+| Buttonwillow Configuration 1                                    | McLaren 720S                    | Tesla Model 3                   |
+| Buttonwillow Configuration 1 Ccw                                | Porsche 911 GT3 (991)           | Tesla Model 3                   |
+| Buttonwillow Configuration 13                                   | Nissan GT-R (R35 550 PS)        | Audi TT RS                      |
+| Buttonwillow Configuration 13 A                                 | Tesla Model 3                   | Tesla Model 3                   |
+| Buttonwillow Configuration 13 A Ccw                             | Tesla Model 3                   | Tesla Model 3                   |
+| Buttonwillow Configuration 13 Ccw                               | Porsche Cayman GT4 (981)        | Tesla Model 3                   |
+| Buttonwillow Configuration 26                                   | Chevrolet Corvette Grand Sport  | Lotus Evora                     |
+| Buttonwillow East Loop                                          | Mitsubishi Lancer Evo X GSR     | Mercedes-Benz E 63 AMG          |
+| Buttonwillow West Loop (Config 24)                              | Chevrolet Camaro Z/28           | Nissan 350Z (313 PS)            |
+| Cadwell Park (Full Circuit)                                     | Honda Civic Type-R (EK9)        | Audi Q7 V12 TDI (Mk I)          |
+| Cadwell Park Club Circuit                                       | Megane Sport F1-Team R26        | Suzuki Swift Sport              |
+| Cadwell Park Woodland                                           | Vauxhall Corsa VXR 888 (D)      | BMW M4                          |
+| Calabogie Motorsports Park                                      | Porsche 911 GT2 RS (991)        | Audi RS7 Sportback              |
+| Camden Airport (Post 10/2010)                                   | Gallardo LP550-2 Valentino Ba.. | Peel P50                        |
+| Camden Airport (Pre 10/2010)                                    | Porsche 911 GT2 (997)           | Ford Model T                    |
+| Canadian Tire Motorsport Park                                   | Audi R10 TDI                    | Porsche 911 GT2 RS (991)        |
+| Castelloli Circuit                                              | Seat Leon Cupra 290             | Seat Leon Cupra 290             |
+| Castle Combe                                                    | Ariel Atom 3.5R                 | Lamborghini Urraco P250         |
+| Castle Combe (Pre 1999)                                         | Ferrari F50                     | Ford Ka                         |
+| Charade                                                         | Aventador LP700-4 Roadster      | Audi S3 (8L)                    |
+| Chuckwalla Valley Raceway                                       | Corvette  Grand Sport           | Audi TT-S Coupe (Mk III)        |
+| Chuckwalla Valley Raceway Ccw                                   | Porsche 911 GT3 (991)           | Porsche 911 GT3 (991)           |
+| Circuit Chambley                                                | McLaren 675LT                   | Lotus Elise 111S (Mk I)         |
+| Circuit De La Sarthe                                            | Toyota TS050 (Mk II)            | McLaren F1 GTR LM (Short Tail)  |
+| Circuit De La Sarthe (1932 - 1971)                              | Porsche 917L (LangHeck)         | Morgan Plus 4 (69 PS)           |
+| Circuit De La Sarthe (1972 - 1978) (13.640 Km)                  | Renault-Alpine A442B            | Moynet LM75                     |
+| Circuit De La Sarthe (1979-1985)                                | Dome  RC82                      | Mazda 717C                      |
+| Circuit De La Sarthe (1987-1989)                                | Mazda 767                       | WM Secateva P88                 |
+| Circuit De Ledenon                                              | Peugeot 205 Rallye              | Peugeot 205 Rallye              |
+| Circuit De Nevers Magny-Cours Club                              | Radical SR3 RS                  | Fiat Panda 1.4 (Mk II)          |
+| Circuit De Nevers Magny-Cours Gp                                | McLaren Senna (P15)             | Toyota GR 86 (Mk II)            |
+| Circuit D´ Issoire                                              | Porsche 911 Carrera RS (964)    | Mazda MX-3 1.8                  |
+| Circuit Gilles Villeneuve                                       | Ferrari SF90                    | Toro Rosso STR11                |
+| Circuit Of The Americas                                         | Mercedes-Benz W10 EQ Power+     | Cadillac DPi-V.R                |
+| Circuit Paul Ricard (Post 2018)                                 | Mercedes-Benz W10 EQ Power+     | AlphaTauri AT02                 |
+| Circuit Paul Ricard (Pre 2018)                                  | BR Engineering Dallara BR1 AER  | McLaren 675LT                   |
+| Circuito Tazio Nuvolari                                         | Lamborghini Aventador SVJ       | VW Golf GTI TCR                 |
+| Circuti Di Cremona                                              | Lotus Elise Sport 220 (Mk III)  | Lotus Elise Sport 220 (Mk III)  |
+| Contidrom (3.3 Km)                                              | Porsche 911 GT3 RS              | Smart Fortwo Brabus (Mk II)     |
+| Contidrom (3.63 Km)                                             | Huracán Performante             | Hyundai Santa Fe 2.2 CRDi 4WD   |
+| Contidrom (3.8 Km)                                              | Porsche 911 GT2 RS (997)        | Toyota GT86                     |
+| Contidrom Handling Track (1.9 Km)                               | Mercedes-Benz GLE 63s 4MATIC    | BMW X5 4.8i E70                 |
+| Croft                                                           | Caterham R500 1.8L K Series     | VW Golf GTI (Mk V)              |
+| Croft (Pre 1997)                                                | Porsche 911 Carrera RS (993)    | MG MGF 1.8i                     |
+| Croix En Ternois                                                | Porsche 911 3.2 ClubSport       | Opel Manta GT/E (A)             |
+| Curborough Sprint                                               | BMW M3 (E90)                    | Renault Twingo RS Cup (Mk II)   |
+| Daimler-Chrysler Proving Ground                                 | Dodge Viper ACR (Mk V)          | BMW e46 330xi                   |
+| Daytona Road Course                                             | Lamborghini Huracán STO         | BMW M3 (E36)                    |
+| Dijon-Prenois                                                   | Radical SR8 RX                  | Porsche 911 GT3 (991)           |
+| Donington Park Gp (Post 1985)                                   | Mini John Cooper Works GP       | Mini John Cooper Works GP       |
+| Donington Park National                                         | Noble M12 GTO                   | BMW M135i (F20)                 |
+| Dreux                                                           | BMW M4 Competition xDrive       | Caterham Seven 170R             |
+| Dubai Autodrome Gp Circuit                                      | Ferrari 488 Pista               | Ferrari 488 Pista               |
+| Dubai Autodrome International Circuit                           | Porsche 911 GT3 RS              | Porsche 911 GT3 RS              |
+| Dubai Autodrome National Circuit                                | Ferrari 488 Pista               | Porsche 718 Cayman GT4 RS       |
+| Dunnville Autodrome                                             | BAC Mono 2.5                    | Mazda MX-5 2.0 (Mk IV 184 PS)   |
+| Ebisu                                                           | Mercedes-Benz SL 63 AMG         | Mazda MPV                       |
+| El Toro                                                         | Dodge Viper SRT-10 ACR          | Mitsubishi Lancer Ralliart      |
+| El Toro Topgear Us                                              | Dodge Viper SRT-10 ACR          | BMW X6 M                        |
+| Estoril                                                         | Porsche 911 GT2 RS (991)        | Honda Civic Type R (FK2)        |
+| European Bridgestone Proving Ground                             | Porsche 911 Turbo S             | Audi R8 V10 Plus (Mk II)        |
+| Eurospeedway Lausitz                                            | AMG GT Black Series             | Subaru BRZ                      |
+| Eurospeedway Lausitz Dekra Handling                             | AMG GT C Roadster               | Abarth 124 Spider               |
+| Eurospeedway Lausitz Gp                                         | RUF CTR3 Clubsport              | RUF CTR3 Clubsport              |
+| Ferte Gaucher                                                   | Caterham Seven 485 R            | Mazda MX-5 2.0 (Mk III)         |
+| Fiorano                                                         | Ferrari SF90 Stradale           | Ferrari Testarossa              |
+| Florida International Rally & Motorsport Park                   | BMW Z3 M Roadster (240 PS)      | BMW Z3 M Roadster (240 PS)      |
+| Folembray                                                       | Ferrari 458 Italia              | BMW M3 (E92)                    |
+| Forestburn Speed Hill Climb                                     | Audi R8 V10 RWS (Mk II)         | Aston Martin Vantage  (Mk II)   |
+| Franciacorta                                                    | BMW M2 Competition (F87)        | Mito Quadrifoglio Verde         |
+| Fuji Raceway                                                    | Porsche 911 GT3 (996 facelift)  | Honda S2000 (AP1)               |
+| Fuji Speedway (Post 2005)                                       | Porsche 919 Hybrid (Mk II)      | Porsche Cayman R (987)          |
+| Gingerman Raceway                                               | Dodge Viper SRT-10 ACR          | Subaru Impreza WRX              |
+| Goodwood                                                        | BAC Mono R                      | Fiat Panda 1.4 (Mk II)          |
+| Goodwood Hill Climb                                             | McLaren P1 LM                   | Zenos E10 R                     |
+| Gotland Ring (Gp Track)                                         | Porsche Cayman S (981)          | Porsche Cayman S (981)          |
+| Gotland Ring (Northern Loop)                                    | Ariel Atom                      | Morgan Roadster V6 lightweight  |
+| Grand Sambuc                                                    | Peugeot 205 Rallye              | Peugeot 205 Rallye              |
+| Grand Tour Eboladrome                                           | McLaren Senna (P15)             | VW Up GTI                       |
+| Grand Tour Rallycross                                           | Jaguar F-Type P300              | Jaguar F-Type P300              |
+| Grattan Raceway                                                 | Dodge Viper ACR (Mk V)          | Ford Mustang SVT Cobra          |
+| Gunsai                                                          | Mercedes-Benz AMG GT R          | Chevrolet Corvette Z06 (C7)     |
+| Hachi Highland Hillclimb                                        | Toyota GR Yaris (Mk IV)         | Toyota GR 86 (Mk II)            |
+| Haras Tuiuti                                                    | Chevrolet Camaro SS (Mk VI)     | Chevrolet Camaro SS (Mk VI)     |
+| Harewood Hill Climb                                             | Subaru Cosworth Impreza CS400   | Mito Quadrifoglio Verde         |
+| Haute Saintonge                                                 | Gallardo LP 570-4 Superleggera  | Seat Leon Cupra R               |
+| Hockenheim Gp                                                   | Ferrari SF71H                   | Seat Leon Cupra R ST 4Drive     |
+| Hockenheim Gp 1981                                              | Porsche 911 Turbo 3.3           | Porsche 928 S (300 PS)          |
+| Hockenheim Short                                                | Porsche 911 GT2 RS (991)        | Alfa Romeo 4C                   |
+| Hockenheim Short "Powercar Layout"                              | Porsche 911 GT2 (997)           | VW Passat R36                   |
+| Hungaroring                                                     | W11 EQ                          | Datsun 280-ZX Turbo             |
+| Imola (1981-1994)                                               | Lamborghini Jalpa 3500          | Lamborghini Jalpa 3500          |
+| Imola (Post 2008)                                               | W11 EQ                          | Ford Mustang GT                 |
+| Inde Motorsports Ranch Configuration 4                          | Dodge Viper ACR (Mk V)          | Ford Mustang Boss 302 LS        |
+| Indianapolis Motor Speedway Road Course                         | Ferrari SF90 Stradale           | Porsche 918 Spyder              |
+| Inta                                                            | Porsche 911 Turbo S             | Peugeot 1.6 Vti                 |
+| Inta Long                                                       | VW Golf GTI (Mk VI)             | Ford Focus ST                   |
+| Inta Long (Conf 2)                                              | Audi R8 V10 5.2 FSI (Mk I)      | Audi Q7 V12 TDI (Mk I)          |
+| Interlagos                                                      | Mercedes-Benz W09               | Abarth Grande Punto             |
+| Istanbul Park                                                   | W12 E                           | Opel Combo 1.5 D                |
+| Jarama                                                          | Porsche 911 GT2 RS (991)        | Alfa Romeo MiTo 1.4 TB 16V      |
+| Jeddah Corniche Circuit                                         | W12 E                           | Williams FW44                   |
+| Jerez                                                           | KTM X-Bow                       | Porsche 911 GT3 RS (991)        |
+| Kakucs Ring                                                     | Peugeot RCZ R                   | Peugeot 301                     |
+| Killarney                                                       | McLaren 650 S                   | Renault Twingo RS (Mk II)       |
+| Knockhill International Circuit                                 | BMW M4 Competition xDrive       | BMW M4 Competition xDrive       |
+| Kotarr                                                          | Renault Megane R26.R            | Subaru Impreza WRX              |
+| Kyalami                                                         | Ariel Atom                      | Mazda 2 1.5 MZR                 |
+| Kyalami (New)                                                   | McLaren P1                      | Honda CR-Z                      |
+| Kühtai Bergstraße                                               | Audi S1                         | Nissan GT-R (R35 550 PS)        |
+| La Chatre                                                       | Porsche 944 Turbo (220 PS)      | Porsche Carrera 3.2 (G model)   |
+| Laguna Seca (Post 1988)                                         | Acura ARX-01b                   | Kia Soul Sport 2.0              |
+| Laguna Seca (Pre 1988)                                          | Ferrari 250 GTO                 | Ford Mustang GT                 |
+| Laquais                                                         | Porsche Cayman S (987)          | Fiat Bravo HGT                  |
+| Las Vegas Motor Speedway Inside Road Course                     | Porsche 911 GT3 (991)           | Nissan GT-R (R35)               |
+| Las Vegas Motor Speedway Inside Road Course Short               | Ferrari F355                    | Aston Martin DB7                |
+| Le Mans (Bugatti)                                               | Radical SR8 RX                  | Caterham 7 CSR 175              |
+| Le Mans (Bugatti) (1976-1986)                                   | Porsche 944 Turbo (220 PS)      | Porsche Carrera 3.2 (G model)   |
+| Lime Rock Park                                                  | Chevrolet Corvette Stingray     | Opel Olympia Rekord 2-door      |
+| Lime Rock Park With Uphill Chicane                              | McLaren 765LT                   | Ram 1500 TRX                    |
+| Linas-Montlhery                                                 | Porsche 911 Turbo S             | Innocenti Turbo De Tomaso       |
+| Linas-Montlhery (9Km)                                           | Renault Alpine A310 V6          | Peugeot 304                     |
+| Linas-Montlhery 9181 M                                          | Ferrari 330 GT 2+2 S1           | Ferrari 330 GT 2+2 S1           |
+| Llandow                                                         | Porsche 911 GT3 (992)           | Mini Cooper JCW (231 PS)        |
+| Long Beach Eprix Circuit                                        | Spark SRT01-e                   | Spark SRT01-e                   |
+| Long Beach Grand Prix Circuit                                   | Porsche RS Spyder (Evo)         | Honda NSX (Mk II)               |
+| Los Arcos (Navarra)                                             | Renault Clio III Sport          | Toyota GT86                     |
+| Losail International Circuit                                    | W12 E                           | Porsche 911 Turbo (991)         |
+| Luk Driving Center                                              | Porsche 911 GT2 (997)           | Porsche 911 Turbo               |
+| Madras Motor Race Track                                         | Porsche 911 GT3 RS              | Mitsubishi Lancer Evo X TC-SST  |
+| Magione                                                         | McLaren P1                      | Mercedes-Benz SLS AMG           |
+| Magny Cours                                                     | Porsche Carrera 3.2 (G model)   | VW Golf GTI  1.6 (Mk I)         |
+| Mallory Park                                                    | Audi S1                         | Morgan 3 Wheeler                |
+| Mantorp Park                                                    | Chevrolet Corvette Z06 (C6)     | Jaguar XKR                      |
+| Marcoussis                                                      | Ferrari 430 Scuderia            | Smart Brabus Coupe              |
+| Marina Bay                                                      | Mercedes-Benz W09               | Williams FW44                   |
+| Marlboro Motor Raceway                                          | Porsche 911 S 2.0               | Porsche 911 E                   |
+| Megara                                                          | Huracán Performante             | Ford Fiesta 1.4                 |
+| Memphis International Raceway                                   | Porsche 911 GT3 (992)           | BMW M4                          |
+| Mendig Afb Circuit                                              | Ferrari 488 Pista               | VW Golf GTI 1.8 (Mk I)          |
+| Miami International Autodrome                                   | Ferrari F1-75                   | Alpine A522                     |
+| Milford Road Course                                             | Chevrolet Corvette Z06 (C7)     | Ford Mustang Shelby GT500       |
+| Millbrook Alpine Hill Route                                     | Caterham R500                   | Subaru Impreza WRX STI (2.5)    |
+| Millbrook Handling Circuit                                      | BMW M4 Competition Coupe        | Renault 5 Turbo Phase I         |
+| Miller Motorsports Park                                         | Dodge Viper SRT-10 ACR          | Jaguar XKR (510 PS)             |
+| Mira Dry Handling Track                                         | Porsche 911 Turbo (996)         | Rover 3500 SE (SD1)             |
+| Miramas Handling Course                                         | Dodge Viper RT/10 (405 PS)      | Mercedes-Benz SL 500 (R129)     |
+| Mireval                                                         | Porsche 911 GT2 RS (991)        | Audi A2 1.4                     |
+| Mireval (1994)                                                  | Porsche 911 GT2 RS (991)        | Porsche 911 Turbo 3.6 S (964)   |
+| Mittsverigebanan                                                | Porsche 911 GT2 (997)           | Porsche Cayenne                 |
+| Mnevniki Airfield                                               | Porsche 911 Turbo Cabriolet     | Audi R8 4.2 FSI Quattro (Mk I)  |
+| Modena Aerautodromo (1950-1972)                                 | Ferrari 250 GT Short Wheelbase  | Jaguar E-type 3.8 (Mk I)        |
+| Modena Autodrome                                                | Lamborghini Huracán STO         | Toyota Yaris 1.8 GRMN (Mk III)  |
+| Monaco (Post 2014)                                              | Mercedes-Benz W10 EQ Power+     | Red Bull RB12                   |
+| Monaco Formula E (2014-2019)                                    | Spark SRT01-e                   | Spark SRT01-e                   |
+| Monteblanco Wet Handling                                        | Audi TT RS Coupe (Mk II)        | Alfa Romeo Brera 3.2 JTS V6 Q4  |
+| Monticello Motor Club (Full Length)                             | Chevrolet Corvette C5 Z06       | Chevrolet Corvette C5 Z06       |
+| Monticello Motor Club North Course                              | AMG GT Black Series             | Subaru BRZ (Mk II)              |
+| Monza                                                           | W11 EQ                          | Peugeot RCZ GT THP200           |
+| Mornay                                                          | Audi TT-S Coupe (Mk II)         | Renault Twingo RS (Mk II)       |
+| Moroso Motorsports Park                                         | Ferrari F40                     | Lamborghini Diablo              |
+| Mortefontaine                                                   | Ferrari SF90 Stradale           | VW Up GTI                       |
+| Moscow Raceway Gp                                               | AMG GT Black Series             | Acura RDX SH-AWD                |
+| Moscow Street Circuit                                           | Spark SRT01-e                   | Spark SRT01-e                   |
+| Motortrend Figure-8                                             | McLaren 765LT Spider            | Aston Martin DBS                |
+| Motortrend Ice Handling Course                                  | Subaru Impreza WRX STI (2.5)    | Mitsubishi Lancer Evo X GSR     |
+| Motovision Handling Course                                      | Porsche 911 Carrera 4S (997)    | Skoda Fabia RS (Mk I)           |
+| Motown Mile                                                     | Dodge Viper ACR (Mk V)          | Ford Fiesta ST                  |
+| Mugello                                                         | W11 EQ                          | Ferrari 348TB                   |
+| Nardo Handling Course                                           | Donkervoort D8 GTO              | Continental Flying Spur Speed   |
+| Nardo Handling Course Conf 2 (2.8 Km)                           | Porsche 911 GT2 RS (997)        | Continental Supersports         |
+| Ncm Motorsport Park                                             | McLaren Senna (P15)             | Continental Supersports         |
+| Ncm Motorsports Park                                            | Dodge Viper ACR (Mk V)          | Bentley Continental GT-3 R      |
+| Ncm Motorsports Park Grand Full                                 | McLaren Senna (P15)             | Mazda 3  2.5 (BP)               |
+| Nelson Ledges Raceway                                           | Dodge Viper ACR (Mk V)          | Honda Prelude SH (Mk V)         |
+| New Jersey Motorsports Park (Thunderbolt)                       | Lexus IS-F                      | Lexus IS-F                      |
+| Nihonkai Maze                                                   | Nissan GT-R Nismo (R35)         | Mazda MPV 3.0                   |
+| Nikko                                                           | Huracán Performante             | Toyota GT86                     |
+| Nufenen Pass                                                    | Porsche 911 Turbo               | Nissan GT-R (R35)               |
+| Nürburgring Gp (3.1 Km)                                         | Lotus 2-Eleven                  | Renault Megane Sport 2.0 dCi    |
+| Nürburgring Gp (5.15 Km)                                        | W11 EQ                          | BMW M3 Competition Package      |
+| Nürburgring Gp Sprint                                           | AMG GT Black Series             | Brabus Unimog Black Edition     |
+| Nürburgring Nordschleife                                        | Mercedes - AMG One              | Artega GT                       |
+| Nürburgring Nordschleife (1927-1966)                            | Chaparral 2D                    | Chaparral 2D                    |
+| Nürburgring Nordschleife (1973-1982)                            | Ferrari 312 B3                  | Porsche Carrera RS 3.0          |
+| Nürburgring Nordschleife Btg                                    | Aventador LP750-4 SV            | Seat Leon ST Cupra 300 4Drive   |
+| Nürburgring Nordschleife Full                                   | Mercedes - AMG One              | Mercedes-Benz G 55 AMG          |
+| Old Highway                                                     | Volvo 740 Turbo                 | Audi A6 2.5 TDi (C4)            |
+| Ontario Motor Speedway                                          | BMW M1 (E26)                    | Porsche 911 S 2.4               |
+| Oregon Raceway Park Ccw                                         | Porsche Cayman GT4 (981)        | Porsche Cayman GT4 (981)        |
+| Oregon Raceway Park Cw                                          | Porsche Cayman GT4 (981)        | Porsche Cayman GT4 (981)        |
+| Oschersleben                                                    | HKT Seven RS Clubsport          | Renault Megane dCi 130 FAP      |
+| Oulton Park (Full Circuit)                                      | Caterham 420 Cup                | Seat Leon 2.0 TFSI              |
+| Oulton Park (Island Circuit)                                    | Noble M12 GTO                   | Noble M12 GTO                   |
+| Pacific Raceways                                                | Chevrolet Corvette Z06 (C6)     | Chevrolet Corvette Z06 (C6)     |
+| Palm Beach International Raceway                                | McLaren Senna (P15)             | McLaren Senna (P15)             |
+| Palma Renn Arena                                                | Porsche 911 GT2 RS (991)        | Porsche 911S Targa              |
+| Pannonia Ring                                                   | KTM X-BOW RR+                   | Honda S2000 (AP1)               |
+| Papenburg Handling Course                                       | Ferrari 458 Speciale            | Ferrari F430                    |
+| Pembrey (Post 2017)                                             | Ariel Atom 4                    | VW Golf R Variant (Mk VII)      |
+| Pembrey (Pre 2017)                                              | Lotus Elan                      | Mazda MX-5 1.6 (Mk I)           |
+| Pferdsfeld                                                      | VW Golf R (Mk VIII)             | BMW M4 Competition Coupe        |
+| Phillip Island                                                  | Porsche 918 Spyder              | Opel Corsa GSI (B)              |
+| Pikes Peak                                                      | Tesla Model S P90D              | Tesla Model S P90D              |
+| Pittsburgh International Race Complex                           | McLaren Senna (P15)             | McLaren Senna (P15)             |
+| Pocono Raceway Road Course Short Counterclockwise (Pre 1985)    | Porsche 911 2.7                 | Porsche 911S Targa 2.7          |
+| Puerto Madero Street Circuit                                    | Spark SRT01-e                   | Spark SRT01-e                   |
+| Punta Del Este Formula E (Pre 2015)                             | Spark SRT01-e                   | Spark SRT01-e                   |
+| Putnam Park                                                     | BMW M3 (E92)                    | BMW M3 (E92)                    |
+| Putrajaya Street Circuit                                        | Spark SRT01-e                   | Spark SRT01-e                   |
+| Queensland Raceway Sprint Circuit                               | Porsche 911 GT2 RS (991)        | Toyota GT86                     |
+| Raceland                                                        | KTM X-Bow                       | Renault Twingo GT (Mk II)       |
+| Red Bull Ring                                                   | W11 EQ                          | Dallara P217                    |
+| Reno-Fernley Raceway Conf 1 (2.74 M)                            | Dodge Viper GTS                 | Mazda 3 MPS                     |
+| Reno-Fernley Raceway Conf 2 (1.7M)                              | Ferrari 458 Italia              | Audi R8 V10 5.2 FSI (Mk I)      |
+| Ridge Motorsports Park                                          | Porsche 911 GT3 (991)           | Honda Civic Type R (FK8)        |
+| Ring Knutstorp                                                  | Mitsubishi Lancer Evo V         | Smart Roadster                  |
+| Ring Knutstrop (Conf 2)                                         | Koenigsegg Agera                | Tesla Roadster                  |
+| Riverside Raceway                                               | Chevrolet Corvette C1           | 356 A 1600 Convertible D        |
+| Road America                                                    | Audi R10 TDI                    | Porsche 911 GT3 RS              |
+| Road Atlanta                                                    | Porsche 911 GT2 RS (991)        | Honda S2000 (AP1)               |
+| Rockingham International Super Sportscar                        | Ferrari 458 Italia              | Mazda MX-5 Grand Touring        |
+| Rockingham National                                             | Palmer Jaguar JP1               | Gran Torino Sport 351 Cleavel.. |
+| Rockingham Oval Circuit                                         | Renault Megane RS 265 Trophy    | Ford Focus ST                   |
+| Roebling Road Raceway                                           | Ford Shelby Mustang GT350       | Porsche 911 Turbo 3.3           |
+| Rudskogen (Post 2012)                                           | Audi R8 4.2 FSI Quattro (Mk I)  | BMW i8                          |
+| Rudskogen (Pre 2012)                                            | Ariel Atom 2                    | BMW M6                          |
+| Rustavi International Motorpark                                 | Porsche 911 Carrera S           | BMW Z4 3.0si                    |
+| Sachsenring                                                     | McLaren Senna (P15)             | Chevrolet Camaro ZL1 (Mk VI)    |
+| Salzburgring                                                    | Porsche 911 GT3 RS (991)        | Hyundai I30N                    |
+| Sandown                                                         | Porsche 911 GT3 RS (991)        | Porsche 911 GT3 RS (991)        |
+| Sebring International Raceway                                   | Toyota TS050 (Mk II)            | BMW M3 (E36)                    |
+| Sepang                                                          | Mercedes-Benz W08               | Mazda MX-5 (Mk II 1.8)          |
+| Serres Racing Circuit                                           | Lamborghini Huracán STO         | Fiat Punto HGT                  |
+| Shanghai International Circuit                                  | Ferrari SF71H                   | Audi RS Q8                      |
+| Silverstone                                                     | Murcielago LP 670-4 SV          | Ford Cougar 2.5i                |
+| Silverstone (International)                                     | McLaren Senna (P15)             | Lamborghini Aventador SVJ       |
+| Silverstone (National Circuit)                                  | McLaren P1                      | Alfa Romeo Giulia QV            |
+| Silverstone Gp (Post 2011)                                      | W11 EQ                          | Radical RXC V8 Spyder (Mk1)     |
+| Silverstone Southern Loop                                       | McLaren P1                      | Ford Puma 1.7 125 (Mk I)        |
+| Silverstone Stowe                                               | McLaren 620R                    | Jannarelly Design-1             |
+| Smolensk Ring                                                   | Porsche 911 GT3 RS (991)        | Dacia Sandero 1.6 16V (Mk I)    |
+| Snetterton 200                                                  | Noble M12 GTO                   | Noble M12 GTO                   |
+| Snetterton 300                                                  | Radical RXC                     | Mini Cooper JCW (231 PS)        |
+| Sochi Autodrom                                                  | W11 EQ                          | Haas VF-21                      |
+| Sodegaura Forest Raceway                                        | Porsche 718 Boxster             | Porsche 718 Boxster             |
+| Solo Ii Autocross Circuit                                       | Chevrolet Camaro SS LT1         | Pontiac Firebird Formula        |
+| Sonoma Raceway (Full)                                           | Dodge Viper ACR (Mk V)          | Porsche Boxster (986 220 PS)    |
+| Spa Francorchamps                                               | W11 EQ                          | Lotus Elise 111R                |
+| Sportauto Wet Handling Test                                     | Porsche 911 GT3 (997)           | Artega GT                       |
+| Spring Mountain                                                 | Dodge Viper SRT-10 ACR          | Porsche 911 GT2 (997)           |
+| Spring Mountain (Mansell C)                                     | Porsche 911 GT3 (991)           | Porsche 911 GT3 (991)           |
+| Spring Mountain (Radical Loop Section)                          | Corvette Z06 Z07 Package        | Mazda RX-8                      |
+| Streets Of Willow (0.96 Mile)                                   | Audi S4 (B8)                    | Infiniti G35 Sport Coupe        |
+| Sturup Raceway                                                  | Porsche 911 GT3 (992)           | Abarth 500 EsseEsse             |
+| Sugo                                                            | Nissan GT-R (R35)               | Ferrari Dino 246 GTS            |
+| Summit Point                                                    | Lexus IS-F                      | Lexus IS-F                      |
+| Suzuka                                                          | Ferrari SF90                    | Honda NSX (3.0)                 |
+| Tempelhof Airport Street Circuit (2014 - 2015)                  | Spark SRT01-e                   | Spark SRT01-e                   |
+| Texas World Speedway                                            | McLaren P1                      | Porsche Cayman S (987)          |
+| Thermal Club Raceway                                            | Porsche 918 Spyder              | Honda NSX (facelift)            |
+| Thermal Club Raceway Long                                       | Porsche 911 GT2 RS (991)        | Alfa Romeo Giulia QV            |
+| Thruxton                                                        | Caterham 7 CSR 260              | MG MGF 1.8i                     |
+| Thunder Hill Raceway                                            | Porsche 911 Carrera             | BMW M2 (F87)                    |
+| Thunderhill Park East                                           | Porsche 911 GT3 (991)           | Scion FR-S                      |
+| Thunderhill Park West                                           | Lamborghini Huracán Evo         | Ford Mustang Boss 302           |
+| Tochigi Honda Test Course                                       | Honda CR-X SiR                  | Honda CRX Del Sol SiR           |
+| Top Gear Rallycross Track                                       | Mini Cooper S                   | Mini Cooper S                   |
+| Top Gear Track                                                  | Caparo T1                       | Smart Fortwo Brabus (Mk III)    |
+| Tor Poznan                                                      | Renault Clio RS III Cup         | Porsche 911 Carrera S           |
+| Toronto Motorsports Park                                        | Nissan 350Z (287 PS)            | Lexus CT 200H                   |
+| Tsukuba                                                         | Toyota GR Yaris (Mk IV)         | Porsche 968 Club Sport          |
+| Twin Ring Motegi East                                           | Lamborghini Murcielago          | Nissan Skyline GT-R (R32)       |
+| Twin Ring Motegi Gp                                             | Nissan GT-R (R35)               | Toyota Supra RZ (Mk IV)         |
+| U-Drag                                                          | Ford Mustang Shelby GT500       | Acura Integra                   |
+| Vairano Handling Course                                         | Pagani Huayra BC Roadster       | Fiat Coupe 20V Turbo            |
+| Vairano Pro                                                     | Pagani Huayra BC Roadster       | BMW M4 Competition Coupe        |
+| Val De Vienne                                                   | Porsche 911 GT3 (992)           | Toyota GR Yaris (Mk IV)         |
+| Vallelunga International Circuit                                | BMW 520 (E12 115 PS)            | BMW 520 (E12 115 PS)            |
+| Vasco Sameiro (Braga)                                           | Toyota GT86                     | Toyota GT86                     |
+| Velo Citta (1.68 Km)                                            | Porsche 918 Spyder              | VW Passat TS                    |
+| Virginia International Raceway                                  | Ford Mustang Shelby GT500       | Chevrolet Corvette Stingray     |
+| Virginia International Raceway Grand East Course (Post 01/2014) | McLaren Senna (P15)             | Mazda MX-5 2.0 (Mk IV)          |
+| Virginia International Raceway Grand East Course (Pre 01/2014)  | Chevrolet Corvette ZR1          | Mazda MX-5 2.0 (Mk III)         |
+| Wakefield Park                                                  | Radical SR3 RS                  | Smart Roadster                  |
+| Waterford Hills                                                 | Dodge Viper ACR (Mk V)          | De Lorean DMC-12 (USA spec)     |
+| Willow Springs                                                  | Porsche 911 GT2 RS (991)        | Fiat Spider 2000                |
+| Willow Springs - Horse Thief Mile                               | Tesla Model 3                   | Tesla Model 3                   |
+| Willow Springs - Streets Of Willow                              | Corvette  Grand Sport           | Cadillac CTS 3.6 V6             |
+| Willow Springs - Streets Of Willow (1.7 Miles)                  | Lamborghini Gallardo LP560-4    | Mitsubishi Lancer Ralliart      |
+| Willow Springs - Streets Of Willow Ccw                          | Porsche 911 GT3 (991)           | Mini Cooper S                   |
+| Winterfahrtraining.At Eishandlingkurs                           | Porsche Cayenne Turbo GT        | BMW M3                          |
+| Winton (National Circuit)                                       | Quantum GP700                   | Alfa Romeo 147 2.0 TS           |
+| Yas Marina (Post 2021)                                          | Red Bull RB16B                  | Williams FW44                   |
+| Yas Marina (Pre 2021)                                           | Mercedes-Benz W10 EQ Power+     | Sauber C35                      |
+| Yas Marina Short                                                | McLaren P1                      | Alfa Romeo Giulia QV            |
+| Zandvoort Gp (Post 2019)                                        | Red Bull RB16B                  | Williams FW44                   |
+| Zandvoort Gp (Pre 2020)                                         | BAC Mono 2.5                    | Opel Crossland X 1.2 DI Turbo   |
+| Zhejiang Circuit                                                | Nio EP9                         | Honda Civic Type-R JDM (FD2)    |
+| Zolder                                                          | Porsche Carrera GT              | Rolls-Royce Phantom (Mk I)      |
+| Zwartkops                                                       | McLaren 570S                    | Ford Focus RS                   |
+
+####################################################################################################################################
+
 -Tracks report:
---Tracks count: 91
+--Tracks count: 375
+
 ######################
+
+--Tracks country stats:
+
+| Country              |   count |    mean |   max |   min |
+|:---------------------|--------:|--------:|------:|------:|
+| Argentina            |       1 | 2.48    |  2.48 |  2.48 |
+| Australia            |      10 | 2.905   |  5.3  |  1.4  |
+| Austria              |       4 | 2.975   |  4.33 |  1.33 |
+| Azerbaijan           |       1 | 6       |  6    |  6    |
+| Bahrain              |       3 | 3.83667 |  5.41 |  2.56 |
+| Belgium              |       2 | 5.49    |  7    |  3.98 |
+| Brazil               |       3 | 2.83    |  4.31 |  1.68 |
+| Canada               |       6 | 3.89833 |  5.05 |  2.2  |
+| China                |       3 | 4.03333 |  5.45 |  3.2  |
+| Colombia             |       1 | 2.73    |  2.73 |  2.73 |
+| Croatia              |       1 | 3       |  3    |  3    |
+| Dominican Republic   |       1 | 2.66    |  2.66 |  2.66 |
+| Finland              |       1 | 2.72    |  2.72 |  2.72 |
+| France               |      38 | 4.78211 | 13.64 |  1.3  |
+| Georgia              |       1 | 4.14    |  4.14 |  4.14 |
+| Germany              |      33 | 5.75576 | 22.83 |  0.54 |
+| Greece               |       2 | 2.64    |  3.19 |  2.09 |
+| Hungary              |       3 | 3.39    |  4.74 |  1.05 |
+| India                |       2 | 2.87    |  3.74 |  2    |
+| Italy                |      20 | 3.4285  |  5.85 |  1.52 |
+| Japan                |      12 | 2.80583 |  5.81 |  1    |
+| Latvia               |       2 | 2.305   |  3.66 |  0.95 |
+| Malaysia             |       2 | 4.05    |  5.54 |  2.56 |
+| Mexico               |       1 | 4.3     |  4.3  |  4.3  |
+| Monaco               |       2 | 2.55    |  3.34 |  1.76 |
+| Netherlands          |       3 | 4.37333 |  4.55 |  4.26 |
+| Norway               |       3 | 2.96667 |  3.75 |  1.9  |
+| Poland               |       1 | 4.08    |  4.08 |  4.08 |
+| Portugal             |       3 | 3.95    |  4.65 |  3.02 |
+| Qatar                |       1 | 5.4     |  5.4  |  5.4  |
+| Russia               |       5 | 3.764   |  5.85 |  2.39 |
+| San Marino           |       1 | 4.91    |  4.91 |  4.91 |
+| Saudi Arabia         |       1 | 6.17    |  6.17 |  6.17 |
+| Singapore            |       1 | 5.06    |  5.06 |  5.06 |
+| Slovenia             |       1 | 1.05    |  1.05 |  1.05 |
+| South Africa         |       4 | 3.1675  |  4.52 |  2.4  |
+| Spain                |      14 | 4       |  5.42 |  1.43 |
+| Sweden               |       7 | 3.11143 |  7.3  |  1.95 |
+| Switzerland          |       1 | 1.49    |  1.49 |  1.49 |
+| Turkey               |       1 | 5.34    |  5.34 |  5.34 |
+| United Arab Emirates |       6 | 4.405   |  5.55 |  2.36 |
+| United Kingdom       |      54 | 2.77093 |  6.12 |  0.96 |
+| United States        |      79 | 3.86203 | 19.99 |  0.64 |
+| Uruguay              |       1 | 2.81    |  2.81 |  2.81 |
+
+######################
+
+--Track max and min length (region - max track, min track):
+
+| Country              | Max                                                 | Min                                     |
+|:---------------------|:----------------------------------------------------|:----------------------------------------|
+| Argentina            | Puerto Madero Street Circuit                        | Puerto Madero Street Circuit            |
+| Australia            | Albert Park                                         | Bryant Park Hillclimb                   |
+| Austria              | Red Bull Ring                                       | Kühtai Bergstraße                       |
+| Azerbaijan           | Baku City Circuit                                   | Baku City Circuit                       |
+| Bahrain              | Bahrain International Circuit                       | Bahrain Inner Circuit                   |
+| Belgium              | Spa Francorchamps                                   | Zolder                                  |
+| Brazil               | Interlagos                                          | Velo Citta (1.68 Km)                    |
+| Canada               | Calabogie Motorsports Park                          | Dunnville Autodrome                     |
+| China                | Shanghai International Circuit                      | Zhejiang Circuit                        |
+| Colombia             | Autódromo De Tocancipá                              | Autódromo De Tocancipá                  |
+| Croatia              | Autopartner Test Route                              | Autopartner Test Route                  |
+| Dominican Republic   | Autódromo Internacional De Las Américas             | Autódromo Internacional De Las Américas |
+| Finland              | Alastaro Circuit                                    | Alastaro Circuit                        |
+| France               | Circuit De La Sarthe (1972 - 1978) (13.640 Km)      | La Chatre                               |
+| Georgia              | Rustavi International Motorpark                     | Rustavi International Motorpark         |
+| Germany              | Nürburgring Nordschleife (1973-1982)                | Auto Motor Und Sport Handling           |
+| Greece               | Serres Racing Circuit                               | Megara                                  |
+| Hungary              | Pannonia Ring                                       | Kakucs Ring                             |
+| India                | Madras Motor Race Track                             | Buddh International Circuit Autox       |
+| Italy                | Balocco                                             | Autodromo Del Levante Bari              |
+| Japan                | Suzuka                                              | Gunsai                                  |
+| Latvia               | Biķernieki (High Speed)                             | Old Highway                             |
+| Malaysia             | Sepang                                              | Putrajaya Street Circuit                |
+| Mexico               | Autódromo Hermanos Rodríguez Gp                     | Autódromo Hermanos Rodríguez Gp         |
+| Monaco               | Monaco (Post 2014)                                  | Monaco Formula E (2014-2019)            |
+| Netherlands          | Assen                                               | Zandvoort Gp (Post 2019)                |
+| Norway               | Arctic Circle Raceway                               | Rudskogen (Pre 2012)                    |
+| Poland               | Tor Poznan                                          | Tor Poznan                              |
+| Portugal             | Algarve International Circuit Portimao (Grand Prix) | Vasco Sameiro (Braga)                   |
+| Qatar                | Losail International Circuit                        | Losail International Circuit            |
+| Russia               | Sochi Autodrom                                      | Moscow Street Circuit                   |
+| San Marino           | Imola (Post 2008)                                   | Imola (Post 2008)                       |
+| Saudi Arabia         | Jeddah Corniche Circuit                             | Jeddah Corniche Circuit                 |
+| Singapore            | Marina Bay                                          | Marina Bay                              |
+| Slovenia             | Raceland                                            | Raceland                                |
+| South Africa         | Kyalami (New)                                       | Zwartkops                               |
+| Spain                | Ascari Race Resort                                  | Monteblanco Wet Handling                |
+| Sweden               | Gotland Ring (Gp Track)                             | Mittsverigebanan                        |
+| Switzerland          | Nufenen Pass                                        | Nufenen Pass                            |
+| Turkey               | Istanbul Park                                       | Istanbul Park                           |
+| United Arab Emirates | Yas Marina (Pre 2021)                               | Yas Marina Short                        |
+| United Kingdom       | Bedford Autodrome Gt                                | Mira Dry Handling Track                 |
+| United States        | Pikes Peak                                          | Solo Ii Autocross Circuit               |
+| Uruguay              | Punta Del Este Formula E (Pre 2015)                 | Punta Del Este Formula E (Pre 2015)     |
+
+####################################################################################################################################
+
 -Vehicle report:
 --Vehicle count: 2607
+
 ######################
+
+--Vehicle type count:
+
+| Type Usage    |   Vehicle |
+|:--------------|----------:|
+| 4-door saloon |       520 |
+| Compact       |       402 |
+| Convertible   |       308 |
+| Coupe         |       940 |
+| Estate/wagon  |        85 |
+| Open-wheeler  |       150 |
+| SUV/truck     |       191 |
+| Van           |        11 |
+
+######################
+
+--Vehicle country count:
+
+|                                         |   Vehicle |
+|:----------------------------------------|----------:|
+| ('Australia', '4-door saloon')          |        26 |
+| ('Australia', 'Coupe')                  |         5 |
+| ('Australia', 'Estate/wagon')           |         2 |
+| ('Australia', 'Open-wheeler')           |         2 |
+| ('Australia', 'SUV/truck')              |         3 |
+| ('Austria', 'Open-wheeler')             |         6 |
+| ('Brazil', '4-door saloon')             |         1 |
+| ('Brazil', 'Compact')                   |         1 |
+| ('China', '4-door saloon')              |         1 |
+| ('China', 'Compact')                    |         1 |
+| ('China', 'Coupe')                      |         1 |
+| ('China', 'SUV/truck')                  |         3 |
+| ('China', 'Van')                        |         1 |
+| ('Czech Republic', '4-door saloon')     |         7 |
+| ('Czech Republic', 'Compact')           |         4 |
+| ('Czech Republic', 'Estate/wagon')      |         1 |
+| ('Czech Republic', 'Open-wheeler')      |         1 |
+| ('Czech Republic', 'SUV/truck')         |         2 |
+| ('Denmark', 'Coupe')                    |         1 |
+| ('France', '4-door saloon')             |        23 |
+| ('France', 'Compact')                   |        92 |
+| ('France', 'Convertible')               |         5 |
+| ('France', 'Coupe')                     |        43 |
+| ('France', 'Estate/wagon')              |         2 |
+| ('France', 'Open-wheeler')              |         8 |
+| ('France', 'SUV/truck')                 |         4 |
+| ('France', 'Van')                       |         1 |
+| ('Germany', '4-door saloon')            |       248 |
+| ('Germany', 'Compact')                  |       132 |
+| ('Germany', 'Convertible')              |       132 |
+| ('Germany', 'Coupe')                    |       329 |
+| ('Germany', 'Estate/wagon')             |        61 |
+| ('Germany', 'Open-wheeler')             |        14 |
+| ('Germany', 'SUV/truck')                |       106 |
+| ('Germany', 'Van')                      |         1 |
+| ('India', 'Compact')                    |         3 |
+| ('India', 'Open-wheeler')               |         1 |
+| ('India', 'SUV/truck')                  |         2 |
+| ('Isle of Man', 'Compact')              |         1 |
+| ('Italy', '4-door saloon')              |        17 |
+| ('Italy', 'Compact')                    |        38 |
+| ('Italy', 'Convertible')                |        38 |
+| ('Italy', 'Coupe')                      |       129 |
+| ('Italy', 'Estate/wagon')               |         2 |
+| ('Italy', 'Open-wheeler')               |        18 |
+| ('Italy', 'SUV/truck')                  |         8 |
+| ('Japan', '4-door saloon')              |       104 |
+| ('Japan', 'Compact')                    |        56 |
+| ('Japan', 'Convertible')                |        25 |
+| ('Japan', 'Coupe')                      |       120 |
+| ('Japan', 'Open-wheeler')               |         2 |
+| ('Japan', 'SUV/truck')                  |        12 |
+| ('Japan', 'Van')                        |         5 |
+| ('Malaysia', 'Compact')                 |         1 |
+| ('Mexico', 'Convertible')               |         1 |
+| ('Netherlands', 'Convertible')          |         2 |
+| ('Netherlands', 'Open-wheeler')         |         4 |
+| ('Romania', 'Compact')                  |         1 |
+| ('Russia', 'Coupe')                     |         2 |
+| ('South Africa', 'Compact')             |         1 |
+| ('South Korea', '4-door saloon')        |         4 |
+| ('South Korea', 'Compact')              |        11 |
+| ('South Korea', 'Convertible')          |         1 |
+| ('South Korea', 'Coupe')                |         9 |
+| ('South Korea', 'SUV/truck')            |         7 |
+| ('South Korea', 'Van')                  |         1 |
+| ('Spain', 'Compact')                    |        21 |
+| ('Spain', 'Coupe')                      |         1 |
+| ('Spain', 'Estate/wagon')               |         3 |
+| ('Spain', 'SUV/truck')                  |         3 |
+| ('Sweden', '4-door saloon')             |        14 |
+| ('Sweden', 'Compact')                   |         2 |
+| ('Sweden', 'Convertible')               |         1 |
+| ('Sweden', 'Coupe')                     |         8 |
+| ('Sweden', 'Estate/wagon')              |         7 |
+| ('Sweden', 'SUV/truck')                 |         4 |
+| ('Switzerland', 'Convertible')          |         1 |
+| ('Switzerland', 'Coupe')                |         2 |
+| ('Switzerland', 'Open-wheeler')         |         4 |
+| ('United Arab Emirates', 'Convertible') |         1 |
+| ('United Kingdom', '4-door saloon')     |        32 |
+| ('United Kingdom', 'Compact')           |        21 |
+| ('United Kingdom', 'Convertible')       |        66 |
+| ('United Kingdom', 'Coupe')             |       160 |
+| ('United Kingdom', 'Estate/wagon')      |         1 |
+| ('United Kingdom', 'Open-wheeler')      |        78 |
+| ('United Kingdom', 'SUV/truck')         |        18 |
+| ('United Kingdom', 'Van')               |         1 |
+| ('United States', '4-door saloon')      |        34 |
+| ('United States', 'Compact')            |         6 |
+| ('United States', 'Convertible')        |        28 |
+| ('United States', 'Coupe')              |       116 |
+| ('United States', 'Estate/wagon')       |         4 |
+| ('United States', 'Open-wheeler')       |         8 |
+| ('United States', 'SUV/truck')          |        18 |
+
+######################
+
+--Vehicle type dimensions:
+
+| Type Usage    |   ('Curb Weight (kg)', 'mean') |   ('Curb Weight (kg)', 'max') |   ('Curb Weight (kg)', 'min') |   ('Wheelbase (m)', 'mean') |   ('Wheelbase (m)', 'max') |   ('Wheelbase (m)', 'min') |   ('Long (m)', 'mean') |   ('Long (m)', 'max') |   ('Long (m)', 'min') |   ('Wide (m)', 'mean') |   ('Wide (m)', 'max') |   ('Wide (m)', 'min') |   ('High (m)', 'mean') |   ('High (m)', 'max') |   ('High (m)', 'min') |
+|:--------------|-------------------------------:|------------------------------:|------------------------------:|----------------------------:|---------------------------:|---------------------------:|-----------------------:|----------------------:|----------------------:|-----------------------:|----------------------:|----------------------:|-----------------------:|----------------------:|----------------------:|
+| 4-door saloon |                       1710.25  |                          2647 |                           820 |                     2.81955 |                       3.21 |                       2.51 |                4.79496 |                  5.32 |                  4.3  |                1.83783 |                  2.15 |                  1.45 |               13.6257  |               1403    |                  1.13 |
+| Compact       |                       1265.46  |                          1835 |                           698 |                     2.56289 |                       3    |                       2.04 |                4.14038 |                  4.97 |                  1.37 |                1.74151 |                  1.98 |                  1.26 |                1.43423 |                  1.7  |                  1.01 |
+| Convertible   |                       1461.43  |                         19630 |                           500 |                     2.51552 |                       2.94 |                       1.65 |                4.35581 |                  5.14 |                  3.49 |                1.8382  |                  2.1  |                  1.35 |                1.26541 |                  1.43 |                  1.11 |
+| Coupe         |                       1455.47  |                          3355 |                           580 |                     2.60977 |                       3.11 |                       1.75 |                4.52168 |                  5.42 |                  3.73 |                1.86784 |                  2.27 |                  1.59 |                7.28705 |               1343    |                  1.1  |
+| Estate/wagon  |                       1777.47  |                          2407 |                           935 |                     2.81533 |                       2.94 |                       2.65 |                4.796   |                  5.01 |                  4.56 |                1.85933 |                  2.06 |                  1.8  |                1.46267 |                  1.52 |                  1.39 |
+| Open-wheeler  |                        658.958 |                          1568 |                           410 |                     2.259   |                       2.7  |                       0.37 |                3.91562 |                  5    |                  3.1  |                1.82062 |                  2.19 |                  1.58 |                1.17    |                  1.3  |                  1.04 |
+| SUV/truck     |                       2176.53  |                          7500 |                          1312 |                     2.83618 |                       3.69 |                       1.79 |                4.68882 |                  5.92 |                  1.68 |                1.93971 |                  2.24 |                  1.76 |                1.69559 |                  2.05 |                  1.4  |
+| Van           |                       1613.17  |                          1805 |                          1420 |                   nan       |                     nan    |                     nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |
+
+######################
+
+--Vehicle type performance:
+
+| Type Usage    |   ('Top Speed (s)', 'mean') |   ('Top Speed (s)', 'max') |   ('Top Speed (s)', 'min') |   ('0-100 kph (s)', 'mean') |   ('0-100 kph (s)', 'max') |   ('0-100 kph (s)', 'min') |   ('Power (ps)', 'mean') |   ('Power (ps)', 'max') |   ('Power (ps)', 'min') |   ('Torque (Nm)', 'mean') |   ('Torque (Nm)', 'max') |   ('Torque (Nm)', 'min') |
+|:--------------|----------------------------:|---------------------------:|---------------------------:|----------------------------:|---------------------------:|---------------------------:|-------------------------:|------------------------:|------------------------:|--------------------------:|-------------------------:|-------------------------:|
+| 4-door saloon |                     249.586 |                        333 |                        124 |                     6.06416 |                       19.6 |                        2.3 |                  339.383 |                    1020 |                      53 |                   468.201 |                     1424 |                       83 |
+| Compact       |                     220.375 |                        290 |                         61 |                     7.40223 |                       16.1 |                        3.4 |                  189.022 |                     421 |                       5 |                   262.036 |                      601 |                       89 |
+| Convertible   |                     262.3   |                        410 |                         72 |                     5.25244 |                       29.7 |                        2.5 |                  351.101 |                    1500 |                      22 |                   431.909 |                     2000 |                       71 |
+| Coupe         |                     279.193 |                        437 |                        147 |                     4.90385 |                       17.6 |                        2.2 |                  413.076 |                    1360 |                      60 |                   489.655 |                     1500 |                       83 |
+| Estate/wagon  |                     255.051 |                        330 |                        207 |                     5.45658 |                        9.5 |                        3.1 |                  360.576 |                     680 |                     140 |                   509.155 |                      850 |                      230 |
+| Open-wheeler  |                     242.632 |                        371 |                        160 |                     4.08302 |                        7   |                        2   |                  304.571 |                     900 |                      81 |                   301.094 |                      820 |                       95 |
+| SUV/truck     |                     245.166 |                        311 |                        100 |                     6.02579 |                       12.3 |                        3.1 |                  355.365 |                     717 |                     100 |                   536.716 |                     1120 |                      137 |
+| Van           |                     217.25  |                        231 |                        184 |                     9.06    |                       11.2 |                        7.4 |                  177     |                     245 |                      95 |                   260     |                      350 |                      180 |
+
+######################
+
+--Vehicle country dimensions:
+
+| Country              |   ('Curb Weight (kg)', 'mean') |   ('Curb Weight (kg)', 'max') |   ('Curb Weight (kg)', 'min') |   ('Wheelbase (m)', 'mean') |   ('Wheelbase (m)', 'max') |   ('Wheelbase (m)', 'min') |   ('Long (m)', 'mean') |   ('Long (m)', 'max') |   ('Long (m)', 'min') |   ('Wide (m)', 'mean') |   ('Wide (m)', 'max') |   ('Wide (m)', 'min') |   ('High (m)', 'mean') |   ('High (m)', 'max') |   ('High (m)', 'min') |
+|:---------------------|-------------------------------:|------------------------------:|------------------------------:|----------------------------:|---------------------------:|---------------------------:|-----------------------:|----------------------:|----------------------:|-----------------------:|----------------------:|----------------------:|-----------------------:|----------------------:|----------------------:|
+| Australia            |                       1676.68  |                          1934 |                           700 |                     2.84211 |                       3.01 |                       2.65 |                4.89421 |                  5.2  |                  4.12 |                1.85789 |                  1.9  |                  1.74 |                1.44421 |                  1.49 |                  1.3  |
+| Austria              |                        837.2   |                           871 |                           790 |                     2.43    |                       2.43 |                       2.43 |                3.74    |                  3.74 |                  3.74 |                1.91333 |                  1.92 |                  1.9  |                1.2     |                  1.2  |                  1.2  |
+| Brazil               |                       1338.5   |                          1355 |                          1322 |                   nan       |                     nan    |                     nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |
+| China                |                       1855     |                          2191 |                          1639 |                     2.845   |                       2.9  |                       2.79 |                4.745   |                  4.85 |                  4.64 |                1.88    |                  1.96 |                  1.8  |                1.585   |                  1.75 |                  1.42 |
+| Czech Republic       |                       1394.38  |                          1894 |                           670 |                     2.63    |                       2.68 |                       2.58 |                4.65    |                  4.69 |                  4.57 |                1.79667 |                  1.81 |                  1.77 |                1.45333 |                  1.46 |                  1.45 |
+| Denmark              |                       1688     |                          1688 |                          1688 |                   nan       |                     nan    |                     nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |
+| France               |                       1210.98  |                          2056 |                           715 |                     2.60857 |                       2.79 |                       2.37 |                4.27625 |                  4.75 |                  3.82 |                1.79062 |                  1.99 |                  1.65 |               94.8507  |               1403    |                  1.22 |
+| Germany              |                       1658.29  |                         19630 |                           655 |                     2.67893 |                       3.21 |                       1.65 |                4.5644  |                  5.22 |                  1.68 |                1.8493  |                  2.19 |                  1.45 |                1.40454 |                  1.98 |                  1.16 |
+| India                |                        nan     |                           nan |                           nan |                   nan       |                     nan    |                     nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |
+| Isle of Man          |                        nan     |                           nan |                           nan |                   nan       |                     nan    |                     nan    |                1.37    |                  1.37 |                  1.37 |                1.32    |                  1.32 |                  1.32 |                1.01    |                  1.01 |                  1.01 |
+| Italy                |                       1439.52  |                          2410 |                           578 |                     2.60596 |                       3    |                       2.17 |                4.5486  |                  5.14 |                  3.97 |                1.9284  |                  2.27 |                  1.57 |               28.0698  |               1343    |                  1.12 |
+| Japan                |                       1406.3   |                          3355 |                           628 |                     2.55906 |                       2.87 |                       1.75 |                4.40078 |                  4.87 |                  3.78 |                1.76609 |                  1.94 |                  1.26 |                1.3881  |                  1.8  |                  1.16 |
+| Malaysia             |                       1147     |                          1147 |                          1147 |                   nan       |                     nan    |                     nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |
+| Mexico               |                        724     |                           724 |                           724 |                     2.3     |                       2.3  |                       2.3  |                3.72    |                  3.72 |                  3.72 |                1.88    |                  1.88 |                  1.88 |                1.12    |                  1.12 |                  1.12 |
+| Netherlands          |                        853.333 |                          1270 |                           600 |                     2.3     |                       2.3  |                       2.3  |                3.575   |                  3.74 |                  3.41 |                1.79    |                  1.85 |                  1.73 |                1.12    |                  1.14 |                  1.1  |
+| Romania              |                       1060     |                          1060 |                          1060 |                     2.63    |                       2.63 |                       2.63 |                4.29    |                  4.29 |                  4.29 |                1.74    |                  1.74 |                  1.74 |                1.53    |                  1.53 |                  1.53 |
+| Russia               |                        nan     |                           nan |                           nan |                   nan       |                     nan    |                     nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |
+| South Africa         |                        820     |                           820 |                           820 |                   nan       |                     nan    |                     nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |
+| South Korea          |                       1481.07  |                          2119 |                          1205 |                     2.67889 |                       2.82 |                       2.47 |                4.46818 |                  4.69 |                  4.22 |                1.82091 |                  1.89 |                  1.73 |                1.41364 |                  1.76 |                  1.3  |
+| Spain                |                       1380.73  |                          1778 |                           900 |                   nan       |                     nan    |                     nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |
+| Sweden               |                       1679.33  |                          2385 |                          1270 |                     2.73571 |                       2.87 |                       2.66 |                4.53429 |                  4.76 |                  4.29 |                1.94286 |                  2.05 |                  1.85 |                1.29857 |                  1.48 |                  1.11 |
+| Switzerland          |                        785.333 |                           850 |                           671 |                   nan       |                     nan    |                     nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |
+| United Arab Emirates |                        850     |                           850 |                           850 |                   nan       |                     nan    |                     nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |              nan       |                nan    |                nan    |
+| United Kingdom       |                       1324.01  |                          2693 |                           410 |                     2.60213 |                       3.19 |                       0.37 |                4.42418 |                  5.32 |                  3.05 |                1.87473 |                  2.22 |                  1.35 |                1.30218 |                  1.8  |                  1.04 |
+| United States        |                       1659.45  |                          3193 |                           748 |                     2.74942 |                       3.69 |                       2.29 |                4.76415 |                  5.92 |                  3.85 |                1.87096 |                  2.24 |                  1.55 |                1.35404 |                  2.05 |                  1.1  |
+
+######################
+
+--Vehicle country performance:
+
+| Country              |   ('Top Speed (s)', 'mean') |   ('Top Speed (s)', 'max') |   ('Top Speed (s)', 'min') |   ('0-100 kph (s)', 'mean') |   ('0-100 kph (s)', 'max') |   ('0-100 kph (s)', 'min') |   ('Power (ps)', 'mean') |   ('Power (ps)', 'max') |   ('Power (ps)', 'min') |   ('Torque (Nm)', 'mean') |   ('Torque (Nm)', 'max') |   ('Torque (Nm)', 'min') |
+|:---------------------|----------------------------:|---------------------------:|---------------------------:|----------------------------:|---------------------------:|---------------------------:|-------------------------:|------------------------:|------------------------:|--------------------------:|-------------------------:|-------------------------:|
+| Australia            |                     260.394 |                        300 |                        200 |                     5.30625 |                        8.5 |                        3   |                  397.684 |                     710 |                     222 |                   522.868 |                      813 |                      317 |
+| Austria              |                     237.6   |                        250 |                        230 |                     3.9     |                        4.4 |                        3.5 |                  299.2   |                     365 |                     241 |                   386.6   |                      450 |                      310 |
+| Brazil               |                     231.5   |                        232 |                        231 |                     7.7     |                        7.9 |                        7.5 |                  192.5   |                     193 |                     192 |                   nan     |                      nan |                      nan |
+| China                |                     205     |                        205 |                        205 |                     5.2     |                        8.3 |                        2.7 |                  439.429 |                    1360 |                      95 |                   545.833 |                     1480 |                      180 |
+| Czech Republic       |                     235.083 |                        250 |                        206 |                     7.18333 |                        9.5 |                        5.2 |                  215.533 |                     395 |                     130 |                   335     |                      530 |                      235 |
+| Denmark              |                     375     |                        375 |                        375 |                     3.2     |                        3.2 |                        3.2 |                 1104     |                    1104 |                    1104 |                  1430     |                     1430 |                     1430 |
+| France               |                     219.355 |                        434 |                        139 |                     8.09854 |                       19.6 |                        2.5 |                  221.554 |                    1199 |                      53 |                   285.686 |                     1500 |                       83 |
+| Germany              |                     260.158 |                        380 |                        100 |                     5.45406 |                       17.6 |                        2   |                  356.286 |                    1063 |                      57 |                   475.717 |                     1400 |                       83 |
+| India                |                     nan     |                        nan |                        nan |                   nan       |                      nan   |                      nan   |                  100.4   |                     175 |                      67 |                   177.25  |                      370 |                       89 |
+| Isle of Man          |                      61     |                         61 |                         61 |                   nan       |                      nan   |                      nan   |                    5     |                       5 |                       5 |                   nan     |                      nan |                      nan |
+| Italy                |                     280.171 |                        363 |                        150 |                     5.34301 |                       13.9 |                        2.2 |                  401.979 |                    1000 |                      72 |                   448.565 |                     1100 |                      104 |
+| Japan                |                     237.254 |                        371 |                        147 |                     6.3844  |                       15   |                        2.8 |                  264.799 |                     659 |                      64 |                   320.132 |                      760 |                      104 |
+| Malaysia             |                     185     |                        185 |                        185 |                   nan       |                      nan   |                      nan   |                  112     |                     112 |                     112 |                   148     |                      148 |                      148 |
+| Mexico               |                     246     |                        246 |                        246 |                     3.7     |                        3.7 |                        3.7 |                  289     |                     289 |                     289 |                   420     |                      420 |                      420 |
+| Netherlands          |                     259     |                        300 |                        210 |                     4.38    |                        5   |                        3   |                  320.5   |                     406 |                     182 |                   392     |                      480 |                      235 |
+| Romania              |                     183     |                        183 |                        183 |                    10.2     |                       10.2 |                       10.2 |                  106     |                     106 |                     106 |                   148     |                      148 |                      148 |
+| Russia               |                     nan     |                        nan |                        nan |                   nan       |                      nan   |                      nan   |                  720     |                     730 |                     710 |                   nan     |                      nan |                      nan |
+| South Africa         |                     191     |                        191 |                        191 |                     8.3     |                        8.3 |                        8.3 |                  122     |                     122 |                     122 |                   168     |                      168 |                      168 |
+| South Korea          |                     221.731 |                        271 |                        177 |                     7.34231 |                       10.4 |                        4.8 |                  217.091 |                     370 |                     100 |                   316     |                      605 |                      154 |
+| Spain                |                     233.76  |                        263 |                        164 |                     6.372   |                        8.4 |                        3.9 |                  247.786 |                     659 |                     129 |                   333.393 |                      658 |                      162 |
+| Sweden               |                     259.417 |                        437 |                        182 |                     6.39118 |                       10.4 |                        2.8 |                  390.972 |                    1500 |                     150 |                   543.886 |                     2000 |                      230 |
+| Switzerland          |                     nan     |                        nan |                        nan |                   nan       |                      nan   |                      nan   |                  516     |                     532 |                     500 |                   nan     |                      nan |                      nan |
+| United Arab Emirates |                     nan     |                        nan |                        nan |                   nan       |                      nan   |                      nan   |                  330     |                     330 |                     330 |                   371     |                      371 |                      371 |
+| United Kingdom       |                     265.596 |                        391 |                        139 |                     5.16654 |                       29.7 |                        2.3 |                  370.694 |                    1000 |                      49 |                   443.777 |                     1050 |                       71 |
+| United States        |                     265.938 |                        432 |                         72 |                     5.13203 |                       14   |                        2.3 |                  430.698 |                    1267 |                      22 |                   567.082 |                     1439 |                       87 |
+
+####################################################################################################################################
+
