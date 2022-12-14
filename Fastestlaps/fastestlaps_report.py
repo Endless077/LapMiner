@@ -7,8 +7,6 @@ import numpy as np
 import pandas as pd
 import fastestlaps_db as db
 
-from IPython.display import display
-
 LAPS_HEADERS = {
     'Lap_Time': 'Lap Time',
     'Driver': 'Driver',
@@ -210,15 +208,41 @@ def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
 
     file.write("######################\n\n")
 
-    file.write("--Track laps stats (count, best time, worse time):\n\n")
+    file.write("--Tracks laptimes stats:\n\n")
     df = tracks.join(laps.set_index('Track Name'), on="Track Name").groupby('Track Name')
-    file.write(df['Lap Time'].agg(['count','mean','max','min']).to_markdown() + '\n\n')
+    df = df['Lap Time'].agg(Lap_Counter='count',Lap_Mean='mean',Lap_Max='max',Lap_Min='min').sort_values(['Lap_Counter'], ascending=False)
+    file.write(df.to_markdown() + '\n\n')
     
     file.write("######################\n\n")
 
-    file.write("--Track best and worse vehicle (track, best vehicle, worse vehicle):\n\n")
+    file.write("--Tracks best and worse vehicles:\n\n")
     df = tracks.join(laps.set_index('Track Name'), on="Track Name").set_index('Vehicle Name').groupby('Track Name')
-    file.write(df['Lap Time'].agg(Best='idxmax', Worse='idxmin')[['Worse','Best']].to_markdown() + '\n\n')
+    df = df['Lap Time'].agg(WorseTime='idxmax', BestTime='idxmin')[['WorseTime','BestTime']]
+    file.write(df.to_markdown() + '\n\n')
+
+    file.write("######################\n\n")
+    file.write("--Track vehicles stats:\n\n")
+    df = laps.join(vehicles.set_index("Vehicle Name"), on='Vehicle Name').groupby(['Track Name'])
+    df = df['Power (ps)'].agg(Power_Mean='mean',Power_Max='max',Power_Min='min')[['Power_Mean','Power_Max','Power_Min']]
+    file.write(df.to_markdown() + '\n\n')
+
+    file.write("######################\n\n")
+    file.write("--Track vehicle category count:\n\n")
+    df = laps.join(vehicles.set_index("Vehicle Name"), on='Vehicle Name').groupby(['Track Name','Type Usage'])
+    df = df['Lap Time'].count()
+    file.write(df.to_markdown() + '\n\n')
+
+    file.write("######################\n\n")
+    file.write("--Vehicle tracks stats:\n\n")
+    df = laps.join(vehicles.set_index("Vehicle Name"), on='Vehicle Name').groupby(['Vehicle Name','Track Name'])
+    df = df['Lap Time'].agg(['count','mean','max','min']).sort_values(['count'], ascending=False)
+    file.write(df.to_markdown() + '\n\n')
+
+    file.write("######################\n\n")
+    file.write("--Vehicle laps count:\n\n")
+    df = laps.join(vehicles.set_index("Vehicle Name"), on='Vehicle Name').groupby(['Vehicle Name'])
+    df = df['Lap Time'].agg(Laps='count')[['Laps']].sort_values('Laps', ascending=False)
+    file.write(df.to_markdown() + '\n\n')
 
 def report_laps_plot():
     raise NotImplementedError
@@ -235,13 +259,15 @@ def report_tracks(file, tracks, json_tracks):
 
     file.write("--Tracks country stats:\n\n")
     df = tracks.groupby('Country')
-    file.write(df['Length (km)'].agg(['count','mean','max','min']).to_markdown() + '\n\n')
+    df = df['Length (km)'].agg(Length_Counter='count',Length_Mean='mean',Length_Max='max',Length_Min='min').sort_values(['Length_Counter'], ascending=False)
+    file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")
 
-    file.write("--Track max and min length (region - max track, min track):\n\n")
+    file.write("--Track length stats:\n\n")
     df = tracks.set_index('Track Name').groupby('Country')
-    file.write(df['Length (km)'].agg(Max='idxmax', Min='idxmin')[['Max','Min']].to_markdown() + '\n\n')
+    df = df['Length (km)'].agg(Length_Max='idxmax', Length_Min='idxmin')[['Length_Max','Length_Min']]
+    file.write(df.to_markdown() + '\n\n')
 
 def report_tracks_plot():
     raise NotImplementedError
@@ -256,14 +282,14 @@ def report_vehicles(file, vehicles, json_vehicles):
 
     file.write("######################\n\n")
     
-    file.write("--Vehicle type count:\n\n")
-    df = vehicles.groupby("Type Usage")['Vehicle Name'].agg(Vehicle='count')[['Vehicle']]
+    file.write("--Vehicle type count (type Usage):\n\n")
+    df = vehicles.groupby("Type Usage")['Vehicle Name'].agg(Vehicle='count')[['Vehicle']].sort_values(['Vehicle'], ascending=False)
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")
 
-    file.write("--Vehicle country count:\n\n")
-    df = vehicles.groupby(["Country","Type Usage"])['Vehicle Name'].agg(Vehicle='count')[['Vehicle']]
+    file.write("--Vehicle country count (origin Country):\n\n")
+    df = vehicles.groupby(["Country","Type Usage"])['Vehicle Name'].agg(Vehicle='count')[['Vehicle']].sort_values(['Vehicle'], ascending=False)
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")

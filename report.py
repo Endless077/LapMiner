@@ -16,29 +16,29 @@ import utils
 # Defination MAIN
 def main():
 
-    # Logging
-    sys.stdout = utils.Logger("report", "logs")
+    # # Logging
+    # sys.stdout = utils.Logger("report", "logs")
 
-    # Create folders tree (if exist, delete and create).
-    check_tree_struct()
+    # # Create folders tree (if exist, delete and create).
+    # check_tree_struct()
 
-    print("######################")
-    # Create TEMP view to get a filtered dataset
-    conn = report.extract_dataset()
-    # Generate excel, csv and json file format of all filtered dataset
-    report.dataset_generator(conn)
-    print("######################")
+    # print("######################")
+    # # Create TEMP view to get a filtered dataset
+    # conn = report.extract_dataset()
+    # # Generate excel, csv and json file format of all filtered dataset
+    # report.dataset_generator(conn)
+    # print("######################")
 
-    # Create a stats report
+    # # Create a stats report
     report.report()
-    print("######################")
+    # print("######################")
     
-    # Close database connection
-    conn.close()
+    # # Close database connection
+    # conn.close()
     
-    # Close logging
-    sys.stdout.log.close()
-    sys.stdout = sys.__stdout__
+    # # Close logging
+    # sys.stdout.log.close()
+    # sys.stdout = sys.__stdout__
 
 def check_tree_struct():
     paths = [report.PATH + "/excel", report.PATH + "/csv", report.PATH + "/json"]
