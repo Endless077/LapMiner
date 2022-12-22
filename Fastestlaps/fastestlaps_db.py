@@ -167,12 +167,12 @@ def filter(conn, min_track_laps, min_vehicle_laps):
     SELECT
         Tracks.Track_Name, Tracks.Country, Tracks.Total_Length
     FROM
-        Laps INNER JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
+        Laps JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
         INNER JOIN Tracks ON Laps.Track = Tracks.Track_Name
     GROUP BY
         Laps.Track
     HAVING
-        COUNT(Laps.Vehicle) >= {min_track_laps}
+        COUNT(DISTINCT Laps.Vehicle) >= {min_track_laps}
     ORDER BY
         Laps.Track ASC
     '''
@@ -183,7 +183,7 @@ def filter(conn, min_track_laps, min_vehicle_laps):
     SELECT
         List_Cars.*
     FROM
-        Laps INNER JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
+        Laps JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
         INNER JOIN Tracks ON Laps.Track = Tracks.Track_Name
     GROUP BY
         Laps.Vehicle
@@ -199,7 +199,7 @@ def filter(conn, min_track_laps, min_vehicle_laps):
     SELECT
         Laps.*
     FROM
-        Laps INNER JOIN Extract_Vehicle_List AS EVL ON Laps.Vehicle = EVL.Vehicle
+        Laps JOIN Extract_Vehicle_List AS EVL ON Laps.Vehicle = EVL.Vehicle
         INNER JOIN Extract_Track_List AS ETL ON Laps.Track = ETL.Track_Name
     ORDER BY
         Laps.Track ASC
