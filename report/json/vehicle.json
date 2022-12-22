@@ -283,11 +283,7 @@
       }
    },
    "356 A 1600 Convertible D": {
-      "Laps": {
-         "Riverside Raceway": [
-            167.0
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "356 A 1600 Convertible D",
          "Type": "Car",
@@ -5321,9 +5317,6 @@
          "Anglesey International Gp": [
             101.18
          ],
-         "Brands Hatch Gp": [
-            105.71
-         ],
          "Oulton Park (Full Circuit)": [
             119.72
          ],
@@ -5413,9 +5406,6 @@
          ],
          "Anglesey International Gp": [
             95.2
-         ],
-         "Bedford Autodrome Gt": [
-            159.38
          ]
       },
       "Specs": {
@@ -7210,9 +7200,6 @@
       "Laps": {
          "Motortrend Figure-8": [
             24.0
-         ],
-         "Forestburn Speed Hill Climb": [
-            50.09
          ],
          "Ring Knutstorp": [
             70.5
@@ -9403,9 +9390,6 @@
          "Arctic Circle Raceway": [
             101.0
          ],
-         "Rudskogen (Post 2012)": [
-            103.0
-         ],
          "Nürburgring Gp Sprint": [
             104.11
          ],
@@ -10186,9 +10170,6 @@
          "Tsukuba": [
             62.21
          ],
-         "European Bridgestone Proving Ground": [
-            68.12
-         ],
          "Inta": [
             68.6
          ],
@@ -10343,9 +10324,6 @@
    },
    "Audi R8 V10 RWS (Mk II)": {
       "Laps": {
-         "Forestburn Speed Hill Climb": [
-            49.64
-         ],
          "Hockenheim Short": [
             70.8
          ],
@@ -12140,9 +12118,6 @@
          ],
          "Madras Motor Race Track": [
             118.55
-         ],
-         "Ascari": [
-            124.91
          ],
          "Calabogie Motorsports Park": [
             138.0
@@ -17876,11 +17851,7 @@
       }
    },
    "BMW 520 (E12 115 PS)": {
-      "Laps": {
-         "Vallelunga International Circuit": [
-            131.65
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "BMW 520 (E12 115 PS)",
          "Type": "Car",
@@ -19205,9 +19176,6 @@
          "Circuit De Nevers Magny-Cours Club": [
             83.5
          ],
-         "Thunder Hill Raceway": [
-            85.38
-         ],
          "Thunderhill Park West": [
             85.38
          ],
@@ -20184,9 +20152,6 @@
          ],
          "Camden Airport (Pre 10/2010)": [
             73.4
-         ],
-         "Putnam Park": [
-            74.75
          ],
          "Ring Knutstrop (Conf 2)": [
             75.6
@@ -21542,9 +21507,6 @@
          ],
          "Dreux": [
             54.38
-         ],
-         "Knockhill International Circuit": [
-            57.02
          ],
          "Anneau Du Rhin Short": [
             60.07
@@ -24655,9 +24617,6 @@
       "Laps": {
          "Las Vegas Motor Speedway Inside Road Course Short": [
             40.5
-         ],
-         "Florida International Rally & Motorsport Park": [
-            87.01
          ]
       },
       "Specs": {
@@ -24877,9 +24836,6 @@
          ],
          "Nürburgring Gp Sprint": [
             115.07
-         ],
-         "Rustavi International Motorpark": [
-            116.85
          ]
       },
       "Specs": {
@@ -25597,9 +25553,6 @@
          ],
          "Oschersleben": [
             108.72
-         ],
-         "Rudskogen (Post 2012)": [
-            116.0
          ],
          "Mendig Afb Circuit": [
             119.1
@@ -29914,9 +29867,6 @@
       "Laps": {
          "Circuit De La Sarthe (1932 - 1971)": [
             213.6
-         ],
-         "Nürburgring Nordschleife (1927-1966)": [
-            515.4
          ]
       },
       "Specs": {
@@ -30257,9 +30207,6 @@
          ],
          "Velo Citta (1.68 Km)": [
             62.66
-         ],
-         "Haras Tuiuti": [
-            72.81
          ],
          "Hockenheim Short": [
             74.0
@@ -30826,11 +30773,7 @@
       }
    },
    "Chevrolet Corvette C1": {
-      "Laps": {
-         "Riverside Raceway": [
-            152.0
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Chevrolet Corvette C1",
          "Type": "Car",
@@ -30999,9 +30942,6 @@
          "Thunderhill Park East": [
             128.39,
             128.39
-         ],
-         "Monticello Motor Club (Full Length)": [
-            153.25
          ],
          "Nürburgring Nordschleife": [
             476.0
@@ -31527,9 +31467,6 @@
          ],
          "Willow Springs": [
             92.06
-         ],
-         "Pacific Raceways": [
-            92.26
          ],
          "Sportauto Wet Handling Test": [
             92.7
@@ -35539,9 +35476,6 @@
          "Laguna Seca (Post 1988)": [
             93.92
          ],
-         "Spring Mountain": [
-            105.4
-         ],
          "Buttonwillow Configuration 13": [
             113.34,
             115.7
@@ -36944,11 +36878,7 @@
       }
    },
    "Ferrari 250 GT Short Wheelbase": {
-      "Laps": {
-         "Modena Aerautodromo (1950-1972)": [
-            64.5
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Ferrari 250 GT Short Wheelbase",
          "Type": "Car",
@@ -37286,9 +37216,6 @@
       "Laps": {
          "Canadian Tire Motorsport Park": [
             73.23
-         ],
-         "Nürburgring Nordschleife (1973-1982)": [
-            420.8
          ]
       },
       "Specs": {
@@ -37421,9 +37348,6 @@
       "Laps": {
          "Bridgehampton Circuit": [
             120.85
-         ],
-         "Linas-Montlhery 9181 M": [
-            261.0
          ]
       },
       "Specs": {
@@ -38352,9 +38276,6 @@
          "Anglesey International Gp": [
             92.2
          ],
-         "Dubai Autodrome National Circuit": [
-            93.6
-         ],
          "Mendig Afb Circuit": [
             101.0
          ],
@@ -38369,9 +38290,6 @@
          ],
          "Imola (Post 2008)": [
             108.33
-         ],
-         "Dubai Autodrome Gp Circuit": [
-            131.73
          ],
          "Nürburgring Nordschleife": [
             420.03
@@ -39564,9 +39482,6 @@
          "Best Motoring Oval": [
             89.21
          ],
-         "Moroso Motorsports Park": [
-            89.4
-         ],
          "Fiorano": [
             89.6
          ],
@@ -40629,9 +40544,6 @@
          ],
          "Mortefontaine": [
             82.86
-         ],
-         "Indianapolis Motor Speedway Road Course": [
-            89.62
          ],
          "Zhejiang Circuit": [
             90.27
@@ -48079,11 +47991,7 @@
       }
    },
    "Honda CR-X SiR": {
-      "Laps": {
-         "Tochigi Honda Test Course": [
-            93.67
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Honda CR-X SiR",
          "Type": "Car",
@@ -48163,11 +48071,7 @@
       }
    },
    "Honda CRX Del Sol SiR": {
-      "Laps": {
-         "Tochigi Honda Test Course": [
-            94.59
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Honda CRX Del Sol SiR",
          "Type": "Car",
@@ -50306,9 +50210,6 @@
          "Killarney": [
             89.29
          ],
-         "Autódromo Internacional De Las Américas": [
-            91.39
-         ],
          "Winton (National Circuit)": [
             104.09
          ],
@@ -52078,11 +51979,7 @@
       }
    },
    "Jaguar E-type 3.8 (Mk I)": {
-      "Laps": {
-         "Modena Aerautodromo (1950-1972)": [
-            70.4
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Jaguar E-type 3.8 (Mk I)",
          "Type": "Car",
@@ -52222,29 +52119,7 @@
       }
    },
    "Jaguar F-Type P300": {
-      "Laps": {
-         "Grand Tour Rallycross": [
-            77.2,
-            77.5,
-            77.8,
-            78.6,
-            78.7,
-            80.1,
-            80.4,
-            81.3,
-            81.9,
-            82.2,
-            83.3,
-            83.6,
-            84.1,
-            84.2,
-            84.4,
-            85.1,
-            85.8,
-            93.8,
-            99.3
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Jaguar F-Type P300",
          "Type": "Car",
@@ -54354,9 +54229,6 @@
          "Oschersleben": [
             105.5
          ],
-         "Jerez": [
-            112.16
-         ],
          "Kyalami (New)": [
             115.24
          ],
@@ -55567,9 +55439,6 @@
       "Laps": {
          "Tsukuba": [
             67.66
-         ],
-         "Moroso Motorsports Park": [
-            94.8
          ]
       },
       "Specs": {
@@ -56451,11 +56320,7 @@
       }
    },
    "Lamborghini Jalpa 3500": {
-      "Laps": {
-         "Imola (1981-1994)": [
-            134.08
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Lamborghini Jalpa 3500",
          "Type": "Car",
@@ -58046,14 +57911,8 @@
          "Killarney": [
             87.37
          ],
-         "Summit Point": [
-            87.76
-         ],
          "Contidrom (3.3 Km)": [
             95.1
-         ],
-         "New Jersey Motorsports Park (Thunderbolt)": [
-            98.77
          ],
          "Mireval": [
             101.1
@@ -59098,9 +58957,6 @@
       "Laps": {
          "Anneau Du Rhin": [
             87.07
-         ],
-         "Circuit Chambley": [
-            141.84
          ]
       },
       "Specs": {
@@ -59496,12 +59352,6 @@
       "Laps": {
          "Modena Autodrome": [
             79.0
-         ],
-         "Circuti Di Cremona": [
-            100.1
-         ],
-         "Autodromo Vallelunga": [
-            113.6
          ],
          "Monza": [
             134.79
@@ -63043,11 +62893,7 @@
       }
    },
    "Mazda 767": {
-      "Laps": {
-         "Circuit De La Sarthe (1987-1989)": [
-            214.71
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Mazda 767",
          "Type": "Car",
@@ -65199,10 +65045,10 @@
          "Nürburgring Gp Sprint": [
             94.4
          ],
-         "Inde Motorsports Ranch Configuration 4": [
+         "Palma Renn Arena": [
             97.0
          ],
-         "Palma Renn Arena": [
+         "Inde Motorsports Ranch Configuration 4": [
             97.0
          ],
          "Le Mans (Bugatti)": [
@@ -65220,14 +65066,8 @@
          "Buttonwillow Configuration 13": [
             112.0
          ],
-         "Algarve International Circuit (Short)": [
-            114.7
-         ],
          "Pannonia Ring": [
             116.0
-         ],
-         "Circuit Chambley": [
-            119.0
          ],
          "Zandvoort Gp (Pre 2020)": [
             121.0
@@ -66987,9 +66827,6 @@
          "Autocar Wet Handling Track": [
             77.7
          ],
-         "Palm Beach International Raceway": [
-            79.45
-         ],
          "Ncm Motorsport Park ": [
             83.34
          ],
@@ -67013,9 +66850,6 @@
          ],
          "Le Mans (Bugatti)": [
             98.5
-         ],
-         "Pittsburgh International Race Complex": [
-            100.49
          ],
          "Hockenheim Gp": [
             100.79
@@ -67306,9 +67140,6 @@
          ],
          "Queensland Raceway Sprint Circuit": [
             58.15
-         ],
-         "Bryant Park Hillclimb": [
-            61.7
          ],
          "Velo Citta (1.68 Km)": [
             61.74
@@ -73023,19 +72854,6 @@
          "Winton (National Circuit)": [
             106.3
          ],
-         "Top Gear Rallycross Track": [
-            112.6,
-            113.9,
-            114.4,
-            116.3,
-            117.7,
-            121.4,
-            130.9,
-            132.0,
-            136.4,
-            141.6,
-            147.1
-         ],
          "Arctic Circle Raceway": [
             112.9
          ],
@@ -73746,9 +73564,6 @@
          ],
          "Anglesey International Gp": [
             104.49
-         ],
-         "Donington Park Gp (Post 1985)": [
-            111.23
          ],
          "Le Mans (Bugatti)": [
             116.47
@@ -74531,9 +74346,6 @@
             67.36,
             67.78
          ],
-         "Autódromo Internacional De Las Américas": [
-            96.28
-         ],
          "Willow Springs": [
             100.3
          ]
@@ -75040,9 +74852,6 @@
       "Laps": {
          "Buttonwillow East Loop": [
             57.6
-         ],
-         "Motortrend Ice Handling Course": [
-            66.8
          ],
          "Wakefield Park": [
             69.1
@@ -78607,14 +78416,8 @@
          "Donington Park National": [
             72.41
          ],
-         "Snetterton 200": [
-            76.2
-         ],
          "Rockingham National": [
             81.35
-         ],
-         "Oulton Park (Island Circuit)": [
-            91.42
          ],
          "Top Gear Track": [
             93.1
@@ -81624,14 +81427,7 @@
       }
    },
    "Peugeot 205 Rallye": {
-      "Laps": {
-         "Grand Sambuc": [
-            74.9
-         ],
-         "Circuit De Ledenon": [
-            122.5
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Peugeot 205 Rallye",
          "Type": "Car",
@@ -83372,9 +83168,6 @@
          "Hockenheim Short": [
             73.5
          ],
-         "Sodegaura Forest Raceway": [
-            77.16
-         ],
          "Vairano Handling Course": [
             77.68
          ],
@@ -83740,9 +83533,6 @@
          ],
          "Mortefontaine": [
             89.18
-         ],
-         "Dubai Autodrome National Circuit": [
-            95.31
          ],
          "Anglesey International Gp": [
             97.9
@@ -84209,9 +83999,6 @@
             83.2
          ],
          "Thunderhill Park West": [
-            83.82
-         ],
-         "Thunder Hill Raceway": [
             83.82
          ],
          "Grattan Raceway": [
@@ -85531,17 +85318,11 @@
          "Phillip Island": [
             108.1
          ],
-         "Rustavi International Motorpark": [
-            108.35
-         ],
          "Le Mans (Bugatti)": [
             109.78
          ],
          "Mendig Afb Circuit": [
             110.18
-         ],
-         "Tor Poznan": [
-            112.2
          ],
          "Circuit De Nevers Magny-Cours Gp": [
             121.1
@@ -85985,11 +85766,7 @@
       }
    },
    "Porsche 911 E": {
-      "Laps": {
-         "Marlboro Motor Raceway": [
-            107.5
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Porsche 911 E",
          "Type": "Car",
@@ -86243,9 +86020,6 @@
          ],
          "Phillip Island": [
             103.1
-         ],
-         "Spring Mountain": [
-            107.9
          ],
          "Kyalami (New)": [
             112.8
@@ -86794,9 +86568,6 @@
          "Madras Motor Race Track": [
             110.39
          ],
-         "Chuckwalla Valley Raceway Ccw": [
-            111.1
-         ],
          "Chuckwalla Valley Raceway": [
             112.53
          ],
@@ -86827,9 +86598,6 @@
          ],
          "Bahrain International Circuit": [
             139.0
-         ],
-         "Spring Mountain (Mansell C)": [
-            148.76
          ],
          "Balocco": [
             163.22
@@ -87307,10 +87075,10 @@
          "Circuito Tazio Nuvolari ": [
             85.71
          ],
-         "Contidrom (3.3 Km)": [
+         "Contidrom (3.8 Km)": [
             86.0
          ],
-         "Contidrom (3.8 Km)": [
+         "Contidrom (3.3 Km)": [
             86.0
          ],
          "Road Atlanta": [
@@ -87354,9 +87122,6 @@
          ],
          "Madras Motor Race Track": [
             107.01
-         ],
-         "Dubai Autodrome International Circuit": [
-            107.17
          ],
          "Assen": [
             109.23
@@ -87406,9 +87171,6 @@
          ],
          "Road America": [
             138.57
-         ],
-         "Aragon": [
-            140.0
          ],
          "Suzuka": [
             143.04
@@ -87507,9 +87269,6 @@
          "Willow Springs - Streets Of Willow": [
             82.72
          ],
-         "Sandown": [
-            83.0
-         ],
          "Autocar Wet Handling Track": [
             86.2
          ],
@@ -87574,14 +87333,8 @@
          "Buttonwillow Configuration 13": [
             114.5
          ],
-         "Algarve International Circuit (Short)": [
-            116.76
-         ],
          "Algarve International Circuit Portimao (Grand Prix)": [
             117.84
-         ],
-         "Jerez": [
-            120.8
          ],
          "Monza": [
             122.36
@@ -87994,11 +87747,7 @@
       }
    },
    "Porsche 911 S 2.0": {
-      "Laps": {
-         "Marlboro Motor Raceway": [
-            105.0
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Porsche 911 S 2.0",
          "Type": "Car",
@@ -88860,9 +88609,6 @@
          "Willow Springs": [
             103.0
          ],
-         "Hockenheim Gp 1981": [
-            159.56
-         ],
          "Nürburgring Nordschleife": [
             488.71
          ]
@@ -89162,9 +88908,6 @@
          ],
          "Cadwell Park Woodland": [
             66.0
-         ],
-         "European Bridgestone Proving Ground": [
-            66.54
          ],
          "Bahrain Inner Circuit": [
             67.0
@@ -89962,9 +89705,6 @@
          "Laguna Seca (Post 1988)": [
             89.89
          ],
-         "Indianapolis Motor Speedway Road Course": [
-            94.4
-         ],
          "Phillip Island": [
             98.02
          ],
@@ -90422,11 +90162,7 @@
       }
    },
    "Porsche 928 S (300 PS)": {
-      "Laps": {
-         "Hockenheim Gp 1981": [
-            163.94
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Porsche 928 S (300 PS)",
          "Type": "Car",
@@ -90702,9 +90438,6 @@
    },
    "Porsche 944 Turbo (220 PS)": {
       "Laps": {
-         "La Chatre": [
-            47.88
-         ],
          "Croix En Ternois": [
             68.98
          ],
@@ -90713,9 +90446,6 @@
          ],
          "Magny Cours": [
             108.69
-         ],
-         "Le Mans (Bugatti) (1976-1986)": [
-            118.0
          ],
          "Linas-Montlhery": [
             167.0
@@ -91594,9 +91324,6 @@
    },
    "Porsche Carrera 3.2 (G model)": {
       "Laps": {
-         "La Chatre": [
-            48.07
-         ],
          "Croix En Ternois": [
             69.34
          ],
@@ -91608,9 +91335,6 @@
          ],
          "Magny Cours": [
             108.15
-         ],
-         "Le Mans (Bugatti) (1976-1986)": [
-            120.18
          ],
          "Linas-Montlhery": [
             169.0
@@ -91749,12 +91473,7 @@
       }
    },
    "Porsche Carrera RS 3.0": {
-      "Laps": {
-         "Nürburgring Nordschleife (1973-1982)": [
-            588.0,
-            594.9
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Porsche Carrera RS 3.0",
          "Type": "Car",
@@ -92756,12 +92475,6 @@
          "Oschersleben": [
             105.0
          ],
-         "Oregon Raceway Park Ccw": [
-            110.0
-         ],
-         "Oregon Raceway Park Cw": [
-            111.0
-         ],
          "Le Mans (Bugatti)": [
             111.29
          ],
@@ -92780,9 +92493,6 @@
          ],
          "Circuit De Nevers Magny-Cours Gp": [
             116.61
-         ],
-         "Buttonwillow Configuration 13 Ccw": [
-            116.97
          ],
          "Hockenheim Gp": [
             117.4
@@ -93117,10 +92827,10 @@
          "Willow Springs - Streets Of Willow": [
             87.0
          ],
-         "Contidrom (3.8 Km)": [
+         "Contidrom (3.3 Km)": [
             94.23
          ],
-         "Contidrom (3.3 Km)": [
+         "Contidrom (3.8 Km)": [
             94.23
          ],
          "Mireval": [
@@ -93149,9 +92859,6 @@
          ],
          "Virginia International Raceway Grand East Course (Post 01/2014)": [
             182.6
-         ],
-         "Gotland Ring (Gp Track)": [
-            204.39
          ],
          "Nürburgring Nordschleife": [
             475.0
@@ -94890,11 +94597,7 @@
       }
    },
    "RUF CTR3 Clubsport": {
-      "Laps": {
-         "Eurospeedway Lausitz Gp": [
-            121.07
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "RUF CTR3 Clubsport",
          "Type": "Car",
@@ -97902,9 +97605,6 @@
          "Oschersleben": [
             115.35
          ],
-         "Los Arcos (Navarra)": [
-            126.59
-         ],
          "Kyalami": [
             133.7
          ]
@@ -98115,9 +97815,6 @@
          ],
          "Contidrom (3.3 Km)": [
             101.04
-         ],
-         "Tor Poznan": [
-            105.9
          ],
          "Mireval": [
             106.9
@@ -102901,9 +102598,6 @@
          "Jarama": [
             110.25
          ],
-         "Castelloli Circuit": [
-            117.38
-         ],
          "Nürburgring Nordschleife Btg": [
             551.28
          ]
@@ -104341,227 +104035,7 @@
       }
    },
    "Spark SRT01-e": {
-      "Laps": {
-         "Monaco Formula E (2014-2019)": [
-            53.48,
-            53.67,
-            53.7,
-            53.71,
-            53.8,
-            53.89,
-            53.91,
-            54.02,
-            54.03,
-            54.13,
-            54.17,
-            54.25,
-            54.26,
-            54.34,
-            54.35,
-            54.46,
-            54.5,
-            54.65,
-            54.86,
-            56.94
-         ],
-         "Long Beach Eprix Circuit": [
-            56.94,
-            56.94,
-            56.97,
-            57.08,
-            57.11,
-            57.16,
-            57.18,
-            57.18,
-            57.26,
-            57.29,
-            57.3,
-            57.35,
-            57.42,
-            57.45,
-            57.51,
-            57.82,
-            57.9,
-            57.92,
-            57.95,
-            59.96
-         ],
-         "Biscayne Bay Street Circuit": [
-            65.95,
-            66.0,
-            66.17,
-            66.17,
-            66.25,
-            66.39,
-            66.42,
-            66.5,
-            66.5,
-            66.51,
-            66.53,
-            66.84,
-            66.89,
-            67.04,
-            67.16,
-            67.22,
-            67.28,
-            67.68,
-            68.24,
-            68.39
-         ],
-         "Puerto Madero Street Circuit": [
-            69.13,
-            69.16,
-            69.37,
-            69.39,
-            69.52,
-            69.53,
-            69.64,
-            69.66,
-            69.74,
-            69.87,
-            70.16,
-            70.33,
-            70.59,
-            70.71,
-            71.05,
-            71.33,
-            71.57,
-            71.78,
-            71.92,
-            73.05
-         ],
-         "Moscow Street Circuit": [
-            69.43,
-            69.45,
-            69.68,
-            69.83,
-            69.97,
-            70.04,
-            70.07,
-            70.1,
-            70.14,
-            70.26,
-            70.36,
-            70.4,
-            70.54,
-            70.62,
-            70.69,
-            70.7,
-            70.94,
-            71.14,
-            71.83,
-            71.97
-         ],
-         "Punta Del Este Formula E (Pre 2015)": [
-            75.41,
-            75.53,
-            75.72,
-            75.84,
-            76.05,
-            76.11,
-            76.14,
-            76.22,
-            76.37,
-            76.42,
-            76.81,
-            76.86,
-            77.02,
-            77.65,
-            77.81,
-            79.36,
-            79.79,
-            80.09,
-            80.21,
-            81.49
-         ],
-         "Tempelhof Airport Street Circuit (2014 - 2015)": [
-            81.55,
-            81.62,
-            81.68,
-            81.71,
-            81.75,
-            81.86,
-            81.91,
-            81.92,
-            81.98,
-            82.01,
-            82.03,
-            82.1,
-            82.31,
-            82.39,
-            82.44,
-            82.44,
-            82.46,
-            82.57,
-            82.59,
-            82.8
-         ],
-         "Putrajaya Street Circuit": [
-            81.78,
-            82.01,
-            82.21,
-            82.23,
-            82.34,
-            82.35,
-            82.61,
-            82.62,
-            82.72,
-            82.82,
-            82.94,
-            83.19,
-            83.24,
-            83.7,
-            83.86,
-            83.89,
-            84.43,
-            85.12,
-            85.22,
-            85.82
-         ],
-         "Battersea Park Street Circuit": [
-            83.9,
-            83.96,
-            84.11,
-            84.24,
-            84.32,
-            84.38,
-            85.1,
-            85.14,
-            85.18,
-            85.26,
-            85.49,
-            85.65,
-            85.69,
-            85.83,
-            86.3,
-            86.85,
-            87.16,
-            87.21,
-            87.45,
-            88.15
-         ],
-         "Beijing Olympic Green Circuit (2014)": [
-            102.2,
-            102.31,
-            102.45,
-            102.46,
-            102.53,
-            102.58,
-            102.68,
-            102.73,
-            102.75,
-            102.78,
-            102.85,
-            102.92,
-            104.06,
-            104.13,
-            105.28,
-            105.37,
-            106.17,
-            107.83,
-            112.6
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Spark SRT01-e",
          "Type": "Car",
@@ -105482,9 +104956,6 @@
       "Laps": {
          "Buttonwillow East Loop": [
             58.6
-         ],
-         "Motortrend Ice Handling Course": [
-            65.4
          ],
          "Anglesey National": [
             66.3
@@ -107483,10 +106954,6 @@
          "Tsukuba": [
             63.3
          ],
-         "Willow Springs - Horse Thief Mile": [
-            64.01,
-            64.15
-         ],
          "Ring Knutstorp": [
             71.7
          ],
@@ -107533,15 +107000,6 @@
          "Buttonwillow Configuration 13": [
             113.27,
             119.23
-         ],
-         "Buttonwillow Configuration 13 Ccw": [
-            120.7
-         ],
-         "Buttonwillow Configuration 13 A": [
-            123.16
-         ],
-         "Buttonwillow Configuration 13 A Ccw": [
-            123.81
          ],
          "Buttonwillow Configuration 1": [
             124.29
@@ -107695,11 +107153,7 @@
       }
    },
    "Tesla Model S P90D": {
-      "Laps": {
-         "Pikes Peak": [
-            708.26
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "Tesla Model S P90D",
          "Type": "Car",
@@ -108821,9 +108275,6 @@
          "Dunnville Autodrome": [
             75.9
          ],
-         "Hachi Highland Hillclimb": [
-            80.06
-         ],
          "Circuit De Nevers Magny-Cours Club": [
             89.23
          ],
@@ -108930,9 +108381,6 @@
          "Vairano Handling Course": [
             78.36
          ],
-         "Hachi Highland Hillclimb": [
-            79.81
-         ],
          "Bedford Autodrome West (Post 5/2015)": [
             84.6
          ],
@@ -108941,9 +108389,6 @@
          ],
          "Top Gear Track": [
             86.3
-         ],
-         "Alastaro Circuit": [
-            91.98
          ],
          "Sachsenring": [
             94.04
@@ -109085,9 +108530,6 @@
          "Killarney": [
             91.93
          ],
-         "Vasco Sameiro (Braga)": [
-            93.68
-         ],
          "Rockingham International Super Sportscar": [
             103.8
          ],
@@ -109111,9 +108553,6 @@
          ],
          "Interlagos": [
             127.27
-         ],
-         "Los Arcos (Navarra)": [
-            127.89
          ],
          "Ferte Gaucher": [
             129.2
@@ -109609,9 +109048,6 @@
       "Laps": {
          "Motortrend Figure-8": [
             23.8
-         ],
-         "Bryant Park Hillclimb": [
-            61.1
          ],
          "Lime Rock Park": [
             62.15
@@ -115587,11 +115023,7 @@
       }
    },
    "WM Secateva P88": {
-      "Laps": {
-         "Circuit De La Sarthe (1987-1989)": [
-            221.48
-         ]
-      },
+      "Laps": {},
       "Specs": {
          "Vehicle Name": "WM Secateva P88",
          "Type": "Car",

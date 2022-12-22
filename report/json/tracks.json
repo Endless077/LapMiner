@@ -197,15 +197,6 @@
       "Country": "Italy",
       "Track Length": 2.7
    },
-   "Alastaro Circuit": {
-      "Laps": {
-         "Toyota GR Yaris (Mk IV)": [
-            91.98
-         ]
-      },
-      "Country": "Finland",
-      "Track Length": 2.72
-   },
    "Albert Park": {
       "Laps": {
          "Ferrari F1-75": [
@@ -449,18 +440,6 @@
       },
       "Country": "South Africa",
       "Track Length": 2.48
-   },
-   "Algarve International Circuit (Short)": {
-      "Laps": {
-         "McLaren 675LT": [
-            114.7
-         ],
-         "Porsche 911 GT3 RS (991)": [
-            116.76
-         ]
-      },
-      "Country": "Spain",
-      "Track Length": 4.5
    },
    "Algarve International Circuit Portimao (Grand Prix)": {
       "Laps": {
@@ -1751,15 +1730,6 @@
       "Country": "France",
       "Track Length": 1.84
    },
-   "Aragon": {
-      "Laps": {
-         "Porsche 911 GT3 RS": [
-            140.0
-         ]
-      },
-      "Country": "Spain",
-      "Track Length": 5.34
-   },
    "Aragon Motogp": {
       "Laps": {
          "BR Engineering Dallara BR1 AER": [
@@ -1855,15 +1825,6 @@
       },
       "Country": "Canada",
       "Track Length": 4.83
-   },
-   "Ascari": {
-      "Laps": {
-         "Audi RS7 Sportback": [
-            124.91
-         ]
-      },
-      "Country": "Spain",
-      "Track Length": 4.3
    },
    "Ascari Race Resort": {
       "Laps": {
@@ -2966,15 +2927,6 @@
       },
       "Country": "Italy",
       "Track Length": 1.52
-   },
-   "Autodromo Vallelunga": {
-      "Laps": {
-         "Lotus Elise Sport 220 (Mk III)": [
-            113.6
-         ]
-      },
-      "Country": "Italy",
-      "Track Length": 4.08
    },
    "Autopartner Test Route": {
       "Laps": {
@@ -4156,18 +4108,6 @@
       },
       "Country": "Mexico",
       "Track Length": 4.3
-   },
-   "Autódromo Internacional De Las Américas": {
-      "Laps": {
-         "Honda S2000 (AP2)": [
-            91.39
-         ],
-         "Mitsubishi GTO MR (Mk II)": [
-            96.28
-         ]
-      },
-      "Country": "Dominican Republic",
-      "Track Length": 2.66
    },
    "Bahrain Inner Circuit": {
       "Laps": {
@@ -6185,34 +6125,6 @@
       "Country": "Australia",
       "Track Length": 2.01
    },
-   "Battersea Park Street Circuit": {
-      "Laps": {
-         "Spark SRT01-e": [
-            83.9,
-            83.96,
-            84.11,
-            84.24,
-            84.32,
-            84.38,
-            85.1,
-            85.14,
-            85.18,
-            85.26,
-            85.49,
-            85.65,
-            85.69,
-            85.83,
-            86.3,
-            86.85,
-            87.16,
-            87.21,
-            87.45,
-            88.15
-         ]
-      },
-      "Country": "United Kingdom",
-      "Track Length": 2.92
-   },
    "Bedford Autodrome East Circuit": {
       "Laps": {
          "Lotus 2-Eleven": [
@@ -6245,15 +6157,6 @@
       },
       "Country": "United Kingdom",
       "Track Length": 1.17
-   },
-   "Bedford Autodrome Gt": {
-      "Laps": {
-         "Ariel Atom 4": [
-            159.38
-         ]
-      },
-      "Country": "United Kingdom",
-      "Track Length": 6.12
    },
    "Bedford Autodrome South Circuit": {
       "Laps": {
@@ -7191,33 +7094,6 @@
       "Country": null,
       "Track Length": NaN
    },
-   "Beijing Olympic Green Circuit (2014)": {
-      "Laps": {
-         "Spark SRT01-e": [
-            102.2,
-            102.31,
-            102.45,
-            102.46,
-            102.53,
-            102.58,
-            102.68,
-            102.73,
-            102.75,
-            102.78,
-            102.85,
-            102.92,
-            104.06,
-            104.13,
-            105.28,
-            105.37,
-            106.17,
-            107.83,
-            112.6
-         ]
-      },
-      "Country": "China",
-      "Track Length": 3.45
-   },
    "Bend West Circuit": {
       "Laps": {
          "Mercedes-Benz AMG GT 63 S": [
@@ -7322,34 +7198,6 @@
       },
       "Country": "Germany",
       "Track Length": 4.2
-   },
-   "Biscayne Bay Street Circuit": {
-      "Laps": {
-         "Spark SRT01-e": [
-            65.95,
-            66.0,
-            66.17,
-            66.17,
-            66.25,
-            66.39,
-            66.42,
-            66.5,
-            66.5,
-            66.51,
-            66.53,
-            66.84,
-            66.89,
-            67.04,
-            67.16,
-            67.22,
-            67.28,
-            67.68,
-            68.24,
-            68.39
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 2.17
    },
    "Biķernieki (High Speed)": {
       "Laps": {
@@ -7836,15 +7684,6 @@
       "Country": "United Kingdom",
       "Track Length": 1.94
    },
-   "Brands Hatch Gp": {
-      "Laps": {
-         "Ariel Atom 3.5 (314 PS)": [
-            105.71
-         ]
-      },
-      "Country": "United Kingdom",
-      "Track Length": 3.92
-   },
    "Bridgehampton Circuit": {
       "Laps": {
          "Ferrari 330 GT 2+2 S1": [
@@ -7994,18 +7833,6 @@
       },
       "Country": "United Kingdom",
       "Track Length": 3.38
-   },
-   "Bryant Park Hillclimb": {
-      "Laps": {
-         "Toyota Supra (Mk V 387 PS)": [
-            61.1
-         ],
-         "Mercedes - AMG A45 S (W177)": [
-            61.7
-         ]
-      },
-      "Country": "Australia",
-      "Track Length": 1.4
    },
    "Buddh International Circuit Autox": {
       "Laps": {
@@ -8278,36 +8105,6 @@
       },
       "Country": null,
       "Track Length": NaN
-   },
-   "Buttonwillow Configuration 13 A": {
-      "Laps": {
-         "Tesla Model 3": [
-            123.16
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 4.4
-   },
-   "Buttonwillow Configuration 13 A Ccw": {
-      "Laps": {
-         "Tesla Model 3": [
-            123.81
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 4.4
-   },
-   "Buttonwillow Configuration 13 Ccw": {
-      "Laps": {
-         "Porsche Cayman GT4 (981)": [
-            116.97
-         ],
-         "Tesla Model 3": [
-            120.7
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 4.45
    },
    "Buttonwillow Configuration 26": {
       "Laps": {
@@ -8812,15 +8609,6 @@
       "Country": "Canada",
       "Track Length": 3.96
    },
-   "Castelloli Circuit": {
-      "Laps": {
-         "Seat Leon Cupra 290": [
-            117.38
-         ]
-      },
-      "Country": "Spain",
-      "Track Length": 4.14
-   },
    "Castle Combe": {
       "Laps": {
          "Ariel Atom 3.5R": [
@@ -9212,27 +9000,6 @@
       "Country": "United States",
       "Track Length": 4.31
    },
-   "Chuckwalla Valley Raceway Ccw": {
-      "Laps": {
-         "Porsche 911 GT3 (991)": [
-            111.1
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 4.31
-   },
-   "Circuit Chambley": {
-      "Laps": {
-         "McLaren 675LT": [
-            119.0
-         ],
-         "Lotus Elise 111S (Mk I)": [
-            141.84
-         ]
-      },
-      "Country": "France",
-      "Track Length": 3.3
-   },
    "Circuit De La Sarthe": {
       "Laps": {
          "Toyota TS050 (Mk II)": [
@@ -9602,27 +9369,6 @@
       },
       "Country": "France",
       "Track Length": 13.63
-   },
-   "Circuit De La Sarthe (1987-1989)": {
-      "Laps": {
-         "Mazda 767": [
-            214.71
-         ],
-         "WM Secateva P88": [
-            221.48
-         ]
-      },
-      "Country": "France",
-      "Track Length": 13.54
-   },
-   "Circuit De Ledenon": {
-      "Laps": {
-         "Peugeot 205 Rallye": [
-            122.5
-         ]
-      },
-      "Country": "France",
-      "Track Length": 3.15
    },
    "Circuit De Nevers Magny-Cours Club": {
       "Laps": {
@@ -11289,15 +11035,6 @@
       "Country": "Italy",
       "Track Length": 2.8
    },
-   "Circuti Di Cremona": {
-      "Laps": {
-         "Lotus Elise Sport 220 (Mk III)": [
-            100.1
-         ]
-      },
-      "Country": "Italy",
-      "Track Length": 3.45
-   },
    "Contidrom (3.3 Km)": {
       "Laps": {
          "Porsche 911 GT3 RS": [
@@ -12499,15 +12236,6 @@
       "Country": "France",
       "Track Length": 3.8
    },
-   "Donington Park Gp (Post 1985)": {
-      "Laps": {
-         "Mini John Cooper Works GP": [
-            111.23
-         ]
-      },
-      "Country": "United Kingdom",
-      "Track Length": 4.02
-   },
    "Donington Park National": {
       "Laps": {
          "Noble M12 GTO": [
@@ -12618,36 +12346,6 @@
       },
       "Country": "France",
       "Track Length": 2.1
-   },
-   "Dubai Autodrome Gp Circuit": {
-      "Laps": {
-         "Ferrari 488 Pista": [
-            131.73
-         ]
-      },
-      "Country": "United Arab Emirates",
-      "Track Length": 5.39
-   },
-   "Dubai Autodrome International Circuit": {
-      "Laps": {
-         "Porsche 911 GT3 RS": [
-            107.17
-         ]
-      },
-      "Country": "United Arab Emirates",
-      "Track Length": 4.29
-   },
-   "Dubai Autodrome National Circuit": {
-      "Laps": {
-         "Ferrari 488 Pista": [
-            93.6
-         ],
-         "Porsche 718 Cayman GT4 RS": [
-            95.31
-         ]
-      },
-      "Country": "United Arab Emirates",
-      "Track Length": 3.56
    },
    "Dunnville Autodrome": {
       "Laps": {
@@ -12993,18 +12691,6 @@
       },
       "Country": "Portugal",
       "Track Length": 4.18
-   },
-   "European Bridgestone Proving Ground": {
-      "Laps": {
-         "Porsche 911 Turbo S": [
-            66.54
-         ],
-         "Audi R8 V10 Plus (Mk II)": [
-            68.12
-         ]
-      },
-      "Country": "Italy",
-      "Track Length": 2.41
    },
    "Eurospeedway Lausitz": {
       "Laps": {
@@ -13363,15 +13049,6 @@
       "Country": "Germany",
       "Track Length": 1.0
    },
-   "Eurospeedway Lausitz Gp": {
-      "Laps": {
-         "RUF CTR3 Clubsport": [
-            121.07
-         ]
-      },
-      "Country": "Germany",
-      "Track Length": 4.53
-   },
    "Ferte Gaucher": {
       "Laps": {
          "Caterham Seven 485 R": [
@@ -13626,15 +13303,6 @@
       "Country": "Italy",
       "Track Length": 3.02
    },
-   "Florida International Rally & Motorsport Park": {
-      "Laps": {
-         "BMW Z3 M Roadster (240 PS)": [
-            87.01
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 2.41
-   },
    "Folembray": {
       "Laps": {
          "Ferrari 458 Italia": [
@@ -13664,18 +13332,6 @@
       },
       "Country": "France",
       "Track Length": 2.05
-   },
-   "Forestburn Speed Hill Climb": {
-      "Laps": {
-         "Audi R8 V10 RWS (Mk II)": [
-            49.64
-         ],
-         "Aston Martin Vantage  (Mk II)": [
-            50.09
-         ]
-      },
-      "Country": "United Kingdom",
-      "Track Length": 1.03
    },
    "Franciacorta": {
       "Laps": {
@@ -14485,15 +14141,6 @@
       "Country": "United Kingdom",
       "Track Length": 1.86
    },
-   "Gotland Ring (Gp Track)": {
-      "Laps": {
-         "Porsche Cayman S (981)": [
-            204.39
-         ]
-      },
-      "Country": "Sweden",
-      "Track Length": 7.3
-   },
    "Gotland Ring (Northern Loop)": {
       "Laps": {
          "Ariel Atom": [
@@ -14623,15 +14270,6 @@
       "Country": "Sweden",
       "Track Length": 3.2
    },
-   "Grand Sambuc": {
-      "Laps": {
-         "Peugeot 205 Rallye": [
-            74.9
-         ]
-      },
-      "Country": "France",
-      "Track Length": 1.9
-   },
    "Grand Tour Eboladrome": {
       "Laps": {
          "McLaren Senna (P15)": [
@@ -14745,33 +14383,6 @@
       },
       "Country": "United Kingdom",
       "Track Length": 2.0
-   },
-   "Grand Tour Rallycross": {
-      "Laps": {
-         "Jaguar F-Type P300": [
-            77.2,
-            77.5,
-            77.8,
-            78.6,
-            78.7,
-            80.1,
-            80.4,
-            81.3,
-            81.9,
-            82.2,
-            83.3,
-            83.6,
-            84.1,
-            84.2,
-            84.4,
-            85.1,
-            85.8,
-            93.8,
-            99.3
-         ]
-      },
-      "Country": "United Kingdom",
-      "Track Length": 1.0
    },
    "Grattan Raceway": {
       "Laps": {
@@ -15042,27 +14653,6 @@
       },
       "Country": "Japan",
       "Track Length": 1.0
-   },
-   "Hachi Highland Hillclimb": {
-      "Laps": {
-         "Toyota GR Yaris (Mk IV)": [
-            79.81
-         ],
-         "Toyota GR 86 (Mk II)": [
-            80.06
-         ]
-      },
-      "Country": "Japan",
-      "Track Length": 2.5
-   },
-   "Haras Tuiuti": {
-      "Laps": {
-         "Chevrolet Camaro SS (Mk VI)": [
-            72.81
-         ]
-      },
-      "Country": "Brazil",
-      "Track Length": 2.5
    },
    "Harewood Hill Climb": {
       "Laps": {
@@ -15844,18 +15434,6 @@
       },
       "Country": "Germany",
       "Track Length": 4.57
-   },
-   "Hockenheim Gp 1981": {
-      "Laps": {
-         "Porsche 911 Turbo 3.3": [
-            159.56
-         ],
-         "Porsche 928 S (300 PS)": [
-            163.94
-         ]
-      },
-      "Country": "Germany",
-      "Track Length": 6.79
    },
    "Hockenheim Short": {
       "Laps": {
@@ -17089,15 +16667,6 @@
       "Country": "Hungary",
       "Track Length": 4.38
    },
-   "Imola (1981-1994)": {
-      "Laps": {
-         "Lamborghini Jalpa 3500": [
-            134.08
-         ]
-      },
-      "Country": "Italy",
-      "Track Length": 5.01
-   },
    "Imola (Post 2008)": {
       "Laps": {
          "W11 EQ": [
@@ -17272,18 +16841,6 @@
       },
       "Country": "United States",
       "Track Length": 3.54
-   },
-   "Indianapolis Motor Speedway Road Course": {
-      "Laps": {
-         "Ferrari SF90 Stradale": [
-            89.62
-         ],
-         "Porsche 918 Spyder": [
-            94.4
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 3.86
    },
    "Inta": {
       "Laps": {
@@ -18497,18 +18054,6 @@
       "Country": "Saudi Arabia",
       "Track Length": 6.17
    },
-   "Jerez": {
-      "Laps": {
-         "KTM X-Bow": [
-            112.16
-         ],
-         "Porsche 911 GT3 RS (991)": [
-            120.8
-         ]
-      },
-      "Country": "Spain",
-      "Track Length": 4.43
-   },
    "Kakucs Ring": {
       "Laps": {
          "Peugeot RCZ R": [
@@ -18921,15 +18466,6 @@
       "Country": "South Africa",
       "Track Length": 3.27
    },
-   "Knockhill International Circuit": {
-      "Laps": {
-         "BMW M4 Competition xDrive": [
-            57.02
-         ]
-      },
-      "Country": "United Kingdom",
-      "Track Length": 2.09
-   },
    "Kotarr": {
       "Laps": {
          "Renault Megane R26.R": [
@@ -19278,18 +18814,6 @@
       },
       "Country": "Austria",
       "Track Length": 1.33
-   },
-   "La Chatre": {
-      "Laps": {
-         "Porsche 944 Turbo (220 PS)": [
-            47.88
-         ],
-         "Porsche Carrera 3.2 (G model)": [
-            48.07
-         ]
-      },
-      "Country": "France",
-      "Track Length": 1.3
    },
    "Laguna Seca (Post 1988)": {
       "Laps": {
@@ -20261,18 +19785,6 @@
       "Country": "France",
       "Track Length": 4.18
    },
-   "Le Mans (Bugatti) (1976-1986)": {
-      "Laps": {
-         "Porsche 944 Turbo (220 PS)": [
-            118.0
-         ],
-         "Porsche Carrera 3.2 (G model)": [
-            120.18
-         ]
-      },
-      "Country": "France",
-      "Track Length": 4.24
-   },
    "Lime Rock Park": {
       "Laps": {
          "Chevrolet Corvette Stingray": [
@@ -20586,15 +20098,6 @@
       "Country": "France",
       "Track Length": 9.0
    },
-   "Linas-Montlhery 9181 M": {
-      "Laps": {
-         "Ferrari 330 GT 2+2 S1": [
-            261.0
-         ]
-      },
-      "Country": "France",
-      "Track Length": 9.18
-   },
    "Llandow": {
       "Laps": {
          "Porsche 911 GT3 (992)": [
@@ -20798,34 +20301,6 @@
       "Country": "United Kingdom",
       "Track Length": 1.45
    },
-   "Long Beach Eprix Circuit": {
-      "Laps": {
-         "Spark SRT01-e": [
-            56.94,
-            56.94,
-            56.97,
-            57.08,
-            57.11,
-            57.16,
-            57.18,
-            57.18,
-            57.26,
-            57.29,
-            57.3,
-            57.35,
-            57.42,
-            57.45,
-            57.51,
-            57.82,
-            57.9,
-            57.92,
-            57.95,
-            59.96
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 2.1
-   },
    "Long Beach Grand Prix Circuit": {
       "Laps": {
          "Porsche RS Spyder (Evo)": [
@@ -20858,18 +20333,6 @@
       },
       "Country": "United States",
       "Track Length": 3.17
-   },
-   "Los Arcos (Navarra)": {
-      "Laps": {
-         "Renault Clio III Sport": [
-            126.59
-         ],
-         "Toyota GT86": [
-            127.89
-         ]
-      },
-      "Country": "Spain",
-      "Track Length": 3.93
    },
    "Losail International Circuit": {
       "Laps": {
@@ -21675,18 +21138,6 @@
       },
       "Country": "Singapore",
       "Track Length": 5.06
-   },
-   "Marlboro Motor Raceway": {
-      "Laps": {
-         "Porsche 911 S 2.0": [
-            105.0
-         ],
-         "Porsche 911 E": [
-            107.5
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 2.9
    },
    "Megara": {
       "Laps": {
@@ -22953,18 +22404,6 @@
       "Country": null,
       "Track Length": NaN
    },
-   "Modena Aerautodromo (1950-1972)": {
-      "Laps": {
-         "Ferrari 250 GT Short Wheelbase": [
-            64.5
-         ],
-         "Jaguar E-type 3.8 (Mk I)": [
-            70.4
-         ]
-      },
-      "Country": "Italy",
-      "Track Length": 2.31
-   },
    "Modena Autodrome": {
       "Laps": {
          "Lamborghini Huracán STO": [
@@ -23252,34 +22691,6 @@
       "Country": "Monaco",
       "Track Length": 3.34
    },
-   "Monaco Formula E (2014-2019)": {
-      "Laps": {
-         "Spark SRT01-e": [
-            53.48,
-            53.67,
-            53.7,
-            53.71,
-            53.8,
-            53.89,
-            53.91,
-            54.02,
-            54.03,
-            54.13,
-            54.17,
-            54.25,
-            54.26,
-            54.34,
-            54.35,
-            54.46,
-            54.5,
-            54.65,
-            54.86,
-            56.94
-         ]
-      },
-      "Country": "Monaco",
-      "Track Length": 1.76
-   },
    "Monteblanco Wet Handling": {
       "Laps": {
          "Audi TT RS Coupe (Mk II)": [
@@ -23297,15 +22708,6 @@
       },
       "Country": "Spain",
       "Track Length": 1.43
-   },
-   "Monticello Motor Club (Full Length)": {
-      "Laps": {
-         "Chevrolet Corvette C5 Z06": [
-            153.25
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 5.79
    },
    "Monticello Motor Club North Course": {
       "Laps": {
@@ -23722,18 +23124,6 @@
       "Country": "France",
       "Track Length": 3.0
    },
-   "Moroso Motorsports Park": {
-      "Laps": {
-         "Ferrari F40": [
-            89.4
-         ],
-         "Lamborghini Diablo": [
-            94.8
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 3.62
-   },
    "Mortefontaine": {
       "Laps": {
          "Ferrari SF90 Stradale": [
@@ -23977,34 +23367,6 @@
       },
       "Country": "Russia",
       "Track Length": 3.95
-   },
-   "Moscow Street Circuit": {
-      "Laps": {
-         "Spark SRT01-e": [
-            69.43,
-            69.45,
-            69.68,
-            69.83,
-            69.97,
-            70.04,
-            70.07,
-            70.1,
-            70.14,
-            70.26,
-            70.36,
-            70.4,
-            70.54,
-            70.62,
-            70.69,
-            70.7,
-            70.94,
-            71.14,
-            71.83,
-            71.97
-         ]
-      },
-      "Country": "Russia",
-      "Track Length": 2.39
    },
    "Motortrend Figure-8": {
       "Laps": {
@@ -24747,18 +24109,6 @@
       "Country": null,
       "Track Length": NaN
    },
-   "Motortrend Ice Handling Course": {
-      "Laps": {
-         "Subaru Impreza WRX STI (2.5)": [
-            65.4
-         ],
-         "Mitsubishi Lancer Evo X GSR": [
-            66.8
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 0.8
-   },
    "Motovision Handling Course": {
       "Laps": {
          "Porsche 911 Carrera 4S (997)": [
@@ -25461,15 +24811,6 @@
       },
       "Country": null,
       "Track Length": NaN
-   },
-   "New Jersey Motorsports Park (Thunderbolt)": {
-      "Laps": {
-         "Lexus IS-F": [
-            98.77
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 3.62
    },
    "Nihonkai Maze": {
       "Laps": {
@@ -26780,28 +26121,6 @@
       "Country": "Germany",
       "Track Length": 20.6
    },
-   "Nürburgring Nordschleife (1927-1966)": {
-      "Laps": {
-         "Chaparral 2D": [
-            515.4
-         ]
-      },
-      "Country": "Germany",
-      "Track Length": 22.81
-   },
-   "Nürburgring Nordschleife (1973-1982)": {
-      "Laps": {
-         "Ferrari 312 B3": [
-            420.8
-         ],
-         "Porsche Carrera RS 3.0": [
-            588.0,
-            594.9
-         ]
-      },
-      "Country": "Germany",
-      "Track Length": 22.83
-   },
    "Nürburgring Nordschleife Btg": {
       "Laps": {
          "Aventador LP750-4 SV": [
@@ -27117,24 +26436,6 @@
       },
       "Country": "United States",
       "Track Length": 5.14
-   },
-   "Oregon Raceway Park Ccw": {
-      "Laps": {
-         "Porsche Cayman GT4 (981)": [
-            110.0
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 3.7
-   },
-   "Oregon Raceway Park Cw": {
-      "Laps": {
-         "Porsche Cayman GT4 (981)": [
-            111.0
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 3.7
    },
    "Oschersleben": {
       "Laps": {
@@ -27676,33 +26977,6 @@
       "Country": "United Kingdom",
       "Track Length": 4.46
    },
-   "Oulton Park (Island Circuit)": {
-      "Laps": {
-         "Noble M12 GTO": [
-            91.42
-         ]
-      },
-      "Country": "United Kingdom",
-      "Track Length": 3.64
-   },
-   "Pacific Raceways": {
-      "Laps": {
-         "Chevrolet Corvette Z06 (C6)": [
-            92.26
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 3.68
-   },
-   "Palm Beach International Raceway": {
-      "Laps": {
-         "McLaren Senna (P15)": [
-            79.45
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 3.27
-   },
    "Palma Renn Arena": {
       "Laps": {
          "Porsche 911 GT2 RS (991)": [
@@ -28154,24 +27428,6 @@
       "Country": "Australia",
       "Track Length": 4.44
    },
-   "Pikes Peak": {
-      "Laps": {
-         "Tesla Model S P90D": [
-            708.26
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 19.99
-   },
-   "Pittsburgh International Race Complex": {
-      "Laps": {
-         "McLaren Senna (P15)": [
-            100.49
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 4.51
-   },
    "Pocono Raceway Road Course Short Counterclockwise (Pre 1985)": {
       "Laps": {
          "Porsche 911 2.7": [
@@ -28186,99 +27442,6 @@
       },
       "Country": "United States",
       "Track Length": 2.9
-   },
-   "Puerto Madero Street Circuit": {
-      "Laps": {
-         "Spark SRT01-e": [
-            69.13,
-            69.16,
-            69.37,
-            69.39,
-            69.52,
-            69.53,
-            69.64,
-            69.66,
-            69.74,
-            69.87,
-            70.16,
-            70.33,
-            70.59,
-            70.71,
-            71.05,
-            71.33,
-            71.57,
-            71.78,
-            71.92,
-            73.05
-         ]
-      },
-      "Country": "Argentina",
-      "Track Length": 2.48
-   },
-   "Punta Del Este Formula E (Pre 2015)": {
-      "Laps": {
-         "Spark SRT01-e": [
-            75.41,
-            75.53,
-            75.72,
-            75.84,
-            76.05,
-            76.11,
-            76.14,
-            76.22,
-            76.37,
-            76.42,
-            76.81,
-            76.86,
-            77.02,
-            77.65,
-            77.81,
-            79.36,
-            79.79,
-            80.09,
-            80.21,
-            81.49
-         ]
-      },
-      "Country": "Uruguay",
-      "Track Length": 2.81
-   },
-   "Putnam Park": {
-      "Laps": {
-         "BMW M3 (E92)": [
-            74.75
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 2.86
-   },
-   "Putrajaya Street Circuit": {
-      "Laps": {
-         "Spark SRT01-e": [
-            81.78,
-            82.01,
-            82.21,
-            82.23,
-            82.34,
-            82.35,
-            82.61,
-            82.62,
-            82.72,
-            82.82,
-            82.94,
-            83.19,
-            83.24,
-            83.7,
-            83.86,
-            83.89,
-            84.43,
-            85.12,
-            85.22,
-            85.82
-         ]
-      },
-      "Country": "Malaysia",
-      "Track Length": 2.56
    },
    "Queensland Raceway Sprint Circuit": {
       "Laps": {
@@ -29654,18 +28817,6 @@
       "Country": "Sweden",
       "Track Length": 2.07
    },
-   "Riverside Raceway": {
-      "Laps": {
-         "Chevrolet Corvette C1": [
-            152.0
-         ],
-         "356 A 1600 Convertible D": [
-            167.0
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 5.31
-   },
    "Road America": {
       "Laps": {
          "Audi R10 TDI": [
@@ -30140,18 +29291,6 @@
       "Country": "United States",
       "Track Length": 3.25
    },
-   "Rudskogen (Post 2012)": {
-      "Laps": {
-         "Audi R8 4.2 FSI Quattro (Mk I)": [
-            103.0
-         ],
-         "BMW i8": [
-            116.0
-         ]
-      },
-      "Country": "Norway",
-      "Track Length": 3.25
-   },
    "Rudskogen (Pre 2012)": {
       "Laps": {
          "Ariel Atom 2": [
@@ -30181,18 +29320,6 @@
       },
       "Country": "Norway",
       "Track Length": 1.9
-   },
-   "Rustavi International Motorpark": {
-      "Laps": {
-         "Porsche 911 Carrera S": [
-            108.35
-         ],
-         "BMW Z4 3.0si": [
-            116.85
-         ]
-      },
-      "Country": "Georgia",
-      "Track Length": 4.14
    },
    "Sachsenring": {
       "Laps": {
@@ -30515,15 +29642,6 @@
       },
       "Country": "Austria",
       "Track Length": 4.24
-   },
-   "Sandown": {
-      "Laps": {
-         "Porsche 911 GT3 RS (991)": [
-            83.0
-         ]
-      },
-      "Country": "Australia",
-      "Track Length": 3.1
    },
    "Sebring International Raceway": {
       "Laps": {
@@ -32062,15 +31180,6 @@
       "Country": "Russia",
       "Track Length": 3.36
    },
-   "Snetterton 200": {
-      "Laps": {
-         "Noble M12 GTO": [
-            76.2
-         ]
-      },
-      "Country": "United Kingdom",
-      "Track Length": 3.22
-   },
    "Snetterton 300": {
       "Laps": {
          "Radical RXC": [
@@ -32381,15 +31490,6 @@
       },
       "Country": "Russia",
       "Track Length": 5.85
-   },
-   "Sodegaura Forest Raceway": {
-      "Laps": {
-         "Porsche 718 Boxster": [
-            77.16
-         ]
-      },
-      "Country": "Japan",
-      "Track Length": 2.44
    },
    "Solo Ii Autocross Circuit": {
       "Laps": {
@@ -33103,27 +32203,6 @@
       "Country": "Germany",
       "Track Length": 1.78
    },
-   "Spring Mountain": {
-      "Laps": {
-         "Dodge Viper SRT-10 ACR": [
-            105.4
-         ],
-         "Porsche 911 GT2 (997)": [
-            107.9
-         ]
-      },
-      "Country": null,
-      "Track Length": NaN
-   },
-   "Spring Mountain (Mansell C)": {
-      "Laps": {
-         "Porsche 911 GT3 (991)": [
-            148.76
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 5.35
-   },
    "Spring Mountain (Radical Loop Section)": {
       "Laps": {
          "Corvette Z06 Z07 Package": [
@@ -33499,15 +32578,6 @@
       "Country": null,
       "Track Length": NaN
    },
-   "Summit Point": {
-      "Laps": {
-         "Lexus IS-F": [
-            87.76
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 3.2
-   },
    "Suzuka": {
       "Laps": {
          "Ferrari SF90": [
@@ -33802,34 +32872,6 @@
       "Country": "Japan",
       "Track Length": 5.81
    },
-   "Tempelhof Airport Street Circuit (2014 - 2015)": {
-      "Laps": {
-         "Spark SRT01-e": [
-            81.55,
-            81.62,
-            81.68,
-            81.71,
-            81.75,
-            81.86,
-            81.91,
-            81.92,
-            81.98,
-            82.01,
-            82.03,
-            82.1,
-            82.31,
-            82.39,
-            82.44,
-            82.44,
-            82.46,
-            82.57,
-            82.59,
-            82.8
-         ]
-      },
-      "Country": "Germany",
-      "Track Length": 2.47
-   },
    "Texas World Speedway": {
       "Laps": {
          "McLaren P1": [
@@ -34044,18 +33086,6 @@
       "Country": "United Kingdom",
       "Track Length": 3.79
    },
-   "Thunder Hill Raceway": {
-      "Laps": {
-         "Porsche 911 Carrera": [
-            83.82
-         ],
-         "BMW M2 (F87)": [
-            85.38
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 3.22
-   },
    "Thunderhill Park East": {
       "Laps": {
          "Porsche 911 GT3 (991)": [
@@ -34209,37 +33239,6 @@
       },
       "Country": "United States",
       "Track Length": 3.22
-   },
-   "Tochigi Honda Test Course": {
-      "Laps": {
-         "Honda CR-X SiR": [
-            93.67
-         ],
-         "Honda CRX Del Sol SiR": [
-            94.59
-         ]
-      },
-      "Country": "Japan",
-      "Track Length": 2.0
-   },
-   "Top Gear Rallycross Track": {
-      "Laps": {
-         "Mini Cooper S": [
-            112.6,
-            113.9,
-            114.4,
-            116.3,
-            117.7,
-            121.4,
-            130.9,
-            132.0,
-            136.4,
-            141.6,
-            147.1
-         ]
-      },
-      "Country": "United Kingdom",
-      "Track Length": 2.0
    },
    "Top Gear Track": {
       "Laps": {
@@ -35070,18 +34069,6 @@
       },
       "Country": "United Kingdom",
       "Track Length": 2.82
-   },
-   "Tor Poznan": {
-      "Laps": {
-         "Renault Clio RS III Cup": [
-            105.9
-         ],
-         "Porsche 911 Carrera S": [
-            112.2
-         ]
-      },
-      "Country": "Poland",
-      "Track Length": 4.08
    },
    "Toronto Motorsports Park": {
       "Laps": {
@@ -36962,24 +35949,6 @@
       },
       "Country": "France",
       "Track Length": 3.73
-   },
-   "Vallelunga International Circuit": {
-      "Laps": {
-         "BMW 520 (E12 115 PS)": [
-            131.65
-         ]
-      },
-      "Country": "Italy",
-      "Track Length": 3.22
-   },
-   "Vasco Sameiro (Braga)": {
-      "Laps": {
-         "Toyota GT86": [
-            93.68
-         ]
-      },
-      "Country": "Portugal",
-      "Track Length": 3.02
    },
    "Velo Citta (1.68 Km)": {
       "Laps": {
@@ -39165,16 +38134,6 @@
       },
       "Country": "United States",
       "Track Length": 3.9
-   },
-   "Willow Springs - Horse Thief Mile": {
-      "Laps": {
-         "Tesla Model 3": [
-            64.01,
-            64.15
-         ]
-      },
-      "Country": "United States",
-      "Track Length": 1.61
    },
    "Willow Springs - Streets Of Willow": {
       "Laps": {

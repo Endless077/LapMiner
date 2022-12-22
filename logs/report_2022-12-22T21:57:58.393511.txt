@@ -17,28 +17,28 @@ View created.
 3         50.60            unknown  203/1453  Adams Motorsports Park  VW Golf GTI (Mk VI 200 HP)
 4        112.70  Boris Shulmeister  400/1535           Adm Miachkovo    911 Carrera 4S Cabriolet
 ...         ...                ...       ...                     ...                         ...
-14260     73.22     Sabine Schmitz  571/1674               Zwartkops       Mercedes-Benz SLS AMG
-14261     71.55     Sabine Schmitz  480/1765               Zwartkops           Nissan GT-R (R35)
-14262     72.63     Sabine Schmitz  530/1591               Zwartkops         Porsche 911 Turbo S
-14263     79.49     Sabine Schmitz  250/1406               Zwartkops  Renault Megane RS (Mk III)
-14264     78.79     Sabine Schmitz  300/1549               Zwartkops        Subaru WRX STI sedan
+13931     73.22     Sabine Schmitz  571/1674               Zwartkops       Mercedes-Benz SLS AMG
+13932     71.55     Sabine Schmitz  480/1765               Zwartkops           Nissan GT-R (R35)
+13933     72.63     Sabine Schmitz  530/1591               Zwartkops         Porsche 911 Turbo S
+13934     79.49     Sabine Schmitz  250/1406               Zwartkops  Renault Megane RS (Mk III)
+13935     78.79     Sabine Schmitz  300/1549               Zwartkops        Subaru WRX STI sedan
 
-[14265 rows x 5 columns]
+[13936 rows x 5 columns]
 ######################
                    Track Name       Country  Length (km)
 0      Adams Motorsports Park          None          NaN
 1               Adm Miachkovo        Russia         3.27
 2                       Adria         Italy         2.70
-3            Alastaro Circuit       Finland         2.72
-4                 Albert Park     Australia         5.30
+3                 Albert Park     Australia         5.30
+4              Aldo Scribante  South Africa         2.48
 ..                        ...           ...          ...
-370  Zandvoort Gp (Post 2019)   Netherlands         4.26
-371   Zandvoort Gp (Pre 2020)   Netherlands         4.31
-372          Zhejiang Circuit         China         3.20
-373                    Zolder       Belgium         3.98
-374                 Zwartkops  South Africa         2.40
+288  Zandvoort Gp (Post 2019)   Netherlands         4.26
+289   Zandvoort Gp (Pre 2020)   Netherlands         4.31
+290          Zhejiang Circuit         China         3.20
+291                    Zolder       Belgium         3.98
+292                 Zwartkops  South Africa         2.40
 
-[375 rows x 3 columns]
+[293 rows x 3 columns]
 ######################
                          Vehicle Name Type  ...                         Trasmission                           Layout
 0                145 Quadrifoglio 2.0  Car  ...                                   5  front engine, front wheel drive

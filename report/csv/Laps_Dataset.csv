@@ -59,7 +59,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 92.0,Karl Wendlinger,351/1442,Adria,Lotus Evora S
 85.0,Karl Wendlinger,500/1396,Adria,Porsche 911 GT3 RS 4.0 (997)
 92.59,Karl Wendlinger,330/1363,Adria,Porsche Cayman R (987)
-91.98,mattipuh,-/-,Alastaro Circuit,Toyota GR Yaris (Mk IV)
 82.31,Kimi Räikkönen,-/-,Albert Park,Alfa Romeo C38
 82.43,Antonio Giovinazzi,-/-,Albert Park,Alfa Romeo C38
 79.25,Valtteri Bottas,-/-,Albert Park,Alfa Romeo C42
@@ -170,8 +169,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 74.3,unknown,550/2105,Aldo Scribante,Jaguar F-Pace SVR
 73.5,unknown,272/1292,Aldo Scribante,Toyota GR Yaris (Mk IV)
 74.1,unknown,245/1430,Aldo Scribante,VW Golf GTI (Mk VIII)
-114.7,Peter Söderberg,675/1345,Algarve International Circuit (Short),McLaren 675LT
-116.76,unknown,500/1467,Algarve International Circuit (Short),Porsche 911 GT3 RS (991)
 78.2,Kimi Räikkönen,-/-,Algarve International Circuit Portimao (Grand Prix),Alfa Romeo C39
 78.32,Antonio Giovinazzi,-/-,Algarve International Circuit Portimao (Grand Prix),Alfa Romeo C39
 79.22,Antonio Giovinazzi,-/-,Algarve International Circuit Portimao (Grand Prix),Alfa Romeo C41
@@ -603,7 +600,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 66.4,Uwe Sener,200/1236,Anneau Du Rhin Short,Toyota GT86
 62.26,Uwe Sener,320/1529,Anneau Du Rhin Short,VW Golf R (Mk VIII)
 60.53,Uwe Sener,535/1612,Anneau Du Rhin Short,Vantage F1 Edition
-140.0,unknown,450/1400,Aragon,Porsche 911 GT3 RS
 77.58,unknown,730/-,Aragon Motogp,BR Engineering Dallara BR1 AER
 79.0,unknown,659/-,Aragon Motogp,Ginetta G60-LT-P1
 121.9,Iván Fiestas,-/-,Aragon Motogp,KTM X-Bow
@@ -630,7 +626,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 146.0,Abbie Eaton,431/1604,Area 27,BMW M3 (F80)
 166.0,Richard Hammond,440/1977,Area 27,Porsche Macan Turbo (440 PS)
 182.0,James May,380/2062,Area 27,Range Rover Velar SI6
-124.91,unknown,560/1895,Ascari,Audi RS7 Sportback
 140.0,Peter Söderberg,675/1345,Ascari Race Resort,McLaren 675LT
 150.14,unknown,430/1470,Ascari Race Resort,Porsche 911 Carrera 4 GTS
 142.91,Daniel Schwerfeld,500/1467,Ascari Race Resort,Porsche 911 GT3 RS (991)
@@ -977,7 +972,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 57.69,unknown,650/1724,Autodromo Del Levante Bari,McLaren Mercedes SLR 722
 56.57,unknown,415/1435,Autodromo Del Levante Bari,Porsche 911 GT3 (997)
 53.86,unknown,612/1420,Autodromo Del Levante Bari,Porsche Carrera GT
-113.6,unknown,220/914,Autodromo Vallelunga,Lotus Elise Sport 220 (Mk III)
 71.85,unknown,265/1450,Autopartner Test Route,Audi S3 (8P)
 74.1,unknown,238/1705,Autopartner Test Route,Laguna Coupé V6 3.0 dci
 76.1,unknown,178/1563,Autopartner Test Route,Laguna Grandtour GT 2.0 dCi
@@ -1409,8 +1403,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 78.76,Nicholas Latifi,-/-,Autódromo Hermanos Rodríguez Gp,Williams FW43B
 80.86,Alexander Albon,-/-,Autódromo Hermanos Rodríguez Gp,Williams FW44
 81.17,Nicholas Latifi,-/-,Autódromo Hermanos Rodríguez Gp,Williams FW44
-91.39,Carlos Ariza,-/-,Autódromo Internacional De Las Américas,Honda S2000 (AP2)
-96.28,Zen Shouki,-/-,Autódromo Internacional De Las Américas,Mitsubishi GTO MR (Mk II)
 71.0,unknown,510/1709,Bahrain Inner Circuit,Alfa Romeo Giulia QV
 71.0,unknown,605/2023,Bahrain Inner Circuit,Audi RS7 Sportback
 67.0,unknown,750/1699,Bahrain Inner Circuit,Aventador LP750-4 SV
@@ -2203,26 +2195,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 59.1,Luke Youlden,570/1775,Baskerville Raceway,Nissan GT-R (R35 570PS)
 58.23,Luke Youlden,350/1423,Baskerville Raceway,Porsche 718 Cayman S
 63.6,Luke Youlden,230/1348,Baskerville Raceway,VW Golf GTI (Mk VII facelift)
-83.9,Stéphane Sarrazin,272/-,Battersea Park Street Circuit,Spark SRT01-e
-83.96,Jérôme d'Ambrosio,272/-,Battersea Park Street Circuit,Spark SRT01-e
-84.11,Loïc Duval,272/-,Battersea Park Street Circuit,Spark SRT01-e
-84.24,Sam Bird,272/-,Battersea Park Street Circuit,Spark SRT01-e
-84.32,Bruno Senna,272/-,Battersea Park Street Circuit,Spark SRT01-e
-84.38,Sébastien Buemi,272/-,Battersea Park Street Circuit,Spark SRT01-e
-85.1,Lucas Di Grassi,272/-,Battersea Park Street Circuit,Spark SRT01-e
-85.14,Nelson Piquet Jr.,272/-,Battersea Park Street Circuit,Spark SRT01-e
-85.18,Jean-Éric Vergne,272/-,Battersea Park Street Circuit,Spark SRT01-e
-85.26,Nicolas Prost,272/-,Battersea Park Street Circuit,Spark SRT01-e
-85.49,Nick Heidfeld,272/-,Battersea Park Street Circuit,Spark SRT01-e
-85.65,Salvador Durán,272/-,Battersea Park Street Circuit,Spark SRT01-e
-85.69,Alex Fontana,272/-,Battersea Park Street Circuit,Spark SRT01-e
-85.83,Oliver Turvey,272/-,Battersea Park Street Circuit,Spark SRT01-e
-86.3,Daniel Abt,272/-,Battersea Park Street Circuit,Spark SRT01-e
-86.85,Jarno Trulli,272/-,Battersea Park Street Circuit,Spark SRT01-e
-87.16,Karun Chandhok,272/-,Battersea Park Street Circuit,Spark SRT01-e
-87.21,Simona de Silvestro,272/-,Battersea Park Street Circuit,Spark SRT01-e
-87.45,Sakon Yamamoto,272/-,Battersea Park Street Circuit,Spark SRT01-e
-88.15,Fabio Leimer,272/-,Battersea Park Street Circuit,Spark SRT01-e
 64.1,unknown,420/1604,Bedford Autodrome East Circuit,Audi R8 4.2 FSI Quattro (Mk I)
 80.4,unknown,204/1420,Bedford Autodrome East Circuit,BMW 123d Coupe
 67.1,unknown,420/1627,Bedford Autodrome East Circuit,BMW M3 (E92)
@@ -2232,7 +2204,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 63.6,unknown,415/1416,Bedford Autodrome East Circuit,Porsche 911 GT3 RS (997)
 68.1,unknown,295/1403,Bedford Autodrome East Circuit,Porsche Cayman S (987)
 66.6,unknown,400/1506,Bedford Autodrome East Circuit,SLK 55 AMG Black Series
-159.38,anx10us,324/595,Bedford Autodrome Gt,Ariel Atom 4
 59.0,unknown,605/2023,Bedford Autodrome South Circuit,Audi RS7 Sportback
 56.0,unknown,750/1699,Bedford Autodrome South Circuit,Aventador LP750-4 SV
 64.39,Dan Prosser,431/1600,Bedford Autodrome South Circuit,BMW M4
@@ -2537,25 +2508,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 52.75,unknown,415/1416,Bedford Autodrome Wet Handling Test,Porsche 911 GT3 RS (997)
 55.35,unknown,295/1403,Bedford Autodrome Wet Handling Test,Porsche Cayman S (987)
 57.6,unknown,400/1506,Bedford Autodrome Wet Handling Test,SLK 55 AMG Black Series
-102.2,Nicolas Prost,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-102.31,Lucas Di Grassi,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-102.45,Daniel Abt,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-102.46,Karun Chandhok,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-102.53,Franck Montagny,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-102.58,Nick Heidfeld,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-102.68,Jaime Alguersuari,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-102.73,Charles Pic,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-102.75,Sébastien Buemi,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-102.78,Nelson Piquet Jr.,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-102.85,Oriol Servià,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-102.92,Sam Bird,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-104.06,Jérôme d'Ambrosio,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-104.13,Takuma Sato,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-105.28,Ho-Pin Tung,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-105.37,Katherine Legge,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-106.17,Michela Cerruti,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-107.83,Stéphane Sarrazin,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
-112.6,Jarno Trulli,272/-,Beijing Olympic Green Circuit (2014),Spark SRT01-e
 96.1,unknown,510/1931,Bend West Circuit,Alfa Romeo Stelvio QV
 94.0,unknown,659/1771,Bend West Circuit,Chevrolet Camaro ZL1 (Mk VI)
 103.34,DedHed,200/1210,Bend West Circuit,Ford Fiesta ST (Mk VII)
@@ -2585,26 +2537,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 115.55,Gerhard Röhrmann,385/1360,Bilster Berg,Porsche Cayman GT4 (981)
 113.81,unknown,304/-,Bilster Berg,Radical SR3 SL
 104.7,unknown,243/765,Bilster Berg,Radical SR3 SL (road-legal)
-65.95,Jean-Éric Vergne,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-66.0,Nelson Piquet Jr.,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-66.17,Nicolas Prost,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-66.17,Sam Bird,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-66.25,Daniel Abt,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-66.39,Stéphane Sarrazin,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-66.42,Lucas Di Grassi,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-66.5,Jaime Alguersuari,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-66.5,Jérôme d'Ambrosio,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-66.51,Nick Heidfeld,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-66.53,Scott Speed,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-66.84,Vitantonio Liuzzi,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-66.89,Salvador Durán,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-67.04,Sébastien Buemi,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-67.16,Jarno Trulli,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-67.22,Karun Chandhok,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-67.28,Bruno Senna,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-67.68,António Félix da Costa,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-68.24,Charles Pic,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
-68.39,Loïc Duval,272/-,Biscayne Bay Street Circuit,Spark SRT01-e
 83.0,unknown,750/1699,Biķernieki (High Speed),Aventador LP750-4 SV
 86.0,unknown,600/1921,Biķernieki (High Speed),BMW M5 (F90)
 82.0,unknown,765/1651,Biķernieki (High Speed),Chevrolet Corvette ZR1
@@ -2758,7 +2690,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 60.52,Steve Sutcliffe,510/2285,Brands Hatch (Indy Circuit),Sport 5.0 V8 Supercharged
 50.52,Samuel Pickering,592/1192,Brands Hatch (Indy Circuit),Subaru Impreza RA SPEC C
 53.63,Cliff Jobson,380/1000,Brands Hatch (Indy Circuit),TVR T350t Red Rose LW
-105.71,AtomicDad,314/-,Brands Hatch Gp,Ariel Atom 3.5 (314 PS)
 128.5,unknown,345/1689,Bridgehampton Circuit,Buick Skylark Gran Sport
 128.1,unknown,365/1635,Bridgehampton Circuit,Chevrolet Chevelle SS-396
 120.85,unknown,300/1410,Bridgehampton Circuit,Ferrari 330 GT 2+2 S1
@@ -2805,8 +2736,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 82.4,unknown,300/1527,Bruntingthorpe,Subaru Impreza WRX STI (2.5)
 86.6,unknown,200/1403,Bruntingthorpe,VW Golf GTI (Mk V)
 82.5,unknown,425/1800,Bruntingthorpe,Vauxhall VXR8 6.2
-61.7,unknown,421/1630,Bryant Park Hillclimb,Mercedes - AMG A45 S (W177)
-61.1,unknown,387/1526,Bryant Park Hillclimb,Toyota Supra (Mk V 387 PS)
 69.1,unknown,340/2132,Buddh International Circuit Autox,BMW i4 eDrive40
 69.8,unknown,326/2452,Buddh International Circuit Autox,BMW iX 40 xDrive
 79.3,unknown,95/-,Buddh International Circuit Autox,BYD E6
@@ -2895,10 +2824,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 118.3,Craig Coker,-/-,Buttonwillow Configuration 13,Tesla Model Y
 121.92,Unplugged Performance,-/-,Buttonwillow Configuration 13,Tesla Model Y
 118.92,Dai Yoshihara,340/1524,Buttonwillow Configuration 13,Toyota Supra (Mk V 340 PS)
-123.16,Will Wattanawongkiri,487/1848,Buttonwillow Configuration 13 A,Tesla Model 3
-123.81,Will Wattanawongkiri,487/1848,Buttonwillow Configuration 13 A Ccw,Tesla Model 3
-116.97,Jim Hall II,385/1360,Buttonwillow Configuration 13 Ccw,Porsche Cayman GT4 (981)
-120.7,Will Wattanawongkiri,487/1848,Buttonwillow Configuration 13 Ccw,Tesla Model 3
 122.9,unknown,436/1527,Buttonwillow Configuration 26,Chevrolet Corvette Grand Sport
 127.0,unknown,280/1400,Buttonwillow Configuration 26,Lotus Evora
 125.1,unknown,320/1420,Buttonwillow Configuration 26,Porsche Cayman S
@@ -3048,7 +2973,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 73.23,Niki Lauda,495/578,Canadian Tire Motorsport Park,Ferrari 312 B3
 82.36,Lars Kern,700/1514,Canadian Tire Motorsport Park,Porsche 911 GT2 RS (991)
 67.22,unknown,487/775,Canadian Tire Motorsport Park,Porsche RS Spyder
-117.38,clopez,-/-,Castelloli Circuit,Seat Leon Cupra 290
 77.7,unknown,240/1046,Castle Combe,Alfa Romeo 4C
 78.31,AtomicDad,314/-,Castle Combe,Ariel Atom 3.5 (314 PS)
 70.7,unknown,355/550,Castle Combe,Ariel Atom 3.5R
@@ -3172,9 +3096,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 116.87,Kevin Burke,585/1635,Chuckwalla Valley Raceway,Mercedes-Benz AMG GT R
 122.49,Randy Pobst,510/1749,Chuckwalla Valley Raceway,Mercedes-Benz C 63 AMG S
 112.53,Will Wattanawongkiri,476/1451,Chuckwalla Valley Raceway,Porsche 911 GT3 (991)
-111.1,Jim Hall II,-/-,Chuckwalla Valley Raceway Ccw,Porsche 911 GT3 (991)
-141.84,George Keller,-/-,Circuit Chambley,Lotus Elise 111S (Mk I)
-119.0,unknown,675/1345,Circuit Chambley,McLaren 675LT
 203.85,unknown,659/925,Circuit De La Sarthe,Audi R10 TDI
 209.9,unknown,634/906,Circuit De La Sarthe,Audi R8
 215.74,unknown,558/900,Circuit De La Sarthe,Audi R8
@@ -3299,9 +3220,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 245.92,Jeff Allam,310/789,Circuit De La Sarthe (1979-1985),Mazda 717C
 244.74,Yojiro Terada,320/976,Circuit De La Sarthe (1979-1985),Mazda RX-7 254i	
 226.54,Bob Wollek,600/893,Circuit De La Sarthe (1979-1985),Porsche 917K/81
-214.71,David Leslie,600/867,Circuit De La Sarthe (1987-1989),Mazda 767
-221.48,Roger Dorchy,923/935,Circuit De La Sarthe (1987-1989),WM Secateva P88
-122.5,unknown,103/809,Circuit De Ledenon,Peugeot 205 Rallye
 82.89,unknown,430/1415,Circuit De Nevers Magny-Cours Club,911 Carrera S Powerkit X51
 81.11,Nicolas Gourdol,843/2371,Circuit De Nevers Magny-Cours Club,AMG GT 63 S E
 95.03,unknown,135/1096,Circuit De Nevers Magny-Cours Club,Abarth 500
@@ -3941,7 +3859,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 86.65,Tommy Maino,560/1592,Circuito Tazio Nuvolari ,Porsche 911 Turbo S (991)
 90.39,unknown,340/1524,Circuito Tazio Nuvolari ,Toyota Supra (Mk V 340 PS)
 96.2,unknown,290/1436,Circuito Tazio Nuvolari ,VW Golf GTI TCR
-100.1,unknown,220/914,Circuti Di Cremona,Lotus Elise Sport 220 (Mk III)
 101.27,unknown,256/1430,Contidrom (3.3 Km),A1 Quattro Limited Edition
 96.88,unknown,240/1046,Contidrom (3.3 Km),Alfa Romeo 4C
 92.63,unknown,510/1709,Contidrom (3.3 Km),Alfa Romeo Giulia QV
@@ -4325,7 +4242,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 80.0,unknown,520/1474,Dijon-Prenois,Porsche 911 GT3 RS
 81.0,unknown,580/1603,Dijon-Prenois,Porsche 911 Turbo S
 75.71,unknown,436/680,Dijon-Prenois,Radical SR8 RX
-111.23,Alasdair Meek,310/1292,Donington Park Gp (Post 1985),Mini John Cooper Works GP
 85.3,unknown,530/1720,Donington Park National,Alpina B5 S
 82.21,AtomicDad,314/-,Donington Park National,Ariel Atom 3.5 (314 PS)
 82.8,unknown,450/1771,Donington Park National,Audi RS5 (8T3)
@@ -4359,10 +4275,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 56.95,unknown,426/1108,Dreux,Lotus Exige Sport 420
 60.74,unknown,360/1868,Dreux,Peugeot 508 PSE Hybrid4
 60.26,unknown,300/1432,Dreux,VW Golf GTI Clubsport
-131.73,Zayed Al Qasimi,720/1476,Dubai Autodrome Gp Circuit,Ferrari 488 Pista
-107.17,unknown,520/1474,Dubai Autodrome International Circuit,Porsche 911 GT3 RS
-93.6,Zayed Al Qasimi,720/1476,Dubai Autodrome National Circuit,Ferrari 488 Pista
-95.31,unknown,500/1456,Dubai Autodrome National Circuit,Porsche 718 Cayman GT4 RS
 76.66,unknown,360/1906,Dunnville Autodrome,Acura TLX Type S
 74.89,unknown,400/1563,Dunnville Autodrome,Audi RS3 Sedan (8V facelift)
 67.52,unknown,309/580,Dunnville Autodrome,BAC Mono 2.5
@@ -4468,8 +4380,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 106.0,unknown,700/1514,Estoril,Porsche 911 GT2 RS (991)
 110.0,unknown,520/1474,Estoril,Porsche 911 GT3 RS
 112.0,unknown,580/1603,Estoril,Porsche 911 Turbo S
-68.12,unknown,610/1637,European Bridgestone Proving Ground,Audi R8 V10 Plus (Mk II)
-66.54,unknown,580/1603,European Bridgestone Proving Ground,Porsche 911 Turbo S
 93.32,unknown,843/2371,Eurospeedway Lausitz,AMG GT 63 S E
 85.23,unknown,730/1637,Eurospeedway Lausitz,AMG GT Black Series
 90.68,unknown,585/1674,Eurospeedway Lausitz,AMG GT R Roadster
@@ -4585,7 +4495,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 66.76,unknown,612/2055,Eurospeedway Lausitz Dekra Handling,E 63 AMG S 4Matic+
 75.48,unknown,184/1066,Eurospeedway Lausitz Dekra Handling,Mazda MX-5 2.0 (Mk IV 184 PS)
 69.63,unknown,367/1692,Eurospeedway Lausitz Dekra Handling,Mercedes-Benz C 43 AMG 4MATIC
-121.07,Dierk Möller-Sonntag,777/1400,Eurospeedway Lausitz Gp,RUF CTR3 Clubsport
 129.41,Soheil Ayari,208/1181,Ferte Gaucher,208 GTi Peugeot Sport Anniver..
 130.9,Soheil Ayari,160/-,Ferte Gaucher,Abarth 500c Esseesse
 137.09,Soheil Ayari,180/1160,Ferte Gaucher,Abarth Punto SuperSport
@@ -4668,7 +4577,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 79.5,unknown,1000/1670,Fiorano,Ferrari SF90 Spider
 79.0,unknown,1000/1656,Fiorano,Ferrari SF90 Stradale
 100.6,unknown,390/1657,Fiorano,Ferrari Testarossa
-87.01,Brandon Reitz,243/1350,Florida International Rally & Motorsport Park,BMW Z3 M Roadster (240 PS)
 59.61,Peter Kox,299/1276,Folembray,Artega GT
 60.13,Peter Kox,450/1771,Folembray,Audi RS5 (8T3)
 60.32,Peter Kox,340/1514,Folembray,BMW 1 Series M Coupe
@@ -4677,8 +4585,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 54.39,Peter Kox,570/1529,Folembray,Ferrari 458 Italia
 59.91,Peter Kox,351/1442,Folembray,Lotus Evora S
 57.16,Peter Kox,530/1760,Folembray,Nissan GT-R (R35 530 PS)
-50.09,unknown,510/1713,Forestburn Speed Hill Climb,Aston Martin Vantage  (Mk II)
-49.64,unknown,540/1597,Forestburn Speed Hill Climb,Audi R8 V10 RWS (Mk II)
 89.86,Tommy Maino,208/1181,Franciacorta,208 GTi Peugeot Sport Anniver..
 88.49,Tommy Maino,190/979,Franciacorta,Abarth 695 biposto
 83.45,Tommy Maino,240/1046,Franciacorta,Alfa Romeo 4C
@@ -4945,7 +4851,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 59.33,Justin Law,632/2360,Goodwood Hill Climb,Rolls-Royce Wraith
 55.01,unknown,631/1639,Goodwood Hill Climb,SLS AMG Black Series
 72.51,Laura Tillet,355/700,Goodwood Hill Climb,Zenos E10 R
-204.39,method,325/1382,Gotland Ring (Gp Track),Porsche Cayman S (981)
 104.1,unknown,250/1394,Gotland Ring (Northern Loop),Alfa Romeo 147 GTA
 87.9,unknown,303/500,Gotland Ring (Northern Loop),Ariel Atom
 94.8,unknown,420/1604,Gotland Ring (Northern Loop),Audi R8 4.2 FSI Quattro (Mk I)
@@ -4987,7 +4892,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 108.8,unknown,130/1220,Gotland Ring (Northern Loop),Skoda Fabia RS (Mk I)
 98.56,Cedrik Leijon,701/2222,Gotland Ring (Northern Loop),Tesla Model S P85D
 103.4,unknown,200/1403,Gotland Ring (Northern Loop),VW Golf GTI (Mk V)
-74.9,unknown,103/809,Grand Sambuc,Peugeot 205 Rallye
 93.7,Mike Skinner,170/1136,Grand Tour Eboladrome,Abarth 124 Spider
 87.1,Mike Skinner,510/1709,Grand Tour Eboladrome,Alfa Romeo Giulia QV
 81.6,Abbie Eaton,608/1940,Grand Tour Eboladrome,Alpina B5 Biturbo (G30)
@@ -5024,25 +4928,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 80.4,Mike Skinner,500/1467,Grand Tour Eboladrome,Porsche 911 GT3 RS (991)
 89.6,Abbie Eaton,613/2591,Grand Tour Eboladrome,Tesla Model X P100D
 99.7,Abbie Eaton,118/995,Grand Tour Eboladrome,VW Up GTI
-77.2,Kevin Pietersen,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-77.5,Brian Wilson,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-77.8,Kiefer Southerland,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-78.6,Casey Anderson,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-78.7,Anthony Joshua,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-80.1,Ricky Wilson,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-80.4,Bill Goldberg,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-81.3,Nick Mason,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-81.9,Rory McIlroy,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-82.2,Hugh Bonneville,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-83.3,Michael Ball,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-83.6,Dominic Cooper,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-84.1,David Hasselhoff,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-84.2,Stewart Copeland,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-84.4,Alfie Boe,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-85.1,Bill Bailey,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-85.8,Paris Hilton,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-93.8,Penn Jillette,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
-99.3,Steven Frayne,300/1616,Grand Tour Rallycross,Jaguar F-Type P300
 91.5,unknown,240/1046,Grattan Raceway,Alfa Romeo 4C
 88.0,unknown,450/1686,Grattan Raceway,Audi RS5 (8T3 facelift)
 92.1,unknown,333/1754,Grattan Raceway,Audi S4 (B8)
@@ -5139,9 +5024,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 28.09,Keiichi Tsuchiya,308/1485,Gunsai,Subaru WRX STI (2.0 JDM)
 28.19,Nobuteru Taniguchi,220/1379,Gunsai,VW Golf GTI (Mk VII 220 PS)
 28.32,Keiichi Tsuchiya,220/1379,Gunsai,VW Golf GTI (Mk VII 220 PS)
-80.06,Keiichi Tsuchiya,-/-,Hachi Highland Hillclimb,Toyota GR 86 (Mk II)
-79.81,Keiichi Tsuchiya,-/-,Hachi Highland Hillclimb,Toyota GR Yaris (Mk IV)
-72.81,Rubens Barrichello,453/1695,Haras Tuiuti,Chevrolet Camaro SS (Mk VI)
 70.62,The Stig,160/1092,Harewood Hill Climb,Abarth 500 EsseEsse
 66.56,The Stig,350/1468,Harewood Hill Climb,Ford Focus RS500
 70.86,The Stig,170/1254,Harewood Hill Climb,Mito Quadrifoglio Verde
@@ -5439,8 +5321,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 75.61,Felipe Massa,-/-,Hockenheim Gp,Williams FW38
 73.7,Sergey Sirotkin,-/-,Hockenheim Gp,Williams FW41
 74.21,Lance Stroll,-/-,Hockenheim Gp,Williams FW41
-159.56,unknown,300/1323,Hockenheim Gp 1981,Porsche 911 Turbo 3.3
-163.94,unknown,300/1523,Hockenheim Gp 1981,Porsche 928 S (300 PS)
 71.6,Christian Gebhardt,400/1527,Hockenheim Short,911 Carrera S Cabriolet
 69.8,unknown,450/1359,Hockenheim Short,9ff G-Track
 72.7,unknown,650/1412,Hockenheim Short,9ff Speed9
@@ -5923,7 +5803,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 78.04,Nicholas Latifi,-/-,Hungaroring,Williams FW43B
 79.26,Alexander Albon,-/-,Hungaroring,Williams FW44
 79.57,Nicholas Latifi,-/-,Hungaroring,Williams FW44
-134.08,unknown,259/1476,Imola (1981-1994),Lamborghini Jalpa 3500
 75.95,Kimi Räikkönen,-/-,Imola (Post 2008),Alfa Romeo C39
 76.21,Antonio Giovinazzi,-/-,Imola (Post 2008),Alfa Romeo C39
 75.97,Kimi Räikkönen,-/-,Imola (Post 2008),Alfa Romeo C41
@@ -5999,8 +5878,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 97.0,Ryan Woon,675/1345,Inde Motorsports Ranch Configuration 4,McLaren 675LT
 100.45,unknown,550/1736,Inde Motorsports Ranch Configuration 4,Nissan GT-R (R35 550 PS)
 100.0,Ryan Woon,500/1467,Inde Motorsports Ranch Configuration 4,Porsche 911 GT3 RS (991)
-89.62,unknown,1000/1656,Indianapolis Motor Speedway Road Course,Ferrari SF90 Stradale
-94.4,unknown,887/1671,Indianapolis Motor Speedway Road Course,Porsche 918 Spyder
 75.79,unknown,280/1792,Inta,9-3 2.8T Turbo X Sport Combi
 76.01,unknown,160/1092,Inta,Abarth 500 EsseEsse
 78.28,unknown,200/1675,Inta,Alfa Romeo Brera 2.4 JTD 200
@@ -6459,8 +6336,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 89.18,Nicholas Latifi,-/-,Jeddah Corniche Circuit,Williams FW43B
 90.49,Alexander Albon,-/-,Jeddah Corniche Circuit,Williams FW44
 91.82,Nicholas Latifi,-/-,Jeddah Corniche Circuit,Williams FW44
-112.16,Iván Fiestas,-/-,Jerez,KTM X-Bow
-120.8,Daniel Schwerfeld,500/1467,Jerez,Porsche 911 GT3 RS (991)
 50.2,unknown,218/1485,Kakucs Ring,BMW 125d
 52.55,unknown,184/1495,Kakucs Ring,BMW 320d (F30)
 49.43,unknown,313/-,Kakucs Ring,BMW 640d
@@ -6601,7 +6476,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 90.3,Deon Joubert,230/1406,Killarney,VW Golf GTI (Mk VII 230 PS)
 90.07,Deon Joubert,235/1387,Killarney,VW Golf GTI Edition 35 (Mk VI)
 91.81,Deon Joubert,200/1298,Killarney,VW Scirocco 2.0 TSI (Mk III)
-57.02,unknown,517/1772,Knockhill International Circuit,BMW M4 Competition xDrive
 78.0,unknown,305/1475,Kotarr,Ford Focus RS
 78.9,unknown,260/1464,Kotarr,Mazda 3 MPS (Mk II)
 76.13,unknown,230/1242,Kotarr,Renault Megane R26.R
@@ -6711,8 +6585,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 86.7,unknown,235/1363,Kühtai Bergstraße,Audi S1
 92.6,unknown,550/1811,Kühtai Bergstraße,F-Type R Convertible AWD
 92.9,unknown,550/1736,Kühtai Bergstraße,Nissan GT-R (R35 550 PS)
-47.88,unknown,220/1330,La Chatre,Porsche 944 Turbo (220 PS)
-48.07,unknown,231/1221,La Chatre,Porsche Carrera 3.2 (G model)
 70.91,unknown,558/825,Laguna Seca (Post 1988),Acura ARX-01a
 70.1,unknown,558/825,Laguna Seca (Post 1988),Acura ARX-01b
 103.78,Randy Pobst,240/1046,Laguna Seca (Post 1988),Alfa Romeo 4C
@@ -7039,8 +6911,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 98.48,unknown,436/680,Le Mans (Bugatti),Radical SR8 RX
 118.91,Christophe Tinseau,280/1477,Le Mans (Bugatti),Renault Megane RS 
 114.36,Christophe Tinseau,340/1524,Le Mans (Bugatti),Toyota Supra (Mk V 340 PS)
-118.0,unknown,220/1330,Le Mans (Bugatti) (1976-1986),Porsche 944 Turbo (220 PS)
-120.18,unknown,231/1221,Le Mans (Bugatti) (1976-1986),Porsche Carrera 3.2 (G model)
 75.0,unknown,119/1247,Lime Rock Park,Austin-Healey 100/6 (118 PS)
 99.0,unknown,49/678,Lime Rock Park,Austin-Healey Sprite
 63.0,Dennis Deljanin,420/1617,Lime Rock Park,BMW M3 Competition Package
@@ -7138,7 +7008,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 269.8,unknown,110/837,Linas-Montlhery (9Km),VW Golf GTI  1.6 (Mk I)
 272.6,unknown,85/840,Linas-Montlhery (9Km),VW Jetta GL
 283.2,unknown,85/800,Linas-Montlhery (9Km),VW Scirocco TS (Mk I)
-261.0,unknown,300/1410,Linas-Montlhery 9181 M,Ferrari 330 GT 2+2 S1
 44.4,Steve Sutcliffe,510/1709,Llandow,Alfa Romeo Giulia QV
 47.4,Steve Sutcliffe,292/1135,Llandow,Alpine A110 S (Mk II 292 PS)
 45.48,Chris Harris,600/1565,Llandow,Aston Martin Vantage GT12
@@ -7210,26 +7079,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 49.4,James Disdale,265/1404,Llandow,VW Golf GTI Clubsport (Mk VII)
 49.0,Chris Harris,300/1470,Llandow,VW Golf R (Mk VII)
 46.2,Steve Sutcliffe,320/1529,Llandow,VW Golf R (Mk VIII)
-56.94,Daniel Abt,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-56.94,Nicolas Prost,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-56.97,Nelson Piquet Jr.,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.08,Lucas Di Grassi,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.11,Jean-Éric Vergne,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.16,Scott Speed,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.18,António Félix da Costa,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.18,Jérôme d'Ambrosio,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.26,Stéphane Sarrazin,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.29,Sébastien Buemi,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.3,Sam Bird,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.35,Bruno Senna,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.42,Jarno Trulli,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.45,Jaime Alguersuari,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.51,Nick Heidfeld,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.82,Charles Pic,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.9,Loïc Duval,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.92,Karun Chandhok,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-57.95,Salvador Durán,272/-,Long Beach Eprix Circuit,Spark SRT01-e
-59.96,Vitantonio Liuzzi,272/-,Long Beach Eprix Circuit,Spark SRT01-e
 71.84,unknown,558/825,Long Beach Grand Prix Circuit,Acura ARX-01a
 71.42,unknown,558/825,Long Beach Grand Prix Circuit,Acura ARX-01b
 92.78,unknown,608/1738,Long Beach Grand Prix Circuit,Acura NSX Type S (Mk II)
@@ -7239,8 +7088,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 74.13,unknown,608/930,Long Beach Grand Prix Circuit,Mazda RT24-P
 74.41,unknown,611/930,Long Beach Grand Prix Circuit,Oreca 07
 71.33,unknown,510/775,Long Beach Grand Prix Circuit,Porsche RS Spyder (Evo)
-126.59,Ruben Saiz,203/1273,Los Arcos (Navarra),Renault Clio III Sport
-127.89,Ruben Saiz,-/-,Los Arcos (Navarra),Toyota GT86
 83.16,Kimi Räikkönen,-/-,Losail International Circuit,Alfa Romeo C41
 83.26,Antonio Giovinazzi,-/-,Losail International Circuit,Alfa Romeo C41
 81.64,Pierre Gasly,-/-,Losail International Circuit,AlphaTauri AT02
@@ -7532,8 +7379,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 101.19,Robert Kubica,-/-,Marina Bay,Williams FW42
 116.98,Alexander Albon,-/-,Marina Bay,Williams FW44
 117.53,Nicholas Latifi,-/-,Marina Bay,Williams FW44
-107.5,unknown,140/1093,Marlboro Motor Raceway,Porsche 911 E
-105.0,unknown,170/1045,Marlboro Motor Raceway,Porsche 911 S 2.0
 68.6,unknown,420/1604,Megara,Audi R8 4.2 FSI Quattro (Mk I)
 71.29,unknown,340/1611,Megara,Audi RS3 Sportback (8P)
 72.9,unknown,265/1450,Megara,Audi S3 (8P)
@@ -7937,8 +7782,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 81.01,The Stig,390/2614,Mnevniki Airfield,Range Rover Sport
 76.85,The Stig,385/1726,Mnevniki Airfield,V8 Vantage Roadster
 109.17,unknown,315/2216,Mnevniki Airfield,Volvo XC90 V8
-64.5,unknown,281/1175,Modena Aerautodromo (1950-1972),Ferrari 250 GT Short Wheelbase
-70.4,unknown,265/1248,Modena Aerautodromo (1950-1972),Jaguar E-type 3.8 (Mk I)
 70.67,unknown,286/2272,Modena Autodrome,Audi Q7 50 TDI
 70.2,unknown,400/2581,Modena Autodrome,BMW X7 M50d (G07)
 87.58,unknown,200/1210,Modena Autodrome,Ford Fiesta ST (Mk VII)
@@ -8070,31 +7913,10 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 72.37,Nicholas Latifi,-/-,Monaco (Post 2014),Williams FW43B
 73.61,Alexander Albon,-/-,Monaco (Post 2014),Williams FW44
 74.4,Nicholas Latifi,-/-,Monaco (Post 2014),Williams FW44
-53.48,Sébastien Buemi,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-53.67,Lucas Di Grassi,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-53.7,Jérôme d'Ambrosio,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-53.71,Nelson Piquet Jr.,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-53.8,Loïc Duval,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-53.89,Daniel Abt,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-53.91,Nicolas Prost,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-54.02,Jaime Alguersuari,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-54.03,Bruno Senna,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-54.13,Stéphane Sarrazin,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-54.17,Salvador Durán,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-54.25,Sam Bird,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-54.26,Jean-Éric Vergne,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-54.34,Jarno Trulli,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-54.35,Scott Speed,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-54.46,Vitantonio Liuzzi,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-54.5,Nick Heidfeld,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-54.65,Charles Pic,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-54.86,Karun Chandhok,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
-56.94,António Félix da Costa,272/-,Monaco Formula E (2014-2019),Spark SRT01-e
 56.8,unknown,260/1778,Monteblanco Wet Handling,Alfa Romeo Brera 3.2 JTS V6 Q4
 51.37,unknown,340/1477,Monteblanco Wet Handling,Audi TT RS Coupe (Mk II)
 56.2,unknown,420/1627,Monteblanco Wet Handling,BMW M3 (E92)
 54.08,unknown,250/1406,Monteblanco Wet Handling,Renault Megane RS (Mk III)
-153.25,unknown,390/1413,Monticello Motor Club (Full Length),Chevrolet Corvette C5 Z06
 79.42,unknown,730/1637,Monticello Motor Club North Course,AMG GT Black Series
 85.42,unknown,517/1772,Monticello Motor Club North Course,BMW M4 Competition xDrive
 88.99,unknown,650/2279,Monticello Motor Club North Course,Bentley Continental GT Speed
@@ -8274,8 +8096,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 88.07,Sebastiem Ogier,230/1242,Mornay,Renault Megane R26.R
 95.7,Sebastiem Ogier,135/1124,Mornay,Renault Twingo RS (Mk II)
 90.12,Sebastiem Ogier,300/1527,Mornay,Subaru Impreza WRX STI (2.5)
-89.4,unknown,478/1283,Moroso Motorsports Park,Ferrari F40
-94.8,unknown,492/1586,Moroso Motorsports Park,Lamborghini Diablo
 99.21,Anthony Beltoise,240/1046,Mortefontaine,Alfa Romeo 4C
 95.8,Anthony Beltoise,510/1709,Mortefontaine,Alfa Romeo Giulia QV
 97.11,Anthony Beltoise,252/1111,Mortefontaine,Alpine A110 (Mk II)
@@ -8354,26 +8174,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 116.02,unknown,450/1400,Moscow Raceway Gp,Porsche 911 GT3 RS
 108.08,Sergei Borisov,560/1592,Moscow Raceway Gp,Porsche 911 Turbo S (991)
 126.14,Oleg Kesselman,340/1935,Moscow Raceway Gp,Porsche Macan S
-69.43,Jean-Éric Vergne,272/-,Moscow Street Circuit,Spark SRT01-e
-69.45,Nelson Piquet Jr.,272/-,Moscow Street Circuit,Spark SRT01-e
-69.68,Lucas Di Grassi,272/-,Moscow Street Circuit,Spark SRT01-e
-69.83,Sébastien Buemi,272/-,Moscow Street Circuit,Spark SRT01-e
-69.97,Jérôme d'Ambrosio,272/-,Moscow Street Circuit,Spark SRT01-e
-70.04,Nicolas Prost,272/-,Moscow Street Circuit,Spark SRT01-e
-70.07,Daniel Abt,272/-,Moscow Street Circuit,Spark SRT01-e
-70.1,Nick Heidfeld,272/-,Moscow Street Circuit,Spark SRT01-e
-70.14,Jarno Trulli,272/-,Moscow Street Circuit,Spark SRT01-e
-70.26,Salvador Durán,272/-,Moscow Street Circuit,Spark SRT01-e
-70.36,Sam Bird,272/-,Moscow Street Circuit,Spark SRT01-e
-70.4,Justin Wilson,272/-,Moscow Street Circuit,Spark SRT01-e
-70.54,Antonio García,272/-,Moscow Street Circuit,Spark SRT01-e
-70.62,António Félix da Costa,272/-,Moscow Street Circuit,Spark SRT01-e
-70.69,Bruno Senna,272/-,Moscow Street Circuit,Spark SRT01-e
-70.7,Karun Chandhok,272/-,Moscow Street Circuit,Spark SRT01-e
-70.94,Jaime Alguersuari,272/-,Moscow Street Circuit,Spark SRT01-e
-71.14,Loïc Duval,272/-,Moscow Street Circuit,Spark SRT01-e
-71.83,Stéphane Sarrazin,272/-,Moscow Street Circuit,Spark SRT01-e
-71.97,Vitantonio Liuzzi,272/-,Moscow Street Circuit,Spark SRT01-e
 21.9,unknown,730/1637,Motortrend Figure-8,AMG GT Black Series
 23.2,unknown,608/1738,Motortrend Figure-8,Acura NSX Type S (Mk II)
 24.3,unknown,240/1046,Motortrend Figure-8,Alfa Romeo 4C
@@ -8625,8 +8425,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 23.5,unknown,1020/2187,Motortrend Figure-8,Tesla Model S Plaid
 23.9,unknown,340/1524,Motortrend Figure-8,Toyota Supra (Mk V 340 PS)
 23.8,unknown,387/1526,Motortrend Figure-8,Toyota Supra (Mk V 387 PS)
-66.8,unknown,295/1620,Motortrend Ice Handling Course,Mitsubishi Lancer Evo X GSR
-65.4,unknown,300/1527,Motortrend Ice Handling Course,Subaru Impreza WRX STI (2.5)
 20.47,unknown,250/1465,Motovision Handling Course,Alfa Romeo 156 GTA
 19.58,unknown,420/1743,Motovision Handling Course,Audi RS4 (B7)
 19.18,unknown,420/1845,Motovision Handling Course,Audi RS4 Cabrio
@@ -8850,7 +8648,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 83.5,unknown,204/1278,Nelson Ledges Raceway,Porsche Boxster (986 204 PS)
 84.1,unknown,225/1358,Nelson Ledges Raceway,Saab 9-3 Viggen Coupe (225 PS)
 80.1,unknown,326/1549,Nelson Ledges Raceway,Toyota Supra Twin Turbo
-98.77,L.Tylavii White,-/-,New Jersey Motorsports Park (Thunderbolt),Lexus IS-F
 66.19,Manabu Orido,659/1610,Nihonkai Maze,Chevrolet Corvette Z06 (C7)
 67.86,Nobuteru Taniguchi,659/1610,Nihonkai Maze,Chevrolet Corvette Z06 (C7)
 69.68,Keiichi Tsuchiya,659/1610,Nihonkai Maze,Chevrolet Corvette Z06 (C7)
@@ -9308,10 +9105,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 482.0,Christian Gebhardt,320/1529,Nürburgring Nordschleife,VW Golf R (Mk VIII)
 467.31,Benjamin Leuchter,333/1526,Nürburgring Nordschleife,VW Golf R 20 Years
 467.0,unknown,507/1401,Nürburgring Nordschleife,Wiesmann GT MF5
-515.4,unknown,420/892,Nürburgring Nordschleife (1927-1966),Chaparral 2D
-420.8,Niki Lauda,495/578,Nürburgring Nordschleife (1973-1982),Ferrari 312 B3
-588.0,Gijs van Lennep,230/997,Nürburgring Nordschleife (1973-1982),Porsche Carrera RS 3.0
-594.9,Michael Mehlin,230/997,Nürburgring Nordschleife (1973-1982),Porsche Carrera RS 3.0
 500.0,Christian Schmahl,367/1574,Nürburgring Nordschleife Btg,Audi RS3 Sportback (8V)
 414.0,unknown,750/1699,Nürburgring Nordschleife Btg,Aventador LP750-4 SV
 491.12,Rafael Torres,-/-,Nürburgring Nordschleife Btg,BMW 330i (E90 272 PS)
@@ -9410,8 +9203,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 154.0,unknown,184/1165,Ontario Motor Speedway,Porsche 911 S 2.4
 123.4,unknown,170/1195,Ontario Motor Speedway,Porsche 924 Turbo
 116.8,unknown,222/1537,Ontario Motor Speedway,Porsche 928 (US Spec 222 PS)
-110.0,Matthew Battarbee,385/1360,Oregon Raceway Park Ccw,Porsche Cayman GT4 (981)
-111.0,unknown,-/-,Oregon Raceway Park Cw,Porsche Cayman GT4 (981)
 105.13,unknown,400/1527,Oschersleben,911 Carrera S Cabriolet
 115.86,unknown,250/1394,Oschersleben,Alfa Romeo 147 GTA
 117.02,unknown,250/1465,Oschersleben,Alfa Romeo 156 GTA
@@ -9590,9 +9381,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 122.05,unknown,295/1403,Oulton Park (Full Circuit),Porsche Cayman S (987)
 131.82,unknown,197/1240,Oulton Park (Full Circuit),Renault Clio 197
 133.0,unknown,185/1334,Oulton Park (Full Circuit),Seat Leon 2.0 TFSI
-91.42,Ben Robinson,-/-,Oulton Park (Island Circuit),Noble M12 GTO
-92.26,Goins2754,512/1446,Pacific Raceways,Chevrolet Corvette Z06 (C6)
-79.45,Dirk Ulrich,800/1364,Palm Beach International Raceway,McLaren Senna (P15)
 103.0,unknown,510/1709,Palma Renn Arena,Alfa Romeo Giulia QV
 99.0,unknown,750/1699,Palma Renn Arena,Aventador LP750-4 SV
 103.0,unknown,431/1600,Palma Renn Arena,BMW M4
@@ -9730,72 +9518,9 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 129.95,Larry Perkins,174/1300,Phillip Island,VW Passat VR6
 129.02,Larry Perkins,225/1400,Phillip Island,Volvo 850 T-5
 112.31,Warren Luff,275/1468,Phillip Island,i30 N  Fastback
-708.26,Blake Fuller,-/-,Pikes Peak,Tesla Model S P90D
-100.49,unknown,800/1364,Pittsburgh International Race Complex,McLaren Senna (P15)
 82.0,Bobby Allison,145/1110,Pocono Raceway Road Course Short Counterclockwise (Pre 1985),Porsche 911 2.7
 82.8,Boddy Allison,169/1100,Pocono Raceway Road Course Short Counterclockwise (Pre 1985),Porsche 911 Carrera
 83.9,Bobby Allison,169/1100,Pocono Raceway Road Course Short Counterclockwise (Pre 1985),Porsche 911S Targa 2.7
-69.13,Sébastien Buemi,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-69.16,Jaime Alguersuari,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-69.37,Nick Heidfeld,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-69.39,Sam Bird,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-69.52,Lucas Di Grassi,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-69.53,Jean-Éric Vergne,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-69.64,Nicolas Prost,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-69.66,António Félix da Costa,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-69.74,Nelson Piquet Jr.,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-69.87,Karun Chandhok,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-70.16,Stéphane Sarrazin,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-70.33,Daniel Abt,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-70.59,Oriol Servià,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-70.71,Marco Andretti,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-71.05,Ho-Pin Tung,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-71.33,Salvador Durán,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-71.57,Jérôme d'Ambrosio,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-71.78,Michela Cerruti,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-71.92,Bruno Senna,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-73.05,Jarno Trulli,272/-,Puerto Madero Street Circuit,Spark SRT01-e
-75.41,Jean-Éric Vergne,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-75.53,Nelson Piquet Jr.,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-75.72,Nicolas Prost,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-75.84,Sébastien Buemi,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-76.05,Jaime Alguersuari,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-76.11,Lucas Di Grassi,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-76.14,Jarno Trulli,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-76.22,Nick Heidfeld,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-76.37,Daniel Abt,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-76.42,Karun Chandhok,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-76.81,Oriol Servià,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-76.86,António Félix da Costa,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-77.02,Stéphane Sarrazin,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-77.65,Antonio García,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-77.81,Salvador Durán,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-79.36,Bruno Senna,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-79.79,Matthew Brabham,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-80.09,Jérôme d'Ambrosio,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-80.21,Michela Cerruti,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-81.49,Sam Bird,272/-,Punta Del Este Formula E (Pre 2015),Spark SRT01-e
-74.75,Stacy Kirk,-/-,Putnam Park,BMW M3 (E92)
-81.78,Nicolas Prost,272/-,Putrajaya Street Circuit,Spark SRT01-e
-82.01,Oriol Servià,272/-,Putrajaya Street Circuit,Spark SRT01-e
-82.21,Jérôme d'Ambrosio,272/-,Putrajaya Street Circuit,Spark SRT01-e
-82.23,Sam Bird,272/-,Putrajaya Street Circuit,Spark SRT01-e
-82.34,Daniel Abt,272/-,Putrajaya Street Circuit,Spark SRT01-e
-82.35,Jarno Trulli,272/-,Putrajaya Street Circuit,Spark SRT01-e
-82.61,Karun Chandhok,272/-,Putrajaya Street Circuit,Spark SRT01-e
-82.62,Nelson Piquet Jr.,272/-,Putrajaya Street Circuit,Spark SRT01-e
-82.72,Nick Heidfeld,272/-,Putrajaya Street Circuit,Spark SRT01-e
-82.82,Bruno Senna,272/-,Putrajaya Street Circuit,Spark SRT01-e
-82.94,Matthew Brabham,272/-,Putrajaya Street Circuit,Spark SRT01-e
-83.19,António Félix da Costa,272/-,Putrajaya Street Circuit,Spark SRT01-e
-83.24,Stéphane Sarrazin,272/-,Putrajaya Street Circuit,Spark SRT01-e
-83.7,Franck Montagny,272/-,Putrajaya Street Circuit,Spark SRT01-e
-83.86,Michela Cerruti,272/-,Putrajaya Street Circuit,Spark SRT01-e
-83.89,Ho-Pin Tung,272/-,Putrajaya Street Circuit,Spark SRT01-e
-84.43,Jaime Alguersuari,272/-,Putrajaya Street Circuit,Spark SRT01-e
-85.12,Sébastien Buemi,272/-,Putrajaya Street Circuit,Spark SRT01-e
-85.22,Lucas Di Grassi,272/-,Putrajaya Street Circuit,Spark SRT01-e
-85.82,Katherine Legge,272/-,Putrajaya Street Circuit,Spark SRT01-e
 59.93,unknown,400/1766,Queensland Raceway Sprint Circuit,Audi RS Q3 Sportback
 58.91,unknown,400/1563,Queensland Raceway Sprint Circuit,Audi RS3 Sedan (8V facelift)
 60.24,unknown,290/-,Queensland Raceway Sprint Circuit,Audi S3 Sportback
@@ -10286,8 +10011,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 77.9,unknown,220/1300,Ring Knutstrop (Conf 2),VW Polo R WRC
 79.4,unknown,200/1298,Ring Knutstrop (Conf 2),VW Scirocco 2.0 TSI (Mk III)
 76.6,unknown,265/1390,Ring Knutstrop (Conf 2),VW Scirocco R (Mk III)
-167.0,unknown,60/861,Riverside Raceway,356 A 1600 Convertible D
-152.0,unknown,253/-,Riverside Raceway,Chevrolet Corvette C1
 109.77,unknown,558/825,Road America,Acura ARX-01a
 106.93,unknown,659/925,Road America,Audi R10 TDI
 135.17,David Donohue,700/1514,Road America,Porsche 911 GT2 RS (991)
@@ -10436,8 +10159,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 87.3,unknown,380/1584,Roebling Road Raceway,Chevrolet Corvette ZR-1 (C4)
 82.28,Chris Hudson,-/-,Roebling Road Raceway,Ford Shelby Mustang GT350
 89.8,unknown,320/1474,Roebling Road Raceway,Porsche 911 Turbo 3.3
-103.0,tommy rustad,420/1604,Rudskogen (Post 2012),Audi R8 4.2 FSI Quattro (Mk I)
-116.0,tommy rustad,374/1501,Rudskogen (Post 2012),BMW i8
 64.0,Tommy Rustad,245/565,Rudskogen (Pre 2012),Ariel Atom 2
 69.0,Tommy Rustad,507/1878,Rudskogen (Pre 2012),BMW M5 (E60)
 70.0,Tommy Rustad,507/1765,Rudskogen (Pre 2012),BMW M6
@@ -10446,8 +10167,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 65.0,Tommy Rustad,550/1574,Rudskogen (Pre 2012),Ford GT (Mk I)
 65.0,Tommy Rustad,806/1394,Rudskogen (Pre 2012),Koenigsegg CCR
 69.0,Tommy Rustad,372/1059,Rudskogen (Pre 2012),Morgan Aero 8 (372 PS)
-116.85,Vakhtang Tsatsalashvili,-/-,Rustavi International Motorpark,BMW Z4 3.0si
-108.35,David Robanishvili,-/-,Rustavi International Motorpark,Porsche 911 Carrera S
 91.56,unknown,500/1427,Sachsenring,911 GT3 Touring Package
 94.86,unknown,862/-,Sachsenring,9ff BT-2
 92.84,unknown,843/2371,Sachsenring,AMG GT 63 S E
@@ -10554,7 +10273,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 96.0,moegigo,400/1568,Salzburgring,Audi RS3 (8V facelift)
 101.45,unknown,275/1463,Salzburgring,Hyundai I30N
 89.5,unknown,500/1467,Salzburgring,Porsche 911 GT3 RS (991)
-83.0,Jono Tu,500/1467,Sandown,Porsche 911 GT3 RS (991)
 107.11,unknown,558/825,Sebring International Raceway,Acura ARX-01a
 106.03,unknown,558/825,Sebring International Raceway,Acura ARX-01b
 105.09,unknown,659/925,Sebring International Raceway,Audi R10 TDI
@@ -11134,7 +10852,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 110.7,unknown,271/1505,Smolensk Ring,VW Golf R (Mk VI)
 119.2,unknown,334/2277,Smolensk Ring,VW Phaeton V8
 116.6,unknown,211/1298,Smolensk Ring,VW Scirocco 2.0 TSI
-76.2,Ben Robinson,-/-,Snetterton 200,Noble M12 GTO
 138.5,AtomicDad,314/-,Snetterton 300,Ariel Atom 3.5 (314 PS)
 134.2,unknown,573/1680,Snetterton 300,Aston Martin V12 Vantage S
 127.0,RobSands,-/-,Snetterton 300,BMW M3 (E92)
@@ -11274,7 +10991,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 95.07,Nicholas Latifi,-/-,Sochi Autodrom,Williams FW43
 100.0,Nicholas Latifi,-/-,Sochi Autodrom,Williams FW43B
 100.6,George Russell,-/-,Sochi Autodrom,Williams FW43B
-77.16,6d7770,300/1408,Sodegaura Forest Raceway,Porsche 718 Boxster
 47.72,unknown,309/1565,Solo Ii Autocross Circuit,Chevrolet Camaro SS LT1
 47.8,unknown,309/1535,Solo Ii Autocross Circuit,Ford Mustang SVT Cobra
 48.22,unknown,309/1564,Solo Ii Autocross Circuit,Pontiac Firebird Formula
@@ -11551,9 +11267,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 94.7,unknown,271/1505,Sportauto Wet Handling Test,VW Golf R (Mk VI)
 90.7,unknown,250/1574,Sportauto Wet Handling Test,VW Golf R32 (Mk V)
 105.2,unknown,507/1401,Sportauto Wet Handling Test,Wiesmann GT MF5
-105.4,unknown,608/1544,Spring Mountain,Dodge Viper SRT-10 ACR
-107.9,unknown,530/1481,Spring Mountain,Porsche 911 GT2 (997)
-148.76,Jim Hall II,-/-,Spring Mountain (Mansell C),Porsche 911 GT3 (991)
 85.02,unknown,333/1754,Spring Mountain (Radical Loop Section),Audi S4 (B8)
 89.85,unknown,200/1310,Spring Mountain (Radical Loop Section),Audi TT 2.0 TFSI (Mk II)
 82.82,unknown,340/1514,Spring Mountain (Radical Loop Section),BMW 1 Series M Coupe
@@ -11673,7 +11386,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 99.94,unknown,320/1390,Sugo,Subaru Impreza STI Type RA-R
 109.77,unknown,140/1014,Sugo,Toyota MR-2 1.8 Roadster
 103.06,unknown,284/1640,Sugo,Toyota Supra RZ (Mk IV)
-87.76,L.Tylavii White,-/-,Summit Point,Lexus IS-F
 89.25,Antonio Giovinazzi,-/-,Suzuka,Alfa Romeo C38
 89.36,Kimi Räikkönen,-/-,Suzuka,Alfa Romeo C38
 90.71,Valtteri Bottas,-/-,Suzuka,Alfa Romeo C42
@@ -11802,26 +11514,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 90.36,George Russell,-/-,Suzuka,Williams FW42
 91.31,Alexander Albon,-/-,Suzuka,Williams FW44
 91.51,Nicholas Latifi,-/-,Suzuka,Williams FW44
-81.55,Jarno Trulli,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-81.62,Lucas Di Grassi,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-81.68,Sébastien Buemi,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-81.71,Nick Heidfeld,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-81.75,Daniel Abt,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-81.86,Jérôme d'Ambrosio,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-81.91,Nicolas Prost,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-81.92,Loïc Duval,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-81.98,Stéphane Sarrazin,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-82.01,Jean-Éric Vergne,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-82.03,Vitantonio Liuzzi,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-82.1,Scott Speed,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-82.31,Nelson Piquet Jr.,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-82.39,Jaime Alguersuari,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-82.44,Salvador Durán,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-82.44,Sam Bird,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-82.46,Charles Pic,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-82.57,Bruno Senna,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-82.59,António Félix da Costa,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
-82.8,Karun Chandhok,272/-,Tempelhof Airport Street Circuit (2014 - 2015),Spark SRT01-e
 115.52,unknown,512/1446,Texas World Speedway,Chevrolet Corvette Z06 (C6)
 114.98,unknown,608/1544,Texas World Speedway,Dodge Viper SRT-10 ACR
 105.84,Jason Hart,916/1519,Texas World Speedway,McLaren P1
@@ -11886,8 +11578,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 94.01,unknown,243/1213,Thruxton,Subaru Impreza Turbo Prodrive
 93.42,unknown,360/1100,Thruxton,TVR Cerbera 4.2
 92.84,unknown,284/1640,Thruxton,Toyota Supra RZ (Mk IV)
-85.38,unknown,375/1564,Thunder Hill Raceway,BMW M2 (F87)
-83.82,unknown,370/1471,Thunder Hill Raceway,Porsche 911 Carrera
 132.5,unknown,245/1504,Thunderhill Park East,BMW 228i
 137.28,unknown,321/1390,Thunderhill Park East,BMW Z3 M Roadster (321 PS)
 134.35,unknown,343/1444,Thunderhill Park East,BMW Z4 M Roadster
@@ -11936,19 +11626,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 83.08,Travis Okulski,450/1553,Thunderhill Park West,Porsche 911 Carrera S (992)
 94.07,Jack Rix,487/1848,Thunderhill Park West,Tesla Model 3
 88.93,Travis Okulski,340/1524,Thunderhill Park West,Toyota Supra (Mk V 340 PS)
-93.67,unknown,160/-,Tochigi Honda Test Course,Honda CR-X SiR
-94.59,unknown,170/1090,Tochigi Honda Test Course,Honda CRX Del Sol SiR
-112.6,Anthony Joshua,-/-,Top Gear Rallycross Track,Mini Cooper S
-113.9,Brian Cox,-/-,Top Gear Rallycross Track,Mini Cooper S
-114.4,Edward Michael Grylls,-/-,Top Gear Rallycross Track,Mini Cooper S
-116.3,Gordon Ramsay,-/-,Top Gear Rallycross Track,Mini Cooper S
-117.7,Kevin Hart,-/-,Top Gear Rallycross Track,Mini Cooper S
-121.4,Sharleen Spiteri,-/-,Top Gear Rallycross Track,Mini Cooper S
-130.9,Jesse Eisenberg,-/-,Top Gear Rallycross Track,Mini Cooper S
-132.0,Patrick Dempsey,-/-,Top Gear Rallycross Track,Mini Cooper S
-136.4,Paul Hollywood,-/-,Top Gear Rallycross Track,Mini Cooper S
-141.6,Jennifer Saunders,-/-,Top Gear Rallycross Track,Mini Cooper S
-147.1,Greg Davies,-/-,Top Gear Rallycross Track,Mini Cooper S
 95.5,The Stig,160/1092,Top Gear Track,Abarth 500 EsseEsse
 95.6,The Stig,250/1394,Top Gear Track,Alfa Romeo 147 GTA
 84.8,The Stig,240/1046,Top Gear Track,Alfa Romeo 4C
@@ -12227,8 +11904,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 85.1,The Stig,253/725,Top Gear Track,Zenos E10 S
 89.9,The Stig,1104/1688,Top Gear Track,Zenvo ST1
 77.8,The Stig,650/1232,Top Gear Track,Zonda C12-F Clubsport Roadster
-112.2,unknown,381/1474,Tor Poznan,Porsche 911 Carrera S
-105.9,unknown,201/1256,Tor Poznan,Renault Clio RS III Cup
 78.45,unknown,550/1622,Toronto Motorsports Park,Audi R8 V10 5.2 FSI Plus
 80.37,unknown,450/1686,Toronto Motorsports Park,Audi RS5 (8T3 facelift)
 82.39,unknown,340/1477,Toronto Motorsports Park,Audi TT RS Coupe (Mk II)
@@ -12867,8 +12542,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 115.81,unknown,272/1292,Val De Vienne,Toyota GR Yaris (Mk IV)
 115.05,Christophe Tinseau,300/1432,Val De Vienne,VW Golf GTI Clubsport
 109.54,Christophe Tinseau,535/1612,Val De Vienne,Vantage F1 Edition
-131.65,unknown,115/1247,Vallelunga International Circuit,BMW 520 (E12 115 PS)
-93.68,Ruben Saiz,-/-,Vasco Sameiro (Braga),Toyota GT86
 69.76,Rubens Barrichello,180/1250,Velo Citta (1.68 Km),Audi A3 1.8 TFSI (8V)
 70.39,Rubens Barrichello,190/1587,Velo Citta (1.68 Km),Audi A4 Avant 2.0 TFSI ultra
 67.16,Rubens Barrichello,408/2592,Velo Citta (1.68 Km),Audi E-Tron 55
@@ -13602,8 +13275,6 @@ Lap Time,Driver,PS/KG,Track Name,Vehicle Name
 110.4,unknown,162/1408,Willow Springs,Toyota Celica Supra
 119.99,unknown,-/1327,Willow Springs,Toyota Prius Hybrid
 99.0,Csaba Csere,326/1549,Willow Springs,Toyota Supra Twin Turbo
-64.01,Will Wattanawongkiri,487/1848,Willow Springs - Horse Thief Mile,Tesla Model 3
-64.15,Morgan Higham,487/1848,Willow Springs - Horse Thief Mile,Tesla Model 3
 89.05,unknown,170/1136,Willow Springs - Streets Of Willow,Abarth 124 Spider
 92.88,Keiichi Tsuchiya,290/1630,Willow Springs - Streets Of Willow,Acura TL Type S
 82.78,unknown,510/1709,Willow Springs - Streets Of Willow,Alfa Romeo Giulia QV
