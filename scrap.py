@@ -1,4 +1,9 @@
-# Ecco lo scrap del progetto :)
+#  ____    ____      _      _____ ____  _____  
+# |_   \  /   _|    / \    |_   _|_   \|_   _| 
+#   |   \/   |     / _ \     | |   |   \ | |   
+#   | |\  /| |    / ___ \    | |   | |\ \| |   
+#  _| |_\/_| |_ _/ /   \ \_ _| |_ _| |_\   |_  
+# |_____||_____|____| |____|_____|_____|\____| of scraping script...
 
 # IMPORT
 import os
@@ -16,6 +21,9 @@ def main():
 
    # Logging
    sys.stdout = utils.Logger("scraping", "logs")
+
+   # Print logo
+   printLogo()
 
    # Create database (if exist, delete and create).
    if os.path.exists(db.PATH):
@@ -93,6 +101,14 @@ def main():
    # Close logging
    sys.stdout.log.close()
    sys.stdout = sys.__stdout__
+
+def printLogo():
+   print("   ______    ______ _______         _      _______   ")
+   print(" .' ____ \ .' ___  |_   __ \       / \    |_   __ \  ")
+   print(" | (___ \_/ .'   \_| | |__) |     / _ \     | |__) | ")
+   print("  _.____`.| |        |  __ /     / ___ \    |  ___/  ")
+   print(" | \____) \ `.___.'\_| |  \ \_ _/ /   \ \_ _| |_     ")
+   print("  \______.'`.____ .|____| |___|____| |____|_____|    ")
 
 # Definition NAME
 if __name__ == "__main__":

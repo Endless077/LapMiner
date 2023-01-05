@@ -1,4 +1,9 @@
-# Ecco lo scrap del progetto :)
+#  ____    ____      _      _____ ____  _____  
+# |_   \  /   _|    / \    |_   _|_   \|_   _| 
+#   |   \/   |     / _ \     | |   |   \ | |   
+#   | |\  /| |    / ___ \    | |   | |\ \| |   
+#  _| |_\/_| |_ _/ /   \ \_ _| |_ _| |_\   |_  
+# |_____||_____|____| |____|_____|_____|\____| of report script...
 
 # IMPORT
 import os
@@ -19,6 +24,9 @@ def main():
     # Logging
     sys.stdout = utils.Logger("report", "logs")
 
+    # Print logo
+    printLogo()
+    
     # Create folders tree (if exist, delete and create).
     check_tree_struct()
 
@@ -52,6 +60,14 @@ def check_tree_struct():
             else:
                 shutil.rmtree(path)
                 os.mkdir(path)
+
+def printLogo():
+    print("  _______    ________ _______    ___  _______  _________  ") 
+    print(" |_   __ \  |_   __  |_   __ \ .'   `|_   __ \|  _   _  | ") 
+    print("   | |__) |   | |_ \_| | |__) /  .-.  \| |__) |_/ | | \_| ") 
+    print("   |  __ /    |  _| _  |  ___/| |   | ||  __ /    | |     ") 
+    print("  _| |  \ \_ _| |__/ |_| |_   \  `-'  _| |  \ \_ _| |_    ") 
+    print(" |____| |___|________|_____|   `.___.|____| |___|_____|   ")
 
 # Definition NAME
 if __name__ == "__main__":
