@@ -1,0 +1,75 @@
+  _______    ________ _______    ___  _______  _________  
+ |_   __ \  |_   __  |_   __ \ .'   `|_   __ \|  _   _  | 
+   | |__) |   | |_ \_| | |__) /  .-.  \| |__) |_/ | | \_| 
+   |  __ /    |  _| _  |  ___/| |   | ||  __ /    | |     
+  _| |  \ \_ _| |__/ |_| |_   \  `-'  _| |  \ \_ _| |_    
+ |____| |___|________|_____|   `.___.|____| |___|_____|   
+######################
+Extracting dataset...
+Insert min number of laptime per vehicle:
+Number or min laptime per vehicle: 1
+Insert min number of unique laptime per track:
+Number or min unique laptime per track: 1
+Getting database connection...
+Creating Views...
+Creating List Cars view...
+Creating Merge Track List view...
+Creating Merge Vehicle List view...
+Creating Merge Lap List view...
+View created.
+######################
+       Lap Time             Driver     PS/KG              Track Name                Vehicle Name
+0         52.00            unknown  432/1773  Adams Motorsports Park         Chevrolet Camaro SS
+1         53.40            unknown  119/1182  Adams Motorsports Park             Honda Fit Sport
+2         50.80            unknown  260/1464  Adams Motorsports Park         Mazda 3 MPS (Mk II)
+3         50.60            unknown  203/1453  Adams Motorsports Park  VW Golf GTI (Mk VI 200 HP)
+4        112.70  Boris Shulmeister  400/1535           Adm Miachkovo    911 Carrera 4S Cabriolet
+...         ...                ...       ...                     ...                         ...
+14706     73.22     Sabine Schmitz  571/1674               Zwartkops       Mercedes-Benz SLS AMG
+14707     71.55     Sabine Schmitz  480/1765               Zwartkops           Nissan GT-R (R35)
+14708     72.63     Sabine Schmitz  530/1591               Zwartkops         Porsche 911 Turbo S
+14709     79.49     Sabine Schmitz  250/1406               Zwartkops  Renault Megane RS (Mk III)
+14710     78.79     Sabine Schmitz  300/1549               Zwartkops        Subaru WRX STI sedan
+
+[14711 rows x 5 columns]
+######################
+                   Track Name        Country  Length (km)
+0      Adams Motorsports Park  United States          NaN
+1               Adm Miachkovo         Russia         3.27
+2                       Adria          Italy         2.70
+3            Alastaro Circuit        Finland         2.72
+4                 Albert Park      Australia         5.30
+..                        ...            ...          ...
+377  Zandvoort Gp (Post 2019)    Netherlands         4.26
+378   Zandvoort Gp (Pre 2020)    Netherlands         4.31
+379          Zhejiang Circuit          China         3.20
+380                    Zolder        Belgium         3.98
+381                 Zwartkops   South Africa         2.40
+
+[382 rows x 3 columns]
+######################
+                         Vehicle Name Type  ...                         Trasmission                           Layout
+0                145 Quadrifoglio 2.0  Car  ...                                   5  front engine, front wheel drive
+1                 190E 2.5-16V Evo II  Car  ...                                   5   front engine, rear wheel drive
+2     208 GTi Peugeot Sport Anniver..  Car  ...                    Six-speed manual  front engine, front wheel drive
+3        250 GT SWB California Spyder  Car  ...                      4 speed manual   front engine, rear wheel drive
+4            250 GT SWB Esperimentale  Car  ...                      4 speed manual   front engine, rear wheel drive
+...                               ...  ...  ...                                 ...                              ...
+2757                      Zenos E10 S  Car  ...                      6 speed manual   front engine, rear wheel drive
+2758                        Zenvo ST1  Car  ...                   7 speed automatic  middle engine, rear wheel drive
+2759   Zonda C12-F Clubsport Roadster  Car  ...                                   6  middle engine, rear wheel drive
+2760                  i30 N  Fastback  Car  ...                      6 speed manual  front engine, front wheel drive
+2761                   ligier JS P217  Car  ...  TLS-200 6-speed sequential gearbox  middle engine, rear wheel drive
+
+[2762 rows x 24 columns]
+######################
+Generating excel dataset...
+Generating csv dataset...
+Generating json dataset...
+Dataset exported in excel, csv and json format.
+######################
+Getting datasets...
+Getting laps stats...
+Getting tracks stats...
+Getting vehicles stats...
+######################

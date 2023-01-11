@@ -80,6 +80,7 @@ def parse_specs(attr_key, attr_value):
     # :param attr_key: a given vehicle specs attribute key.
     # :param attr_value: a given vehicle specs attribute value.
     # :return: a parse attribute value (or values) in a list.
+    
     parse_attr = []
 
     if attr_key == "Introduced":
@@ -293,19 +294,23 @@ def parse_vehicle(record):
             vehicle_href = record[1].contents[index_vehicle].get('href')
     except:
         vehicle_href = None
-            
+
     if(check2(record[1].contents[index_vehicle].text)):
-        vehicle_name = re.sub("Unplugged Performance", "", record[1].contents[index_vehicle].text).strip()
+        vehicle_name = re.sub("Unplugged Performance", "", record[1].contents[index_vehicle].text)
     else:
         vehicle_name = record[1].contents[index_vehicle].text
 
     if(check3(record[1].contents[index_vehicle].text)):
-        vehicle_name = re.sub("Performance", "", vehicle_name).strip()
+        vehicle_name = re.sub("Performance", "", vehicle_name)
+
+    vehicle_name = vehicle_name.replace("\t", "")
+    vehicle_name = vehicle_name.replace("\n", "")
+    vehicle_name.strip()
 
     return (vehicle_name, vehicle_href)
 
 def parse_track(record):
-    raise  NotImplementedError
+    return record.contents[0].replace("\t", "").replace("\n", "").strip().title()
 
 def parse_lap(record):
     raise NotImplementedError
@@ -358,7 +363,7 @@ def get_all_tracks(user_agent):
         print("Processing tracks...")
         for track in tracks:
             new_track = {}
-            new_track['name'] = track.contents[0].title()
+            new_track['name'] = parse_track(track)
             new_track['href'] = track.get('href')
             all_track.append(new_track)
             print("--New Track Found: " + new_track['name'])

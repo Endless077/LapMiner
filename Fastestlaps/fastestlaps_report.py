@@ -36,7 +36,7 @@ VEHICLE_HEADERS = {
 	'Dim_Wide': 'Wide (m)',
 	'Dim_High': 'High (m)',
 	'Zero_Hundred': '0-100 kph (s)',
-	'Hundred_Zero': '100-0 kph (s)',
+	'Hundred_Zero': '100-0 kph (m)',
 	'Top_Speed': 'Top Speed (s)',
 	'Engine_Type': 'Engine',
 	'Displacement': 'Displacement (l)',
@@ -54,10 +54,16 @@ VEHICLE_HEADERS = {
 PATH = "./report"
 
 def extract_dataset():
+    # Create a set of TEMP view in scrap.db
+    # :param:
+    # :return conn: the current connection to scrap.db.
+
     print("Extracting dataset...")
     while True:
         min_vehicle_laps = input("Insert min number of laptime per vehicle:\n")
-        min_track_laps = input("Insert min number of laptime per track:\n")
+        print(f"Number or min laptime per vehicle: {min_vehicle_laps}")
+        min_track_laps = input("Insert min number of unique laptime per track:\n")
+        print(f"Number or min unique laptime per track: {min_track_laps}")
         try:
             int(min_vehicle_laps)
             int(min_track_laps)
@@ -69,9 +75,12 @@ def extract_dataset():
     conn = db.get_connection()
     db.filter(conn, min_track_laps, min_vehicle_laps)
     return conn
-        
+      
 def dataset_generator(conn):
-    
+    # Get all datasets and convert in varius format
+    # :param conn: a connection to scrap.db (with TEMP views).
+    # :return:
+
     laps_dataframe = pd.read_sql_query('SELECT * FROM Extract_Laps_List', conn)
     tracks_dataframe = pd.read_sql_query('SELECT * FROM Extract_Track_List', conn)
     vehicles_dataframe = pd.read_sql_query('SELECT * FROM Extract_Vehicle_List', conn)
@@ -101,6 +110,10 @@ def dataset_generator(conn):
     print("Dataset exported in excel, csv and json format.")
 
 def export_excel(datasets):
+    # Generate a excel file with all dataset in sheets
+    # :param datasets: a dictionary with all dataframes.
+    # :return:
+
     excel_path = PATH + '/excel/'
 
     print("Generating excel dataset...")
@@ -109,6 +122,10 @@ def export_excel(datasets):
             value.to_excel(writer, sheet_name=key, index=False)
 
 def export_csv(datasets):
+    # Generate a csv file for each dataset
+    # :param datasets: a dictionary with all dataframes.
+    # :return:
+
     csv_path = PATH + '/csv/'
     
     print("Generating csv dataset...")
@@ -116,6 +133,10 @@ def export_csv(datasets):
         value.to_csv(f'{csv_path}{key}.csv', index=False)
 
 def export_json(datasets):
+    # Generate a json file for tracks and vehicle with some informations
+    # :param datasets: a dictionary with all dataframes.
+    # :return:
+
     json_path = PATH + '/json/'
 
     laps_df = datasets['Laps_Dataset']
@@ -136,6 +157,11 @@ def export_json(datasets):
         outfile.write(json_object_vehicles)
 
 def json_track(laps_df, tracks_df):
+    # Generate a dict for a json converter (tracks)
+    # :param laps_df: laps dataframe.
+    # :param track_df: tracks dataframe.
+    # :return: a dict for tracks
+
     tracks_json = {}
 
     for track_row in tracks_df.itertuples(name=None):
@@ -156,6 +182,11 @@ def json_track(laps_df, tracks_df):
     return tracks_json
 
 def json_vehicle(laps_df, vehicles_df):
+     # Generate a dict for a json converter (vehicles)
+    # :param laps_df: laps dataframe.
+    # :param track_df: vehicles dataframe.
+    # :return: a dict for vehicle
+
     vehicle_json = {}
 
     for vehicle_row in vehicles_df.itertuples(name=None):
@@ -179,6 +210,9 @@ def json_vehicle(laps_df, vehicles_df):
     return vehicle_json
 
 def report():
+    # Get a simple report of all data in the scrap dataset
+    # :param:
+    # :return: a report.txt file.
     
     print("Getting datasets...")
     with open('./report/json/vehicle.json') as f1:
@@ -204,6 +238,14 @@ def report():
     report.close()
 
 def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
+    # Write in report.txt a list of varius laps stats
+    # :param file: linked file object ov report.txt
+    # :param laps: laps dataframe copy.
+    # :param tracks: tracks dataframe copy.
+    # :param vehicles: vehicles dataframe copy.
+    # :param json_tracks: the tracks json file.
+    # :param json_vehicles: the vehicles json file.
+    # :return:
 
     #report_laps_plot()
 
@@ -253,6 +295,11 @@ def report_laps_plot():
     raise NotImplementedError
 
 def report_tracks(file, tracks, json_tracks):
+    # Write in report.txt a list of varius tracks stats
+    # :param file: linked file object ov report.txt
+    # :param tracks: tracks dataframe copy.
+    # :param json_tracks: the tracks json file.
+    # :return:
     
     #report_tracks_plot()
 
@@ -278,6 +325,11 @@ def report_tracks_plot():
     raise NotImplementedError
 
 def report_vehicles(file, vehicles, json_vehicles):
+    # Write in report.txt a list of varius vehicles stats
+    # :param file: linked file object ov report.txt
+    # :param vehicles: vehicles dataframe copy.
+    # :param json_vehicles: the vehicles json file.
+    # :return:
 
     #report_vehicles_plot()
 

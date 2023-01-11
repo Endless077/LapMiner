@@ -173,7 +173,7 @@ def filter(conn, min_track_laps, min_vehicle_laps):
         Tracks.Track_Name, Tracks.Country, Tracks.Total_Length
     FROM
         Laps JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
-        INNER JOIN Tracks ON Laps.Track = Tracks.Track_Name
+        JOIN Tracks ON Laps.Track = Tracks.Track_Name
     GROUP BY
         Laps.Track
     HAVING
@@ -189,7 +189,7 @@ def filter(conn, min_track_laps, min_vehicle_laps):
         List_Cars.*
     FROM
         Laps JOIN List_Cars ON Laps.Vehicle = List_Cars.Vehicle
-        INNER JOIN Tracks ON Laps.Track = Tracks.Track_Name
+        JOIN Tracks ON Laps.Track = Tracks.Track_Name
     GROUP BY
         Laps.Vehicle
     HAVING
@@ -205,7 +205,7 @@ def filter(conn, min_track_laps, min_vehicle_laps):
         Laps.*
     FROM
         Laps JOIN Extract_Vehicle_List AS EVL ON Laps.Vehicle = EVL.Vehicle
-        INNER JOIN Extract_Track_List AS ETL ON Laps.Track = ETL.Track_Name
+        JOIN Extract_Track_List AS ETL ON Laps.Track = ETL.Track_Name
     ORDER BY
         Laps.Track ASC
     '''

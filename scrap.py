@@ -50,7 +50,7 @@ def main():
    for track in all_tracks:
       user_agent = user_agent_generator.get_random_user_agent()
       value = scrap.get_track_info(user_agent, track)
-      if(value['track_info'] is not None):
+      if((value['track_info'][0] is not None) and (value['track_info'][1] is not None)):
          laps = value['laps_time']
          track = (track['name'], track['href'], value['track_info'][0], value['track_info'][1][0])
          print("######################")
