@@ -18,7 +18,7 @@ Creating Merge Vehicle List view...
 Creating Merge Lap List view...
 View created.
 ######################
-       Lap Time             Driver     PS/KG              Track Name                Vehicle Name
+       Lap_Time             Driver     PS/KG              Track_Name                Vehicle_Name
 0         52.00            unknown  432/1773  Adams Motorsports Park         Chevrolet Camaro SS
 1         53.40            unknown  119/1182  Adams Motorsports Park             Honda Fit Sport
 2         50.80            unknown  260/1464  Adams Motorsports Park         Mazda 3 MPS (Mk II)
@@ -33,7 +33,7 @@ View created.
 
 [14711 rows x 5 columns]
 ######################
-                   Track Name        Country  Length (km)
+                   Track_Name        Country  Length_(km)
 0      Adams Motorsports Park  United States          NaN
 1               Adm Miachkovo         Russia         3.27
 2                       Adria          Italy         2.70
@@ -48,7 +48,7 @@ View created.
 
 [382 rows x 3 columns]
 ######################
-                         Vehicle Name Type  ...                         Trasmission                           Layout
+                         Vehicle_Name Type  ...                         Trasmission                           Layout
 0                145 Quadrifoglio 2.0  Car  ...                                   5  front engine, front wheel drive
 1                 190E 2.5-16V Evo II  Car  ...                                   5   front engine, rear wheel drive
 2     208 GTi Peugeot Sport Anniver..  Car  ...                    Six-speed manual  front engine, front wheel drive
@@ -69,7 +69,12 @@ Generating json dataset...
 Dataset exported in excel, csv and json format.
 ######################
 Getting datasets...
-Getting laps stats...
-Getting tracks stats...
-Getting vehicles stats...
+Starting laps stats...
+Starting tracks stats...
+Starting vehicles stats...
+Report complete.
+######################
+Getting datasets...
+Starting matrix generation...
+Matrix complete.
 ######################

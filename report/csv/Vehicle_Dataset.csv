@@ -1,4 +1,4 @@
-Vehicle Name,Type,Type Usage,Introduced Year,Country,Curb Weight (kg),Wheelbase (m),Long (m),Wide (m),High (m),0-100 kph (s),100-0 kph (m),Top Speed (s),Engine,Displacement (l),Power (ps),Power (bhp),Power (kw),Torque (Nm),Power/Weight (ps),Torque/Weight (Nm),Efficiency (ps per l/100 km),Trasmission,Layout
+Vehicle_Name,Type,Type_Usage,Introduced_Year,Country,Curb_Weight_(kg),Wheelbase_(m),Long_(m),Wide_(m),High_(m),0-100_kph_(s),100-0_kph_(m),Top_Speed_(s),Engine,Displacement_(l),Power_(ps),Power_(bhp),Power_(kw),Torque_(Nm),Power/Weight_(ps),Torque/Weight_(Nm),Efficiency_(ps_per_l/100_km),Trasmission,Layout
 145 Quadrifoglio 2.0,Car,Compact,,Italy,1240.0,,,,,,,,Inline 4 16V Turbo,2.0,155.0,153.0,114.0,187.0,125.0,151.0,,5,"front engine, front wheel drive"
 190E 2.5-16V Evo II,Car,4-door saloon,1991.0,Germany,1436.0,,,,,7.1,40.0,250.0,2.5 16V 4cyl redline 7700rpm,2.5,235.0,232.0,173.0,245.0,169.0,177.0,17.0,5,"front engine, rear wheel drive"
 208 GTi Peugeot Sport Anniver..,Car,Compact,2015.0,France,1194.0,,3.96,1.74,1.46,6.2,35.0,231.0,In-line 4cyl,1.6,208.0,205.0,153.0,300.0,176.0,254.0,19.0,Six-speed manual,"front engine, front wheel drive"

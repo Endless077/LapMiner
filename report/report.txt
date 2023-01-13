@@ -9,7 +9,7 @@ report.txt
 
 --Tracks laptimes stats:
 
-| Track Name                                                      |   Lap_Counter |   Lap_Mean |   Lap_Max |   Lap_Min |
+| Track_Name                                                      |   Lap_Counter |   Lap_Mean |   Lap_Max |   Lap_Min |
 |:----------------------------------------------------------------|--------------:|-----------:|----------:|----------:|
 | Balocco                                                         |           298 |   181.87   |    196.39 |    156.62 |
 | Vairano Handling Course                                         |           292 |    80.2643 |     88.56 |     67.68 |
@@ -398,7 +398,7 @@ report.txt
 
 --Tracks best and worse vehicles:
 
-| Track Name                                                      | WorseTime                       | BestTime                        |
+| Track_Name                                                      | WorseTime                       | BestTime                        |
 |:----------------------------------------------------------------|:--------------------------------|:--------------------------------|
 | Adams Motorsports Park                                          | Honda Fit Sport                 | VW Golf GTI (Mk VI 200 HP)      |
 | Adm Miachkovo                                                   | Mazda 3 MPS (Mk II)             | Porsche 911 Turbo               |
@@ -787,7 +787,7 @@ report.txt
 
 --Track vehicles stats:
 
-| Track Name                                                      |   Power_Mean |   Power_Max |   Power_Min |
+| Track_Name                                                      |   Power_Mean |   Power_Max |   Power_Min |
 |:----------------------------------------------------------------|-------------:|------------:|------------:|
 | Adams Motorsports Park                                          |     253.5    |         432 |         119 |
 | Adm Miachkovo                                                   |     318.068  |         570 |         143 |
@@ -1176,7 +1176,7 @@ report.txt
 
 --Track vehicles category count:
 
-|                                                                                      |   Lap Time |
+|                                                                                      |   Lap_Time |
 |:-------------------------------------------------------------------------------------|-----------:|
 | ('Adams Motorsports Park', 'Compact')                                                |          3 |
 | ('Adams Motorsports Park', 'Coupe')                                                  |          1 |
@@ -14774,7 +14774,7 @@ report.txt
 
 --Vehicle laps count:
 
-| Vehicle Name                    |   Laps |
+| Vehicle_Name                    |   Laps |
 |:--------------------------------|-------:|
 | Spark SRT01-e                   |    179 |
 | Porsche 911 GT3 RS              |     73 |
@@ -17649,13 +17649,13 @@ report.txt
 ####################################################################################################################################
 
 -Vehicle report:
---Vehicle count: 2762
+--Vehicle_count: 2762
 
 ######################
 
 --Vehicles type count (type Usage):
 
-| Type Usage    |   Vehicle |
+| Type_Usage    |   Vehicle |
 |:--------------|----------:|
 | Coupe         |      1021 |
 | 4-door saloon |       552 |
@@ -17774,7 +17774,7 @@ report.txt
 
 --Vehicles type dimensions:
 
-| Type Usage    |   ('Curb Weight (kg)', 'mean') |   ('Curb Weight (kg)', 'max') |   ('Curb Weight (kg)', 'min') |   ('Wheelbase (m)', 'mean') |   ('Wheelbase (m)', 'max') |   ('Wheelbase (m)', 'min') |   ('Long (m)', 'mean') |   ('Long (m)', 'max') |   ('Long (m)', 'min') |   ('Wide (m)', 'mean') |   ('Wide (m)', 'max') |   ('Wide (m)', 'min') |   ('High (m)', 'mean') |   ('High (m)', 'max') |   ('High (m)', 'min') |
+| Type_Usage    |   ('Curb_Weight_(kg)', 'mean') |   ('Curb_Weight_(kg)', 'max') |   ('Curb_Weight_(kg)', 'min') |   ('Wheelbase_(m)', 'mean') |   ('Wheelbase_(m)', 'max') |   ('Wheelbase_(m)', 'min') |   ('Long_(m)', 'mean') |   ('Long_(m)', 'max') |   ('Long_(m)', 'min') |   ('Wide_(m)', 'mean') |   ('Wide_(m)', 'max') |   ('Wide_(m)', 'min') |   ('High_(m)', 'mean') |   ('High_(m)', 'max') |   ('High_(m)', 'min') |
 |:--------------|-------------------------------:|------------------------------:|------------------------------:|----------------------------:|---------------------------:|---------------------------:|-----------------------:|----------------------:|----------------------:|-----------------------:|----------------------:|----------------------:|-----------------------:|----------------------:|----------------------:|
 | 4-door saloon |                       1698.4   |                          2647 |                           820 |                     2.82271 |                       3.21 |                       2.51 |                4.79903 |                  5.32 |                  4.3  |                1.83964 |                  2.15 |                  1.45 |               14.0649  |               1403    |                  1.13 |
 | Compact       |                       1264.32  |                          1835 |                           613 |                     2.55609 |                       3    |                       2.04 |                4.12667 |                  4.97 |                  1.37 |                1.73815 |                  1.98 |                  1.26 |                1.43226 |                  1.7  |                  1.01 |
@@ -17789,7 +17789,7 @@ report.txt
 
 --Vehicles type performance:
 
-| Type Usage    |   ('Top Speed (s)', 'mean') |   ('Top Speed (s)', 'max') |   ('Top Speed (s)', 'min') |   ('0-100 kph (s)', 'mean') |   ('0-100 kph (s)', 'max') |   ('0-100 kph (s)', 'min') |   ('Power (ps)', 'mean') |   ('Power (ps)', 'max') |   ('Power (ps)', 'min') |   ('Torque (Nm)', 'mean') |   ('Torque (Nm)', 'max') |   ('Torque (Nm)', 'min') |
+| Type_Usage    |   ('Top_Speed_(s)', 'mean') |   ('Top_Speed_(s)', 'max') |   ('Top_Speed_(s)', 'min') |   ('0-100_kph_(s)', 'mean') |   ('0-100_kph_(s)', 'max') |   ('0-100_kph_(s)', 'min') |   ('Power_(ps)', 'mean') |   ('Power_(ps)', 'max') |   ('Power_(ps)', 'min') |   ('Torque_(Nm)', 'mean') |   ('Torque_(Nm)', 'max') |   ('Torque_(Nm)', 'min') |
 |:--------------|----------------------------:|---------------------------:|---------------------------:|----------------------------:|---------------------------:|---------------------------:|-------------------------:|------------------------:|------------------------:|--------------------------:|-------------------------:|-------------------------:|
 | 4-door saloon |                     243.956 |                        333 |                        122 |                     6.52467 |                       24.5 |                        2.3 |                  321.408 |                    1020 |                      35 |                   443.2   |                     1424 |                       64 |
 | Compact       |                     218.397 |                        290 |                         61 |                     7.66456 |                       36.8 |                        3.4 |                  183.971 |                     421 |                       5 |                   255.407 |                      601 |                       30 |
@@ -17804,7 +17804,7 @@ report.txt
 
 --Vehicles country dimensions:
 
-| Country              |   ('Curb Weight (kg)', 'mean') |   ('Curb Weight (kg)', 'max') |   ('Curb Weight (kg)', 'min') |   ('Wheelbase (m)', 'mean') |   ('Wheelbase (m)', 'max') |   ('Wheelbase (m)', 'min') |   ('Long (m)', 'mean') |   ('Long (m)', 'max') |   ('Long (m)', 'min') |   ('Wide (m)', 'mean') |   ('Wide (m)', 'max') |   ('Wide (m)', 'min') |   ('High (m)', 'mean') |   ('High (m)', 'max') |   ('High (m)', 'min') |
+| Country              |   ('Curb_Weight_(kg)', 'mean') |   ('Curb_Weight_(kg)', 'max') |   ('Curb_Weight_(kg)', 'min') |   ('Wheelbase_(m)', 'mean') |   ('Wheelbase_(m)', 'max') |   ('Wheelbase_(m)', 'min') |   ('Long_(m)', 'mean') |   ('Long_(m)', 'max') |   ('Long_(m)', 'min') |   ('Wide_(m)', 'mean') |   ('Wide_(m)', 'max') |   ('Wide_(m)', 'min') |   ('High_(m)', 'mean') |   ('High_(m)', 'max') |   ('High_(m)', 'min') |
 |:---------------------|-------------------------------:|------------------------------:|------------------------------:|----------------------------:|---------------------------:|---------------------------:|-----------------------:|----------------------:|----------------------:|-----------------------:|----------------------:|----------------------:|-----------------------:|----------------------:|----------------------:|
 | Australia            |                       1676.68  |                          1934 |                           700 |                     2.84211 |                       3.01 |                       2.65 |                4.89421 |                  5.2  |                  4.12 |                1.85789 |                  1.9  |                  1.74 |                1.44421 |                  1.49 |                  1.3  |
 | Austria              |                        837.2   |                           871 |                           790 |                     2.43    |                       2.43 |                       2.43 |                3.74    |                  3.74 |                  3.74 |                1.91333 |                  1.92 |                  1.9  |                1.2     |                  1.2  |                  1.2  |
@@ -17836,7 +17836,7 @@ report.txt
 
 --Vehicles country performance:
 
-| Country              |   ('Top Speed (s)', 'mean') |   ('Top Speed (s)', 'max') |   ('Top Speed (s)', 'min') |   ('0-100 kph (s)', 'mean') |   ('0-100 kph (s)', 'max') |   ('0-100 kph (s)', 'min') |   ('Power (ps)', 'mean') |   ('Power (ps)', 'max') |   ('Power (ps)', 'min') |   ('Torque (Nm)', 'mean') |   ('Torque (Nm)', 'max') |   ('Torque (Nm)', 'min') |
+| Country              |   ('Top_Speed_(s)', 'mean') |   ('Top_Speed_(s)', 'max') |   ('Top_Speed_(s)', 'min') |   ('0-100_kph_(s)', 'mean') |   ('0-100_kph_(s)', 'max') |   ('0-100_kph_(s)', 'min') |   ('Power_(ps)', 'mean') |   ('Power_(ps)', 'max') |   ('Power_(ps)', 'min') |   ('Torque_(Nm)', 'mean') |   ('Torque_(Nm)', 'max') |   ('Torque_(Nm)', 'min') |
 |:---------------------|----------------------------:|---------------------------:|---------------------------:|----------------------------:|---------------------------:|---------------------------:|-------------------------:|------------------------:|------------------------:|--------------------------:|-------------------------:|-------------------------:|
 | Australia            |                     260.394 |                        300 |                        200 |                     5.30625 |                        8.5 |                        3   |                 397.684  |                     710 |                     222 |                   522.868 |                      813 |                      317 |
 | Austria              |                     237.6   |                        250 |                        230 |                     3.9     |                        4.4 |                        3.5 |                 252      |                     365 |                      16 |                   386.6   |                      450 |                      310 |
