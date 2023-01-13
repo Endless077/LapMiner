@@ -75,7 +75,7 @@ def extract_dataset():
     conn = db.get_connection()
     db.filter(conn, min_track_laps, min_vehicle_laps)
     return conn
-      
+     
 def dataset_generator(conn):
     # Get all datasets and convert in varius format
     # :param conn: a connection to scrap.db (with TEMP views).
@@ -236,6 +236,60 @@ def report():
 
     report.write("####################################################################################################################################\n\n")
     report.close()
+
+def matrix_generator():
+    # Generate a comlete matrix Vehicles X Tracks whit (best) laptime
+    # :param:
+    # :return: a matrix.txt file (and other format).
+
+    # Matrix generator
+    print("Getting datasets...")
+    with open('../report/json/vehicle.json') as f1:
+        json_vehicle = json.load(f1)
+    with open('../report/json/tracks.json') as f2:
+        json_track = json.load(f2)
+    
+    df_laps = pd.read_csv("../report/csv/Laps_Dataset.csv")
+    df_tracks = pd.read_csv("../report/csv/Tracks_Dataset.csv")
+    df_vehicles = pd.read_csv("../report/csv/Vehicle_Dataset.csv")
+
+    report = open('../matrix.txt', 'w')
+    report.write("matrix.txt\n\n")
+
+    print("Starting matrix generation...")
+    tracks = []
+
+    for track in tracks:
+        print(f"-Found {track} track.")
+
+    # Classic approch
+    vehicles_occ = {}
+
+    for track in tracks:
+        for vehicle,laptimes in json_track[track]["Laps"].items():
+            if(vehicle not in vehicles_occ.keys()):
+                vehicles_occ[vehicle] = 1
+            else:
+                vehicles_occ[vehicle] += 1
+    
+    report.write("####################\n")
+    vehicles_occ_view = [ (times,vehicle) for vehicle,times in vehicles_occ.items() ]
+    vehicles_occ_view.sort(reverse=True)
+    for vehicle,times in vehicles_occ_view:
+        report.write("%s: %d\n" % (times,vehicle))
+
+
+    # Pandas approch
+    dataframe = pd.DataFrame(columns=tracks)
+
+    for track in tracks:
+        for vehicle,laptimes in json_track[track]["Laps"].items():
+            if(vehicle not in dataframe.index):
+                dataframe.loc[vehicle] = pd.Series(None, dtype="float64", index=dataframe.columns)
+            dataframe.loc[vehicle][track] = laptimes[0]
+
+    report.write("####################\n")
+    report.write(dataframe.to_markdown())
 
 def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
     # Write in report.txt a list of varius laps stats

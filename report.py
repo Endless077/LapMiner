@@ -41,6 +41,10 @@ def main():
     report.report()
     print("######################")
     
+    # Create a matrix output
+    report.matrix_generator()
+    print("######################")
+    
     # Close database connection
     conn.close()
     
