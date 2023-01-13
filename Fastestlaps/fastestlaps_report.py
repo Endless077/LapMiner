@@ -243,7 +243,8 @@ def matrix_generator():
     # :param:
     # :return: a matrix.txt file (and other format).
 
-    # Matrix generator
+    matrix_path = PATH + '/matrix/'
+
     print("Getting datasets...")
     with open(f'{PATH}/json/vehicle.json') as f1:
         json_vehicle = json.load(f1)
@@ -291,7 +292,9 @@ def matrix_generator():
                 dataframe.loc[vehicle] = pd.Series(None, dtype="float64", index=dataframe.columns)
             dataframe.loc[vehicle][track] = laptimes[0]
 
+    dataframe.to_csv(f'{matrix_path}/matrix.csv')
     matrix.write(dataframe.to_markdown())
+
     print("Matrix complete.")
 
 def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
