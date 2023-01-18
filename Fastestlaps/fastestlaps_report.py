@@ -26,6 +26,7 @@ TRACK_HEADERS = {
 }
 VEHICLE_HEADERS = {
 	'Vehicle': 'Vehicle_Name',
+    'Manufacturer': 'Manufacturer',
 	'Type': 'Type',
 	'Type_Usage': 'Type_Usage',
     'Introduced_Year': 'Introduced_Year',
@@ -51,7 +52,7 @@ VEHICLE_HEADERS = {
 	'Layout': 'Layout',
 }
 
-PATH = "./report"
+PATH = "../Lap-Time-Prediction/report"
 
 def extract_dataset():
     # Create a set of TEMP view in scrap.db

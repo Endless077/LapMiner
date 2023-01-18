@@ -52,6 +52,7 @@ def extract_specs(specs):
     
     vehicle_record = []
     vehicle_record.append(specs['name'])
+    vehicle_record.append(specs['manufacturer'])
 
     if("Car Type" in specs.keys()):
         vehicle_record.append("Car")
@@ -466,6 +467,8 @@ def get_vehicle_info(user_agent, vehicle):
         tables = soup.findAll(class_=re.compile("table fl-datasheet"))
 
         print(f"Getting {vehicle[0]} specs...")
+        vehicle_record["manufacturer"] = soup.find(class_=re.compile("margin-top")).a.text
+
         for table in tables:
             rows = table.findAll('tr')
             for record in rows:

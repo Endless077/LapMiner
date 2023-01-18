@@ -8,7 +8,7 @@
 import sqlite3
 from sqlite3 import Error
 
-PATH = "./scrap.db"
+PATH = "../Lap-Time-Prediction/Fastestlaps/Dump/dump.db"
 
 def create_database():
     # Create a connection to db
@@ -76,6 +76,7 @@ def create_tables(conn):
 
     specs_table = '''CREATE TABLE IF NOT EXISTS "Specs" (
 	"Vehicle"	        TEXT NOT NULL,
+    "Manufacturer"      TEXT,
 	"Type"	            TEXT,
 	"Type_Usage"	    TEXT,
     "Introduced_Year"   INTEGER,
@@ -303,11 +304,11 @@ def insert_new_specs(conn, specs):
     # :param specs: is a tuple.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Specs(Vehicle,Type,Type_Usage,Introduced_Year,Country,
+    sql = ''' INSERT OR IGNORE INTO Specs(Vehicle,Manufacturer,Type,Type_Usage,Introduced_Year,Country,
     Curb_Weight,Wheelbase,Dim_Long,Dim_Wide,Dim_High,Zero_Hundred,Hundred_Zero,Top_Speed,
     Engine_Type,Displacement,Power_PS,Power_BHP,Power_KW,Torque,
     Power_Weight,Torque_Weight,Efficiency,Trasmission,Layout)
-    VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) '''
+    VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) '''
 
     cur = conn.cursor()
     cur.execute(sql, specs)
