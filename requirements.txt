@@ -22,6 +22,7 @@ itemadapter==0.7.0
 itemloaders==1.0.6
 jmespath==1.0.1
 lxml==4.9.1
+mysql-connector-python==8.0.32
 numpy==1.23.4
 openpyxl==3.0.10
 outcome==1.2.0
@@ -30,6 +31,8 @@ pandas==1.5.1
 parsel==1.7.0
 plotly==5.11.0
 Protego==0.2.1
+protobuf==3.20.3
+psycopg2==2.9.5
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.21
