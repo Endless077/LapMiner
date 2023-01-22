@@ -11,8 +11,13 @@ import contextlib
 import os
 import sys
 
+import sqlite3
+from sqlite3 import Error
+
 from bs4 import BeautifulSoup
+
 from datetime import datetime as dt
+
 from random_user_agent.user_agent import UserAgent
 from random_user_agent.params import HardwareType, SoftwareEngine, SoftwareName, SoftwareType, OperatingSystem, Popularity
 
@@ -39,6 +44,47 @@ class Logger(object):
     def flush(self):
         self.terminal.flush()
         self.log.flush()
+
+# Database SQLite
+def create_SQLite_database(PATH):
+    # Create a connection to db
+    # :param:
+    # :return: connection object or None.
+    
+    print("Version Database: " + sqlite3.version)
+    print("Creating " + PATH + "...")
+
+    conn = None
+    try:
+        conn = sqlite3.connect(PATH)
+    except Error as e:
+        print(e)
+    finally:
+        if conn:
+            conn.close()
+
+def get_SQLite_connection(PATH):
+    # Create a database connection to the SQLite database specified by db_file
+    # :param db_file: database file.
+    # :return: connection object or None.
+
+    print("Getting database connection...")
+
+    conn = None
+    try:
+        conn = sqlite3.connect(PATH)
+        return conn
+    except Error as e:
+        print(e)
+
+    return conn
+
+# Database PostgreSQL
+def create_PostgreSQL_database(PATH):
+    raise NotImplementedError
+
+def get_PostgreSQL_connection(PATH):
+    raise NotImplementedError
 
 # Some utils
 def random_user_agent():

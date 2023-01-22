@@ -11,6 +11,7 @@ import json
 import numpy as np
 import pandas as pd
 import fastestlaps_db as db
+import utils
 
 LAPS_HEADERS = {
     'Lap_Time': 'Lap_Time',
@@ -73,7 +74,7 @@ def extract_dataset():
         else:
             break
     
-    conn = db.get_connection()
+    conn = utils.get_SQLite_connection(db.PATH)
     db.filter(conn, min_track_laps, min_vehicle_laps)
     return conn
      

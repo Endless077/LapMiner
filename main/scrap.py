@@ -31,8 +31,8 @@ def main():
     os.remove(db.PATH)
    
    print("######################")
-   db.create_database()
-   conn =  db.get_connection()
+   utils.create_SQLite_database(db.PATH)
+   conn =  utils.get_SQLite_connection(db.PATH)
    db.create_tables(conn)
    print("######################")
    

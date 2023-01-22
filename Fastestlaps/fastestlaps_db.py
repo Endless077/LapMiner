@@ -10,39 +10,6 @@ from sqlite3 import Error
 
 PATH = "../Lap-Time-Prediction/Fastestlaps/Dump/dump.db"
 
-def create_database():
-    # Create a connection to db
-    # :param:
-    # :return: connection object or None.
-    
-    print("Version Database: " + sqlite3.version)
-    print("Creating " + PATH + "...")
-
-    conn = None
-    try:
-        conn = sqlite3.connect(PATH)
-    except Error as e:
-        print(e)
-    finally:
-        if conn:
-            conn.close()
-
-def get_connection():
-    # Create a database connection to the SQLite database specified by db_file
-    # :param db_file: database file.
-    # :return: connection object or None.
-
-    print("Getting database connection...")
-
-    conn = None
-    try:
-        conn = sqlite3.connect(PATH)
-        return conn
-    except Error as e:
-        print(e)
-
-    return conn
-
 def create_tables(conn):
     # Create a table from the create_table_sql statement
     # :param conn: db connection.
