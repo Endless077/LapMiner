@@ -10,6 +10,7 @@ import re
 import fastestlaps_db as db
 
 from bs4 import BeautifulSoup
+from random_user_agent.user_agent import UserAgent
 
 LINK1 = "https://fastestlaps.com/tracks"
 LINK2 = "https://fastestlaps.com/makes"
@@ -22,7 +23,7 @@ HEADERS = {
     # other headers allowed.
 }
 
-def change_laptime(laptime):
+def change_laptime(laptime: str):
     # Change a laptime "mm:ss.ms" in seconds
     # :param laptime: a string.
     # :return: laptime converted in seconds or 0.
@@ -45,7 +46,7 @@ def clean_record(record):
     for value in range(new_line_count):
         record.contents.remove('\n')
 
-def extract_specs(specs):
+def extract_specs(specs: dict):
     # Get a specific vehicle specs attribute
     # :param specs: a given vehicle specs dict.
     # :return: attribute value or None.
@@ -76,7 +77,7 @@ def extract_specs(specs):
 
     return tuple(vehicle_record)
 
-def parse_specs(attr_key, attr_value):
+def parse_specs(attr_key: str, attr_value: str):
     # Parse a specific vehicle specs attribute
     # :param attr_key: a given vehicle specs attribute key.
     # :param attr_value: a given vehicle specs attribute value.
@@ -222,7 +223,7 @@ def parse_specs(attr_key, attr_value):
 
     return parse_attr
 
-def info_attr(soup, attribute):
+def info_attr(soup: BeautifulSoup, attribute: str):
     # Get a specific INFO attrbute
     # :param soup: a html page.
     # :param attribute: a specific fastestlap INFO attribute.
@@ -245,7 +246,7 @@ def info_attr(soup, attribute):
 
     return attr
 
-def get_track_country(value):
+def get_track_country(value: str):
     # Extract the correct value from a specific scrap country value
     # :param value: a scrap value.
     # :return: the extract country or None".
@@ -259,7 +260,7 @@ def get_track_country(value):
         
     return country
 
-def get_track_length(value):
+def get_track_length(value: str):
     # Extract the correct value from a specific scrap length value
     # :param value: a scrap value.
     # :return: (km_length, miles_length) or (Non Presente, Non Presente).
@@ -316,7 +317,7 @@ def parse_track(record):
 def parse_lap(record):
     raise NotImplementedError
 
-def record_creator(laps, track_record):
+def record_creator(laps: list, track_record: tuple):
     # Get all track info (i.e Country, length and laps), ignore track if it haven't laptime
     # :param laps: a given laps dict list with some info (laptime, driver, track, ps_kg, vehicle_href, vehicle).
     # :param track_record: a given track tuple with some info (name, href, country, length).
@@ -328,10 +329,13 @@ def record_creator(laps, track_record):
             lap_record = (change_laptime(lap['laptime']), lap['driver'], lap['ps_kg'], track_record[0], lap['vehicle'])
             db.insert_new_record(lap_record, track_record, vehicle_record)
 
+def record_deleter():
+    raise NotImplementedError
+    
 def record_updater():
     raise NotImplementedError
 
-def get_all_tracks(user_agent):
+def get_all_tracks(user_agent: UserAgent):
     # Get all tracks from the main track page of fastestlaps.com
     # :param user-agent: a user agent random string.
     # :return: a list of all track dict (name, href).
@@ -371,7 +375,7 @@ def get_all_tracks(user_agent):
 
     return all_track
 
-def get_track_info(user_agent, track):
+def get_track_info(user_agent: UserAgent, track: dict):
     # Get all track info (i.e Country, length and laps), ignore track if it haven't laptime
     # :param user-agent: a user agent random string.
     # :param track: a dict with two keys (name and href).
@@ -436,7 +440,7 @@ def get_track_info(user_agent, track):
     ret = {'laps_time': laps_time, 'track_info': track_info}
     return ret
 
-def get_vehicle_info(user_agent, vehicle):
+def get_vehicle_info(user_agent: UserAgent, vehicle: dict):
     # Get all vheicle info (i.e Country, engine, pwer....), ignore if value don't exist
     # :param user-agent: a user agent random string.
     # :param vheicle: a dict with two keys (name and href).

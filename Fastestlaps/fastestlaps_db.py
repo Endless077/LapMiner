@@ -1,17 +1,19 @@
-#  ______       _    _________    _      ______       _      ______  ________  
-# |_   _ `.    / \  |  _   _  |  / \    |_   _ \     / \   .' ____ \|_   __  | 
-#   | | `. \  / _ \ |_/ | | \_| / _ \     | |_) |   / _ \  | (___ \_| | |_ \_| 
-#   | |  | | / ___ \    | |    / ___ \    |  __'.  / ___ \  _.____`.  |  _| _  
-#  _| |_.' _/ /   \ \_ _| |_ _/ /   \ \_ _| |__) _/ /   \ \| \____) |_| |__/ | 
-# |______.|____| |____|_____|____| |____|_______|____| |____\______.|________|
+#  ______   _____  _____  ____    ____  _______   
+# |_   _ `.|_   _||_   _||_   \  /   _||_   __ \  
+#   | | `. \ | |    | |    |   \/   |    | |__) | 
+#   | |  | | | '    ' |    | |\  /| |    |  ___/  
+#  _| |_.' /  \ \__/ /    _| |_\/_| |_  _| |_     
+# |______.'    `.__.'    |_____||_____||_____|  
 
 import sqlite3
 from sqlite3 import Error
 
-PATH = "../Lap-Time-Prediction/Fastestlaps/Dump/dump.db"
+import utils
 
-def create_tables(conn):
-    # Create a table from the create_table_sql statement
+PATH = "../Lap-Time-Prediction/Fastestlaps/dump/dump.db"
+
+def create_tables(conn: sqlite3.Connection):
+    # Create all tables of database
     # :param conn: db connection.
     # :return:
 
@@ -87,7 +89,7 @@ def create_tables(conn):
     except Error as e:
         print(e)
 
-def filter(conn, min_track_laps, min_vehicle_laps):
+def filter(conn: sqlite3.Connection, min_track_laps: int, min_vehicle_laps: int):
     # Create a table from the create_table_sql statement
     # :param conn: db connection.
     # :return:
@@ -201,7 +203,7 @@ def filter(conn, min_track_laps, min_vehicle_laps):
     except Error as e:
         print(e)
 
-def clear_database(conn):
+def clear_database(conn: sqlite3.Connection):
     # Clear database data
     # :param conn: db connection.
     # :return:
@@ -229,7 +231,7 @@ def clear_database(conn):
     except Error as e:
         print(e)
 
-def insert_new_lap(conn, lap):
+def insert_new_lap(conn: sqlite3.Connection, lap):
     # Create a new lap into the laps table
     # :param conn: db connection.
     # :param lap: is a tuple.
@@ -247,8 +249,8 @@ def insert_new_lap(conn, lap):
     print("Insert: " + str(lap))
     return cur.lastrowid
 
-def insert_new_track(conn, track):
-    # Create a new lap into the laps table
+def insert_new_track(conn: sqlite3.Connection, track):
+    # Create a new track into the tracks table
     # :param conn: db connection.
     # :param track: is a tuple.
     # :return: last row id.
@@ -265,7 +267,7 @@ def insert_new_track(conn, track):
     print("Insert: " + str(track))
     return cur.lastrowid
 
-def insert_new_specs(conn, specs):
+def insert_new_specs(conn: sqlite3.Connection, specs):
     # Create a new specs into the specs table
     # :param conn: db connection.
     # :param specs: is a tuple.
@@ -286,8 +288,8 @@ def insert_new_specs(conn, specs):
     print("Insert: " + str(specs))
     return cur.lastrowid
 
-def insert_new_vehichle(conn, vehicle):
-    # Create a new lap into the laps table
+def insert_new_vehicle(conn: sqlite3.Connection, vehicle):
+    # Create a new vehicle into the vehicles table
     # :param conn: db connection.
     # :param vehicle: is a tuple.
     # :return: last row id.
@@ -304,14 +306,14 @@ def insert_new_vehichle(conn, vehicle):
     print("Insert: " + str(vehicle))
     return cur.lastrowid
 
-def insert_new_record(lap, track, vehicle):
-    conn = get_connection()
-    insert_new_vehichle(conn,vehicle)
+def insert_new_record(lap: tuple, track: tuple, vehicle: tuple):
+    conn = utils.get_SQLite_connection()
+    insert_new_vehicle(conn,vehicle)
     insert_new_track(conn,track)
     insert_new_lap(conn,lap)
     conn.close()
 
-def get_all_laps(conn):
+def get_all_laps(conn: sqlite3.Connection):
     # Get all laps from the laps table
     # :param conn: db connection.
     # :return: list of all record.
@@ -329,7 +331,7 @@ def get_all_laps(conn):
     print("SELECT all laps complete.")
     return output
     
-def get_all_tracks(conn):
+def get_all_tracks(conn: sqlite3.Connection):
     # Get all tracks from the tracks table
     # :param conn: db connection.
     # :return: list of all record.
@@ -347,7 +349,7 @@ def get_all_tracks(conn):
     print("SELECT all tracks complete.")
     return output
 
-def get_all_specs(conn):
+def get_all_specs(conn: sqlite3.Connection):
     # Get all specs from the specs table
     # :param conn: db connection.
     # :return: list of all record.
@@ -365,7 +367,7 @@ def get_all_specs(conn):
     print("SELECT all laps complete.")
     return output
 
-def get_all_vehicles(conn):
+def get_all_vehicles(conn: sqlite3.Connection):
     # Get all vehicles from the vehicles table
     # :param conn: db connection.
     # :return: list of all record.
@@ -382,174 +384,3 @@ def get_all_vehicles(conn):
     
     print("SELECT all vehicles complete.")
     return output
-
-def get_specific_lap(conn, track_name, vehicle_name):
-    # Get specific laptime  from the laps table
-    # :param conn: db connection.
-    # :param track_name: track name string.
-    # :param vehicle_name: vehicle name string.
-    # :return: list of all specific record.
-
-    print("Getting " + track_name + " and " + vehicle_name + " lap data...")
-
-    sql = ''' SELECT * FROM Laps WHERE Track = ? AND Vehicle = ? '''
-              
-    cur = conn.cursor()
-    cur.execute(sql, (track_name, vehicle_name))
-
-    output = cur.fetchall()
-    cur.close()
-
-    print("SELECT specific lap complete.")
-    return output
-    
-def get_specific_track(conn, track_name):
-    # Get specific trakcs from the tracks table
-    # :param conn: db connection.
-    # :param tracks_name: track name string.
-    # :return: list of all specific record.
-
-    print("Getting " + track_name +" track data...")
-
-    sql = ''' SELECT * FROM Vehicles WHERE Track_Name = ? '''
-              
-    cur = conn.cursor()
-    cur.execute(sql, (track_name, ))
-
-    output = cur.fetchall()
-    cur.close()
-
-    print("SELECT specific track complete.")
-    return output
-
-def get_secific_stats(conn, vehicle_name):
-    # Get specific stats from the stats table
-    # :param conn: db connection.
-    # :param vehicle_name: vehicle name string.
-    # :return: list of all specific record.
-
-    print("Getting " + vehicle_name +" vehicle data...")
-
-    sql = ''' SELECT * FROM Specs WHERE Vehicle = ? '''
-              
-    cur = conn.cursor()
-    cur.execute(sql, (vehicle_name, ))
-
-    output = cur.fetchall()
-    cur.close()
-
-    print("SELECT specific vehicle complete.")
-    return output
-
-def get_specific_vehicle(conn, vehicle_name):
-    # Get specific vehicles from the vehicles table
-    # :param conn: db connection.
-    # :param vehicle_name: vehicle name string.
-    # :return: list of all specific record.
-
-    print("Getting " + vehicle_name +" vehicle data...")
-
-    sql = ''' SELECT * FROM Vehicles WHERE Vehicle_Name = ? '''
-              
-    cur = conn.cursor()
-    cur.execute(sql, (vehicle_name, ))
-    cur.close()
-
-    output = cur.fetchall()
-
-    print("SELECT specific vehicle complete.")
-    return output
-
-def delete_specific_lap(conn, track_name, vehicle_name):
-    # Delete a lap by track name and vehicle name
-    # :param conn: db connection.
-    # :param track_name: track name string.
-    # :param vehicle_name: vehicle name string.
-    # :return:
-    
-    sql = ''' DELETE FROM Laps WHERE Track = ? AND Vehicle = ? '''
-    cur = conn.cursor()
-    cur.execute(sql, (track_name, vehicle_name))
-    cur.close()
-
-    conn.commit()
-
-    print("Delete: " + sql)
-    
-def delete_specific_track(conn, track_name):
-    # Delete a track by track name
-    # :param conn: db connection.
-    # :param track_name: track name string.
-    # :return:
-    
-    sql = ''' DELETE FROM Tracks WHERE Track_Name = ? '''
-    cur = conn.cursor()
-    cur.execute(sql, (track_name,))
-    cur.close()
-
-    conn.commit()
-
-    print("Delete: " + track_name)
-
-def delete_specific_specs(conn, vehicle_name):
-    # Delete a specs by vehicle name
-    # :param conn: db connection.
-    # :param vehicle_name: vehicle name string.
-    # :return:
-    
-    sql = ''' DELETE FROM Specs WHERE Vehicle = ? '''
-    cur = conn.cursor()
-    cur.execute(sql, (vehicle_name,))
-    cur.close()
-
-    conn.commit()
-
-    print("Delete: " + vehicle_name)
-
-def delete_specific_vehicle(conn, vehicle_name):
-    # Delete a vehicle by vehicle name
-    # :param conn: db connection.
-    # :param vehicle_name: vehicle name string.
-    # :return:
-    
-    sql = ''' DELETE FROM Vehicles WHERE Vehicles_Name = ? '''
-    cur = conn.cursor()
-    cur.execute(sql, (vehicle_name,))
-    cur.close()
-
-    conn.commit()
-
-    print("Delete: " + vehicle_name)
-
-def update_specific_lap(conn, track_name, vehicle_name, values):
-    # Update a vehicle by track name and vehicle name
-    # :param conn: db connection.
-    # :param track_name: track name string.
-    # :param vehicle_name: vehicle name string.
-    # :return: number of updatetd row.
-
-    raise NotImplementedError
-    
-def update_specific_track(conn, track_name, values):
-    # Update a vehicle by track name
-    # :param conn: db connection.
-    # :param vehicle_name: vehicle name string.
-    # :return: number of updatetd row.
-
-    raise NotImplementedError
-
-def update_specific_specs(conn, vehicle_name, values):
-    # Update a specs by vehicle name
-    # :param conn: db connection.
-    # :param vehicle_name: vehicle name string.
-    # :return: number of updatetd row.
-
-    raise NotImplementedError
-
-def update_specific_vehicle(conn, vehicle_name, values):
-    # Update a vehicle by vehicle name
-    # :param conn: db connection.
-    # :param vehicle_name: vehicle name string.
-    # :return: number of updatetd row.
-
-    raise NotImplementedError

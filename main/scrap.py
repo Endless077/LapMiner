@@ -12,9 +12,12 @@ import time
 
 sys.path.append("../Lap-Time-Prediction/")
 sys.path.append("../Lap-Time-Prediction/Fastestlaps")
+sys.path.append("../Lap-Time-Prediction/Helper")
 
-import fastestlaps_db as db
+import fastestlaps_db as dump
 import fastestlaps_scrap as scrap
+
+import database as db
 import utils
 
 # Defination MAIN
@@ -26,14 +29,14 @@ def main():
    # Print logo
    printLogo()
 
-   # Create database (if exist, delete and create).
+   # Create dump (if exist, delete and create).
    if os.path.exists(db.PATH):
     os.remove(db.PATH)
    
    print("######################")
-   utils.create_SQLite_database(db.PATH)
-   conn =  utils.get_SQLite_connection(db.PATH)
-   db.create_tables(conn)
+   utils.create_SQLite_database(dump.PATH)
+   conn =  utils.get_SQLite_connection(dump.PATH)
+   dump.create_tables(conn)
    print("######################")
    
    # Generate a user-agent generator
@@ -75,7 +78,7 @@ def main():
          if(len(vehicle_specs) != 1):
             extracted_specs = scrap.extract_specs(vehicle_specs)
             print("######################")
-            db.insert_new_specs(conn, extracted_specs)
+            dump.insert_new_specs(conn, extracted_specs)
             print("######################")
          else:
             print(f"Error during {vehicle[0]} specs record process. Skipped.")
@@ -86,15 +89,22 @@ def main():
 
 
    # Printing some scraping stats
-   n_laps = len(db.get_all_laps(conn))
-   n_tracks = len(db.get_all_tracks(conn))
-   n_vehicles = len(db.get_all_vehicles(conn))
+   n_laps = len(dump.get_all_laps(conn))
+   n_tracks = len(dump.get_all_tracks(conn))
+   n_vehicles = len(dump.get_all_vehicles(conn))
    
    print("######################")
    print("Laps n°: " + str(n_laps) + ".")
    print("Tracks n°: " + str(n_tracks) + ".")
    print("Vehicles n°: " + str(n_vehicles) + ".")
    print("######################")
+
+   # Create database (if exist, delete and create).
+   if os.path.exists(db.PATH):
+    os.remove(db.PATH)
+
+   # Parse dump database on new refactor database
+   raise NotImplementedError
 
    # Close database connection
    conn.close()

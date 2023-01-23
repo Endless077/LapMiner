@@ -18,8 +18,8 @@ from bs4 import BeautifulSoup
 
 from datetime import datetime as dt
 
-from random_user_agent.user_agent import UserAgent
 from random_user_agent.params import HardwareType, SoftwareEngine, SoftwareName, SoftwareType, OperatingSystem, Popularity
+from random_user_agent.user_agent import UserAgent
 
 # Logging class
 class Logger(object):
@@ -78,6 +78,13 @@ def get_SQLite_connection(PATH):
         print(e)
 
     return conn
+
+# Database MySQL
+def create_MySQL_database(PATH):
+    raise NotImplementedError
+
+def get_MySQL_connection(PATH):
+    raise NotImplementedError
 
 # Database PostgreSQL
 def create_PostgreSQL_database(PATH):
