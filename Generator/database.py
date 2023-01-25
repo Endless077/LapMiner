@@ -15,6 +15,9 @@ import utils
 PATH = "../Lap-Time-Prediction/Generator/database/database.db"
 
 def upgrade(dump_database_path: str):
+    # Upgrade function from dump.db to database.db (see ./class_diagram)
+    # :param dump_database_path: a string path of dump.db.
+    # :return:
     
     utils.create_SQLite_database(PATH)
 
@@ -62,13 +65,23 @@ def upgrade(dump_database_path: str):
     cur_old.close()
 
 def adapt_lap(lap_record: tuple):
+    # Adapt a laps dump.db record to Laps object class
+    # :param lap_record: a tuple.
+    # :return:
     return classes.LapTime(-1,*lap_record)
 
 def adapt_track(track_record: tuple):
+    # Adapt a tracks dump.db record to Tracks object class
+    # :param track_record: a tuple.
+    # :return:
     return classes.Track(-1,*track_record)
 
 def adapt_vehicle(vehicle_record: tuple, no_specs: bool):
-
+    # Adapt a dump.db record to Vehicle object class
+    # :param vehicle_record: a tuple.
+    # :param no_specs: a boolean (if true return vehicle without specs object)
+    # :return:
+    
     if no_specs:
         layout = classes.Layout(-1,None,None,None)
         dimensions = classes.Dimensions(-1,None,None,None,None,None)
@@ -672,7 +685,7 @@ def get_all_vehicles(conn: sqlite3.Connection):
     return output
 
 def get_specific_lap(conn: sqlite3.Connection, track_id: int, vehicle_id: int):
-    # Get specific laptime  from the laps table
+    # Get specific laptime from the laps table
     # :param conn: db connection.
     # :param track_name: track name string.
     # :param vehicle_name: vehicle name string.
@@ -690,7 +703,7 @@ def get_specific_lap(conn: sqlite3.Connection, track_id: int, vehicle_id: int):
     return output
     
 def get_specific_track(conn: sqlite3.Connection, track_id: int, track_name: str):
-    # Get specific trakcs from the tracks table
+    # Get specific track from the tracks table
     # :param conn: db connection.
     # :param tracks_name: track name string.
     # :return: list of all specific record.
@@ -713,7 +726,7 @@ def get_specific_track(conn: sqlite3.Connection, track_id: int, track_name: str)
     return output
 
 def get_specific_vehicle_specs(conn: sqlite3.Connection, vehicle_id: int,  vehicle_name: str):
-    # Get specific vehicles from the vehicles table join all specs
+    # Get specific vehicle from the vehicles table join all specs
     # :param conn: db connection.
     # :param vehicle_name: vehicle name string.
     # :return: list of all specific record.
@@ -790,7 +803,7 @@ def delete_specific_lap(conn: sqlite3.Connection, track_id: int, vehicle_id: int
     print("Delete: " + sql)
     
 def delete_specific_track(conn: sqlite3.Connection, track_id: int, track_name: str):
-    # Delete a track by track name
+    # Delete a track by track name OR track id
     # :param conn: db connection.
     # :param track_name: track name string.
     # :return:
@@ -812,7 +825,7 @@ def delete_specific_track(conn: sqlite3.Connection, track_id: int, track_name: s
     print("Delete: " + track_name)
 
 def delete_specific_vehicle(conn: sqlite3.Connection, vehicle_id: int, vehicle_name: str):
-    # Delete a vehicle by vehicle name
+    # Delete a vehicle by vehicle name OR vehicle id
     # :param conn: db connection.
     # :param vehicle_id: vehicle id.
     # :param vehicle_name: vehicle name string.
@@ -835,7 +848,7 @@ def delete_specific_vehicle(conn: sqlite3.Connection, vehicle_id: int, vehicle_n
     print("Delete: " + vehicle_name)
 
 def update_specific_lap(conn: sqlite3.Connection, track_id: int, vehicle_id: int, values: tuple):
-    # Update a vehicle by track name and vehicle name
+    # Update a lap by track name and vehicle name
     # :param conn: db connection.
     # :param track_id: track id.
     # :param vehicle_id: vehicle id.
@@ -844,7 +857,7 @@ def update_specific_lap(conn: sqlite3.Connection, track_id: int, vehicle_id: int
     raise NotImplementedError
     
 def update_specific_track(conn: sqlite3.Connection, track_id: int, track_name: str, values: tuple):
-    # Update a vehicle by track name
+    # Update a track by track name
     # :param conn: db connection.
     # :param vehicle_name: vehicle name string.
     # :return: number of updatetd row.

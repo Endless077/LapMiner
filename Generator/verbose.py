@@ -239,7 +239,7 @@ def report():
 
 def matrix_generator():
     # Generate a comlete matrix Vehicles X Tracks whit (best) laptime
-    # :param:
+    # :param: (insert a list of tracks name in tracks variable - row 258)
     # :return: a matrix.txt file (and other format).
 
     matrix_path = PATH + '/matrix/'
@@ -255,7 +255,10 @@ def matrix_generator():
     df_vehicles = pd.read_csv(f'{PATH}/csv/Vehicle_Dataset.csv')
 
     print("Starting matrix generation...")
-    tracks = []
+    tracks = ["Balocco","Le Mans (Bugatti)","Nürburgring Nordschleife",
+    "Hockenheim Short","Laguna Seca (Post 1988)","Top Gear Track",
+    "Sachsenring","Circuit De Nevers Magny-Cours Club","Ring Knutstrop (Conf 2)",
+    "Vairano Handling Course"]
 
     for track in tracks:
         print(f"-Found {track} track.")
