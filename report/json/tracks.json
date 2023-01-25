@@ -693,7 +693,7 @@
          "Lotus Elise 111R": [
             52.24
          ],
-         "Mitsubishi Evo VIII FQ400": [
+         "Lancer Evo VIII FQ-400": [
             52.48
          ],
          "Porsche Boxster S (987 280 PS)": [
@@ -711,7 +711,7 @@
          "BMW Z4 3.0si": [
             53.03
          ],
-         "Mitsubishi Evo IX MR FQ 320": [
+         "Lancer Evo IX FQ-320": [
             53.17
          ],
          "Nissan 350Z (287 PS)": [
@@ -6947,7 +6947,7 @@
          "Chevrolet Corvette Z06 (C6)": [
             84.45
          ],
-         "Mitsubishi Evo IX FQ 340": [
+         "Lancer Evo IX FQ-340": [
             84.55
          ],
          "Porsche 911 GT2 (996)": [
@@ -7028,10 +7028,10 @@
          "Lotus Europa S": [
             90.7
          ],
-         "Mini Cooper S Works": [
+         "BMW Z4 3.0si Coupe": [
             90.8
          ],
-         "BMW Z4 3.0si Coupe": [
+         "Mini Cooper S Works": [
             90.8
          ],
          "Mercedes-Benz ML 63 AMG": [
@@ -7145,13 +7145,13 @@
          "BMW M3 CSL (E46)": [
             79.95
          ],
-         "Subaru Impreza STI Spec C": [
+         "Subaru Impreza WRX STI Spec C": [
             80.3
          ],
          "Lotus Elise 135R": [
             81.3
          ],
-         "Mitsubishi Evo VIII FQ 300": [
+         "Lancer Evo VIII FQ-300": [
             81.9
          ],
          "TVR T350C": [
@@ -7784,7 +7784,7 @@
    },
    "Brands Hatch (Indy Circuit)": {
       "Laps": {
-         "Subaru Impreza RA SPEC C": [
+         "Impreza WRX STI Spec C Type RA": [
             50.52
          ],
          "Noble M12 GTO": [
@@ -8456,7 +8456,7 @@
          "Honda Civic Type-R (EK9)": [
             93.79
          ],
-         "Subaru Impreza RA SPEC C": [
+         "Impreza WRX STI Spec C Type RA": [
             94.11
          ],
          "Mitsubishi Lancer Evo X": [
@@ -8978,10 +8978,10 @@
             79.16,
             92.28
          ],
-         "Renault Megane RS 275 Trophy": [
+         "BMW i8": [
             79.4
          ],
-         "BMW i8": [
+         "Renault Megane RS 275 Trophy": [
             79.4
          ],
          "BMW M3 (E90)": [
@@ -9001,6 +9001,10 @@
          ],
          "Toyota Celica GT Four ST205": [
             85.25
+         ],
+         "Mini Cooper S": [
+            85.34,
+            96.4
          ],
          "Porsche Panamera Turbo": [
             86.8
@@ -9022,9 +9026,6 @@
          ],
          "Honda Civic Type-R (EP3)": [
             96.2
-         ],
-         "Mini Cooper S": [
-            96.4
          ],
          "Ford Focus ST 170": [
             97.2
@@ -10022,14 +10023,17 @@
          "Alfa Romeo Tipo 33TT3": [
             232.6
          ],
-         "Rondeau M378": [
+         "Inaltéra LM77 (398 PS)": [
             233.9
          ],
-         "Inaltéra LM77 (398 PS)": [
+         "Rondeau M378": [
             233.9
          ],
          "Inaltéra LM GTP": [
             236.9
+         ],
+         "Ibec-Hesketh P6 (V1)": [
+            237.1
          ],
          "Inaltéra LM77": [
             237.4
@@ -10105,6 +10109,10 @@
          ],
          "Dome  85C": [
             233.9
+         ],
+         "Ibec-Hesketh P6 (V2)": [
+            237.7,
+            244.6
          ],
          "Chevrolet Camaro \"Snow Plow\"": [
             240.34
@@ -13015,7 +13023,7 @@
          "Porsche 911 Turbo (997)": [
             97.7
          ],
-         "Lancer Evolution IX MR FQ-360": [
+         "Lancer Evo IX FQ-360": [
             99.0
          ],
          "Lotus Exige S": [
@@ -13289,7 +13297,7 @@
          "Noble M12 GTO": [
             72.41
          ],
-         "Subaru Impreza RA SPEC C": [
+         "Impreza WRX STI Spec C Type RA": [
             74.61
          ],
          "Renault Clio Sport 172 (Mk II)": [
@@ -13475,7 +13483,7 @@
          "BMW M2 Competition (F87)": [
             73.53
          ],
-         "Honda Civic Type R": [
+         "Honda Civic Type R (FL5)": [
             73.55
          ],
          "Lexus RC F Track Edition": [
@@ -13763,7 +13771,7 @@
          "Chevrolet Corvette ZR1": [
             116.42
          ],
-         "Honda Civic Type R": [
+         "Honda Civic Type R (FL5)": [
             120.94
          ],
          "Honda Civic Type R (FK8)": [
@@ -14608,7 +14616,7 @@
          "Nissan Skyline GT-R V-Spec": [
             107.15
          ],
-         "Mitsubishi Evo VII": [
+         "Mitsubishi Lancer Evo VII GSR": [
             107.41
          ],
          "Ferrari 360 Modena": [
@@ -14816,7 +14824,7 @@
          "Cadillac CTS-V (Mk II)": [
             122.45
          ],
-         "Subaru Impreza STI Spec C": [
+         "Subaru Impreza WRX STI Spec C": [
             122.87
          ],
          "Porsche 718 Boxster": [
@@ -14897,7 +14905,7 @@
          "Porsche 911 Carrera (997)": [
             97.95
          ],
-         "Lancer Evolution VIII MR": [
+         "Mitsubishi Lancer Evo VIII MR": [
             98.88
          ],
          "Subaru Impreza WRX STi": [
@@ -14997,7 +15005,7 @@
          "Aston Martin V12 Vantage": [
             89.7
          ],
-         "Mitsubishi Evo VIII FQ 300": [
+         "Lancer Evo VIII FQ-300": [
             90.5
          ],
          "Mercedes-Benz SLK 55 AMG": [
@@ -21438,6 +21446,9 @@
          "E 63 AMG S 4Matic+": [
             44.6
          ],
+         "Porsche 911 Carrera (992)": [
+            44.73
+         ],
          "Mercedes - AMG A45 S (W177)": [
             44.9
          ],
@@ -21455,13 +21466,13 @@
          "Cupra Leon 2.0 TSI (300 PS)": [
             45.7
          ],
-         "BMW M5 Competition (F90)": [
+         "BMW M2 CS (F87)": [
             45.7
          ],
          "Nissan GT-R (R35 550 PS)": [
             45.7
          ],
-         "BMW M2 CS (F87)": [
+         "BMW M5 Competition (F90)": [
             45.7
          ],
          "Toyota GR Yaris (Mk IV)": [
@@ -21471,10 +21482,10 @@
          "Porsche 718 Cayman GTS 4.0": [
             45.9
          ],
-         "VW Golf GTI Clubsport": [
+         "Audi RS6 Avant (C8)": [
             46.0
          ],
-         "Audi RS6 Avant (C8)": [
+         "VW Golf GTI Clubsport": [
             46.0
          ],
          "BMW M2 (F87)": [
@@ -21483,23 +21494,23 @@
          "VW Golf R (Mk VIII)": [
             46.2
          ],
-         "Audi S3 Sportback (8Y)": [
-            46.3
-         ],
          "Porsche 911 Carrera (991)": [
             46.3
          ],
-         "Jaguar F-Type R (facelift)": [
-            46.5
+         "Audi S3 Sportback (8Y)": [
+            46.3
          ],
          "Honda Civic Type R (FK2)": [
             46.5,
             46.9
          ],
-         "BMW M3 (F80)": [
-            46.7
+         "Jaguar F-Type R (facelift)": [
+            46.5
          ],
          "Porsche Macan Turbo (400 PS)": [
+            46.7
+         ],
+         "BMW M3 (F80)": [
             46.7
          ],
          "Hyundai I30N ": [
@@ -21542,6 +21553,9 @@
          "Megane Sport F1-Team R26": [
             47.79
          ],
+         "Porsche 911 Turbo (996)": [
+            47.79
+         ],
          "Renault Megane RS Trophy R": [
             47.81
          ],
@@ -21554,14 +21568,11 @@
          "Lancer Evo VII FQ-300": [
             48.58
          ],
-         "VW Golf GTI (Mk VIII)": [
-            48.8
-         ],
          "Mini John Cooper Works GP": [
             48.8
          ],
-         "Renault Clio RS 220 Trophy": [
-            49.0
+         "VW Golf GTI (Mk VIII)": [
+            48.8
          ],
          "Opel Astra OPC 2012": [
             49.0
@@ -21569,10 +21580,13 @@
          "VW Golf R (Mk VII)": [
             49.0
          ],
-         "Skoda Octavia RS 245": [
-            49.1
+         "Renault Clio RS 220 Trophy": [
+            49.0
          ],
          "Peugeot 208 GTI (200 PS)": [
+            49.1
+         ],
+         "Skoda Octavia RS 245": [
             49.1
          ],
          "Renault Megane RS 265 Trophy": [
@@ -21584,11 +21598,17 @@
          "Nissan Skyline GT-R (R34)": [
             49.7
          ],
+         "Toyota Supra SZ-R (Mk V)": [
+            50.46
+         ],
          "Ford Focus ST": [
             50.5
          ],
          "Mini Cooper JCW (231 PS)": [
             51.43
+         ],
+         "Nissan 350Z (287 PS)": [
+            55.2
          ]
       },
       "Country": "United Kingdom",
@@ -22669,6 +22689,9 @@
          ],
          "Radical RXC Turbo 500": [
             105.42
+         ],
+         "Lamborghini Huracán STO": [
+            105.57
          ],
          "Donkervoort D8 GTO": [
             106.28
@@ -24135,17 +24158,44 @@
          "Lamborghini Huracán STO": [
             81.9
          ],
+         "Porsche 718 Cayman GT4 RS": [
+            82.7
+         ],
+         "Lamborghini Huracán Tecnica": [
+            83.1
+         ],
+         "BMW M4 CSL": [
+            84.2
+         ],
          "BMW M4 Competition xDrive": [
             85.42
          ],
          "Cadillac CT5-V Blackwing": [
             86.04
          ],
+         "Audi RS 3 Limousine (8Y)": [
+            88.9
+         ],
          "Bentley Continental GT Speed": [
             88.99
          ],
+         "Honda Civic Type R (FL5)": [
+            91.6
+         ],
+         "Toyota Corolla gr MORIZO": [
+            92.2
+         ],
+         "Hyundai Elantra N": [
+            93.0
+         ],
          "VW Golf GTI (Mk VIII)": [
             93.12
+         ],
+         "Nissan Z (Z34)": [
+            93.4
+         ],
+         "Subaru WRX": [
+            94.8
          ],
          "Toyota GR 86 (Mk II)": [
             96.14
@@ -25482,7 +25532,7 @@
          "Porsche Panamera (Mk II)": [
             24.5
          ],
-         "Honda Civic Type R": [
+         "Honda Civic Type R (FK8)": [
             24.5
          ],
          "Aston Martin V8 Vantage": [
@@ -25512,7 +25562,7 @@
          "BMW i4 M50": [
             24.5
          ],
-         "Honda Civic Type R (FK8)": [
+         "Honda Civic Type R (FL5)": [
             24.5
          ],
          "Audi E-Tron GT": [
@@ -25572,7 +25622,7 @@
          "Lotus Exige": [
             18.89
          ],
-         "Mitsubishi Evo VII": [
+         "Mitsubishi Lancer Evo VII GSR": [
             18.92
          ],
          "BMW M3 CSL (E46)": [
@@ -25581,10 +25631,10 @@
          "Audi RS4 Cabrio": [
             19.18
          ],
-         "Mitsubishi Lancer EVO IX": [
+         "BMW Z4 M Coupe": [
             19.22
          ],
-         "BMW Z4 M Coupe": [
+         "Mitsubishi Lancer EVO IX": [
             19.22
          ],
          "Wiesmann Roadster MF3 SMG": [
@@ -26945,15 +26995,15 @@
          "Pagani Zonda F Clubsport": [
             444.65
          ],
-         "Porsche 911 GT3 (991)": [
-            445.0,
-            452.2
+         "Lamborghini Aventador LP700-4": [
+            445.0
          ],
          "KTM X-Bow R": [
             445.0
          ],
-         "Lamborghini Aventador LP700-4": [
-            445.0
+         "Porsche 911 GT3 (991)": [
+            445.0,
+            452.2
          ],
          "Porsche Panamera Turbo S ": [
             445.04
@@ -26984,13 +27034,13 @@
          "BMW M4 GTS": [
             447.88
          ],
-         "Lamborghini Huracan LP 610-4": [
+         "McLaren MP4-12C": [
             448.0
          ],
          "AMG GT 63 S E ": [
             448.0
          ],
-         "McLaren MP4-12C": [
+         "Lamborghini Huracan LP 610-4": [
             448.0
          ],
          "BMW M4 Competition xDrive": [
@@ -27023,6 +27073,9 @@
          "Porsche 911 GT2 (997)": [
             451.0
          ],
+         "Porsche 718 Cayman GT4": [
+            452.0
+         ],
          "Audi R8 V10 Plus (Mk II)": [
             452.0
          ],
@@ -27030,19 +27083,16 @@
             452.0,
             459.0
          ],
-         "Porsche 718 Cayman GT4": [
-            452.0
-         ],
          "BMW M8 Competition (G15)": [
             452.79
+         ],
+         "Porsche 911 GT3 RS": [
+            453.0
          ],
          "Ferrari F12 Berlinetta": [
             453.0
          ],
          "Pagani Zonda F": [
-            453.0
-         ],
-         "Porsche 911 GT3 RS": [
             453.0
          ],
          "Mercedes-Benz AMG GT S": [
@@ -27055,15 +27105,15 @@
          "Porsche Cayenne Turbo GT": [
             453.95
          ],
-         "Koenigsegg CCR": [
-            454.0
-         ],
          "Audi R8 GT (Mk I)": [
             454.0
          ],
          "Porsche 911 Carrera S": [
             454.0,
             470.0
+         ],
+         "Koenigsegg CCR": [
+            454.0
          ],
          "Nissan GT-R Spec-V (R35)": [
             454.46
@@ -27095,13 +27145,13 @@
          "Porsche Panamera Turbo (Mk II)": [
             458.0
          ],
+         "McLaren Mercedes SLR 722": [
+            458.0
+         ],
          "Ferrari 458 Italia": [
             458.0
          ],
          "Lexus LFA": [
-            458.0
-         ],
-         "McLaren Mercedes SLR 722": [
             458.0
          ],
          "Porsche 911 Turbo (997)": [
@@ -27164,25 +27214,25 @@
          "Aston Martin Vantage  (Mk II)": [
             463.92
          ],
-         "Audi R8 V10 5.2 FSI (Mk I)": [
-            464.0
-         ],
          "Pagani Zonda C12 S": [
             464.0
          ],
          "Mercedes-Benz C 63 AMG S Coupe": [
             464.0
          ],
-         "E 63 AMG S 4Matic+ T": [
+         "Audi R8 V10 5.2 FSI (Mk I)": [
+            464.0
+         ],
+         "Gardner Douglas GD T70 Spyder": [
             465.0
          ],
          "Audi R8 V10 5.2 FSI Plus": [
             465.0
          ],
-         "CLK 63 Black Series": [
+         "E 63 AMG S 4Matic+ T": [
             465.0
          ],
-         "Gardner Douglas GD T70 Spyder": [
+         "CLK 63 Black Series": [
             465.0
          ],
          "Mercedes - AMG CLA 45 S": [
@@ -27191,10 +27241,10 @@
          "C 63 AMG Coupe Black Series": [
             466.0
          ],
-         "Porsche 911 GT2 (996)": [
+         "Gallardo Superleggera": [
             466.0
          ],
-         "Gallardo Superleggera": [
+         "Porsche 911 GT2 (996)": [
             466.0
          ],
          "Jaguar XJ220": [
@@ -27239,21 +27289,18 @@
          "RUF CTR2": [
             469.56
          ],
-         "Lamborghini Murcielago": [
-            470.0
-         ],
          "BMW M3 CSL (E46)": [
             470.0
          ],
          "Aston Martin Vantage GT8": [
             470.0
          ],
+         "Lamborghini Murcielago": [
+            470.0
+         ],
          "SLS AMG Coupe Electric Drive": [
             470.23,
             476.23
-         ],
-         "SL65 AMG Black Series": [
-            471.0
          ],
          "Jaguar XKR-S (550 PS)": [
             471.0
@@ -27262,29 +27309,32 @@
             471.0,
             482.0
          ],
+         "SL65 AMG Black Series": [
+            471.0
+         ],
          "Alfa Romeo Stelvio QV": [
             471.7
          ],
-         "BMW M5 (E60)": [
-            472.0,
-            492.9
-         ],
-         "Lamborghini Gallardo LP560-4": [
-            472.0
-         ],
-         "BMW M4": [
-            472.0
-         ],
-         "Lamborghini Gallardo": [
+         "Aston Martin V12 Vantage S": [
             472.0
          ],
          "Porsche 911 Turbo Cabriolet": [
             472.0
          ],
-         "Aston Martin V12 Vantage S": [
+         "Lamborghini Gallardo": [
+            472.0
+         ],
+         "Lamborghini Gallardo LP560-4": [
             472.0
          ],
          "Ford GT (Mk I)": [
+            472.0
+         ],
+         "BMW M5 (E60)": [
+            472.0,
+            492.9
+         ],
+         "BMW M4": [
             472.0
          ],
          "Alpina B4 Gran Coupe": [
@@ -27317,44 +27367,44 @@
          "Renault Megane RS 275 Trophy R": [
             474.36
          ],
+         "Mercedes-Benz E 63 AMG S": [
+            475.0
+         ],
+         "Ferrari F430": [
+            475.0
+         ],
+         "BMW M5 (F10)": [
+            475.0
+         ],
          "Porsche Cayman S (981)": [
             475.0
          ],
          "Caterham R500 1.8L K Series": [
             475.0
          ],
-         "BMW M5 (F10)": [
-            475.0
-         ],
-         "Ferrari F430": [
-            475.0
-         ],
-         "Mercedes-Benz E 63 AMG S": [
-            475.0
-         ],
          "BMW Z4 M40i (G29)": [
             475.41
          ],
-         "Ferrari 360 CS": [
-            476.0
-         ],
-         "Panamera Sport Chrono Turbo": [
-            476.0
-         ],
-         "Chevrolet Corvette C5 Z06": [
-            476.0
-         ],
-         "Ferrari California GT": [
+         "Porsche Panamera Turbo": [
             476.0
          ],
          "Porsche 911 Carrera S (997)": [
             476.0,
             479.0
          ],
-         "Porsche Panamera Turbo": [
+         "Porsche 911 Turbo (996)": [
             476.0
          ],
-         "Porsche 911 Turbo (996)": [
+         "Ferrari California GT": [
+            476.0
+         ],
+         "Panamera Sport Chrono Turbo": [
+            476.0
+         ],
+         "Ferrari 360 CS": [
+            476.0
+         ],
+         "Chevrolet Corvette C5 Z06": [
             476.0
          ],
          "Alpine A110 S (Mk II 292 PS)": [
@@ -27367,16 +27417,16 @@
          "Honda NSX-R (facelift)": [
             476.73
          ],
+         "Porsche Boxster S (981)": [
+            478.0,
+            484.0
+         ],
          "BMW M2 (F87)": [
             478.0
          ],
          "Audi RS4 (B7)": [
             478.0,
             489.0
-         ],
-         "Porsche Boxster S (981)": [
-            478.0,
-            484.0
          ],
          "Ford Mustang Mach 1": [
             478.29
@@ -27390,25 +27440,25 @@
          "Cupra Formentor VZ5": [
             478.99
          ],
-         "Lotus Evora 400": [
-            479.0
-         ],
-         "Audi RS5 (8T3 facelift)": [
-            479.0
-         ],
          "Audi RS4 Avant (B9)": [
             479.0
          ],
-         "Jaguar XKR-S Convertible": [
+         "Lotus Evora 400": [
             479.0
          ],
-         "Chevrolet Corvette C6": [
+         "Dodge Viper SRT-10": [
             479.0
          ],
          "Audi RS5 (8T3)": [
             479.0
          ],
-         "Dodge Viper SRT-10": [
+         "Chevrolet Corvette C6": [
+            479.0
+         ],
+         "Jaguar XKR-S Convertible": [
+            479.0
+         ],
+         "Audi RS5 (8T3 facelift)": [
             479.0
          ],
          "Cadillac CTS-V (Mk II)": [
@@ -27417,34 +27467,34 @@
          "Alpina B4 S Biturbo Coupé AWD": [
             480.0
          ],
-         "Nissan Skyline GT-R (R33)": [
+         "C63 AMG Coupe  Pac..": [
             481.0
          ],
          "Mercedes-Benz C63 AMG Coupe": [
             481.0
          ],
-         "C63 AMG Coupe  Pac..": [
+         "Bugatti EB 110 SS (US spec)": [
             481.0
          ],
-         "Bugatti EB 110 SS (US spec)": [
+         "Nissan Skyline GT-R (R33)": [
             481.0
          ],
          "Lamborghini Gallardo Spyder": [
             481.84
          ],
-         "Porsche 911 Carrera (991)": [
-            482.0
-         ],
          "Aston Martin DBS": [
             482.0
          ],
-         "Aston Martin V8 Vantage": [
-            483.0
+         "Porsche 911 Carrera (991)": [
+            482.0
          ],
          "CLS 63 AMG Perfromance Package": [
             483.0
          ],
          "Alpine A110 (Mk II)": [
+            483.0
+         ],
+         "Aston Martin V8 Vantage": [
             483.0
          ],
          "VW Golf GTI Clubsport": [
@@ -27453,26 +27503,26 @@
          "Honda NSX-R": [
             483.86
          ],
+         "Mini John Cooper Works GP": [
+            484.0
+         ],
          "Lamborghini Diablo GT": [
-            484.0
-         ],
-         "Alfa Romeo 4C": [
-            484.0
-         ],
-         "VW Golf R (Mk VII facelift)": [
             484.0
          ],
          "Mercedes-Benz A 45 AMG": [
             484.0,
             490.0
          ],
-         "Mini John Cooper Works GP": [
+         "VW Golf R (Mk VII facelift)": [
             484.0
          ],
-         "Audi RS6": [
-            485.0
+         "Alfa Romeo 4C": [
+            484.0
          ],
          "BMW M3 (E92)": [
+            485.0
+         ],
+         "Audi RS6": [
             485.0
          ],
          "Ferrari 575 Maranello": [
@@ -27491,16 +27541,16 @@
          "Ford Focus RS": [
             486.0
          ],
-         "Subaru Impreza STI Spec C": [
+         "Subaru Impreza WRX STI Spec C": [
             486.01
          ],
          "Caterham Superlight R": [
             486.2
          ],
-         "Ferrari 550 Maranello": [
+         "BMW Z8": [
             487.0
          ],
-         "BMW Z8": [
+         "Ferrari 550 Maranello": [
             487.0
          ],
          "BMW M6": [
@@ -27512,13 +27562,13 @@
          "Porsche 911 Turbo 3.3": [
             488.71
          ],
-         "Audi RS6 Avant (C6)": [
-            489.0
-         ],
          "Ferrari 360 Modena": [
             489.0
          ],
          "Lamborghini Diablo SV": [
+            489.0
+         ],
+         "Audi RS6 Avant (C6)": [
             489.0
          ],
          "Audi TT RS Coupe (Mk II)": [
@@ -27530,10 +27580,7 @@
          "Porsche 911 GT2 (993)": [
             489.3
          ],
-         "KTM X-Bow": [
-            490.0
-         ],
-         "Dodge Viper GTS": [
+         "Mercedes-Benz E63 AMG": [
             490.0
          ],
          "Alpina B6 S": [
@@ -27542,28 +27589,31 @@
          "RUF CTR Yellow Bird": [
             490.0
          ],
-         "Porsche Cayman R (987)": [
+         "Dodge Viper GTS": [
             490.0
          ],
          "Donkervoort D8 180R": [
             490.0
          ],
-         "Mercedes-Benz E63 AMG": [
+         "Porsche Cayman R (987)": [
             490.0
          ],
-         "Impreza WRX STi Version III T..": [
+         "KTM X-Bow": [
+            490.0
+         ],
+         "Subaru Impreza WRX Type RA STI": [
             490.75
          ],
          "Mitsubishi Lancer EVO IX": [
             491.16
          ],
-         "Renault Megane RS ": [
+         "Porsche 911 Turbo 3.6": [
             492.0
          ],
          "Porsche 911 Turbo 3.6 (993)": [
             492.0
          ],
-         "Porsche 911 Turbo 3.6": [
+         "Renault Megane RS ": [
             492.0
          ],
          "Cadillac CTS-V Sport Wagon": [
@@ -28138,7 +28188,7 @@
          "BMW M3 (E46)": [
             110.0
          ],
-         "Mitsubishi Evo VII": [
+         "Mitsubishi Lancer Evo VII GSR": [
             110.02
          ],
          "Mitsubishi Lancer Evo VIII": [
@@ -28262,7 +28312,7 @@
             112.89,
             117.01
          ],
-         "Subaru Impreza WRX STI 2.0": [
+         "Subaru Impreza WRX STI": [
             113.07
          ],
          "Porsche Cayenne GTS": [
@@ -29857,6 +29907,9 @@
             104.24,
             107.53
          ],
+         "Camaro SS 1LE Package": [
+            110.32
+         ],
          "Challenger SRT Hellcat Redeye": [
             111.18
          ],
@@ -30030,7 +30083,7 @@
          "Chevrolet Corvette C6": [
             76.7
          ],
-         "Subaru Impreza WRX STI 2.0": [
+         "Subaru Impreza WRX STI": [
             77.2
          ],
          "BMW M5 (E60)": [
@@ -30834,22 +30887,22 @@
          "BMW M3 GTS": [
             82.1
          ],
-         "Lamborghini Murcielago": [
+         "Nissan GT-R (R35)": [
             82.2
          ],
-         "Nissan GT-R (R35)": [
+         "Lamborghini Murcielago": [
             82.2
          ],
          "Porsche Boxster S": [
             82.5
          ],
-         "Mitsubishi Evo IX MR FQ 320": [
+         "Lancer Evo IX FQ-320": [
             82.5
          ],
          "Pagani Zonda C12 S": [
             82.7
          ],
-         "Subaru Impreza STI Spec C": [
+         "Subaru Impreza WRX STI Spec C": [
             82.8
          ],
          "Porsche 911 Turbo (997)": [
@@ -30861,13 +30914,13 @@
          "BMW M135i (F20)": [
             83.3
          ],
-         "Mitsubishi Evo VIII FQ 300": [
+         "Lancer Evo VIII FQ-300": [
             83.4
          ],
-         "Opel Astra OPC 2012": [
+         "Renault Megane RS 265 Trophy": [
             83.5
          ],
-         "Renault Megane RS 265 Trophy": [
+         "Opel Astra OPC 2012": [
             83.5
          ],
          "Audi R8 4.2 FSI Quattro (Mk I)": [
@@ -30879,18 +30932,18 @@
          "BMW M5 (E60)": [
             84.4
          ],
-         "Audi RS3 Sportback (8P)": [
-            84.8
-         ],
          "Alfa Romeo 147 GTA": [
             84.8
          ],
-         "TVR Tamora": [
-            84.9
+         "Audi RS3 Sportback (8P)": [
+            84.8
          ],
          "Ford Focus RS": [
             84.9,
             87.91
+         ],
+         "TVR Tamora": [
+            84.9
          ],
          "Lotus Elise S2": [
             85.03
@@ -30959,19 +31012,19 @@
          "Peugeot 206 RC": [
             88.65
          ],
-         "Mazda MX-5 1.8 MZR": [
-            88.9
-         ],
          "Mini Mini Cooper S (Mk I)": [
             88.9
          ],
-         "Jaguar XJR": [
+         "Mazda MX-5 1.8 MZR": [
+            88.9
+         ],
+         "Mercedes-Benz E 55 AMG (W210)": [
             89.0
          ],
          "Mazda RX-8": [
             89.0
          ],
-         "Mercedes-Benz E 55 AMG (W210)": [
+         "Jaguar XJR": [
             89.0
          ],
          "MG ZR 160": [
@@ -31004,10 +31057,10 @@
          "BMW 325ti Compact": [
             90.34
          ],
-         "Volvo S60 R": [
+         "V8 Vantage N420 Volante": [
             90.5
          ],
-         "V8 Vantage N420 Volante": [
+         "Volvo S60 R": [
             90.5
          ],
          "Seat Leon 1.8T (Cupra)": [
@@ -31712,10 +31765,10 @@
          "Peugeot 308 GTi 270 (T9)": [
             93.84
          ],
-         "Mitsubishi Evo X RS": [
+         "Mitsubishi Lancer EVO IX": [
             94.2
          ],
-         "Mitsubishi Lancer EVO IX": [
+         "Mitsubishi Lancer Evo X RS": [
             94.2
          ],
          "Audi TT-S Coupe (Mk II)": [
@@ -31804,7 +31857,7 @@
          "Citroen DS3 ": [
             97.72
          ],
-         "Subaru Impreza WRX STI 2.0": [
+         "Subaru Impreza WRX STI": [
             97.85
          ],
          "BMW 130i": [
@@ -32300,7 +32353,7 @@
          "Lexus IS F": [
             137.2
          ],
-         "Evo X GSR FQ-330 TC-SST": [
+         "Lancer Evo X GSR FQ-330 TC-SST": [
             137.8
          ],
          "Mercedes-Benz C 63 AMG": [
@@ -32405,7 +32458,7 @@
          "BMW M5 (E60)": [
             70.4
          ],
-         "Mitsubishi Evo IX FQ 340": [
+         "Lancer Evo IX FQ-340": [
             70.4
          ],
          "Lotus Esprit V8": [
@@ -34402,7 +34455,7 @@
          "Lamborghini Murcielago": [
             99.79
          ],
-         "Subaru Impreza STI Type RA-R": [
+         "Impreza WRX STI Spec C Type R..": [
             99.94
          ],
          "BMW M3 CSL (E46)": [
@@ -34411,10 +34464,10 @@
          "Lamborghini Gallardo Spyder": [
             100.1
          ],
-         "Mitsubishi Evo VII": [
+         "Mitsubishi Lancer Evo VII RS": [
             100.23
          ],
-         "Mitsubishi Lancer Evo VII RS": [
+         "Mitsubishi Lancer Evo VII GSR": [
             100.23
          ],
          "Mitsubishi Lancer Evo VI": [
@@ -34726,7 +34779,7 @@
          "Porsche 911 GT3 RS": [
             143.04
          ],
-         "Honda Civic Type R": [
+         "Honda Civic Type R (FL5)": [
             143.12
          ],
          "Civic Type R Limited Edition": [
@@ -36243,11 +36296,19 @@
             61.19,
             63.65
          ],
+         "Nissan GT-R (R35)": [
+            61.34,
+            62.05
+         ],
          "Porsche 911 GT3 (991)": [
             61.34
          ],
          "Porsche 911 Turbo S": [
-            61.4
+            61.4,
+            63.23
+         ],
+         "Radical SR4 (250 PS)": [
+            61.55
          ],
          "Gallardo Superleggera": [
             61.6
@@ -36255,10 +36316,6 @@
          "Nissan GT-R Spec-V (R35)": [
             61.74,
             62.48
-         ],
-         "Nissan GT-R (R35)": [
-            62.05,
-            62.12
          ],
          "Audi R8 V10 Plus (Mk II)": [
             62.21
@@ -36301,9 +36358,17 @@
          "KTM X-Bow": [
             63.54
          ],
+         "Nissan Skyline GT-R V-Spec": [
+            63.58,
+            64.55,
+            68.59
+         ],
          "Renault Megane RS Trophy R": [
             63.59,
             64.72
+         ],
+         "Porsche 911 Carrera S (991)": [
+            63.69
          ],
          "Ferrari F40": [
             63.73,
@@ -36323,8 +36388,17 @@
             65.23,
             65.49
          ],
+         "Lamborghini Gallardo": [
+            64.14
+         ],
          "Mitsubishi Lancer Evo VIII RS": [
             64.15
+         ],
+         "Subaru Impreza WRX STI Spec C": [
+            64.17
+         ],
+         "Honda NSX-R (facelift)": [
+            64.2
          ],
          "Lotus 2-Eleven": [
             64.24
@@ -36332,11 +36406,14 @@
          "Porsche 911 GT2 (993)": [
             64.25
          ],
-         "Honda NSX-R (facelift)": [
-            64.33
-         ],
          "Lotus Exige S (V6)": [
             64.33
+         ],
+         "Porsche 911 GT3 RS (997)": [
+            64.34
+         ],
+         "Lancer Evolution VIII MR RS 6..": [
+            64.4
          ],
          "BMW M3 (F80)": [
             64.4
@@ -36344,57 +36421,68 @@
          "Porsche 911 Carrera 4S": [
             64.42
          ],
-         "Porsche 911 GT3 RS (997)": [
-            64.51
-         ],
          "Chevrolet Corvette Z06 (C6)": [
             64.55
-         ],
-         "Nissan Skyline GT-R V-Spec": [
-            64.57,
-            67.03,
-            68.59
          ],
          "McLaren F1": [
             64.62
          ],
+         "Lamborghini Gallardo (520 PS)": [
+            64.63
+         ],
          "Mitsubishi Lancer Evo V": [
             64.65
          ],
-         "Lancer Evolution VIII MR RS 6..": [
-            64.67
+         "Impreza WRX STI Spec C Type RA": [
+            64.69,
+            64.95
+         ],
+         "Mitsubishi Lancer Evo V RS": [
+            64.69
          ],
          "Lancer Evolution VIII MR": [
             64.7
+         ],
+         "Subaru Impreza STI Type RA-R": [
+            64.72
          ],
          "Mercedes-Benz A 45 AMG": [
             64.72,
             65.8,
             66.32
          ],
+         "Lancer Evo VIII GSR MR": [
+            64.8
+         ],
+         "Honda NSX-R": [
+            64.83,
+            65.41
+         ],
          "Porsche 911 GT3 (997)": [
+            64.84
+         ],
+         "Subaru Impreza WRX STi": [
             64.84
          ],
          "Audi R8 V10 5.2 FSI (Mk I)": [
             64.87
          ],
+         "Mitsubishi Lancer Evo IX GT": [
+            64.88
+         ],
+         "Mazda RX-7 (265 PS)": [
+            64.88
+         ],
          "Subaru Impreza S204": [
             64.9
          ],
-         "Honda NSX-R": [
-            64.9,
-            65.41
+         "Mazda RX-7 (280 PS)": [
+            64.93
          ],
          "Mitsubishi Evo VII": [
             64.93
          ],
-         "Subaru Impreza RA SPEC C": [
-            64.95
-         ],
          "Porsche 911 Cup (964 265 PS)": [
-            64.97
-         ],
-         "Lamborghini Gallardo (520 PS)": [
             64.97
          ],
          "Nissan Skyline GT-R (R33)": [
@@ -36407,8 +36495,14 @@
          "Alpine A110 (Mk II)": [
             65.04
          ],
-         "Subaru Impreza STI Type RA-R": [
-            65.05
+         "Mitsubishi Lancer Evo IX GSR": [
+            65.1
+         ],
+         "Nissan Skyline GT-R V-Spec N1": [
+            65.1
+         ],
+         "Mitsubishi Lancer Evo VII RS": [
+            65.11
          ],
          "Mitsubishi Lancer Evo VI": [
             65.15
@@ -36419,11 +36513,14 @@
          "Mitsubishi Lancer Evo VIII": [
             65.2
          ],
+         "Ferrari 360 Modena": [
+            65.21
+         ],
          "Porsche Panamera Turbo": [
             65.22
          ],
-         "Ferrari 360 Modena": [
-            65.25
+         "Skyline GT-R Autech 40th Anni..": [
+            65.29
          ],
          "BMW M3 (E92)": [
             65.33
@@ -36442,13 +36539,9 @@
          ],
          "Porsche 911 Carrera": [
             65.58,
-            67.45,
-            68.89
+            67.45
          ],
          "Ferrari F355": [
-            65.61
-         ],
-         "Subaru Impreza STI Spec C": [
             65.61
          ],
          "Porsche 911 Turbo (996)": [
@@ -36490,10 +36583,10 @@
          "Porsche 911 Carrera 4": [
             65.96
          ],
-         "Honda Civic Type R (FK8)": [
+         "Porsche 911 Turbo 3.6 (993)": [
             65.97
          ],
-         "Porsche 911 Turbo 3.6 (993)": [
+         "Honda Civic Type R (FK8)": [
             65.97
          ],
          "Porsche 911 Carrera 4 (997)": [
@@ -36505,13 +36598,10 @@
          "Porsche Cayman S (981)": [
             66.01
          ],
-         "Mitsubishi Lancer Evo IX GSR": [
-            66.06
-         ],
-         "Lancer Evo X Ralliart": [
+         "RUF CTR Yellow Bird": [
             66.12
          ],
-         "RUF CTR Yellow Bird": [
+         "Lancer Evo X Ralliart": [
             66.12
          ],
          "BMW M3 (E90)": [
@@ -36528,9 +36618,6 @@
          "Subaru Impreza WRX STI R205": [
             66.28
          ],
-         "Mazda RX-7 (265 PS)": [
-            66.36
-         ],
          "Nissan Skyline GT-R V-Spec II": [
             66.37
          ],
@@ -36543,10 +36630,10 @@
          "Mercedes-Benz E63 AMG": [
             66.5
          ],
-         "Impreza WRX Type-RA STi Versi..": [
+         "Subaru Impreza WRX Type R STI": [
             66.51
          ],
-         "Impreza WRX STi Version III T..": [
+         "Subaru Impreza WRX Type RA STI": [
             66.52
          ],
          "BMW M5 (E60)": [
@@ -36571,12 +36658,12 @@
          "Honda Civic Type RR Mugen": [
             66.68
          ],
-         "Lexus RC F": [
-            66.75
-         ],
          "Toyota Supra RZ (Mk IV)": [
             66.75,
             68.43
+         ],
+         "Lexus RC F": [
+            66.75
          ],
          "RUF BR2 EKS": [
             66.77
@@ -36589,9 +36676,6 @@
          ],
          "Honda NSX (facelift)": [
             66.89
-         ],
-         "Mitsubishi Lancer Evo V RS": [
-            66.92
          ],
          "BMW M440i xDrive ": [
             66.95
@@ -36608,10 +36692,10 @@
          "Lotus Elise 111R": [
             67.14
          ],
-         "Mercedes-Benz S65 AMG Coupe": [
+         "Porsche 911 Carrera RS (993)": [
             67.15
          ],
-         "Porsche 911 Carrera RS (993)": [
+         "Mercedes-Benz S65 AMG Coupe": [
             67.15
          ],
          "Honda NSX (3.0)": [
@@ -36650,10 +36734,10 @@
          "Mercedes-Benz SLK 55 AMG": [
             67.45
          ],
-         "Porsche Macan Turbo (400 PS)": [
+         "Nissan Skyline GT-R V-spec": [
             67.45
          ],
-         "Nissan Skyline GT-R V-spec": [
+         "Porsche Macan Turbo (400 PS)": [
             67.45
          ],
          "Mercedes-Benz GLA 45 AMG": [
@@ -36662,28 +36746,25 @@
          "Honda Civic Type-R JDM (FD2)": [
             67.49
          ],
-         "Renault Megane RS (Mk III)": [
+         "Renault Megane RS 265 Trophy": [
             67.5
          ],
-         "Renault Megane RS 265 Trophy": [
+         "Renault Megane RS (Mk III)": [
             67.5
          ],
          "BMW M3 Sport Evolutione (E30)": [
             67.54
          ],
-         "Lancer RS Evolution II": [
-            67.63
-         ],
          "Porsche Panamera S": [
             67.63
          ],
-         "Nissan Silvia S15 Spec R Aero": [
-            67.66
-         ],
-         "Mazda RX-7 (280 PS)": [
-            67.66
+         "Lancer RS Evolution II": [
+            67.63
          ],
          "Lamborghini Diablo": [
+            67.66
+         ],
+         "Nissan Silvia S15 Spec R Aero": [
             67.66
          ],
          "Porsche 911 GT3 (996)": [
@@ -36709,13 +36790,13 @@
             68.1,
             68.87
          ],
-         "Nissan 350Z (313 PS)": [
-            67.87
-         ],
          "Renault Megane R26.R": [
             67.87
          ],
          "Peugeot 308 GTi 270 (T9)": [
+            67.87
+         ],
+         "Nissan 350Z (313 PS)": [
             67.87
          ],
          "Dodge Viper RT/10 (405 PS)": [
@@ -36735,11 +36816,13 @@
          ],
          "Nissan Skyline GT-R (R32)": [
             68.22,
-            68.34,
-            69.33
+            68.34
          ],
          "VW Scirocco R (Mk III)": [
             68.23
+         ],
+         "Ford Mustang GT 5.0": [
+            68.25
          ],
          "Audi S8 (D3)": [
             68.3
@@ -36800,78 +36883,6 @@
          ],
          "Honda S2000 Type V": [
             68.87
-         ],
-         "Audi RS Q3": [
-            68.89
-         ],
-         "Nissan 350Z Roadster": [
-            68.94
-         ],
-         "Honda Civic Type R": [
-            68.98
-         ],
-         "Mazda RX-8 (Type S)": [
-            69.0
-         ],
-         "Nissan Skyline 350 GT": [
-            69.07
-         ],
-         "BMW M235i": [
-            69.1
-         ],
-         "BMW 130i": [
-            69.18
-         ],
-         "Honda Integra Type-R": [
-            69.2
-         ],
-         "Porsche 911 Carrera (964)": [
-            69.22
-         ],
-         "Renault Clio V6 (Mk II)": [
-            69.3
-         ],
-         "Renault Clio RS 220 Trophy": [
-            69.31
-         ],
-         "Honda S2000 (AP1)": [
-            69.31
-         ],
-         "Honda Integra Type R": [
-            69.34
-         ],
-         "Porsche Boxster S (986 252 PS)": [
-            69.44
-         ],
-         "Honda Civic Type-R (EK9)": [
-            69.48
-         ],
-         "Ferrari 348TB": [
-            69.5
-         ],
-         "Subaru Impreza 22B STI Version": [
-            69.53
-         ],
-         "Skyline Coupe 370GT TypeS": [
-            69.54
-         ],
-         "VW Golf R32 (Mk V)": [
-            69.55
-         ],
-         "Audi RS6 (C5)": [
-            69.69
-         ],
-         "Lotus Elise S1": [
-            69.7
-         ],
-         "Nissan 350Z (287 PS)": [
-            69.72
-         ],
-         "Nissan Pulsar GTi-R": [
-            69.75
-         ],
-         "Mini John Cooper Works": [
-            69.77
          ]
       },
       "Country": "Japan",
@@ -38548,10 +38559,10 @@
          "BMW M2 Competition (F87)": [
             179.7
          ],
-         "Dodge Challenger SRT Hellcat": [
+         "Cadillac ATS-V": [
             179.8
          ],
-         "Cadillac ATS-V": [
+         "Dodge Challenger SRT Hellcat": [
             179.8
          ],
          "Mercedes-Benz E 63 AMG S": [
@@ -38581,10 +38592,10 @@
          "Audi RS Q8 ": [
             182.2
          ],
-         "Lexus RC F Track Edition": [
+         "Porsche Cayman S (981)": [
             182.6
          ],
-         "Porsche Cayman S (981)": [
+         "Lexus RC F Track Edition": [
             182.6
          ],
          "BMW X4 M Competition (F98)": [
@@ -38611,13 +38622,13 @@
          "Mini John Cooper Works GP": [
             183.76
          ],
+         "Audi RS5 (9T)": [
+            183.9
+         ],
          "Honda Civic Type R (FK8)": [
             183.9
          ],
          "Ford Focus RS": [
-            183.9
-         ],
-         "Audi RS5 (9T)": [
             183.9
          ],
          "Camaro 3.6 1LE Package": [
@@ -38626,10 +38637,10 @@
          "Cadillac CT5-V": [
             184.12
          ],
-         "Alpina B7 Biturbo (G12)": [
+         "VW Golf R (Mk VIII)": [
             184.3
          ],
-         "VW Golf R (Mk VIII)": [
+         "Alpina B7 Biturbo (G12)": [
             184.3
          ],
          "Mustang Ecoboost 2.3 High Per..": [
@@ -38641,10 +38652,10 @@
          "Alfa Romeo Stelvio QV": [
             184.8
          ],
-         "Subaru WRX STI Type RA": [
+         "IS 500 F Sport ": [
             184.9
          ],
-         "IS 500 F Sport ": [
+         "Subaru WRX STI Type RA": [
             184.9
          ],
          "Lexus GS F": [
@@ -38653,10 +38664,10 @@
          "Ford Mustang GT (Mk VI 426 PS)": [
             185.2
          ],
-         "Audi RS3 Sedan (8V facelift)": [
+         "Chevrolet Camaro Turbo 1LE": [
             185.6
          ],
-         "Chevrolet Camaro Turbo 1LE": [
+         "Audi RS3 Sedan (8V facelift)": [
             185.6
          ],
          "Lexus RC F": [
@@ -38668,16 +38679,16 @@
          "Cadillac CT4-V": [
             186.2
          ],
-         "Jaguar XFR-S (Mk I facelift)": [
+         "Acura TLX Type S": [
             186.7
          ],
-         "Acura TLX Type S": [
+         "Jaguar XFR-S (Mk I facelift)": [
             186.7
          ],
          "Cadillac CTS Vsport": [
             186.8
          ],
-         "Honda NSX (3.2)": [
+         "Acura NSX Alex Zanardi Edition": [
             187.1
          ],
          "BMW M235i": [
@@ -38731,10 +38742,10 @@
          "Subaru BRZ tS": [
             194.0
          ],
-         "Honda Civic Si Coupe (FC)": [
+         "VW Golf GTI (Mk VII 220 PS)": [
             194.6
          ],
-         "VW Golf GTI (Mk VII 220 PS)": [
+         "Honda Civic Si Coupe (FC)": [
             194.6
          ],
          "Ford Mustang Ecoboost": [
@@ -41650,8 +41661,8 @@
          "BMW M3 (E30)": [
             125.6
          ],
-         "Ferrari 458 Italia": [
-            126.0
+         "Peugeot 308 GTi (T7)": [
+            158.08
          ],
          "Opel Crossland X 1.2 DI Turbo": [
             178.44

@@ -10,14 +10,12 @@ import os
 import sys
 import time
 
-sys.path.append("../Lap-Time-Prediction/")
 sys.path.append("../Lap-Time-Prediction/Fastestlaps")
-sys.path.append("../Lap-Time-Prediction/Helper")
+sys.path.append("../Lap-Time-Prediction/Generator")
+sys.path.append("../Lap-Time-Prediction/")
 
 import fastestlaps_db as dump
 import fastestlaps_scrap as scrap
-
-import database as db
 import utils
 
 # Defination MAIN
@@ -30,8 +28,8 @@ def main():
    printLogo()
 
    # Create dump (if exist, delete and create).
-   if os.path.exists(db.PATH):
-    os.remove(db.PATH)
+   if os.path.exists(dump.PATH):
+      os.remove(dump.PATH)
    
    print("######################")
    utils.create_SQLite_database(dump.PATH)
@@ -39,7 +37,7 @@ def main():
    dump.create_tables(conn)
    print("######################")
    
-   # Generate a user-agent generator
+   # Create a user-agent generator
    user_agent_generator = utils.random_user_agent()
 
    # Scraping from fastestlaps.com,
@@ -49,7 +47,7 @@ def main():
    print("######################")
    
    # Scraping from fastestlaps.com,
-   # second phase: getting all track information (i.e Country, length and all laps).
+   # second phase: getting all track information (i.e country, length and all laps).
    print("Initial laps scraping:")
    for track in all_tracks:
       user_agent = user_agent_generator.get_random_user_agent()
@@ -69,8 +67,8 @@ def main():
          print("######################")
    
    # Scraping from fastestlaps.com,
-   # fourth phase: getting all vehicle information (i.e Country, power, etc...).
-   all_vehicle = db.get_all_vehicles(conn)
+   # fourth phase: getting all vehicle specs information
+   all_vehicle = dump.get_all_vehicles(conn)
    for vehicle in all_vehicle:
       user_agent = user_agent_generator.get_random_user_agent()
       if(vehicle[1] != None):
@@ -86,8 +84,7 @@ def main():
       else:
          print(f"Vehicle {vehicle[0]} page, don't exist. Skipped.")
          print("######################")
-
-
+    
    # Printing some scraping stats
    n_laps = len(dump.get_all_laps(conn))
    n_tracks = len(dump.get_all_tracks(conn))
@@ -98,17 +95,10 @@ def main():
    print("Tracks n°: " + str(n_tracks) + ".")
    print("Vehicles n°: " + str(n_vehicles) + ".")
    print("######################")
-
-   # Create database (if exist, delete and create).
-   if os.path.exists(db.PATH):
-    os.remove(db.PATH)
-
-   # Parse dump database on new refactor database
-   raise NotImplementedError
-
-   # Close database connection
-   conn.close()
    
+   # Close dump database connection
+   conn.close()
+
    # Close logging
    sys.stdout.log.close()
    sys.stdout = sys.__stdout__

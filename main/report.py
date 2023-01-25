@@ -11,12 +11,13 @@ import sys
 import shutil
 import time
 
-sys.path.append("../Lap-Time-Prediction/")
 sys.path.append("../Lap-Time-Prediction/Fastestlaps")
+sys.path.append("../Lap-Time-Prediction/Generator")
+sys.path.append("../Lap-Time-Prediction/")
 
-import fastestlaps_db as db
-import fastestlaps_scrap as scrap
-import fastestlaps_report as report
+import fastestlaps_db as old_db
+import database as new_db
+import verbose
 import utils
 
 # Defination MAIN
@@ -28,23 +29,45 @@ def main():
     # Print logo
     printLogo()
     
+    # Upgrade database
+    print("######################")
+    while True:
+        print("Upgrade dump.db, do you want skip upgrade function, it will takes more than 5 minutes? (yes/no)")
+        skip = input("WARNING: if skip and database don't exist, an excempition will raise, and is not possible to create a verbose.\n")
+        print(f"Skip? {skip}")
+        print("######################")
+        try:
+            if(skip == "yes"):
+                if os.path.exists(new_db.PATH):
+                    os.remove(new_db.PATH)
+                new_db.upgrade(old_db.PATH)
+                break
+            elif(skip == "no"):
+                break
+            else:
+                raise ValueError
+        except ValueError:
+            print("Error input, insert a valid value.")
+
+        if not os.path.exists(new_db.PATH):
+            raise FileNotFoundError("No database.db found.")
+        
     # Create folders tree (if exist, delete and create).
     check_tree_struct()
-
-    print("######################")
+    
     # Create TEMP view to get a filtered dataset
-    conn = report.extract_dataset()
+    conn = verbose.extract_dataset()
     
     # Generate excel, csv and json file format of all filtered dataset
-    report.dataset_generator(conn)
+    verbose.dataset_generator(conn)
     print("######################")
 
     # Create a stats report
-    report.report()
+    verbose.report()
     print("######################")
     
     # Create a matrix output
-    report.matrix_generator()
+    verbose.matrix_generator()
     print("######################")
     
     # Close database connection
@@ -55,10 +78,10 @@ def main():
     sys.stdout = sys.__stdout__
 
 def check_tree_struct():
-    paths = [report.PATH + "/csv", report.PATH + "/excel", report.PATH + "/json", report.PATH + "/matrix"]
+    paths = [verbose.PATH + "/csv", verbose.PATH + "/excel", verbose.PATH + "/json", verbose.PATH + "/matrix"]
 
-    if(not os.path.exists(report.PATH)):
-        os.mkdir(report.PATH)
+    if(not os.path.exists(verbose.PATH)):
+        os.mkdir(verbose.PATH)
     else:
         for path in paths:
             if(not os.path.exists(path)):
