@@ -1,4 +1,4 @@
-Vehicle_Name,Type,Manufacturer,Country,Introduced_Year,0-100_kph_(s),100-0_(m),Top_Speed_(kph),Curb_Weight_(kg),Wheelbase_(m),Long_(m),High_(m),Wide_(m),Engine,Displacement_(l),Power_(ps),Torque_(Nm),Engine_Layout,Wheel_Drive,Class,Trasmission_Name,Trasmission_Type,N_Trasmission
+Vehicle_Name,Type,Manufacturer,Country,Introduced_Year,0-100_kph_(s),100-0_(m),Top_Speed_(kph),Curb_Weight_(kg),Wheelbase_(m),Long_(m),Wide_(m),High_(m),engine_name,Displacement_(l),Power_(ps),Torque_(Nm),Engine_Layout,Wheel_Drive,Class,Trasmission_Name,Trasmission_Type,N_Trasmission
 145 Quadrifoglio 2.0,Car,Alfa Romeo,Italy,,,,,1240.0,,,,,Inline 4 16V Turbo,2.0,155.0,187.0,Front,Front,Compact,5,Other,5.0
 190E 2.5-16V Evo II,Car,Mercedes-Benz,Germany,1991.0,7.1,40.0,250.0,1436.0,,,,,2.5 16V 4cyl redline 7700rpm,2.5,235.0,245.0,Front,Rear,4-door saloon,5,Other,5.0
 208 GTi Peugeot Sport Anniver..,Car,Peugeot,France,2015.0,6.2,35.0,231.0,1194.0,,3.96,1.74,1.46,In-line 4cyl,1.6,208.0,300.0,Front,Front,Compact,Six-speed manual,Manual,
@@ -146,7 +146,8 @@ Ariel Atom 2,Car,Ariel,United Kingdom,2005.0,4.2,,248.0,649.0,,,,,"inline 4 Hond
 Ariel Atom 3 (300 PS),Car,Ariel,United Kingdom,2008.0,2.7,,249.0,606.0,,,,,R4 Turbo,2.0,300.0,,Rear,Rear,Open-wheeler,6 speed manual,Manual,6.0
 Ariel Atom 3.5 (314 PS),Car,Ariel,United Kingdom,2010.0,,,,,,,,,Inline 4 supercharged 16 valve DOHC,2.0,314.0,229.0,Middle,Rear,Open-wheeler,6 speed manual,Manual,6.0
 Ariel Atom 3.5R,Car,Ariel,United Kingdom,2013.0,,,250.0,550.0,,,,,In-line 4 Supercharged,2.0,355.0,329.0,Front,Rear,Open-wheeler,"6 speed manual, 6 speed sequential",Manual,6.0
-Ariel Atom 4,Car,Ariel,United Kingdom,2019.0,,,,595.0,,,,,"Inline 4, 16 valve turbo",2.0,324.0,420.0,Middle,Rear,Open-wheeler,6 speed manual,Manual,6.0
+Ariel Atom 4 (324 PS),Car,Ariel,United Kingdom,2019.0,,,,595.0,,,,,"Inline 4, 16 valve turbo",2.0,324.0,420.0,Middle,Rear,Open-wheeler,6 speed manual,Manual,6.0
+Ariel Atom 4 (355 PS),Car,Ariel,United Kingdom,2019.0,,,,,,,,,Inline 4 16 valve DOHC turbo,2.0,355.0,,Middle,Rear,Open-wheeler,6 speed manual,Manual,6.0
 Ariel Atom 500 V8,Car,Ariel,United Kingdom,2010.0,2.3,,275.0,550.0,,,,,32-valve V8,3.0,481.0,362.0,Middle,Rear,Open-wheeler,6 speed Sadev sequential,Sequential,6.0
 Ariel Atom Cup 245,Car,Ariel,,,,,234.0,520.0,,,,,,2.0,248.0,267.0,Rear,Rear,Open-wheeler,Manual Honda H6,Other,6.0
 Ariel Nomad,Car,Ariel,United Kingdom,2015.0,,,202.0,670.0,,,,,Inline 4 cylinder,2.4,238.0,300.0,Rear,Rear,Open-wheeler,6-spd Manual,Manual,6.0
@@ -1223,7 +1224,6 @@ Honda Prelude Type S (Mk V),Car,Honda,Japan,1996.0,,,,1310.0,,,,,N/A. Inline 4. 
 Honda S2000 (AP1),Car,Honda,Japan,1999.0,5.8,36.0,242.0,1285.0,,,,,"Inline 4, 16v",2.0,239.0,208.0,Front,Rear,Convertible,6 speed,Other,6.0
 Honda S2000 (AP2),Car,Honda,Japan,2004.0,6.2,,240.0,1299.0,2.4,4.13,1.75,1.29,"Inline 4, Naturally Aspirated V-TEC",2.2,240.0,220.0,Front,Rear,Convertible,6 Speed Manual,Manual,6.0
 Honda S2000 Type S,Car,Honda,Japan,2007.0,6.2,,251.0,1270.0,,,,,"Inline 4, 16v",2.2,242.0,221.0,Front,Rear,Convertible,6,Other,6.0
-Honda S2000 Type V,Car,Honda,,,5.7,,244.0,1256.0,,,,,Naturally Aspirated Inline-4,2.2,243.0,221.0,Front,Rear,Convertible,6-Speed Manual,Manual,6.0
 Honda S660,Car,Honda,Japan,2015.0,,,,830.0,,,,,Inline 3,0.7,64.0,104.0,Middle,Rear,Convertible,6 speed manual,Manual,6.0
 Honda Stream 2.0RSZ,Car,Honda,Japan,,10.0,,,1420.0,,,,,Inline-4,2.0,150.0,190.0,Front,Front,Van,CVT with 7-speed,Other,7.0
 Honda e Advance (154 PS),Car,Honda,Japan,2020.0,7.8,34.0,147.0,1633.0,,,,,E-motor,,154.0,315.0,Rear,Rear,Compact,1 speed,Other,1.0
@@ -1253,6 +1253,7 @@ Hyundai i30 N (Mk III),Car,Hyundai,South Korea,2017.0,6.3,33.0,250.0,1445.0,,,,,
 IS 500 F Sport ,Car,Lexus,Japan,2021.0,,,240.0,1804.0,,,,,V8 DOHC,5.0,479.0,530.0,Front,Rear,4-door saloon,8 auto by Aisin,Other,8.0
 Ibec-Hesketh P6 (V1),Car,Ibec-Hesketh,United Kingdom,,,,,754.0,,,,,Cosworth DFV 3.0L V8,3.0,398.0,,Middle,Rear,Convertible,Hewland 5-speed Manual,Manual,5.0
 Ibec-Hesketh P6 (V2),Car,Ibec-Hesketh,United Kingdom,,,,,801.0,,,,,Cosworth DFV 3.0L V8,3.0,,,Middle,Rear,Convertible,Hewland 5-speed Manual,Manual,5.0
+Impreza S202 STI Version,Car,Subaru,Japan,2002.0,,,,1330.0,2.54,4.41,1.73,1.43,"Flat 4, 16 valves, DOHC, turbo",2.0,320.0,384.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
 Impreza WRX STI Spec C Type R..,Car,Subaru,Japan,2006.0,4.5,,250.0,1390.0,,,,,"Boxer 4, Turbocharged, 16v",2.0,320.0,432.0,Front,All,4-door saloon,6,Other,6.0
 Impreza WRX STI Spec C Type RA,Car,Subaru,Japan,2002.0,,,260.0,1320.0,,,,,4,2.0,280.0,392.0,Front,All,4-door saloon,,Other,
 Inaltéra LM GTP,Car,Inaltéra,France,,,,,911.0,,,,,Cosworth DFV 3.0L V8,3.0,410.0,,Middle,Rear,Coupe,Hewland TL200 5-speed Manual,Manual,200.0
@@ -1385,26 +1386,24 @@ Lamborghini Urus Performante,Car,Lamborghini,Italy,2023.0,3.2,31.0,306.0,2197.0,
 Lancer Evo IX FQ-320,Car,Mitsubishi,Japan,2005.0,4.5,,253.0,1400.0,,,,,inline4 16V DOHC Turbo,2.0,331.0,414.0,Front,All,4-door saloon,5 Manual,Manual,5.0
 Lancer Evo IX FQ-340,Car,Mitsubishi,Japan,2006.0,4.5,,253.0,1400.0,,,,,inline 4 16V Turbo DOHC,2.0,350.0,435.0,Front,All,4-door saloon,6 manual,Manual,6.0
 Lancer Evo IX FQ-360,Car,Mitsubishi,,2006.0,3.9,,258.0,1420.0,,,,,Turbocharged DOHC 16-valve Inline-4,2.0,371.0,492.0,Front,All,4-door saloon,6-speed manual,Manual,6.0
+Lancer Evo VI GSR Tommi Makin..,Car,Mitsubishi,Japan,1999.0,5.0,,240.0,1365.0,,,,,I4 Turbo DOHC,2.0,280.0,373.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
 Lancer Evo VII FQ-300,Car,Mitsubishi,Japan,,,,,,,,,,Inline 4 turbo,2.0,309.0,407.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
 Lancer Evo VIII FQ-300,Car,Mitsubishi,Japan,2003.0,5.1,,253.0,1410.0,,,,,inline 4 16V DOHC Turbo,2.0,305.0,407.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
+Lancer Evo VIII FQ-320 MR,Car,Mitsubishi,Japan,2005.0,4.7,,253.0,1400.0,,,,,inline 4 16V DOHC Turbo,2.0,331.0,305.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
 Lancer Evo VIII FQ-400,Car,Mitsubishi,Japan,2005.0,3.6,,282.0,1483.0,,,,,inline4 16V Turbo,2.0,411.0,481.0,Front,All,4-door saloon,6 speed stick shift,Other,6.0
 Lancer Evo VIII GSR MR,Car,Mitsubishi,Japan,,,,,,,,,,Inline 4 turbo,2.0,280.0,392.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
 Lancer Evo VIII RS 5MT,Car,Mitsubishi,Japan,2003.0,,,,1320.0,2.62,4.49,1.77,1.45,"4G63T, Inline 4, turbo, DOHC, 16 valves",2.0,280.0,392.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
 Lancer Evo VIII RS 6MT,Car,Mitsubishi,Japan,2003.0,,,,1350.0,2.62,4.49,1.77,1.45,"4G63T, Inline 4, turbo, DOHC, 16 valves",2.0,280.0,392.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
+Lancer Evo VIII RS MR 5MT,Car,Mitsubishi,Japan,2004.0,,,,1310.0,2.62,4.49,1.77,1.45,"4G63T, Inline 4, turbo, DOHC, 16 valves",2.0,280.0,392.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
+Lancer Evo VIII RS MR 6MT,Car,Mitsubishi,Japan,2004.0,,,,1360.0,2.62,4.49,1.77,1.45,"4G63T, Inline 4, turbo, DOHC, 16 valves",2.0,280.0,400.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
 Lancer Evo X FQ300 SST,Car,Mitsubishi,Japan,2008.0,,,250.0,1590.0,,,,,inline4 16V DOHC turbo,2.0,291.0,407.0,Front,All,4-door saloon,"Six-speed twin-clutch sequential manual gearbox, four-wheel drive, S-A",Sequential,
 Lancer Evo X GSR FQ-330 TC-SST,Car,Mitsubishi,Japan,2008.0,4.4,,250.0,1590.0,,,,,"Inline 4, 16v, Turbo",2.0,329.0,437.0,Front,All,4-door saloon,"6, Dual Clutch",Dual-Clutch,6.0
 Lancer Evo X GSR FQ-360,Car,Mitsubishi,Japan,2008.0,4.1,,250.0,1560.0,,,,,inline4 16V DOHC Turbo,2.0,359.0,492.0,Front,All,4-door saloon,5 Manual,Manual,5.0
 Lancer Evo X GSR FQ-400,Car,Mitsubishi,Japan,2010.0,3.8,,250.0,,,,,,TurboCharged Mivec 4B11 Inline-4,2.0,408.0,525.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
+Lancer Evo X GSR TC-SST,Car,Mitsubishi,Japan,2007.0,,,,,,,,,Inline 4 turbo,2.0,280.0,422.0,Front,All,4-door saloon,6 speed dual clutch,Dual-Clutch,6.0
 Lancer Evo X MR TC-SST,Car,Mitsubishi,Japan,2008.0,5.5,,242.0,1675.0,,,,,Inline 4 turbo 16 valve DOHC,2.0,295.0,366.0,Front,All,4-door saloon,6 (dual-clutch automated manual transmission ),Dual-Clutch,6.0
 Lancer Evo X Ralliart,Car,Mitsubishi,Japan,2009.0,,,,,,,,,inline4 16V DOHC turbo,2.0,304.0,,Front,All,4-door saloon,,Other,
-Lancer Evolution IV GSR,Car,Mitsubishi,Japan,1998.0,5.4,,250.0,1352.0,,,,,TurboCharged 4G63 Inline-4,2.0,279.0,354.0,Front,All,4-door saloon,5-Speed Manual,Manual,5.0
-Lancer Evolution VI Tommi Mak..,Car,Mitsubishi,Japan,1999.0,5.0,,240.0,1365.0,,,,,I4 Turbo DOHC,2.0,280.0,373.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
-Lancer Evolution VIII MR,Car,Mitsubishi,Japan,2005.0,5.2,,255.0,1455.0,,,,,TurboCharged 4G63 Inline-4,2.0,280.0,388.0,Front,All,4-door saloon,6-Speed Manual,Manual,6.0
-Lancer Evolution VIII MR RS 5..,Car,Mitsubishi,Japan,2004.0,,,,1310.0,2.62,4.49,1.77,1.45,"4G63T, Inline 4, turbo, DOHC, 16 valves",2.0,280.0,392.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
-Lancer Evolution VIII MR RS 6..,Car,Mitsubishi,Japan,2004.0,,,,1360.0,2.62,4.49,1.77,1.45,"4G63T, Inline 4, turbo, DOHC, 16 valves",2.0,280.0,400.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
-Lancer RS Evolution II,Car,Mitsubishi,Japan,1994.0,,,233.0,1180.0,,,,,"Inline 4, 16v, Turbo (4G63)",2.0,260.0,308.0,Front,All,4-door saloon,5,Other,5.0
 Lancer Sportback Ralliart,Car,Mitsubishi,Japan,2008.0,5.6,,224.0,1631.0,,,,,16 valve turbo straght 4,2.0,238.0,343.0,Front,All,Compact,6 speed automatic,Automatic,6.0
-LancerEvolution III GSR,Car,Mitsubishi,Japan,1995.0,,,247.0,1259.0,,,,,TurboCharged 4G63 Inline-4,2.0,274.0,312.0,Front,All,4-door saloon,5-Speen Manaul,Other,5.0
 Lancia Aurelia GT 2500,Car,Lancia,Italy,1953.0,14.8,,182.0,1150.0,,,,,V6,2.5,118.0,182.0,Front,Rear,Coupe,4 speed manual,Manual,4.0
 Lancia Beta HPE 2.0,Car,Lancia,Italy,,,,196.0,1000.0,,,,,Inline 4,2.0,122.0,176.0,Front,Front,Compact,unknown,Other,
 Lancia Delta HF Integrale 16v,Car,Lancia,Italy,1992.0,5.7,,220.0,1361.0,,,,,"Inline 4, Turbocharged, 16v",2.0,209.0,298.0,Front,All,Compact,5,Other,5.0
@@ -1419,7 +1418,7 @@ Lancia Stratos HF,Car,Lancia,Italy,1972.0,6.2,,237.0,1030.0,,,,,V6 Ferrari engin
 Leon 2.0 TSI Sportstourer,Car,Cupra,Spain,2021.0,4.9,32.0,250.0,1605.0,,,,,Inline 4 turbo,2.0,310.0,400.0,Front,All,Estate/wagon,7 speed Dual clutch,Dual-Clutch,7.0
 Lexus CT 200H,Car,Lexus,Japan,2011.0,11.6,38.0,180.0,1499.0,,,,,VVT-i Inline-4/Electric,1.8,163.0,250.0,Front,Front,Compact,E-CVT,Other,
 Lexus ES 300h,Car,Lexus,Japan,2018.0,8.3,35.0,186.0,1748.0,,,,,Inline 4 + E-motor,2.5,218.0,,Front,Front,4-door saloon,stepless automatic,Automatic,
-Lexus GS 450h,Car,Lexus,Japan,2007.0,6.1,,250.0,1940.0,,,,,V6 Hybrid,3.5,345.0,368.0,Front,Rear,4-door saloon,endlesstransmission,Other,
+Lexus GS 450h,Car,Lexus,Japan,2007.0,6.1,,250.0,1940.0,,,,,V6 Hybrid,3.5,345.0,368.0,Front,Rear,4-door saloon,CVT,Other,
 Lexus GS 450h (Mk IV facelift),Car,Lexus,Japan,2015.0,6.0,38.0,250.0,1853.0,,,,,V6 and electric motor,3.5,345.0,,Front,Rear,4-door saloon,CVT variator,Other,
 Lexus GS F,Car,Lexus,Japan,2016.0,4.9,33.0,270.0,1855.0,2.85,,,,"""V8 DOHC""",5.0,477.0,530.0,Front,Rear,4-door saloon,8-speed automatic,Automatic,8.0
 Lexus IS 200K,Car,Lexus,Japan,2000.0,,,,1510.0,,,,,inline 4 16V DOHC Turbo,2.0,205.0,247.0,Front,Rear,4-door saloon,6 speed manual,Manual,6.0
@@ -1427,7 +1426,7 @@ Lexus IS 220d,Car,Lexus,Japan,2005.0,8.9,,220.0,1585.0,,,,,"Inline 4, Turbocharg
 Lexus IS 250,Car,Lexus,Japan,2006.0,7.6,,230.0,1570.0,,,,,V6 24V n/a,2.5,208.0,252.0,Front,Rear,4-door saloon,6 speed manual,Manual,6.0
 Lexus IS 350,Car,Lexus,Japan,2006.0,5.6,,230.0,1600.0,,,,,v6,3.5,310.0,375.0,Front,Rear,4-door saloon,6,Other,6.0
 Lexus IS F,Car,Lexus,Japan,2007.0,4.7,35.0,278.0,1732.0,,,,,"DOHC 32-valve V-8, aluminum block and heads, direct fuel injection",5.0,423.0,505.0,Front,Rear,4-door saloon,8 speed automatic,Automatic,8.0
-Lexus IS-F,Car,Lexus,Japan,2011.0,5.0,,270.0,1715.0,2.73,4.66,1.82,1.42,V8 32V n/a,5.0,423.0,505.0,Front,Rear,4-door saloon,8speed automatic,Automatic,8.0
+Lexus IS-F (facelift),Car,Lexus,Japan,2011.0,5.0,,270.0,1715.0,2.73,4.66,1.82,1.42,V8 32V n/a,5.0,423.0,505.0,Front,Rear,4-door saloon,8speed automatic,Automatic,8.0
 Lexus LC 500,Car,Lexus,Japan,2018.0,4.9,33.0,270.0,1993.0,,,,,V8 32 valve DOHC,5.0,477.0,542.0,Front,Rear,Coupe,10 speed dual-clutch automatic,Dual-Clutch,10.0
 Lexus LFA,Car,Lexus,Japan,2010.0,3.7,33.0,325.0,1625.0,,,,,V10,4.8,560.0,480.0,Front,Rear,Coupe,6 speed sequential,Sequential,6.0
 Lexus LFA Nurburgring Package,Car,Lexus,Japan,2012.0,3.7,32.0,326.0,1509.0,,,,,V10,4.8,570.0,480.0,Front,Rear,Coupe,6-speed sequential,Sequential,6.0
@@ -1463,6 +1462,7 @@ Lotus Elise S1,Car,Lotus,United Kingdom,,5.5,,203.0,733.0,2.3,3.73,1.7,1.2,Inlin
 Lotus Elise S2,Car,Lotus,United Kingdom,2006.0,5.9,,205.0,877.0,,,,,naturally aspirated R4,1.8,136.0,172.0,Middle,Rear,Convertible,5 speed,Other,5.0
 Lotus Elise S2 111S,Car,Lotus,United Kingdom,2002.0,5.1,,213.0,806.0,,,,,Inline-4 16v DOHC VVC,1.8,158.0,175.0,Middle,Rear,Coupe,5,Other,5.0
 Lotus Elise SC,Car,Lotus,United Kingdom,2008.0,5.0,37.0,240.0,926.0,,,,,4cyl 1796cc,1.8,220.0,212.0,Middle,Rear,Convertible,6 speed,Other,6.0
+Lotus Elise SC Clark Type 25,Car,Lotus,United Kingdom,2008.0,,,,870.0,2.3,3.79,1.72,1.12,"2ZZ-GE Straight 4  4 valves / cylinder, DOHC, VVTL-i",1.8,221.0,215.0,Rear,Rear,Coupe,6 speed Manual,Manual,6.0
 Lotus Elise Sport 220 (Mk III),Car,Lotus,United Kingdom,,,,,914.0,,,,,Inline 4 16 valve DOHC,1.8,220.0,,Middle,Rear,Convertible,6 speed manual,Manual,6.0
 Lotus Elite LX,Car,Lotus,United Kingdom,1960.0,,,,,,,,,Inline 4,2.0,,,Front,Rear,Coupe,4 speed manual,Manual,4.0
 Lotus Elite Le Mans,Car,Lotus,United Kingdom,1960.0,,,,,,,,,Inline 4,1.2,,,Front,Rear,Coupe,4 speed manual,Manual,4.0
@@ -1807,23 +1807,25 @@ Mitsubishi Colt CZT,Car,Mitsubishi,Japan,2005.0,7.8,,210.0,1045.0,,,,,"Inline 4,
 Mitsubishi Colt GTI Turbo,Car,Mitsubishi,Japan,,9.3,,191.0,,,,,,Inline 4,1.6,125.0,187.0,Front,Front,Compact,5 speed manual,Manual,5.0
 Mitsubishi Colt Ralliart,Car,Mitsubishi,Japan,2009.0,7.4,,210.0,1060.0,,,,,inline4 16V DOHC Turbo,1.5,150.0,210.0,Front,Front,Compact,5 speed manual,Manual,5.0
 Mitsubishi Eclipse GSX,Car,Mitsubishi,Japan,1995.0,,,226.0,1483.0,2.51,4.38,1.75,1.28,Misubishi 4G63 L4 Turbocharger,2.0,213.0,290.0,Front,All,Coupe,5 Speed Manual,Manual,5.0
-Mitsubishi Evo VII,Car,Mitsubishi,Japan,2002.0,4.7,37.0,253.0,1454.0,,,,,4cyl Turbo,2.0,280.0,383.0,Front,All,4-door saloon,5,Other,5.0
-Mitsubishi Evo VIII FQ 300,Car,Mitsubishi,Japan,2003.0,5.1,,253.0,1410.0,,,,,inline 4 16V DOHC Turbo,2.0,305.0,407.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
-Mitsubishi Evo VIII FQ400,Car,Mitsubishi,Japan,2005.0,3.6,,282.0,1483.0,,,,,inline4 16V Turbo,2.0,411.0,481.0,Front,All,4-door saloon,6 speed stick shift,Other,6.0
-Mitsubishi Evo VIII MR FQ 320,Car,Mitsubishi,Japan,2005.0,4.7,,253.0,1400.0,,,,,inline 4 16V DOHC Turbo,2.0,331.0,305.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
-Mitsubishi Evo X RS,Car,Mitsubishi,Japan,2008.0,5.2,,250.0,1540.0,,,,,inline4 16V DOHC turbo,2.0,280.0,422.0,Front,All,4-door saloon,5 manual,Manual,5.0
-Mitsubishi GTO MR,Car,Mitsubishi,Japan,1995.0,,,,1650.0,,,,,"V6, Twin Turbo, 24v",3.0,280.0,427.0,Front,All,Coupe,6,Other,6.0
-Mitsubishi GTO MR (Mk II),Car,Mitsubishi,Japan,1994.0,,,260.0,1650.0,,,,,"V6, 24V, Twin Turbo (6G72)",3.0,280.0,426.0,Front,All,Coupe,6,Other,6.0
+Mitsubishi GTO MR (Mk II),Car,Mitsubishi,Japan,,,,260.0,1650.0,,,,,"V6, 24V, Twin Turbo (6G72)",3.0,280.0,426.0,Front,All,Coupe,6,Other,6.0
 Mitsubishi Lancer EVO IX,Car,Mitsubishi,Japan,2005.0,5.8,,250.0,1482.0,,,,,"Inline 4, Turbocharged",2.0,290.0,355.0,Front,All,4-door saloon,6,Other,6.0
+Mitsubishi Lancer Evo II RS,Car,Mitsubishi,Japan,1994.0,,,233.0,1180.0,,,,,"Inline 4, 16v, Turbo (4G63)",2.0,260.0,308.0,Front,All,4-door saloon,5,Other,5.0
+Mitsubishi Lancer Evo III GSR,Car,Mitsubishi,Japan,1995.0,,,247.0,1259.0,,,,,TurboCharged 4G63 Inline-4,2.0,270.0,309.0,Front,All,4-door saloon,5-Speen Manaul,Other,5.0
+Mitsubishi Lancer Evo IV GSR,Car,Mitsubishi,Japan,1998.0,5.4,,250.0,1352.0,,,,,TurboCharged 4G63 Inline-4,2.0,279.0,354.0,Front,All,4-door saloon,5-Speed Manual,Manual,5.0
+Mitsubishi Lancer Evo IV RS,Car,Mitsubishi,Japan,,,,,,,,,,Inline 4 turbo,2.0,280.0,353.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
 Mitsubishi Lancer Evo IX GSR,Car,Mitsubishi,Japan,2006.0,,,250.0,1479.0,,,,,"Turbocharged I-4, iron block/aluminum heads  DOHC, 4 valves/cyl",2.0,280.0,400.0,Front,All,4-door saloon,5 manual,Manual,5.0
 Mitsubishi Lancer Evo IX GT,Car,Mitsubishi,Japan,,,,,,,,,,Inline 4 turbo,2.0,280.0,407.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
 Mitsubishi Lancer Evo IX MR,Car,Mitsubishi,Japan,,,,,1489.0,,,,,Inline 4 turbo,2.0,290.0,392.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
-Mitsubishi Lancer Evo V,Car,Mitsubishi,Japan,1998.0,4.9,,260.0,1338.0,,,,,"Inline 4, 16 valves, DOHC, turbocharged",2.0,280.0,380.0,Front,All,4-door saloon,5 Manual,Manual,5.0
+Mitsubishi Lancer Evo IX RS,Car,Mitsubishi,Japan,,,,,,,,,,Inline 4 turbo,2.0,280.0,407.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
+Mitsubishi Lancer Evo IX RS MR,Car,Mitsubishi,Japan,,,,,,,,,,Inline 4 turbo,2.0,280.0,407.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
+Mitsubishi Lancer Evo V GSR,Car,Mitsubishi,Japan,1998.0,4.9,,260.0,1338.0,,,,,"Inline 4, 16 valves, DOHC, turbocharged",2.0,280.0,380.0,Front,All,4-door saloon,5 Manual,Manual,5.0
 Mitsubishi Lancer Evo V RS,Car,Mitsubishi,Japan,1998.0,4.9,,180.0,1260.0,2.51,4.34,1.77,1.41,4cyl 16v,2.0,280.0,380.0,Front,All,4-door saloon,,Other,
 Mitsubishi Lancer Evo VI,Car,Mitsubishi,Japan,1999.0,5.0,,250.0,1384.0,,,,,4cyl Turbo,2.0,280.0,380.0,Front,All,4-door saloon,5,Other,5.0
+Mitsubishi Lancer Evo VI RS,Car,Mitsubishi,Japan,,,,,,,,,,Inline 4 turbo,2.0,280.0,373.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
 Mitsubishi Lancer Evo VII GSR,Car,Mitsubishi,Japan,2002.0,4.7,37.0,253.0,1454.0,,,,,4cyl Turbo,2.0,280.0,383.0,Front,All,4-door saloon,5,Other,5.0
 Mitsubishi Lancer Evo VII RS,Car,Mitsubishi,Japan,2001.0,,,250.0,1320.0,,,,,4-S DOHC 4 valves per cylinder,2.0,284.0,392.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
 Mitsubishi Lancer Evo VIII,Car,Mitsubishi,Japan,2004.0,6.0,,243.0,1491.0,,,,,4cyl Turbo Euro 3 emission laws killed engine and car perfromance!,2.0,265.0,355.0,Front,All,4-door saloon,5,Other,5.0
+Mitsubishi Lancer Evo VIII GSR,Car,Mitsubishi,Japan,,,,,,,,,,Inline 4 turbo,2.0,280.0,392.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
 Mitsubishi Lancer Evo VIII MR,Car,Mitsubishi,Japan,2005.0,5.2,,255.0,1455.0,,,,,TurboCharged 4G63 Inline-4,2.0,280.0,388.0,Front,All,4-door saloon,6-Speed Manual,Manual,6.0
 Mitsubishi Lancer Evo VIII RS,Car,Mitsubishi,Japan,2003.0,5.0,,240.0,1375.0,,,,,"turbocharged and intercooled DOHC 16-valve inline-4, iron block and al",2.0,275.0,370.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
 Mitsubishi Lancer Evo X,Car,Mitsubishi,Japan,2008.0,5.5,35.0,242.0,1607.0,,,,,"Inline 4, 16 valves, turbocharged",2.0,295.0,366.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
@@ -1871,8 +1873,8 @@ Nissan 350Z Roadster,Car,Nissan,Japan,2003.0,6.5,,250.0,1635.0,,,,,V6 n/a,3.5,28
 Nissan 350Z Roadster 300PS,Car,Nissan,Japan,2005.0,,,250.0,1625.0,2.65,4.32,1.82,1.32,V6,3.5,300.0,353.0,Front,Rear,Convertible,unknown,Other,
 Nissan 370Z,Car,Nissan,Japan,2009.0,5.1,33.0,253.0,3355.0,,,,,V6,3.7,330.0,366.0,Front,Rear,Coupe,6-Speed Manual,Manual,6.0
 Nissan 370Z 50th Anniversary,Car,Nissan,Japan,2020.0,7.2,39.0,,,,,,,V6,3.7,360.0,363.0,Front,Rear,Coupe,7 speed automatic,Automatic,7.0
-Nissan 370Z Nismo,Car,Nissan,Japan,2013.0,5.2,30.0,250.0,1560.0,2.55,4.24,1.84,1.32,"V6, n/a, DOHC, 24v",3.7,344.0,371.0,Front,Rear,Coupe,6 speed manual,Manual,6.0
-Nissan 370Z Nismo (facelift),Car,Nissan,Japan,2015.0,5.7,34.0,250.0,1567.0,,,,,V6,3.7,355.0,374.0,Front,Rear,Coupe,"6m, 7at",Other,6.0
+Nissan 370Z Nismo,Car,Nissan,Japan,2013.0,5.2,30.0,250.0,1567.0,2.55,4.24,1.84,1.32,"V6, n/a, DOHC, 24v",3.7,344.0,371.0,Front,Rear,Coupe,6 speed manual,Manual,6.0
+Nissan 370Z Nismo (355 PS),Car,Nissan,Japan,2015.0,,,,,,,,,V6,3.7,355.0,374.0,Front,Rear,Coupe,"6m, 7at",Other,6.0
 Nissan 370Z Roadster,Car,Nissan,Japan,2010.0,5.4,36.0,251.0,1606.0,,,,,"4 valves / cylinder, DOHC",3.7,328.0,363.0,Front,Rear,Convertible,6 speed Manual,Manual,6.0
 Nissan Almera GTI,Car,Nissan,Japan,1998.0,8.2,,210.0,1135.0,,,,,"Inline 4, 16v",2.0,143.0,178.0,Front,Front,Compact,5,Other,5.0
 Nissan Bluebird 1.8 ZX Turbo,Car,Nissan,Japan,,9.3,,190.0,1265.0,,,,,1.8 L CA18ET  I4,1.8,135.0,191.0,Front,Front,4-door saloon,5-speed manual,Manual,5.0
@@ -1892,12 +1894,12 @@ Nissan Nismo 350Z,Car,Nissan,Japan,2008.0,5.2,,250.0,1610.0,,,,,V6,3.5,313.0,373
 Nissan Nismo 370Z,Car,Nissan,Japan,2009.0,4.7,,,1500.0,,,,,V6 24V DOHC n/a,3.7,355.0,374.0,Front,Rear,Coupe,6 Speed Manual,Manual,6.0
 Nissan Nismo R34 Z-Tune,Car,Nissan,Japan,2004.0,,,,1600.0,,,,,"6 Cylinder, 24 Valve",2.8,500.0,540.0,Front,All,Coupe,6,Other,6.0
 Nissan Primera 20V,Car,Nissan,Japan,2001.0,,,,1320.0,2.68,4.57,1.76,1.48,"Inline 4, n/a, SR20VE, VVL,16 valves, DOHC",2.0,204.0,206.0,Front,Front,Compact,6 speed manual,Manual,6.0
-Nissan Silvia S15 Spec R Aero,Car,Nissan,Japan,2003.0,5.5,,244.0,1250.0,,,,,inlin4 Turbo,2.0,250.0,274.0,Front,Rear,Coupe,6,Other,6.0
 Nissan Silvia Spec-S Autech,Car,Nissan,Japan,1999.0,6.0,,234.0,1200.0,2.52,4.45,1.7,1.29,Inline 4 16 valve DOHC,2.0,203.0,214.0,Front,Rear,4-door saloon,6 Speed Manual,Manual,6.0
 Nissan Silvia Turbo ZX,Car,Nissan,Japan,,9.2,,201.0,,,,,,Inline 4,1.8,135.0,193.0,Front,Rear,Coupe,unknown,Other,
 Nissan Skyline GT-R (R32),Car,Nissan,Japan,1989.0,4.9,,235.0,1530.0,,,,,"RB26DETT- Inline 6, Twincam, Twin turbo intercoolered",2.6,280.0,353.0,Front,All,Coupe,5,Other,5.0
 Nissan Skyline GT-R (R33),Car,Nissan,Japan,1995.0,5.5,,249.0,1601.0,,,,,"RB26DETT- Inline 6, Twincam, Twin turbo intercoolered",2.6,280.0,375.0,Front,All,Coupe,5,Other,5.0
 Nissan Skyline GT-R (R34),Car,Nissan,Japan,1998.0,4.9,,266.0,1666.0,,,,,R6,2.6,280.0,391.0,Front,All,Coupe,6 speed,Other,6.0
+Nissan Skyline GT-R M-Spec,Car,Nissan,Japan,2001.0,,,,,,,,,Inline 6,2.6,280.0,392.0,Front,All,Coupe,6 speed manual,Manual,6.0
 Nissan Skyline GT-R V-Spec,Car,Nissan,Japan,1999.0,5.2,,251.0,1607.0,,,,,"Inline 6, Twin Turbo, 24v",2.6,280.0,400.0,Front,All,Coupe,6,Other,6.0
 Nissan Skyline GT-R V-Spec II,Car,Nissan,Japan,2001.0,4.8,,255.0,1560.0,,,,,Inline 6 turbo,2.6,315.0,,Front,All,Coupe,,Other,
 Nissan Skyline GT-R V-Spec N1,Car,Nissan,Japan,1992.0,,,,,,,,,Inline 6 turbo,2.6,280.0,353.0,Front,All,Coupe,5 speed manual,Manual,5.0
@@ -2144,7 +2146,6 @@ Porsche 911 Turbo 3.0 (930),Car,Porsche,Germany,1974.0,5.2,47.0,251.0,1210.0,,,,
 Porsche 911 Turbo 3.3,Car,Porsche,Germany,1978.0,4.8,,261.0,1385.0,,,,,flat 6 turbo,3.3,300.0,412.0,Rear,Rear,Coupe,4 speed manual,Manual,4.0
 Porsche 911 Turbo 3.3 (365 PS),Car,Porsche,Germany,1991.0,5.5,,284.0,1486.0,,,,,B6 turbo,3.3,365.0,480.0,Rear,Rear,Coupe,5 speed manual,Manual,5.0
 Porsche 911 Turbo 3.6,Car,Porsche,Germany,1997.0,3.8,35.0,300.0,1506.0,,,,,flat 6 Turbo,3.6,430.0,540.0,Rear,All,Coupe,6 speed manual,Manual,6.0
-Porsche 911 Turbo 3.6 (964),Car,Porsche,Germany,1993.0,4.6,36.0,289.0,1485.0,,,,,3.6 Turbo SOCH Flat 6,3.6,360.0,520.0,Rear,Rear,Coupe,5 speed manual,Manual,5.0
 Porsche 911 Turbo 3.6 (993),Car,Porsche,Germany,1995.0,3.9,35.0,301.0,1583.0,,,,,flat6 turbo,3.6,408.0,540.0,Rear,All,Coupe,6,Other,6.0
 Porsche 911 Turbo 3.6 S (964),Car,Porsche,Germany,1994.0,4.6,,290.0,1290.0,2.27,,,,B6,3.6,385.0,520.0,Rear,Rear,Coupe,5 Speed Manual,Manual,5.0
 Porsche 911 Turbo Cabriolet,Car,Porsche,Germany,2009.0,3.2,35.0,312.0,1670.0,,,,,direct fuel injected flat-6 with turbo,3.8,500.0,700.0,Rear,All,Convertible,unknown,Other,
@@ -2492,6 +2493,7 @@ Skoda Octavia vRS (1U),Car,Skoda,Czech Republic,2001.0,7.9,,235.0,1353.0,,,,,inl
 Skoda Slavia 1.5 TSI,Car,Skoda,Czech Republic,2022.0,,,,,,,,,Inline 4 turbo,1.5,150.0,250.0,Front,Front,4-door saloon,unknown,Other,
 Skoda Superb 2.0 TSI 4x4,Car,Skoda,Czech Republic,2015.0,5.2,34.0,250.0,1703.0,,,,,Inline 4 turbo,2.0,280.0,350.0,Front,All,4-door saloon,6 speed dual-clutch automatic (DSG),Dual-Clutch,6.0
 Skyline GT-R Autech 40th Anni..,Car,Nissan,Japan,,,,,,,,,,Inline 6 turbo,2.6,280.0,368.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
+Skyline GT-R V-Spec II Nur,Car,Nissan,Japan,,,,,,,,,,Inline 6 turbo,2.6,280.0,392.0,Front,All,Coupe,6 speed manual,Manual,6.0
 Smart Brabus Coupe,Car,Smart,Germany,2004.0,9.8,,195.0,852.0,,,,,"Inline 3, Turbocharged, 6v",0.7,101.0,130.0,Middle,Rear,Convertible,6,Other,6.0
 Smart Forfour Brabus (Mk III),Car,Smart,Germany,,10.3,34.0,180.0,1096.0,,,,,Inline 3 turbo,0.9,109.0,170.0,Rear,Rear,Compact,6 speed dual clutch,Dual-Clutch,6.0
 Smart Fortwo Brabus (Mk II),Car,Smart,Germany,2008.0,10.3,,155.0,850.0,,,,,3  cylinder,1.0,99.0,140.0,Rear,Rear,Compact,5 speed,Other,5.0
@@ -2503,6 +2505,7 @@ Spider 3.2 JTS V6 Q4,Car,Alfa Romeo,Italy,2007.0,7.3,39.0,240.0,1845.0,,,,,V6,3.
 Sport 5.0 V8 Supercharged,Car,Range Rover,United Kingdom,2013.0,5.0,38.0,250.0,2457.0,1.79,4.85,1.98,1.8,"Suppercharged V8, DOHC, 32v",5.0,510.0,625.0,Front,All,SUV/truck,ZF 8 speed automatic,Automatic,8.0
 Spyker C8 Laviolette,Car,Spyker,Netherlands,2003.0,4.8,,300.0,1270.0,,,,,"V8, 40v",4.2,406.0,480.0,Middle,Rear,Convertible,6,Other,6.0
 Spyker C8 Spyder,Car,Spyker,Netherlands,2003.0,4.5,,300.0,1250.0,,,,,"V8, 40v",4.2,405.0,480.0,Middle,Rear,Convertible,6,Other,6.0
+Stagea Autech Version 260 RS,Car,Nissan,Japan,1997.0,,,,,,,,,Inline 6 turbo,2.6,280.0,368.0,Front,All,Estate/wagon,5 speed manual,Manual,5.0
 Stelvio 2.0T Q4 Super,Car,Alfa Romeo,Italy,2017.0,5.5,34.0,232.0,1875.0,,,,,Inline 4 turbo,2.0,280.0,400.0,Front,All,SUV/truck,8 speed automatic,Automatic,8.0
 Stelvio 2.2 Diesel Q4,Car,Alfa Romeo,Italy,2017.0,6.6,34.0,217.0,1969.0,,,,,Inline-4,2.1,210.0,470.0,Front,All,SUV/truck,8-speed automatic,Automatic,8.0
 Steyr-Puch 500 D,Car,Steyr-Puch,Austria,1960.0,,,,,,,,,Inline 2,0.5,16.0,,Rear,Rear,Compact,4 speed manual,Manual,4.0
@@ -2514,7 +2517,6 @@ Subaru Forester 2.5 XT (Mk II),Car,Subaru,Japan,2002.0,6.3,,226.0,1625.0,,,,,fla
 Subaru Impreza GT Turbo,Car,Subaru,Japan,1998.0,6.3,,232.0,1230.0,,,,,"Boxer 4, Turbocharged, 16v",2.0,218.0,290.0,Front,All,4-door saloon,5,Other,5.0
 Subaru Impreza P1,Car,Subaru,Japan,2000.0,,,250.0,1295.0,,,,,Flat 4,2.0,280.0,353.0,Front,All,Coupe,5 speed manual,Manual,5.0
 Subaru Impreza S204,Car,Subaru,Japan,2006.0,,,,1450.0,,,,,"Boxer 4, Turbocharged, 16v (EJ20)",2.0,320.0,432.0,Front,All,4-door saloon,6,Other,6.0
-Subaru Impreza STI Type RA-R,Car,Subaru,Japan,2006.0,4.5,,250.0,1390.0,,,,,"Boxer 4, Turbocharged, 16v",2.0,320.0,432.0,Front,All,4-door saloon,6,Other,6.0
 Subaru Impreza Turbo Prodrive,Car,Subaru,United Kingdom,1996.0,5.0,,230.0,1213.0,,,,,4 cyl,2.0,243.0,325.0,Front,All,Coupe,5,Other,5.0
 Subaru Impreza Turbo STI PPP,Car,Subaru,Japan,2002.0,4.8,,242.0,1395.0,,,,,4 cyl 16 valve,2.0,304.0,405.0,Front,All,4-door saloon,6,Other,6.0
 Subaru Impreza WRX,Car,Subaru,Japan,2008.0,6.5,,209.0,1450.0,,,,,F4,2.5,227.0,306.0,Front,All,Compact,5 speed manual,Manual,5.0
@@ -2522,20 +2524,21 @@ Subaru Impreza WRX 2.0,Car,Subaru,Japan,2003.0,5.9,,242.0,1490.0,,,,,flat 4 16V 
 Subaru Impreza WRX STI,Car,Subaru,Japan,2000.0,5.5,36.0,244.0,1545.0,,,,,flat 4 16V Turbo,2.0,265.0,343.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
 Subaru Impreza WRX STI (2.5),Car,Subaru,Japan,2007.0,5.6,,255.0,1527.0,,,,,flat 4 turbo,2.5,300.0,407.0,Front,All,Compact,6 speed manual,Manual,6.0
 Subaru Impreza WRX STI (US),Car,Subaru,Japan,2006.0,,,,1503.0,,,,,Inline 4 turbo,2.5,304.0,407.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
-Subaru Impreza WRX STI A-Line,Car,Subaru,Japan,2009.0,,,,1490.0,2.62,4.42,1.8,1.47,"EJ25, Flat-4, turbo, 16 valves, DOHC",2.5,300.0,350.0,Front,All,Compact,5 speed automatic,Automatic,5.0
 Subaru Impreza WRX STI R205,Car,Subaru,Japan,2010.0,,,,1470.0,,,,,"Flat 4, twin-scroll turbo, DOHC",2.0,320.0,431.0,Front,All,Compact,6 manual,Manual,6.0
 Subaru Impreza WRX STI Spec C,Car,Subaru,Japan,2005.0,4.8,,250.0,1390.0,,,,,"Boxer 4, Turbocharged, 16v",2.0,280.0,422.0,Front,All,4-door saloon,6,Other,6.0
+Subaru Impreza WRX STI Type RA,Car,Subaru,Japan,,,,,,,,,,Boxer 4 Turbo,2.0,280.0,373.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
 Subaru Impreza WRX STI WR1,Car,Subaru,,2005.0,4.3,,255.0,1470.0,,,,,Flat4,2.0,320.0,420.0,Front,All,4-door saloon,6,Other,6.0
 Subaru Impreza WRX STI tS,Car,Subaru,Japan,2011.0,5.1,,250.0,1529.0,2.62,4.58,1.8,1.47,"Flat 4, 16 valves, DOHC, twin-scroll turbo",2.0,308.0,430.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
 Subaru Impreza WRX STi,Car,Subaru,Japan,,5.5,,255.0,1500.0,,,,,"Boxer 4, Turbocharged, 16v",2.5,280.0,392.0,Front,All,4-door saloon,6 speed,Other,6.0
-Subaru Impreza WRX STi (2.0),Car,Subaru,Japan,2007.0,,,,1480.0,,,,,"Boxer 4, Turbocharged, 16v",2.0,308.0,422.0,Front,All,Compact,6,Other,6.0
 Subaru Impreza WRX STi Spec C,Car,Subaru,Japan,2010.0,4.4,,250.0,1457.0,,,,,Flat 4 Turbo Boxer,2.0,308.0,422.0,Front,All,Compact,6 speed Manual,Manual,6.0
 Subaru Impreza WRX Type R STI,Car,Subaru,Japan,1999.0,4.8,,240.0,1240.0,2.52,4.34,1.69,1.41,"Boxer 4, Turbocharged, 16v",2.0,284.0,353.0,Front,All,Coupe,,Other,
+Subaru Impreza WRX Type RA,Car,Subaru,Japan,1994.0,,,,,,,,,Boxer 4,2.0,260.0,309.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
 Subaru Impreza WRX Type RA STI,Car,Subaru,Japan,1997.0,,,,1200.0,2.52,4.34,1.69,1.41,"Boxer 4, Turbocharged, 16v",2.0,280.0,343.0,Front,All,4-door saloon,5 speed,Other,5.0
 Subaru Legacy (Mk I),Car,Subaru,Japan,1989.0,6.5,,250.0,1410.0,2.58,4.6,1.69,1.48,H4 boxer,2.0,203.0,260.0,Front,All,4-door saloon,"manual,automatic",Automatic,
 Subaru Legacy 2.5 GT S Package,Car,Subaru,Japan,2010.0,,,,1480.0,,,,,Flat-4,2.5,285.0,350.0,Front,All,4-door saloon,6-speed manual,Manual,6.0
 Subaru Legacy 2.5GT Spec B,Car,Subaru,Japan,2006.0,5.3,,221.0,1541.0,,,,,4 Cylinder 16-Valve,2.5,253.0,339.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
 Subaru Legacy RS,Car,Subaru,Japan,1992.0,,,,,,,,,Inline 4 turbo,2.0,220.0,270.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
+Subaru Legacy RS Type RA (BC5),Car,Subaru,Japan,1990.0,,,,,,,,,Boxer 4 Turbo,2.0,220.0,270.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
 Subaru Legacy STi S402,Car,Subaru,Japan,2008.0,,,,1490.0,,,,,"16 valve DOHC boxer 4, turbocharged",2.5,285.0,392.0,Front,All,4-door saloon,6 speed manual,Manual,6.0
 Subaru SJ Forester XT (Mk IV),Car,Subaru,Japan,2015.0,6.3,,235.0,1565.0,2.64,4.6,1.8,1.73,TurboCharged FA20 Flat-4,2.0,284.0,350.0,Front,Rear,SUV/truck,6-Speed Manual/CVT,Manual,6.0
 Subaru Vivio RX-R,Car,Subaru,Japan,1992.0,,,,,,,,,Inline 4,0.7,64.0,88.0,Front,Front,Compact,5 speed manual,Manual,5.0
@@ -2585,6 +2588,7 @@ Tesla Model X 90D,Car,Tesla,United States,,5.3,40.0,250.0,,,,,,E-motor,,,,Front,
 Tesla Model X P100D,Car,Tesla,United States,2016.0,3.2,35.0,250.0,2591.0,,,,,2 electric motors,,613.0,,Middle,All,SUV/truck,,Other,
 Tesla Model Y ,Car,Tesla,United States,2019.0,4.3,36.0,249.0,2014.0,,,,,2 electric motors,,,,Middle,All,SUV/truck,,Other,
 Tesla Roadster,Car,Tesla,United States,2008.0,4.0,,193.0,1324.0,,,,,200 kilowatt 3-phase 4-pole electric AC induction motor,,252.0,271.0,Middle,Rear,Convertible,1,Other,1.0
+Tesla Roadster 2.5 Sport,Car,Tesla,United States,2011.0,3.9,,205.0,1237.0,,,,,375 Volt AC Electric,,294.0,400.0,Middle,Rear,Convertible,Single Speed Fixed Gear,Other,
 Tesla Roadster Sport,Car,Tesla,United States,,,,200.0,1238.0,,,,,,,289.0,380.0,Middle,Rear,Convertible,Single speed fixed gear,Other,
 Tiger Lister Le Mans Coupe,Car,Sunbeam,United Kingdom,1964.0,,,,,,,,,V8,4.3,,,Front,Rear,Coupe,4 speed manual,Manual,4.0
 Tojeiro EE 2.5,Car,Tojeiro,United Kingdom,1962.0,,,,,,,,,Inline 4,2.5,,,Middle,Rear,Coupe,5 speed manual,Manual,5.0

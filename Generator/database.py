@@ -27,11 +27,11 @@ def upgrade(dump_database_path: str):
     create_tables(conn_new_db)
 
    
-    laps_track =    ''' SELECT Lap_Time, Driver, Track, Vehicle FROM Laps WHERE Laps.Track = ? '''
+    laps_track =    ''' SELECT lap_time, driver, Track, Vehicle FROM LAPS WHERE LAPS.Track = ? '''
     specs_vehicle = ''' SELECT Specs.* FROM Specs WHERE Specs.Vehicle = ? '''  
  
-    all_tracks =    ''' SELECT Track_Name, Country, Total_Length FROM Tracks '''
-    all_vehicles =  ''' SELECT Vehicle_Name,HRef FROM Vehicles '''  
+    all_tracks =    ''' SELECT track_name, country, total_length FROM TRACKS '''
+    all_vehicles =  ''' SELECT vehicle_name,HRef FROM VEHICLES '''  
     
     cur_new = conn_new_db.cursor()
     cur_old = conn_old_db.cursor()
@@ -57,7 +57,7 @@ def upgrade(dump_database_path: str):
         curr_laps = cur_old.execute(laps_track, (new_track.track_name,)).fetchall()
         
         for lap in curr_laps:
-            curr_vehicle = adapt_vehicle(cur_new.execute('SELECT * FROM Vehicles WHERE Vehicle_Name = ?',(lap[3],)).fetchone(), True)
+            curr_vehicle = adapt_vehicle(cur_new.execute('SELECT * FROM VEHICLES WHERE vehicle_name = ?',(lap[3],)).fetchone(), True)
             new_lap = adapt_lap((*lap[0:2],curr_track,curr_vehicle))
             insert_new_lap(conn_new_db,new_lap)
         print("######################")
@@ -65,13 +65,13 @@ def upgrade(dump_database_path: str):
     cur_old.close()
 
 def adapt_lap(lap_record: tuple):
-    # Adapt a laps dump.db record to Laps object class
+    # Adapt a laps dump.db record to LAPS object class
     # :param lap_record: a tuple.
     # :return:
     return classes.LapTime(-1,*lap_record)
 
 def adapt_track(track_record: tuple):
-    # Adapt a tracks dump.db record to Tracks object class
+    # Adapt a tracks dump.db record to TRACKS object class
     # :param track_record: a tuple.
     # :return:
     return classes.Track(-1,*track_record)
@@ -128,93 +128,93 @@ def create_tables(conn: sqlite3.Connection):
 
     print("Creating Tables...")
 
-    vehicles_table = ''' CREATE TABLE IF NOT EXISTS "Vehicles" (
-	"Vehicle_ID"	INTEGER,
-	"Vehicle_Name"	TEXT UNIQUE,
-	"Type"	        TEXT CHECK("Type" IN ('Car', 'Motorcycle')),
-	PRIMARY KEY("Vehicle_ID" AUTOINCREMENT)
+    vehicles_table = ''' CREATE TABLE IF NOT EXISTS "VEHICLES" (
+	"vehicle_id"	INTEGER,
+	"vehicle_name"	TEXT UNIQUE,
+	"type"	        TEXT CHECK("type" IN ('Car', 'Motorcycle')),
+	PRIMARY KEY("vehicle_id" AUTOINCREMENT)
     ) '''
 
-    tracks_table = ''' CREATE TABLE IF NOT EXISTS "Tracks" (
-	"Track_ID"	    INTEGER,
-	"Track_Name"	TEXT UNIQUE,
-	"Country"	    TEXT,
-	"Total_Length"	REAL,
-	PRIMARY KEY("Track_ID" AUTOINCREMENT)
+    tracks_table = ''' CREATE TABLE IF NOT EXISTS "TRACKS" (
+	"track_id"	    INTEGER,
+	"track_name"	TEXT UNIQUE,
+	"country"	    TEXT,
+	"total_length"	REAL,
+	PRIMARY KEY("track_id" AUTOINCREMENT)
     ) '''
 
-    layout_table = ''' CREATE TABLE IF NOT EXISTS "Layout" (
-	"Layout_ID"	    INTEGER,
-	"Engine_Layout"	TEXT CHECK(Engine_Layout IN ('Front','Rear','Middle')),
-	"Wheel_Drive"	TEXT CHECK(Wheel_Drive IN ('Front','Rear','All')),
-	"Class_Type"	TEXT,
-	"Vehicle_ID"	INTEGER,
-	FOREIGN KEY("Vehicle_ID") REFERENCES "Vehicles"("Vehicle_ID") ON DELETE CASCADE ON UPDATE CASCADE,
-	PRIMARY KEY("Layout_ID" AUTOINCREMENT)
+    layout_table = ''' CREATE TABLE IF NOT EXISTS "LAYOUT" (
+	"layout_id"	    INTEGER,
+	"engine_layout"	TEXT CHECK(engine_layout IN ('Front','Rear','Middle')),
+	"wheel_drive"	TEXT CHECK(wheel_drive IN ('Front','Rear','All')),
+	"class_type"	TEXT,
+	"vehicle_id"	INTEGER,
+	FOREIGN KEY("vehicle_id") REFERENCES "VEHICLES"("vehicle_id") ON DELETE CASCADE ON UPDATE CASCADE,
+	PRIMARY KEY("layout_id" AUTOINCREMENT)
     ) '''
 
-    dimensions_table = ''' CREATE TABLE IF NOT EXISTS "Dimensions" (
-	"Dimensions_ID"	INTEGER,
-	"Curb_Weight"	REAL,
-	"Wheelbase"	    REAL,
-	"Long"	        REAL,
-	"High"	        REAL,
-	"Wide"	        REAL,
-	"Vehicle_ID"	INTEGER,
-	PRIMARY KEY("Dimensions_ID" AUTOINCREMENT),
-	FOREIGN KEY("Vehicle_ID") REFERENCES "Vehicles"("Vehicle_ID") ON DELETE CASCADE ON UPDATE CASCADE
+    dimensions_table = ''' CREATE TABLE IF NOT EXISTS "DIMENSIONS" (
+	"dimensions_id"	INTEGER,
+	"curb_weight"	REAL,
+	"wheelbase"	    REAL,
+	"long"	        REAL,
+	"wide"	        REAL,
+    "high"	        REAL,
+	"vehicle_id"	INTEGER,
+	PRIMARY KEY("dimensions_id" AUTOINCREMENT),
+	FOREIGN KEY("vehicle_id") REFERENCES "VEHICLES"("vehicle_id") ON DELETE CASCADE ON UPDATE CASCADE
     ) '''
 
-    engine_table = ''' CREATE TABLE IF NOT EXISTS "Engine" (
-	"Engine_ID"	    INTEGER,
-	"Engine"	    TEXT,
-	"Displacement"	REAL,
-	"Power"	        INTEGER,
-	"Torque"	    INTEGER,
-	"Vehicle_ID"	INTEGER,
-	PRIMARY KEY("Engine_ID" AUTOINCREMENT),
-	FOREIGN KEY("Vehicle_ID") REFERENCES "Vehicles"("Vehicle_ID") ON DELETE CASCADE ON UPDATE CASCADE
+    engine_table = ''' CREATE TABLE IF NOT EXISTS "ENGINE" (
+	"engine_id"	    INTEGER,
+	"engine_name"	TEXT,
+	"displacement"	REAL,
+	"power"	        INTEGER,
+	"torque"	    INTEGER,
+	"vehicle_id"	INTEGER,
+	PRIMARY KEY("engine_id" AUTOINCREMENT),
+	FOREIGN KEY("vehicle_id") REFERENCES "VEHICLES"("vehicle_id") ON DELETE CASCADE ON UPDATE CASCADE
     ) '''
     
-    trasmission_table = ''' CREATE TABLE IF NOT EXISTS "Trasmission" (
-	"Trasmission_ID"	INTEGER,
-	"Trasmission_Name"	TEXT,
-	"Trasmission_Type"	TEXT CHECK(Trasmission_Type IN ('Manual', 'Automatic', 'Semi-Automatic', 'Dual-Clutch', 'Sequential', 'Other')),
-	"N_Trasmission"	    INTEGER,
-	"Vehicle_ID"	    INTEGER,
-    PRIMARY KEY("Trasmission_ID" AUTOINCREMENT),
-	FOREIGN KEY("Vehicle_ID") REFERENCES "Vehicles"("Vehicle_ID") ON DELETE CASCADE ON UPDATE CASCADE
+    trasmission_table = ''' CREATE TABLE IF NOT EXISTS "TRASMISSION" (
+	"trasmission_id"	INTEGER,
+	"trasmission_name"	TEXT,
+	"trasmission_type"	TEXT CHECK(trasmission_type IN ('Manual', 'Automatic', 'Semi-Automatic', 'Dual-Clutch', 'Sequential', 'Other')),
+	"n_trasmission"	    INTEGER,
+	"vehicle_id"	    INTEGER,
+    PRIMARY KEY("trasmission_id" AUTOINCREMENT),
+	FOREIGN KEY("vehicle_id") REFERENCES "VEHICLES"("vehicle_id") ON DELETE CASCADE ON UPDATE CASCADE
     ) '''
     
-    performance_table = ''' CREATE TABLE IF NOT EXISTS "Performance" (
-	"Perofrmance_ID"	INTEGER,
-	"Zero_Hundred"	    REAL,
-	"Break_Distance"	REAL,
-	"Top_Speed"	        REAL,
-	"Vehicle_ID"	    INTEGER,
-	PRIMARY KEY("Perofrmance_ID" AUTOINCREMENT),
-	FOREIGN KEY("Vehicle_ID") REFERENCES "Vehicles"("Vehicle_ID") ON DELETE CASCADE ON UPDATE CASCADE
+    performance_table = ''' CREATE TABLE IF NOT EXISTS "PERFORMANCE" (
+	"perofrmance_id"	INTEGER,
+	"accelleration"	    REAL,
+	"break_distance"	REAL,
+	"top_speed"	        REAL,
+	"vehicle_id"	    INTEGER,
+	PRIMARY KEY("perofrmance_id" AUTOINCREMENT),
+	FOREIGN KEY("vehicle_id") REFERENCES "VEHICLES"("vehicle_id") ON DELETE CASCADE ON UPDATE CASCADE
     ) '''
     
-    overview_table = ''' CREATE TABLE IF NOT EXISTS "Overview" (
-	"Overview_ID"	    INTEGER,
-	"Manufacturer"	    TEXT,
-	"Origin_Country"	TEXT,
-	"Introduced_Year"	INTEGER,
-	"Vehicle_ID"	    INTEGER,
-    PRIMARY KEY("Overview_ID" AUTOINCREMENT),
-	FOREIGN KEY("Vehicle_ID") REFERENCES "Vehicles"("Vehicle_ID") ON DELETE CASCADE ON UPDATE CASCADE
+    overview_table = ''' CREATE TABLE IF NOT EXISTS "OVERVIEW" (
+	"overview_id"	    INTEGER,
+	"manufacturer"	    TEXT,
+	"origin_country"	TEXT,
+	"introduced_year"	INTEGER,
+	"vehicle_id"	    INTEGER,
+    PRIMARY KEY("overview_id" AUTOINCREMENT),
+	FOREIGN KEY("vehicle_id") REFERENCES "VEHICLES"("vehicle_id") ON DELETE CASCADE ON UPDATE CASCADE
     ) '''
     
-    laps_table = ''' CREATE TABLE IF NOT EXISTS "Laps" (
-	"Lap_Time_ID"	INTEGER,
-	"Lap_Time"	    REAL,
-	"Driver"	    TEXT,
-	"Track_ID"	    INTEGER,
-	"Vehicle_ID"	INTEGER,
-    PRIMARY KEY("Lap_Time_ID" AUTOINCREMENT),
-	FOREIGN KEY("Track_ID") REFERENCES "Tracks"("Track_ID") ON DELETE CASCADE ON UPDATE CASCADE,
-	FOREIGN KEY("Vehicle_ID") REFERENCES "Vehicles"("Vehicle_ID") ON DELETE CASCADE ON UPDATE CASCADE
+    laps_table = ''' CREATE TABLE IF NOT EXISTS "LAPS" (
+	"lap_time_id"	INTEGER,
+	"lap_time"	    REAL,
+	"driver"	    TEXT,
+	"track_id"	    INTEGER,
+	"vehicle_id"	INTEGER,
+    PRIMARY KEY("lap_time_id" AUTOINCREMENT),
+	FOREIGN KEY("track_id") REFERENCES "TRACKS"("track_id") ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY("vehicle_id") REFERENCES "VEHICLES"("vehicle_id") ON DELETE CASCADE ON UPDATE CASCADE
     ) '''
 
     try:
@@ -252,106 +252,106 @@ def create_views(conn: sqlite3.Connection, min_track_laps: int, min_vehicle_laps
     print("Creating Views...")
 
     cars = '''
-    CREATE TEMP VIEW List_Cars
+    CREATE TEMP VIEW CARS
     AS
-    SELECT * FROM Vehicles
-    WHERE Vehicles.Type = 'Car'
+    SELECT * FROM VEHICLES
+    WHERE VEHICLES.type = 'Car'
     '''
 
     # motorcycle = '''
-    # CREATE TEMP VIEW List_Motorcycles
+    # CREATE TEMP VIEW MOTORCYCLES
     # AS
-    # SELECT * FROM Vehicles
-    # WHERE Vehicles.Type = 'Motorcycle'
+    # SELECT * FROM VEHICLES
+    # WHERE VEHICLES.type = 'Motorcycle'
     # '''
 
     extract_vehicle = f'''
-    CREATE TEMP VIEW Extract_Vehicles_List
+    CREATE TEMP VIEW EXTRACT_VEHICLES_LIST
     AS
     SELECT
-        List_Cars.*
+        CARS.*
     FROM
-        Laps JOIN List_Cars ON Laps.Vehicle_ID = List_Cars.Vehicle_ID
-        JOIN Tracks ON Laps.Track_ID = Tracks.Track_ID
+        LAPS JOIN CARS ON LAPS.vehicle_id = CARS.vehicle_id
+        JOIN TRACKS ON LAPS.track_id = TRACKS.track_id
     GROUP BY
-        Laps.Vehicle_ID
+        LAPS.vehicle_id
     HAVING
-        COUNT(Laps.Track_ID) >= {min_vehicle_laps}
+        COUNT(LAPS.track_id) >= {min_vehicle_laps}
     ORDER BY
-        List_Cars.Vehicle_Name ASC
+        CARS.vehicle_name ASC
     '''
 
     export_vehicle = '''
-    CREATE TEMP VIEW Export_Vehicles_List
+    CREATE TEMP VIEW EXPORT_VEHICLES_LIST
     AS
     SELECT 
-        EVL.Vehicle_Name,EVL.Type,
-        Overview.Manufacturer,Overview.Origin_Country,Overview.Introduced_Year,
-        Performance.Zero_Hundred,Performance.Break_Distance,Performance.Top_Speed,
-        Dimensions.Curb_Weight,Dimensions.Wheelbase,Dimensions.Long,Dimensions.High,Dimensions.Wide,
-        Engine.Engine,Engine.Displacement,Engine.Power,Engine.Torque,
-        Layout.Engine_Layout,Layout.Wheel_Drive,Layout.Class_Type,
-        Trasmission.Trasmission_Name,Trasmission.Trasmission_Type,Trasmission.N_Trasmission
-    FROM Extract_Vehicles_List AS EVL
-        JOIN Layout ON EVL.Vehicle_ID = Layout.Vehicle_ID
-        JOIN Dimensions ON EVL.Vehicle_ID = Dimensions.Vehicle_ID
-        JOIN Engine ON EVL.Vehicle_ID = Engine.Vehicle_ID
-        JOIN Trasmission ON EVL.Vehicle_ID = Trasmission.Vehicle_ID
-        JOIN Performance ON EVL.Vehicle_ID = Performance.Vehicle_ID
-        JOIN Overview ON EVL.Vehicle_ID = Overview.Vehicle_ID
+        EVL.vehicle_name,EVL.type,
+        OVERVIEW.manufacturer,OVERVIEW.origin_country,OVERVIEW.introduced_year,
+        PERFORMANCE.accelleration,PERFORMANCE.break_distance,PERFORMANCE.top_speed,
+        DIMENSIONS.curb_weight,DIMENSIONS.wheelbase,DIMENSIONS.long,DIMENSIONS.wide,DIMENSIONS.high,
+        ENGINE.engine_name,ENGINE.displacement,ENGINE.power,ENGINE.torque,
+        LAYOUT.engine_layout,LAYOUT.wheel_drive,LAYOUT.class_type,
+        TRASMISSION.trasmission_name,TRASMISSION.trasmission_type,TRASMISSION.n_trasmission
+    FROM EXTRACT_VEHICLES_LIST AS EVL
+        JOIN LAYOUT ON EVL.vehicle_id = LAYOUT.vehicle_id
+        JOIN DIMENSIONS ON EVL.vehicle_id = DIMENSIONS.vehicle_id
+        JOIN ENGINE ON EVL.vehicle_id = ENGINE.vehicle_id
+        JOIN TRASMISSION ON EVL.vehicle_id = TRASMISSION.vehicle_id
+        JOIN PERFORMANCE ON EVL.vehicle_id = PERFORMANCE.vehicle_id
+        JOIN OVERVIEW ON EVL.vehicle_id = OVERVIEW.vehicle_id
     ORDER BY
-        EVL.Vehicle_Name ASC
+        EVL.vehicle_name ASC
     '''
     
     extract_track = f'''
-    CREATE TEMP VIEW Extract_Tracks_List
+    CREATE TEMP VIEW EXTRACT_TRACKS_LIST
     AS
     SELECT
-        Tracks.*
+        TRACKS.*
     FROM
-        Laps JOIN List_Cars ON Laps.Vehicle_ID = List_Cars.Vehicle_ID
-        JOIN Tracks ON Laps.Track_ID = Tracks.Track_ID
+        LAPS JOIN CARS ON LAPS.vehicle_id = CARS.vehicle_id
+        JOIN TRACKS ON LAPS.track_id = TRACKS.track_id
     GROUP BY
-        Laps.Track_ID
+        LAPS.track_id
     HAVING
-        COUNT(DISTINCT Laps.Vehicle_ID) >= {min_track_laps}
+        COUNT(DISTINCT LAPS.vehicle_id) >= {min_track_laps}
     ORDER BY
-        Tracks.Track_Name ASC
+        TRACKS.track_name ASC
     '''
     
     export_track = f'''
-    CREATE TEMP VIEW Export_Tracks_List
+    CREATE TEMP VIEW EXPORT_TRACKS_LIST
     AS
     SELECT 
-	    ETL.Track_Name,ETL.Country,ETL.Total_Length
+	    ETL.track_name,ETL.country,ETL.total_length
     FROM 
-        Extract_Tracks_List AS ETL
+        EXTRACT_TRACKS_LIST AS ETL
     ORDER BY
-        ETL.Track_Name ASC
+        ETL.track_name ASC
     '''
 
     extract_laps = '''
-    CREATE TEMP VIEW Extract_Laps_List
+    CREATE TEMP VIEW EXTRACT_LAPS_LIST
     AS
     SELECT
-        Laps.*
+        LAPS.*
     FROM
-        Laps JOIN Extract_Vehicles_List AS EVL ON Laps.Vehicle_ID = EVL.Vehicle_ID
-        JOIN Extract_Tracks_List AS ETL ON Laps.Track_ID = ETL.Track_ID
+        LAPS JOIN EXTRACT_VEHICLES_LIST AS EVL ON LAPS.vehicle_id = EVL.vehicle_id
+        JOIN EXTRACT_TRACKS_LIST AS ETL ON LAPS.track_id = ETL.track_id
     ORDER BY
-        Track_Name ASC
+        track_name ASC
     '''
 
     export_laps = '''
-    CREATE TEMP VIEW Export_Laps_List
+    CREATE TEMP VIEW EXPORT_LAPS_LIST
     AS
     SELECT 
-	    ELL.Lap_Time,ELL.Driver,Tracks.Track_Name,List_Cars.Vehicle_Name
+	    ELL.lap_time,ELL.driver,TRACKS.track_name,CARS.vehicle_name
     FROM 
-	    Extract_Laps_List AS ELL JOIN Tracks ON ELL.Track_ID = Tracks.Track_ID
-	    JOIN List_Cars ON ELL.Vehicle_ID = List_Cars.Vehicle_ID
+	    EXTRACT_LAPS_LIST AS ELL JOIN TRACKS ON ELL.track_id = TRACKS.track_id
+	    JOIN CARS ON ELL.vehicle_id = CARS.vehicle_id
     ORDER BY
-	    Tracks.Track_Name ASC
+	    TRACKS.track_name ASC
     '''
     
     try:
@@ -386,9 +386,9 @@ def clear_database(conn: sqlite3.Connection):
 
     print("Clearing dataset...")
 
-    del1 = ''' DELETE FROM Laps '''
-    del2 = ''' DELETE FROM Tracks '''
-    del3 = ''' DELETE FROM Vehicles '''
+    del1 = ''' DELETE FROM LAPS '''
+    del2 = ''' DELETE FROM TRACKS '''
+    del3 = ''' DELETE FROM VEHICLES '''
 
     try:
         cur = conn.cursor()
@@ -410,7 +410,7 @@ def insert_new_lap(conn: sqlite3, lap: classes.LapTime):
     # :param lap: is a lap object.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Laps(Lap_Time,Driver,Track_ID,Vehicle_ID)
+    sql = ''' INSERT OR IGNORE INTO LAPS(lap_time,driver,track_id,vehicle_id)
               VALUES(?,?,?,?) '''
 
     insert_tuple = (lap.lap_time, lap.driver, lap.track.track_id, lap.vehicle.vehicle_id)
@@ -430,7 +430,7 @@ def insert_new_track(conn: sqlite3.Connection, track: classes.Track):
     # :param track: is a track object.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Tracks(Track_Name,Country,Total_Length)
+    sql = ''' INSERT OR IGNORE INTO TRACKS(track_name,country,total_length)
               VALUES(?,?,?) '''
 
     insert_tuple = (track.track_name, track.country, track.total_length)
@@ -450,7 +450,7 @@ def insert_new_vehicle(conn: sqlite3.Connection, vehicle: classes.Vehicle):
     # :param car: is a car object.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Vehicles(Vehicle_Name,Type)
+    sql = ''' INSERT OR IGNORE INTO VEHICLES(vehicle_name,type)
               VALUES(?,?) '''
     
     insert_tuple = (vehicle.vehicle_name, vehicle.type) 
@@ -481,7 +481,7 @@ def insert_Layout(conn: sqlite3.Connection, vehicle_id: int, layout: classes.Lay
     # :param layout: a layout object.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Layout(Engine_Layout,Wheel_Drive,Class_Type,Vehicle_ID)
+    sql = ''' INSERT OR IGNORE INTO LAYOUT(engine_layout,wheel_drive,class_type,vehicle_id)
               VALUES(?,?,?,?) '''
     
     insert_tuple = (layout.engine_layout, layout.wheel_drive, layout.class_type, vehicle_id) 
@@ -503,10 +503,10 @@ def insert_dimensions(conn: sqlite3.Connection, vehicle_id: int, dimensions: cla
     # :param dimensions: a dimensions object.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Dimensions(Curb_Weight,Wheelbase,Long,High,Wide,Vehicle_ID)
+    sql = ''' INSERT OR IGNORE INTO DIMENSIONS(curb_weight,wheelbase,long,wide,high,vehicle_id)
               VALUES(?,?,?,?,?,?) '''
     
-    insert_tuple = (dimensions.curb_weight, dimensions.wheelbase, dimensions.long, dimensions.high, dimensions.wide, vehicle_id) 
+    insert_tuple = (dimensions.curb_weight, dimensions.wheelbase, dimensions.long, dimensions.wide, dimensions.high, vehicle_id) 
 
     cur = conn.cursor()
     cur.execute(sql, insert_tuple)
@@ -525,7 +525,7 @@ def insert_engine(conn: sqlite3.Connection, vehicle_id: int, engine: classes.Eng
     # :param engine: a engine object.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Engine(Engine,Displacement,Power,Torque,Vehicle_ID)
+    sql = ''' INSERT OR IGNORE INTO ENGINE(engine_name,displacement,power,torque,vehicle_id)
               VALUES(?,?,?,?,?) '''
     
     insert_tuple = (engine.engine, engine.displacement, engine.power, engine.torque, vehicle_id)
@@ -547,7 +547,7 @@ def insert_trasmission(conn: sqlite3.Connection, vehicle_id: int, trasmission: c
     # :param trasmission: a trasmission object.
     # :return: last row id.
 
-    sql = ''' INSERT INTO Trasmission(Trasmission_Name,Trasmission_Type,N_Trasmission,Vehicle_ID)
+    sql = ''' INSERT INTO TRASMISSION(trasmission_name,trasmission_type,n_trasmission,vehicle_id)
               VALUES(?,?,?,?) '''
     
     insert_tuple = (trasmission.trasmission_name, trasmission.trasmission_type, trasmission.n_trasmission, vehicle_id)
@@ -569,10 +569,10 @@ def insert_performance(conn: sqlite3.Connection, vehicle_id: int, performance: c
     # :param performance: a performance object.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Performance(Zero_Hundred,Break_Distance,Top_Speed,Vehicle_ID)
+    sql = ''' INSERT OR IGNORE INTO PERFORMANCE(accelleration,break_distance,top_speed,vehicle_id)
               VALUES(?,?,?,?) '''
     
-    insert_tuple = (performance.zero_hundred, performance.break_distance, performance.top_speed, vehicle_id) 
+    insert_tuple = (performance.accelleration, performance.break_distance, performance.top_speed, vehicle_id) 
 
     cur = conn.cursor()
     cur.execute(sql, insert_tuple)
@@ -591,7 +591,7 @@ def insert_overview(conn: sqlite3.Connection, vehicle_id: int, overview: classes
     # :param overview: a layout overview.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Overview(Manufacturer,Origin_Country,Introduced_Year,Vehicle_ID)
+    sql = ''' INSERT OR IGNORE INTO OVERVIEW(manufacturer,origin_country,introduced_year,vehicle_id)
               VALUES(?,?,?,?) '''
     
     insert_tuple = (overview.manufacturer, overview.origin_country, overview.introduced_year, vehicle_id) 
@@ -613,7 +613,7 @@ def get_all_laps(conn: sqlite3.Connection):
     
     print("Getting all laps data...")
 
-    sql = ''' SELECT * FROM Laps '''
+    sql = ''' SELECT * FROM LAPS '''
               
     cur = conn.cursor()
     cur.execute(sql)
@@ -631,7 +631,7 @@ def get_all_tracks(conn: sqlite3.Connection):
 
     print("Getting all traks data...")
 
-    sql = ''' SELECT * FROM Tracks '''
+    sql = ''' SELECT * FROM TRACKS '''
               
     cur = conn.cursor()
     cur.execute(sql)
@@ -649,13 +649,13 @@ def get_all_vehicles_specs(conn: sqlite3.Connection):
 
     print("Getting all vehicles data...")
 
-    sql = ''' SELECT * FROM Vehicles 
-            JOIN Layout ON Vehicles.Vehicle_ID = Layout.Vehicle_ID
-            JOIN Dimensions ON Vehicles.Vehicle_ID = Dimensions.Vehicle_ID
-            JOIN Engine ON Vehicles.Vehicle_ID = Engine.Vehicle_ID
-            JOIN Trasmission ON Vehicles.Vehicle_ID = Trasmission.Vehicle_ID
-            JOIN Performance ON Vehicles.Vehicle_ID = Performance.Vehicle_ID
-            JOIN Overview ON Vehicles.Vehicle_ID = Overview.Vehicle_ID '''
+    sql = ''' SELECT * FROM VEHICLES 
+            JOIN LAYOUT ON VEHICLES.vehicle_id = LAYOUT.vehicle_id
+            JOIN DIMENSIONS ON VEHICLES.vehicle_id = DIMENSIONS.vehicle_id
+            JOIN ENGINE ON VEHICLES.vehicle_id = ENGINE.vehicle_id
+            JOIN TRASMISSION ON VEHICLES.vehicle_id = TRASMISSION.vehicle_id
+            JOIN PERFORMANCE ON VEHICLES.vehicle_id = PERFORMANCE.vehicle_id
+            JOIN OVERVIEW ON VEHICLES.vehicle_id = OVERVIEW.vehicle_id '''
               
     cur = conn.cursor()
     cur.execute(sql)
@@ -673,7 +673,7 @@ def get_all_vehicles(conn: sqlite3.Connection):
 
     print("Getting all vehicles data...")
 
-    sql = ''' SELECT * FROM Vehicles '''
+    sql = ''' SELECT * FROM VEHICLES '''
               
     cur = conn.cursor()
     cur.execute(sql)
@@ -691,7 +691,7 @@ def get_specific_lap(conn: sqlite3.Connection, track_id: int, vehicle_id: int):
     # :param vehicle_name: vehicle name string.
     # :return: list of all specific record.
 
-    sql = ''' SELECT * FROM Laps WHERE (Tracks_ID = ?) AND (Vehicle_ID = ?)  '''
+    sql = ''' SELECT * FROM LAPS WHERE (track_id = ?) AND (vehicle_id = ?)  '''
               
     cur = conn.cursor()
     cur.execute(sql, (track_id, vehicle_id))
@@ -708,13 +708,13 @@ def get_specific_track(conn: sqlite3.Connection, track_id: int, track_name: str)
     # :param tracks_name: track name string.
     # :return: list of all specific record.
 
-    by_id = "Tracks_ID = ?"
-    by_name = "Tracks_Name = ?"
+    by_id = "track_id = ?"
+    by_name = "track_name = ?"
               
     if (track_id != -1):
-        sql = f''' SELECT * FROM Tracks WHERE {by_id} '''
+        sql = f''' SELECT * FROM TRACKS WHERE {by_id} '''
     else:
-        sql = f''' SELECT * FROM Tracks WHERE {by_name} '''
+        sql = f''' SELECT * FROM TRACKS WHERE {by_name} '''
 
     cur = conn.cursor()
     cur.execute(sql, (track_id, track_name))
@@ -731,25 +731,25 @@ def get_specific_vehicle_specs(conn: sqlite3.Connection, vehicle_id: int,  vehic
     # :param vehicle_name: vehicle name string.
     # :return: list of all specific record.
 
-    by_id = "Vehicle_ID = ? "
-    by_name = "Vehicle_Name = ?"
+    by_id = "vehicle_id = ? "
+    by_name = "vehicle_name = ?"
 
     cur = conn.cursor()
 
-    joins = ''' JOIN Layout ON Vehicles.Vehicle_ID = Layout.Vehicle_ID
-                JOIN Dimensions ON Vehicles.Vehicle_ID = Dimensions.Vehicle_ID
-                JOIN Engine ON Vehicles.Vehicle_ID = Engine.Vehicle_ID
-                JOIN Trasmission ON Vehicles.Vehicle_ID = Trasmission.Vehicle_ID
-                JOIN Performance ON Vehicles.Vehicle_ID = Performance.Vehicle_ID
-                JOIN Overview ON Vehicles.Vehicle_ID = Overview.Vehicle_ID '''
+    joins = ''' JOIN LAYOUT ON VEHICLES.vehicle_id = LAYOUT.vehicle_id
+                JOIN DIMENSIONS ON VEHICLES.vehicle_id = DIMENSIONS.vehicle_id
+                JOIN ENGINE ON VEHICLES.vehicle_id = ENGINE.vehicle_id
+                JOIN TRASMISSION ON VEHICLES.vehicle_id = TRASMISSION.vehicle_id
+                JOIN PERFORMANCE ON VEHICLES.vehicle_id = PERFORMANCE.vehicle_id
+                JOIN OVERVIEW ON VEHICLES.vehicle_id = OVERVIEW.vehicle_id '''
     
     if (vehicle_id != -1):
-        sql = f''' SELECT * FROM Vehicles 
+        sql = f''' SELECT * FROM VEHICLES 
         {joins} 
         WHERE {by_id} '''
         cur.execute(sql, (vehicle_id, ))
     else:
-        sql = f''' SELECT * FROM Vehicles
+        sql = f''' SELECT * FROM VEHICLES
         {joins} 
         WHERE {by_name} '''
         cur.execute(sql, (vehicle_name, ))
@@ -767,16 +767,16 @@ def get_specific_vehicle(conn: sqlite3.Connection, vehicle_id: int, vehicle_name
     # :param vehicle_name: vehicle name string.
     # :return: list of all specific record.
 
-    by_id = "Vehicle_ID = ?"
-    by_name = "Vehicle_Name = ?"
+    by_id = "vehicle_id = ?"
+    by_name = "vehicle_name = ?"
     
     cur = conn.cursor()
 
     if (vehicle_id != -1):
-        sql = f''' SELECT * FROM Vehicles WHERE {by_id} '''
+        sql = f''' SELECT * FROM VEHICLES WHERE {by_id} '''
         cur.execute(sql, (vehicle_id, ))
     else:
-        sql = f''' SELECT * FROM Vehicles WHERE {by_name} '''
+        sql = f''' SELECT * FROM VEHICLES WHERE {by_name} '''
         cur.execute(sql, (vehicle_name, ))
 
     cur.close()
@@ -793,7 +793,7 @@ def delete_specific_lap(conn: sqlite3.Connection, track_id: int, vehicle_id: int
     # :param vehicle_name: vehicle name string.
     # :return:
     
-    sql = ''' DELETE FROM Laps WHERE (Track_ID = ?) AND (Vehicle_ID = ?) '''
+    sql = ''' DELETE FROM LAPS WHERE (track_id = ?) AND (vehicle_id = ?) '''
     cur = conn.cursor()
     cur.execute(sql, (track_id, vehicle_id))
     cur.close()
@@ -812,9 +812,9 @@ def delete_specific_track(conn: sqlite3.Connection, track_id: int, track_name: s
     by_name = "Tracks_Name = ?"
               
     if (track_id != -1):
-        sql = f''' DELETE FROM Tracks WHERE {by_id} '''
+        sql = f''' DELETE FROM TRACKS WHERE {by_id} '''
     else:
-        sql = f''' DELETE FROM Tracks WHERE {by_name} '''
+        sql = f''' DELETE FROM TRACKS WHERE {by_name} '''
 
     cur = conn.cursor()
     cur.execute(sql, (track_id, track_name))
@@ -831,13 +831,13 @@ def delete_specific_vehicle(conn: sqlite3.Connection, vehicle_id: int, vehicle_n
     # :param vehicle_name: vehicle name string.
     # :return:
     
-    by_id = "Vehicle_ID = ?"
-    by_name = "Vehicle_Name = ?"
+    by_id = "vehicle_id = ?"
+    by_name = "vehicle_name = ?"
 
     if (vehicle_id != -1):
-        sql = f''' DELETE FROM Vehicles WHERE {by_id} '''
+        sql = f''' DELETE FROM VEHICLES WHERE {by_id} '''
     else:
-        sql = f''' DELETE FROM Vehicles WHERE {by_name} '''
+        sql = f''' DELETE FROM VEHICLES WHERE {by_name} '''
 
     cur = conn.cursor()
     cur.execute(sql, (vehicle_id, vehicle_name))

@@ -626,11 +626,8 @@ Morgan Aero 8 (372 PS): 1
 Morgan 3 Wheeler: 1
 Mitsubishi Lancer Ralliart: 1
 Mitsubishi Lancer Evo X TC-SST: 1
+Mitsubishi Lancer Evo X RS: 1
 Mitsubishi Lancer Evo X: 1
-Mitsubishi Evo X RS: 1
-Mitsubishi Evo VIII MR FQ 320: 1
-Mitsubishi Evo VIII FQ400: 1
-Mitsubishi Evo VIII FQ 300: 1
 Mitsubishi Colt Ralliart: 1
 Mito 1.4 Multiair 135: 1
 Mini Cooper S Works: 1
@@ -707,6 +704,9 @@ Lexus IS 250: 1
 Lexus IS 220d: 1
 Leon 2.0 TSI Sportstourer: 1
 Lancer Evo X FQ300 SST: 1
+Lancer Evo VIII FQ-400: 1
+Lancer Evo VIII FQ-320 MR: 1
+Lancer Evo VIII FQ-300: 1
 Lamborghini Urus Performante: 1
 Lamborghini Gallardo (520 PS): 1
 Lamborghini Diablo VT Roadster: 1
@@ -955,7 +955,7 @@ Aston Martin DB5: 1
 Ascari KZ1: 1
 Ascari A10: 1
 Ariel Atom 500 V8: 1
-Ariel Atom 4: 1
+Ariel Atom 4 (324 PS): 1
 Ariel Atom 2: 1
 Ariel Atom: 1
 Alpina B7 Biturbo (G12): 1

@@ -6225,7 +6225,7 @@
          "N_Trasmission": 6.0
       }
    },
-   "Ariel Atom 4": {
+   "Ariel Atom 4 (324 PS)": {
       "Laps": {
          "Silverstone Stowe": [
             54.71
@@ -6250,7 +6250,7 @@
          ]
       },
       "Specs": {
-         "Vehicle_Name": "Ariel Atom 4",
+         "Vehicle_Name": "Ariel Atom 4 (324 PS)",
          "Type": "Car",
          "Manufacturer": "Ariel",
          "Country": "United Kingdom",
@@ -6267,6 +6267,38 @@
          "Displacement_(l)": 2.0,
          "Power_(ps)": 324.0,
          "Torque_(Nm)": 420.0,
+         "Engine_Layout": "Middle",
+         "Wheel_Drive": "Rear",
+         "Class": "Open-wheeler",
+         "Trasmission_Name": "6 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 6.0
+      }
+   },
+   "Ariel Atom 4 (355 PS)": {
+      "Laps": {
+         "Bedford Autodrome Gt": [
+            154.21
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Ariel Atom 4 (355 PS)",
+         "Type": "Car",
+         "Manufacturer": "Ariel",
+         "Country": "United Kingdom",
+         "Introduced_Year": 2019.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 4 16 valve DOHC turbo",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 355.0,
+         "Torque_(Nm)": NaN,
          "Engine_Layout": "Middle",
          "Wheel_Drive": "Rear",
          "Class": "Open-wheeler",
@@ -11940,9 +11972,6 @@
          "Motovision Handling Course": [
             19.58
          ],
-         "Tsukuba": [
-            68.37
-         ],
          "Ring Knutstrop (Conf 2)": [
             74.5
          ],
@@ -14412,9 +14441,6 @@
    },
    "Audi S8 (D3)": {
       "Laps": {
-         "Tsukuba": [
-            68.3
-         ],
          "Wakefield Park": [
             72.1
          ]
@@ -17028,9 +17054,6 @@
    },
    "BMW 135i Coupe (E82)": {
       "Laps": {
-         "Tsukuba": [
-            67.86
-         ],
          "Wakefield Park": [
             69.9
          ],
@@ -20740,9 +20763,6 @@
    },
    "BMW M3 (E36 286 PS E36)": {
       "Laps": {
-         "Tsukuba": [
-            68.48
-         ],
          "Circuit D´ Issoire": [
             77.69
          ],
@@ -20816,9 +20836,6 @@
    },
    "BMW M3 (E36)": {
       "Laps": {
-         "Tsukuba": [
-            68.46
-         ],
          "Thruxton": [
             93.78
          ],
@@ -20873,7 +20890,7 @@
             52.8
          ],
          "Tsukuba": [
-            67.11
+            66.82
          ],
          "Wakefield Park": [
             71.81
@@ -22111,6 +22128,9 @@
          ],
          "Thermal Club Raceway Long": [
             145.0
+         ],
+         "Bedford Autodrome Gt": [
+            162.81
          ],
          "Virginia International Raceway Grand East Course (Post 01/2014)": [
             180.7
@@ -25360,9 +25380,6 @@
    },
    "BMW Z3 M Roadster (321 PS)": {
       "Laps": {
-         "Tsukuba": [
-            68.17
-         ],
          "Nelson Ledges Raceway": [
             79.8
          ],
@@ -25476,9 +25493,6 @@
       "Laps": {
          "Motovision Handling Course": [
             19.6
-         ],
-         "Tsukuba": [
-            68.73
          ],
          "Buttonwillow West Loop (Config 24)": [
             70.71
@@ -25909,9 +25923,6 @@
    },
    "BMW Z4 sDrive 35is": {
       "Laps": {
-         "Tsukuba": [
-            68.49
-         ],
          "Ring Knutstrop (Conf 2)": [
             75.8
          ],
@@ -25961,9 +25972,6 @@
       "Laps": {
          "Anglesey National": [
             66.3
-         ],
-         "Tsukuba": [
-            68.45
          ],
          "Wakefield Park": [
             70.0
@@ -35528,7 +35536,7 @@
             85.2
          ],
          "Pacific Raceways": [
-            99.65
+            97.6
          ],
          "Ridge Motorsports Park": [
             121.41
@@ -36049,9 +36057,6 @@
    },
    "Dodge Viper RT/10 (405 PS)": {
       "Laps": {
-         "Tsukuba": [
-            67.89
-         ],
          "Miramas Handling Course": [
             82.5
          ]
@@ -38995,9 +39000,6 @@
          "Ring Knutstorp": [
             68.1
          ],
-         "Tsukuba": [
-            68.31
-         ],
          "Autocar Dry Handling Track": [
             69.5
          ],
@@ -39087,9 +39089,6 @@
    },
    "Ferrari 456 GT": {
       "Laps": {
-         "Tsukuba": [
-            67.74
-         ],
          "Fiorano": [
             95.0
          ]
@@ -39802,9 +39801,6 @@
    },
    "Ferrari 512 TR": {
       "Laps": {
-         "Tsukuba": [
-            68.68
-         ],
          "Vairano Handling Course": [
             86.49
          ],
@@ -45718,9 +45714,6 @@
    },
    "Ford Mustang GT 5.0": {
       "Laps": {
-         "Tsukuba": [
-            68.25
-         ],
          "Willow Springs - Streets Of Willow": [
             87.76
          ],
@@ -50597,8 +50590,7 @@
             63.3
          ],
          "Tsukuba": [
-            67.4,
-            68.0
+            67.4
          ],
          "Autocar Wet Handling Track": [
             76.1
@@ -51463,7 +51455,7 @@
             20.35
          ],
          "Tsukuba": [
-            68.71
+            66.53
          ],
          "Castle Combe (Pre 1999)": [
             72.2
@@ -51685,7 +51677,7 @@
    "Honda NSX (facelift)": {
       "Laps": {
          "Tsukuba": [
-            66.89
+            65.41
          ],
          "Thermal Club Raceway": [
             94.3
@@ -52204,9 +52196,6 @@
    },
    "Honda S2000 Type S": {
       "Laps": {
-         "Tsukuba": [
-            67.72
-         ],
          "Nihonkai Maze": [
             72.4
          ],
@@ -52240,38 +52229,6 @@
          "Class": "Convertible",
          "Trasmission_Name": "6",
          "Trasmission_Type": "Other",
-         "N_Trasmission": 6.0
-      }
-   },
-   "Honda S2000 Type V": {
-      "Laps": {
-         "Tsukuba": [
-            68.87
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Honda S2000 Type V",
-         "Type": "Car",
-         "Manufacturer": "Honda",
-         "Country": null,
-         "Introduced_Year": NaN,
-         "0-100_kph_(s)": 5.7,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 244.0,
-         "Curb_Weight_(kg)": 1256.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "Naturally Aspirated Inline-4",
-         "Displacement_(l)": 2.2,
-         "Power_(ps)": 243.0,
-         "Torque_(Nm)": 221.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "Rear",
-         "Class": "Convertible",
-         "Trasmission_Name": "6-Speed Manual",
-         "Trasmission_Type": "Manual",
          "N_Trasmission": 6.0
       }
    },
@@ -53425,8 +53382,43 @@
          "N_Trasmission": 5.0
       }
    },
+   "Impreza S202 STI Version": {
+      "Laps": {
+         "Tsukuba": [
+            66.35
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Impreza S202 STI Version",
+         "Type": "Car",
+         "Manufacturer": "Subaru",
+         "Country": "Japan",
+         "Introduced_Year": 2002.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": 1330.0,
+         "Wheelbase_(m)": 2.54,
+         "Long_(m)": 4.41,
+         "High_(m)": 1.73,
+         "Wide_(m)": 1.43,
+         "Engine": "Flat 4, 16 valves, DOHC, turbo",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 320.0,
+         "Torque_(Nm)": 384.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "6 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 6.0
+      }
+   },
    "Impreza WRX STI Spec C Type R..": {
       "Laps": {
+         "Tsukuba": [
+            64.72
+         ],
          "Sugo": [
             99.94
          ]
@@ -57523,9 +57515,6 @@
    },
    "Lamborghini Diablo": {
       "Laps": {
-         "Tsukuba": [
-            67.66
-         ],
          "Moroso Motorsports Park": [
             94.8
          ]
@@ -58882,6 +58871,44 @@
          "N_Trasmission": 6.0
       }
    },
+   "Lancer Evo VI GSR Tommi Makin..": {
+      "Laps": {
+         "Tsukuba": [
+            65.69
+         ],
+         "Winton (National Circuit)": [
+            101.0
+         ],
+         "Suzuka": [
+            155.7
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Lancer Evo VI GSR Tommi Makin..",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": 1999.0,
+         "0-100_kph_(s)": 5.0,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 240.0,
+         "Curb_Weight_(kg)": 1365.0,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "I4 Turbo DOHC",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 373.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
    "Lancer Evo VII FQ-300": {
       "Laps": {
          "Llandow": [
@@ -58922,6 +58949,9 @@
          "Rockingham National": [
             83.4
          ],
+         "Top Gear Track": [
+            88.9
+         ],
          "Goodwood": [
             90.5
          ]
@@ -58952,10 +58982,45 @@
          "N_Trasmission": 6.0
       }
    },
+   "Lancer Evo VIII FQ-320 MR": {
+      "Laps": {
+         "Top Gear Track": [
+            86.0
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Lancer Evo VIII FQ-320 MR",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": 2005.0,
+         "0-100_kph_(s)": 4.7,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 253.0,
+         "Curb_Weight_(kg)": 1400.0,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "inline 4 16V DOHC Turbo",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 331.0,
+         "Torque_(Nm)": 305.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "6 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 6.0
+      }
+   },
    "Lancer Evo VIII FQ-400": {
       "Laps": {
          "Anglesey": [
             52.48
+         ],
+         "Top Gear Track": [
+            84.8
          ]
       },
       "Specs": {
@@ -59051,7 +59116,7 @@
    "Lancer Evo VIII RS 6MT": {
       "Laps": {
          "Tsukuba": [
-            65.49
+            65.3
          ]
       },
       "Specs": {
@@ -59072,6 +59137,70 @@
          "Displacement_(l)": 2.0,
          "Power_(ps)": 280.0,
          "Torque_(Nm)": 392.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "6 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 6.0
+      }
+   },
+   "Lancer Evo VIII RS MR 5MT": {
+      "Laps": {
+         "Tsukuba": [
+            65.38
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Lancer Evo VIII RS MR 5MT",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": 2004.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": 1310.0,
+         "Wheelbase_(m)": 2.62,
+         "Long_(m)": 4.49,
+         "High_(m)": 1.77,
+         "Wide_(m)": 1.45,
+         "Engine": "4G63T, Inline 4, turbo, DOHC, 16 valves",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 392.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Lancer Evo VIII RS MR 6MT": {
+      "Laps": {
+         "Tsukuba": [
+            64.4
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Lancer Evo VIII RS MR 6MT",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": 2004.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": 1360.0,
+         "Wheelbase_(m)": 2.62,
+         "Long_(m)": 4.49,
+         "High_(m)": 1.77,
+         "Wide_(m)": 1.45,
+         "Engine": "4G63T, Inline 4, turbo, DOHC, 16 valves",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 400.0,
          "Engine_Layout": "Front",
          "Wheel_Drive": "All",
          "Class": "4-door saloon",
@@ -59220,6 +59349,39 @@
          "N_Trasmission": 5.0
       }
    },
+   "Lancer Evo X GSR TC-SST": {
+      "Laps": {
+         "Tsukuba": [
+            67.05,
+            67.59
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Lancer Evo X GSR TC-SST",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": 2007.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 4 turbo",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 422.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "6 speed dual clutch",
+         "Trasmission_Type": "Dual-Clutch",
+         "N_Trasmission": 6.0
+      }
+   },
    "Lancer Evo X MR TC-SST": {
       "Laps": {
          "Inta": [
@@ -59299,204 +59461,6 @@
          "N_Trasmission": NaN
       }
    },
-   "Lancer Evolution IV GSR": {
-      "Laps": {
-         "Tsukuba": [
-            67.38
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Lancer Evolution IV GSR",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 1998.0,
-         "0-100_kph_(s)": 5.4,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1352.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "TurboCharged 4G63 Inline-4",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 279.0,
-         "Torque_(Nm)": 354.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "5-Speed Manual",
-         "Trasmission_Type": "Manual",
-         "N_Trasmission": 5.0
-      }
-   },
-   "Lancer Evolution VI Tommi Mak..": {
-      "Laps": {
-         "Tsukuba": [
-            65.69
-         ],
-         "Winton (National Circuit)": [
-            101.0
-         ],
-         "Suzuka": [
-            155.7
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Lancer Evolution VI Tommi Mak..",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 1999.0,
-         "0-100_kph_(s)": 5.0,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 240.0,
-         "Curb_Weight_(kg)": 1365.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "I4 Turbo DOHC",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 280.0,
-         "Torque_(Nm)": 373.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "5 speed manual",
-         "Trasmission_Type": "Manual",
-         "N_Trasmission": 5.0
-      }
-   },
-   "Lancer Evolution VIII MR": {
-      "Laps": {
-         "Tsukuba": [
-            64.7
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Lancer Evolution VIII MR",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 2005.0,
-         "0-100_kph_(s)": 5.2,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 255.0,
-         "Curb_Weight_(kg)": 1455.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "TurboCharged 4G63 Inline-4",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 280.0,
-         "Torque_(Nm)": 388.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "6-Speed Manual",
-         "Trasmission_Type": "Manual",
-         "N_Trasmission": 6.0
-      }
-   },
-   "Lancer Evolution VIII MR RS 5..": {
-      "Laps": {
-         "Tsukuba": [
-            65.38
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Lancer Evolution VIII MR RS 5..",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 2004.0,
-         "0-100_kph_(s)": NaN,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": 1310.0,
-         "Wheelbase_(m)": 2.62,
-         "Long_(m)": 4.49,
-         "High_(m)": 1.77,
-         "Wide_(m)": 1.45,
-         "Engine": "4G63T, Inline 4, turbo, DOHC, 16 valves",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 280.0,
-         "Torque_(Nm)": 392.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "5 speed manual",
-         "Trasmission_Type": "Manual",
-         "N_Trasmission": 5.0
-      }
-   },
-   "Lancer Evolution VIII MR RS 6..": {
-      "Laps": {
-         "Tsukuba": [
-            64.4
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Lancer Evolution VIII MR RS 6..",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 2004.0,
-         "0-100_kph_(s)": NaN,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": 1360.0,
-         "Wheelbase_(m)": 2.62,
-         "Long_(m)": 4.49,
-         "High_(m)": 1.77,
-         "Wide_(m)": 1.45,
-         "Engine": "4G63T, Inline 4, turbo, DOHC, 16 valves",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 280.0,
-         "Torque_(Nm)": 400.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "6 speed manual",
-         "Trasmission_Type": "Manual",
-         "N_Trasmission": 6.0
-      }
-   },
-   "Lancer RS Evolution II": {
-      "Laps": {
-         "Tsukuba": [
-            67.63
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Lancer RS Evolution II",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 1994.0,
-         "0-100_kph_(s)": NaN,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 233.0,
-         "Curb_Weight_(kg)": 1180.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "Inline 4, 16v, Turbo (4G63)",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 260.0,
-         "Torque_(Nm)": 308.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "5",
-         "Trasmission_Type": "Other",
-         "N_Trasmission": 5.0
-      }
-   },
    "Lancer Sportback Ralliart": {
       "Laps": {
          "Wakefield Park": [
@@ -59527,38 +59491,6 @@
          "Trasmission_Name": "6 speed automatic",
          "Trasmission_Type": "Automatic",
          "N_Trasmission": 6.0
-      }
-   },
-   "LancerEvolution III GSR": {
-      "Laps": {
-         "Tsukuba": [
-            67.35
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "LancerEvolution III GSR",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 1995.0,
-         "0-100_kph_(s)": NaN,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 247.0,
-         "Curb_Weight_(kg)": 1259.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "TurboCharged 4G63 Inline-4",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 274.0,
-         "Torque_(Nm)": 312.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "5-Speen Manaul",
-         "Trasmission_Type": "Other",
-         "N_Trasmission": 5.0
       }
    },
    "Lancia Aurelia GT 2500": {
@@ -60040,7 +59972,7 @@
          "Engine_Layout": "Front",
          "Wheel_Drive": "Rear",
          "Class": "4-door saloon",
-         "Trasmission_Name": "endlesstransmission",
+         "Trasmission_Name": "CVT",
          "Trasmission_Type": "Other",
          "N_Trasmission": NaN
       }
@@ -60341,7 +60273,7 @@
          "N_Trasmission": 8.0
       }
    },
-   "Lexus IS-F": {
+   "Lexus IS-F (facelift)": {
       "Laps": {
          "Killarney": [
             87.37
@@ -60363,7 +60295,7 @@
          ]
       },
       "Specs": {
-         "Vehicle_Name": "Lexus IS-F",
+         "Vehicle_Name": "Lexus IS-F (facelift)",
          "Type": "Car",
          "Manufacturer": "Lexus",
          "Country": "Japan",
@@ -61846,6 +61778,38 @@
          "Class": "Convertible",
          "Trasmission_Name": "6 speed",
          "Trasmission_Type": "Other",
+         "N_Trasmission": 6.0
+      }
+   },
+   "Lotus Elise SC Clark Type 25": {
+      "Laps": {
+         "Llandow": [
+            49.81
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Lotus Elise SC Clark Type 25",
+         "Type": "Car",
+         "Manufacturer": "Lotus",
+         "Country": "United Kingdom",
+         "Introduced_Year": 2008.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": 870.0,
+         "Wheelbase_(m)": 2.3,
+         "Long_(m)": 3.79,
+         "High_(m)": 1.72,
+         "Wide_(m)": 1.12,
+         "Engine": "2ZZ-GE Straight 4  4 valves / cylinder, DOHC, VVTL-i",
+         "Displacement_(l)": 1.8,
+         "Power_(ps)": 221.0,
+         "Torque_(Nm)": 215.0,
+         "Engine_Layout": "Rear",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "6 speed Manual",
+         "Trasmission_Type": "Manual",
          "N_Trasmission": 6.0
       }
    },
@@ -64803,9 +64767,6 @@
    },
    "Maserati Quattroporte S": {
       "Laps": {
-         "Tsukuba": [
-            68.7
-         ],
          "Wakefield Park": [
             71.0
          ],
@@ -66868,8 +66829,7 @@
             65.64
          ],
          "Tsukuba": [
-            67.23,
-            68.67
+            66.32
          ],
          "Nihonkai Maze": [
             70.54,
@@ -74547,9 +74507,6 @@
    },
    "Mercedes-Benz SL 55 AMG": {
       "Laps": {
-         "Tsukuba": [
-            68.3
-         ],
          "Vairano Handling Course": [
             84.01
          ],
@@ -77103,203 +77060,11 @@
          "N_Trasmission": 5.0
       }
    },
-   "Mitsubishi Evo VII": {
-      "Laps": {
-         "Tsukuba": [
-            64.93
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Mitsubishi Evo VII",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 2002.0,
-         "0-100_kph_(s)": 4.7,
-         "100-0_(m)": 37.0,
-         "Top_Speed_(kph)": 253.0,
-         "Curb_Weight_(kg)": 1454.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "4cyl Turbo",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 280.0,
-         "Torque_(Nm)": 383.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "5",
-         "Trasmission_Type": "Other",
-         "N_Trasmission": 5.0
-      }
-   },
-   "Mitsubishi Evo VIII FQ 300": {
-      "Laps": {
-         "Top Gear Track": [
-            88.9
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Mitsubishi Evo VIII FQ 300",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 2003.0,
-         "0-100_kph_(s)": 5.1,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 253.0,
-         "Curb_Weight_(kg)": 1410.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "inline 4 16V DOHC Turbo",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 305.0,
-         "Torque_(Nm)": 407.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "6 speed manual",
-         "Trasmission_Type": "Manual",
-         "N_Trasmission": 6.0
-      }
-   },
-   "Mitsubishi Evo VIII FQ400": {
-      "Laps": {
-         "Top Gear Track": [
-            84.8
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Mitsubishi Evo VIII FQ400",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 2005.0,
-         "0-100_kph_(s)": 3.6,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 282.0,
-         "Curb_Weight_(kg)": 1483.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "inline4 16V Turbo",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 411.0,
-         "Torque_(Nm)": 481.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "6 speed stick shift",
-         "Trasmission_Type": "Other",
-         "N_Trasmission": 6.0
-      }
-   },
-   "Mitsubishi Evo VIII MR FQ 320": {
-      "Laps": {
-         "Top Gear Track": [
-            86.0
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Mitsubishi Evo VIII MR FQ 320",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 2005.0,
-         "0-100_kph_(s)": 4.7,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 253.0,
-         "Curb_Weight_(kg)": 1400.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "inline 4 16V DOHC Turbo",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 331.0,
-         "Torque_(Nm)": 305.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "6 speed manual",
-         "Trasmission_Type": "Manual",
-         "N_Trasmission": 6.0
-      }
-   },
-   "Mitsubishi Evo X RS": {
-      "Laps": {
-         "Vairano Handling Course": [
-            81.0
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Mitsubishi Evo X RS",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 2008.0,
-         "0-100_kph_(s)": 5.2,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1540.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "inline4 16V DOHC turbo",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 280.0,
-         "Torque_(Nm)": 422.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "5 manual",
-         "Trasmission_Type": "Manual",
-         "N_Trasmission": 5.0
-      }
-   },
-   "Mitsubishi GTO MR": {
-      "Laps": {
-         "Tsukuba": [
-            68.35
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Mitsubishi GTO MR",
-         "Type": "Car",
-         "Manufacturer": "Mitsubishi",
-         "Country": "Japan",
-         "Introduced_Year": 1995.0,
-         "0-100_kph_(s)": NaN,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": 1650.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "V6, Twin Turbo, 24v",
-         "Displacement_(l)": 3.0,
-         "Power_(ps)": 280.0,
-         "Torque_(Nm)": 427.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "Coupe",
-         "Trasmission_Name": "6",
-         "Trasmission_Type": "Other",
-         "N_Trasmission": 6.0
-      }
-   },
    "Mitsubishi GTO MR (Mk II)": {
       "Laps": {
          "Tsukuba": [
             67.36,
-            67.78
+            67.55
          ],
          "Autódromo Internacional De Las Américas": [
             96.28
@@ -77313,7 +77078,7 @@
          "Type": "Car",
          "Manufacturer": "Mitsubishi",
          "Country": "Japan",
-         "Introduced_Year": 1994.0,
+         "Introduced_Year": NaN,
          "0-100_kph_(s)": NaN,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": 260.0,
@@ -77412,6 +77177,134 @@
          "Trasmission_Name": "6",
          "Trasmission_Type": "Other",
          "N_Trasmission": 6.0
+      }
+   },
+   "Mitsubishi Lancer Evo II RS": {
+      "Laps": {
+         "Tsukuba": [
+            66.52
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Mitsubishi Lancer Evo II RS",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": 1994.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 233.0,
+         "Curb_Weight_(kg)": 1180.0,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 4, 16v, Turbo (4G63)",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 260.0,
+         "Torque_(Nm)": 308.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Mitsubishi Lancer Evo III GSR": {
+      "Laps": {
+         "Tsukuba": [
+            67.35
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Mitsubishi Lancer Evo III GSR",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": 1995.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 247.0,
+         "Curb_Weight_(kg)": 1259.0,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "TurboCharged 4G63 Inline-4",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 270.0,
+         "Torque_(Nm)": 309.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5-Speen Manaul",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Mitsubishi Lancer Evo IV GSR": {
+      "Laps": {
+         "Tsukuba": [
+            67.38
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Mitsubishi Lancer Evo IV GSR",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": 1998.0,
+         "0-100_kph_(s)": 5.4,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 250.0,
+         "Curb_Weight_(kg)": 1352.0,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "TurboCharged 4G63 Inline-4",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 279.0,
+         "Torque_(Nm)": 354.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5-Speed Manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Mitsubishi Lancer Evo IV RS": {
+      "Laps": {
+         "Tsukuba": [
+            67.0
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Mitsubishi Lancer Evo IV RS",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 4 turbo",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 353.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
       }
    },
    "Mitsubishi Lancer Evo IX GSR": {
@@ -77516,7 +77409,71 @@
          "N_Trasmission": 6.0
       }
    },
-   "Mitsubishi Lancer Evo V": {
+   "Mitsubishi Lancer Evo IX RS": {
+      "Laps": {
+         "Tsukuba": [
+            65.33
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Mitsubishi Lancer Evo IX RS",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 4 turbo",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 407.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Mitsubishi Lancer Evo IX RS MR": {
+      "Laps": {
+         "Tsukuba": [
+            65.7
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Mitsubishi Lancer Evo IX RS MR",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 4 turbo",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 407.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Mitsubishi Lancer Evo V GSR": {
       "Laps": {
          "Ring Knutstorp": [
             61.1
@@ -77529,7 +77486,7 @@
          ]
       },
       "Specs": {
-         "Vehicle_Name": "Mitsubishi Lancer Evo V",
+         "Vehicle_Name": "Mitsubishi Lancer Evo V GSR",
          "Type": "Car",
          "Manufacturer": "Mitsubishi",
          "Country": "Japan",
@@ -77642,10 +77599,45 @@
          "N_Trasmission": 5.0
       }
    },
+   "Mitsubishi Lancer Evo VI RS": {
+      "Laps": {
+         "Tsukuba": [
+            65.36
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Mitsubishi Lancer Evo VI RS",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 4 turbo",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 373.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
    "Mitsubishi Lancer Evo VII GSR": {
       "Laps": {
          "Motovision Handling Course": [
             18.92
+         ],
+         "Tsukuba": [
+            64.93
          ],
          "Sugo": [
             100.23
@@ -77789,8 +77781,43 @@
          "N_Trasmission": 5.0
       }
    },
+   "Mitsubishi Lancer Evo VIII GSR": {
+      "Laps": {
+         "Tsukuba": [
+            66.0
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Mitsubishi Lancer Evo VIII GSR",
+         "Type": "Car",
+         "Manufacturer": "Mitsubishi",
+         "Country": "Japan",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 4 turbo",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 392.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "6 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 6.0
+      }
+   },
    "Mitsubishi Lancer Evo VIII MR": {
       "Laps": {
+         "Tsukuba": [
+            64.7
+         ],
          "Gingerman Raceway": [
             98.88
          ]
@@ -77907,6 +77934,9 @@
       "Laps": {
          "Buttonwillow East Loop": [
             57.6
+         ],
+         "Tsukuba": [
+            66.46
          ],
          "Motortrend Ice Handling Course": [
             66.8
@@ -78062,6 +78092,9 @@
    },
    "Mitsubishi Lancer Evo X RS": {
       "Laps": {
+         "Vairano Handling Course": [
+            81.0
+         ],
          "Serres Racing Circuit": [
             94.2
          ]
@@ -79417,7 +79450,7 @@
             67.1
          ],
          "Tsukuba": [
-            67.87
+            67.3
          ],
          "Wakefield Park": [
             70.3
@@ -79715,7 +79748,7 @@
          "0-100_kph_(s)": 5.2,
          "100-0_(m)": 30.0,
          "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1560.0,
+         "Curb_Weight_(kg)": 1567.0,
          "Wheelbase_(m)": 2.55,
          "Long_(m)": 4.24,
          "High_(m)": 1.84,
@@ -79732,22 +79765,25 @@
          "N_Trasmission": 6.0
       }
    },
-   "Nissan 370Z Nismo (facelift)": {
+   "Nissan 370Z Nismo (355 PS)": {
       "Laps": {
+         "Tsukuba": [
+            67.45
+         ],
          "Dunnville Autodrome": [
             77.0
          ]
       },
       "Specs": {
-         "Vehicle_Name": "Nissan 370Z Nismo (facelift)",
+         "Vehicle_Name": "Nissan 370Z Nismo (355 PS)",
          "Type": "Car",
          "Manufacturer": "Nissan",
          "Country": "Japan",
          "Introduced_Year": 2015.0,
-         "0-100_kph_(s)": 5.7,
-         "100-0_(m)": 34.0,
-         "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1567.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -80804,7 +80840,7 @@
    "Nissan Nismo 350Z": {
       "Laps": {
          "Tsukuba": [
-            66.66
+            66.2
          ],
          "Willow Springs": [
             96.53
@@ -80947,38 +80983,6 @@
          "N_Trasmission": 6.0
       }
    },
-   "Nissan Silvia S15 Spec R Aero": {
-      "Laps": {
-         "Tsukuba": [
-            67.66
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Nissan Silvia S15 Spec R Aero",
-         "Type": "Car",
-         "Manufacturer": "Nissan",
-         "Country": "Japan",
-         "Introduced_Year": 2003.0,
-         "0-100_kph_(s)": 5.5,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 244.0,
-         "Curb_Weight_(kg)": 1250.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "inlin4 Turbo",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 250.0,
-         "Torque_(Nm)": 274.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "Rear",
-         "Class": "Coupe",
-         "Trasmission_Name": "6",
-         "Trasmission_Type": "Other",
-         "N_Trasmission": 6.0
-      }
-   },
    "Nissan Silvia Spec-S Autech": {
       "Laps": {
          "Winton (National Circuit)": [
@@ -81049,8 +81053,7 @@
    "Nissan Skyline GT-R (R32)": {
       "Laps": {
          "Tsukuba": [
-            68.22,
-            68.34
+            66.72
          ],
          "Ebisu": [
             69.64
@@ -81092,7 +81095,7 @@
       "Laps": {
          "Tsukuba": [
             65.0,
-            67.09
+            65.56
          ],
          "Thruxton": [
             93.36
@@ -81171,12 +81174,43 @@
          "N_Trasmission": 6.0
       }
    },
+   "Nissan Skyline GT-R M-Spec": {
+      "Laps": {
+         "Tsukuba": [
+            65.7
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Nissan Skyline GT-R M-Spec",
+         "Type": "Car",
+         "Manufacturer": "Nissan",
+         "Country": "Japan",
+         "Introduced_Year": 2001.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 6",
+         "Displacement_(l)": 2.6,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 392.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "Coupe",
+         "Trasmission_Name": "6 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 6.0
+      }
+   },
    "Nissan Skyline GT-R V-Spec": {
       "Laps": {
          "Tsukuba": [
             63.58,
-            64.55,
-            68.59
+            64.55
          ],
          "Fuji Raceway": [
             107.15
@@ -81284,7 +81318,7 @@
    "Nissan Skyline GT-R V-spec": {
       "Laps": {
          "Tsukuba": [
-            67.45
+            65.96
          ]
       },
       "Specs": {
@@ -85245,9 +85279,6 @@
          "Llandow": [
             47.23
          ],
-         "Tsukuba": [
-            67.87
-         ],
          "Circuit De Nevers Magny-Cours Club": [
             87.1
          ],
@@ -87653,7 +87684,7 @@
          ],
          "Tsukuba": [
             65.58,
-            67.45
+            67.39
          ],
          "Hockenheim Short": [
             70.3,
@@ -87881,9 +87912,6 @@
    },
    "Porsche 911 Carrera (993)": {
       "Laps": {
-         "Tsukuba": [
-            68.46
-         ],
          "Miramas Handling Course": [
             83.4
          ],
@@ -87929,7 +87957,7 @@
             64.3
          ],
          "Tsukuba": [
-            68.06
+            67.13
          ],
          "Silverstone (National Circuit)": [
             72.12
@@ -89283,6 +89311,9 @@
          "Mittsverigebanan": [
             64.47
          ],
+         "Tsukuba": [
+            65.48
+         ],
          "Buttonwillow West Loop (Config 24)": [
             66.71
          ],
@@ -89339,10 +89370,10 @@
          "Laguna Seca (Post 1988)": [
             110.0
          ],
-         "Fuji Speedway (Post 2005)": [
+         "Fuji Raceway": [
             121.18
          ],
-         "Fuji Raceway": [
+         "Fuji Speedway (Post 2005)": [
             121.18
          ],
          "Balocco": [
@@ -90539,9 +90570,6 @@
       "Laps": {
          "Motovision Handling Course": [
             19.61
-         ],
-         "Tsukuba": [
-            67.68
          ],
          "Hockenheim Short": [
             73.97
@@ -92434,38 +92462,6 @@
          "Trasmission_Name": "6 speed manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 6.0
-      }
-   },
-   "Porsche 911 Turbo 3.6 (964)": {
-      "Laps": {
-         "Tsukuba": [
-            67.74
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Porsche 911 Turbo 3.6 (964)",
-         "Type": "Car",
-         "Manufacturer": "Porsche",
-         "Country": "Germany",
-         "Introduced_Year": 1993.0,
-         "0-100_kph_(s)": 4.6,
-         "100-0_(m)": 36.0,
-         "Top_Speed_(kph)": 289.0,
-         "Curb_Weight_(kg)": 1485.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "3.6 Turbo SOCH Flat 6",
-         "Displacement_(l)": 3.6,
-         "Power_(ps)": 360.0,
-         "Torque_(Nm)": 520.0,
-         "Engine_Layout": "Rear",
-         "Wheel_Drive": "Rear",
-         "Class": "Coupe",
-         "Trasmission_Name": "5 speed manual",
-         "Trasmission_Type": "Manual",
-         "N_Trasmission": 5.0
       }
    },
    "Porsche 911 Turbo 3.6 (993)": {
@@ -94748,9 +94744,6 @@
    },
    "Porsche Boxster S": {
       "Laps": {
-         "Tsukuba": [
-            68.15
-         ],
          "Wakefield Park": [
             69.8
          ],
@@ -97284,6 +97277,9 @@
    },
    "Porsche Panamera 4S (Mk I)": {
       "Laps": {
+         "Tsukuba": [
+            66.15
+         ],
          "Autozeitung Test Track": [
             100.3
          ],
@@ -97509,9 +97505,6 @@
    },
    "Porsche Panamera S": {
       "Laps": {
-         "Tsukuba": [
-            67.63
-         ],
          "Inta": [
             72.63
          ],
@@ -102536,9 +102529,6 @@
          ],
          "Raceland": [
             55.34
-         ],
-         "Tsukuba": [
-            67.87
          ],
          "Blyton Park Circuit": [
             68.9
@@ -107963,6 +107953,38 @@
          "N_Trasmission": 5.0
       }
    },
+   "Skyline GT-R V-Spec II Nur": {
+      "Laps": {
+         "Tsukuba": [
+            66.73
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Skyline GT-R V-Spec II Nur",
+         "Type": "Car",
+         "Manufacturer": "Nissan",
+         "Country": "Japan",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 6 turbo",
+         "Displacement_(l)": 2.6,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 392.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "Coupe",
+         "Trasmission_Name": "6 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 6.0
+      }
+   },
    "Smart Brabus Coupe": {
       "Laps": {
          "Marcoussis": [
@@ -108543,6 +108565,38 @@
          "N_Trasmission": 6.0
       }
    },
+   "Stagea Autech Version 260 RS": {
+      "Laps": {
+         "Tsukuba": [
+            67.07
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Stagea Autech Version 260 RS",
+         "Type": "Car",
+         "Manufacturer": "Nissan",
+         "Country": "Japan",
+         "Introduced_Year": 1997.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 6 turbo",
+         "Displacement_(l)": 2.6,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 368.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "Estate/wagon",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
    "Stelvio 2.0T Q4 Super": {
       "Laps": {
          "Vairano Handling Course": [
@@ -108968,38 +109022,6 @@
          "N_Trasmission": 6.0
       }
    },
-   "Subaru Impreza STI Type RA-R": {
-      "Laps": {
-         "Tsukuba": [
-            64.72
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Subaru Impreza STI Type RA-R",
-         "Type": "Car",
-         "Manufacturer": "Subaru",
-         "Country": "Japan",
-         "Introduced_Year": 2006.0,
-         "0-100_kph_(s)": 4.5,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1390.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "Boxer 4, Turbocharged, 16v",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 320.0,
-         "Torque_(Nm)": 432.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "6",
-         "Trasmission_Type": "Other",
-         "N_Trasmission": 6.0
-      }
-   },
    "Subaru Impreza Turbo Prodrive": {
       "Laps": {
          "Thruxton": [
@@ -109190,6 +109212,10 @@
    },
    "Subaru Impreza WRX STI": {
       "Laps": {
+         "Tsukuba": [
+            65.67,
+            65.92
+         ],
          "Ring Knutstorp": [
             77.2
          ],
@@ -109359,38 +109385,6 @@
          "N_Trasmission": 6.0
       }
    },
-   "Subaru Impreza WRX STI A-Line": {
-      "Laps": {
-         "Tsukuba": [
-            68.53
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Subaru Impreza WRX STI A-Line",
-         "Type": "Car",
-         "Manufacturer": "Subaru",
-         "Country": "Japan",
-         "Introduced_Year": 2009.0,
-         "0-100_kph_(s)": NaN,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": 1490.0,
-         "Wheelbase_(m)": 2.62,
-         "Long_(m)": 4.42,
-         "High_(m)": 1.8,
-         "Wide_(m)": 1.47,
-         "Engine": "EJ25, Flat-4, turbo, 16 valves, DOHC",
-         "Displacement_(l)": 2.5,
-         "Power_(ps)": 300.0,
-         "Torque_(Nm)": 350.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "Compact",
-         "Trasmission_Name": "5 speed automatic",
-         "Trasmission_Type": "Automatic",
-         "N_Trasmission": 5.0
-      }
-   },
    "Subaru Impreza WRX STI R205": {
       "Laps": {
          "Tsukuba": [
@@ -109467,6 +109461,38 @@
          "Class": "4-door saloon",
          "Trasmission_Name": "6",
          "Trasmission_Type": "Other",
+         "N_Trasmission": 6.0
+      }
+   },
+   "Subaru Impreza WRX STI Type RA": {
+      "Laps": {
+         "Tsukuba": [
+            66.56
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Subaru Impreza WRX STI Type RA",
+         "Type": "Car",
+         "Manufacturer": "Subaru",
+         "Country": "Japan",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Boxer 4 Turbo",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 280.0,
+         "Torque_(Nm)": 373.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "6 speed manual",
+         "Trasmission_Type": "Manual",
          "N_Trasmission": 6.0
       }
    },
@@ -109605,38 +109631,6 @@
          "N_Trasmission": 6.0
       }
    },
-   "Subaru Impreza WRX STi (2.0)": {
-      "Laps": {
-         "Tsukuba": [
-            65.67
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Subaru Impreza WRX STi (2.0)",
-         "Type": "Car",
-         "Manufacturer": "Subaru",
-         "Country": "Japan",
-         "Introduced_Year": 2007.0,
-         "0-100_kph_(s)": NaN,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": 1480.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "Boxer 4, Turbocharged, 16v",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 308.0,
-         "Torque_(Nm)": 422.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "Compact",
-         "Trasmission_Name": "6",
-         "Trasmission_Type": "Other",
-         "N_Trasmission": 6.0
-      }
-   },
    "Subaru Impreza WRX STi Spec C": {
       "Laps": {
          "Tsukuba": [
@@ -109699,6 +109693,38 @@
          "Trasmission_Name": null,
          "Trasmission_Type": "Other",
          "N_Trasmission": NaN
+      }
+   },
+   "Subaru Impreza WRX Type RA": {
+      "Laps": {
+         "Tsukuba": [
+            66.26
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Subaru Impreza WRX Type RA",
+         "Type": "Car",
+         "Manufacturer": "Subaru",
+         "Country": "Japan",
+         "Introduced_Year": 1994.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Boxer 4",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 260.0,
+         "Torque_(Nm)": 309.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
       }
    },
    "Subaru Impreza WRX Type RA STI": {
@@ -109839,7 +109865,7 @@
    "Subaru Legacy RS": {
       "Laps": {
          "Gunsai Touge": [
-            233.85
+            236.42
          ]
       },
       "Specs": {
@@ -109857,6 +109883,38 @@
          "High_(m)": NaN,
          "Wide_(m)": NaN,
          "Engine": "Inline 4 turbo",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 220.0,
+         "Torque_(Nm)": 270.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Subaru Legacy RS Type RA (BC5)": {
+      "Laps": {
+         "Gunsai Touge": [
+            233.85
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Subaru Legacy RS Type RA (BC5)",
+         "Type": "Car",
+         "Manufacturer": "Subaru",
+         "Country": "Japan",
+         "Introduced_Year": 1990.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Boxer 4 Turbo",
          "Displacement_(l)": 2.0,
          "Power_(ps)": 220.0,
          "Torque_(Nm)": 270.0,
@@ -110226,9 +110284,6 @@
    },
    "Subaru WRX STI sedan": {
       "Laps": {
-         "Tsukuba": [
-            68.81
-         ],
          "Autobild Sportscars Snowy Track": [
             69.62
          ],
@@ -110896,9 +110951,6 @@
    },
    "TVR Cerbera Speed Six": {
       "Laps": {
-         "Tsukuba": [
-            68.72
-         ],
          "Twin Ring Motegi Gp": [
             141.8
          ]
@@ -111144,9 +111196,6 @@
    },
    "TVR Tuscan (Mk II)": {
       "Laps": {
-         "Tsukuba": [
-            68.77
-         ],
          "Top Gear Track": [
             84.8
          ]
@@ -111710,6 +111759,38 @@
          "Trasmission_Name": "1",
          "Trasmission_Type": "Other",
          "N_Trasmission": 1.0
+      }
+   },
+   "Tesla Roadster 2.5 Sport": {
+      "Laps": {
+         "Llandow": [
+            53.48
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Tesla Roadster 2.5 Sport",
+         "Type": "Car",
+         "Manufacturer": "Tesla",
+         "Country": "United States",
+         "Introduced_Year": 2011.0,
+         "0-100_kph_(s)": 3.9,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 205.0,
+         "Curb_Weight_(kg)": 1237.0,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "375 Volt AC Electric",
+         "Displacement_(l)": NaN,
+         "Power_(ps)": 294.0,
+         "Torque_(Nm)": 400.0,
+         "Engine_Layout": "Middle",
+         "Wheel_Drive": "Rear",
+         "Class": "Convertible",
+         "Trasmission_Name": "Single Speed Fixed Gear",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": NaN
       }
    },
    "Tesla Roadster Sport": {
@@ -112845,11 +112926,6 @@
    },
    "Toyota GR 86 (Mk II)": {
       "Laps": {
-         "Tsukuba": [
-            67.86,
-            68.1,
-            68.87
-         ],
          "Dunnville Autodrome": [
             75.9
          ],
@@ -113425,7 +113501,7 @@
    "Toyota MR2 GT-S": {
       "Laps": {
          "Tsukuba": [
-            68.0
+            66.95
          ]
       },
       "Specs": {
@@ -113713,8 +113789,7 @@
    "Toyota Supra RZ (Mk IV)": {
       "Laps": {
          "Tsukuba": [
-            66.75,
-            68.43
+            65.78
          ],
          "Nihonkai Maze": [
             72.77
@@ -115919,9 +115994,6 @@
          "Anglesey National": [
             67.4
          ],
-         "Tsukuba": [
-            68.51
-         ],
          "Luk Driving Center": [
             72.85
          ],
@@ -116068,9 +116140,6 @@
          ],
          "Llandow": [
             49.0
-         ],
-         "Tsukuba": [
-            67.83
          ],
          "Blyton Park Outer Circuit": [
             74.8
@@ -117552,9 +117621,6 @@
          ],
          "Haute Saintonge": [
             67.71
-         ],
-         "Tsukuba": [
-            68.23
          ],
          "Megara": [
             71.3

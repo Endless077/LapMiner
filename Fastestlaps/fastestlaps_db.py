@@ -19,57 +19,57 @@ def create_tables(conn: sqlite3.Connection):
 
     print("Creating Tables...")
 
-    vehicles_table = '''CREATE TABLE IF NOT EXISTS "Vehicles" (
-	"Vehicle_Name"  TEXT NOT NULL UNIQUE,
-	"HRef"          TEXT,
-	PRIMARY KEY("Vehicle_Name")
+    vehicles_table = '''CREATE TABLE IF NOT EXISTS "VEHICLES" (
+	"vehicle_name"  TEXT NOT NULL UNIQUE,
+	"href"          TEXT,
+	PRIMARY KEY("vehicle_name")
     )'''
 
-    tracks_table = '''CREATE TABLE IF NOT EXISTS "Tracks" (
-	"Track_Name"    TEXT NOT NULL UNIQUE,
-	"HRef"          TEXT,
-    "Country"       TEXT,
-	"Total_Length"  REAL,
-	PRIMARY KEY("Track_Name")
+    tracks_table = '''CREATE TABLE IF NOT EXISTS "TRACKS" (
+	"track_name"    TEXT NOT NULL UNIQUE,
+	"href"          TEXT,
+    "country"       TEXT,
+	"total_length"  REAL,
+	PRIMARY KEY("track_name")
     )'''
 
-    laps_table = '''CREATE TABLE IF NOT EXISTS "Laps" (
-	"Lap_Time"	REAL NOT NULL,
-	"Driver"	TEXT,
-	"PS_KG"	    TEXT,
-	"Track"	    TEXT NOT NULL,
-	"Vehicle"	TEXT NOT NULL,
-	FOREIGN KEY("Track") REFERENCES "Tracks"("Track_Name") ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name") ON DELETE CASCADE ON UPDATE CASCADE
+    laps_table = '''CREATE TABLE IF NOT EXISTS "LAPS" (
+	"lap_time"	REAL NOT NULL,
+	"driver"	TEXT,
+	"ps_kg"	    TEXT,
+	"track"	    TEXT NOT NULL,
+	"vehicle"	TEXT NOT NULL,
+	FOREIGN KEY("track") REFERENCES "TRACKS"("track_name") ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY("vehicle") REFERENCES "VEHICLES"("vehicle_name") ON DELETE CASCADE ON UPDATE CASCADE
     )'''
 
-    specs_table = '''CREATE TABLE IF NOT EXISTS "Specs" (
-	"Vehicle"	        TEXT NOT NULL,
-    "Manufacturer"      TEXT,
-	"Type"	            TEXT,
-	"Type_Usage"	    TEXT,
-    "Introduced_Year"   INTEGER,
-    "Country"	        TEXT,
-	"Curb_Weight"	    REAL,
-	"Wheelbase"	        REAL,
-	"Dim_Long"	        REAL,
-	"Dim_Wide"	        REAL,
-	"Dim_High"	        REAL,
-	"Zero_Hundred"	    REAL,
-	"Hundred_Zero"	    REAL,
-	"Top_Speed"	        INTEGER,
-	"Engine_Type"	    TEXT,
-	"Displacement"	    REAL,
-	"Power_PS"	        INTEGER,
-	"Power_BHP"	        INTEGER,
-	"Power_KW"	        INTEGER,
-	"Torque"	        INTEGER,
-	"Power_Weight"	    INTEGER,
-	"Torque_Weight"	    INTEGER,
-	"Efficiency"	    INTEGER,
-	"Trasmission"	    TEXT,
-	"Layout"	        TEXT,
-	FOREIGN KEY("Vehicle") REFERENCES "Vehicles"("Vehicle_Name") ON DELETE CASCADE ON UPDATE CASCADE
+    specs_table = '''CREATE TABLE IF NOT EXISTS "SPECS" (
+	"vehicle"	        TEXT NOT NULL,
+    "manufacturer"      TEXT,
+	"type"	            TEXT,
+	"type_usage"	    TEXT,
+    "introduced_year"   INTEGER,
+    "country"	        TEXT,
+	"curb_weight"	    REAL,
+	"wheelbase"	        REAL,
+	"dim_long"	        REAL,
+	"dim_wide"	        REAL,
+	"dim_high"	        REAL,
+	"zero_hundred"	    REAL,
+	"hundred_zero"	    REAL,
+	"top_speed"	        INTEGER,
+	"engine_type"	    TEXT,
+	"displacement"	    REAL,
+	"power_ps"	        INTEGER,
+	"power_bhp"	        INTEGER,
+	"power_kw"	        INTEGER,
+	"torque"	        INTEGER,
+	"power_weight"	    INTEGER,
+	"torque_weight"	    INTEGER,
+	"efficiency"	    INTEGER,
+	"trasmission"	    TEXT,
+	"layout"	        TEXT,
+	FOREIGN KEY("vehicle") REFERENCES "VEHICLES"("vehicle_name") ON DELETE CASCADE ON UPDATE CASCADE
     )'''
     
     try:
@@ -96,10 +96,10 @@ def clear_database(conn: sqlite3.Connection):
 
     print("Clearing dataset...")
 
-    del1 = ''' DELETE FROM Laps '''
-    del2 = ''' DELETE FROM Tracks '''
-    del3 = ''' DELETE FROM Specs '''
-    del4 = ''' DELETE FROM Vehicles '''
+    del1 = ''' DELETE FROM LAPS '''
+    del2 = ''' DELETE FROM TRACKS '''
+    del3 = ''' DELETE FROM SPECS '''
+    del4 = ''' DELETE FROM VEHICLES '''
 
     try:
         cur = conn.cursor()
@@ -123,7 +123,7 @@ def insert_new_lap(conn: sqlite3.Connection, lap):
     # :param lap: is a tuple.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Laps(Lap_Time,Driver,PS_KG,Track,Vehicle)
+    sql = ''' INSERT OR IGNORE INTO LAPS(lap_time,driver,ps_kg,track,vehicle)
               VALUES(?,?,?,?,?) '''
 
     cur = conn.cursor()
@@ -141,7 +141,7 @@ def insert_new_track(conn: sqlite3.Connection, track):
     # :param track: is a tuple.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Tracks(Track_Name,HRef,Country,Total_Length)
+    sql = ''' INSERT OR IGNORE INTO TRACKS(track_name,href,country,total_length)
               VALUES(?,?,?,?) '''
               
     cur = conn.cursor()
@@ -159,10 +159,10 @@ def insert_new_specs(conn: sqlite3.Connection, specs):
     # :param specs: is a tuple.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Specs(Vehicle,Manufacturer,Type,Type_Usage,Introduced_Year,Country,
-    Curb_Weight,Wheelbase,Dim_Long,Dim_Wide,Dim_High,Zero_Hundred,Hundred_Zero,Top_Speed,
-    Engine_Type,Displacement,Power_PS,Power_BHP,Power_KW,Torque,
-    Power_Weight,Torque_Weight,Efficiency,Trasmission,Layout)
+    sql = ''' INSERT OR IGNORE INTO SPECS(vehicle,manufacturer,type,type_usage,introduced_year,country,
+    curb_weight,wheelbase,dim_long,dim_wide,dim_high,zero_hundred,hundred_zero,top_speed,
+    engine_type,displacement,power_ps,power_bhp,power_kw,torque,
+    power_weight,torque_weight,efficiency,trasmission,layout)
     VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) '''
 
     cur = conn.cursor()
@@ -180,7 +180,7 @@ def insert_new_vehicle(conn: sqlite3.Connection, vehicle):
     # :param vehicle: is a tuple.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO Vehicles(Vehicle_Name,Href)
+    sql = ''' INSERT OR IGNORE INTO VEHICLES(vehicle_name,href)
               VALUES(?,?) '''
               
     cur = conn.cursor()
@@ -206,7 +206,7 @@ def get_all_laps(conn: sqlite3.Connection):
     
     print("Getting all laps data...")
 
-    sql = ''' SELECT * FROM Laps '''
+    sql = ''' SELECT * FROM LAPS '''
               
     cur = conn.cursor()
     cur.execute(sql)
@@ -224,7 +224,7 @@ def get_all_tracks(conn: sqlite3.Connection):
 
     print("Getting all traks data...")
 
-    sql = ''' SELECT * FROM Tracks '''
+    sql = ''' SELECT * FROM TRACKS '''
               
     cur = conn.cursor()
     cur.execute(sql)
@@ -242,7 +242,7 @@ def get_all_specs(conn: sqlite3.Connection):
     
     print("Getting all laps data...")
 
-    sql = ''' SELECT * FROM Specs '''
+    sql = ''' SELECT * FROM SPECS '''
               
     cur = conn.cursor()
     cur.execute(sql)
@@ -260,7 +260,7 @@ def get_all_vehicles(conn: sqlite3.Connection):
 
     print("Getting all vehicles data...")
 
-    sql = ''' SELECT * FROM Vehicles '''
+    sql = ''' SELECT * FROM VEHICLES '''
               
     cur = conn.cursor()
     cur.execute(sql)

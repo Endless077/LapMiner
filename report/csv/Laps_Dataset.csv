@@ -302,7 +302,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 84.2,Tiff Needell,Anglesey Coastal,Alpina D3 Biturbo
 86.22,Vicky Butler-Henderson,Anglesey Coastal,Alpina D3 Biturbo Touring
 77.4,unknown,Anglesey Coastal,Ariel Atom 3 (300 PS)
-74.8,unknown,Anglesey Coastal,Ariel Atom 4
+74.8,unknown,Anglesey Coastal,Ariel Atom 4 (324 PS)
 82.59,unknown,Anglesey Coastal,Aston Martin V8 Vantage S
 76.0,unknown,Anglesey Coastal,Aston Martin Vantage GT12
 76.2,Chris Harris,Anglesey Coastal,Audi R8 V10 5.2 FSI Plus
@@ -413,7 +413,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 85.9,Vicky Butler-Henderson,Anglesey Coastal,Volvo V60 Polestar
 101.55,unknown,Anglesey International Gp,Alfa Romeo Giulia QV
 101.18,AtomicDad,Anglesey International Gp,Ariel Atom 3.5 (314 PS)
-95.2,unknown,Anglesey International Gp,Ariel Atom 4
+95.2,unknown,Anglesey International Gp,Ariel Atom 4 (324 PS)
 102.5,unknown,Anglesey International Gp,Aston Martin DBX 707
 100.8,Chris Harris,Anglesey International Gp,Aston Martin V12 Vantage S
 100.57,unknown,Anglesey International Gp,Audi TT RS Coupe (Mk III)
@@ -707,7 +707,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 72.7,unknown,Autocar Dry Handling Track,Alfa Romeo Giulia QV
 83.9,unknown,Autocar Dry Handling Track,Alfa Romeo MiTo 1.4 TB 16V
 71.2,unknown,Autocar Dry Handling Track,Alpina B8 Gran Coupe
-68.9,unknown,Autocar Dry Handling Track,Ariel Atom 4
+68.9,unknown,Autocar Dry Handling Track,Ariel Atom 4 (324 PS)
 68.4,unknown,Autocar Dry Handling Track,Ariel Atom 500 V8
 76.9,Nic Cackett,Autocar Dry Handling Track,Ariel Nomad
 71.8,unknown,Autocar Dry Handling Track,Aston Martin DBS Superleggera 
@@ -2059,7 +2059,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 96.17,Randy Pobst,Barber Motorsports Park,Chevrolet Camaro Z/28
 96.29,unknown,Barber Motorsports Park,Chevrolet Camaro Z/28
 104.04,Chris Hudson,Barber Motorsports Park,Ford Shelby Mustang GT350
-110.97,L.Tylavii White,Barber Motorsports Park,Lexus IS-F
+110.97,L.Tylavii White,Barber Motorsports Park,Lexus IS-F (facelift)
 93.1,Ray Ramirez,Barber Motorsports Park,McLaren MP4-12C (625 PS)
 96.45,Randy Pobst,Barber Motorsports Park,Nissan GT-R (R35 550 PS)
 102.13,Derek Weaver,Barber Motorsports Park,Porsche 911 Carrera S
@@ -2263,7 +2263,9 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 63.6,unknown,Bedford Autodrome East Circuit,Porsche 911 GT3 RS (997)
 68.1,unknown,Bedford Autodrome East Circuit,Porsche Cayman S (987)
 66.6,unknown,Bedford Autodrome East Circuit,SLK 55 AMG Black Series
-159.38,anx10us,Bedford Autodrome Gt,Ariel Atom 4
+159.38,anx10us,Bedford Autodrome Gt,Ariel Atom 4 (324 PS)
+154.21,Tom Walpole,Bedford Autodrome Gt,Ariel Atom 4 (355 PS)
+162.81,Peter De La Mare,Bedford Autodrome Gt,BMW M4
 59.0,unknown,Bedford Autodrome South Circuit,Audi RS7 Sportback 
 56.0,unknown,Bedford Autodrome South Circuit,Aventador LP750-4 SV
 64.39,Dan Prosser,Bedford Autodrome South Circuit,BMW M4
@@ -4482,7 +4484,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 95.36,unknown,Contidrom (3.3 Km),Jaguar F-Type P450 (facelift)
 91.6,unknown,Contidrom (3.3 Km),KTM X-Bow R
 98.67,unknown,Contidrom (3.3 Km),Kia Stinger GT
-95.1,unknown,Contidrom (3.3 Km),Lexus IS-F
+95.1,unknown,Contidrom (3.3 Km),Lexus IS-F (facelift)
 96.6,unknown,Contidrom (3.3 Km),Lotus Elise S Club Racer
 97.58,Auto Bild,Contidrom (3.3 Km),Lotus Elise S Club Racer
 94.6,Dirk Möller-Sonntag,Contidrom (3.3 Km),Lotus Exige Cup 260
@@ -4832,7 +4834,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 78.62,unknown,Dunnville Autodrome,Hyundai Veloster N (Mk II)
 73.63,unknown,Dunnville Autodrome,Lexus RC F Track Edition
 80.8,unknown,Dunnville Autodrome,Mazda MX-5 2.0 (Mk IV 184 PS)
-77.0,unknown,Dunnville Autodrome,Nissan 370Z Nismo (facelift)
+77.0,unknown,Dunnville Autodrome,Nissan 370Z Nismo (355 PS)
 76.43,unknown,Dunnville Autodrome,Nissan Z (Z34)
 67.77,unknown,Dunnville Autodrome,Porsche 911 GT3 (992)
 77.07,unknown,Dunnville Autodrome,Subaru WRX
@@ -5597,7 +5599,8 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 232.42,unknown,Gunsai Touge,Mazda Familia GT-Ae
 239.56,unknown,Gunsai Touge,Mazda Familia GT-X
 239.74,unknown,Gunsai Touge,Mitsubishi Lancer GSR
-233.85,unknown,Gunsai Touge,Subaru Legacy RS
+236.42,unknown,Gunsai Touge,Subaru Legacy RS
+233.85,unknown,Gunsai Touge,Subaru Legacy RS Type RA (BC5)
 237.07,unknown,Gunsai Touge,Toyota Celica GT-Four (ST185)
 234.29,unknown,Gunsai Touge,Toyota Celica GT-Four ST185 RC
 46.37,unknown,Gymkhana,Honda Civic SIR
@@ -6953,7 +6956,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 89.29,Deon Joubert,Killarney,Honda S2000 (AP2)
 86.42,Deon Joubert,Killarney,Jaguar XFR (Mk I)
 79.5,Deon Joubert,Killarney,Lamborghini Huracan LP 610-4
-87.37,Deon Joubert,Killarney,Lexus IS-F
+87.37,Deon Joubert,Killarney,Lexus IS-F (facelift)
 87.75,Deon Joubert,Killarney,Lotus Elise 111R
 85.3,Deon Joubert,Killarney,Lotus Elise SC
 86.62,Deon Joubert,Killarney,Lotus Evora
@@ -7623,6 +7626,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 47.3,Steve Sutcliffe,Llandow,Hyundai i20 N (BC3)
 46.5,Tiff Needell,Llandow,Jaguar F-Type R (facelift)
 48.58,Jason Plato,Llandow,Lancer Evo VII FQ-300
+49.81,Jason Plato,Llandow,Lotus Elise SC Clark Type 25
 42.5,Steve Sutcliffe,Llandow,McLaren 570S
 43.05,Chris Harris,Llandow,McLaren 650 S Spider
 47.79,unknown,Llandow,Megane Sport F1-Team R26
@@ -7658,6 +7662,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 47.81,Ben Collins,Llandow,Renault Megane RS Trophy R
 46.9,Steve Sutcliffe,Llandow,Seat Leon Cupra 280 (Mk III)
 49.1,Ryan Cullen,Llandow,Skoda Octavia RS 245
+53.48,Jason Plato,Llandow,Tesla Roadster 2.5 Sport
 45.9,Steve Sutcliffe,Llandow,Toyota GR Yaris (Mk IV)
 47.15,Jason Plato,Llandow,Toyota GR Yaris (Mk IV)
 50.46,Vicki Butler Henderson,Llandow,Toyota Supra SZ-R (Mk V)
@@ -8310,7 +8315,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 90.69,unknown,Mireval,Lamborghini Aventador LP700-4
 94.51,unknown,Mireval,Lamborghini Diablo GT
 94.2,Dirk Möller-Sonntag,Mireval,Lamborghini Gallardo LP560-4
-101.1,Dirk Möller-Sonntag,Mireval,Lexus IS-F
+101.1,Dirk Möller-Sonntag,Mireval,Lexus IS-F (facelift)
 94.21,unknown,Mireval,Lotus 340R
 99.5,unknown,Mireval,Lotus Elise SC
 99.6,Dirk Möller-Sonntag,Mireval,Lotus Elise SC
@@ -9321,7 +9326,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 83.5,unknown,Nelson Ledges Raceway,Porsche Boxster (986 204 PS)
 84.1,unknown,Nelson Ledges Raceway,Saab 9-3 Viggen Coupe (225 PS)
 80.1,unknown,Nelson Ledges Raceway,Toyota Supra Twin Turbo
-98.77,L.Tylavii White,New Jersey Motorsports Park (Thunderbolt),Lexus IS-F
+98.77,L.Tylavii White,New Jersey Motorsports Park (Thunderbolt),Lexus IS-F (facelift)
 66.19,Manabu Orido,Nihonkai Maze,Chevrolet Corvette Z06 (C7)
 67.86,Nobuteru Taniguchi,Nihonkai Maze,Chevrolet Corvette Z06 (C7)
 69.68,Keiichi Tsuchiya,Nihonkai Maze,Chevrolet Corvette Z06 (C7)
@@ -10077,7 +10082,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 91.42,Ben Robinson,Oulton Park (Island Circuit),Noble M12 GTO
 115.19,Goins2754,Pacific Raceways,Camaro SS 1LE Package
 92.26,Goins2754,Pacific Raceways,Chevrolet Corvette Z06 (C6)
-99.65,Goins2754,Pacific Raceways,Dodge Challenger SRT-8
+97.6,Goins2754,Pacific Raceways,Dodge Challenger SRT-8
 79.45,Dirk Ulrich,Palm Beach International Raceway,McLaren Senna (P15)
 103.0,unknown,Palma Renn Arena,Alfa Romeo Giulia QV
 99.0,unknown,Palma Renn Arena,Aventador LP750-4 SV
@@ -10155,7 +10160,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 74.3,unknown,Papenburg Handling Course,Ferrari 458 Speciale
 78.2,unknown,Papenburg Handling Course,Ferrari F430
 77.55,unknown,Papenburg Handling Course,Porsche 911 Turbo (997)
-66.53,anx10us,Pembrey (Post 2017),Ariel Atom 4
+66.53,anx10us,Pembrey (Post 2017),Ariel Atom 4 (324 PS)
 73.7,Ryan Cullen,Pembrey (Post 2017),Audi RS3 (8V facelift)
 74.21,Ryan Cullen,Pembrey (Post 2017),BMW M140i
 76.83,Ryan Cullen,Pembrey (Post 2017),VW Golf R Variant (Mk VII)
@@ -10623,7 +10628,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 75.9,unknown,Ring Knutstorp,Mercedes-Benz E 53 AMG 4MATIC+
 85.1,unknown,Ring Knutstorp,Mercedes-Benz S65 AMG (W220)
 83.4,unknown,Ring Knutstorp,Mitsubishi Colt CZT
-61.1,Filip Svensson,Ring Knutstorp,Mitsubishi Lancer Evo V
+61.1,Filip Svensson,Ring Knutstorp,Mitsubishi Lancer Evo V GSR
 77.5,unknown,Ring Knutstorp,Mitsubishi Lancer Evo VIII
 66.36,Jonna Jumisko,Ring Knutstorp,Nissan 200SX (S14)
 78.3,unknown,Ring Knutstorp,Nissan 350Z (287 PS)
@@ -11425,7 +11430,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 70.2,unknown,Silverstone (National Circuit),Lotus Exige 240R
 58.24,Mat Jackson,Silverstone (National Circuit),McLaren P1
 72.89,unknown,Silverstone (National Circuit),Mercedes-Benz E 55 AMG (W210)
-71.93,unknown,Silverstone (National Circuit),Mitsubishi Lancer Evo V
+71.93,unknown,Silverstone (National Circuit),Mitsubishi Lancer Evo V GSR
 74.6,unknown,Silverstone (National Circuit),Opel Astra OPC
 72.12,unknown,Silverstone (National Circuit),Porsche 911 Carrera (996)
 60.0,Steve Sutcliffe,Silverstone (National Circuit),Porsche 911 GT3 RS (991)
@@ -11601,7 +11606,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 82.63,unknown,Silverstone Southern Loop,RUF CTR2
 71.2,unknown,Silverstone Southern Loop,Radical RXC Turbo
 83.93,unknown,Silverstone Southern Loop,TVR Cerbera 4.5
-54.71,unknown,Silverstone Stowe,Ariel Atom 4
+54.71,unknown,Silverstone Stowe,Ariel Atom 4 (324 PS)
 59.22,unknown,Silverstone Stowe,Caterham Seven 420R
 63.2,unknown,Silverstone Stowe,Jannarelly Design-1
 58.42,unknown,Silverstone Stowe,Lotus Exige Cup 430 (Mk III)
@@ -12221,7 +12226,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 114.37,unknown,Sugo,Porsche Carrera RS 2.7
 109.77,unknown,Sugo,Toyota MR-2 1.8 Roadster
 103.06,unknown,Sugo,Toyota Supra RZ (Mk IV)
-87.76,L.Tylavii White,Summit Point,Lexus IS-F
+87.76,L.Tylavii White,Summit Point,Lexus IS-F (facelift)
 89.25,Antonio Giovinazzi,Suzuka,Alfa Romeo C38
 89.36,Kimi Räikkönen,Suzuka,Alfa Romeo C38
 90.71,Valtteri Bottas,Suzuka,Alfa Romeo C42
@@ -12272,7 +12277,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 154.08,unknown,Suzuka,Honda NSX-R
 137.0,Robert Serwanski,Suzuka,Koenigsegg One:1
 152.98,Takuya Kurosawa,Suzuka,Lamborghini Diablo SV
-155.7,unknown,Suzuka,Lancer Evolution VI Tommi Mak..
+155.7,unknown,Suzuka,Lancer Evo VI GSR Tommi Makin..
 166.1,unknown,Suzuka,Lotus Elise 111R
 93.35,Esteban Ocon,Suzuka,Manor MRT05
 93.56,Pascal Wehrlein,Suzuka,Manor MRT05
@@ -12512,7 +12517,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 82.3,The Stig,Top Gear Track,Alpine A110 S (Mk II 300 PS)
 79.5,The Stig,Top Gear Track,Ariel Atom
 84.0,The Stig,Top Gear Track,Ariel Atom 2
-76.0,The Stig,Top Gear Track,Ariel Atom 4
+76.0,The Stig,Top Gear Track,Ariel Atom 4 (324 PS)
 75.1,The Stig,Top Gear Track,Ariel Atom 500 V8
 77.3,The Stig,Top Gear Track,Ascari A10
 80.7,The Stig,Top Gear Track,Ascari KZ1
@@ -12641,6 +12646,9 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 83.7,The Stig,Top Gear Track,Lamborghini Murcielago
 79.8,The Stig,Top Gear Track,Lamborghini Murcielago LP640
 81.7,The Stig,Top Gear Track,Lamborghini Urus
+88.9,The Stig,Top Gear Track,Lancer Evo VIII FQ-300
+86.0,The Stig,Top Gear Track,Lancer Evo VIII FQ-320 MR
+84.8,The Stig,Top Gear Track,Lancer Evo VIII FQ-400
 88.22,The Stig,Top Gear Track,Lancer Evo X FQ300 SST
 87.4,The Stig,Top Gear Track,Leon 2.0 TSI Sportstourer
 86.9,The Stig,Top Gear Track,Lexus IS F
@@ -12678,9 +12686,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 81.6,The Stig,Top Gear Track,Mercedes-Benz SLS AMG
 79.6,The Stig,Top Gear Track,Mercedes-Benz SLS AMG Roadster
 108.3,Richard Hammond,Top Gear Track,Mini Cooper
-88.9,The Stig,Top Gear Track,Mitsubishi Evo VIII FQ 300
-84.8,The Stig,Top Gear Track,Mitsubishi Evo VIII FQ400
-86.0,The Stig,Top Gear Track,Mitsubishi Evo VIII MR FQ 320
 100.4,The Stig,Top Gear Track,Morgan 3 Wheeler
 85.9,The Stig,Top Gear Track,Morgan Aero 8 GTN
 79.0,The Stig,Top Gear Track,Murcielago LP 670-4 SV
@@ -12821,13 +12826,8 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 63.88,unknown,Tsukuba,Audi R8 4.2 FSI Quattro (Mk I)
 64.87,Naoki Hattori,Tsukuba,Audi R8 V10 5.2 FSI (Mk I)
 62.21,unknown,Tsukuba,Audi R8 V10 Plus (Mk II)
-68.37,unknown,Tsukuba,Audi RS4 (B7)
-68.3,unknown,Tsukuba,Audi S8 (D3)
 66.27,unknown,Tsukuba,Audi TT RS Coupe (Mk II)
-67.86,unknown,Tsukuba,BMW 135i Coupe (E82)
-68.48,unknown,Tsukuba,BMW M3 (E36 286 PS E36)
-68.46,unknown,Tsukuba,BMW M3 (E36)
-67.11,unknown,Tsukuba,BMW M3 (E46)
+66.82,unknown,Tsukuba,BMW M3 (E46)
 66.15,unknown,Tsukuba,BMW M3 (E90)
 65.33,unknown,Tsukuba,BMW M3 (E92)
 64.4,unknown,Tsukuba,BMW M3 (F80)
@@ -12839,72 +12839,57 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 66.95,unknown,Tsukuba,BMW M440i xDrive 
 66.56,Keiichi Tsuchiya,Tsukuba,BMW M5 (E60)
 67.43,unknown,Tsukuba,BMW M6
-68.17,unknown,Tsukuba,BMW Z3 M Roadster (321 PS)
-68.73,unknown,Tsukuba,BMW Z4 3.0i
-68.49,unknown,Tsukuba,BMW Z4 sDrive 35is
-68.45,unknown,Tsukuba,BMW Z4 sDrive35i
 65.91,unknown,Tsukuba,Caterham R300 Superlight
 64.55,unknown,Tsukuba,Chevrolet Corvette Z06 (C6)
 62.55,unknown,Tsukuba,Chevrolet Corvette ZR1
-67.89,unknown,Tsukuba,Dodge Viper RT/10 (405 PS)
 65.21,unknown,Tsukuba,Ferrari 360 Modena
-68.31,unknown,Tsukuba,Ferrari 430 Scuderia
-67.74,unknown,Tsukuba,Ferrari 456 GT
 62.24,unknown,Tsukuba,Ferrari 458 Italia
-68.68,unknown,Tsukuba,Ferrari 512 TR
 65.92,unknown,Tsukuba,Ferrari 599 GTB Fiorano
 65.61,unknown,Tsukuba,Ferrari F355
 63.73,Keiichi Tsuchiya,Tsukuba,Ferrari F40
 63.95,unknown,Tsukuba,Ferrari F40
 65.81,unknown,Tsukuba,Ferrari F50
-68.25,unknown,Tsukuba,Ford Mustang GT 5.0
 63.16,unknown,Tsukuba,Gallardo LP550-2 Valentino Ba..
 61.6,unknown,Tsukuba,Gallardo Superleggera
 67.4,unknown,Tsukuba,Honda Civic Type R (FK2)
-68.0,Naoki Hattori,Tsukuba,Honda Civic Type R (FK2)
 65.97,Keiichi Tsuchiya,Tsukuba,Honda Civic Type R (FK8)
 66.68,unknown,Tsukuba,Honda Civic Type RR Mugen
 67.49,unknown,Tsukuba,Honda Civic Type-R JDM (FD2)
 67.17,unknown,Tsukuba,Honda NSX (3.0)
-68.71,unknown,Tsukuba,Honda NSX (3.2)
+66.53,unknown,Tsukuba,Honda NSX (3.2)
 62.47,Keiichi Tsuchiya,Tsukuba,Honda NSX (Mk II)
 63.26,unknown,Tsukuba,Honda NSX (Mk II)
-66.89,unknown,Tsukuba,Honda NSX (facelift)
+65.41,unknown,Tsukuba,Honda NSX (facelift)
 65.17,unknown,Tsukuba,Honda NSX Type-S Zero
 64.83,unknown,Tsukuba,Honda NSX-R
 65.41,Motoharu Kurosawa,Tsukuba,Honda NSX-R
 64.2,unknown,Tsukuba,Honda NSX-R (facelift)
-67.72,unknown,Tsukuba,Honda S2000 Type S
-68.87,unknown,Tsukuba,Honda S2000 Type V
 67.24,Manabu Orido,Tsukuba,Honda S660
+66.35,unknown,Tsukuba,Impreza S202 STI Version
+64.72,unknown,Tsukuba,Impreza WRX STI Spec C Type R..
 64.69,unknown,Tsukuba,Impreza WRX STI Spec C Type RA
 64.95,Keiichi Tsuchiya,Tsukuba,Impreza WRX STI Spec C Type RA
 63.11,unknown,Tsukuba,Jaguar F-Type SVR
 63.54,Takayuki Kinoshita,Tsukuba,KTM X-Bow
-67.66,unknown,Tsukuba,Lamborghini Diablo
 64.14,unknown,Tsukuba,Lamborghini Gallardo
 64.63,unknown,Tsukuba,Lamborghini Gallardo (520 PS)
 63.23,unknown,Tsukuba,Lamborghini Gallardo LP560-4
+65.69,unknown,Tsukuba,Lancer Evo VI GSR Tommi Makin..
 64.8,unknown,Tsukuba,Lancer Evo VIII GSR MR
 65.89,unknown,Tsukuba,Lancer Evo VIII RS 5MT
-65.49,unknown,Tsukuba,Lancer Evo VIII RS 6MT
+65.3,unknown,Tsukuba,Lancer Evo VIII RS 6MT
+65.38,unknown,Tsukuba,Lancer Evo VIII RS MR 5MT
+64.4,unknown,Tsukuba,Lancer Evo VIII RS MR 6MT
+67.05,unknown,Tsukuba,Lancer Evo X GSR TC-SST
+67.59,unknown,Tsukuba,Lancer Evo X GSR TC-SST
 66.12,unknown,Tsukuba,Lancer Evo X Ralliart
-67.38,unknown,Tsukuba,Lancer Evolution IV GSR
-65.69,unknown,Tsukuba,Lancer Evolution VI Tommi Mak..
-64.7,unknown,Tsukuba,Lancer Evolution VIII MR
-65.38,unknown,Tsukuba,Lancer Evolution VIII MR RS 5..
-64.4,unknown,Tsukuba,Lancer Evolution VIII MR RS 6..
-67.63,unknown,Tsukuba,Lancer RS Evolution II
-67.35,unknown,Tsukuba,LancerEvolution III GSR
 67.09,Kinoshita San,Tsukuba,Lexus IS F
 66.75,Nobuteru Taniguchi,Tsukuba,Lexus RC F
 64.24,Seiji Ara,Tsukuba,Lotus 2-Eleven
 67.14,unknown,Tsukuba,Lotus Elise 111R
 65.88,unknown,Tsukuba,Lotus Exige Cup 260
 64.33,unknown,Tsukuba,Lotus Exige S (V6)
-68.7,unknown,Tsukuba,Maserati Quattroporte S
-67.23,unknown,Tsukuba,Mazda RX-7 (255 PS)
-68.67,Motoharu Kurosawa,Tsukuba,Mazda RX-7 (255 PS)
+66.32,unknown,Tsukuba,Mazda RX-7 (255 PS)
 64.88,unknown,Tsukuba,Mazda RX-7 (265 PS)
 64.93,unknown,Tsukuba,Mazda RX-7 (280 PS)
 64.62,Naoki Hattori,Tsukuba,McLaren F1
@@ -12919,23 +12904,32 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 66.5,unknown,Tsukuba,Mercedes-Benz E63 AMG
 67.48,unknown,Tsukuba,Mercedes-Benz GLA 45 AMG
 67.15,unknown,Tsukuba,Mercedes-Benz S65 AMG Coupe
-68.3,unknown,Tsukuba,Mercedes-Benz SL 55 AMG
 67.45,unknown,Tsukuba,Mercedes-Benz SLK 55 AMG
-64.93,unknown,Tsukuba,Mitsubishi Evo VII
-68.35,unknown,Tsukuba,Mitsubishi GTO MR
 67.36,Katsura Shinichi,Tsukuba,Mitsubishi GTO MR (Mk II)
-67.78,unknown,Tsukuba,Mitsubishi GTO MR (Mk II)
+67.55,unknown,Tsukuba,Mitsubishi GTO MR (Mk II)
 65.53,unknown,Tsukuba,Mitsubishi Lancer EVO IX
+66.52,unknown,Tsukuba,Mitsubishi Lancer Evo II RS
+67.35,unknown,Tsukuba,Mitsubishi Lancer Evo III GSR
+67.38,unknown,Tsukuba,Mitsubishi Lancer Evo IV GSR
+67.0,unknown,Tsukuba,Mitsubishi Lancer Evo IV RS
 65.1,unknown,Tsukuba,Mitsubishi Lancer Evo IX GSR
 64.88,unknown,Tsukuba,Mitsubishi Lancer Evo IX GT
-64.65,unknown,Tsukuba,Mitsubishi Lancer Evo V
+65.33,unknown,Tsukuba,Mitsubishi Lancer Evo IX RS
+65.7,unknown,Tsukuba,Mitsubishi Lancer Evo IX RS MR
+64.65,unknown,Tsukuba,Mitsubishi Lancer Evo V GSR
 64.69,unknown,Tsukuba,Mitsubishi Lancer Evo V RS
 65.15,unknown,Tsukuba,Mitsubishi Lancer Evo VI
+65.36,unknown,Tsukuba,Mitsubishi Lancer Evo VI RS
+64.93,unknown,Tsukuba,Mitsubishi Lancer Evo VII GSR
 65.11,unknown,Tsukuba,Mitsubishi Lancer Evo VII RS
 65.2,unknown,Tsukuba,Mitsubishi Lancer Evo VIII
+66.0,unknown,Tsukuba,Mitsubishi Lancer Evo VIII GSR
+64.7,unknown,Tsukuba,Mitsubishi Lancer Evo VIII MR
 64.15,unknown,Tsukuba,Mitsubishi Lancer Evo VIII RS
-67.87,unknown,Tsukuba,Nissan 350Z (313 PS)
+66.46,unknown,Tsukuba,Mitsubishi Lancer Evo X GSR
+67.3,unknown,Tsukuba,Nissan 350Z (313 PS)
 66.67,unknown,Tsukuba,Nissan 370Z
+67.45,unknown,Tsukuba,Nissan 370Z Nismo (355 PS)
 61.19,unknown,Tsukuba,Nissan GT-R (R35 570PS)
 63.65,Takuto Iguchi,Tsukuba,Nissan GT-R (R35 570PS)
 61.34,unknown,Tsukuba,Nissan GT-R (R35)
@@ -12945,27 +12939,23 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 61.74,Naoki Hattori,Tsukuba,Nissan GT-R Spec-V (R35)
 62.48,unknown,Tsukuba,Nissan GT-R Spec-V (R35)
 64.0,unknown,Tsukuba,Nissan NISMO 400R
-66.66,unknown,Tsukuba,Nissan Nismo 350Z
+66.2,unknown,Tsukuba,Nissan Nismo 350Z
 66.64,unknown,Tsukuba,Nissan Nismo 370Z
 61.15,unknown,Tsukuba,Nissan Nismo R34 Z-Tune
-67.66,unknown,Tsukuba,Nissan Silvia S15 Spec R Aero
-68.22,unknown,Tsukuba,Nissan Skyline GT-R (R32)
-68.34,Keiichi Tsuchiya,Tsukuba,Nissan Skyline GT-R (R32)
+66.72,unknown,Tsukuba,Nissan Skyline GT-R (R32)
 65.0,Motoharu Kurosawa,Tsukuba,Nissan Skyline GT-R (R33)
-67.09,unknown,Tsukuba,Nissan Skyline GT-R (R33)
+65.56,unknown,Tsukuba,Nissan Skyline GT-R (R33)
 66.0,unknown,Tsukuba,Nissan Skyline GT-R (R34)
+65.7,unknown,Tsukuba,Nissan Skyline GT-R M-Spec
 63.58,unknown,Tsukuba,Nissan Skyline GT-R V-Spec
 64.55,unknown,Tsukuba,Nissan Skyline GT-R V-Spec
-68.59,Hironori Takeuchi,Tsukuba,Nissan Skyline GT-R V-Spec
 66.37,unknown,Tsukuba,Nissan Skyline GT-R V-Spec II
 65.1,unknown,Tsukuba,Nissan Skyline GT-R V-Spec N1
-67.45,unknown,Tsukuba,Nissan Skyline GT-R V-spec
-67.87,unknown,Tsukuba,Peugeot 308 GTi 270 (T9)
+65.96,unknown,Tsukuba,Nissan Skyline GT-R V-spec
 65.58,unknown,Tsukuba,Porsche 911 Carrera
-67.45,unknown,Tsukuba,Porsche 911 Carrera
+67.39,unknown,Tsukuba,Porsche 911 Carrera
 65.44,unknown,Tsukuba,Porsche 911 Carrera (991)
-68.46,unknown,Tsukuba,Porsche 911 Carrera (993)
-68.06,unknown,Tsukuba,Porsche 911 Carrera (996)
+67.13,unknown,Tsukuba,Porsche 911 Carrera (996)
 65.96,unknown,Tsukuba,Porsche 911 Carrera 4
 65.98,unknown,Tsukuba,Porsche 911 Carrera 4 (997)
 64.42,unknown,Tsukuba,Porsche 911 Carrera 4S
@@ -12976,13 +12966,13 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 62.49,Seiji Ara,Tsukuba,Porsche 911 Carrera S
 65.35,unknown,Tsukuba,Porsche 911 Carrera S
 63.69,unknown,Tsukuba,Porsche 911 Carrera S (991)
+65.48,unknown,Tsukuba,Porsche 911 Carrera S (997)
 64.97,unknown,Tsukuba,Porsche 911 Cup (964 265 PS)
 64.25,unknown,Tsukuba,Porsche 911 GT2 (993)
 63.26,unknown,Tsukuba,Porsche 911 GT2 (997)
 60.2,unknown,Tsukuba,Porsche 911 GT3 
 61.34,unknown,Tsukuba,Porsche 911 GT3 (991)
 65.0,unknown,Tsukuba,Porsche 911 GT3 (996 facelift)
-67.68,unknown,Tsukuba,Porsche 911 GT3 (996)
 64.84,unknown,Tsukuba,Porsche 911 GT3 (997)
 58.77,Nobuteru Taniguchi,Tsukuba,Porsche 911 GT3 RS (991)
 59.14,Keiichi Tsuchiya,Tsukuba,Porsche 911 GT3 RS (991)
@@ -12993,23 +12983,20 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 64.12,Daisuke Ito,Tsukuba,Porsche 911 Turbo (997)
 65.23,Takayuki Kinoshita,Tsukuba,Porsche 911 Turbo (997)
 65.49,unknown,Tsukuba,Porsche 911 Turbo (997)
-67.74,Takashi Ohi,Tsukuba,Porsche 911 Turbo 3.6 (964)
 65.97,unknown,Tsukuba,Porsche 911 Turbo 3.6 (993)
 61.4,unknown,Tsukuba,Porsche 911 Turbo S
 63.23,unknown,Tsukuba,Porsche 911 Turbo S
 62.35,unknown,Tsukuba,Porsche 911 Turbo S (991)
-68.15,unknown,Tsukuba,Porsche Boxster S
 66.4,unknown,Tsukuba,Porsche Boxster S (987 280 PS)
 66.65,unknown,Tsukuba,Porsche Cayman S
 66.01,unknown,Tsukuba,Porsche Cayman S (981)
 67.45,unknown,Tsukuba,Porsche Macan Turbo (400 PS)
-67.63,unknown,Tsukuba,Porsche Panamera S
+66.15,unknown,Tsukuba,Porsche Panamera 4S (Mk I)
 65.22,unknown,Tsukuba,Porsche Panamera Turbo
 66.77,unknown,Tsukuba,RUF BR2 EKS
 66.12,unknown,Tsukuba,RUF CTR Yellow Bird
 61.55,unknown,Tsukuba,Radical SR4 (250 PS)
 60.29,Yuji Ide,Tsukuba,Radical SR4 1.2
-67.87,unknown,Tsukuba,Renault Megane R26.R
 67.5,unknown,Tsukuba,Renault Megane RS (Mk III)
 67.5,unknown,Tsukuba,Renault Megane RS 265 Trophy
 66.21,unknown,Tsukuba,Renault Megane RS 275 Trophy R
@@ -13019,36 +13006,29 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 63.59,Nobuteru Taniguchi,Tsukuba,Renault Megane RS Trophy R
 64.72,unknown,Tsukuba,Renault Megane RS Trophy R
 65.29,unknown,Tsukuba,Skyline GT-R Autech 40th Anni..
+66.73,unknown,Tsukuba,Skyline GT-R V-Spec II Nur
+67.07,unknown,Tsukuba,Stagea Autech Version 260 RS
 64.9,Takayuki Kinoshita,Tsukuba,Subaru Impreza S204
-64.72,unknown,Tsukuba,Subaru Impreza STI Type RA-R
-68.53,unknown,Tsukuba,Subaru Impreza WRX STI A-Line
+65.67,unknown,Tsukuba,Subaru Impreza WRX STI
+65.92,unknown,Tsukuba,Subaru Impreza WRX STI
 66.28,unknown,Tsukuba,Subaru Impreza WRX STI R205
 64.17,unknown,Tsukuba,Subaru Impreza WRX STI Spec C
+66.56,unknown,Tsukuba,Subaru Impreza WRX STI Type RA
 64.84,unknown,Tsukuba,Subaru Impreza WRX STi
-65.67,unknown,Tsukuba,Subaru Impreza WRX STi (2.0)
 65.88,unknown,Tsukuba,Subaru Impreza WRX STi Spec C
 66.51,unknown,Tsukuba,Subaru Impreza WRX Type R STI
+66.26,unknown,Tsukuba,Subaru Impreza WRX Type RA
 66.52,unknown,Tsukuba,Subaru Impreza WRX Type RA STI
 66.62,Manabu Orido,Tsukuba,Subaru WRX STI (2.0 JDM)
 66.79,unknown,Tsukuba,Subaru WRX STI (2.0 JDM)
-68.81,unknown,Tsukuba,Subaru WRX STI sedan
-68.72,unknown,Tsukuba,TVR Cerbera Speed Six
 66.41,unknown,Tsukuba,TVR Tamora
-68.77,unknown,Tsukuba,TVR Tuscan (Mk II)
 63.3,Unplugged Performance,Tsukuba,Tesla Model 3 
-67.86,Masahiro Sasaki,Tsukuba,Toyota GR 86 (Mk II)
-68.1,Manabu Orido,Tsukuba,Toyota GR 86 (Mk II)
-68.87,Keiichi Tsuchiya,Tsukuba,Toyota GR 86 (Mk II)
 58.25,Masahiro Sasaki,Tsukuba,Toyota GR Yaris (Mk IV)
 64.81,Nobuteru Taniguchi,Tsukuba,Toyota GR Yaris (Mk IV)
 66.22,unknown,Tsukuba,Toyota GR Yaris (Mk IV)
 66.95,Keiichi Tsuchiya,Tsukuba,Toyota GR Yaris (Mk IV)
-68.0,unknown,Tsukuba,Toyota MR2 GT-S
-66.75,unknown,Tsukuba,Toyota Supra RZ (Mk IV)
-68.43,Motoharu Kurosawa,Tsukuba,Toyota Supra RZ (Mk IV)
-68.51,unknown,Tsukuba,VW Golf R (Mk VI)
-67.83,unknown,Tsukuba,VW Golf R (Mk VII)
-68.23,unknown,Tsukuba,VW Scirocco R (Mk III)
+66.95,unknown,Tsukuba,Toyota MR2 GT-S
+65.78,unknown,Tsukuba,Toyota Supra RZ (Mk IV)
 65.66,unknown,Tsukuba,Venturi 400 GT
 98.28,unknown,Twin Ring Motegi East,BMW M3 CSL (E46)
 102.5,Naomi Hattori,Twin Ring Motegi East,BMW M5 (E60)
@@ -13304,8 +13284,8 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 86.78,unknown,Vairano Handling Course,Mini Cooper S (Mk II)
 87.26,unknown,Vairano Handling Course,Mini Cooper S Works
 87.5,Davide Fugazza,Vairano Handling Course,Mito Quadrifoglio Verde
-81.0,unknown,Vairano Handling Course,Mitsubishi Evo X RS
 81.81,unknown,Vairano Handling Course,Mitsubishi Lancer EVO IX
+81.0,unknown,Vairano Handling Course,Mitsubishi Lancer Evo X RS
 84.4,unknown,Vairano Handling Course,Nissan 350Z (287 PS)
 84.0,unknown,Vairano Handling Course,Nissan 350Z (313 PS)
 85.61,unknown,Vairano Handling Course,Nissan 350Z Roadster
@@ -14373,7 +14353,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 105.93,Cameron Mcconville,Winton (National Circuit),Jaguar XKR Coupe
 107.8,unknown,Winton (National Circuit),Kia Pro Ceed GT (Mk II)
 97.51,Cameron McConville,Winton (National Circuit),Lamborghini Gallardo
-101.0,Warren Luff,Winton (National Circuit),Lancer Evolution VI Tommi Mak..
+101.0,Warren Luff,Winton (National Circuit),Lancer Evo VI GSR Tommi Makin..
 106.5,Brendan Reeves,Winton (National Circuit),Lexus XE30 IS350 F-Sport
 96.06,Niko French,Winton (National Circuit),Lotus Elise 111R
 99.99,NikoFrench,Winton (National Circuit),Lotus Elise 111R

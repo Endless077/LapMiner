@@ -82,8 +82,8 @@ def check_tree_struct():
 
     if(not os.path.exists(verbose.PATH)):
         os.mkdir(verbose.PATH)
-    else:
-        for path in paths:
+    
+    for path in paths:
             if(not os.path.exists(path)):
                 os.mkdir(path)
             else:

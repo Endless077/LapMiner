@@ -56,13 +56,13 @@ class Layout:
 class Dimensions:
 
     # Init function
-    def __init__(self, dim_id: int, curb_weight: float, wheelbase: float, long: float, high: float, wide: float):
+    def __init__(self, dim_id: int, curb_weight: float, wheelbase: float, long: float, wide: float, high: float):
         self.__dim_id = dim_id
         self.__curb_weight = curb_weight
         self.__wheelbase = wheelbase
         self.__long = long
-        self.__high = high
         self.__wide = wide
+        self.__high = high
     
     # String function
     def __str__(self) -> str:
@@ -98,19 +98,18 @@ class Dimensions:
         self.__long = value
 
     @property
-    def high(self):
-        return self.__high
-    @high.setter
-    def high(self, value):
-        self.__high = value
-
-    @property
     def wide(self):
         return self.__wide
     @wide.setter
     def wide(self, value):
         self.__wide = value
 
+    @property
+    def high(self):
+        return self.__high
+    @high.setter
+    def high(self, value):
+        self.__high = value
 @dataclass
 class Engine:
 
@@ -209,15 +208,15 @@ class Trasmission:
 class Performance:
 
     # Init function
-    def __init__(self, performance_id: int, zero_hundred: float, break_distance: float, top_speed: float):
+    def __init__(self, performance_id: int, accelleration: float, break_distance: float, top_speed: float):
         self.__performance_id = performance_id
-        self.__zero_hundred = zero_hundred
+        self.__accelleration = accelleration
         self.__break_distance = break_distance
         self.__top_speed = top_speed
     
     # String function
     def __str__(self) -> str:
-        return f"Performance n° {self.__performance_id}:\n --0-100 (s): {self.__zero_hundred}\n --Break Distance (m): {self.__break_distance}\n --Top Speed (kph): {self.__top_speed}"
+        return f"Performance n° {self.__performance_id}:\n --0-100 (s): {self.__accelleration}\n --Break Distance (m): {self.__break_distance}\n --Top Speed (kph): {self.__top_speed}"
 
     # Getter and Setter
     @property
@@ -228,11 +227,11 @@ class Performance:
         self.__performance_id = value
 
     @property
-    def zero_hundred(self):
-        return self.__zero_hundred
-    @zero_hundred.setter
-    def zero_hundred(self, value):
-        self.__zero_hundred = value
+    def accelleration(self):
+        return self.__accelleration
+    @accelleration.setter
+    def accelleration(self, value):
+        self.__accelleration = value
 
     @property
     def break_distance(self):

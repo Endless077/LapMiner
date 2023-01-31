@@ -14,40 +14,40 @@ import database as db
 import utils
 
 LAPS_HEADERS = {
-    'Lap_Time': 'Lap_Time',
-    'Driver': 'Driver',
-    'Track': 'Track_Name',
-    'Vehicle': 'Vehicle_Name'
+    'lap_time': 'Lap_Time',
+    'driver': 'Driver',
+    'track_name': 'Track_Name',
+    'vehicle_name': 'Vehicle_Name'
 }
 TRACK_HEADERS = {
-    'Track_Name': 'Track_Name',
-    'Country': 'Country',
-    'Total_Length': 'Length_(km)'
+    'track_name': 'Track_Name',
+    'country': 'Country',
+    'total_length': 'Length_(km)'
 }
 VEHICLE_HEADERS = {
-    "Vehicle_Name": "Vehicle_Name",
-    "Type": "Type",
-    "Manufacturer": "Manufacturer",
-    "Origin_Country": "Country",
-    "Introduced_Year": "Introduced_Year",
-    "Zero_Hundred": "0-100_kph_(s)",
-    "Break_Distance": "100-0_(m)",
-    "Top_Speed": "Top_Speed_(kph)",
-    "Curb_Weight": "Curb_Weight_(kg)",
-    "Wheelbase": "Wheelbase_(m)",
-    "Long": "Long_(m)",
-    "High": "High_(m)",
-    "Wide": "Wide_(m)",
-    "Engine": "Engine",
-    "Displacement": "Displacement_(l)",
-    "Power": "Power_(ps)",
-    "Torque": "Torque_(Nm)",
-    "Engine_Layout": "Engine_Layout",
-    "Wheel_Drive": "Wheel_Drive",
-    "Class_Type": "Class",
-    "Trasmission_Name": "Trasmission_Name",
-    "Trasmission_Type": "Trasmission_Type",
-    "N_Trasmission": "N_Trasmission"
+    "vehicle_name": "Vehicle_Name",
+    "type": "Type",
+    "manufacturer": "Manufacturer",
+    "origin_country": "Country",
+    "introduced_year": "Introduced_Year",
+    "accelleration": "0-100_kph_(s)",
+    "break_distance": "100-0_(m)",
+    "top_speed": "Top_Speed_(kph)",
+    "curb_weight": "Curb_Weight_(kg)",
+    "wheelbase": "Wheelbase_(m)",
+    "long": "Long_(m)",
+    "high": "High_(m)",
+    "wide": "Wide_(m)",
+    "engine": "Engine",
+    "displacement": "Displacement_(l)",
+    "power": "Power_(ps)",
+    "torque": "Torque_(Nm)",
+    "engine_layout": "Engine_Layout",
+    "wheel_drive": "Wheel_Drive",
+    "class_type": "Class",
+    "trasmission_name": "Trasmission_Name",
+    "trasmission_type": "Trasmission_Type",
+    "n_trasmission": "N_Trasmission"
 }
 
 PATH = "../Lap-Time-Prediction/report"
@@ -80,9 +80,9 @@ def dataset_generator(conn):
     # :param conn: a connection to scrap.db (with TEMP views).
     # :return:
 
-    laps_dataframe = pd.read_sql_query('SELECT * FROM Export_Laps_List', conn)
-    tracks_dataframe = pd.read_sql_query('SELECT * FROM Export_Tracks_List', conn)
-    vehicles_dataframe = pd.read_sql_query('SELECT * FROM Export_Vehicles_List', conn)
+    laps_dataframe = pd.read_sql_query('SELECT * FROM EXPORT_LAPS_LIST', conn)
+    tracks_dataframe = pd.read_sql_query('SELECT * FROM EXPORT_TRACKS_LIST', conn)
+    vehicles_dataframe = pd.read_sql_query('SELECT * FROM EXPORT_VEHICLES_LIST', conn)
 
     laps_dataframe.rename(columns=LAPS_HEADERS, inplace=True)
     tracks_dataframe.rename(columns=TRACK_HEADERS, inplace=True)
@@ -401,7 +401,7 @@ def report_vehicles(file, vehicles, json_vehicles):
 
     file.write("######################\n\n")
     
-    file.write("--Vehicles type count (type Usage):\n\n")
+    file.write("--Vehicles type count:\n\n")
     df = vehicles.groupby("Type")['Vehicle_Name'].agg(Vehicle='count')[['Vehicle']].sort_values(['Vehicle'], ascending=False)
     file.write(df.to_markdown() + '\n\n')
 

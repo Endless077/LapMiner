@@ -655,7 +655,7 @@ Pagani Huayra,,,,,,73.8,,,,
 Ferrari LaFerrari,,,,,,74.2,,,,
 BAC Mono,,,,,,74.3,,,,
 Ariel Atom 500 V8,,,,,,75.1,,,,
-Ariel Atom 4,,,,,,76.0,,,,
+Ariel Atom 4 (324 PS),,,,,,76.0,,,,
 Veyron 16.4 Super Sport,,,,,,76.8,,,,
 Ascari A10,,,,,,77.3,,,,
 Caterham 7 CSR 260,,,,,,77.4,,,,
@@ -675,19 +675,19 @@ Westfield XTR2,,,,,,82.6,,,,
 Ferrari F430 Spyder,,,,,,83.2,,,,78.46
 Porsche 718 Cayman GTS 4.0,,,,,,83.5,,,,
 Koenigsegg CC8S,,,,,,83.9,,,,
-Mercedes-Benz S63 AMG Coupe,,,,,,84.0,,,,
 Ariel Atom 2,,,,,,84.0,,,,
+Mercedes-Benz S63 AMG Coupe,,,,,,84.0,,,,
 Veritas RS 3,,,,,,84.2,,,,
 Aston Martin Virage,,,,,,84.4,,,,
 TVR Sagaris,,,,,,84.6,,,,
 TVR Tuscan (Mk II),,,,,,84.8,,,,
-Mitsubishi Evo VIII FQ400,,,,,,84.8,,,,
+Lancer Evo VIII FQ-400,,,,,,84.8,,,,
 Continental Supersports,,,,,,84.9,,,,81.1
 Noble M12 GTO-3R,,,,,,85.0,,,,
 Zenos E10 S,,,,,,85.1,,,,
 BMW M135i (F20),,,,,,85.1,,87.28,77.3,
 Morgan Aero 8 GTN,,,,,,85.9,,,,
-Mitsubishi Evo VIII MR FQ 320,,,,,,86.0,,,,
+Lancer Evo VIII FQ-320 MR,,,,,,86.0,,,,
 Brabus SV12 S Biturbo Roadster,,,,,,86.2,,,,
 Vauxhall VXR8 Bathurst S,,,,,,86.3,,,,
 Lotus Exige,,,,,,86.4,,,,
@@ -713,7 +713,7 @@ Dodge Viper SRT-10 Roadster,,,,,,88.5,,,73.6,79.5
 VW Golf GTI (Mk VII 230 PS),,,,,,88.6,,89.4,76.0,
 MG X-Power SV,,,,,,88.6,,,,
 Porsche Boxster S (987 280 PS),,,,,,88.7,,,,
-Mitsubishi Evo VIII FQ 300,,,,,,88.9,,,,
+Lancer Evo VIII FQ-300,,,,,,88.9,,,,
 Alpina Roadster V8,,,,,,89.0,,,,83.94
 Mercedes-Benz CL 65 AMG,,,,,,89.0,,,,
 Subaru Impreza WRX STI WR1,,,,,,89.4,,,,
@@ -733,14 +733,14 @@ Skoda Octavia RS Combi (Mk IV),,,,,,92.3,,,,
 Lotus Esprit V8,,,,,,92.5,,,,85.92
 Renault Megane Sport Trophy,,,,,,92.5,,,,
 Audi TT 3.2 quattro (Mk I),,,,,,92.7,,,,86.97
-Mercedes-Benz SLK 350 (R171),,,,,,92.9,,,,
 Seat Leon 1.8T (Cupra),,,,,,92.9,,,,
-Audi RS6 (C5),,,,,,93.0,,,,
+Mercedes-Benz SLK 350 (R171),,,,,,92.9,,,,
 MG ZT 260,,,,,,93.0,,,,
+Audi RS6 (C5),,,,,,93.0,,,,
 Noble M12 GTO,,,,,,93.1,,,,
+Toyota Supra Twin Turbo,,,,,,93.3,,,,
 VW Golf R32 (Mk IV),,,,,,93.3,,,,86.2
 Audi Q7 V12 TDI (Mk I),,,,,,93.3,,,,
-Toyota Supra Twin Turbo,,,,,,93.3,,,,
 Seat Leon Cupra,,,,,,93.5,,90.76,78.8,
 Renault Clio 182,,,,,,93.8,,,,
 Vauxhall Monaro,,,,,,93.9,,,,
@@ -919,7 +919,7 @@ Maserati GranSport Spyder,,,,,,,,,,80.39
 Porsche 911 Carrera 4S (997),,,,,,,,,,80.45
 Audi RS Q3 Sportback,,,,,,,,,,80.82
 Lotus Exige (Mk I),,,,,,,,,,80.9
-Mitsubishi Evo X RS,,,,,,,,,,81.0
+Mitsubishi Lancer Evo X RS,,,,,,,,,,81.0
 Porsche Cayenne S (Mk III),,,,,,,,,,81.29
 Jaguar F-Type P300 Convertible,,,,,,,,,,81.68
 Bentley Bentayga,,,,,,,,,,81.73
