@@ -46,6 +46,7 @@ def create_tables(conn: sqlite3.Connection):
     specs_table = '''CREATE TABLE IF NOT EXISTS "SPECS" (
 	"vehicle"	        TEXT NOT NULL,
     "manufacturer"      TEXT,
+    "model"             TEXT,
 	"type"	            TEXT,
 	"type_usage"	    TEXT,
     "introduced_year"   INTEGER,
@@ -159,11 +160,11 @@ def insert_new_specs(conn: sqlite3.Connection, specs):
     # :param specs: is a tuple.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO SPECS(vehicle,manufacturer,type,type_usage,introduced_year,country,
+    sql = ''' INSERT OR IGNORE INTO SPECS(vehicle,manufacturer,model,type,type_usage,introduced_year,country,
     curb_weight,wheelbase,dim_long,dim_wide,dim_high,zero_hundred,hundred_zero,top_speed,
     engine_type,displacement,power_ps,power_bhp,power_kw,torque,
     power_weight,torque_weight,efficiency,trasmission,layout)
-    VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) '''
+    VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) '''
 
     cur = conn.cursor()
     cur.execute(sql, specs)

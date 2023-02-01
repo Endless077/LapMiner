@@ -28,6 +28,7 @@ VEHICLE_HEADERS = {
     "vehicle_name": "Vehicle_Name",
     "type": "Type",
     "manufacturer": "Manufacturer",
+    "model": "Model",
     "origin_country": "Country",
     "introduced_year": "Introduced_Year",
     "accelleration": "0-100_kph_(s)",

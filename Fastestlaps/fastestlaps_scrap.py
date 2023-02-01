@@ -54,6 +54,7 @@ def extract_specs(specs: dict):
     vehicle_record = []
     vehicle_record.append(specs['name'])
     vehicle_record.append(specs['manufacturer'])
+    vehicle_record.append(specs['model'])
 
     if("Car Type" in specs.keys()):
         vehicle_record.append("Car")
@@ -472,6 +473,7 @@ def get_vehicle_info(user_agent: UserAgent, vehicle: dict):
 
         print(f"Getting {vehicle[0]} specs...")
         vehicle_record["manufacturer"] = soup.find(class_=re.compile("margin-top")).a.text
+        vehicle_record["model"] = soup.find(class_=re.compile("margin-top")).contents[1].replace("specs","").strip()
 
         for table in tables:
             rows = table.findAll('tr')

@@ -114,16 +114,16 @@ class Dimensions:
 class Engine:
 
     # Init function
-    def __init__(self, engine_id: int, engine: str, displacement: float, power: int, torque: int):
+    def __init__(self, engine_id: int, engine_name: str, displacement: float, power: int, torque: int):
         self.__engine_id = engine_id
-        self.__engine = engine
+        self.__engine_name = engine_name
         self.__displacement = displacement
         self.__power = power
         self.__torque = torque
 
     # String function
     def __str__(self) -> str:
-        return f"Engine n° {self.__engine_id}:\n --Engine: {self.__engine}\n --Displacement: {self.__displacement}\n --Power: {self.__power}\n --Torque: {self.__torque}"
+        return f"Engine n° {self.__engine_id}:\n --Engine: {self.__engine_name}\n --Displacement: {self.__displacement}\n --Power: {self.__power}\n --Torque: {self.__torque}"
 
     # Getter and Setter
     @property
@@ -134,11 +134,11 @@ class Engine:
         self.__engine_id = value
     
     @property
-    def engine(self):
-        return self.__engine
-    @engine.setter
-    def engine(self, value):
-        self.__engine = value
+    def engine_name(self):
+        return self.__engine_name
+    @engine_name.setter
+    def engine_name(self, value):
+        self.__engine_name = value
     
     @property
     def displacement(self):
@@ -251,9 +251,10 @@ class Performance:
 class Overview:
 
     # Init function
-    def __init__(self, overview_id: int, manufacturer: str, origin_country: str, introduced_year: int):
+    def __init__(self, overview_id: int, manufacturer: str, model: str, origin_country: str, introduced_year: int):
         self.__overview_id = overview_id
         self.__manufacturer = manufacturer
+        self.__model = model
         self.__origin_country = origin_country
         self.__introduced_year = introduced_year
 
@@ -277,6 +278,13 @@ class Overview:
         self.__manufacturer = value
 
     @property
+    def model(self):
+        return self.__model
+    @model.setter
+    def model(self, value):
+        self.__model = value
+
+    @property
     def origin_country(self):
         return self.__origin_country
     @origin_country.setter
@@ -296,13 +304,13 @@ class Overview:
 class Vehicle:
 
     # Init function
-    def __init__(self, vehicle_id: int, vehicle_name: str, class_type: str,
+    def __init__(self, vehicle_id: int, vehicle_name: str, vehicle_type: str,
                 layout: Layout, dimensions: Dimensions, engine: Engine,
                 trasmission: Trasmission, performance: Performance, overview: Overview) -> None:
         # local variables
         self.__vehicle_id = vehicle_id
         self.__vehicle_name = vehicle_name
-        self.__type = class_type
+        self.__vehicle_type = vehicle_type
 
         # external variables
         self__laps = None
@@ -315,7 +323,7 @@ class Vehicle:
 
     # String function
     def __str__(self) -> str:
-        return f"Vehicle n° {self.__vehicle_id}:\n --Name: {self.__vehicle_name}\n --Type: {self.__type}."
+        return f"Vehicle n° {self.__vehicle_id}:\n --Name: {self.__vehicle_name}\n --Type: {self.__vehicle_type}."
 
     # Getter and Setter
     @property
@@ -333,11 +341,11 @@ class Vehicle:
         self.__vehicle_name = value
     
     @property
-    def type(self):
-        return self.__type
-    @type.setter
-    def type(self, value):
-        self.__type = value
+    def vehicle_type(self):
+        return self.__vehicle_type
+    @vehicle_type.setter
+    def vehicle_type(self, value):
+        self.__vehicle_type = value
     
     @property
     def layout(self):

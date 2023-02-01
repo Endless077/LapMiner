@@ -27,18 +27,17 @@ def upgrade(dump_database_path: str):
     create_tables(conn_new_db)
 
    
-    laps_track =    ''' SELECT lap_time, driver, Track, Vehicle FROM LAPS WHERE LAPS.Track = ? '''
-    specs_vehicle = ''' SELECT Specs.* FROM Specs WHERE Specs.Vehicle = ? '''  
+    laps_track =    ''' SELECT lap_time, driver, track, vehicle FROM LAPS WHERE LAPS.track = ? '''
+    specs_vehicle = ''' SELECT * FROM SPECS WHERE SPECS.Vehicle = ? '''  
  
     all_tracks =    ''' SELECT track_name, country, total_length FROM TRACKS '''
-    all_vehicles =  ''' SELECT vehicle_name,HRef FROM VEHICLES '''  
+    all_vehicles =  ''' SELECT * FROM VEHICLES '''  
     
     cur_new = conn_new_db.cursor()
     cur_old = conn_old_db.cursor()
-
-    cur_old.execute(all_vehicles)
     
-    vehicles = cur_old.fetchall()
+    print("######################")
+    vehicles = cur_old.execute(all_vehicles).fetchall()
     for vehicle in vehicles:
         new_vehicle = adapt_vehicle((-1,vehicle[0],None), True)
         if vehicle[1] is not None:
@@ -82,44 +81,80 @@ def adapt_vehicle(vehicle_record: tuple, no_specs: bool):
     # :param no_specs: a boolean (if true return vehicle without specs object)
     # :return:
     
+    # DUMP DB STRUCT:
+        # [0] "vehicle"	            TEXT NOT NULL   - Vehicle
+        # [1] "manufacturer"        TEXT            - Overview
+        # [2] "model"               TEXT            - Overview
+        # [3] "type"	            TEXT            - Vehicle
+        # [4] "type_usage"	        TEXT            - Layout  
+        # [5] "introduced_year"     INTEGER         - Overview
+        # [6] "country"	            TEXT            - Overview      
+        # [7] "curb_weight"	        REAL            - Dimensions
+        # [8] "wheelbase"	        REAL            - Dimensions
+        # [9] "dim_long"	        REAL            - Dimensions
+        # [10] "dim_wide"	        REAL            - Dimensions
+        # [11] "dim_high"	        REAL            - Dimensions
+        # [12] "zero_hundred"	    REAL            - Performance
+        # [13] "hundred_zero"	    REAL            - Performance
+        # [14] "top_speed"	        INTEGER         - Performance
+        # [15] "engine_type"	    TEXT            - Engine
+        # [16] "displacement"	    REAL            - Engine
+        # [17] "power_ps"	        INTEGER         - Engine
+        # [18] "power_bhp"	        INTEGER         - Engine (ignore)
+        # [19] "power_kw"	        INTEGER         - Engine (ignore)
+        # [20] "torque"	            INTEGER         - Engine
+        # [21] "power_weight"	    INTEGER         - Engine (ignore)
+        # [22] "torque_weight"	    INTEGER         - Engine (ignore)
+        # [23] "efficiency"	        INTEGER         - Engine (ignore)
+        # [24] "trasmission"	    TEXT            - Trasmission
+        # [25] "layout"	            TEXT            - Layout
+
     if no_specs:
         layout = classes.Layout(-1,None,None,None)
         dimensions = classes.Dimensions(-1,None,None,None,None,None)
         engine = classes.Engine(-1,None,None,None,None)
         trasmission = classes.Trasmission(-1,None,None,None)
         performance = classes.Performance(-1,None,None,None)
-        overview = classes.Overview(-1,None,None,None)
+        overview = classes.Overview(-1,None,None,None,None)
         return classes.Vehicle(*vehicle_record,layout,dimensions,engine,trasmission,performance,overview)
-    
-    get_layout = [None, None]
-    if vehicle_record[24] is not None:
-        get_layout = [string.strip().split(" ")[0].title() for string in vehicle_record[24].split(",")]
-    layout = classes.Layout(-1,*get_layout[0:2],vehicle_record[3])
 
-    dimensions = classes.Dimensions(-1,*vehicle_record[6:11])    
-    engine = classes.Engine(-1,*vehicle_record[14:17],vehicle_record[19])
+    get_layout = [None, None]
+    if vehicle_record[25] is not None:
+        get_layout = [string.strip().split(" ")[0].title() for string in vehicle_record[25].split(",")]
+    layout = classes.Layout(-1,*get_layout[0:2],vehicle_record[4])
+
+    dimensions = classes.Dimensions(-1,*vehicle_record[7:12])    
+    engine = classes.Engine(-1,*vehicle_record[15:18],vehicle_record[20])
     
-    get_trasmission = [vehicle_record[23],"Other",None]
-    if vehicle_record[23] is not None:
-        if re.search(" or ", vehicle_record[23].lower()):
-            get_trasmission[0] = "unknown"
+    get_trasmission = [vehicle_record[24],"Other",None]
+    if vehicle_record[24] is not None:
+        if re.search(r" or |\/", vehicle_record[24].lower()):
+            get_trasmission[0] = "Other"
         else:
             type_list = ["manual", "automatic", "semi-automatic", "semi automatic", "dual-clutch", "dual clutch", "sequential"]
-            type_index = [int(vehicle_record[23].lower().find(type_value)) for type_value in type_list]
+            type_index = [int(vehicle_record[24].lower().find(type_value)) for type_value in type_list]
             occurrences = [value for value in type_index if value > 0]
             if(len(occurrences) > 0):
                 get_trasmission[1] = type_list[type_index.index(min(occurrences))].replace(" ","-").title()
-    
-            n_trasmission = re.search(r'\d+', vehicle_record[23])
-            if n_trasmission is not None:
-                get_trasmission[2] = n_trasmission.group()
+
+            number = None
+            if(str(vehicle_record[24][0]).isnumeric()):
+                n_trasmission = re.search(r'\d+', vehicle_record[24])
+                if(n_trasmission is not None):
+                    number = n_trasmission.group()
+            else:
+                n_trasmission = re.findall(r'\d+', vehicle_record[24])
+                if(len(n_trasmission) > 0):
+                    number = min([int(i) for i in n_trasmission])
+                            
+            get_trasmission[2] = number
         
     trasmission = classes.Trasmission(-1,*get_trasmission[0:3])
 
-    performance = classes.Performance(-1,*vehicle_record[11:14])
-    overview = classes.Overview(-1,vehicle_record[1],vehicle_record[5],vehicle_record[4])
+    performance = classes.Performance(-1,*vehicle_record[12:15])
+    overview = classes.Overview(-1,*vehicle_record[1:3],vehicle_record[6],vehicle_record[5])
     
-    return classes.Vehicle(-1,vehicle_record[0],vehicle_record[2],layout,dimensions,engine,trasmission,performance,overview)
+    return classes.Vehicle(-1,vehicle_record[0],vehicle_record[3],layout,dimensions,engine,trasmission,performance,overview)
 
 def create_tables(conn: sqlite3.Connection):
     # Create all tables of database
@@ -199,6 +234,7 @@ def create_tables(conn: sqlite3.Connection):
     overview_table = ''' CREATE TABLE IF NOT EXISTS "OVERVIEW" (
 	"overview_id"	    INTEGER,
 	"manufacturer"	    TEXT,
+    "model"             TEXT,
 	"origin_country"	TEXT,
 	"introduced_year"	INTEGER,
 	"vehicle_id"	    INTEGER,
@@ -286,7 +322,7 @@ def create_views(conn: sqlite3.Connection, min_track_laps: int, min_vehicle_laps
     AS
     SELECT 
         EVL.vehicle_name,EVL.type,
-        OVERVIEW.manufacturer,OVERVIEW.origin_country,OVERVIEW.introduced_year,
+        OVERVIEW.manufacturer,OVERVIEW.model,OVERVIEW.origin_country,OVERVIEW.introduced_year,
         PERFORMANCE.accelleration,PERFORMANCE.break_distance,PERFORMANCE.top_speed,
         DIMENSIONS.curb_weight,DIMENSIONS.wheelbase,DIMENSIONS.long,DIMENSIONS.wide,DIMENSIONS.high,
         ENGINE.engine_name,ENGINE.displacement,ENGINE.power,ENGINE.torque,
@@ -453,7 +489,7 @@ def insert_new_vehicle(conn: sqlite3.Connection, vehicle: classes.Vehicle):
     sql = ''' INSERT OR IGNORE INTO VEHICLES(vehicle_name,type)
               VALUES(?,?) '''
     
-    insert_tuple = (vehicle.vehicle_name, vehicle.type) 
+    insert_tuple = (vehicle.vehicle_name, vehicle.vehicle_type) 
 
     cur = conn.cursor()
     cur.execute(sql, insert_tuple)
@@ -528,7 +564,7 @@ def insert_engine(conn: sqlite3.Connection, vehicle_id: int, engine: classes.Eng
     sql = ''' INSERT OR IGNORE INTO ENGINE(engine_name,displacement,power,torque,vehicle_id)
               VALUES(?,?,?,?,?) '''
     
-    insert_tuple = (engine.engine, engine.displacement, engine.power, engine.torque, vehicle_id)
+    insert_tuple = (engine.engine_name, engine.displacement, engine.power, engine.torque, vehicle_id)
 
     cur = conn.cursor()
     cur.execute(sql, insert_tuple)
@@ -591,10 +627,10 @@ def insert_overview(conn: sqlite3.Connection, vehicle_id: int, overview: classes
     # :param overview: a layout overview.
     # :return: last row id.
 
-    sql = ''' INSERT OR IGNORE INTO OVERVIEW(manufacturer,origin_country,introduced_year,vehicle_id)
-              VALUES(?,?,?,?) '''
+    sql = ''' INSERT OR IGNORE INTO OVERVIEW(manufacturer,model,origin_country,introduced_year,vehicle_id)
+              VALUES(?,?,?,?,?) '''
     
-    insert_tuple = (overview.manufacturer, overview.origin_country, overview.introduced_year, vehicle_id) 
+    insert_tuple = (overview.manufacturer, overview.model, overview.origin_country, overview.introduced_year, vehicle_id) 
 
     cur = conn.cursor()
     cur.execute(sql, insert_tuple)
