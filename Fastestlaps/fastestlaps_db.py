@@ -118,7 +118,7 @@ def clear_database(conn: sqlite3.Connection):
     except Error as e:
         print(e)
 
-def insert_new_lap(conn: sqlite3.Connection, lap):
+def insert_new_lap(conn: sqlite3.Connection, lap: tuple):
     # Create a new lap into the laps table
     # :param conn: db connection.
     # :param lap: is a tuple.
@@ -136,7 +136,7 @@ def insert_new_lap(conn: sqlite3.Connection, lap):
     print("Insert: " + str(lap))
     return cur.lastrowid
 
-def insert_new_track(conn: sqlite3.Connection, track):
+def insert_new_track(conn: sqlite3.Connection, track: tuple):
     # Create a new track into the tracks table
     # :param conn: db connection.
     # :param track: is a tuple.
@@ -154,7 +154,7 @@ def insert_new_track(conn: sqlite3.Connection, track):
     print("Insert: " + str(track))
     return cur.lastrowid
 
-def insert_new_specs(conn: sqlite3.Connection, specs):
+def insert_new_specs(conn: sqlite3.Connection, specs: tuple):
     # Create a new specs into the specs table
     # :param conn: db connection.
     # :param specs: is a tuple.
@@ -175,7 +175,7 @@ def insert_new_specs(conn: sqlite3.Connection, specs):
     print("Insert: " + str(specs))
     return cur.lastrowid
 
-def insert_new_vehicle(conn: sqlite3.Connection, vehicle):
+def insert_new_vehicle(conn: sqlite3.Connection, vehicle: tuple):
     # Create a new vehicle into the vehicles table
     # :param conn: db connection.
     # :param vehicle: is a tuple.
@@ -271,3 +271,41 @@ def get_all_vehicles(conn: sqlite3.Connection):
     
     print("SELECT all vehicles complete.")
     return output
+
+def update_specific_lap(conn: sqlite3.Connection, track_name: int, vehicle_name: int, values: dict):
+    # Update a lap by track name and vehicle name
+    # :param conn: db connection.
+    # :param track_name: track name string.
+    # :param vehicle_name: vehicle name string.
+    # :param values: a dict with key are the column list to set and values are the new values set.
+    # :return:
+
+    raise NotImplementedError
+    
+def update_specific_track(conn: sqlite3.Connection, track_name: str, values: dict):
+    # Update a track by track name
+    # :param conn: db connection.
+    # :param track_name: track name string.
+    # :param values: a dict with key are the column list to set and values are the new values set.
+    # :return:
+
+    raise NotImplementedError
+
+def update_specific_vehicle(conn: sqlite3.Connection, vehicle_name: str, values: dict):
+    # Update a vehicle by vehicle name
+    # :param conn: db connection.
+    # :param vehicle_name: vehicle name string.
+    # :param values: a dict with key are the column list to set and values are the new values set.
+    # :return:
+
+    column_list = ", ".join([f"{column}=?" for column in values.keys()])
+    sql_specs = F''' "UPDATE SPECS SET {column_list} WHERE vehicle_name = ? '''
+
+    cur = conn.cursor()
+
+    cur.execute(sql_specs, (*values.values(), vehicle_name))
+
+    conn.commit()
+    cur.close()
+
+    print("Update" + sql_specs)

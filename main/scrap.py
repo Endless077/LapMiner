@@ -8,7 +8,6 @@
 # IMPORT
 import os
 import sys
-import time
 
 sys.path.append("../Lap-Time-Prediction/Fastestlaps")
 sys.path.append("../Lap-Time-Prediction/Generator")

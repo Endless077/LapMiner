@@ -883,27 +883,64 @@ def delete_specific_vehicle(conn: sqlite3.Connection, vehicle_id: int, vehicle_n
 
     print("Delete: " + vehicle_name)
 
-def update_specific_lap(conn: sqlite3.Connection, track_id: int, vehicle_id: int, values: tuple):
+def update_specific_lap(conn: sqlite3.Connection, track_id: int, vehicle_id: int, values: dict):
     # Update a lap by track name and vehicle name
     # :param conn: db connection.
     # :param track_id: track id.
     # :param vehicle_id: vehicle id.
-    # :return: number of updatetd row.
+    # :param values: a dict with key are the column list to set and values are the new values set.
+    # :return:
 
     raise NotImplementedError
     
-def update_specific_track(conn: sqlite3.Connection, track_id: int, track_name: str, values: tuple):
+def update_specific_track(conn: sqlite3.Connection, track_id: str, values: dict):
     # Update a track by track name
     # :param conn: db connection.
-    # :param vehicle_name: vehicle name string.
-    # :return: number of updatetd row.
+    # :param track_id: track id.
+    # :param values: a dict with key are the column list to set and values are the new values set.
+    # :return:
 
     raise NotImplementedError
 
-def update_specific_vehicle(conn: sqlite3.Connection, vehicle_id: int, vehicle_name: str, values: tuple):
+def update_specific_vehicle(conn: sqlite3.Connection, vehicle_id: str, values: dict):
     # Update a vehicle by vehicle name
     # :param conn: db connection.
     # :param vehicle_id: vehicle id.
-    # :return: number of updatetd row.
+    # :param values: a dict with key are the column list to set and values are the new values set.
+    # :return:
 
-    raise NotImplementedError
+    cur = conn.cursor()
+
+    column_list = ", ".join([f"{column}=?" for column in values['Layout'].keys()])
+    sql = f''' "UPDATE LAYOUT SET {column_list} WHERE vehicle_id = ? '''
+    cur.execute(sql, (*values['Layout'].values(), vehicle_id))
+    print("Update" + sql)
+
+    column_list = ", ".join([f"{column}=?" for column in values['Dimensions'].keys()])
+    sql = f''' "UPDATE DIMENSIONS SET {column_list} WHERE vehicle_id = ? '''
+    cur.execute(sql, (*values['Dimensions'].values(), vehicle_id))
+    print("Update" + sql)
+
+    column_list = ", ".join([f"{column}=?" for column in values['Engine'].keys()])
+    sql = f''' "UPDATE ENGINE SET {column_list} WHERE vehicle_id = ? '''
+    cur.execute(sql, (*values['Engine'].values(), vehicle_id))
+    print("Update" + sql)
+
+    column_list = ", ".join([f"{column}=?" for column in values['Trasmission'].keys()])
+    sql = f''' "UPDATE TRASMISSION SET {column_list} WHERE vehicle_id = ? '''
+    cur.execute(sql, (*values['Trasmission'].values(), vehicle_id))
+    print("Update" + sql)
+
+    column_list = ", ".join([f"{column}=?" for column in values['Performance'].keys()])
+    sql = f''' "UPDATE PERFORMANCE SET {column_list} WHERE vehicle_id = ? '''
+    cur.execute(sql, (*values['Performance'].values(), vehicle_id))
+    print("Update" + sql)
+
+    column_list = ", ".join([f"{column}=?" for column in values['Overview'].keys()])
+    sql = f''' "UPDATE OVERVIEW SET {column_list} WHERE vehicle_id = ? '''
+    cur.execute(sql, (*values['Overview'].values(), vehicle_id))
+    print("Update" + sql)
+    conn.commit()
+    cur.close()
+
+    print("Update done.")

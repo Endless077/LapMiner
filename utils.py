@@ -46,6 +46,17 @@ class Logger(object):
         self.log.flush()
 
 # Database SQLite
+def checkSQLite(conn: sqlite3.Connection, value: str, table: str, attr: str):
+    
+    cur = conn.cursor()
+    
+    cur.execute(f"SELECT * FROM {table} WHERE {attr}=?", (value,))
+    result = cur.fetchone()
+    
+    conn.close()
+    
+    return result is not None
+
 def create_SQLite_database(PATH):
     # Create a connection to db
     # :param:
