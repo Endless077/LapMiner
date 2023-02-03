@@ -10,7 +10,7 @@ from sqlite3 import Error
 
 import utils
 
-PATH = "../Lap-Time-Prediction/Fastestlaps/dump/dump.db"
+PATH = "../Lap-Time-Prediction/fastestlaps/dump/dump.db"
 
 def create_tables(conn: sqlite3.Connection):
     # Create all tables of database

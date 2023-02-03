@@ -9,8 +9,9 @@
 import os
 import sys
 
-sys.path.append("../Lap-Time-Prediction/Fastestlaps")
-sys.path.append("../Lap-Time-Prediction/Generator")
+sys.path.append("../Lap-Time-Prediction/fastestlaps")
+sys.path.append("../Lap-Time-Prediction/generator")
+sys.path.append("../Lap-Time-Prediction/sources")
 sys.path.append("../Lap-Time-Prediction/")
 
 import fastestlaps_db as dump

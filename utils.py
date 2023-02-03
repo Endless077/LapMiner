@@ -45,12 +45,19 @@ class Logger(object):
         self.terminal.flush()
         self.log.flush()
 
+
 # Database SQLite
-def checkSQLite(conn: sqlite3.Connection, value: str, table: str, attr: str):
-    
+def checkSQLite(conn: sqlite3.Connection, table: str, attr: str, value_attr: str):
+    # Check if exist a record in table where attr is equal to value
+    # :param conn: database connection.
+    # :param value: value string.
+    # :param table: table name string.
+    # :param attr: attribute name string.
+    # :return: result object or None.
+
     cur = conn.cursor()
     
-    cur.execute(f"SELECT * FROM {table} WHERE {attr}=?", (value,))
+    cur.execute(f"SELECT * FROM {table} WHERE {attr}=?", (value_attr,))
     result = cur.fetchone()
     
     conn.close()
@@ -91,6 +98,9 @@ def get_SQLite_connection(PATH):
     return conn
 
 # Database MySQL
+def check_MySQL(conn: sqlite3.Connection, table: str, attr: str, value_attr: str):
+    raise NotImplementedError
+
 def create_MySQL_database(PATH):
     raise NotImplementedError
 
@@ -98,6 +108,9 @@ def get_MySQL_connection(PATH):
     raise NotImplementedError
 
 # Database PostgreSQL
+def check_PostgreSQL(conn: sqlite3.Connection, table: str, attr: str, value_attr: str):
+    raise NotImplementedError
+
 def create_PostgreSQL_database(PATH):
     raise NotImplementedError
 
