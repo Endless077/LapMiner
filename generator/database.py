@@ -910,37 +910,17 @@ def update_specific_vehicle(conn: sqlite3.Connection, vehicle_id: str, values: d
     # :return:
 
     cur = conn.cursor()
+    tables = ["VEHICLES","LAYOUT","DIMENSIONS","ENGINE","TRASMISSION","PERFORMANCE","OVERVIEW"]
+    tables_index = 0
 
-    column_list = ", ".join([f"{column}=?" for column in values['Layout'].keys()])
-    sql = f''' "UPDATE LAYOUT SET {column_list} WHERE vehicle_id = ? '''
-    cur.execute(sql, (*values['Layout'].values(), vehicle_id))
-    print("Update" + sql)
+    for key in values.keys():
+        if(values[key] is not None):
+            column_list = ", ".join([f"{column}=?" for column in values[key].keys()])
+            sql = f''' "UPDATE {tables[tables_index]} SET {column_list} WHERE vehicle_id = ? '''
+            cur.execute(sql, (*values[key].values(), vehicle_id))
+            print("Update" + sql)
+        tables_index += 1
 
-    column_list = ", ".join([f"{column}=?" for column in values['Dimensions'].keys()])
-    sql = f''' "UPDATE DIMENSIONS SET {column_list} WHERE vehicle_id = ? '''
-    cur.execute(sql, (*values['Dimensions'].values(), vehicle_id))
-    print("Update" + sql)
-
-    column_list = ", ".join([f"{column}=?" for column in values['Engine'].keys()])
-    sql = f''' "UPDATE ENGINE SET {column_list} WHERE vehicle_id = ? '''
-    cur.execute(sql, (*values['Engine'].values(), vehicle_id))
-    print("Update" + sql)
-
-    column_list = ", ".join([f"{column}=?" for column in values['Trasmission'].keys()])
-    sql = f''' "UPDATE TRASMISSION SET {column_list} WHERE vehicle_id = ? '''
-    cur.execute(sql, (*values['Trasmission'].values(), vehicle_id))
-    print("Update" + sql)
-
-    column_list = ", ".join([f"{column}=?" for column in values['Performance'].keys()])
-    sql = f''' "UPDATE PERFORMANCE SET {column_list} WHERE vehicle_id = ? '''
-    cur.execute(sql, (*values['Performance'].values(), vehicle_id))
-    print("Update" + sql)
-
-    column_list = ", ".join([f"{column}=?" for column in values['Overview'].keys()])
-    sql = f''' "UPDATE OVERVIEW SET {column_list} WHERE vehicle_id = ? '''
-    cur.execute(sql, (*values['Overview'].values(), vehicle_id))
-    print("Update" + sql)
     conn.commit()
     cur.close()
-
     print("Update done.")

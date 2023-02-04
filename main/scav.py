@@ -58,8 +58,8 @@ def main():
                     if source:
                         if check_vehicle(vehicle):
                             user_agent = user_agent_generator.get_random_user_agent()
-                            data[vehicle]["Update"] = retrieve(user_agent, vehicle, url, source, attr)
-                            data[vehicle]["Old"] = update(vehicle, data[vehicle])
+                            data[vehicle] = retrieve(user_agent, vehicle, url, source, attr)
+                            update(vehicle, data[vehicle])
                         else:
                             raise SyntaxError(f"The vehicle {vehicle} not exists in database, please check.")
                     else:
@@ -77,8 +77,8 @@ def main():
         if source:
             if check_vehicle(vehicle):
                 user_agent = user_agent_generator.get_random_user_agent()
-                data[vehicle]["Update"] = retrieve(user_agent, vehicle, url, source, attr)
-                data[vehicle]["Old"] = update(vehicle, data[vehicle])
+                data[vehicle] = retrieve(user_agent, vehicle, url, source, attr)
+                update(vehicle, data[vehicle])
             else:
                 raise SyntaxError(f"The vehicle {vehicle} not exists in database, please check.")
         else:
@@ -209,12 +209,7 @@ def update(vehicle: str, new_specs: dict):
     conn = utils.get_SQLite_connection(db.PATH)
 
     vehicle_data = db.get_specific_vehicle(conn, -1, vehicle)
-    curr_specs = db.get_specific_vehicle_specs(conn, vehicle_data[0], vehicle)
-
     db.update_specific_vehicle(conn, vehicle_data[0], new_specs)
-
-    old_specs = dict()
-    return old_specs
 
 def printLogo():
     print("  ______     ______       _  ____   ____ ") 
