@@ -357,7 +357,7 @@ def get_all_tracks(user_agent: UserAgent):
         print("Error (http):")
         print(e)
     except:
-            print("Someting goes wrong here.")
+        print("Someting goes wrong here.")
     else:
         print("HTTP Status request: " + str(response.status_code))
 
@@ -400,7 +400,7 @@ def get_track_info(user_agent: UserAgent, track: dict):
         print("Error (http):")
         print(e)
     except:
-            print("Someting goes wrong here.")
+        print("Someting goes wrong here.")
     else:
         print("HTTP Status request: " + str(response.status_code))
 
@@ -464,7 +464,7 @@ def get_vehicle_info(user_agent: UserAgent, vehicle: dict):
         print("Error (http):")
         print(e)
     except:
-            print("Someting goes wrong here.")
+        print("Someting goes wrong here.")
     else:
         print("HTTP Status request: " + str(response.status_code))
 

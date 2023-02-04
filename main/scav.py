@@ -14,17 +14,17 @@ import csv
 
 import urllib.parse
 from datetime import datetime as dt
+from random_user_agent.user_agent import UserAgent
 
 sys.path.append("../Lap-Time-Prediction/fastestlaps")
 sys.path.append("../Lap-Time-Prediction/generator")
 sys.path.append("../Lap-Time-Prediction/sources")
 sys.path.append("../Lap-Time-Prediction/")
 
-import fastestlaps_db.py as old_db
-import database as new_db
-import wikidata as wiki
-import cars_data as cd
 import ultimatespecs as us
+import cars_data as cd
+import wikidata as wiki
+import database as db
 import utils
 
 PATH = "../Lap-Time-Prediction/update"
@@ -37,7 +37,10 @@ def main():
     sys.stdout = utils.Logger("update", "logs")
 
     printLogo()
-    
+
+    # Create a user-agent generator
+    user_agent_generator = utils.random_user_agent()
+
     # Input control and main menù
     data = dict()
 
@@ -54,7 +57,9 @@ def main():
                 try:
                     if source:
                         if check_vehicle(vehicle):
-                            data[vehicle] = retrieve(vehicle, url, source, attr)
+                            user_agent = user_agent_generator.get_random_user_agent()
+                            data[vehicle]["Update"] = retrieve(user_agent, vehicle, url, source, attr)
+                            data[vehicle]["Old"] = update(vehicle, data[vehicle])
                         else:
                             raise SyntaxError(f"The vehicle {vehicle} not exists in database, please check.")
                     else:
@@ -68,10 +73,12 @@ def main():
         vehicle = sys.argv[1]
         url = sys.argv[2]
         source = check_url(url)
+        attr = choose_attr()
         if source:
             if check_vehicle(vehicle):
-                attr = choose_attr()
-                data = retrieve(vehicle, url, source, attr)
+                user_agent = user_agent_generator.get_random_user_agent()
+                data[vehicle]["Update"] = retrieve(user_agent, vehicle, url, source, attr)
+                data[vehicle]["Old"] = update(vehicle, data[vehicle])
             else:
                 raise SyntaxError(f"The vehicle {vehicle} not exists in database, please check.")
         else:
@@ -94,8 +101,7 @@ def main():
     # Close logging
     sys.stdout.log.close()
     sys.stdout = sys.__stdout__
-
-            
+         
 def check_args(arg1, arg2=None):
     # Create all tables of database
     # :param arg1: arg 1 is a file (if arg2 is not declared) or the vehicle name.
@@ -181,32 +187,34 @@ def choose_attr():
     else:
         raise SyntaxError("Invalid choice. Try again.")
 
-def retrieve(vehicle: str, url: str, source: str, attr: set):
+def retrieve(user_agent: UserAgent, vehicle: str, url: str, source: str, attr: set):
     # Retrieve all information declared in attr at specific source, url and vehiclen
+    # :param user_agent: a random generated user agent.
     # :param vehicle: vehichle name string.
     # :param url: url where get the vehicle specs.
     # :param source: a specific source.
     # :param attr: set of all attributes to retrieve.
     # :return: a dict of vehicle specs from the given source.
-
+    
     if source == "ultimatespecs":
-        return retrieve_from_ultimatespecs(vehicle, url, attr)
+        return us.get_specs(user_agent, vehicle, url, attr)
     elif source == "cars-data":
-        return retrieve_from_carsdata(vehicle, url, attr)
+        return cd.get_specs(user_agent, vehicle, url, attr)
     elif source == "wikipedia":
-        return retrieve_from_wikipedia(vehicle, url, attr)
+        return wiki.get_specs(user_agent, vehicle, url, attr)
     else:
         raise ValueError("Invalid source. Try again.")
 
+def update(vehicle: str, new_specs: dict):
+    conn = utils.get_SQLite_connection(db.PATH)
 
-def retrieve_from_ultimatespecs():
-    raise NotImplementedError
+    vehicle_data = db.get_specific_vehicle(conn, -1, vehicle)
+    curr_specs = db.get_specific_vehicle_specs(conn, vehicle_data[0], vehicle)
 
-def retrieve_from_carsdata():
-    raise NotImplementedError
+    db.update_specific_vehicle(conn, vehicle_data[0], new_specs)
 
-def retrieve_from_wikipedia():
-    raise NotImplementedError
+    old_specs = dict()
+    return old_specs
 
 def printLogo():
     print("  ______     ______       _  ____   ____ ") 

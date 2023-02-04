@@ -298,14 +298,4 @@ def update_specific_vehicle(conn: sqlite3.Connection, vehicle_name: str, values:
     # :param values: a dict with key are the column list to set and values are the new values set.
     # :return:
 
-    column_list = ", ".join([f"{column}=?" for column in values.keys()])
-    sql_specs = F''' "UPDATE SPECS SET {column_list} WHERE vehicle_name = ? '''
-
-    cur = conn.cursor()
-
-    cur.execute(sql_specs, (*values.values(), vehicle_name))
-
-    conn.commit()
-    cur.close()
-
-    print("Update" + sql_specs)
+    raise NotImplementedError

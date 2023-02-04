@@ -33,7 +33,7 @@ def main():
     print("######################")
     while True:
         print("Upgrade dump.db, do you want skip upgrade function, it will takes more than 5 minutes? (yes/no)")
-        skip = input("WARNING: if skip and database don't exist, an excempition will raise, and is not possible to create a verbose.\n")
+        skip = input("WARNING: if exist the database will be reset at default fastestlaps value, if not exist a FileNotFound exception will raise.\n")
         print(f"Skip? {skip}")
         print("######################")
         try:
