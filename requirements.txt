@@ -55,6 +55,7 @@ prompt-toolkit==3.0.36
 Protego==0.2.1
 protobuf==3.20.3
 proxybroker==0.3.2
+proxyscrape==0.3.0
 psycopg2==2.9.5
 ptyprocess==0.7.0
 pure-eval==0.2.2
@@ -75,6 +76,7 @@ queuelib==1.6.2
 random-user-agent==1.0.1
 requests==2.28.1
 requests-file==1.5.1
+requests-proxy==0.1
 Scrapy==2.7.1
 selenium==4.6.0
 service-identity==21.1.0
