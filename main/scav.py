@@ -12,18 +12,17 @@ import sys
 import json
 import csv
 
-import urllib.parse
 from datetime import datetime as dt
-from random_user_agent.user_agent import UserAgent
+import urllib.parse
 
 sys.path.append("../Lap-Time-Prediction/fastestlaps")
 sys.path.append("../Lap-Time-Prediction/generator")
 sys.path.append("../Lap-Time-Prediction/sources")
 sys.path.append("../Lap-Time-Prediction/")
 
-import ultimatespecs as us
-import cars_data as cd
-import wikidata as wiki
+from sources.UltimateSpecs import UltimateSpecs
+from sources.CarsData import CarsData 
+from sources.Wikidata import Wikidata
 import database as db
 import utils
 
@@ -36,10 +35,14 @@ def main():
     # Logging
     sys.stdout = utils.Logger("update", "logs")
 
+    # Print logo
     printLogo()
 
-    # Create a user-agent generator
-    user_agent_generator = utils.random_user_agent()
+    # Create a random user agent generator
+    utils.USER_AGENT = utils.random_user_agent()
+
+    # Crate a random proxy server list
+    # utils.PROXY_LIST = utils.random_proxy_list()
 
     # Input control and main menù
     data = dict()
@@ -57,8 +60,7 @@ def main():
                 try:
                     if source:
                         if check_vehicle(vehicle):
-                            user_agent = user_agent_generator.get_random_user_agent()
-                            data[vehicle] = retrieve(user_agent, vehicle, url, source, attr)
+                            data[vehicle] = retrieve(vehicle, url, source, attr)
                             update(vehicle, data[vehicle])
                         else:
                             raise SyntaxError(f"The vehicle {vehicle} not exists in database, please check.")
@@ -76,8 +78,7 @@ def main():
         attr = choose_attr()
         if source:
             if check_vehicle(vehicle):
-                user_agent = user_agent_generator.get_random_user_agent()
-                data[vehicle] = retrieve(user_agent, vehicle, url, source, attr)
+                data[vehicle] = retrieve(vehicle, url, source, attr)
                 update(vehicle, data[vehicle])
             else:
                 raise SyntaxError(f"The vehicle {vehicle} not exists in database, please check.")
@@ -187,9 +188,8 @@ def choose_attr():
     else:
         raise SyntaxError("Invalid choice. Try again.")
 
-def retrieve(user_agent: UserAgent, vehicle: str, url: str, source: str, attr: set):
+def retrieve(vehicle: str, url: str, source: str, attr: set):
     # Retrieve all information declared in attr at specific source, url and vehiclen
-    # :param user_agent: a random generated user agent.
     # :param vehicle: vehichle name string.
     # :param url: url where get the vehicle specs.
     # :param source: a specific source.
@@ -197,11 +197,14 @@ def retrieve(user_agent: UserAgent, vehicle: str, url: str, source: str, attr: s
     # :return: a dict of vehicle specs from the given source.
     
     if source == "ultimatespecs":
-        return us.get_specs(user_agent, vehicle, url, attr)
+        us = UltimateSpecs()
+        return us.get_specs(vehicle, url, attr)
     elif source == "cars-data":
-        return cd.get_specs(user_agent, vehicle, url, attr)
+        cd = CarsData()
+        return cd.get_specs(vehicle, url, attr)
     elif source == "wikipedia":
-        return wiki.get_specs(user_agent, vehicle, url, attr)
+        wiki = Wikidata()
+        return wiki.get_specs(vehicle, url, attr)
     else:
         raise ValueError("Invalid source. Try again.")
 

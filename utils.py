@@ -6,6 +6,7 @@
 #     `.__.'     |_____| |_____|________|\______.' 
 
 import re
+import random
 import requests
 import contextlib
 import os
@@ -18,6 +19,7 @@ from bs4 import BeautifulSoup
 
 from datetime import datetime as dt
 
+from proxybroker import Broker
 from random_user_agent.params import HardwareType, SoftwareEngine, SoftwareName, SoftwareType, OperatingSystem, Popularity
 from random_user_agent.user_agent import UserAgent
 
@@ -45,6 +47,16 @@ class Logger(object):
         self.terminal.flush()
         self.log.flush()
 
+# Global variables
+USER_AGENT = UserAgent()
+
+HEADERS = {
+    'User-Agent': 'user-agent',
+    "Content-Type": "text/html"
+    # other headers allowed.
+}
+
+PROXY_LIST = []
 
 # Database SQLite
 def checkSQLite(conn: sqlite3.Connection, table: str, attr: str, value_attr: str):
@@ -119,6 +131,10 @@ def get_PostgreSQL_connection(PATH):
 
 # Some utils
 def random_user_agent():
+    # Create a random user_agent generator
+    # :param:
+    # :return:
+
     user_agent_rotator = None
 
     hardwareTypes =         [HardwareType.COMPUTER.value, HardwareType.MOBILE.value]
@@ -134,20 +150,30 @@ def random_user_agent():
 
     return user_agent_rotator
 
-def html_downloader():
-    LINK = []
-    HEADERS = {
-    'User-Agent': 'user-agent',
-    "Content-Type": "text/html"
-    # other headers allowed.
+def random_proxy_list():
+    # Create a random proxy list
+    # :param:
+    # :return:
+
+    raise NotImplementedError
+
+def html_downloader(sources: list):
+    # Download a html list site
+    # :param sources: a list of URL site.
+    # :return:
+
+    user_agent = USER_AGENT.get_random_user_agent()
+    HEADERS["User-Agent"] = user_agent
+    
+    proxy = PROXY_LIST[random.randint(0, len(PROXY_LIST) - 1)]
+    proxies = {
+        "http": proxy.host,
+        "https": proxy.host,
     }
 
-    user_agent_generator = random_user_agent()
-
-    for site in LINK:
+    for site in sources:
+        response = requests.get(site, headers=HEADERS, proxies=proxies, timeout=10)
         try:
-            HEADERS["User-Agent"] = user_agent_generator.get_random_user_agent()
-            response = requests.get(site, headers=HEADERS, timeout=10)
             response.raise_for_status()
         except requests.ConnectionError as e:
             print("Error (connection):")
@@ -169,20 +195,23 @@ def html_downloader():
             with open(path, 'x') as f:
                 f.write(response.text)
 
-def image_downloader():
-    LINK = []
-    HEADERS = {
-    'User-Agent': 'user-agent',
-    "Content-Type": "text/html"
-    # other headers allowed.
+def image_downloader(sources: list):
+    # Download a image list source
+    # :param sources: a list of URL image.
+    # :return:
+
+    user_agent = USER_AGENT.get_random_user_agent()
+    HEADERS["User-Agent"] = user_agent
+    
+    proxy = PROXY_LIST[random.randint(0, len(PROXY_LIST) - 1)]
+    proxies = {
+        "http": proxy.host,
+        "https": proxy.host,
     }
-
-    user_agent_generator = random_user_agent()
-
-    for site in LINK:
+    
+    for uri in sources:
+        response = requests.get(uri, headers=HEADERS, proxies=proxies, timeout=10)
         try:
-            HEADERS["User-Agent"] = user_agent_generator.get_random_user_agent()
-            response = requests.get(site, headers=HEADERS, timeout=10)
             response.raise_for_status()
         except requests.ConnectionError as e:
             print("Error (connection):")
@@ -216,9 +245,24 @@ def image_downloader():
                                 dest_file.write(block)
                     dest_file.close()     
 
-def request(link, headers, timeout):
+def request(url: str, timeout: int):
+    # Create a get http/https request and return the response (print the error)
+    # :param url: a given url site to request.
+    # .param timeout: a given int timeout.
+    # :return: a response objcet from requests library.
+
+    user_agent = USER_AGENT.get_random_user_agent()
+    HEADERS["User-Agent"] = user_agent
+    
+    proxy = None
+    #proxy = PROXY_LIST[random.randint(0, len(PROXY_LIST) - 1)]
+
+    if(proxy is not None):
+        response = requests.get(url, headers=HEADERS, proxies=proxy, timeout=timeout)
+    else:
+        response = requests.get(url, headers=HEADERS, timeout=timeout)
+
     try:
-        response = requests.get(link, headers=headers, timeout=timeout)
         response.raise_for_status()
     except requests.ConnectionError as e:
         print("Error (connection):")
@@ -230,7 +274,7 @@ def request(link, headers, timeout):
         print("Error (http):")
         print(e)
     except:
-            print("Someting goes wrong here.")
+        print("Someting goes wrong here.")
     else:
         print("HTTP Status request: " + str(response.status_code))
     

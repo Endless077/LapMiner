@@ -5,23 +5,17 @@
 # | \____) \ `.___.'\_| |  \ \_ _/ /   \ \_ _| |_     
 #  \______.'`.____ .|____| |___|____| |____|_____|
 
-import requests
 import re
 import fastestlaps_db as db
+import utils
 
 from bs4 import BeautifulSoup
-from random_user_agent.user_agent import UserAgent
 
 LINK1 = "https://fastestlaps.com/tracks"
 LINK2 = "https://fastestlaps.com/makes"
 
 BASE_LINK = "https://fastestlaps.com"
 
-HEADERS = {
-    'User-Agent': 'user-agent',
-    "Content-Type": "text/html"
-    # other headers allowed.
-}
 
 def change_laptime(laptime: str):
     # Change a laptime "mm:ss.ms" in seconds
@@ -336,31 +330,16 @@ def record_deleter():
 def record_updater():
     raise NotImplementedError
 
-def get_all_tracks(user_agent: UserAgent):
+def get_all_tracks():
     # Get all tracks from the main track page of fastestlaps.com
-    # :param user-agent: a user agent random string.
+    # :param:
     # :return: a list of all track dict (name, href).
 
     all_track = []
     
-    try:
-        HEADERS["User-Agent"] = user_agent
-        response = requests.get(LINK1, headers=HEADERS, timeout=10)
-        response.raise_for_status()
-    except requests.ConnectionError as e:
-        print("Error (connection):")
-        print(e)
-    except requests.Timeout as e:
-        print("Error (timeout):")
-        print(e)
-    except requests.HTTPError as e:
-        print("Error (http):")
-        print(e)
-    except:
-        print("Someting goes wrong here.")
-    else:
-        print("HTTP Status request: " + str(response.status_code))
+    response = utils.request(LINK1, 10)
 
+    if(response.status_code == 200):
         print("Parsing html...")
         soup = BeautifulSoup(response.text, 'html.parser')
         tag = soup.find(class_=re.compile("section"))
@@ -376,9 +355,8 @@ def get_all_tracks(user_agent: UserAgent):
 
     return all_track
 
-def get_track_info(user_agent: UserAgent, track: dict):
+def get_track_info(track: dict):
     # Get all track info (i.e Country, length and laps), ignore track if it haven't laptime
-    # :param user-agent: a user agent random string.
     # :param track: a dict with two keys (name and href).
     # :return: a dict with two keys (laps_time that is a list and track_info that is a tuple).
 
@@ -386,24 +364,9 @@ def get_track_info(user_agent: UserAgent, track: dict):
     track_info = (None, None)
     track_LINK = BASE_LINK + track['href']
 
-    try:
-        HEADERS["User-Agent"] = user_agent
-        response = requests.get(track_LINK, headers=HEADERS, timeout=10)
-        response.raise_for_status()
-    except requests.ConnectionError as e:
-        print("Error (connection):")
-        print(e)
-    except requests.Timeout as e:
-        print("Error (timeout):")
-        print(e)
-    except requests.HTTPError as e:
-        print("Error (http):")
-        print(e)
-    except:
-        print("Someting goes wrong here.")
-    else:
-        print("HTTP Status request: " + str(response.status_code))
+    response = utils.request(track_LINK, 10)
 
+    if(response.status_code == 200):
         print("Parsing html...")
         soup = BeautifulSoup(response.text, 'html.parser')
         
@@ -441,33 +404,17 @@ def get_track_info(user_agent: UserAgent, track: dict):
     ret = {'laps_time': laps_time, 'track_info': track_info}
     return ret
 
-def get_vehicle_info(user_agent: UserAgent, vehicle: dict):
+def get_vehicle_info(vehicle: dict):
     # Get all vheicle info (i.e Country, engine, pwer....), ignore if value don't exist
-    # :param user-agent: a user agent random string.
     # :param vheicle: a dict with two keys (name and href).
     # :return: a dict with a lot of keys (key = attribute).
 
     vehicle_record = {'name': vehicle[0]}
     vehicle_LINK = BASE_LINK + vehicle[1]
 
-    try:
-        HEADERS["User-Agent"] = user_agent
-        response = requests.get(vehicle_LINK, headers=HEADERS, timeout=10)
-        response.raise_for_status()
-    except requests.ConnectionError as e:
-        print("Error (connection):")
-        print(e)
-    except requests.Timeout as e:
-        print("Error (timeout):")
-        print(e)
-    except requests.HTTPError as e:
-        print("Error (http):")
-        print(e)
-    except:
-        print("Someting goes wrong here.")
-    else:
-        print("HTTP Status request: " + str(response.status_code))
+    response = utils.request(vehicle_LINK, 10)
 
+    if(response.status_code == 200):
         soup = BeautifulSoup(response.text, 'html.parser')
         tables = soup.findAll(class_=re.compile("table fl-datasheet"))
 

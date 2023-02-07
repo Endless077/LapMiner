@@ -27,6 +27,12 @@ def main():
    # Print logo
    printLogo()
 
+   # Create a random user agent generator
+   utils.USER_AGENT = utils.random_user_agent()
+
+   # Crate a random proxy server list
+   # utils.PROXY_LIST = utils.random_proxy_list()
+    
    # Create dump (if exist, delete and create).
    if os.path.exists(dump.PATH):
       os.remove(dump.PATH)
@@ -36,22 +42,17 @@ def main():
    conn =  utils.get_SQLite_connection(dump.PATH)
    dump.create_tables(conn)
    print("######################")
-   
-   # Create a user-agent generator
-   user_agent_generator = utils.random_user_agent()
 
    # Scraping from fastestlaps.com,
    # first phase: getting all track name and href.
-   user_agent = user_agent_generator.get_random_user_agent()
-   all_tracks = scrap.get_all_tracks(user_agent)
+   all_tracks = scrap.get_all_tracks()
    print("######################")
    
    # Scraping from fastestlaps.com,
    # second phase: getting all track information (i.e country, length and all laps).
    print("Initial laps scraping:")
    for track in all_tracks:
-      user_agent = user_agent_generator.get_random_user_agent()
-      value = scrap.get_track_info(user_agent, track)
+      value = scrap.get_track_info(track)
       if((value['track_info'][0] is not None) and (value['track_info'][1] is not None)):
          laps = value['laps_time']
          track = (track['name'], track['href'], value['track_info'][0], value['track_info'][1][0])
@@ -70,9 +71,8 @@ def main():
    # fourth phase: getting all vehicle specs information
    all_vehicle = dump.get_all_vehicles(conn)
    for vehicle in all_vehicle:
-      user_agent = user_agent_generator.get_random_user_agent()
       if(vehicle[1] != None):
-         vehicle_specs = scrap.get_vehicle_info(user_agent, vehicle)
+         vehicle_specs = scrap.get_vehicle_info(vehicle)
          if(len(vehicle_specs) != 1):
             extracted_specs = scrap.extract_specs(vehicle_specs)
             print("######################")
