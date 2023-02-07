@@ -23,7 +23,9 @@ sys.path.append("../Lap-Time-Prediction/")
 from sources.UltimateSpecs import UltimateSpecs
 from sources.CarsData import CarsData 
 from sources.Wikidata import Wikidata
-import database as db
+
+import fastestlaps_db as old_db
+import database as new_db
 import utils
 
 PATH = "../Lap-Time-Prediction/update"
@@ -42,7 +44,7 @@ def main():
     utils.USER_AGENT = utils.random_user_agent()
 
     # Crate a random proxy server list
-    # utils.PROXY_LIST = utils.random_proxy_list()
+    #utils.PROXY_LIST = utils.random_proxy_list()
 
     # Input control and main menù
     data = dict()
@@ -209,10 +211,10 @@ def retrieve(vehicle: str, url: str, source: str, attr: set):
         raise ValueError("Invalid source. Try again.")
 
 def update(vehicle: str, new_specs: dict):
-    conn = utils.get_SQLite_connection(db.PATH)
+    conn = utils.get_SQLite_connection(new_db.PATH)
 
-    vehicle_data = db.get_specific_vehicle(conn, -1, vehicle)
-    db.update_specific_vehicle(conn, vehicle_data[0], new_specs)
+    vehicle_data = new_db.get_specific_vehicle(conn, -1, vehicle)
+    new_db.update_specific_vehicle(conn, vehicle_data[0], new_specs)
 
 def printLogo():
     print("  ______     ______       _  ____   ____ ") 

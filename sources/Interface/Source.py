@@ -1,13 +1,9 @@
-import requests
-from bs4 import BeautifulSoup
 from abc import ABC, abstractmethod
-from random_user_agent.user_agent import UserAgent
-
 
 class Source(ABC):
 
     @abstractmethod
-    def get_specs(user_agent: UserAgent, vehicle: str, url: str, attr: set):
+    def get_specs(vehicle: str, url: str, attr: set):
         pass
 
     @abstractmethod

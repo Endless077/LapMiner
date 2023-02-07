@@ -5,6 +5,7 @@
 #  _| |_.' /  \ \__/ /    _| |_\/_| |_  _| |_     
 # |______.'    `.__.'    |_____||_____||_____|  
 
+import re
 import sqlite3
 from sqlite3 import Error
 

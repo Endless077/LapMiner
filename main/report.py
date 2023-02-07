@@ -9,7 +9,6 @@
 import os
 import sys
 import shutil
-import time
 
 sys.path.append("../Lap-Time-Prediction/fastestlaps")
 sys.path.append("../Lap-Time-Prediction/generator")

@@ -6,10 +6,9 @@
 #  \______.'`.____ .|____| |___|____| |____|_____|
 
 import re
+from bs4 import BeautifulSoup
 import fastestlaps_db as db
 import utils
-
-from bs4 import BeautifulSoup
 
 LINK1 = "https://fastestlaps.com/tracks"
 LINK2 = "https://fastestlaps.com/makes"

@@ -7,7 +7,6 @@
 
 # IMPORT
 import re
-import requests
 from bs4 import BeautifulSoup
 from Interface.Source import Source
 
