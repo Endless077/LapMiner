@@ -17,7 +17,7 @@ class UltimateSpecs(Source):
     def __init__(self):
         pass
 
-    def get_specs(self, vehicle: str, url: str, attr: set):
+    def get_specs(self, url: str, attr: set):
         
         if not url.endswith(".html"):
             raise SystemError("This ultimatespecs page is not a specs page (specs page should ends with .html).")
@@ -29,6 +29,7 @@ class UltimateSpecs(Source):
         if(response.status_code == 200):
             soup = BeautifulSoup(response.text, 'html.parser')
 
+            print(soup)
             tds = soup.find_all("td", class_="tabletd", align="right")
             new_line = "\n"
 
@@ -41,6 +42,8 @@ class UltimateSpecs(Source):
                 if ((len(intestazione) > 0) and (len(dato) > 0 and not re.search(r"^-",dato))):
                     specs_map[intestazione] = dato        
 
+            specs["Vehicle"] = None
+            
             if("Layout" in attr):
                 specs["Layout"] = self.get_layout(specs_map)
             if("Dimensions" in attr):
@@ -56,7 +59,7 @@ class UltimateSpecs(Source):
 
         return specs
     
-    def get_layout(specs_map: dict):
+    def get_layout(self, specs_map: dict):
         layout_specs = dict()
 
         if("Engine Position" in specs_map.keys()):
@@ -79,7 +82,7 @@ class UltimateSpecs(Source):
         
         return layout_specs
 
-    def get_dimensions(specs_map: dict):
+    def get_dimensions(self, specs_map: dict):
         dimensions_specs = dict()
 
         if("Curb Weight" in specs_map.keys()):
@@ -94,8 +97,8 @@ class UltimateSpecs(Source):
                     lbs_result = float(result[0])*0.45359237
                     dimensions_specs["curb_weight"] = round(lbs_result,2)
 
-        match_cm = re.compile('(\d+) *[Cc]+[Mm]+.*')
-        match_in = re.compile('(\d+) *[Ii]+[Nn]+.*')
+        match_cm = re.compile('(\d+\.{0,1}\d{0,}) *[Cc]+[Mm].*')
+        match_in = re.compile('(\d+\.{0,1}\d{0,}) *[Ii]+[Nn].*')
 
         if("Wheelbase" in specs_map.keys()):
             result = match_cm.findall(specs_map["Wheelbase"])
@@ -143,11 +146,11 @@ class UltimateSpecs(Source):
 
         return dimensions_specs
     
-    def get_engine(specs_map: dict):
+    def get_engine(self, specs_map: dict):
         engine_specs = dict()
         
         if("Engine type - Number of cylinders" in specs_map.keys()):
-             engine_specs["engine_type"] = specs_map["Engine type - Number of cylinders"]
+             engine_specs["engine_name"] = specs_map["Engine type - Number of cylinders"]
 
         # Displacement not allowed.
 
@@ -173,21 +176,21 @@ class UltimateSpecs(Source):
             match_nm = re.compile('(\d+) *[Nn]+[Mm]+.*')
             result = match_nm.findall(specs_map["Maximum torque"])
             if(len(result) > 0):
-                engine_specs["power"] = int(result[0])
+                engine_specs["torque"] = int(result[0])
             else:
                 match_lbft = re.compile('(\d+) *[Ll]+[Bb]+[- ]+[Ff]+[Tt].*')
                 result = match_lbft.findall(specs_map["Maximum torque"])
                 if(len(result) > 0):
                     bhp_result = float(result[0])*1.014
-                    engine_specs["power"] = round(bhp_result,2)
+                    engine_specs["torque"] = round(bhp_result,2)
         
         return engine_specs
 
-    def get_trasmission(specs_map: dict):
+    def get_trasmission(self, specs_map: dict):
         trasmission_specs = dict()
 
         if("Transmission Gearbox - Number of speeds" in specs_map.keys()):
-            trasmission_specs["trasmission_name"]
+            trasmission_specs["trasmission_name"] = specs_map["Transmission Gearbox - Number of speeds"].split("Transmission Relations")[0].replace("\n",'').strip()
             type_list = ["manual", "automatic", "semi-automatic", "semi automatic", "semiautomatic", "dual-clutch", "dual clutch", "dualclutch", "sequential"]
             type_index = [int(specs_map["Transmission Gearbox - Number of speeds"].lower().find(type_value)) for type_value in type_list]
             occurrences = [value for value in type_index if value > 0]
@@ -202,7 +205,7 @@ class UltimateSpecs(Source):
 
         return trasmission_specs
     
-    def get_performance(specs_map: dict):
+    def get_performance(self, specs_map: dict):
         performance_specs = dict()
 
         if("Top Speed" in specs_map.keys()):
@@ -218,13 +221,14 @@ class UltimateSpecs(Source):
                     performance_specs["top_speed"] = round(mph_result,2)
 
         if("Acceleration 0 to 100 km/h (0 to 62 mph)" in specs_map.keys()):
-            match = re.compile('(\d+) *[Ss]++.*')
+            match = re.compile('(\d+\.{0,1}\d{0,}) *[Ss]+.*')
             result = match.findall(specs_map["Acceleration 0 to 100 km/h (0 to 62 mph)"])
             if(len(result) > 0):
                 performance_specs["accelleration"] = round(float(result[0]), 2)
+                
         # Break Distance not allowed.
 
         return performance_specs
 
-    def get_overview():
+    def get_overview(self, specs_map: dict):
         return None

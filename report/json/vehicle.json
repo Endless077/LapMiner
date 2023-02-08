@@ -5540,6 +5540,9 @@
          "Grand Tour Eboladrome": [
             83.7
          ],
+         "Bedford Autodrome West (Post 5/2015)": [
+            84.8
+         ],
          "Contidrom (3.3 Km)": [
             92.65
          ],
@@ -7807,9 +7810,6 @@
    },
    "Aston Martin Rapide S": {
       "Laps": {
-         "Motortrend Figure-8": [
-            24.6
-         ],
          "Motown Mile": [
             57.01
          ]
@@ -10086,6 +10086,39 @@
          "N_Trasmission": 6.0
       }
    },
+   "Audi Q3 2.0 TDI Quattro": {
+      "Laps": {
+         "Mireval": [
+            111.5
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Audi Q3 2.0 TDI Quattro",
+         "Type": "Car",
+         "Manufacturer": "Audi",
+         "Model": "Q3 2.0 TDI Quattro (140 PS)",
+         "Country": "Germany",
+         "Introduced_Year": 2012.0,
+         "0-100_kph_(s)": 9.3,
+         "100-0_(m)": 35.0,
+         "Top_Speed_(kph)": 197.0,
+         "Curb_Weight_(kg)": 1599.0,
+         "Wheelbase_(m)": 2.6,
+         "Long_(m)": 4.38,
+         "High_(m)": 1.83,
+         "Wide_(m)": 1.61,
+         "Engine": "inline 4 16V DOHC Turbo diesel",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 140.0,
+         "Torque_(Nm)": 320.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "SUV/truck",
+         "Trasmission_Name": "6-Speed Manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 6.0
+      }
+   },
    "Audi Q5 3.0 TDI quattro (8R)": {
       "Laps": {
          "Balocco": [
@@ -11773,6 +11806,9 @@
    },
    "Audi RS 3 Limousine (8Y)": {
       "Laps": {
+         "Motortrend Figure-8": [
+            23.4
+         ],
          "Monticello Motor Club North Course": [
             88.9
          ],
@@ -11784,6 +11820,9 @@
          ],
          "Hockenheim Gp": [
             115.6
+         ],
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            172.5
          ],
          "Nürburgring Nordschleife": [
             455.52
@@ -11802,7 +11841,7 @@
          "0-100_kph_(s)": 3.7,
          "100-0_(m)": 32.0,
          "Top_Speed_(kph)": 290.0,
-         "Curb_Weight_(kg)": 1631.0,
+         "Curb_Weight_(kg)": 1637.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -15771,6 +15810,9 @@
          "Top Gear Track": [
             84.9
          ],
+         "Bedford Autodrome West (Post 5/2015)": [
+            85.2
+         ],
          "Thunderhill Park West": [
             85.2
          ],
@@ -16813,9 +16855,6 @@
    },
    "BMW  M6 Cabrio (F12)": {
       "Laps": {
-         "Motortrend Figure-8": [
-            24.6
-         ],
          "Ring Knutstrop (Conf 2)": [
             72.6
          ],
@@ -19823,9 +19862,6 @@
          "Bedford Autodrome West Circuit (2004 - 06/2008)": [
             95.4
          ],
-         "Autozeitung Test Track": [
-            103.8
-         ],
          "Zolder": [
             114.72
          ]
@@ -19859,9 +19895,6 @@
    },
    "BMW 650i": {
       "Laps": {
-         "Autozeitung Test Track": [
-            103.6
-         ],
          "Oschersleben": [
             110.15
          ],
@@ -19875,25 +19908,25 @@
          "Manufacturer": "BMW",
          "Model": "650i",
          "Country": "Germany",
-         "Introduced_Year": 2011.0,
-         "0-100_kph_(s)": 4.8,
+         "Introduced_Year": 2004.0,
+         "0-100_kph_(s)": 5.4,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": NaN,
+         "Curb_Weight_(kg)": 1615.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
          "Wide_(m)": NaN,
-         "Engine": "V8 powerplant with turbochargers",
-         "Displacement_(l)": 4.4,
-         "Power_(ps)": 408.0,
-         "Torque_(Nm)": 600.0,
+         "Engine": "V8, 32v",
+         "Displacement_(l)": 4.8,
+         "Power_(ps)": 367.0,
+         "Torque_(Nm)": 490.0,
          "Engine_Layout": "Front",
          "Wheel_Drive": "Rear",
          "Class": "Coupe",
-         "Trasmission_Name": "eight-speed Sports automatic gearbox",
-         "Trasmission_Type": "Automatic",
-         "N_Trasmission": NaN
+         "Trasmission_Name": "6",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 6.0
       }
    },
    "BMW 650i Cabrio": {
@@ -20269,39 +20302,6 @@
          "Trasmission_Name": "5 speed manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 5.0
-      }
-   },
-   "BMW 840i xDrive (G15)": {
-      "Laps": {
-         "Autozeitung Test Track": [
-            103.7
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "BMW 840i xDrive (G15)",
-         "Type": "Car",
-         "Manufacturer": "BMW",
-         "Model": "840i xDrive (G15)",
-         "Country": "Germany",
-         "Introduced_Year": 2019.0,
-         "0-100_kph_(s)": 4.6,
-         "100-0_(m)": 35.0,
-         "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1851.0,
-         "Wheelbase_(m)": 2.82,
-         "Long_(m)": 4.84,
-         "High_(m)": 1.9,
-         "Wide_(m)": 1.34,
-         "Engine": "I6 turbo",
-         "Displacement_(l)": 3.0,
-         "Power_(ps)": 340.0,
-         "Torque_(Nm)": 500.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "Coupe",
-         "Trasmission_Name": "8-speed ZF 8HP automatic",
-         "Trasmission_Type": "Automatic",
-         "N_Trasmission": 8.0
       }
    },
    "BMW M1 (E26)": {
@@ -20932,10 +20932,10 @@
          "Sachsenring": [
             91.52
          ],
-         "Contidrom (3.8 Km)": [
+         "Contidrom (3.3 Km)": [
             96.53
          ],
-         "Contidrom (3.3 Km)": [
+         "Contidrom (3.8 Km)": [
             96.53
          ],
          "Rockingham International Super Sportscar": [
@@ -20943,6 +20943,9 @@
          ],
          "Winton (National Circuit)": [
             102.7
+         ],
+         "Autozeitung Test Track": [
+            102.8
          ],
          "Virginia International Raceway Grand East Course (Post 01/2014)": [
             187.2
@@ -21074,7 +21077,7 @@
             120.0
          ],
          "Virginia International Raceway Grand East Course (Post 01/2014)": [
-            183.0
+            180.6
          ],
          "Nürburgring Nordschleife": [
             478.59
@@ -21090,7 +21093,7 @@
          "0-100_kph_(s)": 3.9,
          "100-0_(m)": 32.0,
          "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1758.0,
+         "Curb_Weight_(kg)": 1762.0,
          "Wheelbase_(m)": 2.74,
          "Long_(m)": 4.55,
          "High_(m)": 1.84,
@@ -22774,6 +22777,9 @@
          "Circuit De Nevers Magny-Cours Gp": [
             111.86
          ],
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            167.5
+         ],
          "Nürburgring Nordschleife": [
             435.67
          ],
@@ -23182,6 +23188,9 @@
       "Laps": {
          "Anneau Du Rhin": [
             85.6
+         ],
+         "Autozeitung Test Track": [
+            99.4
          ]
       },
       "Specs": {
@@ -25480,9 +25489,6 @@
          "Mireval": [
             100.83
          ],
-         "Autozeitung Test Track": [
-            103.7
-         ],
          "Pannonia Ring": [
             139.7
          ]
@@ -26778,6 +26784,9 @@
          ],
          "Mendig Afb Circuit": [
             118.88
+         ],
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            184.7
          ]
       },
       "Specs": {
@@ -26790,7 +26799,7 @@
          "0-100_kph_(s)": 3.6,
          "100-0_(m)": 34.0,
          "Top_Speed_(kph)": 225.0,
-         "Curb_Weight_(kg)": 2296.0,
+         "Curb_Weight_(kg)": 2303.0,
          "Wheelbase_(m)": 2.86,
          "Long_(m)": 4.78,
          "High_(m)": 1.85,
@@ -26842,9 +26851,6 @@
    },
    "BMW i8": {
       "Laps": {
-         "Motortrend Figure-8": [
-            24.6
-         ],
          "Goodwood Hill Climb": [
             59.3
          ],
@@ -27238,39 +27244,6 @@
          "Wheel_Drive": "All",
          "Class": "SUV/truck",
          "Trasmission_Name": "8 speed automatic",
-         "Trasmission_Type": "Automatic",
-         "N_Trasmission": 8.0
-      }
-   },
-   "Bentley Bentayga Speed": {
-      "Laps": {
-         "Motortrend Figure-8": [
-            24.6
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Bentley Bentayga Speed",
-         "Type": "Car",
-         "Manufacturer": "Bentley",
-         "Model": "Bentayga Speed",
-         "Country": "United Kingdom",
-         "Introduced_Year": 2019.0,
-         "0-100_kph_(s)": 3.7,
-         "100-0_(m)": 36.0,
-         "Top_Speed_(kph)": 306.0,
-         "Curb_Weight_(kg)": 2542.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "twin turbo TSI W12",
-         "Displacement_(l)": 6.0,
-         "Power_(ps)": 635.0,
-         "Torque_(Nm)": 900.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "SUV/truck",
-         "Trasmission_Name": "8-speed automatic",
          "Trasmission_Type": "Automatic",
          "N_Trasmission": 8.0
       }
@@ -32700,6 +32673,10 @@
          "Winterfahrtraining.At Eishandlingkurs": [
             69.58
          ],
+         "Autocar Dry Handling Track": [
+            70.0,
+            71.6
+         ],
          "Ring Knutstrop (Conf 2)": [
             70.7
          ],
@@ -32710,9 +32687,6 @@
          "Dunnville Autodrome": [
             71.53
          ],
-         "Autocar Dry Handling Track": [
-            71.6
-         ],
          "Castle Combe": [
             74.3
          ],
@@ -32721,6 +32695,9 @@
          ],
          "Anglesey Coastal": [
             75.6
+         ],
+         "Autocar Wet Handling Track": [
+            78.2
          ],
          "Toronto Motorsports Park": [
             78.87
@@ -34432,9 +34409,9 @@
          "Country": "France",
          "Introduced_Year": 2011.0,
          "0-100_kph_(s)": 7.2,
-         "100-0_(m)": 38.0,
+         "100-0_(m)": 36.0,
          "Top_Speed_(kph)": 214.0,
-         "Curb_Weight_(kg)": 1181.0,
+         "Curb_Weight_(kg)": 1182.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -35236,6 +35213,9 @@
          ],
          "Monticello Motor Club North Course": [
             80.55
+         ],
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            158.6
          ]
       },
       "Specs": {
@@ -35664,7 +35644,7 @@
          "0-100_kph_(s)": 7.1,
          "100-0_(m)": 34.0,
          "Top_Speed_(kph)": 164.0,
-         "Curb_Weight_(kg)": 1778.0,
+         "Curb_Weight_(kg)": 1794.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -37687,6 +37667,9 @@
          "Contidrom (3.3 Km)": [
             91.46
          ],
+         "Bedford Autodrome West (Post 5/2015)": [
+            92.2
+         ],
          "Autozeitung Test Track": [
             99.9
          ],
@@ -37948,6 +37931,9 @@
    },
    "EQS 53 AMG Dynamic Plus": {
       "Laps": {
+         "Motortrend Figure-8": [
+            24.2
+         ],
          "Buddh International Circuit Autox": [
             68.1
          ],
@@ -37965,7 +37951,7 @@
          "0-100_kph_(s)": 3.2,
          "100-0_(m)": 35.0,
          "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 2647.0,
+         "Curb_Weight_(kg)": 2687.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -41925,9 +41911,6 @@
    },
    "Ferrari F430": {
       "Laps": {
-         "Motortrend Figure-8": [
-            24.6
-         ],
          "Silverstone (National Circuit)": [
             67.1
          ],
@@ -45367,7 +45350,7 @@
          "Country": null,
          "Introduced_Year": 2012.0,
          "0-100_kph_(s)": 6.1,
-         "100-0_(m)": 36.0,
+         "100-0_(m)": 35.0,
          "Top_Speed_(kph)": 248.0,
          "Curb_Weight_(kg)": 1455.0,
          "Wheelbase_(m)": NaN,
@@ -45556,9 +45539,6 @@
    },
    "Ford GT (Mk I)": {
       "Laps": {
-         "Motortrend Figure-8": [
-            24.6
-         ],
          "Anglesey": [
             50.55
          ],
@@ -47078,6 +47058,42 @@
          "Trasmission_Name": "6-Speed manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 6.0
+      }
+   },
+   "Ford Mustang Mach-E GT": {
+      "Laps": {
+         "Autocar Wet Handling Track": [
+            72.2
+         ],
+         "Autocar Dry Handling Track": [
+            79.5
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Ford Mustang Mach-E GT",
+         "Type": "Car",
+         "Manufacturer": "Ford",
+         "Model": "Mustang Mach-E GT",
+         "Country": "United States",
+         "Introduced_Year": 2019.0,
+         "0-100_kph_(s)": 4.1,
+         "100-0_(m)": 34.0,
+         "Top_Speed_(kph)": 200.0,
+         "Curb_Weight_(kg)": 2305.0,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "2 electric motor",
+         "Displacement_(l)": NaN,
+         "Power_(ps)": 487.0,
+         "Torque_(Nm)": 860.0,
+         "Engine_Layout": "Middle",
+         "Wheel_Drive": "All",
+         "Class": "SUV/truck",
+         "Trasmission_Name": "1 speed",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 1.0
       }
    },
    "Ford Mustang SVT Cobra": {
@@ -51824,9 +51840,6 @@
          ],
          "Istanbul Park": [
             145.0
-         ],
-         "Spa Francorchamps": [
-            176.91
          ]
       },
       "Specs": {
@@ -51983,6 +51996,9 @@
          ],
          "Suzuka": [
             143.12
+         ],
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            178.8
          ]
       },
       "Specs": {
@@ -53894,6 +53910,9 @@
          ],
          "Monticello Motor Club North Course": [
             93.0
+         ],
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            187.3
          ]
       },
       "Specs": {
@@ -53906,7 +53925,7 @@
          "0-100_kph_(s)": NaN,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": 1455.0,
+         "Curb_Weight_(kg)": 1495.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -54166,6 +54185,9 @@
          ],
          "Autozeitung Test Track": [
             103.0
+         ],
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            186.1
          ]
       },
       "Specs": {
@@ -55999,6 +56021,39 @@
          "N_Trasmission": 8.0
       }
    },
+   "Jaguar F-Type V6": {
+      "Laps": {
+         "Autozeitung Test Track": [
+            103.2
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Jaguar F-Type V6",
+         "Type": "Car",
+         "Manufacturer": "Jaguar",
+         "Model": "F-Type V6",
+         "Country": "United Kingdom",
+         "Introduced_Year": 2013.0,
+         "0-100_kph_(s)": 5.2,
+         "100-0_(m)": 34.0,
+         "Top_Speed_(kph)": 260.0,
+         "Curb_Weight_(kg)": 1721.0,
+         "Wheelbase_(m)": 2.62,
+         "Long_(m)": 4.47,
+         "High_(m)": 1.94,
+         "Wide_(m)": 1.31,
+         "Engine": "Supercharged V6, DOHC, 24v",
+         "Displacement_(l)": 3.0,
+         "Power_(ps)": 340.0,
+         "Torque_(Nm)": 450.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Convertible",
+         "Trasmission_Name": "8 speed automatic",
+         "Trasmission_Type": "Automatic",
+         "N_Trasmission": 8.0
+      }
+   },
    "Jaguar F-Type V6 S": {
       "Laps": {
          "Motown Mile": [
@@ -56183,9 +56238,6 @@
       "Laps": {
          "Velo Citta (1.68 Km)": [
             63.72
-         ],
-         "Autozeitung Test Track": [
-            103.9
          ]
       },
       "Specs": {
@@ -57194,39 +57246,6 @@
          "N_Trasmission": 6.0
       }
    },
-   "Jaguar XKR Convertible": {
-      "Laps": {
-         "Autozeitung Test Track": [
-            103.6
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Jaguar XKR Convertible",
-         "Type": "Car",
-         "Manufacturer": "Jaguar",
-         "Model": "XKR Convertible (510 PS)",
-         "Country": "United Kingdom",
-         "Introduced_Year": 2009.0,
-         "0-100_kph_(s)": 4.6,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1764.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "V8 Supercharged",
-         "Displacement_(l)": 5.0,
-         "Power_(ps)": 510.0,
-         "Torque_(Nm)": 625.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "Rear",
-         "Class": "Convertible",
-         "Trasmission_Name": "6 speed automatic",
-         "Trasmission_Type": "Automatic",
-         "N_Trasmission": 6.0
-      }
-   },
    "Jaguar XKR Coupe": {
       "Laps": {
          "Winton (National Circuit)": [
@@ -57262,9 +57281,6 @@
    },
    "Jaguar XKR convertible": {
       "Laps": {
-         "Autozeitung Test Track": [
-            103.8
-         ],
          "Balocco": [
             181.79
          ]
@@ -57964,6 +57980,39 @@
          "N_Trasmission": NaN
       }
    },
+   "Kia Carnival 3.5": {
+      "Laps": {
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            219.1
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Kia Carnival 3.5",
+         "Type": "Car",
+         "Manufacturer": "Kia",
+         "Model": "Carnival 3.5",
+         "Country": "South Korea",
+         "Introduced_Year": 2020.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 190.0,
+         "Curb_Weight_(kg)": 2158.0,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "V6",
+         "Displacement_(l)": 3.5,
+         "Power_(ps)": 294.0,
+         "Torque_(Nm)": 355.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Front",
+         "Class": "SUV/truck",
+         "Trasmission_Name": "8 speed automatic",
+         "Trasmission_Type": "Automatic",
+         "N_Trasmission": 8.0
+      }
+   },
    "Kia Ceed 1.6 (Mk I)": {
       "Laps": {
          "Top Gear Track": [
@@ -58214,6 +58263,9 @@
          ],
          "Contidrom (3.3 Km)": [
             98.67
+         ],
+         "Autozeitung Test Track": [
+            102.3
          ],
          "Laguna Seca (Post 1988)": [
             106.16
@@ -59776,6 +59828,9 @@
          ],
          "Monticello Motor Club North Course": [
             83.1
+         ],
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            163.9
          ]
       },
       "Specs": {
@@ -59788,7 +59843,7 @@
          "0-100_kph_(s)": 3.2,
          "100-0_(m)": 32.0,
          "Top_Speed_(kph)": 325.0,
-         "Curb_Weight_(kg)": 1573.0,
+         "Curb_Weight_(kg)": 1574.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -61267,6 +61322,39 @@
          "Trasmission_Name": "5 Manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 5.0
+      }
+   },
+   "Land Rover Defender TD4 110 SW": {
+      "Laps": {
+         "Mireval": [
+            130.1
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Land Rover Defender TD4 110 SW",
+         "Type": "Car",
+         "Manufacturer": "Land Rover",
+         "Model": "Defender TD4 110 SW",
+         "Country": "United Kingdom",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 4 turbo diesel",
+         "Displacement_(l)": 2.2,
+         "Power_(ps)": 122.0,
+         "Torque_(Nm)": 360.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "SUV/truck",
+         "Trasmission_Name": "6 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 6.0
       }
    },
    "Leon 2.0 TSI Sportstourer": {
@@ -63400,6 +63488,9 @@
       "Laps": {
          "Anglesey Coastal": [
             78.5
+         ],
+         "Eurospeedway Lausitz": [
+            97.33
          ]
       },
       "Specs": {
@@ -64795,6 +64886,39 @@
          "Trasmission_Name": "6 speed manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 6.0
+      }
+   },
+   "Lucid Air Touring": {
+      "Laps": {
+         "Motortrend Figure-8": [
+            24.2
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Lucid Air Touring",
+         "Type": "Car",
+         "Manufacturer": "Lucid",
+         "Model": "Air Touring",
+         "Country": "United States",
+         "Introduced_Year": 2023.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 225.0,
+         "Curb_Weight_(kg)": 2280.0,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "2 electric motors",
+         "Displacement_(l)": NaN,
+         "Power_(ps)": 629.0,
+         "Torque_(Nm)": 1200.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "1 speed",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 1.0
       }
    },
    "MG A Twin Cam 1.8 Coupe": {
@@ -66316,9 +66440,6 @@
          ],
          "Bedford Autodrome West Circuit (06/2008 - 05/2015)": [
             89.5
-         ],
-         "Autozeitung Test Track": [
-            103.7
          ]
       },
       "Specs": {
@@ -66860,7 +66981,7 @@
          "0-100_kph_(s)": NaN,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": 211.0,
-         "Curb_Weight_(kg)": 1464.0,
+         "Curb_Weight_(kg)": 1483.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -68663,7 +68784,7 @@
          "Introduced_Year": 1983.0,
          "0-100_kph_(s)": NaN,
          "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 171.0,
+         "Top_Speed_(kph)": 201.0,
          "Curb_Weight_(kg)": 1200.0,
          "Wheelbase_(m)": 2.42,
          "Long_(m)": 4.32,
@@ -69944,7 +70065,7 @@
          "0-100_kph_(s)": 2.8,
          "100-0_(m)": 30.0,
          "Top_Speed_(kph)": 330.0,
-         "Curb_Weight_(kg)": 1461.0,
+         "Curb_Weight_(kg)": 1462.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -75470,6 +75591,9 @@
          "Contidrom (3.3 Km)": [
             96.48
          ],
+         "Autozeitung Test Track": [
+            102.5
+         ],
          "Madras Motor Race Track": [
             121.97
          ]
@@ -75482,7 +75606,7 @@
          "Country": "Germany",
          "Introduced_Year": 2014.0,
          "0-100_kph_(s)": 4.7,
-         "100-0_(m)": 35.0,
+         "100-0_(m)": 34.0,
          "Top_Speed_(kph)": 250.0,
          "Curb_Weight_(kg)": 1653.0,
          "Wheelbase_(m)": 2.7,
@@ -75787,39 +75911,6 @@
          "Trasmission_Name": "7-speed-automatic",
          "Trasmission_Type": "Automatic",
          "N_Trasmission": 7.0
-      }
-   },
-   "Mercedes-Benz S 500 4MATIC": {
-      "Laps": {
-         "Autozeitung Test Track": [
-            103.8
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Mercedes-Benz S 500 4MATIC",
-         "Type": "Car",
-         "Manufacturer": "Mercedes-Benz",
-         "Model": "S 500 4MATIC (W223)",
-         "Country": "Germany",
-         "Introduced_Year": 2020.0,
-         "0-100_kph_(s)": 4.8,
-         "100-0_(m)": 33.0,
-         "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 2133.0,
-         "Wheelbase_(m)": 3.11,
-         "Long_(m)": 5.18,
-         "High_(m)": 1.92,
-         "Wide_(m)": 1.5,
-         "Engine": "Inline 6 turbo mild hybrid",
-         "Displacement_(l)": 3.0,
-         "Power_(ps)": 435.0,
-         "Torque_(Nm)": 520.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "9 speed automatic",
-         "Trasmission_Type": "Automatic",
-         "N_Trasmission": 9.0
       }
    },
    "Mercedes-Benz S 580": {
@@ -76268,6 +76359,9 @@
    },
    "Mercedes-Benz SL 55 AMG": {
       "Laps": {
+         "Motortrend Figure-8": [
+            23.3
+         ],
          "Vairano Handling Course": [
             84.01
          ],
@@ -76419,6 +76513,9 @@
          ],
          "Autozeitung Test Track": [
             98.6
+         ],
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            172.6
          ]
       },
       "Specs": {
@@ -80614,7 +80711,7 @@
          "0-100_kph_(s)": NaN,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": NaN,
+         "Curb_Weight_(kg)": 644.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -82049,7 +82146,7 @@
          "0-100_kph_(s)": 2.8,
          "100-0_(m)": 32.0,
          "Top_Speed_(kph)": 324.0,
-         "Curb_Weight_(kg)": 1736.0,
+         "Curb_Weight_(kg)": 1763.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -84166,7 +84263,7 @@
          "0-100_kph_(s)": 6.3,
          "100-0_(m)": 36.0,
          "Top_Speed_(kph)": 262.0,
-         "Curb_Weight_(kg)": 1560.0,
+         "Curb_Weight_(kg)": 1564.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -88306,17 +88403,20 @@
          "N_Trasmission": 8.0
       }
    },
-   "Polestar 2  ": {
+   "Polestar 2  Dual Motor": {
       "Laps": {
+         "Llandow": [
+            49.1
+         ],
          "Nürburgring Gp Sprint": [
             107.7
          ]
       },
       "Specs": {
-         "Vehicle_Name": "Polestar 2  ",
+         "Vehicle_Name": "Polestar 2  Dual Motor",
          "Type": "Car",
          "Manufacturer": "Polestar",
-         "Model": "2",
+         "Model": "2  Dual Motor",
          "Country": "China",
          "Introduced_Year": 2020.0,
          "0-100_kph_(s)": 4.6,
@@ -88337,6 +88437,42 @@
          "Trasmission_Name": "1-speed fixed gear",
          "Trasmission_Type": "Other",
          "N_Trasmission": 1.0
+      }
+   },
+   "Polestar 2 BST edition 270": {
+      "Laps": {
+         "Motortrend Figure-8": [
+            24.2
+         ],
+         "Llandow": [
+            47.56
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Polestar 2 BST edition 270",
+         "Type": "Car",
+         "Manufacturer": "Polestar",
+         "Model": "2 BST edition 270",
+         "Country": "Sweden",
+         "Introduced_Year": 2023.0,
+         "0-100_kph_(s)": 4.5,
+         "100-0_(m)": 35.0,
+         "Top_Speed_(kph)": 205.0,
+         "Curb_Weight_(kg)": 2151.0,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Dual electric motors",
+         "Displacement_(l)": NaN,
+         "Power_(ps)": 483.0,
+         "Torque_(Nm)": 681.0,
+         "Engine_Layout": "Middle",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "Direct Drive",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": NaN
       }
    },
    "Pontiac Firebird Formula": {
@@ -88959,10 +89095,10 @@
          "Circuit De Nevers Magny-Cours Club": [
             79.13
          ],
-         "Monticello Motor Club North Course": [
+         "Autocar Wet Handling Track": [
             82.7
          ],
-         "Autocar Wet Handling Track": [
+         "Monticello Motor Club North Course": [
             82.7
          ],
          "Sachsenring": [
@@ -88986,6 +89122,9 @@
          ],
          "Circuit De Nevers Magny-Cours Gp": [
             113.44
+         ],
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            160.5
          ],
          "Spa Francorchamps": [
             161.78,
@@ -89182,6 +89321,9 @@
          "Circuit De Nevers Magny-Cours Club": [
             81.7
          ],
+         "Bedford Autodrome West (Post 5/2015)": [
+            83.2
+         ],
          "Contidrom (3.63 Km)": [
             96.4
          ],
@@ -89211,7 +89353,7 @@
          "0-100_kph_(s)": 3.8,
          "100-0_(m)": 30.0,
          "Top_Speed_(kph)": 293.0,
-         "Curb_Weight_(kg)": 1446.0,
+         "Curb_Weight_(kg)": 1449.0,
          "Wheelbase_(m)": 2.48,
          "Long_(m)": 4.38,
          "High_(m)": 1.99,
@@ -92574,6 +92716,9 @@
          ],
          "Snetterton 300": [
             130.32
+         ],
+         "Spa Francorchamps": [
+            156.75
          ],
          "Virginia International Raceway Grand East Course (Post 01/2014)": [
             160.6
@@ -97037,6 +97182,9 @@
          "Sportauto Wet Handling Test": [
             95.3
          ],
+         "Autozeitung Test Track": [
+            99.2
+         ],
          "Le Mans (Bugatti)": [
             116.78
          ],
@@ -97067,8 +97215,8 @@
          "Model": "Boxster S (981)",
          "Country": "Germany",
          "Introduced_Year": 2012.0,
-         "0-100_kph_(s)": 4.8,
-         "100-0_(m)": NaN,
+         "0-100_kph_(s)": 4.4,
+         "100-0_(m)": 32.0,
          "Top_Speed_(kph)": 284.0,
          "Curb_Weight_(kg)": 1431.0,
          "Wheelbase_(m)": 2.48,
@@ -98138,6 +98286,9 @@
          "Bedford Autodrome West Circuit (06/2008 - 05/2015)": [
             86.9
          ],
+         "Mireval": [
+            99.8
+         ],
          "Croft": [
             101.0
          ],
@@ -98294,9 +98445,6 @@
    },
    "Porsche Cayenne Turbo S": {
       "Laps": {
-         "Motortrend Figure-8": [
-            24.6
-         ],
          "Motown Mile": [
             58.1
          ],
@@ -100173,6 +100321,9 @@
    },
    "Porsche Taycan GTS": {
       "Laps": {
+         "Motortrend Figure-8": [
+            23.6
+         ],
          "Winterfahrtraining.At Eishandlingkurs": [
             63.07
          ]
@@ -100187,7 +100338,7 @@
          "0-100_kph_(s)": NaN,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": NaN,
+         "Curb_Weight_(kg)": 2339.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -100268,6 +100419,9 @@
          ],
          "Circuit De Nevers Magny-Cours Club": [
             81.28
+         ],
+         "Goodwood": [
+            90.74
          ],
          "Eurospeedway Lausitz": [
             92.76
@@ -105181,72 +105335,6 @@
          "N_Trasmission": 6.0
       }
    },
-   "Renault Megane RS 265": {
-      "Laps": {
-         "Contidrom (3.3 Km)": [
-            99.9
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Renault Megane RS 265",
-         "Type": "Car",
-         "Manufacturer": "Renault",
-         "Model": "Megane RS 265",
-         "Country": "France",
-         "Introduced_Year": 2013.0,
-         "0-100_kph_(s)": 6.1,
-         "100-0_(m)": 37.0,
-         "Top_Speed_(kph)": 254.0,
-         "Curb_Weight_(kg)": 1420.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": 4.3,
-         "High_(m)": 1.85,
-         "Wide_(m)": 1.44,
-         "Engine": "4 cyl. Turbo",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 269.0,
-         "Torque_(Nm)": 360.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "Front",
-         "Class": "Compact",
-         "Trasmission_Name": "6 speed manual",
-         "Trasmission_Type": "Manual",
-         "N_Trasmission": 6.0
-      }
-   },
-   "Renault Megane RS 265 Cup": {
-      "Laps": {
-         "Contidrom (3.3 Km)": [
-            97.49
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Renault Megane RS 265 Cup",
-         "Type": "Car",
-         "Manufacturer": "Renault",
-         "Model": "Megane RS 265 Cup",
-         "Country": "France",
-         "Introduced_Year": NaN,
-         "0-100_kph_(s)": 6.5,
-         "100-0_(m)": 37.0,
-         "Top_Speed_(kph)": 254.0,
-         "Curb_Weight_(kg)": 1415.0,
-         "Wheelbase_(m)": NaN,
-         "Long_(m)": NaN,
-         "High_(m)": NaN,
-         "Wide_(m)": NaN,
-         "Engine": "Inline 4 turbo",
-         "Displacement_(l)": 2.0,
-         "Power_(ps)": 265.0,
-         "Torque_(Nm)": 359.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "Front",
-         "Class": "Compact",
-         "Trasmission_Name": "6 speed manual",
-         "Trasmission_Type": "Manual",
-         "N_Trasmission": 6.0
-      }
-   },
    "Renault Megane RS 265 Trophy": {
       "Laps": {
          "Gunsai": [
@@ -105297,8 +105385,15 @@
          "Killarney": [
             87.45
          ],
+         "Contidrom (3.3 Km)": [
+            97.49,
+            99.9
+         ],
          "Twin Ring Motegi East": [
             100.49
+         ],
+         "Autozeitung Test Track": [
+            103.6
          ],
          "Fuji Raceway": [
             126.43
@@ -105327,10 +105422,10 @@
          "Model": "Megane RS 265 Trophy",
          "Country": "France",
          "Introduced_Year": 2011.0,
-         "0-100_kph_(s)": 6.0,
-         "100-0_(m)": NaN,
+         "0-100_kph_(s)": 5.8,
+         "100-0_(m)": 34.0,
          "Top_Speed_(kph)": 254.0,
-         "Curb_Weight_(kg)": 1409.0,
+         "Curb_Weight_(kg)": 1420.0,
          "Wheelbase_(m)": 2.65,
          "Long_(m)": 4.3,
          "High_(m)": 1.85,
@@ -109062,6 +109157,9 @@
          "Franciacorta": [
             88.65
          ],
+         "Autozeitung Test Track": [
+            102.4
+         ],
          "Ferte Gaucher": [
             119.24
          ],
@@ -109085,7 +109183,7 @@
          "0-100_kph_(s)": 5.7,
          "100-0_(m)": 32.0,
          "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1361.0,
+         "Curb_Weight_(kg)": 1379.0,
          "Wheelbase_(m)": 2.63,
          "Long_(m)": 4.27,
          "High_(m)": 1.82,
@@ -112594,7 +112692,8 @@
             129.73
          ],
          "Virginia International Raceway Grand East Course (Post 01/2014)": [
-            191.5
+            191.5,
+            191.6
          ]
       },
       "Specs": {
@@ -113905,6 +114004,39 @@
          "N_Trasmission": 1.0
       }
    },
+   "Taycan Sport Turismo GTS": {
+      "Laps": {
+         "Autozeitung Test Track": [
+            98.5
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Taycan Sport Turismo GTS",
+         "Type": "Car",
+         "Manufacturer": "Porsche",
+         "Model": "Taycan Sport Turismo GTS",
+         "Country": "Germany",
+         "Introduced_Year": 2021.0,
+         "0-100_kph_(s)": 3.6,
+         "100-0_(m)": 33.0,
+         "Top_Speed_(kph)": 250.0,
+         "Curb_Weight_(kg)": 2373.0,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "E-motor",
+         "Displacement_(l)": NaN,
+         "Power_(ps)": 598.0,
+         "Torque_(Nm)": 850.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "Estate/wagon",
+         "Trasmission_Name": "2 speed",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 2.0
+      }
+   },
    "Taycan Sport Turismo Turbo": {
       "Laps": {
          "Autozeitung Test Track": [
@@ -113999,6 +114131,7 @@
          "Buttonwillow Configuration 13": [
             113.27,
             117.66,
+            118.2,
             119.23
          ],
          "Buttonwillow Configuration 13 Ccw": [
@@ -115480,6 +115613,9 @@
       "Laps": {
          "Monticello Motor Club North Course": [
             92.2
+         ],
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            179.6
          ]
       },
       "Specs": {
@@ -115492,7 +115628,7 @@
          "0-100_kph_(s)": NaN,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": 1445.0,
+         "Curb_Weight_(kg)": 1446.0,
          "Wheelbase_(m)": NaN,
          "Long_(m)": NaN,
          "High_(m)": NaN,
@@ -116371,7 +116507,7 @@
    "Toyota Supra (Mk V 387 PS)": {
       "Laps": {
          "Motortrend Figure-8": [
-            23.8
+            23.7
          ],
          "Bryant Park Hillclimb": [
             61.1
@@ -116392,7 +116528,7 @@
             116.82
          ],
          "Virginia International Raceway Grand East Course (Post 01/2014)": [
-            179.31
+            175.6
          ]
       },
       "Specs": {
@@ -117052,6 +117188,39 @@
          "N_Trasmission": NaN
       }
    },
+   "VW Amarok 2.0 TDI": {
+      "Laps": {
+         "Mireval": [
+            118.5
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "VW Amarok 2.0 TDI",
+         "Type": "Car",
+         "Manufacturer": "VW",
+         "Model": "Amarok 2.0 TDI",
+         "Country": "Germany",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Long_(m)": NaN,
+         "High_(m)": NaN,
+         "Wide_(m)": NaN,
+         "Engine": "Inline 4 turbo diesel",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 180.0,
+         "Torque_(Nm)": 420.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "SUV/truck",
+         "Trasmission_Name": "8 speed automatic",
+         "Trasmission_Type": "Automatic",
+         "N_Trasmission": 8.0
+      }
+   },
    "VW Amarok V6 TDI (258 PS)": {
       "Laps": {
          "Velo Citta (1.68 Km)": [
@@ -117083,6 +117252,39 @@
          "Trasmission_Name": "8 speed automatic",
          "Trasmission_Type": "Automatic",
          "N_Trasmission": 8.0
+      }
+   },
+   "VW Arteon R": {
+      "Laps": {
+         "Autozeitung Test Track": [
+            102.5
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "VW Arteon R",
+         "Type": "Car",
+         "Manufacturer": "VW",
+         "Model": "Arteon R",
+         "Country": "Germany",
+         "Introduced_Year": 2020.0,
+         "0-100_kph_(s)": 4.9,
+         "100-0_(m)": 35.0,
+         "Top_Speed_(kph)": 270.0,
+         "Curb_Weight_(kg)": 1830.0,
+         "Wheelbase_(m)": 2.84,
+         "Long_(m)": 4.86,
+         "High_(m)": 1.87,
+         "Wide_(m)": 1.43,
+         "Engine": "Inline 4 turbo",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 320.0,
+         "Torque_(Nm)": 420.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "7-speed DSG",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 7.0
       }
    },
    "VW Arteon Shooting Brake R": {
@@ -118223,7 +118425,7 @@
             113.76
          ],
          "Virginia International Raceway Grand East Course (Post 01/2014)": [
-            192.1
+            191.4
          ]
       },
       "Specs": {
@@ -118704,9 +118906,6 @@
          ],
          "Mireval": [
             101.35
-         ],
-         "Autozeitung Test Track": [
-            103.7
          ],
          "Smolensk Ring": [
             110.7

@@ -14,6 +14,8 @@ sys.path.append("../Lap-Time-Prediction/fastestlaps")
 sys.path.append("../Lap-Time-Prediction/generator")
 sys.path.append("../Lap-Time-Prediction/")
 
+sys.dont_write_bytecode = True
+
 import fastestlaps_db as old_db
 import database as new_db
 import verbose

@@ -745,6 +745,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 72.2,unknown,Autocar Dry Handling Track,C63 AMG Coupe Black Series
 81.9,unknown,Autocar Dry Handling Track,Cadillac CTS 3.6 V6
 70.2,unknown,Autocar Dry Handling Track,Caterham 420 Cup
+70.0,unknown,Autocar Dry Handling Track,Chevrolet Corvette Stingray
 71.6,unknown,Autocar Dry Handling Track,Chevrolet Corvette Stingray
 88.75,unknown,Autocar Dry Handling Track,Citroen C-Crosser HDI 155FAP
 84.2,unknown,Autocar Dry Handling Track,Citroen DS3 Racing
@@ -765,6 +766,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 76.7,unknown,Autocar Dry Handling Track,Ford Focus RS
 76.7,Matt Prior,Autocar Dry Handling Track,Ford Focus ST
 83.4,unknown,Autocar Dry Handling Track,Ford Focus ST
+79.5,unknown,Autocar Dry Handling Track,Ford Mustang Mach-E GT
 86.3,unknown,Autocar Dry Handling Track,Honda CR-Z
 76.1,Autocar,Autocar Dry Handling Track,Honda Civic Type R (FK2)
 70.7,unknown,Autocar Dry Handling Track,Honda NSX (Mk II)
@@ -884,6 +886,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 78.2,unknown,Autocar Wet Handling Track,Bentley Flying Spur (Mk II)
 79.7,unknown,Autocar Wet Handling Track,C63 AMG Coupe Black Series
 71.9,unknown,Autocar Wet Handling Track,Cadillac CTS 3.6 V6
+78.2,unknown,Autocar Wet Handling Track,Chevrolet Corvette Stingray
 72.95,unknown,Autocar Wet Handling Track,Citroen C-Crosser HDI 155FAP
 79.4,unknown,Autocar Wet Handling Track,Ferrari 296 GTB
 71.3,unknown,Autocar Wet Handling Track,Ferrari 430 Scuderia
@@ -899,6 +902,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 70.5,unknown,Autocar Wet Handling Track,Ford Focus RS
 67.3,unknown,Autocar Wet Handling Track,Ford Focus ST
 75.5,unknown,Autocar Wet Handling Track,Ford Focus ST
+72.2,unknown,Autocar Wet Handling Track,Ford Mustang Mach-E GT
 75.5,unknown,Autocar Wet Handling Track,Honda CR-Z
 76.1,Autocar,Autocar Wet Handling Track,Honda Civic Type R (FK2)
 68.3,unknown,Autocar Wet Handling Track,Honda NSX (Mk II)
@@ -1064,12 +1068,10 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 101.6,unknown,Autozeitung Test Track,BMW 330i (G20)
 103.1,unknown,Autozeitung Test Track,BMW 335 xi (E90)
 103.4,unknown,Autozeitung Test Track,BMW 440i Gran Coupe
-103.8,unknown,Autozeitung Test Track,BMW 645ci Coupe
-103.6,unknown,Autozeitung Test Track,BMW 650i
 102.5,unknown,Autozeitung Test Track,BMW 750i
-103.7,unknown,Autozeitung Test Track,BMW 840i xDrive (G15)
 102.2,unknown,Autozeitung Test Track,BMW M135i xDrive (F20)
 97.8,unknown,Autozeitung Test Track,BMW M2 (F87)
+102.8,unknown,Autozeitung Test Track,BMW M235i
 97.7,unknown,Autozeitung Test Track,BMW M240i XDrive
 98.7,unknown,Autozeitung Test Track,BMW M3 (E90)
 100.1,unknown,Autozeitung Test Track,BMW M3 (E92)
@@ -1080,6 +1082,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 97.5,unknown,Autozeitung Test Track,BMW M4 Competition
 95.5,unknown,Autozeitung Test Track,BMW M4 Competition Coupe
 101.1,unknown,Autozeitung Test Track,BMW M440i Cabriolet (G23)
+99.4,unknown,Autozeitung Test Track,BMW M440i Gran Coupe (G26)
 103.2,unknown,Autozeitung Test Track,BMW M5 (E60)
 99.8,unknown,Autozeitung Test Track,BMW M5 (F10)
 98.4,unknown,Autozeitung Test Track,BMW M5 (F90)
@@ -1100,7 +1103,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 99.4,unknown,Autozeitung Test Track,BMW X5 M
 103.6,unknown,Autozeitung Test Track,BMW X5 xDrive 45e (G05)
 102.2,unknown,Autozeitung Test Track,BMW X5 xDrive40i (G05)
-103.7,unknown,Autozeitung Test Track,BMW X6 M
 100.3,unknown,Autozeitung Test Track,BMW Z4 30i (G29)
 102.8,unknown,Autozeitung Test Track,BMW Z4 M Roadster
 99.0,unknown,Autozeitung Test Track,BMW Z4 M40i (G29)
@@ -1146,14 +1148,13 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 101.9,unknown,Autozeitung Test Track,Hyundai I30N 
 103.0,unknown,Autozeitung Test Track,Hyundai Kona N
 100.6,unknown,Autozeitung Test Track,Hyundai i20 N (BC3)
+103.2,unknown,Autozeitung Test Track,Jaguar F-Type V6
 103.6,unknown,Autozeitung Test Track,Jaguar F-Type V8 S
 100.8,unknown,Autozeitung Test Track,Jaguar F-type R AWD
-103.9,unknown,Autozeitung Test Track,Jaguar I-Pace
 102.7,unknown,Autozeitung Test Track,Jaguar XFR (Mk I)
 103.1,unknown,Autozeitung Test Track,Jaguar XKR
 103.2,unknown,Autozeitung Test Track,Jaguar XKR (510 PS)
-103.6,unknown,Autozeitung Test Track,Jaguar XKR Convertible
-103.8,unknown,Autozeitung Test Track,Jaguar XKR convertible
+102.3,unknown,Autozeitung Test Track,Kia Stinger GT
 95.6,unknown,Autozeitung Test Track,Lamborghini Gallardo
 98.2,unknown,Autozeitung Test Track,Lamborghini Gallardo (520 PS)
 99.0,unknown,Autozeitung Test Track,Lamborghini Gallardo Spyder
@@ -1162,7 +1163,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 103.1,unknown,Autozeitung Test Track,Maserati Coupe GranSport
 103.6,unknown,Autozeitung Test Track,Maserati GranTurismo
 102.3,unknown,Autozeitung Test Track,Maserati GranTurismo S
-103.7,unknown,Autozeitung Test Track,Maserati Quattroporte S
 95.3,unknown,Autozeitung Test Track,McLaren 570S Spider
 92.8,unknown,Autozeitung Test Track,McLaren MP4-12C (625 PS)
 101.8,unknown,Autozeitung Test Track,Mercedes - AMG GLA 35 4MATIC
@@ -1177,9 +1177,9 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 99.4,unknown,Autozeitung Test Track,Mercedes-Benz CLS 63 AMG
 101.4,unknown,Autozeitung Test Track,Mercedes-Benz E 63 AMG T
 102.7,unknown,Autozeitung Test Track,Mercedes-Benz E450
+102.5,unknown,Autozeitung Test Track,Mercedes-Benz GLA 45 AMG
 103.5,unknown,Autozeitung Test Track,Mercedes-Benz GLC 43 AMG
 101.2,unknown,Autozeitung Test Track,Mercedes-Benz GLC 63 AMG S
-103.8,unknown,Autozeitung Test Track,Mercedes-Benz S 500 4MATIC
 101.5,unknown,Autozeitung Test Track,Mercedes-Benz S 580
 100.4,unknown,Autozeitung Test Track,Mercedes-Benz S63 AMG
 103.5,unknown,Autozeitung Test Track,Mercedes-Benz SL 400
@@ -1232,6 +1232,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 98.5,unknown,Autozeitung Test Track,Porsche 911 Turbo S (996)
 96.5,unknown,Autozeitung Test Track,Porsche 911 Turbo S Cabriolet
 100.7,unknown,Autozeitung Test Track,Porsche Boxster S
+99.2,unknown,Autozeitung Test Track,Porsche Boxster S (981)
 102.3,unknown,Autozeitung Test Track,Porsche Boxster S (987 280 PS)
 99.6,unknown,Autozeitung Test Track,Porsche Cayenne Coupé GTS
 102.8,unknown,Autozeitung Test Track,Porsche Cayenne E-Hybrid
@@ -1257,20 +1258,23 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 98.9,unknown,Autozeitung Test Track,Porsche Panamera Turbo S 
 94.8,unknown,Autozeitung Test Track,Porsche Taycan Turbo
 102.7,unknown,Autozeitung Test Track,Renault Megane RS (Mk III)
+103.6,unknown,Autozeitung Test Track,Renault Megane RS 265 Trophy
 102.3,unknown,Autozeitung Test Track,SL 63 AMG  Package
 103.4,unknown,Autozeitung Test Track,SLK 350 BlueEFFICIENCY
 100.6,unknown,Autozeitung Test Track,SLK 55 AMG Black Series
 93.3,unknown,Autozeitung Test Track,SLS AMG Black Series
+102.4,unknown,Autozeitung Test Track,Seat Leon Cupra 280 (Mk III)
 100.2,unknown,Autozeitung Test Track,Seat Leon ST Cupra 300 4Drive
 103.4,unknown,Autozeitung Test Track,Stelvio 2.0T Q4 Super
+98.5,unknown,Autozeitung Test Track,Taycan Sport Turismo GTS
 99.3,unknown,Autozeitung Test Track,Taycan Sport Turismo Turbo
 98.4,unknown,Autozeitung Test Track,Tesla Model 3 
 101.2,unknown,Autozeitung Test Track,Toyota Supra (Mk V 340 PS)
 103.0,unknown,Autozeitung Test Track,Toyota Supra SZ-R (Mk V)
 102.4,unknown,Autozeitung Test Track,V8 Vantage Roadster
+102.5,unknown,Autozeitung Test Track,VW Arteon R
 103.5,unknown,Autozeitung Test Track,VW Arteon Shooting Brake R
 101.7,unknown,Autozeitung Test Track,VW Golf GTI (Mk VIII)
-103.7,unknown,Autozeitung Test Track,VW Golf R (Mk VI)
 101.9,unknown,Autozeitung Test Track,VW Golf R (Mk VII)
 99.1,unknown,Autozeitung Test Track,VW Golf R (Mk VIII)
 100.3,unknown,Autozeitung Test Track,VW Golf R Variant (310 PS)
@@ -2287,19 +2291,23 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 55.0,unknown,Bedford Autodrome South Circuit,Porsche 911 GT3 RS
 56.0,unknown,Bedford Autodrome South Circuit,Porsche 911 Turbo S
 81.8,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),Alfa Romeo Giulia QV
+84.8,unknown,Bedford Autodrome West (Post 5/2015),Alpine A110 (Mk II)
 88.2,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),Ariel Nomad
 84.1,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),Aston Martin DBX
 81.8,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),Audi RS Q8 
+85.2,unknown,Bedford Autodrome West (Post 5/2015),Audi TT RS Coupe (Mk III)
 78.6,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),BMW M3 Competition xDrive
 82.8,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),Caterham Seven 360
 79.88,Angus Maclaine,Bedford Autodrome West (Post 5/2015),Caterham Seven 420R
 82.96,Adam Towler,Bedford Autodrome West (Post 5/2015),Civic Type R Limited Edition
 84.1,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),Cupra Leon 2.0 TSI (300 PS)
+92.2,unknown,Bedford Autodrome West (Post 5/2015),E 63 AMG S 4Matic+
 82.9,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),Ford Focus ST (Mk IV)
 82.5,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),Honda Civic Type R (FK8)
 83.1,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),Mercedes-Benz C 63 AMG S Coupe
 94.11,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),Morgan Plus Four CX-T
 78.17,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),Porsche 718 Cayman GT4
+83.2,unknown,Bedford Autodrome West (Post 5/2015),Porsche 718 Cayman S
 78.92,Steve Sutcliffe,Bedford Autodrome West (Post 5/2015),Porsche Cayenne Turbo GT
 76.63,Adam Towler,Bedford Autodrome West (Post 5/2015),Radical Rapture
 83.63,Adam Towler,Bedford Autodrome West (Post 5/2015),Renault Megane RS Trophy R
@@ -2929,6 +2937,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 122.7,unknown,Buttonwillow Configuration 13,Superformance Daytona Coupe
 113.27,Oscar Jackson Jr.,Buttonwillow Configuration 13,Tesla Model 3 
 117.66,Sofiaan Fraval,Buttonwillow Configuration 13,Tesla Model 3 
+118.2,Leafar Guerrero,Buttonwillow Configuration 13,Tesla Model 3 
 119.23,Will Wattanawongkiri,Buttonwillow Configuration 13,Tesla Model 3 
 118.3,Craig Coker,Buttonwillow Configuration 13,Tesla Model Y 
 121.92,Unplugged Performance,Buttonwillow Configuration 13,Tesla Model Y 
@@ -4547,8 +4556,8 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 101.04,unknown,Contidrom (3.3 Km),Renault Clio RS III Cup
 108.51,unknown,Contidrom (3.3 Km),Renault Laguna 2.0 dCi
 108.51,unknown,Contidrom (3.3 Km),Renault Laguna Coupe 2.0 dCi
-99.9,Auto Bild,Contidrom (3.3 Km),Renault Megane RS 265
-97.49,unknown,Contidrom (3.3 Km),Renault Megane RS 265 Cup
+97.49,unknown,Contidrom (3.3 Km),Renault Megane RS 265 Trophy
+99.9,Auto Bild,Contidrom (3.3 Km),Renault Megane RS 265 Trophy
 96.87,unknown,Contidrom (3.3 Km),Seat Leon Cupra 300 (Mk III)
 97.72,unknown,Contidrom (3.3 Km),Seat Leon Cupra R
 105.05,unknown,Contidrom (3.3 Km),Seat Leon FR TDI
@@ -4987,6 +4996,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 88.82,Guido Naumann,Eurospeedway Lausitz,Lamborghini Huracán Evo
 87.94,Guido Neumann,Eurospeedway Lausitz,Lamborghini Huracán STO
 96.15,unknown,Eurospeedway Lausitz,Lamborghini Urus
+97.33,unknown,Eurospeedway Lausitz,Lotus Emira 3.5
 96.51,unknown,Eurospeedway Lausitz,Lotus Exige 410 Sport (Mk III)
 91.41,unknown,Eurospeedway Lausitz,Maserati MC20
 106.92,unknown,Eurospeedway Lausitz,Mazda MX-5 2.0 (Mk IV 184 PS)
@@ -5335,6 +5345,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 95.94,unknown,Goodwood,Porsche 968 Club Sport
 90.8,QuinnJosepj,Goodwood,Porsche Cayman GT4 (981)
 93.9,unknown,Goodwood,Porsche Panamera S
+90.74,Graham Simmonds,Goodwood,Porsche Taycan Turbo S
 97.1,unknown,Goodwood,Renault Clio 172 Cup
 95.7,unknown,Goodwood,Renault Clio 197 Cup
 91.62,Jordan Moyle,Goodwood,Renault Megane RS 250 Cup
@@ -7642,6 +7653,8 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 49.0,unknown,Llandow,Opel Astra OPC 2012
 49.1,unknown,Llandow,Peugeot 208 GTI (200 PS)
 47.23,Ryan Cullen,Llandow,Peugeot 308 GTi 270 (T9)
+49.1,Jason Plato,Llandow,Polestar 2  Dual Motor
+47.56,Jason Plato,Llandow,Polestar 2 BST edition 270
 43.9,Steve Sutcliffe,Llandow,Porsche 718 Cayman GT4
 45.9,Steve Sutcliffe,Llandow,Porsche 718 Cayman GTS 4.0
 46.3,Jethro Bovington,Llandow,Porsche 911 Carrera (991)
@@ -8274,6 +8287,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 94.8,unknown,Mireval,Artega GT
 106.6,unknown,Mireval,Aston Martin V8 Vantage S/C
 116.21,unknown,Mireval,Audi A2 1.4
+111.5,unknown,Mireval,Audi Q3 2.0 TDI Quattro
 96.6,Dirk Möller-Sonntag,Mireval,Audi R8 4.2 FSI Quattro (Mk I)
 92.4,unknown,Mireval,Audi R8 GT (Mk I)
 91.82,unknown,Mireval,Audi R8 V10 5.2 FSI Plus
@@ -8317,6 +8331,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 90.69,unknown,Mireval,Lamborghini Aventador LP700-4
 94.51,unknown,Mireval,Lamborghini Diablo GT
 94.2,Dirk Möller-Sonntag,Mireval,Lamborghini Gallardo LP560-4
+130.1,unknown,Mireval,Land Rover Defender TD4 110 SW
 101.1,Dirk Möller-Sonntag,Mireval,Lexus IS-F (facelift)
 94.21,unknown,Mireval,Lotus 340R
 99.5,unknown,Mireval,Lotus Elise SC
@@ -8351,6 +8366,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 105.51,unknown,Mireval,Porsche 928 GT
 104.95,unknown,Mireval,Porsche 944 Turbo (250 PS)
 99.71,unknown,Mireval,Porsche Boxster S (986 260 PS)
+99.8,unknown,Mireval,Porsche Cayenne Turbo (Mk II)
 96.15,unknown,Mireval,Porsche Cayman R (987)
 95.93,Auto Bild,Mireval,Porsche Cayman S (981)
 106.9,unknown,Mireval,Renault Clio RS III Cup
@@ -8359,6 +8375,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 98.7,unknown,Mireval,Subaru Impreza P1
 100.28,unknown,Mireval,Subaru WRX STI
 105.9,unknown,Mireval,Toyota MR2
+118.5,unknown,Mireval,VW Amarok 2.0 TDI
 101.35,unknown,Mireval,VW Golf R (Mk VI)
 101.7,unknown,Mireval,VW Golf R (Mk VII facelift)
 104.4,unknown,Mireval,VW Scirocco 2.0 TSI (Mk III)
@@ -8870,7 +8887,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 23.6,unknown,Motortrend Figure-8,Aston Martin DBS Superleggera 
 24.4,unknown,Motortrend Figure-8,Aston Martin DBX
 24.1,unknown,Motortrend Figure-8,Aston Martin DBX 707
-24.6,unknown,Motortrend Figure-8,Aston Martin Rapide S
 23.9,Carlos Lago,Motortrend Figure-8,Aston Martin V12 Vantage S
 24.5,unknown,Motortrend Figure-8,Aston Martin V8 Vantage
 24.0,unknown,Motortrend Figure-8,Aston Martin Vantage  (Mk II)
@@ -8884,12 +8900,12 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 23.5,unknown,Motortrend Figure-8,Audi R8 V10 5.2 FSI Plus
 23.2,unknown,Motortrend Figure-8,Audi R8 V10 Plus (Mk II)
 23.7,unknown,Motortrend Figure-8,Audi R8 V10 Spyder  (Mk II)
+23.4,unknown,Motortrend Figure-8,Audi RS 3 Limousine (8Y)
 24.0,unknown,Motortrend Figure-8,Audi RS Q8 
 24.4,unknown,Motortrend Figure-8,Audi RS5 Cabriolet (8F7)
 24.2,unknown,Motortrend Figure-8,Audi RS6 Avant (C8)
 23.7,unknown,Motortrend Figure-8,Audi TT RS Coupe (Mk III)
 23.1,unknown,Motortrend Figure-8,Aventador LP750-4 SV
-24.6,unknown,Motortrend Figure-8,BMW  M6 Cabrio (F12)
 24.0,unknown,Motortrend Figure-8,BMW M2 (F87)
 23.7,unknown,Motortrend Figure-8,BMW M2 CS (F87)
 24.1,unknown,Motortrend Figure-8,BMW M2 Competition (F87)
@@ -8914,8 +8930,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 24.5,unknown,Motortrend Figure-8,BMW Z4 30i (G29)
 24.0,unknown,Motortrend Figure-8,BMW Z4 M40i (G29 / US-Spec)
 24.5,unknown,Motortrend Figure-8,BMW i4 M50
-24.6,unknown,Motortrend Figure-8,BMW i8
-24.6,unknown,Motortrend Figure-8,Bentley Bentayga Speed
 23.8,unknown,Motortrend Figure-8,Bentley Continental GT
 24.1,unknown,Motortrend Figure-8,Bentley Continental GT V8
 24.4,unknown,Motortrend Figure-8,C 63 AMG Coupe Black Series
@@ -8958,14 +8972,13 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 23.6,unknown,Motortrend Figure-8,E 63 AMG S 4Matic+
 24.3,unknown,Motortrend Figure-8,E 63 AMG S T-Modell
 24.2,unknown,Motortrend Figure-8,E63s 4MATIC T-Modell
+24.2,unknown,Motortrend Figure-8,EQS 53 AMG Dynamic Plus
 24.2,unknown,Motortrend Figure-8,Ferrari 360 CS
 23.6,unknown,Motortrend Figure-8,Ferrari 458 Italia
 22.6,unknown,Motortrend Figure-8,Ferrari 488 GTB
 23.3,unknown,Motortrend Figure-8,Ferrari 812 Superfast
 24.5,unknown,Motortrend Figure-8,Ferrari Enzo
-24.6,unknown,Motortrend Figure-8,Ferrari F430
 22.8,unknown,Motortrend Figure-8,Ferrari F8 Tributo
-24.6,unknown,Motortrend Figure-8,Ford GT (Mk I)
 22.7,unknown,Motortrend Figure-8,Ford GT (Mk II 656 PS)
 24.3,unknown,Motortrend Figure-8,Ford Mustang Bullitt (480 Hp)
 24.0,unknown,Motortrend Figure-8,Ford Mustang GT
@@ -9004,6 +9017,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 23.4,unknown,Motortrend Figure-8,Lexus LFA
 23.6,unknown,Motortrend Figure-8,Lotus Evora GT
 24.4,unknown,Motortrend Figure-8,Lotus Evora S
+24.2,unknown,Motortrend Figure-8,Lucid Air Touring
 23.2,unknown,Motortrend Figure-8,McLaren 570GT
 23.0,unknown,Motortrend Figure-8,McLaren 570S
 22.2,unknown,Motortrend Figure-8,McLaren 600LT
@@ -9023,6 +9037,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 23.2,unknown,Motortrend Figure-8,Mercedes-Benz AMG GT S
 24.1,unknown,Motortrend Figure-8,Mercedes-Benz C 63 AMG S
 24.3,unknown,Motortrend Figure-8,Mercedes-Benz E 63 AMG S
+23.3,unknown,Motortrend Figure-8,Mercedes-Benz SL 55 AMG
 23.6,unknown,Motortrend Figure-8,Mercedes-Benz SL 63 AMG (2022)
 24.1,unknown,Motortrend Figure-8,Mercedes-Benz SLS AMG
 23.9,unknown,Motortrend Figure-8,Mercedes-Benz SLS AMG GT
@@ -9036,6 +9051,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 23.5,unknown,Motortrend Figure-8,Panamera 4S E-Hybrid Sport Tu..
 23.6,unknown,Motortrend Figure-8,Panamera Sport Turismo Turbo S
 24.5,unknown,Motortrend Figure-8,Polestar 1 
+24.2,unknown,Motortrend Figure-8,Polestar 2 BST edition 270
 23.6,unknown,Motortrend Figure-8,Porsche 718 Boxster GTS 4.0
 23.5,unknown,Motortrend Figure-8,Porsche 718 Boxster S
 24.0,unknown,Motortrend Figure-8,Porsche 718 Cayman
@@ -9078,7 +9094,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 24.1,unknown,Motortrend Figure-8,Porsche Cayenne Coupé Turbo
 23.9,unknown,Motortrend Figure-8,Porsche Cayenne Turbo (Mk III)
 23.2,unknown,Motortrend Figure-8,Porsche Cayenne Turbo GT
-24.6,unknown,Motortrend Figure-8,Porsche Cayenne Turbo S
 24.3,unknown,Motortrend Figure-8,Porsche Cayman (981)
 23.5,Motortrend,Motortrend Figure-8,Porsche Cayman GT4 (981)
 23.8,unknown,Motortrend Figure-8,Porsche Cayman GTS (981)
@@ -9092,6 +9107,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 23.9,unknown,Motortrend Figure-8,Porsche Panamera Turbo (Mk II)
 24.4,unknown,Motortrend Figure-8,Porsche Panamera Turbo S
 23.6,unknown,Motortrend Figure-8,Porsche Taycan 4S
+23.6,unknown,Motortrend Figure-8,Porsche Taycan GTS
 23.6,unknown,Motortrend Figure-8,Porsche Taycan Turbo S
 23.1,unknown,Motortrend Figure-8,SLS AMG Black Series
 23.4,unknown,Motortrend Figure-8,SRT Viper
@@ -9102,7 +9118,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 24.2,unknown,Motortrend Figure-8,Tesla Model 3 
 23.5,unknown,Motortrend Figure-8,Tesla Model S Plaid
 23.9,unknown,Motortrend Figure-8,Toyota Supra (Mk V 340 PS)
-23.8,unknown,Motortrend Figure-8,Toyota Supra (Mk V 387 PS)
+23.7,unknown,Motortrend Figure-8,Toyota Supra (Mk V 387 PS)
 66.8,unknown,Motortrend Ice Handling Course,Mitsubishi Lancer Evo X GSR
 65.4,unknown,Motortrend Ice Handling Course,Subaru Impreza WRX STI (2.5)
 20.47,unknown,Motovision Handling Course,Alfa Romeo 156 GTA
@@ -9483,7 +9499,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 94.6,Paul Englert,Nürburgring Gp Sprint,Nissan GT-R Nismo (R35)
 119.45,unknown,Nürburgring Gp Sprint,Opel Corsa GSi (D)
 118.12,unknown,Nürburgring Gp Sprint,Peugeot RCZ 1.6 155THP
-107.7,unknown,Nürburgring Gp Sprint,Polestar 2  
+107.7,unknown,Nürburgring Gp Sprint,Polestar 2  Dual Motor
 99.6,unknown,Nürburgring Gp Sprint,Porsche 718 Cayman GTS
 98.8,unknown,Nürburgring Gp Sprint,Porsche 718 Cayman GTS 4.0
 99.1,unknown,Nürburgring Gp Sprint,Porsche 911 Carrera S (991)
@@ -11891,7 +11907,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 124.94,Nikita Mazepin,Spa Francorchamps,Haas VF-21
 106.34,Mick Schumacher,Spa Francorchamps,Haas VF-22
 106.56,Kevin Magnussen,Spa Francorchamps,Haas VF-22
-176.91,Rob Huff,Spa Francorchamps,Honda Civic Type R (FK2)
 152.14,Robert Serwanski,Spa Francorchamps,Koenigsegg One:1
 167.99,unknown,Spa Francorchamps,Lotus 2-Eleven
 155.02,Komo Tec,Spa Francorchamps,Lotus Exige Cup 430 (Mk III)
@@ -11929,6 +11944,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 161.78,unknown,Spa Francorchamps,Porsche 718 Cayman GT4 RS
 163.82,Geebee014,Spa Francorchamps,Porsche 718 Cayman GT4 RS
 164.45,Denis Malevanyi,Spa Francorchamps,Porsche 911 GT3 
+156.75,unknown,Spa Francorchamps,Porsche 911 GT3 (992)
 163.0,unknown,Spa Francorchamps,Porsche 911 GT3 (997)
 153.48,unknown,Spa Francorchamps,Porsche 911 GT3 RS
 153.9,Tommy Rau,Spa Francorchamps,Porsche 911 GT3 RS
@@ -13502,6 +13518,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 184.3,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Alpina B7 Biturbo (G12)
 177.5,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Audi R8 V10 5.2 FSI Plus
 176.1,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Audi R8 V10 Plus (Mk II)
+172.5,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Audi RS 3 Limousine (8Y)
 182.2,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Audi RS Q8 
 185.6,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Audi RS3 Sedan (8V facelift)
 183.9,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Audi RS5 (9T)
@@ -13514,10 +13531,11 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 179.7,Eric Tingwall,Virginia International Raceway Grand East Course (Post 01/2014),BMW M2 Competition (F87)
 187.2,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW M235i
 188.0,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW M240i
-183.0,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW M240i XDrive
+180.6,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW M240i XDrive
 173.5,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW M3 Competition xDrive
 183.18,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW M340i xDrive (G20 387 PS)
 180.7,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW M4
+167.5,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW M4 CSL
 172.9,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW M4 GTS
 175.2,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW M5 (F90)
 170.3,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW M5 CS
@@ -13526,6 +13544,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 175.45,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW M8 Competition (G15)
 182.9,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW X4 M Competition (F98)
 180.5,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW X5 M Competition (F95)
+184.7,unknown,Virginia International Raceway Grand East Course (Post 01/2014),BMW i4 M50
 176.2,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Bentley Continental GT Speed
 179.8,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Cadillac ATS-V
 179.2,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Cadillac ATS-V Coupe
@@ -13549,6 +13568,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 180.7,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Civic Type R Limited Edition
 196.0,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Clubman John Cooper Works ALL4
 167.1,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Corvette  Grand Sport 
+158.6,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Corvette C8 Z06 Z07 Package
 179.8,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Dodge Challenger SRT Hellcat
 183.5,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Dodge Charger SRT Hellcat
 160.02,Chris Winkler,Virginia International Raceway Grand East Course (Post 01/2014),Dodge Viper ACR (Mk V)
@@ -13571,8 +13591,11 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 187.3,David Beard,Virginia International Raceway Grand East Course (Post 01/2014),Genesis G70 3.3T GDi
 194.6,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Honda Civic Si Coupe (FC)
 183.9,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Honda Civic Type R (FK8)
+178.8,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Honda Civic Type R (FL5)
 170.2,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Honda NSX (Mk II)
 164.0,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Huracán Performante
+187.3,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Hyundai Elantra N
+186.1,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Hyundai Kona N
 187.7,David Beard,Virginia International Raceway Grand East Course (Post 01/2014),Hyundai Veloster N (Mk II)
 184.9,unknown,Virginia International Raceway Grand East Course (Post 01/2014),IS 500 F Sport 
 182.2,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Jaguar F-Type Project 7
@@ -13580,9 +13603,11 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 181.0,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Jaguar F-Type R Coupe
 186.7,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Jaguar XFR-S (Mk I facelift)
 179.1,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Jaguar XKR-S GT
+219.1,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Kia Carnival 3.5
 191.6,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Kia Stinger GT
 167.5,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Lamborghini Huracan LP 610-4
 164.98,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Lamborghini Huracán Evo
+163.9,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Lamborghini Huracán Tecnica
 175.8,Josh Jacquot,Virginia International Raceway Grand East Course (Post 01/2014),Lamborghini Urus
 185.0,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Lexus GS F
 184.8,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Lexus LC 500
@@ -13606,12 +13631,14 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 185.9,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Mercedes-Benz CLA 45 AMG
 180.1,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Mercedes-Benz E 63 AMG S
 179.1,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Mercedes-Benz SL 63 AMG
+172.6,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Mercedes-Benz SL 63 AMG (2022)
 183.76,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Mini John Cooper Works GP
 184.44,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Mustang Ecoboost 2.3 High Per..
 173.2,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Nissan GT-R (R35 570PS)
 169.4,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Nissan GT-R Nismo (R35)
 176.7,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Porsche 718 Boxster GTS
 170.31,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Porsche 718 Cayman GT4
+160.5,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Porsche 718 Cayman GT4 RS
 178.3,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Porsche 718 Cayman S
 173.4,Tony Quiroga,Virginia International Raceway Grand East Course (Post 01/2014),Porsche 911 Carrera
 157.8,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Porsche 911 GT2 RS (991)
@@ -13636,17 +13663,19 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 192.4,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Subaru BRZ (Mk II)
 194.0,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Subaru BRZ tS
 191.5,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Subaru WRX
+191.6,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Subaru WRX
 190.5,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Subaru WRX STI
 183.39,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Subaru WRX STI S209
 184.9,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Subaru WRX STI Type RA
 197.4,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Tesla Model S P85D
+179.6,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Toyota Corolla gr MORIZO
 191.8,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Toyota GR 86 (Mk II)
 181.4,Eric Tingwall,Virginia International Raceway Grand East Course (Post 01/2014),Toyota Supra (Mk V 340 PS)
-179.31,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Toyota Supra (Mk V 387 PS)
+175.6,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Toyota Supra (Mk V 387 PS)
 188.95,unknown,Virginia International Raceway Grand East Course (Post 01/2014),Toyota Supra SZ-R (Mk V)
 194.6,unknown,Virginia International Raceway Grand East Course (Post 01/2014),VW Golf GTI (Mk VII 220 PS)
 199.3,unknown,Virginia International Raceway Grand East Course (Post 01/2014),VW Golf GTI (Mk VII 230 PS)
-192.1,unknown,Virginia International Raceway Grand East Course (Post 01/2014),VW Golf GTI (Mk VIII)
+191.4,unknown,Virginia International Raceway Grand East Course (Post 01/2014),VW Golf GTI (Mk VIII)
 184.3,unknown,Virginia International Raceway Grand East Course (Post 01/2014),VW Golf R (Mk VIII)
 207.3,unknown,Virginia International Raceway Grand East Course (Pre 01/2014),Abarth 500 (162 PS)
 177.6,Mark Gillies,Virginia International Raceway Grand East Course (Pre 01/2014),Ariel Atom 3 (300 PS)

@@ -20,6 +20,8 @@ sys.path.append("../Lap-Time-Prediction/generator")
 sys.path.append("../Lap-Time-Prediction/sources")
 sys.path.append("../Lap-Time-Prediction/")
 
+sys.dont_write_bytecode = True
+
 from sources.UltimateSpecs import UltimateSpecs
 from sources.CarsData import CarsData 
 from sources.Wikidata import Wikidata
@@ -49,21 +51,32 @@ def main():
     # Input control and main menù
     data = dict()
 
-    if len(sys.argv) == 1:
+    print("######################")
+
+    # Control number of arguments
+    if len(sys.argv) == 2:
+        # Passed a file, check if file is a csv compliant with policy
+        print("CSV file retrieve mode.")
         check_args(sys.argv[1])
         filename = sys.argv[1]
+        # Open and read the CSV file
         with open(filename, 'r') as file:
             reader = csv.reader(file)
+            # Open a simple menù for choose attributes to retrive
             attr = choose_attr()
             for row in reader:
                 vehicle = row[0]
                 url = row[1]
+                # Check if the url is a legit url
                 source = check_url(url)
                 try:
                     if source:
                         if check_vehicle(vehicle):
-                            data[vehicle] = retrieve(vehicle, url, source, attr)
+                            print(f"Vehicle {vehicle} at source {source} in retrive...")
+                            # Starting the retrive of current couple of values
+                            data[vehicle] = retrieve(url, source, attr)
                             update(vehicle, data[vehicle])
+                            print("######################")
                         else:
                             raise SyntaxError(f"The vehicle {vehicle} not exists in database, please check.")
                     else:
@@ -72,25 +85,31 @@ def main():
                     print(f"{e}\n this record {vehicle} at this URL {url} will be skipped.")
                 except ValueError as e:
                     print(f"{e}\n this record {vehicle} at this URL {url} will be skipped.")
-    elif len(sys.argv) == 2:
+    elif len(sys.argv) == 3:
+        # Passed a couple vehicle_name/url, check if are not number or other type
+        print("Vehicle and URL retrieve mode.")
         check_args(sys.argv[1], sys.argv[2])
         vehicle = sys.argv[1]
         url = sys.argv[2]
+        # Check if the url is a legit url
         source = check_url(url)
+        # Open a simple menù for choose attributes to retrive
         attr = choose_attr()
         if source:
             if check_vehicle(vehicle):
-                data[vehicle] = retrieve(vehicle, url, source, attr)
+                print(f"Vehicle {vehicle} at source {source} in retrive...")
+                # Starting the retrive of the given couple of values
+                data[vehicle] = retrieve(url, source, attr)
                 update(vehicle, data[vehicle])
+                print("######################")
             else:
                 raise SyntaxError(f"The vehicle {vehicle} not exists in database, please check.")
         else:
             raise SyntaxError(f"Source {source} not supported.")
 
     else:
-        raise SyntaxError("The script should have only 1 or 2 arguments.\
-            Usage: scav.py vehicle_name source_url | file.csv")
-
+        raise SyntaxError("Error call the scav.py script. Usage: scav.py vehicle_name source_url | file.csv")
+    
     # Convert the data dictionary with all update in json
     if(not os.path.exists(PATH)):
         os.mkdir(PATH)
@@ -128,6 +147,7 @@ def check_vehicle(vehicle: str):
     # :param vehicle: arg 1 is a file (if arg2 is not declared) or the vehicle name.
     # :return: the boolean and to both check.
 
+    print("Validation the vehicle existence...")
     check1 = utils.checkSQLite(utils.get_SQLite_connection(old_db.PATH), "VEHICLES", "vehicle_name", vehicle)
     check2 = utils.checkSQLite(utils.get_SQLite_connection(new_db.PATH), "VEHICLES", "vehicle_name", vehicle)
     return check1 and check2
@@ -137,6 +157,7 @@ def check_url(url: str):
     # :param url: a valid url string.
     # :return: the hostname or None.
 
+    print("Validation the URL policy...")
     regex = re.compile(
         r'^(?:http|ftp)s?://'
         r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|'
@@ -148,6 +169,7 @@ def check_url(url: str):
     if re.match(regex, url):
         parsed_url = urllib.parse.urlparse(url)
         hostname = parsed_url.hostname.split(".")[-2]
+        print(f"The URL source is: {hostname}")
         return hostname if hostname in SOURCES else None
     else:
         raise SyntaxError("Invalid URL.")
@@ -156,6 +178,8 @@ def choose_attr():
     # Popup a simple choose menù to get the information
     # :param:
     # :return: a set of the chosen attributes.
+
+    print("######################")
 
     print("Choose a mode:")
     print("1. Custom")
@@ -177,20 +201,30 @@ def choose_attr():
         while len(selected_modes) < 6:
             mode = input("Enter the name of the mode: ")
             if mode == "stop":
-                break
+                if(len(selected_modes) == 0):
+                   print("Invalid custom options, please choose one or more options.")
+                   continue
+                else:
+                    break
             if mode not in selected_modes and mode in default_modes:
                 selected_modes.add(mode)
-            else:
+            elif(mode not in default_modes):
+                print("The input mode is not in default modes.")
+            elif(mode in selected_modes):
                 print("Mode already selected or invalid. Select another mode.")
+        print(f"The set of the chosen categories is: {selected_modes}")
+        print("######################")
         return selected_modes
     elif choice == 2:
+        print(f"The set of the chosen categories is: {default_modes}")
+        print("######################")
         return default_modes
     elif choice == 3:
         raise SyntaxError("Operation cancelled.")
     else:
         raise SyntaxError("Invalid choice. Try again.")
 
-def retrieve(vehicle: str, url: str, source: str, attr: set):
+def retrieve(url: str, source: str, attr: set):
     # Retrieve all information declared in attr at specific source, url and vehiclen
     # :param vehicle: vehichle name string.
     # :param url: url where get the vehicle specs.
@@ -200,18 +234,21 @@ def retrieve(vehicle: str, url: str, source: str, attr: set):
     
     if source == "ultimatespecs":
         us = UltimateSpecs()
-        return us.get_specs(vehicle, url, attr)
+        return us.get_specs(url, attr)
     elif source == "cars-data":
         cd = CarsData()
-        return cd.get_specs(vehicle, url, attr)
+        return cd.get_specs(url, attr)
     elif source == "wikipedia":
         wiki = Wikidata()
-        return wiki.get_specs(vehicle, url, attr)
+        return wiki.get_specs(url, attr)
     else:
         raise ValueError("Invalid source. Try again.")
 
 def update(vehicle: str, new_specs: dict):
     conn = utils.get_SQLite_connection(new_db.PATH)
+
+    if(not new_specs):
+        ValueError("Impossible to retrive information, the specs map was empty.")
 
     vehicle_data = new_db.get_specific_vehicle(conn, -1, vehicle)
     new_db.update_specific_vehicle(conn, vehicle_data[0], new_specs)

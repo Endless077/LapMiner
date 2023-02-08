@@ -19,7 +19,6 @@ from bs4 import BeautifulSoup
 
 from datetime import datetime as dt
 
-from proxybroker import Broker
 from random_user_agent.params import HardwareType, SoftwareEngine, SoftwareName, SoftwareType, OperatingSystem, Popularity
 from random_user_agent.user_agent import UserAgent
 
@@ -52,8 +51,12 @@ USER_AGENT = UserAgent()
 
 HEADERS = {
     'User-Agent': 'user-agent',
-    "Content-Type": "text/html"
-    # other headers allowed.
+    'Accept-Language': 'en-US;q=0.5,en;q=0.3,it-IT,it;q=0.8',
+    'Accept-Encoding': 'gzip',
+    'Referer': 'https://www.google.com',
+    'DNT': '1',
+    'Connection': 'keep-alive',
+    'TE': 'Trailers'
 }
 
 PROXY_LIST = []
@@ -98,7 +101,7 @@ def get_SQLite_connection(PATH):
     # :param db_file: database file.
     # :return: connection object or None.
 
-    print("Getting database connection...")
+    print(f"Getting database {PATH} connection...")
 
     conn = None
     try:
@@ -142,7 +145,7 @@ def random_user_agent():
     softwareNames =         [SoftwareName.EDGE.value, SoftwareName.FIREFOX.value, SoftwareName.CHROME.value, SoftwareName.BRAVE.value]
     softwareTypes =         [SoftwareType.APPLICATION.value]
     operatingSystems =      [OperatingSystem.LINUX.value, OperatingSystem.IOS.value, OperatingSystem.ANDROID.value, OperatingSystem.WINDOWS.value]
-    popularity_services =   [Popularity.UNCOMMON.value, Popularity.COMMON.value, Popularity.POPULAR.value, Popularity.AVERAGE.value]
+    popularity_services =   [Popularity.COMMON.value, Popularity.POPULAR.value, Popularity.AVERAGE.value]
 
     user_agent_rotator = UserAgent(hardware_type=hardwareTypes, operating_system=operatingSystems, software_type=softwareTypes,
                                 software_name=softwareNames, software_engine=softwareEngines, popularity=popularity_services,
@@ -253,12 +256,14 @@ def request(url: str, timeout: int):
 
     user_agent = USER_AGENT.get_random_user_agent()
     HEADERS["User-Agent"] = user_agent
-    
-    proxy = None
-    #proxy = PROXY_LIST[random.randint(0, len(PROXY_LIST) - 1)]
 
-    if(proxy is not None):
-        response = requests.get(url, headers=HEADERS, proxies=proxy, timeout=timeout)
+    if(len(PROXY_LIST) > 0):
+        proxy = PROXY_LIST[random.randint(0, len(PROXY_LIST) - 1)]
+        proxies = {
+            'http': proxy,
+            'https': proxy
+        }
+        response = requests.get(url, headers=HEADERS, proxies=proxies, timeout=timeout)
     else:
         response = requests.get(url, headers=HEADERS, timeout=timeout)
 

@@ -732,10 +732,10 @@ def get_specific_lap(conn: sqlite3.Connection, track_id: int, vehicle_id: int):
     cur = conn.cursor()
     cur.execute(sql, (track_id, vehicle_id))
 
-    output = cur.fetchall()
+    output = cur.fetchone()
     cur.close()
 
-    print("SELECT specific lap complete.")
+    print(f"SELECT specific lap complete with value {output}.")
     return output
     
 def get_specific_track(conn: sqlite3.Connection, track_id: int, track_name: str):
@@ -755,10 +755,10 @@ def get_specific_track(conn: sqlite3.Connection, track_id: int, track_name: str)
     cur = conn.cursor()
     cur.execute(sql, (track_id, track_name))
 
-    output = cur.fetchall()
+    output = cur.fetchone()
     cur.close()
 
-    print("SELECT specific track complete.")
+    print(f"SELECT specific track complete with value {output}.")
     return output
 
 def get_specific_vehicle_specs(conn: sqlite3.Connection, vehicle_id: int,  vehicle_name: str):
@@ -790,11 +790,10 @@ def get_specific_vehicle_specs(conn: sqlite3.Connection, vehicle_id: int,  vehic
         WHERE {by_name} '''
         cur.execute(sql, (vehicle_name, ))
 
+    output = cur.fetchone()
     cur.close()
 
-    output = cur.fetchall()
-    
-    print("SELECT specific vehicle complete.")
+    print(f"SELECT specific vehicle complete with value {output}.")
     return output
 
 def get_specific_vehicle(conn: sqlite3.Connection, vehicle_id: int, vehicle_name: str):
@@ -815,11 +814,10 @@ def get_specific_vehicle(conn: sqlite3.Connection, vehicle_id: int, vehicle_name
         sql = f''' SELECT * FROM VEHICLES WHERE {by_name} '''
         cur.execute(sql, (vehicle_name, ))
 
+    output = cur.fetchone()
     cur.close()
 
-    output = cur.fetchall()
-    
-    print("SELECT specific vehicle complete.")
+    print(f"SELECT specific vehicle complete with value {output}.")
     return output
 
 def delete_specific_lap(conn: sqlite3.Connection, track_id: int, vehicle_id: int):
@@ -911,16 +909,17 @@ def update_specific_vehicle(conn: sqlite3.Connection, vehicle_id: str, values: d
 
     cur = conn.cursor()
     tables = ["VEHICLES","LAYOUT","DIMENSIONS","ENGINE","TRASMISSION","PERFORMANCE","OVERVIEW"]
-    tables_index = 0
+    tables_index = -1
 
     for key in values.keys():
-        if(values[key] is not None):
-            column_list = ", ".join([f"{column}=?" for column in values[key].keys()])
-            sql = f''' "UPDATE {tables[tables_index]} SET {column_list} WHERE vehicle_id = ? '''
-            cur.execute(sql, (*values[key].values(), vehicle_id))
-            print("Update" + sql)
         tables_index += 1
+        if(values[key]):
+            column_list = ", ".join([f"{column} = ?" for column in values[key].keys()])
+            sql = f''' UPDATE {tables[tables_index]} SET {column_list} WHERE vehicle_id = ? '''
+            cur.execute(sql, (*values[key].values(), vehicle_id))
+            print(f"Update: {tables[tables_index]} for vehicle with id {vehicle_id}.")
 
     conn.commit()
     cur.close()
+    
     print("Update done.")

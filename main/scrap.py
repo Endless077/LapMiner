@@ -14,6 +14,8 @@ sys.path.append("../Lap-Time-Prediction/generator")
 sys.path.append("../Lap-Time-Prediction/sources")
 sys.path.append("../Lap-Time-Prediction/")
 
+sys.dont_write_bytecode = True
+
 import fastestlaps_db as dump
 import fastestlaps_scrap as scrap
 import utils

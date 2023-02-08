@@ -240,6 +240,7 @@ Audi E-Tron 55,Car,Audi,E-Tron 55,Germany,2019.0,5.4,34.0,201.0,2656.0,,,,,Elect
 Audi E-Tron GT,Car,Audi,E-Tron GT,Germany,2021.0,4.1,34.0,245.0,2352.0,,,,,E-motors,,530.0,640.0,Middle,All,4-door saloon,,Other,
 Audi E-Tron GT RS,Car,Audi,E-Tron GT RS,Germany,2021.0,3.0,33.0,253.0,2381.0,,,,,E-motors,,646.0,830.0,Middle,All,4-door saloon,,Other,
 Audi Q3 1.4 TFSI,Car,Audi,Q3 1.4 TFSI (Mk II Brazil),Germany,2018.0,,,,,,,,,Inline 4 turbo,1.4,150.0,250.0,Front,Front,SUV/truck,6 speed automatic,Automatic,6.0
+Audi Q3 2.0 TDI Quattro,Car,Audi,Q3 2.0 TDI Quattro (140 PS),Germany,2012.0,9.3,35.0,197.0,1599.0,2.6,4.38,1.83,1.61,inline 4 16V DOHC Turbo diesel,2.0,140.0,320.0,Front,All,SUV/truck,6-Speed Manual,Manual,6.0
 Audi Q5 3.0 TDI quattro (8R),Car,Audi,Q5 3.0 TDI quattro (8R),Germany,2008.0,6.9,,225.0,1865.0,,,,,V6 24V DOHC biturbo diesel,3.0,239.0,500.0,Front,All,SUV/truck,7 speed automatic,Automatic,7.0
 Audi Q7 4.2 FSI (Mk I),Car,Audi,Q7 4.2 FSI (Mk I),Germany,2007.0,7.2,,248.0,2505.0,,,,,V8,4.2,349.0,440.0,Front,All,SUV/truck,6 tiptronic,Other,6.0
 Audi Q7 50 TDI,Car,Audi,Q7 50 TDI (Mk II facelift),Germany,2019.0,6.1,33.0,241.0,2290.0,,,,,V6 turbo diesel with 48V hybrid system,3.0,286.0,600.0,Front,All,SUV/truck,8 speed automatic,Automatic,8.0
@@ -273,7 +274,7 @@ Audi R8 V10 Spyder  (Mk II),Car,Audi,R8 V10 Spyder  (Mk II),Germany,2017.0,3.1,3
 Audi R8 e-tron,Car,Audi,R8 e-tron,Germany,2012.0,4.6,,197.0,,,,,,electric,,312.0,819.0,Middle,Rear,Coupe,,Other,
 Audi R8C,Car,Audi,R8C,Germany,,,,,949.0,,,,,V8 Turbocharged,3.6,649.0,761.0,Middle,Rear,Coupe,Sequential 6-speed,Other,6.0
 Audi R8R,Car,Audi,R8R,Germany,,,,,900.0,,,,,V8 Turbocharged,0.0,618.0,700.0,Middle,Rear,Coupe,Sequential 6-speed,Other,6.0
-Audi RS 3 Limousine (8Y),Car,Audi,RS 3 Limousine (8Y),Germany,2022.0,3.7,32.0,290.0,1631.0,,,,,"Inline 5, turbo, DI, 20 valves, DOHC",2.5,400.0,500.0,Front,All,4-door saloon,7-speed dual clutch transmission,Dual-Clutch,7.0
+Audi RS 3 Limousine (8Y),Car,Audi,RS 3 Limousine (8Y),Germany,2022.0,3.7,32.0,290.0,1637.0,,,,,"Inline 5, turbo, DI, 20 valves, DOHC",2.5,400.0,500.0,Front,All,4-door saloon,7-speed dual clutch transmission,Dual-Clutch,7.0
 Audi RS 3 Sportback (8Y),Car,Audi,RS 3 Sportback (8Y),Germany,2022.0,3.4,30.0,290.0,1612.0,,,,,"Inline 5, turbo, DI, 20 valves, DOHC",2.5,400.0,500.0,Front,All,Compact,7-speed dual clutch transmission,Dual-Clutch,7.0
 Audi RS Q3,Car,Audi,RS Q3,Germany,2019.0,4.5,34.0,280.0,1755.0,,,,,Inline 5 turbo,2.5,400.0,480.0,Front,All,SUV/truck,7 speed dual clutch automatic,Dual-Clutch,7.0
 Audi RS Q3 Sportback,Car,Audi,RS Q3 Sportback,Germany,2019.0,4.5,32.0,280.0,1858.0,,,,,Inline 5 turbo,2.5,400.0,480.0,Front,All,SUV/truck,7 speed dual clutch automatic,Dual-Clutch,7.0
@@ -468,7 +469,7 @@ BMW 545e xDrive (G30 facelift),Car,BMW,545e xDrive (G30 facelift),Germany,2020.0
 BMW 633 CSi,Car,BMW,633 CSi,Germany,1976.0,8.0,,216.0,1480.0,,,,,Inline 6,3.2,200.0,285.0,Front,Rear,Coupe,5 speed manual,Manual,5.0
 BMW 640d,Car,BMW,640d,Germany,2011.0,5.5,,250.0,,,,,,,3.0,313.0,630.0,Front,Rear,Coupe,,Other,
 BMW 645ci Coupe,Car,BMW,645ci Coupe,Germany,2004.0,5.4,37.0,252.0,1750.0,,,,,"V8, 32v",4.4,333.0,450.0,Front,Rear,Coupe,6,Other,6.0
-BMW 650i,Car,BMW,650i,Germany,2011.0,4.8,,250.0,,,,,,V8 powerplant with turbochargers,4.4,408.0,600.0,Front,Rear,Coupe,eight-speed Sports automatic gearbox,Automatic,
+BMW 650i,Car,BMW,650i,Germany,2004.0,5.4,,250.0,1615.0,,,,,"V8, 32v",4.8,367.0,490.0,Front,Rear,Coupe,6,Other,6.0
 BMW 650i Cabrio,Car,BMW,650i Cabrio,Germany,2005.0,5.7,,250.0,1970.0,,,,,"V8, 32v",4.8,367.0,490.0,Front,Rear,Convertible,6,Other,6.0
 BMW 650i Cabrio (F12),Car,BMW,650i Cabrio (F12),Germany,2011.0,5.0,36.0,250.0,2092.0,,4.89,1.89,1.36,"V8, Twinturbo, 32 valves, DOHC",4.4,408.0,600.0,Front,Rear,Convertible,8 speed automatic,Automatic,8.0
 BMW 700 Sport,Car,BMW,700 Sport,Germany,1960.0,19.7,,135.0,648.0,,,,,Boxer 2,0.7,40.0,51.0,Rear,Rear,Coupe,4 speed manual,Manual,4.0
@@ -480,7 +481,6 @@ BMW 750d xDrive (G11),Car,BMW,750d xDrive (G11),Germany,2016.0,4.5,34.0,250.0,20
 BMW 750i,Car,BMW,750i,Germany,,3.9,34.0,255.0,2156.0,,,,,V8 Twin Turbo,4.4,530.0,750.0,Front,All,4-door saloon,8 speed automatic,Automatic,8.0
 BMW 760i Li (F02),Car,BMW,760i Li (F02),Germany,2010.0,4.9,,250.0,2175.0,,,,,"v12 ,48valves",6.0,544.0,750.0,Front,Rear,4-door saloon,8 speed automatic,Automatic,8.0
 BMW 840CI,Car,BMW,840CI,Germany,,7.7,38.0,250.0,1886.0,,,,,V8,4.4,286.0,420.0,Front,Rear,Coupe,5 speed manual,Manual,5.0
-BMW 840i xDrive (G15),Car,BMW,840i xDrive (G15),Germany,2019.0,4.6,35.0,250.0,1851.0,2.82,4.84,1.9,1.34,I6 turbo,3.0,340.0,500.0,Front,All,Coupe,8-speed ZF 8HP automatic,Automatic,8.0
 BMW M1 (E26),Car,BMW,M1 (E26),Germany,1978.0,6.0,38.0,265.0,1450.0,,,,,inline 6 n/a,3.5,277.0,330.0,Middle,Rear,Coupe,5,Other,5.0
 BMW M135i (F20),Car,BMW,M135i (F20),Germany,2012.0,4.7,34.0,250.0,1539.0,2.69,4.32,1.77,1.41,"Inline 6, Twinpower Turbo, N55B30",3.0,320.0,450.0,Front,Rear,Compact,Other,Other,
 BMW M135i xDrive (F20),Car,BMW,M135i xDrive (F20),Germany,2012.0,4.6,33.0,255.0,1585.0,2.69,4.34,1.77,1.41,"Inline 6, Twinpower Turbo, N55B30",3.0,320.0,450.0,Front,All,Compact,Other,Other,
@@ -493,7 +493,7 @@ BMW M2 Competition (F87),Car,BMW,M2 Competition (F87),Germany,2018.0,4.3,32.0,28
 BMW M235i,Car,BMW,M235i,Germany,2014.0,4.6,32.0,250.0,1599.0,2.69,4.45,1.77,1.41,"In-line-6-cylinder, turbo",3.0,326.0,450.0,Front,Rear,Coupe,"6-speed-manual, 8-speed-automatic",Manual,6.0
 BMW M235i Gran Coupe xDrive,Car,BMW,M235i Gran Coupe xDrive,Germany,2020.0,4.5,33.0,254.0,1613.0,,,,,Inline 4 turbo,2.0,305.0,449.0,Front,All,4-door saloon,8 speed automatic,Automatic,8.0
 BMW M240i,Car,BMW,M240i,Germany,2016.0,4.5,32.0,250.0,1590.0,,,,,Inline 6 turbo,3.0,340.0,500.0,Front,Rear,Coupe,8 speed automatic,Automatic,8.0
-BMW M240i XDrive,Car,BMW,M240i XDrive,Germany,2022.0,3.9,32.0,250.0,1758.0,2.74,4.55,1.84,1.4,Inline 6 biturbo,3.0,374.0,500.0,Front,All,Coupe,8 speed,Other,8.0
+BMW M240i XDrive,Car,BMW,M240i XDrive,Germany,2022.0,3.9,32.0,250.0,1762.0,2.74,4.55,1.84,1.4,Inline 6 biturbo,3.0,374.0,500.0,Front,All,Coupe,8 speed,Other,8.0
 BMW M240i xDrive,Car,BMW,M240i xDrive,Germany,2016.0,4.3,34.0,250.0,1633.0,,,,,Inline 6 turbo,3.0,340.0,500.0,Front,All,Coupe,8 speed automatic,Automatic,8.0
 BMW M3,Car,BMW,M3,Germany,2020.0,4.4,34.0,287.0,1780.0,,,,,Inline 6,3.0,480.0,550.0,Front,Rear,4-door saloon,6 speed manual,Manual,6.0
 BMW M3 (E30),Car,BMW,M3 (E30),Germany,1986.0,6.5,,240.0,1300.0,,,,,R4,2.3,200.0,240.0,Front,Rear,Coupe,5 speed manual,Manual,5.0
@@ -611,7 +611,7 @@ BMW Z4 sDrive35i,Car,BMW,Z4 sDrive35i,Germany,2009.0,5.0,36.0,250.0,1620.0,,,,,"
 BMW Z8,Car,BMW,Z8,Germany,2000.0,4.5,38.0,260.0,1651.0,,,,,V8,5.0,400.0,500.0,Front,Rear,Convertible,6 speed manual,Manual,6.0
 BMW e46 330xi,Car,BMW,e46 330xi,Germany,2000.0,5.9,,250.0,1602.0,,,,,inline6 24V DOHC n/a,3.0,228.0,290.0,Front,All,4-door saloon,5 speed manual,Manual,5.0
 BMW i3 S,Car,BMW,i3 S,Germany,2018.0,6.4,35.0,160.0,1345.0,,,,,Electric motor,,184.0,270.0,Rear,Rear,Compact,,Other,
-BMW i4 M50,Car,BMW,i4 M50,Germany,2021.0,3.6,34.0,225.0,2296.0,2.86,4.78,1.85,1.45,2 electric motors,,552.0,795.0,Middle,All,4-door saloon,,Other,
+BMW i4 M50,Car,BMW,i4 M50,Germany,2021.0,3.6,34.0,225.0,2303.0,2.86,4.78,1.85,1.45,2 electric motors,,552.0,795.0,Middle,All,4-door saloon,,Other,
 BMW i4 eDrive40,Car,BMW,i4 eDrive40,Germany,2021.0,5.3,28.0,190.0,2135.0,,,,,Single electric motor,,340.0,430.0,Rear,Rear,4-door saloon,Single speed,Other,
 BMW i8,Car,BMW,i8,Germany,2013.0,4.2,35.0,254.0,1512.0,,,,,Electric motor and Inline 3 turbo 12 valve DOHC,1.5,374.0,570.0,Front,All,Coupe,6 speed automatic,Automatic,6.0
 BMW iX 40 xDrive,Car,BMW,iX 40 xDrive,Germany,2021.0,,,200.0,2452.0,,,,,2 E-motors,,326.0,630.0,Front,All,SUV/truck,1 speed,Other,1.0
@@ -623,7 +623,6 @@ Bandini Crosley,Car,Bandini,Crosley,Italy,,,,,,,,,,Inline 4,0.8,,,Front,Rear,Con
 Bentley Arnage T,Car,Bentley,Arnage T,United Kingdom,2002.0,5.8,,270.0,2585.0,,,,,"V8, 16v",6.7,457.0,875.0,Front,Rear,4-door saloon,5,Other,5.0
 Bentley Bentayga,Car,Bentley,Bentayga,United Kingdom,2016.0,3.8,34.0,302.0,2597.0,,,,,W12,6.0,608.0,900.0,Front,All,SUV/truck,,Other,
 Bentley Bentayga Diesel,Car,Bentley,Bentayga Diesel,Germany,2017.0,5.2,36.0,270.0,2708.0,,,,,V8 twin turbo diesel,4.0,435.0,900.0,Front,All,SUV/truck,8 speed automatic,Automatic,8.0
-Bentley Bentayga Speed,Car,Bentley,Bentayga Speed,United Kingdom,2019.0,3.7,36.0,306.0,2542.0,,,,,twin turbo TSI W12,6.0,635.0,900.0,Front,All,SUV/truck,8-speed automatic,Automatic,8.0
 Bentley Bentayga V8,Car,Bentley,Bentayga V8,United Kingdom,2018.0,4.0,35.0,290.0,2518.0,,,,,V8 Twin Turbo 32 valve,4.0,550.0,770.0,Front,All,SUV/truck,8-speed automatic with manual shifting mode,Automatic,8.0
 Bentley Brooklands,Car,Bentley,Brooklands,United Kingdom,2008.0,5.0,,297.0,2465.0,,,,,"V8, Twin Turbo",6.8,530.0,1050.0,Front,Rear,Coupe,6-Speed,Other,6.0
 Bentley Continental GT,Car,Bentley,Continental GT (Mk III),United Kingdom,2018.0,3.5,33.0,333.0,2293.0,,,,,W12 twin turbo,6.0,635.0,900.0,Front,All,Coupe,8 speed dual clutch automatic,Dual-Clutch,8.0
@@ -798,7 +797,7 @@ Citroen DS 21,Car,Citroen,DS 21,France,,,,179.0,,,,,,Inline 4,2.2,100.0,164.0,Fr
 Citroen DS3 ,Car,Citroen,DS3 Performance,France,2016.0,6.2,38.0,232.0,1202.0,,,,,Inline 4 turbo,1.6,208.0,300.0,Front,Front,Compact,6 speed manual,Manual,6.0
 Citroen DS3 HDI 110 FAP,Car,Citroen,DS3 HDI 110 FAP,France,2010.0,10.6,,190.0,1090.0,,,,,inline4 16V DOHC Turbo Diesel,1.6,111.0,270.0,Front,Front,Compact,6 speed manual,Manual,6.0
 Citroen DS3 Racing,Car,Citroen,DS3 Racing,France,2010.0,6.9,37.0,235.0,1224.0,2.46,3.96,1.72,1.44,4 cilynders in line 16 valves,1.6,207.0,275.0,Front,Front,Compact,6 speed manual,Manual,6.0
-Citroen DS3 THP 150,Car,Citroen,DS3 THP 150,France,2011.0,7.2,38.0,214.0,1181.0,,,,,inline4 16 V DOHC Turbo Direct injection,1.6,156.0,240.0,Front,Front,Compact,6 speed manual,Manual,6.0
+Citroen DS3 THP 150,Car,Citroen,DS3 THP 150,France,2011.0,7.2,36.0,214.0,1182.0,,,,,inline4 16 V DOHC Turbo Direct injection,1.6,156.0,240.0,Front,Front,Compact,6 speed manual,Manual,6.0
 Citroen GS,Car,Citroen,GS,France,,17.8,,151.0,900.0,,,,,Boxer 4,1.0,56.0,71.0,Front,Front,4-door saloon,Other,Other,
 Citroen GS 1220,Car,Citroen,GS 1220,France,,15.2,,152.0,,,,,,Boxer 4,1.2,60.0,87.0,Front,Front,4-door saloon,4 speed manual,Manual,4.0
 Citroen Saxo VTS,Car,Citroen,Saxo VTS,France,1996.0,8.1,,205.0,970.0,,,,,"4 inline, 16 valves",1.6,118.0,145.0,Front,Front,Compact,5,Other,5.0
@@ -829,7 +828,7 @@ Cruze 1.8 LT WTCC Edition,Car,Chevrolet,Cruze 1.8 LT WTCC Edition,,2012.0,10.0,,
 Cunningham C4-R,Car,Cunningham,C4-R,United States,1952.0,,,,,,,,,V8,5.4,304.0,,Front,Rear,Convertible,3 speed manual,Manual,3.0
 Cunningham C4-RK Coupe,Car,Cunningham,C4-RK Coupe,United States,1952.0,,,,,,,,,V8,5.4,304.0,,Front,Rear,Coupe,3 speed manual,Manual,3.0
 Cupra Ateca,Car,Cupra,Ateca,Spain,2019.0,4.6,33.0,249.0,1626.0,,,,,Inline 4 turbo,2.0,300.0,400.0,Front,All,SUV/truck,7 speed dual clutch automatic (DSG),Dual-Clutch,7.0
-Cupra Born (150 kW),Car,Cupra,Born (150 kW),Spain,2021.0,7.1,34.0,164.0,1778.0,,,,,E-motor,,204.0,310.0,Front,Front,Compact,1 speed,Other,1.0
+Cupra Born (150 kW),Car,Cupra,Born (150 kW),Spain,2021.0,7.1,34.0,164.0,1794.0,,,,,E-motor,,204.0,310.0,Front,Front,Compact,1 speed,Other,1.0
 Cupra Formentor VZ 2.0 TSI,Car,Cupra,Formentor VZ 2.0 TSI,Spain,2020.0,4.5,33.0,251.0,1715.0,,,,,Inline 4 turbo,2.0,310.0,400.0,Front,All,SUV/truck,7 speed Dual clutch,Dual-Clutch,7.0
 Cupra Formentor VZ5,Car,Cupra,Formentor VZ5,Spain,2021.0,3.9,33.0,250.0,1656.0,,,,,inline 5 turbo,2.5,390.0,480.0,Front,All,SUV/truck,7 speed Dual clutch,Dual-Clutch,7.0
 Cupra Leon 2.0 TSI (245 PS),Car,Cupra,Leon 2.0 TSI (245 PS),Spain,2021.0,,,,,,,,,Inline 4 turbo,2.0,245.0,370.0,Front,Front,Compact,7 speed Dual clutch,Dual-Clutch,7.0
@@ -887,7 +886,7 @@ E120 Corolla Sportivo SX6,Car,Toyota,E120 Corolla Sportivo SX6,Japan,2003.0,8.5,
 E63 AMG  Package,Car,Mercedes-Benz,E63 AMG Performance Package,Germany,2011.0,4.2,35.0,300.0,1920.0,,,,,"twin-turbocharged and intercooled DOHC 32-valve V-8, aluminum block an",5.5,558.0,800.0,Front,Rear,4-door saloon,7-speed automatic with manual shifting mode,Automatic,7.0
 E63s 4MATIC T-Modell,Car,Mercedes - AMG,E63s 4MATIC T-Modell (W213 Facelift),Germany,2021.0,3.4,,290.0,2154.0,2.94,5.01,2.06,1.47,M177 V8 Bi-Turbo,4.0,612.0,850.0,Front,All,Estate/wagon,9-Speed automatic transmission G-TRONIC,Automatic,9.0
 EQE 53 AMG Dynamic Plus,Car,Mercedes-Benz,EQE 53 AMG Dynamic Plus,Germany,2022.0,3.2,35.0,240.0,2559.0,,,,,2 electric motors,,687.0,1000.0,Front,All,4-door saloon,1 speed,Other,1.0
-EQS 53 AMG Dynamic Plus,Car,Mercedes-Benz,EQS 53 AMG Dynamic Plus,Germany,2022.0,3.2,35.0,250.0,2647.0,,,,,2 E-motors,,761.0,1020.0,Front,All,4-door saloon,1 speed,Other,1.0
+EQS 53 AMG Dynamic Plus,Car,Mercedes-Benz,EQS 53 AMG Dynamic Plus,Germany,2022.0,3.2,35.0,250.0,2687.0,,,,,2 E-motors,,761.0,1020.0,Front,All,4-door saloon,1 speed,Other,1.0
 Eagle Low Drag GT,Car,Eagle,Low Drag GT,United Kingdom,2013.0,,,260.0,1038.0,,,,,Inline 6,4.7,350.0,490.0,Front,Rear,Coupe,5 speed manual,Manual,5.0
 Elemental RP1 (2.0 Ecoboost),Car,Elemental,RP1 (2.0 Ecoboost),United Kingdom,2016.0,,,,,,,,,Turbocharged Inline 4 Ford Ecoboost,2.0,304.0,,Middle,Rear,Open-wheeler,6 speed sequential manual Hewland JFR,Sequential,6.0
 Elfin T5 Clubman,Car,Elfin,T5 Clubman,Australia,2008.0,3.9,,,750.0,,,,,L4,2.0,264.0,351.0,Front,Rear,Open-wheeler,6,Other,6.0
@@ -1041,7 +1040,7 @@ Ford Fiesta ST200,Car,Ford,Fiesta ST200,Germany,2016.0,6.7,35.0,230.0,1187.0,,,,
 Ford Focus 1.6 Zetec (Mk I),Car,Ford,Focus 1.6 Zetec (Mk I),United Kingdom,1999.0,11.1,41.0,185.0,1200.0,,,,,4 cylinder 16 valve,1.6,100.0,145.0,Front,Front,Compact,5,Other,5.0
 Ford Focus RS,Car,Ford,Focus RS,Germany,2009.0,5.8,33.0,263.0,1485.0,,,,,inline5 turbo,2.5,305.0,440.0,Front,Front,Compact,6 speed Manual,Manual,6.0
 Ford Focus RS500,Car,Ford,Focus RS500,Germany,2010.0,5.5,35.0,266.0,1486.0,,,,,inline5 20V DOHC turbo,2.5,350.0,460.0,Front,Front,Compact,6 speed manual,Manual,6.0
-Ford Focus ST,Car,Ford,Focus ST,,2012.0,6.1,36.0,248.0,1455.0,,,,,I4 16V DI Turbo,2.0,250.0,361.0,Front,Front,Compact,6 speed manual,Manual,6.0
+Ford Focus ST,Car,Ford,Focus ST,,2012.0,6.1,35.0,248.0,1455.0,,,,,I4 16V DI Turbo,2.0,250.0,361.0,Front,Front,Compact,6 speed manual,Manual,6.0
 Ford Focus ST (Mk IV),Car,Ford,Focus ST (Mk IV),United States,2019.0,5.7,32.0,252.0,1603.0,,,,,Inline 4 turbo,2.3,280.0,420.0,Front,Front,Compact,Other,Other,
 Ford Focus ST (facelift),Car,Ford,Focus ST (facelift),Germany,2008.0,6.5,37.0,241.0,1426.0,,,,,inline5 20V DOHC Turbo,2.5,226.0,320.0,Front,Front,Compact,6 speed manual,Manual,6.0
 Ford Focus ST 170,Car,Ford,Focus ST 170,Germany,2002.0,8.9,,216.0,1248.0,,,,,4 cyl in line,2.0,170.0,196.0,Front,Front,Compact,6 MT,Other,6.0
@@ -1083,6 +1082,7 @@ Ford Mustang GT PP1,Car,Ford,Mustang GT PP1,United States,2018.0,,,,,,,,,V8,5.0,
 Ford Mustang GT PP2,Car,Ford,Mustang GT PP2 (Mk VI facelift),United States,2018.0,,,248.0,1736.0,2.72,4.79,1.92,1.37,V8 DOHC n/a,5.0,466.0,569.0,Front,Rear,Coupe,"6 speed manual, 10-speed auto",Manual,6.0
 "Ford Mustang LX 4,9",Car,Ford,"Mustang LX 4,9",United States,1986.0,,,213.0,1405.0,2.54,4.55,1.76,1.32,V8,4.9,203.0,386.0,Front,Rear,Coupe,5 speed manual,Manual,5.0
 Ford Mustang Mach 1,Car,Ford,Mustang Mach 1 (MKIV Facelift),United States,2021.0,4.7,32.0,270.0,1780.0,2.72,4.78,1.92,1.38,Coyote V8,5.0,487.0,569.0,Front,Rear,Coupe,6-Speed manual,Manual,6.0
+Ford Mustang Mach-E GT,Car,Ford,Mustang Mach-E GT,United States,2019.0,4.1,34.0,200.0,2305.0,,,,,2 electric motor,,487.0,860.0,Middle,All,SUV/truck,1 speed,Other,1.0
 Ford Mustang SVT Cobra,Car,Ford,Mustang SVT Cobra,United States,1996.0,5.4,,247.0,1548.0,,,,,DOHC V-8,4.6,309.0,407.0,Front,Rear,Coupe,5,Other,5.0
 Ford Mustang SVT Cobra R,Car,Ford,Mustang SVT Cobra R (Mk IV),United States,2000.0,4.5,,284.0,1637.0,,,,,V8,5.4,385.0,522.0,Front,Rear,Coupe,6,Other,6.0
 Ford Mustang Shelby GT500,Car,Ford,Mustang Shelby GT500 (Mk VI facelift),United States,2019.0,3.9,32.0,293.0,1916.0,,,,,Supercharged Predator V8,5.2,771.0,847.0,Front,Rear,Coupe,7-speed DCT,Other,7.0
@@ -1233,7 +1233,7 @@ Hummer H2 6.2,Car,Hummer,H2 6.2,United States,2008.0,,,,2903.0,,,,,v8,6.2,404.0,
 Huracán Performante,Car,Lamborghini,Huracán Performante,Italy,2017.0,2.5,30.0,328.0,1584.0,,,,,V10 DOHC,5.2,640.0,600.0,Middle,All,Coupe,7 speed dual clutch automatic,Dual-Clutch,7.0
 Hyundai Coupe 2.0 16V,Car,Hyundai,Coupe 2.0 16V,South Korea,2008.0,9.3,,208.0,1344.0,,,,,inline4 16V n/a,2.0,143.0,186.0,Front,Front,Coupe,5 speed manual,Manual,5.0
 Hyundai Coupe F2,Car,Hyundai,Coupe F2,South Korea,1996.0,9.2,42.0,202.0,1223.0,2.47,4.34,1.73,1.31,16V,2.0,139.0,,Front,Front,Coupe,5 Speed Manual,Manual,5.0
-Hyundai Elantra N,Car,Hyundai,Elantra N,South Korea,2021.0,,,,1455.0,,,,,Smartstream (turbo),2.0,280.0,392.0,Front,Front,4-door saloon,Other,Other,
+Hyundai Elantra N,Car,Hyundai,Elantra N,South Korea,2021.0,,,,1495.0,,,,,Smartstream (turbo),2.0,280.0,392.0,Front,Front,4-door saloon,Other,Other,
 Hyundai GK Tiburon GT V6,Car,Hyundai,GK Tiburon GT V6,South Korea,2006.0,7.2,,226.0,1235.0,2.53,4.4,1.76,1.3,Naturally Aspirated Delta V6,2.7,184.0,240.0,Front,Front,Compact,Other,Other,
 Hyundai Genesis Coupe 2.0 TCI,Car,Hyundai,Genesis Coupe 2.0 TCI,South Korea,2012.0,7.2,,,1550.0,2.82,4.63,1.86,1.39,"Inline 4, turbocharged, direct injection, 16 valves, DOHC",2.0,275.0,373.0,Front,Rear,Coupe,Other,Other,
 Hyundai Genesis Coupe 2.0T,Car,Hyundai,Genesis Coupe 2.0T,South Korea,2009.0,7.7,,222.0,1539.0,2.82,4.63,1.86,1.39,16 Valve DOHC L4 Turbo w/ Dual CVVT,2.0,213.0,302.0,Front,Rear,Coupe,6speed manual,Manual,6.0
@@ -1289,6 +1289,7 @@ Jaguar F-Type R (facelift),Car,Jaguar,F-Type R (facelift),United Kingdom,2019.0,
 Jaguar F-Type R Coupe,Car,Jaguar,F-Type R Coupe,United Kingdom,2014.0,3.8,,317.0,1665.0,2.62,4.47,1.92,1.32,Supercharged V8,5.0,550.0,680.0,Front,Rear,Coupe,8-speed Quick Shift,Other,8.0
 Jaguar F-Type S Coupe,Car,Jaguar,F-Type S Coupe,United Kingdom,2014.0,4.8,35.0,275.0,1712.0,2.62,4.47,1.92,1.31,Supercharged V6,3.0,380.0,460.0,Front,Rear,Coupe,8-speed QuickShift,Other,8.0
 Jaguar F-Type SVR,Car,Jaguar,F-Type SVR,United Kingdom,2016.0,3.6,32.0,323.0,1847.0,2.62,4.47,1.92,1.31,V8 Supercharged,5.0,575.0,700.0,Front,All,Coupe,8 speed automatic,Automatic,8.0
+Jaguar F-Type V6,Car,Jaguar,F-Type V6,United Kingdom,2013.0,5.2,34.0,260.0,1721.0,2.62,4.47,1.94,1.31,"Supercharged V6, DOHC, 24v",3.0,340.0,450.0,Front,Rear,Convertible,8 speed automatic,Automatic,8.0
 Jaguar F-Type V6 S,Car,Jaguar,F-Type V6 S,,2013.0,4.8,,275.0,1741.0,2.62,4.47,1.92,1.31,"V6, n/a, DOHC, 24v",3.0,380.0,460.0,Front,Rear,Convertible,QuickShift 8 speed automatic,Automatic,8.0
 Jaguar F-Type V8 S,Car,Jaguar,F-Type V8 S,United Kingdom,2013.0,4.2,35.0,300.0,1815.0,2.62,4.47,1.92,1.31,"Supercharged 90º V8, n/a, DOHC, 32v",5.0,495.0,625.0,Front,Rear,Convertible,QuickShift 8 speed automatic,Automatic,8.0
 Jaguar F-type R AWD,Car,Jaguar,F-type R AWD,United Kingdom,2015.0,3.7,33.0,300.0,1855.0,2.62,,,,8 Cylinder 32 Valve,5.0,550.0,680.0,Front,Rear,Coupe,8 SPD ZF Automatic,Automatic,8.0
@@ -1317,7 +1318,6 @@ Jaguar XK8,Car,Jaguar,XK8,United Kingdom,2006.0,6.2,,250.0,1791.0,,,,,"V8, 32v",
 Jaguar XK8 (Mk I),Car,Jaguar,XK8 (Mk I),United Kingdom,1996.0,6.6,38.0,251.0,1680.0,,,,,V8 32 valve,4.0,284.0,393.0,Front,Rear,Coupe,5,Other,5.0
 Jaguar XKR,Car,Jaguar,XKR,United Kingdom,2006.0,4.9,,280.0,1776.0,,,,,supercharged V8,4.2,420.0,560.0,Front,Rear,Coupe,6 speed,Other,6.0
 Jaguar XKR (510 PS),Car,Jaguar,XKR (510 PS),United Kingdom,2009.0,4.6,35.0,280.0,1865.0,,,,,V8,5.0,510.0,625.0,Front,Rear,Coupe,6 speed automatic,Automatic,6.0
-Jaguar XKR Convertible,Car,Jaguar,XKR Convertible (510 PS),United Kingdom,2009.0,4.6,,250.0,1764.0,,,,,V8 Supercharged,5.0,510.0,625.0,Front,Rear,Convertible,6 speed automatic,Automatic,6.0
 Jaguar XKR Coupe,Car,Jaguar,XKR Coupe,United Kingdom,2004.0,,,250.0,1735.0,2.59,4.76,2.02,1.3,"Supercharged V8, 32v",4.2,406.0,553.0,Front,Rear,Coupe,6 speed automatic,Automatic,6.0
 Jaguar XKR convertible,Car,Jaguar,XKR convertible,United Kingdom,,5.6,,250.0,1710.0,,,,,V8 32V,4.2,416.0,560.0,Front,Rear,Convertible,6 speed automatic,Automatic,6.0
 Jaguar XKR-S (550 PS),Car,Jaguar,XKR-S (550 PS),United Kingdom,2011.0,4.2,,300.0,1843.0,2.75,4.79,1.89,1.31,"V8, supercharged",5.0,551.0,680.0,Front,Rear,Coupe,6 speed automatic,Automatic,6.0
@@ -1336,6 +1336,7 @@ KTM X-Bow 300 bhp,Car,KTM,X-Bow 300 bhp,Austria,2009.0,3.5,,237.0,790.0,,,,,"In-
 KTM X-Bow GT,Car,KTM,X-Bow GT,Austria,2013.0,4.0,35.0,231.0,847.0,2.43,3.74,1.9,1.2,"Audi TFSI Inline-4, DOHC, 16v",2.0,286.0,420.0,Middle,Rear,Open-wheeler,6 speed manual,Manual,6.0
 KTM X-Bow R,Car,KTM,X-Bow R,Austria,2011.0,3.8,,240.0,868.0,2.43,3.74,1.92,1.2,"4-cylinder-in-line, turbo",2.0,304.0,400.0,Middle,Rear,Open-wheeler,6-speed-manual,Manual,6.0
 Kia Carens 1.4 T,Car,Kia,Carens 1.4 T,South Korea,2022.0,,,,,,,,,Inline 4 turbo,1.4,140.0,242.0,Front,Front,Van,Other,Other,
+Kia Carnival 3.5,Car,Kia,Carnival 3.5,South Korea,2020.0,,,190.0,2158.0,,,,,V6,3.5,294.0,355.0,Front,Front,SUV/truck,8 speed automatic,Automatic,8.0
 Kia Ceed 1.6 (Mk I),Car,Kia,Ceed 1.6 (Mk I),South Korea,2009.0,10.4,,192.0,1355.0,,,,,4 cylinder,1.6,126.0,154.0,Front,Front,Compact,5 manual,Manual,5.0
 Kia Ceed GT 1.6T GDI (Mk III),Car,Kia,Ceed GT 1.6T GDI (Mk III),South Korea,2018.0,6.8,33.0,230.0,1419.0,,,,,Inline 4 turbo,1.6,204.0,265.0,Front,Front,Compact,7 speed dual clutch automatic,Dual-Clutch,7.0
 Kia Cerato Koup,Car,Kia,Cerato Koup,South Korea,2010.0,8.3,,200.0,1330.0,,,,,inline4 16V DOHC n/a,2.0,156.0,194.0,Front,Front,Coupe,6 speed manual,Manual,6.0
@@ -1375,7 +1376,7 @@ Lamborghini Huracán Evo,Car,Lamborghini,Huracán Evo,Italy,2019.0,2.6,30.0,328.
 Lamborghini Huracán Evo RWD,Car,Lamborghini,Huracán Evo RWD,Italy,2020.0,3.3,32.0,325.0,1389.0,,,,,V10 naturally aspirated,5.2,610.0,560.0,Middle,Rear,Coupe,7 speed dual clutch automatic,Dual-Clutch,7.0
 Lamborghini Huracán LP 580-2,Car,Lamborghini,Huracán LP 580-2,Italy,2016.0,3.4,,320.0,1389.0,2.62,4.46,2.24,1.17,V10,5.2,580.0,540.0,Middle,Rear,Coupe,7 speeds dual-clutch,Dual-Clutch,7.0
 Lamborghini Huracán STO,Car,Lamborghini,Huracán STO,Italy,2020.0,3.0,29.0,314.0,1537.0,,,,,V10,5.2,640.0,565.0,Middle,Rear,Coupe,7 speed dual clutch automatic,Dual-Clutch,7.0
-Lamborghini Huracán Tecnica,Car,Lamborghini,Huracán Tecnica,Italy,2022.0,3.2,32.0,325.0,1573.0,,,,,V10,5.2,640.0,565.0,Middle,Rear,Coupe,7 speed dual clutch automatic,Dual-Clutch,7.0
+Lamborghini Huracán Tecnica,Car,Lamborghini,Huracán Tecnica,Italy,2022.0,3.2,32.0,325.0,1574.0,,,,,V10,5.2,640.0,565.0,Middle,Rear,Coupe,7 speed dual clutch automatic,Dual-Clutch,7.0
 Lamborghini Jalpa 3500,Car,Lamborghini,Jalpa 3500,Italy,1982.0,5.5,46.0,256.0,1511.0,,,,,"V8, 16v, DOHC",3.5,259.0,231.0,Middle,Rear,Coupe,5M,Other,5.0
 Lamborghini Miura P400SV,Car,Lamborghini,Miura P400SV,Italy,1971.0,6.7,,290.0,1306.0,,,,,V12 n/a 24V DOHC,3.9,385.0,400.0,Middle,Rear,Coupe,5 speed stick,Other,5.0
 Lamborghini Murcielago,Car,Lamborghini,Murcielago,Italy,2002.0,3.6,,330.0,1819.0,,,,,V12,6.2,580.0,650.0,Middle,All,Coupe,6 speed,Other,6.0
@@ -1415,6 +1416,7 @@ Lancia Flavia Coupe 1.5,Car,Lancia,Flavia Coupe 1.5,Italy,,,,,,,,,,Boxer 4,1.5,9
 Lancia Montecarlo,Car,Lancia,Montecarlo,Italy,1975.0,8.8,,200.0,1036.0,,,,,4 cylinders,2.0,120.0,,Middle,Rear,Coupe,5,Other,5.0
 Lancia Montecarlo Turbo,Car,Lancia,Montecarlo Turbo,Italy,,,,286.0,872.0,,,,,1.4L I4 Turbo,1.4,406.0,,Middle,Rear,Coupe,Colotti 5-speed Manual,Manual,5.0
 Lancia Stratos HF,Car,Lancia,Stratos HF,Italy,1972.0,6.2,,237.0,1030.0,,,,,V6 Ferrari engine from the Ferrari Dino 246,2.4,190.0,225.0,Middle,Rear,Coupe,5 Manual,Manual,5.0
+Land Rover Defender TD4 110 SW,Car,Land Rover,Defender TD4 110 SW,United Kingdom,,,,,,,,,,Inline 4 turbo diesel,2.2,122.0,360.0,Front,All,SUV/truck,6 speed manual,Manual,6.0
 Leon 2.0 TSI Sportstourer,Car,Cupra,Leon 2.0 TSI Sportstourer,Spain,2021.0,4.9,32.0,250.0,1605.0,,,,,Inline 4 turbo,2.0,310.0,400.0,Front,All,Estate/wagon,7 speed Dual clutch,Dual-Clutch,7.0
 Lexus CT 200H,Car,Lexus,CT 200H,Japan,2011.0,11.6,38.0,180.0,1499.0,,,,,VVT-i Inline-4/Electric,1.8,163.0,250.0,Front,Front,Compact,E-CVT,Other,
 Lexus ES 300h,Car,Lexus,ES 300h,Japan,2018.0,8.3,35.0,186.0,1748.0,,,,,Inline 4 + E-motor,2.5,218.0,,Front,Front,4-door saloon,stepless automatic,Automatic,
@@ -1499,6 +1501,7 @@ Lotus Exige S1,Car,Lotus,Exige S1,United Kingdom,,4.5,,240.0,745.0,,,,,,2.0,274.
 Lotus Exige Sport 380 Roadster,Car,Lotus,Exige Sport 380 Roadster (Mk III),United Kingdom,2016.0,4.3,33.0,233.0,1135.0,,,,,"3.5 litre DOHC V6 VVT-i, 24 valve, with Harrop supercharger",3.5,380.0,410.0,Middle,Rear,Convertible,6 speed manual,Manual,6.0
 Lotus Exige Sport 420,Car,Lotus,Exige Sport 420,United Kingdom,2021.0,3.9,36.0,286.0,1175.0,,,,,V6,3.5,426.0,427.0,Middle,Rear,Coupe,6 speed manual,Manual,6.0
 Lotus Exige V6 Cup,Car,Lotus,Exige V6 Cup,United Kingdom,2013.0,4.0,,274.0,1014.0,2.37,4.08,1.8,1.13,"DOHC V6, 24 valve",3.5,350.0,400.0,Middle,Rear,Coupe,6 speed manual,Manual,6.0
+Lucid Air Touring,Car,Lucid,Air Touring,United States,2023.0,,,225.0,2280.0,,,,,2 electric motors,,629.0,1200.0,Front,All,4-door saloon,1 speed,Other,1.0
 MG A Twin Cam 1.8 Coupe,Car,MG,A Twin Cam 1.8 Coupe,United Kingdom,1960.0,,,,,,,,,Inline 4,1.8,,,Front,Rear,Coupe,4 speed manual,Manual,4.0
 MG MGA Twin-Cam Roadster,Car,MG,MGA Twin-Cam Roadster (Mk I),United Kingdom,1960.0,12.9,,179.0,997.0,,,,,Inline-4,1.6,109.0,104.0,Front,Rear,Convertible,4-speed manual,Manual,4.0
 MG MGB Hardtop,Car,MG,MGB Hardtop,United Kingdom,1962.0,,,,,,,,,Inline 4,1.8,95.0,145.0,Front,Rear,Coupe,4 speed manual,Manual,4.0
@@ -1554,7 +1557,7 @@ Matra-Simca MS670,Car,Matra-Simca,MS670,,,,,,700.0,,,,,3.0L Matra MS73 60º V12,
 Matra-Simca MS670B,Car,Matra-Simca,MS670B,France,,,,,686.0,,,,,3.0L Matra MS73 60º V12,3.0,460.0,,Middle,Rear,Convertible,Porsche 6-speed Manual,Manual,6.0
 Maybach S 580,Car,Maybach,S 580,Germany,2021.0,,,250.0,2459.0,,,,,V8 Biturbo Mild Hybrid,4.0,503.0,700.0,Front,All,4-door saloon,9 speed automatic,Automatic,9.0
 Mazda 2 1.5 MZR,Car,Mazda,2 1.5 MZR,Japan,2007.0,10.4,,188.0,1035.0,,,,,"Inline 4, 16v",1.5,103.0,137.0,Front,Front,Compact,5,Other,5.0
-Mazda 3  2.5 (BP),Car,Mazda,3  2.5 (BP),Japan,2019.0,,,211.0,1464.0,,,,,DOHC I4,2.5,190.0,252.0,Front,Front,Compact,"6-speed manual, 6-speed automatic",Manual,6.0
+Mazda 3  2.5 (BP),Car,Mazda,3  2.5 (BP),Japan,2019.0,,,211.0,1483.0,,,,,DOHC I4,2.5,190.0,252.0,Front,Front,Compact,"6-speed manual, 6-speed automatic",Manual,6.0
 Mazda 3 2.2 CD,Car,Mazda,3 2.2 CD,Japan,2009.0,7.9,,213.0,1485.0,,,,,inline4 16V DOHC Turbo Diesel,2.2,185.0,400.0,Front,Front,Compact,6-Speed manuell,Other,6.0
 Mazda 3 MPS,Car,Mazda,3 MPS,Japan,2006.0,6.1,,250.0,1485.0,,,,,4cyl Turbo,2.3,260.0,380.0,Front,Front,Compact,6,Other,6.0
 Mazda 3 MPS (Mk II),Car,Mazda,3 MPS (Mk II),Japan,2009.0,6.1,36.0,250.0,1470.0,2.64,4.5,1.77,1.46,inline 4 16V DOHC Turbo,2.3,260.0,380.0,Front,Front,Compact,6 speed manual,Manual,6.0
@@ -1599,7 +1602,7 @@ Mazda RX-7 (280 PS),Car,Mazda,RX-7 (280 PS),Japan,2001.0,5.0,,251.0,1271.0,,,,,2
 Mazda RX-7 (EU-Spec),Car,Mazda,RX-7 (EU-Spec),Japan,,6.0,34.0,253.0,1320.0,,,,,2 cylinder rotary engine,1.3,239.0,,Front,Rear,Coupe,5 speed manual,Manual,5.0
 Mazda RX-7 (S4 N/A),Car,Mazda,RX-7 (S4 N/A),,1987.0,8.6,,221.0,1260.0,2.35,4.14,1.63,1.22,,1.3,148.0,187.0,Front,Rear,Coupe,5-Speed,Other,5.0
 Mazda RX-7 254i,Car,Mazda,RX-7 254i	 (Based on FB RX-7),Japan,,,,,976.0,,,,,Mazda 13B 1.3L twin-rotary (2.6L),2.6,320.0,,Front,Rear,Coupe,5-speed Manual,Manual,5.0
-Mazda RX-7 GSL SE,Car,Mazda,RX-7 GSL SE,Japan,1983.0,,,171.0,1200.0,2.42,4.32,1.67,1.26,2 rotor,1.3,137.0,180.0,Front,Rear,Coupe,5 speed manual,Manual,5.0
+Mazda RX-7 GSL SE,Car,Mazda,RX-7 GSL SE,Japan,1983.0,,,201.0,1200.0,2.42,4.32,1.67,1.26,2 rotor,1.3,137.0,180.0,Front,Rear,Coupe,5 speed manual,Manual,5.0
 Mazda RX-7 Turbo,Car,Mazda,RX-7 Turbo,Japan,1989.0,6.7,,240.0,1285.0,,,,,"2 Rotary, Turbocharged",1.3,200.0,265.0,Front,Rear,Coupe,5,Other,5.0
 Mazda RX-8,Car,Mazda,RX-8,Japan,2002.0,6.6,36.0,235.0,1400.0,,,,,Renesis R2,1.3,231.0,216.0,Front,Rear,Coupe,6 speed,Other,6.0
 Mazda RX-8 (192 PS),Car,Mazda,RX-8 (192 PS),Japan,2005.0,7.4,,223.0,1370.0,,,,,2rotor Wankel,1.3,192.0,220.0,Front,Rear,Coupe,5 speed manual,Manual,5.0
@@ -1621,7 +1624,7 @@ McLaren 688HS,Car,McLaren,688HS,United Kingdom,2016.0,,,,1288.0,,,,,V8 DOHC Twin
 McLaren 720S,Car,McLaren,720S,United Kingdom,2017.0,2.6,29.0,348.0,1437.0,,,,,twin-turbocharged V8,4.0,720.0,770.0,Middle,Rear,Coupe,7 Speed SSG,Other,7.0
 McLaren 720S Spider,Car,McLaren,720S Spider,United Kingdom,2019.0,2.9,30.0,341.0,1514.0,,,,,V8 Twin Turbo,4.0,720.0,770.0,Middle,Rear,Convertible,7 speed dual clutch automatic,Dual-Clutch,7.0
 McLaren 765LT,Car,McLaren,765LT,United Kingdom,2020.0,2.7,30.0,330.0,1409.0,,,,,V8 Twin Turbo,4.0,765.0,800.0,Middle,Rear,Coupe,7 speed dual clutch automatic,Dual-Clutch,7.0
-McLaren 765LT Spider,Car,McLaren,765LT Spider,United Kingdom,2021.0,2.8,30.0,330.0,1461.0,,,,,V8 Twin Turbo,4.0,765.0,800.0,Middle,Rear,Convertible,7 speed dual clutch automatic,Dual-Clutch,7.0
+McLaren 765LT Spider,Car,McLaren,765LT Spider,United Kingdom,2021.0,2.8,30.0,330.0,1462.0,,,,,V8 Twin Turbo,4.0,765.0,800.0,Middle,Rear,Convertible,7 speed dual clutch automatic,Dual-Clutch,7.0
 McLaren Artura,Car,McLaren,Artura,United Kingdom,2022.0,3.0,,330.0,1552.0,2.64,4.54,1.98,1.19,V6 twin turbo with electric motor,3.0,680.0,720.0,Middle,Rear,Coupe,8 speed automatic,Automatic,8.0
 McLaren F1,Car,McLaren,F1,United Kingdom,1993.0,3.2,,391.0,1288.0,2.72,4.29,1.82,1.14,BMW V12,6.1,627.0,647.0,Middle,Rear,Coupe,6 speed,Other,6.0
 McLaren F1 GTR LM (Short Tail),Car,McLaren,F1 GTR LM (Short Tail),United Kingdom,,,,,1137.0,,,,,BMW S70 6.1 L V12,6.1,640.0,730.0,Middle,Rear,Coupe,6-speed Manual,Manual,6.0
@@ -1733,7 +1736,7 @@ Mercedes-Benz EQC 400 4Matic,Car,Mercedes-Benz,EQC 400 4Matic,Germany,2019.0,4.6
 Mercedes-Benz F1 W07 Hybrid,Car,Mercedes-Benz,F1 W07 Hybrid,Germany,,,,,,,,,,Mercedes V6 turbocharged hybrid,1.6,,,Middle,Rear,Open-wheeler,8 speed semi-automatic,Semi-Automatic,8.0
 Mercedes-Benz G 55 AMG,Car,Mercedes-Benz,G 55 AMG (500 PS),Germany,2007.0,5.4,,210.0,2600.0,2.85,4.66,1.76,1.93,"V8, Supercharged, 24v",5.4,500.0,700.0,Front,All,SUV/truck,5,Other,5.0
 Mercedes-Benz G63 AMG (Mk II),Car,Mercedes-Benz,G63 AMG (Mk II),Germany,2018.0,4.2,36.0,240.0,2709.0,,,,,4.0-liter biturbo V8,4.0,585.0,850.0,Front,All,SUV/truck,9-speed automatic,Automatic,9.0
-Mercedes-Benz GLA 45 AMG,Car,Mercedes-Benz,GLA 45 AMG,Germany,2014.0,4.7,35.0,250.0,1653.0,2.7,4.36,1.78,1.42,"Turbo Inline-4, 16v",2.0,360.0,450.0,Front,All,4-door saloon,AMG Speedshift DCT 7 speed,Other,7.0
+Mercedes-Benz GLA 45 AMG,Car,Mercedes-Benz,GLA 45 AMG,Germany,2014.0,4.7,34.0,250.0,1653.0,2.7,4.36,1.78,1.42,"Turbo Inline-4, 16v",2.0,360.0,450.0,Front,All,4-door saloon,AMG Speedshift DCT 7 speed,Other,7.0
 Mercedes-Benz GLB 200,Car,Mercedes-Benz,GLB 200,Germany,2019.0,8.9,35.0,207.0,1637.0,,,,,Inline 4 turbo,1.3,163.0,250.0,Front,Front,SUV/truck,7 speed Dual clutch,Dual-Clutch,7.0
 Mercedes-Benz GLC 250d 4MATIC,Car,Mercedes-Benz,GLC 250d 4MATIC (X204),Germany,2015.0,7.5,34.0,222.0,1964.0,,,,,Inline 4 twin turbo diesel,2.1,204.0,500.0,Front,All,SUV/truck,9 speed automatic,Automatic,9.0
 Mercedes-Benz GLC 43 AMG,Car,Mercedes-Benz,GLC 43 AMG,Germany,2016.0,4.8,32.0,250.0,1911.0,,,,,V6 twin turbo,3.0,367.0,520.0,Front,All,SUV/truck,9 speed automatic,Automatic,9.0
@@ -1742,7 +1745,6 @@ Mercedes-Benz GLE 63s 4MATIC,Car,Mercedes-Benz,GLE 63s 4MATIC (W166),Germany,,4.
 Mercedes-Benz ML 63 AMG,Car,Mercedes-Benz,ML 63 AMG,Germany,2008.0,5.1,,275.0,2235.0,2.92,4.82,1.95,1.86,V8 32V n/a,6.2,510.0,630.0,Front,All,SUV/truck,7speed automatic,Automatic,7.0
 Mercedes-Benz S 350,Car,Mercedes-Benz,S 350,Germany,2002.0,7.6,,246.0,1710.0,,,,,"V6, 18v",3.7,245.0,350.0,Front,Rear,4-door saloon,5,Other,5.0
 Mercedes-Benz S 500 (W222),Car,Mercedes-Benz,S 500 (W222),Germany,2013.0,4.8,33.0,250.0,2110.0,3.04,5.12,1.9,1.5,"V8, biturbo",4.7,455.0,700.0,Front,Rear,4-door saloon,7-speed-automatic,Automatic,7.0
-Mercedes-Benz S 500 4MATIC,Car,Mercedes-Benz,S 500 4MATIC (W223),Germany,2020.0,4.8,33.0,250.0,2133.0,3.11,5.18,1.92,1.5,Inline 6 turbo mild hybrid,3.0,435.0,520.0,Front,All,4-door saloon,9 speed automatic,Automatic,9.0
 Mercedes-Benz S 580,Car,Mercedes-Benz,S 580,Germany,2021.0,4.7,34.0,250.0,2191.0,,,,,V8 Biturbo Mild Hybrid,4.0,503.0,700.0,Front,All,4-door saloon,9 speed automatic,Automatic,9.0
 Mercedes-Benz S400 BlueHybrid,Car,Mercedes-Benz,S400 BlueHybrid,Germany,2010.0,7.3,,,1955.0,,,,,V 6 DOHC 24-valve + 20-hp/118-lb-ft electric motor,3.5,303.0,510.0,Front,Rear,4-door saloon,7-speed automatic,Automatic,7.0
 Mercedes-Benz S63 AMG,Car,Mercedes-Benz,S63 AMG,Germany,2013.0,3.9,34.0,300.0,1925.0,3.04,5.12,1.9,1.48,V8 Biturbo,5.5,585.0,800.0,Front,Rear,4-door saloon,AMG SPEEDSHIFT MCT 7-sport,Other,7.0
@@ -1850,7 +1852,7 @@ Morgan Aero Coupe,Car,Morgan,Aero Coupe,,,4.2,,273.0,1180.0,,4.15,1.75,1.25,BMW 
 Morgan Plus 8 Speedster,Car,Morgan,Plus 8 Speedster,United Kingdom,2014.0,,,,1100.0,2.53,4.01,1.75,1.22,BMW N62B48 90º V8,4.8,372.0,490.0,Front,Rear,Open-wheeler,6 speed Manual,Manual,6.0
 Morgan Plus Four CX-T,Car,Morgan,Plus Four CX-T,United Kingdom,2021.0,,,,,,,,,Inline 4 turbo 16 valve DOHC,2.0,258.0,350.0,Front,Rear,Coupe,6 speed manual,Manual,6.0
 Morgan Roadster V6 lightweight,Car,Morgan,Roadster V6 lightweight,United Kingdom,2005.0,5.5,,216.0,943.0,,,,,V6 24V n/a,3.0,249.0,280.0,Front,Rear,Convertible,5 speed manual,Manual,5.0
-Morgan Super 3,Car,Morgan,Super 3,United Kingdom,2023.0,,,,,,,,,three-cylinder Ford engine,1.5,120.0,149.0,Front,Rear,Coupe,Mazda-sourced five-speed gearbox,Other,
+Morgan Super 3,Car,Morgan,Super 3,United Kingdom,2023.0,,,,644.0,,,,,three-cylinder Ford engine,1.5,120.0,149.0,Front,Rear,Coupe,Mazda-sourced five-speed gearbox,Other,
 Mosler MT 900 GTR,Car,Mosler,MT 900 GTR,United States,2006.0,3.8,,330.0,1278.0,,,,,V8 n/a,7.0,521.0,675.0,Middle,Rear,Coupe,6 speed stick shift,Other,6.0
 Mosler MT 900S,Car,Mosler,MT 900S,United States,,3.5,,320.0,1100.0,,,,,V8 n/a,5.7,441.0,,Middle,Rear,Coupe,6,Other,6.0
 Mosler MT900S,Car,Mosler,MT900S,United States,2011.0,3.3,,331.0,1174.0,2.77,4.8,2.01,1.1,Naturally Aspirated LS7 V8,7.0,558.0,696.0,Middle,Rear,Coupe,Other,Other,
@@ -1880,7 +1882,7 @@ Nissan Almera GTI,Car,Nissan,Almera GTI,Japan,1998.0,8.2,,210.0,1135.0,,,,,"Inli
 Nissan Bluebird 1.8 ZX Turbo,Car,Nissan,Bluebird 1.8 ZX Turbo (Pre-Facelift (T12),Japan,,9.3,,190.0,1265.0,,,,,1.8 L CA18ET  I4,1.8,135.0,191.0,Front,Front,4-door saloon,5-speed manual,Manual,5.0
 Nissan Cherry Turbo,Car,Nissan,Cherry Turbo,Japan,,9.8,,186.0,,,,,,Inline 4,1.5,115.0,162.0,Front,Front,Compact,5 speed manual,Manual,5.0
 Nissan GT-R (R35 530 PS),Car,Nissan,GT-R (R35 530 PS),Japan,2011.0,3.0,34.0,315.0,1784.0,2.78,4.67,1.9,1.37,V6 DOHC 24V twinturbo,3.8,530.0,612.0,Front,All,Coupe,6 speed dual clutch transaxle,Dual-Clutch,6.0
-Nissan GT-R (R35 550 PS),Car,Nissan,GT-R (R35 550 PS),Japan,2012.0,2.8,32.0,324.0,1736.0,,,,,V6,3.8,550.0,632.0,Front,All,Coupe,6-Speed DCT,Other,6.0
+Nissan GT-R (R35 550 PS),Car,Nissan,GT-R (R35 550 PS),Japan,2012.0,2.8,32.0,324.0,1763.0,,,,,V6,3.8,550.0,632.0,Front,All,Coupe,6-Speed DCT,Other,6.0
 Nissan GT-R (R35 570PS),Car,Nissan,GT-R (R35 570PS),Japan,2017.0,3.0,32.0,320.0,1818.0,2.78,4.71,1.9,1.37,V6 DOHC Twin Turbo,3.8,570.0,633.0,Front,All,Coupe,6-Speed DCT,Other,6.0
 Nissan GT-R (R35),Car,Nissan,GT-R (R35),Japan,,3.4,33.0,314.0,1788.0,2.78,4.66,1.9,1.37,V6 twinturbo,3.8,480.0,587.0,Front,All,Coupe,6 speed double clutch,Other,6.0
 Nissan GT-R Nismo (R35),Car,Nissan,GT-R Nismo (R35),Japan,2015.0,3.0,31.0,315.0,1760.0,,,,,tt v6,3.8,600.0,652.0,Front,All,Coupe,6 speed dual clutch,Dual-Clutch,6.0
@@ -1925,7 +1927,7 @@ Opel Astra GTC  (1.6),Car,Opel,Astra GTC  (1.6),Germany,2011.0,8.3,,220.0,1400.0
 Opel Astra GTC 1.6 Turbo,Car,Opel,Astra GTC 1.6 Turbo,Germany,2007.0,7.3,,223.0,1260.0,,,,,R 4 Turbo,1.6,179.0,230.0,Front,Front,Compact,6,Other,6.0
 Opel Astra GTC 2.0T,Car,Opel,Astra GTC 2.0T,Germany,2004.0,7.2,36.0,234.0,1360.0,,,,,"Inline 4, Turbocharged, 16v",2.0,200.0,262.0,Front,Front,Compact,6,Other,6.0
 Opel Astra OPC,Car,Opel,Astra OPC,Germany,2005.0,6.5,35.0,245.0,1353.0,,,,,inline4 16V DOHC Turbo,2.0,241.0,320.0,Front,Front,Compact,6 speed manual,Manual,6.0
-Opel Astra OPC 2012,Car,Opel,Astra OPC 2012,Germany,2012.0,6.3,36.0,262.0,1560.0,,,,,,2.0,280.0,400.0,Front,Front,Compact,Other,Other,
+Opel Astra OPC 2012,Car,Opel,Astra OPC 2012,Germany,2012.0,6.3,36.0,262.0,1564.0,,,,,,2.0,280.0,400.0,Front,Front,Compact,Other,Other,
 Opel Calibra 4x4,Car,Opel,Calibra 4x4,Germany,,7.0,,248.0,1394.0,,,,,4cyl Turbo 16V,2.0,204.0,280.0,Front,All,Coupe,6,Other,6.0
 Opel Calibra V6 2.5,Car,Opel,Calibra V6 2.5,Germany,1993.0,7.8,,237.0,1370.0,,,,,V6 24V DOHC n/a,2.5,170.0,227.0,Front,Front,Coupe,5 speed manual,Manual,5.0
 Opel Combo 1.5 D,Car,Opel,Combo 1.5 D,United Kingdom,2019.0,11.2,35.0,184.0,1606.0,,,,,Inline 4 turbo diesel,1.5,130.0,300.0,Front,Front,Van,8 speed automatic,Automatic,8.0
@@ -2036,7 +2038,8 @@ Peugeot e-208 (Mk II),Car,Peugeot,e-208 (Mk II),France,2019.0,8.1,35.0,151.0,153
 Plymouth Duster 340,Car,Plymouth,Duster 340,United States,1971.0,,,,1591.0,2.65,4.7,1.75,1.29,Chrysler 340 Cu,5.6,279.0,461.0,Front,Rear,Coupe,4 Speed Manual (3.55 ratio),Manual,4.0
 Plymouth Neon ACR Coupe,Car,Plymouth,Neon ACR Coupe,United States,1995.0,,,210.0,1125.0,,,,,4 cylinder inline DOHC,2.0,152.0,180.0,Front,Front,Coupe,5 speed,Other,5.0
 Polestar 1 ,Car,Polestar,1,Sweden,2020.0,3.9,32.0,250.0,2385.0,2.74,4.58,1.94,1.35,"Twincharged I4, 2 electric motors w/ ISG",2.0,628.0,1001.0,Front,All,Coupe,8-speed automatic,Automatic,8.0
-Polestar 2  ,Car,Polestar,2,China,2020.0,4.6,33.0,205.0,2191.0,,,,,2 electric motors,,408.0,660.0,Middle,All,4-door saloon,1-speed fixed gear,Other,1.0
+Polestar 2  Dual Motor,Car,Polestar,2  Dual Motor,China,2020.0,4.6,33.0,205.0,2191.0,,,,,2 electric motors,,408.0,660.0,Middle,All,4-door saloon,1-speed fixed gear,Other,1.0
+Polestar 2 BST edition 270,Car,Polestar,2 BST edition 270,Sweden,2023.0,4.5,35.0,205.0,2151.0,,,,,Dual electric motors,,483.0,681.0,Middle,All,4-door saloon,Direct Drive,Other,
 Pontiac Firebird Formula,Car,Pontiac,Firebird Formula,United States,1998.0,5.4,,254.0,1570.0,,,,,"90° V-8, aluminum",5.7,309.0,454.0,Front,Rear,Coupe,6-speed manual,Manual,6.0
 Pontiac Firebird Trans Am,Car,Pontiac,Firebird Trans Am,United States,1984.0,,,205.0,1564.0,2.48,4.65,1.76,1.23,V8 OHV,5.0,193.0,325.0,Front,Rear,Coupe,5 speed manual,Manual,5.0
 Pontiac Firebird Trans Am 6.6L,Car,Pontiac,Firebird Trans Am 6.6L (2nd Generation),United States,1977.0,,,177.0,1737.0,,,,,V8,6.6,203.0,441.0,Front,Rear,Coupe,4-speed manual,Manual,4.0
@@ -2053,7 +2056,7 @@ Porsche 718 Cayman GT4,Car,Porsche,718 Cayman GT4,Germany,2019.0,3.9,32.0,304.0,
 Porsche 718 Cayman GT4 RS,Car,Porsche,718 Cayman GT4 RS,Germany,2021.0,3.2,28.0,315.0,1491.0,,,,,Flat 6,4.0,500.0,449.0,Middle,Rear,Coupe,7 speed dual clutch automatic (PDK),Dual-Clutch,7.0
 Porsche 718 Cayman GTS,Car,Porsche,718 Cayman GTS,Germany,2017.0,3.8,31.0,290.0,1456.0,,,,,"Flat 4, VTG turbo, DI, DOHC, 16 valves, DVVT, VVL",2.5,365.0,430.0,Middle,Rear,Coupe,Other,Other,
 Porsche 718 Cayman GTS 4.0,Car,Porsche,718 Cayman GTS 4.0,Germany,2020.0,3.6,31.0,293.0,1465.0,,,,,Flat 6 24 valve DOHC,4.0,400.0,420.0,Rear,Rear,Coupe,6 speed manual,Manual,6.0
-Porsche 718 Cayman S,Car,Porsche,718 Cayman S,Germany,2016.0,3.8,30.0,293.0,1446.0,2.48,4.38,1.99,1.3,4-cylinder turbocharged boxer,2.5,350.0,420.0,Middle,Rear,Coupe,"7 speed PDK, 6 speed manual",Manual,7.0
+Porsche 718 Cayman S,Car,Porsche,718 Cayman S,Germany,2016.0,3.8,30.0,293.0,1449.0,2.48,4.38,1.99,1.3,4-cylinder turbocharged boxer,2.5,350.0,420.0,Middle,Rear,Coupe,"7 speed PDK, 6 speed manual",Manual,7.0
 Porsche 718 GTR Coupe,Car,Porsche,718 GTR Coupe,Germany,1962.0,,,,,,,,,Boxer 8,2.0,,,Rear,Rear,Coupe,6 speed manual,Manual,6.0
 Porsche 718 RS 60 1.5,Car,Porsche,718 RS 60 1.5,Germany,1960.0,,,,,,,,,Boxer 4,1.5,150.0,,Front,Rear,Convertible,5 speed manual,Manual,5.0
 Porsche 718 RS 61 Coupe,Car,Porsche,718 RS 61 Coupe,Germany,1961.0,,,,,,,,,Boxer 4,1.7,,,Front,Rear,Coupe,5 speed manual,Manual,5.0
@@ -2199,7 +2202,7 @@ Porsche Boxster (987),Car,Porsche,Boxster (987),Germany,2005.0,6.5,,256.0,1398.0
 Porsche Boxster GTS (981),Car,Porsche,Boxster GTS (981),Germany,2014.0,4.6,33.0,279.0,1435.0,,,,,"B6  4 valves / cylinder, DOHC",3.4,331.0,370.0,Middle,Rear,Convertible,PDK 7 speed Automatic,Automatic,7.0
 Porsche Boxster RS 60 Spyder,Car,Porsche,Boxster RS 60 Spyder (987 facelift),Germany,2008.0,5.4,,274.0,1355.0,,,,,B 6,3.4,303.0,340.0,Middle,Rear,Convertible,6 speed manual,Manual,6.0
 Porsche Boxster S,Car,Porsche,Boxster S (987 facelift),Germany,2009.0,4.5,35.0,272.0,1467.0,,,,,Flat-6,3.4,310.0,360.0,Middle,Rear,Convertible,6 speed manual PDK,Manual,6.0
-Porsche Boxster S (981),Car,Porsche,Boxster S (981),Germany,2012.0,4.8,,284.0,1431.0,2.48,4.37,1.8,1.28,boxer/6,3.4,315.0,360.0,Middle,Rear,Convertible,Other,Other,
+Porsche Boxster S (981),Car,Porsche,Boxster S (981),Germany,2012.0,4.4,32.0,284.0,1431.0,2.48,4.37,1.8,1.28,boxer/6,3.4,315.0,360.0,Middle,Rear,Convertible,Other,Other,
 Porsche Boxster S (986 252 PS),Car,Porsche,Boxster S (986 252 PS),Germany,1999.0,5.7,34.0,261.0,1386.0,,,,,"Boxer 6, 24v",3.2,252.0,305.0,Middle,Rear,Convertible,6 speed manual,Manual,6.0
 Porsche Boxster S (986 260 PS),Car,Porsche,Boxster S (986 260 PS),Germany,2004.0,5.6,,266.0,1320.0,,,,,B 6,3.2,260.0,310.0,Middle,Rear,Convertible,6 speed manual,Manual,6.0
 Porsche Boxster S (987 280 PS),Car,Porsche,Boxster S (987 280 PS),Germany,2005.0,5.4,35.0,268.0,1419.0,,,,,"Boxer 6, 24v",3.2,280.0,320.0,Middle,Rear,Convertible,6 speed manual,Manual,6.0
@@ -2264,7 +2267,7 @@ Porsche Panamera Turbo S ,Car,Porsche,Panamera Turbo S  (Mk II Facelift),Germany
 Porsche RS Spyder,Car,Porsche,RS Spyder,Germany,,,,,775.0,,,,,V8 DOHC,3.0,487.0,,Middle,Rear,Coupe,6 speed Sequential,Sequential,6.0
 Porsche RS Spyder (Evo),Car,Porsche,RS Spyder (Evo),Germany,,,,,775.0,,,,,V8 DOHC,3.4,510.0,370.0,Middle,Rear,Coupe,6 speed Sequential,Sequential,6.0
 Porsche Taycan 4S,Car,Porsche,Taycan 4S,Germany,2020.0,4.0,33.0,250.0,2335.0,,4.96,2.15,1.38,Two electric motors,,570.0,649.0,Middle,All,4-door saloon,2-speed,Other,2.0
-Porsche Taycan GTS,Car,Porsche,Taycan GTS,Germany,2021.0,,,,,,,,,E-motor,,598.0,850.0,Front,All,4-door saloon,2 speed,Other,2.0
+Porsche Taycan GTS,Car,Porsche,Taycan GTS,Germany,2021.0,,,,2339.0,,,,,E-motor,,598.0,850.0,Front,All,4-door saloon,2 speed,Other,2.0
 Porsche Taycan Turbo,Car,Porsche,Taycan Turbo,Germany,2019.0,3.0,32.0,269.0,2376.0,,,,,2 electric motors,,680.0,850.0,Middle,All,4-door saloon,"1-speed direct-drive (front), 2-speed automatic (rear)",Automatic,1.0
 Porsche Taycan Turbo S,Car,Porsche,Taycan Turbo S,Germany,2019.0,2.6,32.0,261.0,2459.0,,,,,2 electric motors,,760.0,1049.0,Middle,All,4-door saloon,"1-speed direct-drive (front), 2-speed automatic (rear)",Automatic,1.0
 Praga R1 R,Car,Praga,R1 R,Czech Republic,2016.0,,,,670.0,,,,,Inline 4 Turbo Praga-Renault F4R 832,2.0,395.0,530.0,Middle,Rear,Open-wheeler,Manual sequential,Sequential,
@@ -2374,9 +2377,7 @@ Renault Megane R26.R,Car,Renault,Megane R26.R,France,2008.0,6.0,,237.0,1252.0,,,
 Renault Megane RS ,Car,Renault,Megane RS  (MK IV 280 PS),France,2018.0,5.8,32.0,255.0,1505.0,,,,,4 Cylinder Turbo,1.8,280.0,390.0,Front,Front,4-door saloon,PDK,Other,
 Renault Megane RS (Mk III),Car,Renault,Megane RS (Mk III),France,2009.0,5.9,35.0,245.0,1422.0,,,,,inline4 16V DOHC turbo,2.0,250.0,340.0,Front,Front,Compact,6 speed manual,Manual,6.0
 Renault Megane RS 250 Cup,Car,Renault,Megane RS 250 Cup,France,,,,251.0,,,,,,Inline 4 turbo,2.0,250.0,340.0,Front,Front,Compact,6 speed manual,Manual,6.0
-Renault Megane RS 265,Car,Renault,Megane RS 265,France,2013.0,6.1,37.0,254.0,1420.0,,4.3,1.85,1.44,4 cyl. Turbo,2.0,269.0,360.0,Front,Front,Compact,6 speed manual,Manual,6.0
-Renault Megane RS 265 Cup,Car,Renault,Megane RS 265 Cup,France,,6.5,37.0,254.0,1415.0,,,,,Inline 4 turbo,2.0,265.0,359.0,Front,Front,Compact,6 speed manual,Manual,6.0
-Renault Megane RS 265 Trophy,Car,Renault,Megane RS 265 Trophy,France,2011.0,6.0,,254.0,1409.0,2.65,4.3,1.85,1.44,inline4 16V Turbo,2.0,265.0,360.0,Front,Front,Compact,6speed manual,Manual,6.0
+Renault Megane RS 265 Trophy,Car,Renault,Megane RS 265 Trophy,France,2011.0,5.8,34.0,254.0,1420.0,2.65,4.3,1.85,1.44,inline4 16V Turbo,2.0,265.0,360.0,Front,Front,Compact,6speed manual,Manual,6.0
 Renault Megane RS 275 Cup S,Car,Renault,Megane RS 275 Cup S,France,2015.0,5.8,,255.0,1350.0,,,,,straight 4 16 valve,2.0,279.0,361.0,Front,Front,Compact,6-speed manual,Manual,6.0
 Renault Megane RS 275 Trophy,Car,Renault,Megane RS 275 Trophy,France,2014.0,5.8,33.0,255.0,1386.0,,,,,"F4R 774 Straight 4 4 valves / cylinder, DOHC",2.0,275.0,360.0,Front,Front,Compact,6 speed Manual,Manual,6.0
 Renault Megane RS 275 Trophy R,Car,Renault,Megane RS 275 Trophy R,France,2014.0,5.4,33.0,255.0,1302.0,,,,,"4,16",2.0,279.0,361.0,Front,Front,Compact,Manual 6,Other,6.0
@@ -2457,7 +2458,7 @@ Seat Leon 1.8T (Cupra),Car,Seat,Leon 1.8T (Cupra),Spain,2000.0,7.7,38.0,229.0,13
 Seat Leon 2.0 TFSI,Car,Seat,Leon 2.0 TFSI,Spain,2005.0,7.3,,221.0,1334.0,,,,,"Inline 4, Turbocharged, 16v",2.0,185.0,270.0,Front,Front,Compact,6,Other,6.0
 Seat Leon Copa Edition,Car,Seat,Leon Copa Edition,Spain,2008.0,5.9,,255.0,1440.0,,,,,2.0l TFSI inline4 16V turbo DOHC,2.0,286.0,360.0,Front,Front,Compact,6 speed manual,Manual,6.0
 Seat Leon Cupra,Car,Seat,Leon Cupra,Spain,2009.0,6.4,,243.0,1420.0,,,,,inline4 16 DOHC Turbo,2.0,241.0,300.0,Front,Front,Compact,6,Other,6.0
-Seat Leon Cupra 280 (Mk III),Car,Seat,Leon Cupra 280 (Mk III),,2014.0,5.7,32.0,250.0,1361.0,2.63,4.27,1.82,1.43,"R4, Turbo",2.0,280.0,350.0,Front,Front,Compact,6 gears DSG,Other,6.0
+Seat Leon Cupra 280 (Mk III),Car,Seat,Leon Cupra 280 (Mk III),,2014.0,5.7,32.0,250.0,1379.0,2.63,4.27,1.82,1.43,"R4, Turbo",2.0,280.0,350.0,Front,Front,Compact,6 gears DSG,Other,6.0
 Seat Leon Cupra 290,Car,Seat,Leon Cupra 290,Spain,2016.0,5.6,31.0,259.0,1421.0,,,,,4 Cylinder Turbo,2.0,290.0,350.0,Front,Front,Compact,6 speed twin clutch DSG,Other,6.0
 Seat Leon Cupra 300 (Mk III),Car,Seat,Leon Cupra 300 (Mk III),Spain,2017.0,5.5,31.0,250.0,1404.0,,,,,Inline 4 turbo,2.0,300.0,380.0,Front,Front,Compact,6 speed dual-clutch automatic (DSG),Dual-Clutch,6.0
 Seat Leon Cupra R,Car,Seat,Leon Cupra R,Spain,2003.0,6.9,,242.0,1320.0,,,,,"Inline 4, Turbocharged, 20v",1.8,224.0,280.0,Front,Front,Compact,6,Other,6.0
@@ -2578,6 +2579,7 @@ TVR Tuscan (Mk II),Car,TVR,Tuscan (Mk II),United Kingdom,2003.0,4.2,33.0,290.0,1
 Talbot Solara 1.5 LS,Car,Talbot,Solara 1.5 LS,France,,15.5,,156.0,,,,,,Inline 4,1.4,70.0,117.0,Front,Front,4-door saloon,4 speed manual,Manual,4.0
 Talbot Solara 1.6 GLS,Car,Talbot,Solara 1.6 GLS,France,,12.8,,167.0,,,,,,Inline 4,1.6,88.0,135.0,Front,Front,4-door saloon,Other,Other,
 Tata Tigor EV,Car,Tata,Tigor EV,India,2021.0,,,,,,,,,E-motor,,75.0,170.0,Front,Front,4-door saloon,1 speed,Other,1.0
+Taycan Sport Turismo GTS,Car,Porsche,Taycan Sport Turismo GTS,Germany,2021.0,3.6,33.0,250.0,2373.0,,,,,E-motor,,598.0,850.0,Front,All,Estate/wagon,2 speed,Other,2.0
 Taycan Sport Turismo Turbo,Car,Porsche,Taycan Sport Turismo Turbo,Germany,2022.0,3.1,33.0,260.0,2373.0,,,,,E-motor,,680.0,850.0,Middle,All,Estate/wagon,2 speed,Other,2.0
 Tesla Model 3 ,Car,Tesla,Model 3 Performance,United States,2018.0,3.4,33.0,262.0,1855.0,,4.69,,,Electric motors,,487.0,639.0,Front,All,4-door saloon,single speed,Other,
 Tesla Model S P85,Car,Tesla,Model S P85,United States,2012.0,4.5,,210.0,2154.0,2.85,4.8,2.11,1.38,Electric Motor,,422.0,601.0,Rear,Rear,4-door saloon,,Other,
@@ -2611,7 +2613,7 @@ Toyota Corolla Cross Hybrid,Car,Toyota,Corolla Cross Hybrid,Japan,2020.0,,,,,,,,
 Toyota Corolla Levin BZ-V,Car,Toyota,Corolla Levin BZ-V (AE111),Japan,1995.0,,,,1040.0,,,,,"4 cylinder, DOHC 20 Valve",1.6,165.0,162.0,Front,Front,Coupe,,Other,
 Toyota Corolla TS,Car,Toyota,Corolla TS,Japan,2002.0,7.9,,225.0,1210.0,,,,,"Inline 4, 16v",1.8,192.0,180.0,Front,Front,Compact,6,Other,6.0
 Toyota Corolla TS Compressor,Car,Toyota,Corolla TS Compressor,Japan,2005.0,6.9,,235.0,1315.0,,,,,Inline 4 Supercharged,1.8,215.0,230.0,Front,Front,Compact,6,Other,6.0
-Toyota Corolla gr MORIZO,Car,Toyota,Corolla gr MORIZO,Japan,2023.0,,,,1445.0,,,,,turbo three-cylinder,,304.0,400.0,Front,All,Compact,close-ratio version of the six-speed manual,Manual,
+Toyota Corolla gr MORIZO,Car,Toyota,Corolla gr MORIZO,Japan,2023.0,,,,1446.0,,,,,turbo three-cylinder,,304.0,400.0,Front,All,Compact,close-ratio version of the six-speed manual,Manual,
 Toyota Fortuner 2.8 Diesel,Car,Toyota,Fortuner 2.8 Diesel,Japan,2020.0,,,,,,,,,Inline 4 diesel,2.8,204.0,500.0,Front,Rear,SUV/truck,Other,Other,
 Toyota GR 86 (Mk II),Car,Toyota,GR 86 (Mk II),Japan,2021.0,6.3,34.0,226.0,1302.0,,,,,Boxer 4,2.4,235.0,250.0,Front,Rear,Coupe,Other,Other,
 Toyota GR Corolla,Car,Toyota,GR Corolla,Japan,2022.0,,,230.0,1479.0,,,,,turbo three-cylinder,1.6,304.0,370.0,Front,All,Compact,six-speed manual,Manual,
@@ -2647,7 +2649,9 @@ V8 Vantage N420 Volante,Car,Aston Martin,V8 Vantage N420 Volante (Mk I),United K
 V8 Vantage Roadster,Car,Aston Martin,V8 Vantage Roadster (Mk I 420 PS),United Kingdom,2008.0,4.5,,300.0,1630.0,,,,,V8,4.7,420.0,494.0,Front,Rear,Convertible,6 speed manual,Manual,6.0
 VE Commodore SS SportWagon,Car,Holden,VE Commodore SS SportWagon,Australia,2009.0,5.4,,258.0,1775.0,2.92,4.9,1.9,1.48,Naturally Aspirated L98 V8,6.0,365.0,515.0,Front,Rear,Estate/wagon,Other,Other,
 VW 411 LE,Car,VW,411 LE,Germany,,16.0,,156.0,1110.0,,,,,Boxer 4,1.7,80.0,132.0,Rear,Rear,4-door saloon,Other,Other,
+VW Amarok 2.0 TDI,Car,VW,Amarok 2.0 TDI,Germany,,,,,,,,,,Inline 4 turbo diesel,2.0,180.0,420.0,Front,All,SUV/truck,8 speed automatic,Automatic,8.0
 VW Amarok V6 TDI (258 PS),Car,VW,Amarok V6 TDI (258 PS),Germany,2018.0,7.7,36.0,207.0,2317.0,,,,,V6 turbo diesel,3.0,258.0,580.0,Front,All,SUV/truck,8 speed automatic,Automatic,8.0
+VW Arteon R,Car,VW,Arteon R,Germany,2020.0,4.9,35.0,270.0,1830.0,2.84,4.86,1.87,1.43,Inline 4 turbo,2.0,320.0,420.0,Front,All,4-door saloon,7-speed DSG,Other,7.0
 VW Arteon Shooting Brake R,Car,VW,Arteon Shooting Brake R,Germany,2020.0,4.9,34.0,270.0,1751.0,,,,,Inline 4 turbo,2.0,320.0,420.0,Front,All,Estate/wagon,7 speed Dual clutch,Dual-Clutch,7.0
 VW Beetle Turbo (MK2),Car,VW,Beetle Turbo (MK2),Germany,2011.0,,,,1383.0,,4.13,1.74,1.43,I4 turbo,2.0,200.0,281.0,Rear,Front,Coupe,Other,Other,
 VW CITI R,Car,VW,CITI R,South Africa,2007.0,8.3,,191.0,820.0,,,,,8 VALVE,1.8,122.0,168.0,Front,Front,Compact,5,Other,5.0
