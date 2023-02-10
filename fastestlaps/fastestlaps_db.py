@@ -195,6 +195,11 @@ def insert_new_vehicle(conn: sqlite3.Connection, vehicle: tuple):
     return cur.lastrowid
 
 def insert_new_record(lap: tuple, track: tuple, vehicle: tuple):
+    # Insert a new record (Lap, Track, Vehicle)
+    # :param lap: a tuple record of laptime.
+    # :param track: a tuple record of track.
+    # :param vehicle: a tuple record of vehicle.
+
     conn = utils.get_SQLite_connection(PATH)
     insert_new_vehicle(conn,vehicle)
     insert_new_track(conn,track)

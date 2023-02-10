@@ -24,13 +24,6 @@ from random_user_agent.user_agent import UserAgent
 
 # Logging class
 class Logger(object):
-    def __init__(self):
-        if not os.path.exists("./logs"):
-            os.mkdir("./logs")
-        curr_date = dt.now().isoformat()
-        self.terminal = sys.stdout
-        self.log = open(f"./logs/logging_{curr_date}.txt", "x")
-
     def __init__(self, file, dir):
         if not os.path.exists(f"./{dir}"):
             os.mkdir(f"./{dir}")
@@ -47,7 +40,7 @@ class Logger(object):
         self.log.flush()
 
 # Global variables
-USER_AGENT = UserAgent()
+USER_AGENT = None
 
 HEADERS = {
     'User-Agent': 'user-agent',
@@ -165,6 +158,9 @@ def html_downloader(sources: list):
     # :param sources: a list of URL site.
     # :return:
 
+    if(not USER_AGENT):
+        USER_AGENT.random_user_agent()
+        
     user_agent = USER_AGENT.get_random_user_agent()
     HEADERS["User-Agent"] = user_agent
     
@@ -202,6 +198,9 @@ def image_downloader(sources: list):
     # Download a image list source
     # :param sources: a list of URL image.
     # :return:
+
+    if(not USER_AGENT):
+        USER_AGENT.random_user_agent()
 
     user_agent = USER_AGENT.get_random_user_agent()
     HEADERS["User-Agent"] = user_agent
@@ -253,6 +252,9 @@ def request(url: str, timeout: int):
     # :param url: a given url site to request.
     # .param timeout: a given int timeout.
     # :return: a response objcet from requests library.
+    
+    if(not USER_AGENT):
+        USER_AGENT.random_user_agent()
 
     user_agent = USER_AGENT.get_random_user_agent()
     HEADERS["User-Agent"] = user_agent

@@ -21,7 +21,7 @@ class Layout:
     
     # String function
     def __str__(self) -> str:
-        return f"Engine n° {self.__layout_id}:\n --Layout: {self.__engine_layout}\n --Wheel Drive: {self.__wheel_drive}\n --Class Type: {self.__class_type}"
+        return f"Layout n° {self.__layout_id}:\n --Layout: {self.__engine_layout}\n --Wheel Drive: {self.__wheel_drive}\n --Class Type: {self.__class_type}"
 
     # Getter and Setter
     @property

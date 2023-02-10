@@ -1,2 +1,2 @@
-# Lap-Time-Predicion
-Lap Time Predicion - Scraping and analysis of lap times, tracks and vehicles information.
+# LapMiner
+LapMiner - Scraping and Analysis of lap times, tracks and vehicles information.
