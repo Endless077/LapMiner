@@ -51,7 +51,7 @@ VEHICLE_HEADERS = {
     "n_trasmission": "N_Trasmission"
 }
 
-PATH = "../Lap-Time-Prediction/report"
+PATH = "../LapMiner/report"
 
 def extract_dataset():
     # Create a set of TEMP view in scrap.db
@@ -238,7 +238,7 @@ def report():
     report.write("####################################################################################################################################\n\n")
     report.close()
 
-def matrix_generator():
+def matrix_generator(tracks: list):
     # Generate a comlete matrix Vehicles X Tracks whit (best) laptime
     # :param: (insert a list of tracks name in tracks variable - row 258)
     # :return: a matrix.txt file (and other format).
@@ -256,12 +256,8 @@ def matrix_generator():
     df_vehicles = pd.read_csv(f'{PATH}/csv/Vehicle_Dataset.csv')
 
     print("Starting matrix generation...")
-    tracks = ["Balocco","Le Mans (Bugatti)","Nürburgring Nordschleife",
-    "Hockenheim Short","Laguna Seca (Post 1988)","Top Gear Track",
-    "Sachsenring","Circuit De Nevers Magny-Cours Club","Ring Knutstrop (Conf 2)",
-    "Vairano Handling Course"]
-
-    for track in tracks:
+    tracks_occ = [track for track in tracks if track in json_track.keys()]
+    for track in tracks_occ:
         print(f"-Found {track} track.")
 
     # Classic approch
@@ -270,7 +266,7 @@ def matrix_generator():
     count_occ = open(f'{PATH}/matrix/occurrences.txt', 'w')
     count_occ.write("occurrences.txt\n\n")
 
-    for track in tracks:
+    for track in tracks_occ:
         for vehicle,laptimes in json_track[track]["Laps"].items():
             if(vehicle not in vehicles_occ.keys()):
                 vehicles_occ[vehicle] = 1
@@ -284,12 +280,12 @@ def matrix_generator():
 
 
     # Pandas approch
-    dataframe = pd.DataFrame(columns=tracks)
+    dataframe = pd.DataFrame(columns=tracks_occ)
 
     matrix = open(f'{PATH}/matrix/matrix.txt', 'w')
     matrix.write("matrix.txt\n\n")
 
-    for track in tracks:
+    for track in tracks_occ:
         for vehicle,laptimes in json_track[track]["Laps"].items():
             if(vehicle not in dataframe.index):
                 dataframe.loc[vehicle] = pd.Series(None, dtype="float64", index=dataframe.columns)

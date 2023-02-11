@@ -550,9 +550,11 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 67.4,unknown,Anglesey National,VW Golf R (Mk VI)
 68.6,unknown,Anglesey National,VW Scirocco 2.0 TSI (Mk III)
 67.5,unknown,Anglesey National,Vauxhall VXR8
+82.9,Uwe Sener,Anneau Du Rhin,Alpine A110 S (Mk II 300 PS)
 86.7,Marcel Fassler,Anneau Du Rhin,Audi R8 V10 5.2 FSI (Mk I)
 84.0,unknown,Anneau Du Rhin,BMW M3 CSL (E46)
 85.6,unknown,Anneau Du Rhin,BMW M440i Gran Coupe (G26)
+84.0,Uwe Sener,Anneau Du Rhin,BMW X3 M Competition (F97)
 86.0,unknown,Anneau Du Rhin,BMW i4 M50
 88.08,unknown,Anneau Du Rhin,Dodge Viper SRT-10 Roadster
 88.07,unknown,Anneau Du Rhin,Ferrari 575 Maranello
@@ -560,11 +562,16 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 87.07,George Keller,Anneau Du Rhin,Lotus Elise 111S (Mk I)
 81.2,unknown,Anneau Du Rhin,Mercedes-Benz SL 63 AMG (2022)
 85.8,Marcel Fassler,Anneau Du Rhin,Nissan GT-R (R35)
+77.8,Uwe Sener,Anneau Du Rhin,Porsche 911 Turbo  (992)
 85.5,unknown,Anneau Du Rhin,Renault Megane RS Trophy
 86.4,unknown,Anneau Du Rhin,VW Golf GTI Clubsport
 99.5,unknown,Anneau Du Rhin 3.7 Km,Alpina B3 Touring (G21)
+99.0,Uwe Sener,Anneau Du Rhin 3.7 Km,Alpine A110 S (Mk II 300 PS)
 101.9,unknown,Anneau Du Rhin 3.7 Km,Audi RS4 Avant (B9)
 104.5,unknown,Anneau Du Rhin 3.7 Km,BMW M135i xDrive (F40)
+100.1,Uwe Sener,Anneau Du Rhin 3.7 Km,BMW X3 M Competition (F97)
+106.5,Uwe Sener,Anneau Du Rhin 3.7 Km,Ford Fiesta ST (Mk VII)
+92.6,Uwe Sener,Anneau Du Rhin 3.7 Km,Porsche 911 Turbo  (992)
 67.2,Uwe Sener,Anneau Du Rhin Short,208 GTi Peugeot Sport Anniver..
 56.03,Uwe Sener,Anneau Du Rhin Short,AMG GT Black Series
 61.03,Uwe Sener,Anneau Du Rhin Short,Alfa Romeo Giulia GTAm
@@ -973,13 +980,13 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 74.2,unknown,Autocar Wet Handling Track,Volvo V60 Polestar
 107.36,Adam Porto,Autoclub Speedway Sportcar,Corvette  Grand Sport 
 105.48,Hessam Toudiee,Autoclub Speedway Sportcar,Ferrari 458 Italia
-106.96,htoudiee,Autoclub Speedway Sportcar,Nissan GT-R (R35 550 PS)
+106.96,Hessam Toudiee,Autoclub Speedway Sportcar,Nissan GT-R (R35 550 PS)
 105.59,Edward Kim,Autoclub Speedway Sportcar,Porsche 911 GT3 
 101.5,Will Wattanawongkiri,Autoclub Speedway Sportcar,Porsche 911 GT3 (991)
 104.57,Jim Hall II,Autoclub Speedway Sportcar,Porsche 911 GT3 (991)
-103.7,htoudiee,Autoclub Speedway Sportcar,Porsche 911 GT3 RS
+103.7,Hessam Toudiee,Autoclub Speedway Sportcar,Porsche 911 GT3 RS
 104.79,Will Wattanawongkiri,Autoclub Speedway Sportcar,Porsche 911 GT3 RS (991)
-105.98,htoudiee,Autoclub Speedway Sportcar,Porsche 911 Turbo (991)
+105.98,Hessam Toudiee,Autoclub Speedway Sportcar,Porsche 911 Turbo (991)
 112.0,Blacksheep74,Autoclub Speedway Sportcar,Porsche Cayman S (981)
 58.76,unknown,Autodromo Del Levante Bari,BMW M6
 61.66,unknown,Autodromo Del Levante Bari,Bentley Continental GT (Mk I)
@@ -1011,13 +1018,13 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 73.08,unknown,Autopartner Test Route,VW Passat R36
 103.3,unknown,Autozeitung Test Track,208 GTi Peugeot Sport Anniver..
 95.8,unknown,Autozeitung Test Track,911 Carrera S Cabriolet
+101.4,unknown,Autozeitung Test Track,Alfa Romeo 4C
 99.8,unknown,Autozeitung Test Track,Alfa Romeo Giulia QV
 97.8,unknown,Autozeitung Test Track,Alpina B5 Biturbo Touring
 100.0,unknown,Autozeitung Test Track,Alpina B6 Biturbo Gran Coupe
 102.5,unknown,Autozeitung Test Track,Alpine A110 (Mk II)
 102.6,unknown,Autozeitung Test Track,Arteon Shooting Brake 2.0 TSI
 99.0,unknown,Autozeitung Test Track,Aston Martin DB11 AMR 
-103.6,unknown,Autozeitung Test Track,Aston Martin DBS
 100.2,unknown,Autozeitung Test Track,Aston Martin V12 Vantage
 103.3,unknown,Autozeitung Test Track,Aston Martin V8 Vantage
 99.2,unknown,Autozeitung Test Track,Aston Martin Vantage  (Mk II)
@@ -1028,6 +1035,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 99.4,unknown,Autozeitung Test Track,Audi R8 4.2 FSI Quattro (Mk I)
 95.7,unknown,Autozeitung Test Track,Audi R8 LMX
 97.1,unknown,Autozeitung Test Track,Audi R8 V10 5.2 FSI (Mk I)
+98.9,unknown,Autozeitung Test Track,Audi R8 V10 5.2 FSI Plus
 99.2,unknown,Autozeitung Test Track,Audi R8 V10 5.2 FSI Spyder
 93.2,unknown,Autozeitung Test Track,Audi R8 V10 Plus (Mk II)
 98.0,unknown,Autozeitung Test Track,Audi RS Q8 
@@ -1101,7 +1109,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 101.9,unknown,Autozeitung Test Track,BMW X3 M Competition (F97)
 102.3,unknown,Autozeitung Test Track,BMW X4 M Competition (F98)
 99.4,unknown,Autozeitung Test Track,BMW X5 M
-103.6,unknown,Autozeitung Test Track,BMW X5 xDrive 45e (G05)
 102.2,unknown,Autozeitung Test Track,BMW X5 xDrive40i (G05)
 100.3,unknown,Autozeitung Test Track,BMW Z4 30i (G29)
 102.8,unknown,Autozeitung Test Track,BMW Z4 M Roadster
@@ -1149,7 +1156,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 103.0,unknown,Autozeitung Test Track,Hyundai Kona N
 100.6,unknown,Autozeitung Test Track,Hyundai i20 N (BC3)
 103.2,unknown,Autozeitung Test Track,Jaguar F-Type V6
-103.6,unknown,Autozeitung Test Track,Jaguar F-Type V8 S
 100.8,unknown,Autozeitung Test Track,Jaguar F-type R AWD
 102.7,unknown,Autozeitung Test Track,Jaguar XFR (Mk I)
 103.1,unknown,Autozeitung Test Track,Jaguar XKR
@@ -1161,7 +1167,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 97.1,unknown,Autozeitung Test Track,Lamborghini Murcielago LP640
 101.27,unknown,Autozeitung Test Track,Lotus Exige Cup 260
 103.1,unknown,Autozeitung Test Track,Maserati Coupe GranSport
-103.6,unknown,Autozeitung Test Track,Maserati GranTurismo
 102.3,unknown,Autozeitung Test Track,Maserati GranTurismo S
 95.3,unknown,Autozeitung Test Track,McLaren 570S Spider
 92.8,unknown,Autozeitung Test Track,McLaren MP4-12C (625 PS)
@@ -1242,6 +1247,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 102.8,unknown,Autozeitung Test Track,Porsche Cayenne Turbo S
 101.2,unknown,Autozeitung Test Track,Porsche Cayman (987 facelift)
 100.6,unknown,Autozeitung Test Track,Porsche Cayman S
+100.4,unknown,Autozeitung Test Track,Porsche Cayman S (981)
 101.2,unknown,Autozeitung Test Track,Porsche Cayman S (987)
 102.5,unknown,Autozeitung Test Track,Porsche Macan
 102.1,unknown,Autozeitung Test Track,Porsche Macan (Mk. I facelift)
@@ -1258,7 +1264,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 98.9,unknown,Autozeitung Test Track,Porsche Panamera Turbo S 
 94.8,unknown,Autozeitung Test Track,Porsche Taycan Turbo
 102.7,unknown,Autozeitung Test Track,Renault Megane RS (Mk III)
-103.6,unknown,Autozeitung Test Track,Renault Megane RS 265 Trophy
 102.3,unknown,Autozeitung Test Track,SL 63 AMG  Package
 103.4,unknown,Autozeitung Test Track,SLK 350 BlueEFFICIENCY
 100.6,unknown,Autozeitung Test Track,SLK 55 AMG Black Series
@@ -4932,6 +4937,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 93.32,unknown,Eurospeedway Lausitz,AMG GT 63 S E 
 85.23,unknown,Eurospeedway Lausitz,AMG GT Black Series
 90.68,unknown,Eurospeedway Lausitz,AMG GT R Roadster
+96.87,unknown,Eurospeedway Lausitz,Alpina B4 Gran Coupe
 97.89,Guido Naumann,Eurospeedway Lausitz,Alpine A110 S (Mk II 292 PS)
 99.97,unknown,Eurospeedway Lausitz,Aston Martin DBX
 92.11,unknown,Eurospeedway Lausitz,Audi R8 V10 
@@ -4995,6 +5001,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 88.05,Guido Naumann,Eurospeedway Lausitz,Lamborghini Aventador SVJ
 88.82,Guido Naumann,Eurospeedway Lausitz,Lamborghini Huracán Evo
 87.94,Guido Neumann,Eurospeedway Lausitz,Lamborghini Huracán STO
+88.96,unknown,Eurospeedway Lausitz,Lamborghini Huracán Tecnica
 96.15,unknown,Eurospeedway Lausitz,Lamborghini Urus
 97.33,unknown,Eurospeedway Lausitz,Lotus Emira 3.5
 96.51,unknown,Eurospeedway Lausitz,Lotus Exige 410 Sport (Mk III)
@@ -5659,6 +5666,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 68.42,unknown,Haute Saintonge,Seat Leon Cupra R
 68.23,unknown,Haute Saintonge,Tesla Roadster Sport
 67.71,unknown,Haute Saintonge,VW Scirocco R (Mk III)
+105.4,Christian Gebhardt,Hockenheim Gp,911 GT3 Manthey  K..
 112.2,unknown,Hockenheim Gp,AMG GT 63 S E 
 103.3,Christian Gebhardt,Hockenheim Gp,AMG GT Black Series
 104.52,unknown,Hockenheim Gp,AMG GT Black Series
@@ -5671,6 +5679,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 119.2,Christian Gebhardt,Hockenheim Gp,Alpine A110 S (Mk II 292 PS)
 116.3,unknown,Hockenheim Gp,Alpine A110 S (Mk II 300 PS)
 114.6,Uwe Sener,Hockenheim Gp,Aston Martin DBS Superleggera 
+118.2,Uwe Sener,Hockenheim Gp,Aston Martin DBX 707
 115.7,unknown,Hockenheim Gp,Aston Martin Vantage  (Mk II)
 117.9,Uwe Sener,Hockenheim Gp,Aston Martin Vantage  (Mk II)
 116.2,Uwe Sener,Hockenheim Gp,Aston Martin Vantage AMR
@@ -5682,8 +5691,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 115.6,unknown,Hockenheim Gp,Audi RS 3 Limousine (8Y)
 117.3,Uwe Sener,Hockenheim Gp,Audi RS 3 Sportback (8Y)
 117.4,unknown,Hockenheim Gp,Audi RS 3 Sportback (8Y)
-119.9,Christian Gebhardt,Hockenheim Gp,Audi RS4 Avant (B9)
-118.4,Uwe Sener,Hockenheim Gp,Audi RS5 (9T)
+116.5,Uwe Sener,Hockenheim Gp,Audi RS5 (9T)
 119.7,Uwe Sener,Hockenheim Gp,Audi RS5 Sportback (9TA)
 116.6,unknown,Hockenheim Gp,Audi RS6 Avant (C8)
 117.3,Uwe Sener,Hockenheim Gp,Audi RS7 Sportback (4K8)
@@ -5692,7 +5700,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 115.6,unknown,Hockenheim Gp,BMW M2 CS (F87)
 115.8,Uwe Sener,Hockenheim Gp,BMW M2 CS (F87)
 117.6,Uwe Sener,Hockenheim Gp,BMW M2 Competition (F87)
-120.0,Christian Gebhardt,Hockenheim Gp,BMW M240i XDrive
 114.6,Uwe Sener,Hockenheim Gp,BMW M3 Competition
 119.8,unknown,Hockenheim Gp,BMW M4
 110.1,unknown,Hockenheim Gp,BMW M4 CSL
@@ -5721,7 +5728,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 106.75,Heinz Müller,Hockenheim Gp,Chevrolet Corvette ZR1
 114.1,Christian Gebhardt,Hockenheim Gp,Corvette  Grand Sport 
 115.3,Uwe Sener,Hockenheim Gp,Corvette  Grand Sport 
-119.9,Christian Gebhardt,Hockenheim Gp,Cupra Formentor VZ5
 116.0,unknown,Hockenheim Gp,E 63 AMG S 4Matic+ T
 111.44,unknown,Hockenheim Gp,Ferrari 458 Speciale
 105.9,Christian Gebhardt,Hockenheim Gp,Ferrari 488 Pista
@@ -9438,6 +9444,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 85.39,Lewis Hamilton,Nürburgring Gp (5.15 Km),W11 EQ 
 87.56,George Russell,Nürburgring Gp (5.15 Km),Williams FW43
 87.81,Nicholas Latifi,Nürburgring Gp (5.15 Km),Williams FW43
+92.65,unknown,Nürburgring Gp Sprint,911 GT3 Manthey  K..
 88.27,unknown,Nürburgring Gp Sprint,AMG GT Black Series
 101.0,Paul Englert,Nürburgring Gp Sprint,Alpina B3 GT3
 99.4,Paul Englert,Nürburgring Gp Sprint,Aston Martin Vantage  (Mk II)
@@ -9521,6 +9528,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 100.3,unknown,Nürburgring Gp Sprint,Toyota Supra (Mk V 340 PS)
 114.23,unknown,Nürburgring Gp Sprint,VW Golf R32 (Mk V)
 117.85,unknown,Nürburgring Gp Sprint,VW Scirocco 1.4 TSI (Mk III)
+419.42,Christian Gebhardt,Nürburgring Nordschleife,911 GT3 Manthey  K..
 448.0,Christian Gebhardt,Nürburgring Nordschleife,AMG GT 63 S E 
 403.62,Maro Engel,Nürburgring Nordschleife,AMG GT Black Series
 412.54,unknown,Nürburgring Nordschleife,AMG GT Black Series
@@ -9536,7 +9544,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 483.0,Christian Gebhardt,Nürburgring Nordschleife,Alpine A110 (Mk II)
 476.1,Christian Gebhardt,Nürburgring Nordschleife,Alpine A110 S (Mk II 292 PS)
 462.66,unknown,Nürburgring Nordschleife,Alpine A110 S (Mk II 300 PS)
-493.0,Horst von Saurma,Nürburgring Nordschleife,Artega GT
 482.0,unknown,Nürburgring Nordschleife,Aston Martin DBS
 472.0,unknown,Nürburgring Nordschleife,Aston Martin V12 Vantage S
 483.0,unknown,Nürburgring Nordschleife,Aston Martin V8 Vantage
@@ -10991,6 +10998,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 116.85,Vakhtang Tsatsalashvili,Rustavi International Motorpark,BMW Z4 3.0si
 118.31,Irakli Glonti,Rustavi International Motorpark,Honda Civic SIR
 108.35,David Robanishvili,Rustavi International Motorpark,Porsche 911 Carrera S
+87.09,unknown,Sachsenring,911 GT3 Manthey  K..
 91.56,unknown,Sachsenring,911 GT3 Touring Package
 94.86,unknown,Sachsenring,9ff BT-2
 92.84,unknown,Sachsenring,AMG GT 63 S E 
@@ -11018,7 +11026,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 93.77,unknown,Sachsenring,BMW M5 Competition (F90)
 91.33,unknown,Sachsenring,BMW M8 Competition (G15)
 94.27,unknown,Sachsenring,BMW M8 Gran Coupe Competition
-95.18,unknown,Sachsenring,Chevrolet Camaro ZL1 (Mk VI)
 92.31,unknown,Sachsenring,Chevrolet Corvette Stingray
 90.26,unknown,Sachsenring,Chevrolet Corvette Z06 (C7)
 88.44,Marc Basseng,Sachsenring,Chevrolet Corvette ZR1
@@ -12863,7 +12870,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 65.21,unknown,Tsukuba,Ferrari 360 Modena
 62.24,unknown,Tsukuba,Ferrari 458 Italia
 65.92,unknown,Tsukuba,Ferrari 599 GTB Fiorano
-65.61,unknown,Tsukuba,Ferrari F355
+65.26,unknown,Tsukuba,Ferrari F355
 63.73,Keiichi Tsuchiya,Tsukuba,Ferrari F40
 63.95,unknown,Tsukuba,Ferrari F40
 65.81,unknown,Tsukuba,Ferrari F50
@@ -14299,6 +14306,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 76.31,Kevin Burke,Willow Springs - Streets Of Willow Ccw,Corvette  Grand Sport 
 88.35,tougehellcat,Willow Springs - Streets Of Willow Ccw,Dodge Challenger SRT-8 Hellcat
 92.37,Sam Arias,Willow Springs - Streets Of Willow Ccw,Mini Cooper S
+79.99,Anson Ng,Willow Springs - Streets Of Willow Ccw,Porsche 718 Cayman GT4
 75.79,Jim Hall II,Willow Springs - Streets Of Willow Ccw,Porsche 911 GT3 (991)
 76.48,Will Wattanawongkiri,Willow Springs - Streets Of Willow Ccw,Porsche 911 GT3 (991)
 81.47,Will Wattanawongkiri,Willow Springs - Streets Of Willow Ccw,Porsche 911 GT3 RS (991)

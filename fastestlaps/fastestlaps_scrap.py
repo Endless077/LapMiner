@@ -80,27 +80,32 @@ def parse_specs(attr_key: str, attr_value: str):
     parse_attr = []
 
     if attr_key == "Introduced":
-        match = re.compile('[+-]?\d+')
+        match = re.compile(r'[+-]?\d+')
 
         result = match.findall(attr_value)
         parse_attr.append(int(result[0]))
     elif attr_key == "Origin country":
-        match = re.compile('.*')
+        match = re.compile(r'.*')
 
         result = match.findall(attr_value)
         parse_attr.append(result[0])        
     elif attr_key == "Curb weight":
-        match = re.compile('(\d+) *[Kk]+[Gg]+.*')
+        match_compile = re.compile(r'(\d+)(?:-(\d+))? *[Kk]+[Gg]+.*')
+        match_find = re.findall(match_compile, attr_value)[0]
+        if match_find[1] is None:
+            result = float(match_find[0])
+        else:
+            weights = [float(i) for i in match_find if i]
+            result = sum(weights) / len(weights)
 
-        result = match.findall(attr_value)
-        parse_attr.append(round(float(result[0]), 2))
+        parse_attr.append(round(float(result), 2))
     elif attr_key == "Wheelbase":
-        match = re.compile('(\d+\.{0,1}\d{0,}) *[Mm]+.*')
+        match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Mm]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(round(float(result[0]), 2))
     elif attr_key == "Dimensions":
-        match = re.compile('(\d+\.{0,1}\d{0,}) *[Mm]+.*long|(\d+\.{0,1}\d{0,}) *[Mm]+.*wide|(\d+\.{0,1}\d{0,}) *[Mm]+.*high')
+        match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Mm]+.*long|(\d+\.{0,1}\d{0,}) *[Mm]+.*wide|(\d+\.{0,1}\d{0,}) *[Mm]+.*high')
 
         all_dim = match.finditer(attr_value)
         all_dim = list(all_dim)
@@ -135,18 +140,18 @@ def parse_specs(attr_key: str, attr_value: str):
                     parse_attr.append(round(float(match_group[int(group+2)]), 2))
 
     elif attr_key == "0 - 100 kph":
-        match = re.compile('(\d+\.{0,1}\d{0,}) *[Ss]+.*')
+        match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Ss]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(round(float(result[0]), 2))
     elif attr_key == "100 kph - 0":
-        match = re.compile('(\d+\.{0,1}\d{0,}) *[Mm]+.*')
+        match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Mm]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(round(float(result[0]), 2))
     elif attr_key == "Top speed":
-        kph_match = re.compile('(\d+) *[Kk]+[Pp]+[Hh]+.*')
-        mph_match = re.compile('(\d+) *[Mm]+[Pp]+[Hh]+.*')
+        kph_match = re.compile(r'(\d+) *[Kk]+[Pp]+[Hh]+.*')
+        mph_match = re.compile(r'(\d+) *[Mm]+[Pp]+[Hh]+.*')
 
         match = kph_match if kph_match.search(attr_value) is not None else mph_match
         result = match.findall(attr_value)
@@ -157,9 +162,9 @@ def parse_specs(attr_key: str, attr_value: str):
         result = match.findall(attr_value)
         parse_attr.append(result[0])
     elif attr_key == "Displacement":
-        cc_match = re.compile('(\d+\.{0,1}\d{0,}) *[Cc]+[Cc]+.*') 
-        ci_match = re.compile('(\d+\.{0,1}\d{0,}) *[Cc]+[Ii]+.*')
-        ll_match = re.compile('(\d+\.{0,1}\d{0,}) *[Ll]+.*')
+        cc_match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Cc]+[Cc]+.*') 
+        ci_match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Cc]+[Ii]+.*')
+        ll_match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Ll]+.*')
 
         cc = re.findall(cc_match, attr_value)
         ci = re.findall(ci_match, attr_value)
@@ -174,7 +179,7 @@ def parse_specs(attr_key: str, attr_value: str):
 
         parse_attr.append(result)
     elif attr_key == "Power":
-        match = re.compile('((\d+) *[Pp]+[Ss]+)|((\d+) *[Bb]+[Hh]+[Pp]+)|((\d+) *[Kk]+[Ww]+)')
+        match = re.compile(r'((\d+) *[Pp]+[Ss]+)|((\d+) *[Bb]+[Hh]+[Pp]+)|((\d+) *[Kk]+[Ww]+)')
         
         all_power = match.findall(attr_value)
         group = 1
@@ -183,32 +188,32 @@ def parse_specs(attr_key: str, attr_value: str):
             group += 2
 
     elif attr_key == "Torque":
-        match = re.compile('(\d+) *[Nn]+[Mm]+.*')
+        match = re.compile(r'(\d+) *[Nn]+[Mm]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(int(result[0]))
     elif attr_key == "Power / weight":
-        match = re.compile('(\d+) *[Pp]+[Ss]+.*')
+        match = re.compile(r'(\d+) *[Pp]+[Ss]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(int(result[0]))
     elif attr_key == "Torque / weight":
-        match = re.compile('(\d+) *[Nn]+[Mm]+.*')
+        match = re.compile(r'(\d+) *[Nn]+[Mm]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(int(result[0]))
     elif attr_key == "Efficiency":
-        match = re.compile('(\d+) *[Pp]+[Ss]+.*')
+        match = re.compile(r'(\d+) *[Pp]+[Ss]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(int(result[0]))
     elif attr_key == "Transmission":
-        match = re.compile('.*')
+        match = re.compile(r'.*')
 
         result = match.findall(attr_value)
         parse_attr.append(result[0])
     elif attr_key == "Layout":
-        match = re.compile('.*')
+        match = re.compile(r'.*')
 
         result = match.findall(attr_value)
         parse_attr.append(result[0])

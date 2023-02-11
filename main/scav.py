@@ -15,10 +15,10 @@ import csv
 from datetime import datetime as dt
 import urllib.parse
 
-sys.path.append("../Lap-Time-Prediction/fastestlaps")
-sys.path.append("../Lap-Time-Prediction/generator")
-sys.path.append("../Lap-Time-Prediction/sources")
-sys.path.append("../Lap-Time-Prediction/")
+sys.path.append("../LapMiner/fastestlaps")
+sys.path.append("../LapMiner/generator")
+sys.path.append("../LapMiner/sources")
+sys.path.append("../LapMiner/")
 
 sys.dont_write_bytecode = True
 
@@ -30,7 +30,7 @@ import fastestlaps_db as old_db
 import database as new_db
 import utils
 
-PATH = "../Lap-Time-Prediction/update"
+PATH = "../LapMiner/update"
 SOURCES = ["ultimatespecs","cars-data","wikipedia"]
 
 # Defination MAIN

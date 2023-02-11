@@ -9,10 +9,10 @@
 import os
 import sys
 
-sys.path.append("../Lap-Time-Prediction/fastestlaps")
-sys.path.append("../Lap-Time-Prediction/generator")
-sys.path.append("../Lap-Time-Prediction/sources")
-sys.path.append("../Lap-Time-Prediction/")
+sys.path.append("../LapMiner/fastestlaps")
+sys.path.append("../LapMiner/generator")
+sys.path.append("../LapMiner/sources")
+sys.path.append("../LapMiner/")
 
 sys.dont_write_bytecode = True
 
@@ -35,9 +35,8 @@ def main():
    # Crate a random proxy server list
    # utils.PROXY_LIST = utils.random_proxy_list()
     
-   # Create dump (if exist, delete and create).
-   if os.path.exists(dump.PATH):
-      os.remove(dump.PATH)
+   # Create folders tree (if exist, delete and create)
+   check_tree_struct()
    
    print("######################")
    utils.create_SQLite_database(dump.PATH)
@@ -104,6 +103,13 @@ def main():
    # Close logging
    sys.stdout.log.close()
    sys.stdout = sys.__stdout__
+
+def check_tree_struct():
+   if(not os.path.exists(dump.FOLDER)):
+        os.mkdir(dump.FOLDER)
+
+   if os.path.exists(dump.PATH):
+      os.remove(dump.PATH)
 
 def printLogo():
    print("   ______    ______ _______         _      _______   ")

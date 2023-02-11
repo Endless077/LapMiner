@@ -12,7 +12,8 @@ from sqlite3 import Error
 import classes
 import utils
 
-PATH = "../Lap-Time-Prediction/generator/database/database.db"
+FOLDER = "../LapMiner/generator/database/"
+PATH = "../LapMiner/generator/database/database.db"
 
 def upgrade(dump_database_path: str):
     # Upgrade function from dump.db to database.db (see ./class_diagram)

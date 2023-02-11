@@ -276,7 +276,6 @@ Audi E-Tron GT RS: 3
 Aston Martin Vanquish S: 3
 Aston Martin V8 Vantage: 3
 Aston Martin AM 310 Vanquish: 3
-Artega GT: 3
 Ariel Atom 3 (300 PS): 3
 Alpine A110 S (Mk II 300 PS): 3
 Alpine A110 S (Mk II 292 PS): 3
@@ -383,7 +382,6 @@ Continental Supersports: 2
 Citroen C2 VTS: 2
 Chrysler Crossfire SRT-6: 2
 Chevrolet Corvette C5 Z06: 2
-Chevrolet Camaro ZL1 (Mk VI): 2
 Chevrolet Camaro SS (Mk VI): 2
 Caterham Seven 620R: 2
 Caterham R500: 2
@@ -426,6 +424,7 @@ Audi A6 3.0 TDI Quattro (C7): 2
 Aston Martin Vantage GT8: 2
 Aston Martin DB9: 2
 Aston Martin DB11 V8: 2
+Artega GT: 2
 Alpina Roadster V8: 2
 Alpina B3 GT3: 2
 Alfa Romeo Brera 3.2 JTS V6 Q4: 2
@@ -433,6 +432,7 @@ Alfa Romeo 8C Competizione: 2
 Abarth Punto EVO: 2
 Abarth 695 biposto: 2
 AMG GT Black Series: 2
+911 GT3 Manthey  K..: 2
 i30 N  Fastback: 1
 Zonda C12-F Clubsport Roadster: 1
 Zenvo ST1: 1
@@ -816,6 +816,7 @@ Chevrolet Lacetti 1.8: 1
 Chevrolet Corvette Grand Sport: 1
 Chevrolet Corvette C5 (344 PS): 1
 Chevrolet Cobalt SS/TC: 1
+Chevrolet Camaro ZL1 (Mk VI): 1
 Chevrolet Camaro Z28: 1
 Challenger SRT Hellcat Redeye: 1
 Caterham Superlight R: 1

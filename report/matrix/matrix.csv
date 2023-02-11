@@ -369,6 +369,7 @@ Lamborghini Aventador SVJ,,,404.97,,,,,77.17,,
 Radical SR8LM,,,408.0,,,,,,,
 Radical SR8,,,415.0,,,,,,,
 Subaru WRX STI,,,417.5,,107.16,,,,75.4,
+911 GT3 Manthey  K..,,,419.42,,,,87.09,,,
 Ferrari 488 Pista,,,420.03,,,72.7,,76.06,,69.43
 Dodge Viper ACR (Mk V),,,421.3,,88.65,75.1,90.92,,,
 Porsche 718 Cayman GT4 RS,,,424.51,,,,89.12,79.13,,
@@ -396,23 +397,23 @@ AMG GT 63 S E ,,,448.0,,,,92.84,81.11,,
 BMW M4 Competition xDrive,,,448.57,,,,,,,
 Porsche 911 Turbo (991),,,449.0,69.3,,,92.55,,,
 BMW M5 CS,,,449.57,,,,92.38,,,
-Chevrolet Camaro ZL1 (Mk VI),,,449.6,,,,95.18,,,
+Chevrolet Camaro ZL1 (Mk VI),,,449.6,,,,,,,
 Mercedes-Benz SLS AMG GT,,,450.0,69.8,,,,,,
 BMW M4 Competition Coupe,,,450.79,,,,92.76,,,74.18
 BMW M8 Competition (G15),,,452.79,,,86.2,91.33,82.18,,
-Ferrari F12 Berlinetta,,,453.0,69.9,98.04,,,,,74.08
 Pagani Zonda F,,,453.0,70.8,,78.4,,,,
+Ferrari F12 Berlinetta,,,453.0,69.9,98.04,,,,,74.08
 Koenigsegg CCX,,,453.55,,,77.6,,,,
 Porsche Cayenne Turbo GT,,,453.95,,,81.2,95.1,,,
-Audi R8 GT (Mk I),,,454.0,69.6,96.39,,94.45,,,75.04
 Koenigsegg CCR,,,454.0,69.8,,,,,,
+Audi R8 GT (Mk I),,,454.0,69.6,96.39,,94.45,,,75.04
 McLaren 650 S Spider,,,455.0,68.7,,,93.15,,67.6,
 RUF RT12,,,455.0,70.2,,,,,,
 Audi RS 3 Limousine (8Y),,,455.52,,,,,,,
 BMW M5 Competition (F90),,,456.0,70.4,,,93.77,,,
 Chevrolet Camaro Z/28,,,457.47,70.8,97.82,,,,,
-Porsche Panamera Turbo (Mk II),,,458.0,71.7,,,,,,
 McLaren Mercedes SLR 722,,,458.0,,,,,,,
+Porsche Panamera Turbo (Mk II),,,458.0,71.7,,,,,,
 BMW M5 (F90),,,458.92,70.6,99.81,,94.36,,,75.73
 Ford Mustang Shelby GT500,,,459.28,,93.81,,,,,
 Lamborghini Murcielago LP640,,,460.0,71.8,,79.8,,,,78.14
@@ -423,11 +424,11 @@ Porsche 911 GT3 RS (997),,,462.0,71.1,,,,,,78.54
 Alpine A110 S (Mk II 300 PS),,,462.66,,,82.3,,81.75,,
 Porsche 911 GT3 RS (996),,,463.0,71.8,,82.3,,,,
 Aston Martin Vantage  (Mk II),,,463.92,70.7,98.42,79.7,,,,75.66
-Pagani Zonda C12 S,,,464.0,71.8,,83.8,,,,
 Mercedes-Benz C 63 AMG S Coupe,,,464.0,71.3,,,,,,
+Pagani Zonda C12 S,,,464.0,71.8,,83.8,,,,
 Gardner Douglas GD T70 Spyder,,,465.0,,,,,,,
-Audi R8 V10 5.2 FSI Plus,,,465.0,70.6,98.7,,,82.58,71.3,
 E 63 AMG S 4Matic+ T,,,465.0,,,,,,,
+Audi R8 V10 5.2 FSI Plus,,,465.0,70.6,98.7,,,82.58,71.3,
 Mercedes - AMG CLA 45 S,,,465.34,,,,,,,
 C 63 AMG Coupe Black Series,,,466.0,70.6,98.9,81.0,,,,
 Porsche 911 GT2 (996),,,466.0,72.6,,,,,,78.99
@@ -438,8 +439,8 @@ Ferrari 599 GTB Fiorano,,,467.0,72.0,,81.2,,,71.6,76.81
 VW Golf R 20 Years,,,467.31,,,,,84.65,,
 BMW M3 GTS,,,468.0,72.5,,,,,,
 Lotus Exige Cup 380 (Mk III),,,468.13,,,,,,,
-Porsche Boxster Spyder (981),,,469.0,71.3,,,,,,
 Alpina B3 GT3,,,469.0,72.2,,,,,,
+Porsche Boxster Spyder (981),,,469.0,71.3,,,,,,
 VW Golf GTI Clubsport S,,,469.21,72.6,,,,,,
 Mercedes-Benz GLC 63 AMG S,,,469.3,73.2,,,,,,
 RUF CTR2,,,469.56,,,,,,,
@@ -447,28 +448,28 @@ BMW M3 CSL (E46),,,470.0,73.5,,88.0,,,,80.49
 Aston Martin Vantage GT8,,,470.0,71.1,,,,,,
 Lamborghini Murcielago,,,470.0,72.0,,83.7,,,,79.05
 SLS AMG Coupe Electric Drive,,,470.23,,,81.7,94.93,,,
-Jaguar XKR-S (550 PS),,,471.0,,102.9,83.3,,,,
 VW Golf R (Mk VIII),,,471.0,,,,,87.13,,
 SL65 AMG Black Series,,,471.0,72.2,,83.0,,,,
-Aston Martin V12 Vantage S,,,472.0,71.9,101.77,,,82.98,,
+Jaguar XKR-S (550 PS),,,471.0,,102.9,83.3,,,,
+BMW M4,,,472.0,72.6,96.29,,,83.72,73.0,77.45
 Porsche 911 Turbo Cabriolet,,,472.0,71.9,,82.2,,,,
 Lamborghini Gallardo,,,472.0,71.8,,85.8,,,,79.36
-BMW M4,,,472.0,72.6,96.29,,,83.72,73.0,77.45
+Aston Martin V12 Vantage S,,,472.0,71.9,101.77,,,82.98,,
 Alpina B4 Gran Coupe,,,472.11,,,,,,,
 Porsche Panamera Turbo S,,,472.2,72.3,,,,84.55,,
 Lotus Exige S (V6),,,473.0,71.3,,,,83.22,,78.18
 Alpina B3  (G20),,,473.26,,,,,,,
-Porsche 911 GT3 (996 facelift),,,474.0,73.2,,87.2,,,,
-BMW M5 Competition (F10),,,474.0,72.8,,,,,,
 Mercedes-Benz CLK DTM,,,474.0,72.5,,,,,,
+BMW M5 Competition (F10),,,474.0,72.8,,,,,,
+Porsche 911 GT3 (996 facelift),,,474.0,73.2,,87.2,,,,
 Renault Megane RS 275 Trophy R,,,474.36,,,,,,73.8,
 Mercedes-Benz E 63 AMG S,,,475.0,73.5,,,,,,
 Ferrari F430,,,475.0,72.7,,82.9,,,,77.37
 Caterham R500 1.8L K Series,,,475.0,,,,,,,
 Porsche 911 Turbo (996),,,476.0,,,91.0,,,,80.8
+Chevrolet Corvette C5 Z06,,,476.0,,113.73,,,,,
 Panamera Sport Chrono Turbo,,,476.0,,,,,,,
 Ferrari 360 CS,,,476.0,73.0,,82.3,,,,81.02
-Chevrolet Corvette C5 Z06,,,476.0,,113.73,,,,,
 Alpine A110 S (Mk II 292 PS),,,476.1,,,,,85.09,,77.03
 Porsche 911 GT3 (996),,,476.33,73.97,,,,,,
 Honda NSX-R (facelift),,,476.73,,114.74,91.6,,,,
@@ -476,42 +477,41 @@ Audi RS4 (B7),,,478.0,,,85.6,,,74.5,84.03
 Seat Leon Cupra 280 (Mk III),,,478.4,,,,,85.1,,
 BMW M240i XDrive,,,478.59,,,,,,,
 Cupra Formentor VZ5,,,478.99,,,,,,,
-Jaguar XKR-S Convertible,,,479.0,,,,,,,
 Audi RS5 (8T3 facelift),,,479.0,74.0,102.97,,,,72.1,
+Jaguar XKR-S Convertible,,,479.0,,,,,,,
 Cadillac CTS-V (Mk II),,,479.32,,103.9,,,,,
 Alpina B4 S Biturbo Coupé AWD,,,480.0,,,,,,,
-Mercedes-Benz C63 AMG Coupe,,,481.0,73.6,,,,87.7,,
 Bugatti EB 110 SS (US spec),,,481.0,,,,,,,
+Mercedes-Benz C63 AMG Coupe,,,481.0,73.6,,,,87.7,,
 Nissan Skyline GT-R (R33),,,481.0,,,,,,,
 Lamborghini Gallardo Spyder,,,481.84,72.3,,85.7,,,72.7,77.54
 CLS 63 AMG Perfromance Package,,,483.0,73.9,,,,86.3,,
 VW Golf GTI Clubsport,,,483.0,,,86.8,,87.2,,
 Honda NSX-R,,,483.86,,,,,,,
-Lamborghini Diablo GT,,,484.0,,,,,,,81.66
 VW Golf R (Mk VII facelift),,,484.0,,,,,,,
+Lamborghini Diablo GT,,,484.0,,,,,,,81.66
 Audi RS6,,,485.0,73.7,,,,85.52,72.2,
 Ferrari 575 Maranello,,,485.0,,,86.8,,,,81.55
 Hyundai i30 N ,,,485.19,,,,,,,
 Subaru Impreza WRX STI Spec C,,,486.01,,,,,,,
 Caterham Superlight R,,,486.2,,,,,,,
-BMW Z8,,,487.0,,,,,,,85.3
 Ferrari 550 Maranello,,,487.0,,,,,,,83.7
+BMW Z8,,,487.0,,,,,,,85.3
 Renault Megane RS 265 Trophy,,,487.97,,,87.0,,87.3,,
 Porsche 911 Turbo 3.3,,,488.71,,,,,,,
-Ferrari 360 Modena,,,489.0,,,,,,,81.49
 Lamborghini Diablo SV,,,489.0,,,,,,,
+Ferrari 360 Modena,,,489.0,,,,,,,81.49
 Audi R8 e-tron,,,489.1,,,,,,,
 Porsche 911 GT2 (993),,,489.3,73.94,,,,,,
-Mercedes-Benz E63 AMG,,,490.0,,,84.9,,,,
-Alpina B6 S,,,490.0,,,,,,,
-RUF CTR Yellow Bird,,,490.0,,,,,,,
 Dodge Viper GTS,,,490.0,,,,,,,
 Donkervoort D8 180R,,,490.0,,,,,,,
+RUF CTR Yellow Bird,,,490.0,,,,,,,
+Alpina B6 S,,,490.0,,,,,,,
+Mercedes-Benz E63 AMG,,,490.0,,,84.9,,,,
 Subaru Impreza WRX Type RA STI,,,490.75,,,,,,,
-Porsche 911 Turbo 3.6,,,492.0,,,,,,,
 Porsche 911 Turbo 3.6 (993),,,492.0,,,,,,,
+Porsche 911 Turbo 3.6,,,492.0,,,,,,,
 Cadillac CTS-V Sport Wagon,,,492.1,,,,,,,
-Artega GT,,,493.0,73.0,,,,84.95,,
 Lotus 3-Eleven Race,,,,66.19,,,,,,
 Porsche 911 Turbo S Exclusive,,,,67.3,,,91.23,,,
 Maserati MC 12 corsa,,,,67.6,,,,,,
@@ -558,6 +558,7 @@ Aston Martin DB11 V8,,,,72.9,,,,,,77.68
 BMW M6 Competition,,,,72.9,,,,,,
 Audi TT RS Plus,,,,72.96,,,,,74.3,
 Alpina B7 Biturbo (G12),,,,73.0,,,,,,
+Artega GT,,,,73.0,,,,84.95,,
 Lotus Evora S,,,,73.0,102.49,,,,75.1,
 Mercedes-Benz SL63 AMG,,,,73.1,,,,,,
 Donkervoort D8 180 R,,,,73.1,,,,,,
@@ -801,8 +802,8 @@ Wiesmann GT MF5 (Mk II),,,,,,,94.14,,,
 Vantage F1 Edition,,,,,,,94.16,,,
 BMW M8 Gran Coupe Competition,,,,,,,94.27,82.2,,
 BMW M4 Coupé,,,,,,,94.46,,,
-9ff BT-2,,,,,,,94.86,,,
 Lamborghini Urus Performante,,,,,,,94.86,,,
+9ff BT-2,,,,,,,94.86,,,
 Mercedes-Benz AMG GT (476 PS),,,,,,,94.87,,,
 Audi RS 3 Sportback (8Y),,,,,,,94.93,81.83,,78.03
 BMW M3 CS,,,,,,,95.1,,,

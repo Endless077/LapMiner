@@ -52,7 +52,8 @@ HEADERS = {
     'TE': 'Trailers'
 }
 
-PROXY_LIST = []
+PROXY_LIST_HTTP = []
+PROXY_LIST_HTTPS = []
 
 # Database SQLite
 def checkSQLite(conn: sqlite3.Connection, table: str, attr: str, value_attr: str):
@@ -259,11 +260,12 @@ def request(url: str, timeout: int):
     user_agent = USER_AGENT.get_random_user_agent()
     HEADERS["User-Agent"] = user_agent
 
-    if(len(PROXY_LIST) > 0):
-        proxy = PROXY_LIST[random.randint(0, len(PROXY_LIST) - 1)]
+    if(len(PROXY_LIST_HTTP) > 0 and len(PROXY_LIST_HTTPS) > 0):
+        proxyhttp = PROXY_LIST_HTTP[random.randint(0, len(PROXY_LIST_HTTP) - 1)]
+        proxyhttps = PROXY_LIST_HTTPS[random.randint(0, len(PROXY_LIST_HTTPS) - 1)]
         proxies = {
-            'http': proxy,
-            'https': proxy
+            'http': proxyhttp,
+            'https': proxyhttps
         }
         response = requests.get(url, headers=HEADERS, proxies=proxies, timeout=timeout)
     else:

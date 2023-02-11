@@ -10,9 +10,9 @@ import os
 import sys
 import shutil
 
-sys.path.append("../Lap-Time-Prediction/fastestlaps")
-sys.path.append("../Lap-Time-Prediction/generator")
-sys.path.append("../Lap-Time-Prediction/")
+sys.path.append("../LapMiner/fastestlaps")
+sys.path.append("../LapMiner/generator")
+sys.path.append("../LapMiner/")
 
 sys.dont_write_bytecode = True
 
@@ -30,31 +30,33 @@ def main():
     # Print logo
     printLogo()
     
+    # Create folders tree (if exist, delete and create)
+    check_tree_struct()
+
     # Upgrade database
     print("######################")
     while True:
         print("Upgrade dump.db, do you want skip upgrade function, it will takes more than 5 minutes? (yes/no)")
         skip = input("WARNING: if exist the database will be reset at default fastestlaps value, if not exist a FileNotFound exception will raise.\n")
-        print(f"Skip? {skip}")
+        print(f"Upgrade? {skip}")
         print("######################")
         try:
-            if(skip == "yes"):
+            if(skip.lower() == "yes"):
+                if not os.path.exists(new_db.FOLDER):
+                    os.mkdir(new_db.FOLDER)
                 if os.path.exists(new_db.PATH):
                     os.remove(new_db.PATH)
                 new_db.upgrade(old_db.PATH)
                 break
-            elif(skip == "no"):
+            elif(skip.lower() == "no"):
                 break
             else:
                 raise ValueError
         except ValueError:
             print("Error input, insert a valid value.")
 
-        if not os.path.exists(new_db.PATH):
-            raise FileNotFoundError("No database.db found.")
-        
-    # Create folders tree (if exist, delete and create).
-    check_tree_struct()
+    if not os.path.exists(new_db.PATH):
+        raise FileNotFoundError("No database.db found.")
     
     # Create TEMP view to get a filtered dataset
     conn = verbose.extract_dataset()
@@ -67,8 +69,12 @@ def main():
     verbose.report()
     print("######################")
     
-    # Create a matrix output
-    verbose.matrix_generator()
+    # Create a matrix output (exemple that contains "Unknown")
+    tracks = ["Unknown","Balocco","Le Mans (Bugatti)","Nürburgring Nordschleife",
+    "Hockenheim Short","Laguna Seca (Post 1988)","Top Gear Track",
+    "Sachsenring","Circuit De Nevers Magny-Cours Club","Ring Knutstrop (Conf 2)",
+    "Vairano Handling Course"]
+    verbose.matrix_generator(tracks)
     print("######################")
     
     # Close database connection
