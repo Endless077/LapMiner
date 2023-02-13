@@ -56,17 +56,17 @@ class Layout:
 class Dimensions:
 
     # Init function
-    def __init__(self, dim_id: int, curb_weight: float, wheelbase: float, long: float, wide: float, high: float):
+    def __init__(self, dim_id: int, curb_weight: float, wheelbase: float, length: float, width: float, height: float):
         self.__dim_id = dim_id
         self.__curb_weight = curb_weight
         self.__wheelbase = wheelbase
-        self.__long = long
-        self.__wide = wide
-        self.__high = high
+        self.__length = length
+        self.__width = width
+        self.__height = height
     
     # String function
     def __str__(self) -> str:
-        return f"Dimensions n° {self.__dim_id}:\n --Curb Weight: {self.__curb_weight}\n --Wheelbase: {self.__wheelbase}\n --Long: {self.__long}\n --High: {self.__high}\n --Wide: {self.__wide}"
+        return f"Dimensions n° {self.__dim_id}:\n --Curb Weight: {self.__curb_weight}\n --Wheelbase: {self.__wheelbase}\n --Length: {self.__length}\n  --Wide: {self.__width}\n --Heigth: {self.__height}"
 
     # Getter and Setter
     @property
@@ -91,25 +91,25 @@ class Dimensions:
         self.__wheelbase = value
     
     @property
-    def long(self):
-        return self.__long
-    @long.setter
-    def long(self, value):
-        self.__long = value
+    def length(self):
+        return self.__length
+    @length.setter
+    def length(self, value):
+        self.__length = value
 
     @property
-    def wide(self):
-        return self.__wide
-    @wide.setter
-    def wide(self, value):
-        self.__wide = value
+    def width(self):
+        return self.__width
+    @width.setter
+    def width(self, value):
+        self.__width = value
 
     @property
-    def high(self):
-        return self.__high
-    @high.setter
-    def high(self, value):
-        self.__high = value
+    def height(self):
+        return self.__height
+    @height.setter
+    def height(self, value):
+        self.__height = value
 @dataclass
 class Engine:
 
@@ -247,70 +247,23 @@ class Performance:
     def top_speed(self, value):
         self.__top_speed = value
 
-@dataclass
-class Overview:
-
-    # Init function
-    def __init__(self, overview_id: int, manufacturer: str, model: str, origin_country: str, introduced_year: int):
-        self.__overview_id = overview_id
-        self.__manufacturer = manufacturer
-        self.__model = model
-        self.__origin_country = origin_country
-        self.__introduced_year = introduced_year
-
-    # String function
-    def __str__(self) -> str:
-        return f"Overview n° {self.__overview_id}:\n --Manufacturer: {self.__manufacturer}\n --Orign Country Drive: {self.__origin_country}\n --Introduced Year: {self.__introduced_year}"
-
-    # Getter and Setter
-    @property
-    def overview_id(self):
-        return self.__overview_id
-    @overview_id.setter
-    def overview_id(self, value):
-        self.__overview_id = value
-
-    @property
-    def manufacturer(self):
-        return self.__manufacturer
-    @manufacturer.setter
-    def manufacturer(self, value):
-        self.__manufacturer = value
-
-    @property
-    def model(self):
-        return self.__model
-    @model.setter
-    def model(self, value):
-        self.__model = value
-
-    @property
-    def origin_country(self):
-        return self.__origin_country
-    @origin_country.setter
-    def origin_country(self, value):
-        self.__origin_country = value
-
-    @property
-    def introduced_year(self):
-        return self.__introduced_year
-    @introduced_year.setter
-    def introduced_year(self, value):
-        self.__introduced_year = value
-
 #################################
 
 @dataclass
 class Vehicle:
 
     # Init function
-    def __init__(self, vehicle_id: int, vehicle_name: str, vehicle_type: str,
+    def __init__(self, vehicle_id: int, vehicle_name: str, vehicle_type: str, manufacturer: str, model: str, origin_country: str, introduced_year: str,
                 layout: Layout, dimensions: Dimensions, engine: Engine,
-                trasmission: Trasmission, performance: Performance, overview: Overview) -> None:
+                trasmission: Trasmission, performance: Performance) -> None:
         # local variables
         self.__vehicle_id = vehicle_id
         self.__vehicle_name = vehicle_name
         self.__vehicle_type = vehicle_type
+        self.__manufacturer = manufacturer
+        self.__model = model
+        self.__origin_country = origin_country
+        self.__introduced_year = introduced_year
 
         # external variables
         self__laps = None
@@ -319,11 +272,10 @@ class Vehicle:
         self.__engine = engine
         self.__trasmission = trasmission
         self.__performance = performance
-        self.__overview = overview
 
     # String function
     def __str__(self) -> str:
-        return f"Vehicle n° {self.__vehicle_id}:\n --Name: {self.__vehicle_name}\n --Type: {self.__vehicle_type}."
+        return f"Vehicle n° {self.__vehicle_id}:\n --Name: {self.__vehicle_name}\n --Type: {self.__vehicle_type}\n --Manufacturer: {self.__manufacturer}\n --Model: {self.__model}."
 
     # Getter and Setter
     @property
@@ -383,18 +335,39 @@ class Vehicle:
         self.__performance = value
 
     @property
-    def overview(self):
-        return self.__overview
-    @overview.setter
-    def overview(self, value):
-        self.__overview = value
-
-    @property
     def laps(self):
         return self.__laps
     @laps.setter
     def laps(self, value):
         self.__laps = value
+
+    @property
+    def manufacturer(self):
+        return self.__manufacturer
+    @manufacturer.setter
+    def manufacturer(self, value):
+        self.__manufacturer = value
+
+    @property
+    def model(self):
+        return self.__model
+    @model.setter
+    def model(self, value):
+        self.__model = value
+
+    @property
+    def origin_country(self):
+        return self.__origin_country
+    @origin_country.setter
+    def origin_country(self, value):
+        self.__origin_country = value
+
+    @property
+    def introduced_year(self):
+        return self.__introduced_year
+    @introduced_year.setter
+    def introduced_year(self, value):
+        self.__introduced_year = value
 
 @dataclass
 class Track:

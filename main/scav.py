@@ -151,8 +151,8 @@ def check_vehicle(vehicle: str):
     # :return: the boolean and to both check.
 
     print("Validation the vehicle existence...")
-    check1 = utils.checkSQLite(utils.get_SQLite_connection(old_db.PATH), "VEHICLES", "vehicle_name", vehicle)
-    check2 = utils.checkSQLite(utils.get_SQLite_connection(new_db.PATH), "VEHICLES", "vehicle_name", vehicle)
+    check1 = utils.checkSQLite(utils.get_SQLite_connection(old_db.PATH), "VEHICLE", "vehicle_name", vehicle)
+    check2 = utils.checkSQLite(utils.get_SQLite_connection(new_db.PATH), "VEHICLE", "vehicle_name", vehicle)
     return check1 and check2
 
 def check_url(url: str):

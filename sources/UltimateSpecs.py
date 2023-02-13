@@ -28,8 +28,7 @@ class UltimateSpecs(Source):
 
         if(response.status_code == 200):
             soup = BeautifulSoup(response.text, 'html.parser')
-
-            print(soup)
+            
             tds = soup.find_all("td", class_="tabletd", align="right")
             new_line = "\n"
 
@@ -54,9 +53,7 @@ class UltimateSpecs(Source):
                 specs["Trasmission"] = self.get_trasmission(specs_map)
             if("Performance" in attr):
                 specs["Performance"] = self.get_performance(specs_map)
-            if("Overview" in attr):
-                specs["Overview"] = self.get_overview(specs_map)
-
+                
         return specs
     
     def get_layout(self, specs_map: dict):
@@ -115,34 +112,34 @@ class UltimateSpecs(Source):
             result = match_cm.findall(specs_map["Length"])
             if(len(result) > 0):
                 cm_result = float(result[0])/100
-                dimensions_specs["long"] = round(cm_result, 2)
+                dimensions_specs["length"] = round(cm_result, 2)
             else:
                 result = match_in.findall(specs_map["Length"])
                 if(len(result) > 0):
                     in_result = float(result[0])*0.0254
-                    dimensions_specs["long"] = round(in_result,2)
+                    dimensions_specs["length"] = round(in_result,2)
 
         if("Width" in specs_map.keys()):
             result = match_cm.findall(specs_map["Width"])
             if(len(result) > 0):
                 cm_result = float(result[0])/100
-                dimensions_specs["wide"] = round(cm_result, 2)
+                dimensions_specs["width"] = round(cm_result, 2)
             else:
                 result = match_in.findall(specs_map["Width"])
                 if(len(result) > 0):
                     in_result = float(result[0])*0.0254
-                    dimensions_specs["wide"] = round(in_result,2)
+                    dimensions_specs["width"] = round(in_result,2)
 
         if("Height" in specs_map.keys()):
             result = match_cm.findall(specs_map["Height"])
             if(len(result) > 0):
                 cm_result = float(result[0])/100
-                dimensions_specs["high"] = round(cm_result, 2)
+                dimensions_specs["height"] = round(cm_result, 2)
             else:
                 result = match_in.findall(specs_map["Height"])
                 if(len(result) > 0):
                     in_result = float(result[0])*0.0254
-                    dimensions_specs["high"] = round(in_result,2)
+                    dimensions_specs["height"] = round(in_result,2)
 
         return dimensions_specs
     
@@ -229,6 +226,3 @@ class UltimateSpecs(Source):
         # Break Distance not allowed.
 
         return performance_specs
-
-    def get_overview(self, specs_map: dict):
-        return None

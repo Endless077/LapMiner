@@ -60,9 +60,7 @@ class CarsData(Source):
                 specs["Trasmission"] = self.get_trasmission(specs_map)
             if("Performance" in attr):
                 specs["Performance"] = self.get_performance(specs_map)
-            if("Overview" in attr):
-                specs["Overview"] = self.get_overview(specs_map)
-
+                
         return specs
     
     def get_layout(self, specs_map: dict):
@@ -104,19 +102,19 @@ class CarsData(Source):
             result = match.findall(specs_map["sizes"]["Length"])
             if(len(result) > 0):
                 mm_result = float(result[0])/1000
-                dimensions_specs["long"] = round(mm_result, 2)
+                dimensions_specs["length"] = round(mm_result, 2)
 
         if("Width" in specs_map["sizes"].keys()):
             result = match.findall(specs_map["sizes"]["Width"])
             if(len(result) > 0):
                 mm_result = float(result[0])/1000
-                dimensions_specs["wide"] = round(mm_result, 2)
+                dimensions_specs["width"] = round(mm_result, 2)
            
         if("Height" in specs_map["sizes"].keys()):
             result = match.findall(specs_map["sizes"]["Height"])
             if(len(result) > 0):
                 mm_result = float(result[0])/1000
-                dimensions_specs["high"] = round(mm_result, 2)
+                dimensions_specs["height"] = round(mm_result, 2)
 
         return dimensions_specs
     
@@ -173,14 +171,11 @@ class CarsData(Source):
                 performance_specs["top_speed"] = round(float(result[0]), 2)
            
         if("Acceleration 0-100 Km / H" in specs_map["tech"].keys()):
-            match = re.compile('(\d+\.{0,1}\d{0,}) *[Ss]+.*')
+            match = re.compile('(\d+,{0,1}\d{0,}) *[Ss]+.*')
             result = match.findall(specs_map["tech"]["Acceleration 0-100 Km / H"])
             if(len(result) > 0):
-                performance_specs["accelleration"] = round(float(result[0]), 2)
+                performance_specs["accelleration"] = round(float(result[0].replace(",",".")), 2)
 
         # Break Distance not allowed.S
 
         return performance_specs
-
-    def get_overview(self, specs_map: dict):
-        return None

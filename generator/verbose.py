@@ -36,9 +36,9 @@ VEHICLE_HEADERS = {
     "top_speed": "Top_Speed_(kph)",
     "curb_weight": "Curb_Weight_(kg)",
     "wheelbase": "Wheelbase_(m)",
-    "long": "Long_(m)",
-    "high": "High_(m)",
-    "wide": "Wide_(m)",
+    "length": "Length_(m)",
+    "width": "Width_(m)",
+    "height": "Height_(m)",
     "engine": "Engine",
     "displacement": "Displacement_(l)",
     "power": "Power_(ps)",
@@ -81,9 +81,9 @@ def dataset_generator(conn):
     # :param conn: a connection to scrap.db (with TEMP views).
     # :return:
 
-    laps_dataframe = pd.read_sql_query('SELECT * FROM EXPORT_LAPS_LIST', conn)
-    tracks_dataframe = pd.read_sql_query('SELECT * FROM EXPORT_TRACKS_LIST', conn)
-    vehicles_dataframe = pd.read_sql_query('SELECT * FROM EXPORT_VEHICLES_LIST', conn)
+    laps_dataframe = pd.read_sql_query('SELECT * FROM EXPORT_LAP_LIST', conn)
+    tracks_dataframe = pd.read_sql_query('SELECT * FROM EXPORT_TRACK_LIST', conn)
+    vehicles_dataframe = pd.read_sql_query('SELECT * FROM EXPORT_VEHICLE_LIST', conn)
 
     laps_dataframe.rename(columns=LAPS_HEADERS, inplace=True)
     tracks_dataframe.rename(columns=TRACK_HEADERS, inplace=True)
@@ -411,7 +411,7 @@ def report_vehicles(file, vehicles, json_vehicles):
     file.write("######################\n\n")
 
     file.write("--Vehicles type dimensions:\n\n")
-    df = vehicles.groupby('Type')[["Curb_Weight_(kg)","Wheelbase_(m)","Long_(m)","Wide_(m)","High_(m)"]].agg(['mean','max','min'])
+    df = vehicles.groupby('Type')[["Curb_Weight_(kg)","Wheelbase_(m)","Length_(m)","Width_(m)","Height_(m)"]].agg(['mean','max','min'])
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")
@@ -423,7 +423,7 @@ def report_vehicles(file, vehicles, json_vehicles):
     file.write("######################\n\n")
 
     file.write("--Vehicles country dimensions:\n\n")
-    df = vehicles.groupby('Country')[["Curb_Weight_(kg)","Wheelbase_(m)","Long_(m)","Wide_(m)","High_(m)"]].agg(['mean','max','min'])
+    df = vehicles.groupby('Country')[["Curb_Weight_(kg)","Wheelbase_(m)","Length_(m)","Width_(m)","Height_(m)"]].agg(['mean','max','min'])
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")

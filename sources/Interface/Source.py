@@ -44,11 +44,3 @@ class Source(ABC):
         # :param specs_map: a dict with all specs mapped for specific value in the website.
         # :return: should return a dict of key-values compliant to database.
         pass
-
-    @abstractmethod
-    def get_overview(self, specs_map: dict):
-        # Method for get all specific overview attributes
-        # :param specs_map: a dict with all specs mapped for specific value in the website.
-        # :return: should return a dict of key-values compliant to database.
-        pass
-   

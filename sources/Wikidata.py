@@ -66,9 +66,7 @@ class Wikidata(Source):
             specs["Trasmission"] = self.get_trasmission(specs_map)
         if("Performance" in attr):
             specs["Performance"] = self.get_performance(specs_map)
-        if("Overview" in attr):
-            specs["Overview"] = self.get_overview(specs_map)
-
+            
         return specs
     
     def get_layout(self, specs_map: dict):
@@ -84,7 +82,4 @@ class Wikidata(Source):
         raise NotImplementedError
 
     def get_performance(self, specs_map: dict):
-        raise NotImplementedError
-
-    def get_overview(self, specs_map: dict):
         raise NotImplementedError

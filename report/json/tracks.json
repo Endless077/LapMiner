@@ -3120,12 +3120,12 @@
          "Porsche 911 Turbo (991)": [
             93.4
          ],
-         "Porsche 911 GT3 (991)": [
-            93.5
-         ],
          "Nissan GT-R (R35 550 PS)": [
             93.5,
             93.7
+         ],
+         "Porsche 911 GT3 (991)": [
+            93.5
          ],
          "Gallardo Superleggera": [
             93.6
@@ -3161,10 +3161,10 @@
          "BMW M850i (G15)": [
             95.5
          ],
-         "Nissan GT-R (R35)": [
+         "Lamborghini Gallardo": [
             95.6
          ],
-         "Lamborghini Gallardo": [
+         "Nissan GT-R (R35)": [
             95.6
          ],
          "Audi R8 LMX": [
@@ -3180,10 +3180,10 @@
          "Gallardo LP 570-4 Superleggera": [
             96.1
          ],
-         "Gallardo LP560-4 Spyder": [
+         "Porsche 911 Carrera S (991)": [
             96.2
          ],
-         "Porsche 911 Carrera S (991)": [
+         "Gallardo LP560-4 Spyder": [
             96.2
          ],
          "Corvette C7 Stingray Converti..": [
@@ -3195,10 +3195,10 @@
          "Porsche 911 Turbo S Cabriolet": [
             96.5
          ],
-         "Mercedes-Benz SLS AMG": [
+         "Panamera Sport Turismo GTS": [
             96.6
          ],
-         "Panamera Sport Turismo GTS": [
+         "Mercedes-Benz SLS AMG": [
             96.6
          ],
          "Porsche 911 Carrera S (992)": [
@@ -3237,24 +3237,24 @@
          "BMW M240i XDrive": [
             97.7
          ],
-         "Porsche 911 Turbo S": [
-            97.8
-         ],
-         "BMW M2 (F87)": [
-            97.8
-         ],
-         "BMW M8 Gran Coupe Competition": [
-            97.8
-         ],
          "Porsche 911 Carrera Cabriolet": [
             97.8
          ],
          "Alpina B5 Biturbo Touring": [
             97.8
          ],
+         "Porsche 911 Turbo S": [
+            97.8
+         ],
          "Porsche 911 Turbo Cabriolet": [
             97.8,
             98.0
+         ],
+         "BMW M2 (F87)": [
+            97.8
+         ],
+         "BMW M8 Gran Coupe Competition": [
+            97.8
          ],
          "Nissan GT-R (R35 570PS)": [
             97.9
@@ -3274,10 +3274,10 @@
          "Audi RS6 Avant ": [
             98.2
          ],
-         "Porsche 911 Carrera 4S": [
+         "Lamborghini Gallardo (520 PS)": [
             98.2
          ],
-         "Lamborghini Gallardo (520 PS)": [
+         "Porsche 911 Carrera 4S": [
             98.2
          ],
          "BMW M8 Competition (G15)": [
@@ -3292,13 +3292,13 @@
          "Audi E-Tron GT RS": [
             98.4
          ],
+         "Taycan Sport Turismo GTS": [
+            98.5
+         ],
          "Cupra Formentor VZ5": [
             98.5
          ],
          "Porsche 911 Turbo S (996)": [
-            98.5
-         ],
-         "Taycan Sport Turismo GTS": [
             98.5
          ],
          "Mercedes-Benz AMG GT 63 S": [
@@ -3307,26 +3307,23 @@
          "Mercedes-Benz SL 63 AMG (2022)": [
             98.6
          ],
+         "Porsche Panamera 4S": [
+            98.7,
+            100.0
+         ],
+         "BMW M3 (E90)": [
+            98.7
+         ],
          "Porsche Panamera Turbo": [
             98.7
          ],
          "Mercedes - AMG GLA 45s 4MATIC+": [
             98.7
          ],
-         "BMW M3 (E90)": [
-            98.7
-         ],
          "Audi R8 4.2 FSI Quattro": [
             98.7
          ],
-         "Porsche Panamera 4S": [
-            98.7,
-            100.0
-         ],
          "Panamera Turbo Executive": [
-            98.8
-         ],
-         "Ferrari 575 Maranello": [
             98.8
          ],
          "Audi RS7 (4G facelift)": [
@@ -3335,37 +3332,37 @@
          "Audi RS7 Sportback": [
             98.8
          ],
+         "Ferrari 575 Maranello": [
+            98.8
+         ],
+         "BMW M4": [
+            98.9
+         ],
          "Audi R8 V10 5.2 FSI Plus": [
             98.9
          ],
          "Porsche Panamera Turbo S ": [
             98.9
          ],
-         "BMW M4": [
-            98.9
-         ],
-         "Aston Martin DB11 AMR ": [
+         "Lamborghini Gallardo Spyder": [
             99.0
          ],
-         "Lamborghini Gallardo Spyder": [
+         "Aston Martin DB11 AMR ": [
             99.0
          ],
          "BMW Z4 M40i (G29)": [
             99.0
          ],
-         "Audi S8 Plus (D4)": [
-            99.1
-         ],
          "VW Golf R (Mk VIII)": [
             99.1
          ],
-         "Chevrolet Camaro SS (Mk VI)": [
+         "Audi S8 Plus (D4)": [
+            99.1
+         ],
+         "Porsche 718 Cayman": [
             99.2
          ],
          "Aston Martin Vantage  (Mk II)": [
-            99.2
-         ],
-         "Porsche 718 Cayman": [
             99.2
          ],
          "Porsche Boxster S (981)": [
@@ -3374,20 +3371,14 @@
          "Audi R8 V10 5.2 FSI Spyder": [
             99.2
          ],
-         "Taycan Sport Turismo Turbo": [
-            99.3
+         "Chevrolet Camaro SS (Mk VI)": [
+            99.2
          ],
          "BMW M8 Cabrio Competition": [
             99.3
          ],
-         "BMW M4 CS": [
-            99.4
-         ],
-         "BMW 1 Series M Coupe": [
-            99.4
-         ],
-         "Audi R8 4.2 FSI Quattro (Mk I)": [
-            99.4
+         "Taycan Sport Turismo Turbo": [
+            99.3
          ],
          "BMW X5 M": [
             99.4
@@ -3395,11 +3386,23 @@
          "BMW M440i Gran Coupe (G26)": [
             99.4
          ],
-         "Mercedes-Benz CLS 63 AMG": [
+         "Audi R8 4.2 FSI Quattro (Mk I)": [
+            99.4
+         ],
+         "BMW 1 Series M Coupe": [
             99.4
          ],
          "Chevrolet Corvette Z06 (C6)": [
             99.4
+         ],
+         "BMW M4 CS": [
+            99.4
+         ],
+         "Mercedes-Benz CLS 63 AMG": [
+            99.4
+         ],
+         "Audi RS4 Avant (B9)": [
+            99.5
          ],
          "GLE 63s Coupe EQ Boost 4MATIC+": [
             99.5
@@ -3407,8 +3410,8 @@
          "Audi S8 (D5)": [
             99.5
          ],
-         "Audi RS4 Avant (B9)": [
-            99.5
+         "CLS 63 AMG Perfromance Package": [
+            99.6
          ],
          "Porsche Cayenne Coupé GTS": [
             99.6
@@ -3416,31 +3419,28 @@
          "Mercedes-Benz SL 55 AMG": [
             99.6
          ],
-         "CLS 63 AMG Perfromance Package": [
-            99.6
+         "Audi RS7 Sportback ": [
+            99.7
          ],
          "B3 Biturbo Allrad Touring": [
             99.7
          ],
-         "Audi RS7 Sportback ": [
-            99.7
-         ],
-         "Porsche 911 Carrera 4 (992)": [
-            99.8
-         ],
-         "Porsche 911 Targa 4S": [
-            99.8
-         ],
-         "Porsche 911 Carrera S (997)": [
+         "Porsche 911 Carrera 4S (997)": [
             99.8
          ],
          "Alfa Romeo Giulia QV": [
             99.8
          ],
-         "Porsche 911 Carrera 4S (997)": [
+         "BMW M5 (F10)": [
             99.8
          ],
-         "BMW M5 (F10)": [
+         "Porsche 911 Carrera S (997)": [
+            99.8
+         ],
+         "Porsche 911 Carrera 4 (992)": [
+            99.8
+         ],
+         "Porsche 911 Targa 4S": [
             99.8
          ],
          "Dodge Viper SRT-10": [
@@ -3449,56 +3449,56 @@
          "E 63 AMG S 4Matic+": [
             99.9
          ],
-         "Mercedes-Benz C 63 AMG": [
+         "Alpina B6 Biturbo Gran Coupe": [
             100.0
          ],
          "BMW M6": [
             100.0
          ],
-         "Alpina B6 Biturbo Gran Coupe": [
+         "Mercedes-Benz C 63 AMG": [
             100.0
-         ],
-         "Ford Focus ST (Mk IV)": [
-            100.1
          ],
          "BMW M3 (E92)": [
             100.1
          ],
-         "Seat Leon ST Cupra 300 4Drive": [
-            100.2
+         "Ford Focus ST (Mk IV)": [
+            100.1
          ],
-         "Audi RS7 Sportback (4K8)": [
+         "Aston Martin V12 Vantage": [
             100.2
          ],
          "Porsche Cayenne Turbo S": [
             100.2,
             102.8
          ],
-         "Aston Martin V12 Vantage": [
+         "Seat Leon ST Cupra 300 4Drive": [
             100.2
          ],
          "Camaro SS Convertible": [
             100.2
          ],
-         "Audi RS3 Sportback (8P)": [
-            100.3
-         ],
-         "BMW Z4 30i (G29)": [
-            100.3
-         ],
-         "VW Golf R Variant (310 PS)": [
-            100.3
+         "Audi RS7 Sportback (4K8)": [
+            100.2
          ],
          "Porsche Panamera 4S (Mk I)": [
+            100.3
+         ],
+         "Audi RS3 Sportback (8P)": [
             100.3
          ],
          "Ford Mustang Bullitt": [
             100.3
          ],
-         "Mercedes-Benz S63 AMG": [
-            100.4
+         "VW Golf R Variant (310 PS)": [
+            100.3
+         ],
+         "BMW Z4 30i (G29)": [
+            100.3
          ],
          "Porsche Cayman S (981)": [
+            100.4
+         ],
+         "Mercedes-Benz S63 AMG": [
             100.4
          ],
          "B3 S Biturbo Touring Allrad": [
@@ -3506,12 +3506,6 @@
          ],
          "Audi RS5 (8T3 facelift)": [
             100.4
-         ],
-         "Hyundai i20 N (BC3)": [
-            100.6
-         ],
-         "SLK 55 AMG Black Series": [
-            100.6
          ],
          "Porsche Panamera Turbo (Mk II)": [
             100.6
@@ -3522,21 +3516,24 @@
          "Porsche Cayman S": [
             100.6
          ],
-         "Porsche Boxster S": [
-            100.7
+         "Hyundai i20 N (BC3)": [
+            100.6
+         ],
+         "SLK 55 AMG Black Series": [
+            100.6
          ],
          "Audi RS5 (8T3)": [
-            100.7
-         ],
-         "Audi S4 TDI (B9)": [
             100.7
          ],
          "Porsche Macan GTS": [
             100.7,
             103.1
          ],
-         "BMW M850i Gran Coupe (G16)": [
-            100.8
+         "Audi S4 TDI (B9)": [
+            100.7
+         ],
+         "Porsche Boxster S": [
+            100.7
          ],
          "Porsche 911 Carrera (997)": [
             100.8
@@ -3544,31 +3541,28 @@
          "Jaguar F-type R AWD": [
             100.8
          ],
-         "Wiesmann GT MF4": [
-            100.9
+         "BMW M850i Gran Coupe (G16)": [
+            100.8
          ],
-         "BMW 128ti (F40)": [
+         "Wiesmann GT MF4": [
             100.9
          ],
          "Bentley Continental GT": [
             100.9
          ],
-         "Audi S3 Sportback (8Y)": [
-            101.1
+         "BMW 128ti (F40)": [
+            100.9
          ],
          "Ford Mustang GT 5.0 (426 PS)": [
+            101.1
+         ],
+         "Audi S3 Sportback (8Y)": [
             101.1
          ],
          "BMW M440i Cabriolet (G23)": [
             101.1
          ],
-         "Porsche Cayman S (987)": [
-            101.2
-         ],
          "VW Tiguan 1.4 TSI": [
-            101.2
-         ],
-         "Porsche Cayman (987 facelift)": [
             101.2
          ],
          "Toyota Supra (Mk V 340 PS)": [
@@ -3577,14 +3571,17 @@
          "Mercedes-Benz GLC 63 AMG S": [
             101.2
          ],
+         "Porsche Cayman S (987)": [
+            101.2
+         ],
+         "Porsche Cayman (987 facelift)": [
+            101.2
+         ],
          "BMW i8": [
             101.2
          ],
          "Lotus Exige Cup 260": [
             101.27
-         ],
-         "BMW M760Li xDrive (G12)": [
-            101.3
          ],
          "Porsche Cayenne Turbo (Mk III)": [
             101.3
@@ -3592,8 +3589,8 @@
          "Audi RS4 (B7)": [
             101.3
          ],
-         "Mercedes-Benz E 63 AMG T": [
-            101.4
+         "BMW M760Li xDrive (G12)": [
+            101.3
          ],
          "Alfa Romeo 4C": [
             101.4
@@ -3601,23 +3598,23 @@
          "Audi S6 Avant TDI (C8)": [
             101.4
          ],
-         "BMW M6 Gran Coupe": [
+         "Mercedes-Benz E 63 AMG T": [
             101.4
          ],
-         "Mercedes-Benz S 580": [
-            101.5
+         "BMW M6 Gran Coupe": [
+            101.4
          ],
          "Corvette Coupe 6.2 C6": [
             101.5
          ],
-         "Mitsubishi Lancer Evo X MR": [
-            101.6
+         "Mercedes-Benz S 580": [
+            101.5
          ],
          "BMW 330i (G20)": [
             101.6
          ],
-         "Audi RS4 Avant (B8)": [
-            101.7
+         "Mitsubishi Lancer Evo X MR": [
+            101.6
          ],
          "Audi S5 Sportback (9TA)": [
             101.7
@@ -3625,7 +3622,7 @@
          "Cadillac CTS-V (Mk II)": [
             101.7
          ],
-         "BMW X1 sDrive18i": [
+         "Audi RS4 Avant (B8)": [
             101.7
          ],
          "VW Golf GTI (Mk VIII)": [
@@ -3634,11 +3631,8 @@
          "Mercedes-Benz CLA 45 AMG": [
             101.7
          ],
-         "GLC 63 AMG S Coupe": [
-            101.8
-         ],
-         "Audi TT RS Coupe (Mk II)": [
-            101.8
+         "BMW X1 sDrive18i": [
+            101.7
          ],
          "Audi S4 (B8)": [
             101.8
@@ -3646,17 +3640,11 @@
          "Mercedes - AMG GLA 35 4MATIC": [
             101.8
          ],
-         "BMW M3 Cabrio (E93)": [
-            101.9
+         "Audi TT RS Coupe (Mk II)": [
+            101.8
          ],
-         "BMW X3 M Competition (F97)": [
-            101.9
-         ],
-         "Audi S7 Sportback": [
-            101.9
-         ],
-         "Audi TT-S Roadster (Mk II)": [
-            101.9
+         "GLC 63 AMG S Coupe": [
+            101.8
          ],
          "VW Golf R (Mk VII)": [
             101.9
@@ -3664,74 +3652,89 @@
          "Hyundai I30N ": [
             101.9
          ],
-         "Bentley Continental GTC": [
+         "Audi TT-S Roadster (Mk II)": [
+            101.9
+         ],
+         "Audi S7 Sportback": [
+            101.9
+         ],
+         "BMW X3 M Competition (F97)": [
+            101.9
+         ],
+         "BMW M3 Cabrio (E93)": [
+            101.9
+         ],
+         "Porsche Macan (Mk. I facelift)": [
             102.1
          ],
          "Audi TT-S Coupe (Mk III)": [
             102.1
          ],
-         "Porsche Macan (Mk. I facelift)": [
+         "Bentley Continental GTC": [
             102.1
          ],
-         "Porsche 911 Carrera": [
-            102.2
-         ],
-         "BMW 330e (G20)": [
-            102.2
-         ],
-         "BMW M135i xDrive (F20)": [
-            102.2
-         ],
          "BMW X5 xDrive40i (G05)": [
+            102.2
+         ],
+         "Porsche 911 Carrera": [
             102.2
          ],
          "C63 AMG T  Package": [
             102.2
          ],
-         "Kia Stinger GT": [
-            102.3
+         "BMW M135i xDrive (F20)": [
+            102.2
          ],
-         "Porsche Boxster S (987 280 PS)": [
-            102.3
+         "BMW 330e (G20)": [
+            102.2
          ],
          "Maserati GranTurismo S": [
             102.3
          ],
-         "SL 63 AMG  Package": [
+         "Kia Stinger GT": [
             102.3
          ],
          "BMW X4 M Competition (F98)": [
             102.3
          ],
-         "BMW Z4 sDrive 35is": [
+         "SL 63 AMG  Package": [
             102.3
          ],
-         "V8 Vantage Roadster": [
-            102.4
+         "Porsche Boxster S (987 280 PS)": [
+            102.3
+         ],
+         "BMW Z4 sDrive 35is": [
+            102.3
          ],
          "Seat Leon Cupra 280 (Mk III)": [
             102.4
          ],
-         "Mercedes-Benz GLA 45 AMG": [
+         "V8 Vantage Roadster": [
+            102.4
+         ],
+         "Porsche Macan": [
             102.5
          ],
          "BMW 750i": [
             102.5
          ],
-         "Porsche Macan": [
+         "VW Arteon R": [
             102.5
          ],
          "Nissan 370Z Roadster": [
             102.5
          ],
-         "VW Arteon R": [
+         "Alpine A110 (Mk II)": [
             102.5
          ],
-         "Alpine A110 (Mk II)": [
+         "Mercedes-Benz GLA 45 AMG": [
             102.5
          ],
          "Corvette C6 Convertible": [
             102.53
+         ],
+         "Mercedes-Benz SL 63 AMG": [
+            102.6
          ],
          "Arteon Shooting Brake 2.0 TSI": [
             102.6
@@ -3739,8 +3742,14 @@
          "VW Scirocco R (Mk III)": [
             102.6
          ],
-         "Mercedes-Benz SL 63 AMG": [
-            102.6
+         "EQE 53 AMG Dynamic Plus": [
+            102.7
+         ],
+         "Mercedes-Benz SLK 55 AMG": [
+            102.7
+         ],
+         "Porsche Cayenne Turbo (Mk II)": [
+            102.7
          ],
          "Jaguar XFR (Mk I)": [
             102.7
@@ -3748,19 +3757,16 @@
          "Mercedes-Benz E450": [
             102.7
          ],
-         "EQE 53 AMG Dynamic Plus": [
-            102.7
-         ],
-         "Mercedes-Benz SLK 55 AMG": [
-            102.7
-         ],
          "Renault Megane RS (Mk III)": [
             102.7
          ],
-         "Porsche Cayenne Turbo (Mk II)": [
-            102.7
-         ],
          "BMW M235i": [
+            102.8
+         ],
+         "Mercedes-Benz CL 65 AMG": [
+            102.8
+         ],
+         "BMW Z4 M Roadster": [
             102.8
          ],
          "Porsche Cayenne E-Hybrid": [
@@ -3769,20 +3775,11 @@
          "BMW 330d Touring": [
             102.8
          ],
-         "Bentley Continental GT (Mk I)": [
-            102.8
-         ],
-         "Mercedes-Benz CL 65 AMG": [
-            102.8
-         ],
          "BMW Z4 sDrive35i": [
             102.8
          ],
-         "BMW Z4 M Roadster": [
+         "Bentley Continental GT (Mk I)": [
             102.8
-         ],
-         "Audi SQ8 TDI": [
-            102.9
          ],
          "Audi A6 55 TFSI (C8)": [
             102.9
@@ -3790,17 +3787,23 @@
          "BMW M5 Touring (E61)": [
             102.9
          ],
-         "Volvo XC40 T3": [
-            103.0
+         "Audi SQ8 TDI": [
+            102.9
          ],
-         "Hyundai Kona N": [
+         "Porsche Panamera S": [
             103.0
          ],
          "Toyota Supra SZ-R (Mk V)": [
             103.0
          ],
-         "Porsche Panamera S": [
+         "Hyundai Kona N": [
             103.0
+         ],
+         "Volvo XC40 T3": [
+            103.0
+         ],
+         "Maserati Coupe GranSport": [
+            103.1
          ],
          "Jaguar XKR": [
             103.1
@@ -3811,52 +3814,55 @@
          "Model 3 Standard Range Plus": [
             103.1
          ],
-         "Maserati Coupe GranSport": [
-            103.1
+         "Jaguar XKR (510 PS)": [
+            103.2
          ],
          "Jaguar F-Type V6": [
-            103.2
-         ],
-         "BMW M5 (E60)": [
-            103.2
-         ],
-         "Bentley Bentayga V8": [
             103.2
          ],
          "Ford Puma ST (Mk II)": [
             103.2
          ],
-         "Jaguar XKR (510 PS)": [
+         "Bentley Bentayga V8": [
+            103.2
+         ],
+         "BMW M5 (E60)": [
             103.2
          ],
          "Aston Martin V8 Vantage": [
             103.3
          ],
-         "208 GTi Peugeot Sport Anniver..": [
-            103.3
-         ],
          "BMW M6 Cabrio": [
             103.3
          ],
-         "Ford Mustang GT (Mk VI 426 PS)": [
-            103.4
+         "208 GTi Peugeot Sport Anniver..": [
+            103.3
          ],
          "SLK 350 BlueEFFICIENCY": [
-            103.4
-         ],
-         "BMW 440i Gran Coupe": [
             103.4
          ],
          "Audi S3 Sportback (8V)": [
             103.4
          ],
+         "BMW 440i Gran Coupe": [
+            103.4
+         ],
          "Porsche Panamera 4": [
+            103.4
+         ],
+         "Ford Mustang GT (Mk VI 426 PS)": [
             103.4
          ],
          "Stelvio 2.0T Q4 Super": [
             103.4
          ],
-         "VW T-Roc R": [
+         "Audi SQ5 Plus TDI (8R)": [
+            103.5
+         ],
+         "BMW X2 M35i (F39)": [
+            103.5
+         ],
+         "VW Arteon Shooting Brake R": [
             103.5
          ],
          "Mercedes-Benz GLC 43 AMG": [
@@ -3865,25 +3871,16 @@
          "Mercedes-Benz SL 400": [
             103.5
          ],
-         "VW Arteon Shooting Brake R": [
+         "VW T-Roc R": [
             103.5
          ],
-         "BMW X2 M35i (F39)": [
-            103.5
-         ],
-         "Audi SQ5 Plus TDI (8R)": [
-            103.5
-         ],
-         "Mini JCW Countryman": [
+         "Audi A6 Avant 3.0 TDI Quattro": [
             103.6
          ],
          "Cupra Formentor VZ 2.0 TSI": [
             103.6
          ],
-         "Audi TT Roadster 45 TFSI": [
-            103.6
-         ],
-         "Audi A6 Avant 3.0 TDI Quattro": [
+         "Mini JCW Countryman": [
             103.6
          ]
       },
@@ -41719,7 +41716,7 @@
             125.6
          ],
          "Peugeot 308 GTi (T7)": [
-            158.08
+            155.64
          ],
          "Opel Crossland X 1.2 DI Turbo": [
             178.44

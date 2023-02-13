@@ -1064,7 +1064,6 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 102.9,unknown,Autozeitung Test Track,Audi SQ8 TDI
 101.8,unknown,Autozeitung Test Track,Audi TT RS Coupe (Mk II)
 98.0,unknown,Autozeitung Test Track,Audi TT RS Roadster (Mk III)
-103.6,unknown,Autozeitung Test Track,Audi TT Roadster 45 TFSI
 102.1,unknown,Autozeitung Test Track,Audi TT-S Coupe (Mk III)
 101.9,unknown,Autozeitung Test Track,Audi TT-S Roadster (Mk II)
 99.7,unknown,Autozeitung Test Track,B3 Biturbo Allrad Touring
@@ -14703,7 +14702,7 @@ Lap_Time,Driver,Track_Name,Vehicle_Name
 121.0,unknown,Zandvoort Gp (Pre 2020),McLaren 675LT
 120.0,unknown,Zandvoort Gp (Pre 2020),McLaren 720S
 178.44,Robin,Zandvoort Gp (Pre 2020),Opel Crossland X 1.2 DI Turbo
-158.08,Robin,Zandvoort Gp (Pre 2020),Peugeot 308 GTi (T7)
+155.64,Robin,Zandvoort Gp (Pre 2020),Peugeot 308 GTi (T7)
 117.0,unknown,Zandvoort Gp (Pre 2020),Porsche 911 GT2 RS (991)
 121.0,unknown,Zandvoort Gp (Pre 2020),Porsche 911 GT3 RS
 124.0,unknown,Zandvoort Gp (Pre 2020),Porsche 911 Turbo S
