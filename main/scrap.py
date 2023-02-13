@@ -24,7 +24,9 @@ import utils
 def main():
 
    # Logging
-   sys.stdout = utils.Logger("scraping", "logs")
+   Logger = utils.Logger("scraping", "logs")
+   sys.stdout = Logger
+   sys.stderr = Logger
 
    # Print logo
    printLogo()
@@ -103,6 +105,7 @@ def main():
    # Close logging
    sys.stdout.log.close()
    sys.stdout = sys.__stdout__
+   sys.stderr = sys.__stderr__
 
 def check_tree_struct():
    if(not os.path.exists(dump.FOLDER)):

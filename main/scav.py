@@ -37,7 +37,9 @@ SOURCES = ["ultimatespecs","cars-data","wikipedia"]
 def main():
 
     # Logging
-    sys.stdout = utils.Logger("update", "logs")
+    Logger = utils.Logger("update", "logs")
+    sys.stdout = Logger
+    sys.stderr = Logger
 
     # Print logo
     printLogo()
@@ -123,7 +125,8 @@ def main():
     # Close logging
     sys.stdout.log.close()
     sys.stdout = sys.__stdout__
-         
+    sys.stderr = sys.__stderr__
+    
 def check_args(arg1, arg2=None):
     # Create all tables of database
     # :param arg1: arg 1 is a file (if arg2 is not declared) or the vehicle name.

@@ -25,7 +25,9 @@ import utils
 def main():
 
     # Logging
-    sys.stdout = utils.Logger("report", "logs")
+    Logger = utils.Logger("report", "logs")
+    sys.stdout = Logger
+    sys.stderr = Logger
 
     # Print logo
     printLogo()
@@ -83,6 +85,7 @@ def main():
     # Close logging
     sys.stdout.log.close()
     sys.stdout = sys.__stdout__
+    sys.stderr = sys.__stderr__
 
 def check_tree_struct():
     paths = [verbose.PATH + "/csv", verbose.PATH + "/excel", verbose.PATH + "/json", verbose.PATH + "/matrix"]
