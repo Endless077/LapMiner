@@ -218,10 +218,10 @@ class UltimateSpecs(Source):
                     performance_specs["top_speed"] = round(mph_result,2)
 
         if("Acceleration 0 to 100 km/h (0 to 62 mph)" in specs_map.keys()):
-            match = re.compile('(\d+\.{0,1}\d{0,}) *[Ss]+.*')
+            match = re.compile('(\d+[\.,]{0,1}\d{0,}) *[Ss]+.*')
             result = match.findall(specs_map["Acceleration 0 to 100 km/h (0 to 62 mph)"])
             if(len(result) > 0):
-                performance_specs["accelleration"] = round(float(result[0]), 2)
+                performance_specs["accelleration"] = round(float(result[0].replace(",",".")), 2)
                 
         # Break Distance not allowed.
 

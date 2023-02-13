@@ -171,7 +171,7 @@ class CarsData(Source):
                 performance_specs["top_speed"] = round(float(result[0]), 2)
            
         if("Acceleration 0-100 Km / H" in specs_map["tech"].keys()):
-            match = re.compile('(\d+,{0,1}\d{0,}) *[Ss]+.*')
+            match = re.compile('(\d+[\.,]{0,1}\d{0,}) *[Ss]+.*')
             result = match.findall(specs_map["tech"]["Acceleration 0-100 Km / H"])
             if(len(result) > 0):
                 performance_specs["accelleration"] = round(float(result[0].replace(",",".")), 2)

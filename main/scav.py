@@ -195,13 +195,13 @@ def choose_attr():
     except ValueError:
         raise Exception("Invalid choice. Enter an integer.")
 
-    default_modes = {"Layout", "Dimensions", "Engine", "Trasmission", "Performance", "Overview"}
+    default_modes = {"Layout", "Dimensions", "Engine", "Trasmission", "Performance"}
 
     if choice == 1:
         selected_modes = set()
-        print("Select up to 6 modes (maximum 6 available). To stop selection, enter 'stop'.")
+        print("Select up to 5 modes (maximum 6 available). To stop selection, enter 'stop'.")
         print("Available modes:", ", ".join(default_modes))
-        while len(selected_modes) < 6:
+        while len(selected_modes) < 5:
             mode = input("Enter the name of the mode: ")
             if mode == "stop":
                 if(len(selected_modes) == 0):
