@@ -17003,9 +17003,16 @@ report.txt
 
 --Vehicles type count:
 
-| Type   |   Vehicle |
-|:-------|----------:|
-| Car    |      2805 |
+| Class         |   Vehicle |
+|:--------------|----------:|
+| Coupe         |      1031 |
+| 4-door saloon |       571 |
+| Compact       |       418 |
+| Convertible   |       340 |
+| SUV/truck     |       197 |
+| Open-wheeler  |       152 |
+| Estate/wagon  |        85 |
+| Van           |        11 |
 
 ######################
 

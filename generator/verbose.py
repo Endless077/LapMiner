@@ -153,7 +153,7 @@ def export_json(datasets):
     with open(f"{json_path}tracks.json", "w") as outfile:
         outfile.write(json_object_tracks)
 
-    with open(f"{json_path}vehicle.json", "w") as outfile:
+    with open(f"{json_path}vehicles.json", "w") as outfile:
         outfile.write(json_object_vehicles)
 
 def json_track(laps_df, tracks_df):
@@ -215,10 +215,10 @@ def report():
     # :return: a report.txt file.
     
     print("Getting datasets...")
-    with open(f'{PATH}/json/vehicle.json') as f1:
-        json_vehicle = json.load(f1)
+    with open(f'{PATH}/json/vehicles.json') as f1:
+        json_vehicles = json.load(f1)
     with open(f'{PATH}/json/tracks.json') as f2:
-        json_track = json.load(f2)
+        json_tracks = json.load(f2)
     
     df_laps = pd.read_csv(f'{PATH}/csv/Laps_Dataset.csv')
     df_tracks = pd.read_csv(f'{PATH}/csv/Tracks_Dataset.csv')
@@ -228,11 +228,11 @@ def report():
     report.write("report.txt\n\n")
 
     print("Starting laps stats...")
-    report_laps(report, df_laps.copy(), df_tracks.copy(), df_vehicles.copy(), json_track, json_vehicle)
+    report_laps(report, df_laps.copy(), df_tracks.copy(), df_vehicles.copy(), json_tracks, json_vehicles)
     print("Starting tracks stats...")
-    report_tracks(report, df_tracks.copy(), json_track)
+    report_tracks(report, df_tracks.copy(), json_tracks)
     print("Starting vehicles stats...")
-    report_vehicles(report,df_vehicles.copy(), json_vehicle)
+    report_vehicles(report,df_vehicles.copy(), json_vehicles)
     print("Report complete.")
 
     report.write("####################################################################################################################################\n\n")
@@ -246,7 +246,7 @@ def matrix_generator(tracks: list):
     matrix_path = PATH + '/matrix/'
 
     print("Getting datasets...")
-    with open(f'{PATH}/json/vehicle.json') as f1:
+    with open(f'{PATH}/json/vehicles.json') as f1:
         json_vehicle = json.load(f1)
     with open(f'{PATH}/json/tracks.json') as f2:
         json_track = json.load(f2)
@@ -399,7 +399,7 @@ def report_vehicles(file, vehicles, json_vehicles):
     file.write("######################\n\n")
     
     file.write("--Vehicles type count:\n\n")
-    df = vehicles.groupby("Type")['Vehicle_Name'].agg(Vehicle='count')[['Vehicle']].sort_values(['Vehicle'], ascending=False)
+    df = vehicles.groupby("Class")['Vehicle_Name'].agg(Vehicle='count')[['Vehicle']].sort_values(['Vehicle'], ascending=False)
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")
