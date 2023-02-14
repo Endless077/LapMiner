@@ -39,7 +39,7 @@ VEHICLE_HEADERS = {
     "length": "Length_(m)",
     "width": "Width_(m)",
     "height": "Height_(m)",
-    "engine": "Engine",
+    "engine_name": "Engine",
     "displacement": "Displacement_(l)",
     "power": "Power_(ps)",
     "torque": "Torque_(Nm)",
@@ -410,14 +410,14 @@ def report_vehicles(file, vehicles, json_vehicles):
 
     file.write("######################\n\n")
 
-    file.write("--Vehicles type dimensions:\n\n")
-    df = vehicles.groupby('Type')[["Curb_Weight_(kg)","Wheelbase_(m)","Length_(m)","Width_(m)","Height_(m)"]].agg(['mean','max','min'])
+    file.write("--Vehicles class dimensions:\n\n")
+    df = vehicles.groupby('Class')[["Curb_Weight_(kg)","Wheelbase_(m)","Length_(m)","Width_(m)","Height_(m)"]].agg(['mean','max','min'])
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")
 
-    file.write("--Vehicles type performance:\n\n")
-    df = vehicles.groupby('Type')[["Top_Speed_(kph)","0-100_kph_(s)","Power_(ps)","Torque_(Nm)"]].agg(['mean','max','min'])
+    file.write("--Vehicles class performance:\n\n")
+    df = vehicles.groupby('Class')[["Top_Speed_(kph)","0-100_kph_(s)","Power_(ps)","Torque_(Nm)"]].agg(['mean','max','min'])
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")
