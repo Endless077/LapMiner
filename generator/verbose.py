@@ -19,11 +19,13 @@ LAPS_HEADERS = {
     'track_name': 'Track_Name',
     'vehicle_name': 'Vehicle_Name'
 }
+
 TRACK_HEADERS = {
     'track_name': 'Track_Name',
     'country': 'Country',
     'total_length': 'Length_(km)'
 }
+
 VEHICLE_HEADERS = {
     "vehicle_name": "Vehicle_Name",
     "type": "Type",
@@ -246,14 +248,14 @@ def matrix_generator(tracks: list):
     matrix_path = PATH + '/matrix/'
 
     print("Getting datasets...")
-    with open(f'{PATH}/json/vehicles.json') as f1:
-        json_vehicle = json.load(f1)
+    # with open(f'{PATH}/json/vehicles.json') as f1:
+    #     json_vehicle = json.load(f1)
     with open(f'{PATH}/json/tracks.json') as f2:
         json_track = json.load(f2)
     
-    df_laps = pd.read_csv(f'{PATH}/csv/Laps_Dataset.csv')
-    df_tracks = pd.read_csv(f'{PATH}/csv/Tracks_Dataset.csv')
-    df_vehicles = pd.read_csv(f'{PATH}/csv/Vehicle_Dataset.csv')
+    # df_laps = pd.read_csv(f'{PATH}/csv/Laps_Dataset.csv')
+    # df_tracks = pd.read_csv(f'{PATH}/csv/Tracks_Dataset.csv')
+    # df_vehicles = pd.read_csv(f'{PATH}/csv/Vehicle_Dataset.csv')
 
     print("Starting matrix generation...")
     tracks_occ = [track for track in tracks if track in json_track.keys()]
@@ -308,6 +310,14 @@ def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
 
     #report_laps_plot()
 
+    # Mode no built-in function
+    def mode(x):
+        mode = x.mode()
+        if mode.empty:
+            return None
+        else:
+            return mode.iloc[0]
+
     file.write("####################################################################################################################################\n\n")
     file.write("-Laps report:\n")
     file.write(f"--Laps count: {laps.shape[0]}\n\n")
@@ -316,7 +326,7 @@ def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
 
     file.write("--Tracks laptimes stats:\n\n")
     df = tracks.join(laps.set_index('Track_Name'), on="Track_Name").groupby('Track_Name')
-    df = df['Lap_Time'].agg(Lap_Counter='count',Lap_Mean='mean',Lap_Max='max',Lap_Min='min').sort_values(['Lap_Counter'], ascending=False)
+    df = df['Lap_Time'].agg(Lap_Counter='count',Lap_Mean='mean',Lap_Mode=mode,Lap_Median='median',Lap_Max='max',Lap_Min='min').sort_values(['Lap_Counter'], ascending=False)
     file.write(df.to_markdown() + '\n\n')
     
     file.write("######################\n\n")
@@ -329,7 +339,7 @@ def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
     file.write("######################\n\n")
     file.write("--Track vehicles stats:\n\n")
     df = laps.join(vehicles.set_index("Vehicle_Name"), on='Vehicle_Name').groupby(['Track_Name'])
-    df = df['Power_(ps)'].agg(Power_Mean='mean',Power_Max='max',Power_Min='min')[['Power_Mean','Power_Max','Power_Min']]
+    df = df['Power_(ps)'].agg(Power_Mean='mean',Power_Mode=mode,Power_Median='median',Power_Max='max',Power_Min='min')[['Power_Mean','Power_Mode','Power_Median','Power_Max','Power_Min']]
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")
@@ -341,7 +351,7 @@ def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
     file.write("######################\n\n")
     file.write("--Vehicle tracks stats:\n\n")
     df = laps.join(vehicles.set_index("Vehicle_Name"), on='Vehicle_Name').groupby(['Vehicle_Name','Track_Name'])
-    df = df['Lap_Time'].agg(['count','mean','max','min']).sort_values(['count'], ascending=False)
+    df = df['Lap_Time'].agg(['count','mean',mode,'median','max','min']).sort_values(['count'], ascending=False)
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")
@@ -362,6 +372,14 @@ def report_tracks(file, tracks, json_tracks):
     
     #report_tracks_plot()
 
+    # Mode no built-in function
+    def mode(x):
+        mode = x.mode()
+        if mode.empty:
+            return None
+        else:
+            return mode.iloc[0]
+    
     file.write("####################################################################################################################################\n\n")
     file.write("-Tracks report:\n")
     file.write(f"--Tracks count: {tracks.shape[0]}\n\n")
@@ -370,7 +388,7 @@ def report_tracks(file, tracks, json_tracks):
 
     file.write("--Tracks country stats:\n\n")
     df = tracks.groupby('Country')
-    df = df['Length_(km)'].agg(Length_Counter='count',Length_Mean='mean',Length_Max='max',Length_Min='min').sort_values(['Length_Counter'], ascending=False)
+    df = df['Length_(km)'].agg(Length_Counter='count',Length_Mean='mean',Length_Mode=mode,Lengt_Median='median',Length_Max='max',Length_Min='min').sort_values(['Length_Counter'], ascending=False)
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")
@@ -392,6 +410,14 @@ def report_vehicles(file, vehicles, json_vehicles):
 
     #report_vehicles_plot()
 
+    # Mode no built-in function
+    def mode(x):
+        mode = x.mode()
+        if mode.empty:
+            return None
+        else:
+            return mode.iloc[0]
+    
     file.write("####################################################################################################################################\n\n")
     file.write("-Vehicle report:\n")
     file.write(f"--Vehicle_count: {vehicles.shape[0]}\n\n")
@@ -411,25 +437,25 @@ def report_vehicles(file, vehicles, json_vehicles):
     file.write("######################\n\n")
 
     file.write("--Vehicles class dimensions:\n\n")
-    df = vehicles.groupby('Class')[["Curb_Weight_(kg)","Wheelbase_(m)","Length_(m)","Width_(m)","Height_(m)"]].agg(['mean','max','min'])
+    df = vehicles.groupby('Class')[["Curb_Weight_(kg)","Wheelbase_(m)","Length_(m)","Width_(m)","Height_(m)"]].agg(['mean',mode,'median','max','min'])
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")
 
     file.write("--Vehicles class performance:\n\n")
-    df = vehicles.groupby('Class')[["Top_Speed_(kph)","0-100_kph_(s)","Power_(ps)","Torque_(Nm)"]].agg(['mean','max','min'])
+    df = vehicles.groupby('Class')[["Top_Speed_(kph)","0-100_kph_(s)","Power_(ps)","Torque_(Nm)"]].agg(['mean',mode,'median','max','min'])
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")
 
     file.write("--Vehicles country dimensions:\n\n")
-    df = vehicles.groupby('Country')[["Curb_Weight_(kg)","Wheelbase_(m)","Length_(m)","Width_(m)","Height_(m)"]].agg(['mean','max','min'])
+    df = vehicles.groupby('Country')[["Curb_Weight_(kg)","Wheelbase_(m)","Length_(m)","Width_(m)","Height_(m)"]].agg(['mean',mode,'median','max','min'])
     file.write(df.to_markdown() + '\n\n')
 
     file.write("######################\n\n")
 
     file.write("--Vehicles country performance:\n\n")
-    df = vehicles.groupby('Country')[["Top_Speed_(kph)","0-100_kph_(s)","Power_(ps)","Torque_(Nm)"]].agg(['mean','max','min'])
+    df = vehicles.groupby('Country')[["Top_Speed_(kph)","0-100_kph_(s)","Power_(ps)","Torque_(Nm)"]].agg(['mean',mode,'median','max','min'])
     file.write(df.to_markdown() + '\n\n')
 
 def report_vehicles_plot():
