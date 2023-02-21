@@ -226,19 +226,17 @@ def report():
     df_tracks = pd.read_csv(f'{PATH}/csv/Tracks_Dataset.csv')
     df_vehicles = pd.read_csv(f'{PATH}/csv/Vehicle_Dataset.csv')
 
-    report = open(f'{PATH}/report.txt', 'w')
-    report.write("report.txt\n\n")
+    report_file_laps = open(f'{PATH}/report_laps.txt', 'w')
+    report_file_tracks = open(f'{PATH}/report_tracks.txt', 'w')
+    report_file_vehicles = open(f'{PATH}/report_vehicles.txt', 'w')
 
     print("Starting laps stats...")
-    report_laps(report, df_laps.copy(), df_tracks.copy(), df_vehicles.copy(), json_tracks, json_vehicles)
+    report_laps(report_file_laps, df_laps.copy(), df_tracks.copy(), df_vehicles.copy(), json_tracks, json_vehicles)
     print("Starting tracks stats...")
-    report_tracks(report, df_tracks.copy(), json_tracks)
+    report_tracks(report_file_tracks, df_tracks.copy(), json_tracks)
     print("Starting vehicles stats...")
-    report_vehicles(report,df_vehicles.copy(), json_vehicles)
+    report_vehicles(report_file_vehicles,df_vehicles.copy(), json_vehicles)
     print("Report complete.")
-
-    report.write("####################################################################################################################################\n\n")
-    report.close()
 
 def matrix_generator(tracks: list):
     # Generate a comlete matrix Vehicles X Tracks whit (best) laptime
@@ -317,8 +315,11 @@ def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
             return None
         else:
             return mode.iloc[0]
+        
+    file.write("report_laps.txt\n\n")
 
     file.write("####################################################################################################################################\n\n")
+
     file.write("-Laps report:\n")
     file.write(f"--Laps count: {laps.shape[0]}\n\n")
 
@@ -360,6 +361,9 @@ def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
     df = df['Lap_Time'].agg(Laps='count')[['Laps']].sort_values('Laps', ascending=False)
     file.write(df.to_markdown() + '\n\n')
 
+    file.write("####################################################################################################################################\n\n")
+    file.close()
+
 def report_laps_plot():
     raise NotImplementedError
 
@@ -380,7 +384,10 @@ def report_tracks(file, tracks, json_tracks):
         else:
             return mode.iloc[0]
     
+    file.write("report_tracks.txt\n\n")
+
     file.write("####################################################################################################################################\n\n")
+
     file.write("-Tracks report:\n")
     file.write(f"--Tracks count: {tracks.shape[0]}\n\n")
 
@@ -397,6 +404,9 @@ def report_tracks(file, tracks, json_tracks):
     df = tracks.set_index('Track_Name').groupby('Country')
     df = df['Length_(km)'].agg(Length_Max='idxmax', Length_Min='idxmin')[['Length_Max','Length_Min']]
     file.write(df.to_markdown() + '\n\n')
+
+    file.write("####################################################################################################################################\n\n")
+    file.close()
 
 def report_tracks_plot():
     raise NotImplementedError
@@ -418,7 +428,10 @@ def report_vehicles(file, vehicles, json_vehicles):
         else:
             return mode.iloc[0]
     
+    file.write("report_vehicles.txt\n\n")
+
     file.write("####################################################################################################################################\n\n")
+
     file.write("-Vehicle report:\n")
     file.write(f"--Vehicle_count: {vehicles.shape[0]}\n\n")
 
@@ -448,6 +461,18 @@ def report_vehicles(file, vehicles, json_vehicles):
 
     file.write("######################\n\n")
 
+    file.write("--Vehicles manufacturer dimensions:\n\n")
+    df = vehicles.groupby('Manufacturer')[["Curb_Weight_(kg)","Wheelbase_(m)","Length_(m)","Width_(m)","Height_(m)"]].agg(['mean',mode,'median','max','min'])
+    file.write(df.to_markdown() + '\n\n')
+
+    file.write("######################\n\n")
+
+    file.write("--Vehicles manufacturer performance:\n\n")
+    df = vehicles.groupby('Manufacturer')[["Top_Speed_(kph)","0-100_kph_(s)","Power_(ps)","Torque_(Nm)"]].agg(['mean',mode,'median','max','min'])
+    file.write(df.to_markdown() + '\n\n')
+
+    file.write("######################\n\n")
+    
     file.write("--Vehicles country dimensions:\n\n")
     df = vehicles.groupby('Country')[["Curb_Weight_(kg)","Wheelbase_(m)","Length_(m)","Width_(m)","Height_(m)"]].agg(['mean',mode,'median','max','min'])
     file.write(df.to_markdown() + '\n\n')
@@ -457,6 +482,9 @@ def report_vehicles(file, vehicles, json_vehicles):
     file.write("--Vehicles country performance:\n\n")
     df = vehicles.groupby('Country')[["Top_Speed_(kph)","0-100_kph_(s)","Power_(ps)","Torque_(Nm)"]].agg(['mean',mode,'median','max','min'])
     file.write(df.to_markdown() + '\n\n')
+
+    file.write("####################################################################################################################################\n\n")
+    file.close()
 
 def report_vehicles_plot():
     raise NotImplementedError
