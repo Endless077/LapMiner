@@ -22,7 +22,7 @@ Using a Linux Base system and python version 3.8.10:
 
 Install LapMiner: just clone this repository and install python (prefer 3.8.10 or higher version).
 
-Then create a virtual environment (n.b needs pip and venv installed):
+Then create a virtual environment (needs pip and venv installed):
 
 ```bash
   python3 -m venv venv
@@ -34,14 +34,15 @@ Activate the venv:
   source ../path/venv/bin/activate
 ```
 
-(use deactivate command to exit)
+(use "deactivate" command to exit)
 
 At last, install all requirements:
 
 ```bash
   pip install -r ../path/requirements.txt
 ```
-    
+
+
 ## Usage/Examples
 
 The main usage is:
@@ -65,9 +66,12 @@ Other commands:
 the first starts the scav toot.
 
 the second starts the report toot.
+
+
 ## Documentation
 
-No documentation allowed.
+No documentation allowed, contact me for any issue.
+(just read comments)
 
 
 ## Authors
@@ -84,6 +88,8 @@ This project is free to use:
 [GPL v3](https://choosealicense.com/licenses/gpl-3.0/)
 
 Thanks to support.
+
+
 ## FAQ
 
 #### Free to use?
@@ -100,4 +106,4 @@ Used in Lap Time Prediction research, it can be extended with new tools.
 
 #### Other questions?
 
-Contact me.
+Contact me for any issue.
