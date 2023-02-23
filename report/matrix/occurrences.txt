@@ -33,7 +33,6 @@ Chevrolet Corvette Z06 (C7): 7
 BMW M5 (F10): 7
 BMW M3 (E92): 7
 Audi TT RS Coupe (Mk III): 7
-Audi RS5 (8T3): 7
 Audi R8 4.2 FSI Quattro (Mk I): 7
 Alfa Romeo Giulia QV: 7
 Porsche Cayman S (987): 6
@@ -59,6 +58,7 @@ Chevrolet Corvette Z06 (C6): 6
 BMW M4 GTS: 6
 BMW M4: 6
 Aventador LP750-4 SV: 6
+Audi RS5 (8T3): 6
 Alpine A110 (Mk II): 6
 Toyota Supra (Mk V 340 PS): 5
 Toyota GR Yaris (Mk IV): 5
@@ -378,6 +378,7 @@ Ferrari 458 Speciale: 2
 Ferrari 360 Modena: 2
 Dodge Viper SRT-10 ACR: 2
 Cupra Formentor VZ 2.0 TSI: 2
+Corvette C7 Stingray Converti..: 2
 Continental Supersports: 2
 Citroen C2 VTS: 2
 Chrysler Crossfire SRT-6: 2
@@ -799,7 +800,6 @@ Cupra Formentor VZ5: 1
 Cupra Born (150 kW): 1
 Cupra Ateca: 1
 Corvette Grand Sport Cabriolet: 1
-Corvette C7 Stingray Converti..: 1
 Corvette 427 Convertible: 1
 Corsa OPC Nurburgring Edition: 1
 Clio III RS WRS Edition: 1

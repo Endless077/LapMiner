@@ -79,17 +79,17 @@ def parse_specs(attr_key: str, attr_value: str):
     
     parse_attr = []
 
-    if attr_key == "Introduced":
+    if attr_key.lower() == "introduced":
         match = re.compile(r'[+-]?\d+')
 
         result = match.findall(attr_value)
         parse_attr.append(int(result[0]))
-    elif attr_key == "Origin country":
+    elif attr_key.lower() == "origin country":
         match = re.compile(r'.*')
 
         result = match.findall(attr_value)
         parse_attr.append(result[0])        
-    elif attr_key == "Curb weight":
+    elif attr_key.lower() == "curb weight":
         match_compile = re.compile(r'(\d+)(?:-(\d+))? *[Kk]+[Gg]+.*')
         match_find = re.findall(match_compile, attr_value)[0]
         if match_find[1] is None:
@@ -99,12 +99,12 @@ def parse_specs(attr_key: str, attr_value: str):
             result = sum(weights) / len(weights)
 
         parse_attr.append(round(float(result), 2))
-    elif attr_key == "Wheelbase":
+    elif attr_key.lower() == "wheelbase":
         match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Mm]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(round(float(result[0]), 2))
-    elif attr_key == "Dimensions":
+    elif attr_key.lower() == "dimensions":
         match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Mm]+.*long|(\d+\.{0,1}\d{0,}) *[Mm]+.*wide|(\d+\.{0,1}\d{0,}) *[Mm]+.*high')
 
         all_dim = match.finditer(attr_value)
@@ -139,29 +139,29 @@ def parse_specs(attr_key: str, attr_value: str):
                     parse_attr.extend([None,None])
                     parse_attr.append(round(float(match_group[int(group+2)]), 2))
 
-    elif attr_key == "0 - 100 kph":
+    elif attr_key.lower() == "0 - 100 kph":
         match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Ss]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(round(float(result[0]), 2))
-    elif attr_key == "100 kph - 0":
+    elif attr_key.lower() == "100 kph - 0":
         match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Mm]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(round(float(result[0]), 2))
-    elif attr_key == "Top speed":
+    elif attr_key.lower() == "top speed":
         kph_match = re.compile(r'(\d+) *[Kk]+[Pp]+[Hh]+.*')
         mph_match = re.compile(r'(\d+) *[Mm]+[Pp]+[Hh]+.*')
 
         match = kph_match if kph_match.search(attr_value) is not None else mph_match
         result = match.findall(attr_value)
         parse_attr.append(int(result[0]))
-    elif attr_key == "Engine type":
+    elif attr_key.lower() == "engine type":
         match = re.compile('.*')
 
         result = match.findall(attr_value)
         parse_attr.append(result[0])
-    elif attr_key == "Displacement":
+    elif attr_key.lower() == "displacement":
         cc_match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Cc]+[Cc]+.*') 
         ci_match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Cc]+[Ii]+.*')
         ll_match = re.compile(r'(\d+\.{0,1}\d{0,}) *[Ll]+.*')
@@ -178,7 +178,7 @@ def parse_specs(attr_key: str, attr_value: str):
             result = round(float(ci[0]) * 0.01638706, 2)
 
         parse_attr.append(result)
-    elif attr_key == "Power":
+    elif attr_key.lower() == "power":
         match = re.compile(r'((\d+) *[Pp]+[Ss]+)|((\d+) *[Bb]+[Hh]+[Pp]+)|((\d+) *[Kk]+[Ww]+)')
         
         all_power = match.findall(attr_value)
@@ -187,32 +187,32 @@ def parse_specs(attr_key: str, attr_value: str):
             parse_attr.append(int(item[group]))
             group += 2
 
-    elif attr_key == "Torque":
+    elif attr_key.lower() == "torque":
         match = re.compile(r'(\d+) *[Nn]+[Mm]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(int(result[0]))
-    elif attr_key == "Power / weight":
+    elif attr_key.lower() == "power / weight":
         match = re.compile(r'(\d+) *[Pp]+[Ss]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(int(result[0]))
-    elif attr_key == "Torque / weight":
+    elif attr_key.lower() == "torque / weight":
         match = re.compile(r'(\d+) *[Nn]+[Mm]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(int(result[0]))
-    elif attr_key == "Efficiency":
+    elif attr_key.lower() == "efficiency":
         match = re.compile(r'(\d+) *[Pp]+[Ss]+.*')
 
         result = match.findall(attr_value)
         parse_attr.append(int(result[0]))
-    elif attr_key == "Transmission":
+    elif attr_key.lower() == "transmission":
         match = re.compile(r'.*')
 
         result = match.findall(attr_value)
         parse_attr.append(result[0])
-    elif attr_key == "Layout":
+    elif attr_key.lower() == "layout":
         match = re.compile(r'.*')
 
         result = match.findall(attr_value)
@@ -392,10 +392,10 @@ def get_track_info(track: dict):
 
                 vehicle = parse_vehicle(lap_record)
                 new_lap = {
-                    'laptime': lap_record[3].contents[0].text,
-                    'driver': lap_record[2].contents[0].text,
+                    'laptime': lap_record[3].contents[0].text.strip(),
+                    'driver': lap_record[2].contents[0].text.strip(),
                     'track': track['name'],
-                    'ps_kg': "".join(str(lap_record[4].contents[0]).split()),
+                    'ps_kg': "".join(str(lap_record[4].contents[0]).split()).strip(),
                     'vehicle_href': vehicle[1],
                     'vehicle': vehicle[0]
                 }
@@ -423,7 +423,7 @@ def get_vehicle_info(vehicle: dict):
         tables = soup.findAll(class_=re.compile("table fl-datasheet"))
 
         print(f"Getting {vehicle[0]} specs...")
-        vehicle_record["manufacturer"] = soup.find(class_=re.compile("margin-top")).a.text
+        vehicle_record["manufacturer"] = soup.find(class_=re.compile("margin-top")).a.text.strip()
         vehicle_record["model"] = soup.find(class_=re.compile("margin-top")).contents[1].replace("specs","").strip()
 
         for table in tables:
@@ -432,7 +432,7 @@ def get_vehicle_info(vehicle: dict):
                 clean_record(record)
                 key = record.contents[0].text.strip().title()
                 value = record.contents[1].text.strip()
-                print(f"--Found attribute: {key} with value {value}" )
+                print(f"--Found attribute: {key} with value {value}")
                 vehicle_record[key] = value
 
     return vehicle_record

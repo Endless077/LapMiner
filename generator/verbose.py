@@ -8,9 +8,11 @@
 import re
 import csv
 import json
+import io
 import numpy as np
 import pandas as pd
 import database as db
+import sqlite3
 import utils
 
 LAPS_HEADERS = {
@@ -78,7 +80,7 @@ def extract_dataset():
     db.create_views(conn, min_track_laps, min_vehicle_laps)
     return conn
      
-def dataset_generator(conn):
+def dataset_generator(conn: sqlite3.Connection):
     # Get all datasets and convert in varius format
     # :param conn: a connection to scrap.db (with TEMP views).
     # :return:
@@ -111,7 +113,9 @@ def dataset_generator(conn):
 
     print("Dataset exported in excel, csv and json format.")
 
-def export_excel(datasets):
+###########################################
+
+def export_excel(datasets: dict):
     # Generate a excel file with all dataset in sheets
     # :param datasets: a dictionary with all dataframes.
     # :return:
@@ -123,7 +127,7 @@ def export_excel(datasets):
         for key,value in datasets.items():
             value.to_excel(writer, sheet_name=key, index=False)
 
-def export_csv(datasets):
+def export_csv(datasets: dict):
     # Generate a csv file for each dataset
     # :param datasets: a dictionary with all dataframes.
     # :return:
@@ -134,7 +138,7 @@ def export_csv(datasets):
     for key,value in datasets.items():
         value.to_csv(f'{csv_path}{key}.csv', index=False)
 
-def export_json(datasets):
+def export_json(datasets: dict):
     # Generate a json file for tracks and vehicle with some informations
     # :param datasets: a dictionary with all dataframes.
     # :return:
@@ -158,7 +162,7 @@ def export_json(datasets):
     with open(f"{json_path}vehicles.json", "w") as outfile:
         outfile.write(json_object_vehicles)
 
-def json_track(laps_df, tracks_df):
+def json_track(laps_df: pd.DataFrame, tracks_df: pd.DataFrame):
     # Generate a dict for a json converter (tracks)
     # :param laps_df: laps dataframe.
     # :param track_df: tracks dataframe.
@@ -183,7 +187,7 @@ def json_track(laps_df, tracks_df):
     
     return tracks_json
 
-def json_vehicle(laps_df, vehicles_df):
+def json_vehicle(laps_df: pd.DataFrame, vehicles_df: pd.DataFrame):
      # Generate a dict for a json converter (vehicles)
     # :param laps_df: laps dataframe.
     # :param track_df: vehicles dataframe.
@@ -211,6 +215,8 @@ def json_vehicle(laps_df, vehicles_df):
 
     return vehicle_json
 
+###########################################
+
 def report():
     # Get a simple report of all data in the scrap dataset
     # :param:
@@ -235,7 +241,7 @@ def report():
     print("Starting tracks stats...")
     report_tracks(report_file_tracks, df_tracks.copy(), json_tracks)
     print("Starting vehicles stats...")
-    report_vehicles(report_file_vehicles,df_vehicles.copy(), json_vehicles)
+    report_vehicles(report_file_vehicles, df_vehicles.copy(), json_vehicles)
     print("Report complete.")
 
 def matrix_generator(tracks: list):
@@ -296,7 +302,7 @@ def matrix_generator(tracks: list):
 
     print("Matrix complete.")
 
-def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
+def report_laps(file: io.TextIOWrapper, laps: pd.DataFrame, tracks: pd.DataFrame, vehicles: pd.DataFrame, json_tracks: dict, json_vehicles: dict):
     # Write in report.txt a list of varius laps stats
     # :param file: linked file object ov report.txt
     # :param laps: laps dataframe copy.
@@ -367,7 +373,7 @@ def report_laps(file, laps, tracks, vehicles, json_tracks, json_vehicles):
 def report_laps_plot():
     raise NotImplementedError
 
-def report_tracks(file, tracks, json_tracks):
+def report_tracks(file: io.TextIOWrapper, tracks: pd.DataFrame, json_tracks: dict):
     # Write in report.txt a list of varius tracks stats
     # :param file: linked file object ov report.txt
     # :param tracks: tracks dataframe copy.
@@ -411,7 +417,7 @@ def report_tracks(file, tracks, json_tracks):
 def report_tracks_plot():
     raise NotImplementedError
 
-def report_vehicles(file, vehicles, json_vehicles):
+def report_vehicles(file: io.TextIOWrapper, vehicles: pd.DataFrame, json_vehicles: dict):
     # Write in report.txt a list of varius vehicles stats
     # :param file: linked file object ov report.txt
     # :param vehicles: vehicles dataframe copy.

@@ -21,7 +21,7 @@ Arctic Circle Raceway,Norway,3.75
 Area 27,Canada,4.83
 Ascari,Spain,4.3
 Ascari Race Resort,Spain,5.42
-Assen,Netherlands,4.55
+Assen Gp,Netherlands,4.55
 Auto Club Speedway,United States,
 Auto Motor Und Sport Handling,Germany,0.54
 Auto Motor Und Sport Snowy Handling Course,Germany,1.3
@@ -118,6 +118,7 @@ Contidrom (3.3 Km),Germany,3.28
 Contidrom (3.63 Km),Germany,3.57
 Contidrom (3.8 Km),Germany,3.8
 Contidrom Handling Track (1.9 Km),Germany,1.9
+Course De Cote,France,2.6
 Croft,United Kingdom,3.38
 Croft (Pre 1997),United Kingdom,2.9
 Croix En Ternois,France,1.9
@@ -336,7 +337,6 @@ Sportauto Wet Handling Test,Germany,1.78
 Spring Mountain,United States,
 Spring Mountain (Mansell C),United States,5.35
 Spring Mountain (Radical Loop Section),United States,2.41
-Streets Of Willow (0.96 Mile),United States,1.54
 Sturup Raceway,Sweden,2.09
 Sugo,Japan,
 Summit Point,United States,3.2
@@ -371,9 +371,10 @@ Wakefield Park,Australia,2.2
 Waterford Hills,United States,2.41
 Willow Springs,United States,3.9
 Willow Springs - Horse Thief Mile,United States,1.61
-Willow Springs - Streets Of Willow,United States,2.49
-Willow Springs - Streets Of Willow (1.7 Miles),United States,2.74
-Willow Springs - Streets Of Willow Ccw,United States,2.49
+Willow Springs - Streets Of Willow Extended,United States,2.49
+Willow Springs - Streets Of Willow Extended Ccw,United States,2.49
+Willow Springs - Streets Of Willow Long,United States,1.93
+Willow Springs - Streets Of Willow Medium,United States,1.54
 Winterfahrtraining.At Eishandlingkurs,Austria,2.0
 Winton (National Circuit),Australia,3.0
 Yas Marina (Post 2021),United Arab Emirates,5.28

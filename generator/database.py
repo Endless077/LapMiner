@@ -875,15 +875,15 @@ def update_specific_vehicle(conn: sqlite3.Connection, vehicle_id: str, values: d
 
     cur = conn.cursor()
     tables = ["VEHICLE","LAYOUT","DIMENSIONS","ENGINE","TRASMISSION","PERFORMANCE"]
-    tables_index = -1
+    tables_index = 0
 
     for key in values.keys():
-        tables_index += 1
         if(values[key]):
             column_list = ", ".join([f"{column} = ?" for column in values[key].keys()])
             sql = f''' UPDATE {tables[tables_index]} SET {column_list} WHERE vehicle_id = ? '''
             cur.execute(sql, (*values[key].values(), vehicle_id))
             print(f"Update: {tables[tables_index]} for vehicle with id {vehicle_id}.")
+        tables_index += 1
 
     conn.commit()
     cur.close()

@@ -399,10 +399,10 @@
          "Model": "356 B 2000 GS Carrera 2 Coupe",
          "Country": "Germany",
          "Introduced_Year": 1962.0,
-         "0-100_kph_(s)": NaN,
+         "0-100_kph_(s)": 8.6,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": 203.0,
-         "Curb_Weight_(kg)": 915.5,
+         "Curb_Weight_(kg)": 938.5,
          "Wheelbase_(m)": 2.1,
          "Length_(m)": 3.98,
          "Width_(m)": 1.67,
@@ -1545,7 +1545,7 @@
          "Vairano Handling Course": [
             83.91
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.05
          ],
          "Grand Tour Eboladrome": [
@@ -2401,7 +2401,7 @@
    },
    "Acura TL": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             61.51
          ]
       },
@@ -2434,7 +2434,7 @@
    },
    "Acura TL Type S": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             92.88
          ]
       },
@@ -2758,10 +2758,10 @@
          "Model": "2600 Sprint",
          "Country": "Italy",
          "Introduced_Year": NaN,
-         "0-100_kph_(s)": NaN,
+         "0-100_kph_(s)": 12.0,
          "100-0_(m)": NaN,
-         "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": NaN,
+         "Top_Speed_(kph)": 199.0,
+         "Curb_Weight_(kg)": 1394.0,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -3024,6 +3024,12 @@
    },
    "Alfa Romeo Alfasud Ti 1.5": {
       "Laps": {
+         "Magny Cours": [
+            123.14
+         ],
+         "Course De Cote": [
+            131.82
+         ],
          "Linas-Montlhery (9Km)": [
             270.6
          ]
@@ -3032,21 +3038,21 @@
          "Vehicle_Name": "Alfa Romeo Alfasud Ti 1.5",
          "Type": "Car",
          "Manufacturer": "Alfa Romeo",
-         "Model": "Alfasud Ti 1.5 (95 PS)",
+         "Model": "Alfasud Ti 1.5 (2a Serie)",
          "Country": "Italy",
          "Introduced_Year": NaN,
-         "0-100_kph_(s)": 10.9,
+         "0-100_kph_(s)": 11.0,
          "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 180.0,
+         "Top_Speed_(kph)": 169.0,
          "Curb_Weight_(kg)": NaN,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
          "Height_(m)": NaN,
-         "Engine": "Inline 4",
+         "Engine": "Boxer 4",
          "Displacement_(l)": 1.5,
-         "Power_(ps)": 95.0,
-         "Torque_(Nm)": 130.0,
+         "Power_(ps)": 85.0,
+         "Torque_(Nm)": 121.0,
          "Engine_Layout": "Front",
          "Wheel_Drive": "Front",
          "Class": "Compact",
@@ -3935,7 +3941,7 @@
          "Bedford Autodrome West (Post 5/2015)": [
             81.8
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             82.78
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -5245,6 +5251,39 @@
          "N_Trasmission": 6.0
       }
    },
+   "Alpina B6 2.8": {
+      "Laps": {
+         "Linas-Montlhery (9Km)": [
+            240.0
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Alpina B6 2.8",
+         "Type": "Car",
+         "Manufacturer": "Alpina",
+         "Model": "B6 2.8",
+         "Country": "Germany",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": 7.6,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 226.0,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 6",
+         "Displacement_(l)": 2.8,
+         "Power_(ps)": 200.0,
+         "Torque_(Nm)": NaN,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
    "Alpina B6 Biturbo Gran Coupe": {
       "Laps": {
          "Willow Springs": [
@@ -5424,6 +5463,39 @@
          "Trasmission_Name": "8 speed automatic",
          "Trasmission_Type": "Automatic",
          "N_Trasmission": 8.0
+      }
+   },
+   "Alpina C1": {
+      "Laps": {
+         "Linas-Montlhery (9Km)": [
+            243.5
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Alpina C1",
+         "Type": "Car",
+         "Manufacturer": "Alpina",
+         "Model": "C1",
+         "Country": "Germany",
+         "Introduced_Year": 1981.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": NaN,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 6",
+         "Displacement_(l)": 2.3,
+         "Power_(ps)": 170.0,
+         "Torque_(Nm)": 210.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
       }
    },
    "Alpina D3 Biturbo": {
@@ -6483,7 +6555,7 @@
    "Ariel Atom 4 (355 PS)": {
       "Laps": {
          "Bedford Autodrome Gt": [
-            154.21
+            151.93
          ]
       },
       "Specs": {
@@ -7475,7 +7547,7 @@
          "Anglesey National": [
             62.8
          ],
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             72.18
          ],
          "Hockenheim Short": [
@@ -8008,7 +8080,7 @@
          "Circuit De Nevers Magny-Cours Club": [
             82.98
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             84.85
          ],
          "Thermal Club Raceway": [
@@ -9852,39 +9924,6 @@
          "N_Trasmission": 7.0
       }
    },
-   "Audi A6 Avant 3.0 TDI Quattro": {
-      "Laps": {
-         "Autozeitung Test Track": [
-            103.6
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Audi A6 Avant 3.0 TDI Quattro",
-         "Type": "Car",
-         "Manufacturer": "Audi",
-         "Model": "A6 Avant 3.0 TDI Quattro (C7 facelift 272 PS)",
-         "Country": "Germany",
-         "Introduced_Year": 2015.0,
-         "0-100_kph_(s)": 5.6,
-         "100-0_(m)": 34.0,
-         "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1898.5,
-         "Wheelbase_(m)": NaN,
-         "Length_(m)": NaN,
-         "Width_(m)": NaN,
-         "Height_(m)": NaN,
-         "Engine": "V6 turbo diesel",
-         "Displacement_(l)": 3.0,
-         "Power_(ps)": 272.0,
-         "Torque_(Nm)": 580.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "Estate/wagon",
-         "Trasmission_Name": "7 speed dual clutch automatic (DSG)",
-         "Trasmission_Type": "Dual-Clutch",
-         "N_Trasmission": 7.0
-      }
-   },
    "Audi A7 3.0 TDI Quattro": {
       "Laps": {
          "Vairano Handling Course": [
@@ -10152,7 +10191,7 @@
          "Introduced_Year": 2012.0,
          "0-100_kph_(s)": 9.3,
          "100-0_(m)": 35.0,
-         "Top_Speed_(kph)": 197.0,
+         "Top_Speed_(kph)": 202.0,
          "Curb_Weight_(kg)": 1544.5,
          "Wheelbase_(m)": 2.6,
          "Length_(m)": 4.38,
@@ -10168,6 +10207,39 @@
          "Trasmission_Name": "6-Speed Manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 6.0
+      }
+   },
+   "Audi Q4 E-Tron 50": {
+      "Laps": {
+         "Llandow": [
+            52.18
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Audi Q4 E-Tron 50",
+         "Type": "Car",
+         "Manufacturer": "Audi",
+         "Model": "Q4 E-Tron 50",
+         "Country": "Germany",
+         "Introduced_Year": 2021.0,
+         "0-100_kph_(s)": 5.9,
+         "100-0_(m)": 34.0,
+         "Top_Speed_(kph)": 184.0,
+         "Curb_Weight_(kg)": 2230.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "E-motor",
+         "Displacement_(l)": NaN,
+         "Power_(ps)": 299.0,
+         "Torque_(Nm)": 460.0,
+         "Engine_Layout": "Middle",
+         "Wheel_Drive": "All",
+         "Class": "SUV/truck",
+         "Trasmission_Name": "1 speed",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 1.0
       }
    },
    "Audi Q5 3.0 TDI quattro (8R)": {
@@ -10416,6 +10488,39 @@
          "N_Trasmission": 5.0
       }
    },
+   "Audi Quattro 20V (UR Quattro)": {
+      "Laps": {
+         "Llandow": [
+            53.86
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Audi Quattro 20V (UR Quattro)",
+         "Type": "Car",
+         "Manufacturer": "Audi",
+         "Model": "Quattro 20V (UR Quattro)",
+         "Country": "Germany",
+         "Introduced_Year": 1988.0,
+         "0-100_kph_(s)": 6.3,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 233.0,
+         "Curb_Weight_(kg)": 1380.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "inline5 DOHC 20V Turbo",
+         "Displacement_(l)": 2.2,
+         "Power_(ps)": 220.0,
+         "Torque_(Nm)": 309.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "Coupe",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
    "Audi R10 TDI": {
       "Laps": {
          "Canadian Tire Motorsport Park": [
@@ -10620,7 +10725,7 @@
          "Megara": [
             68.6
          ],
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             70.66
          ],
          "Inta": [
@@ -10662,7 +10767,7 @@
          "Bedford Autodrome West Circuit (06/2008 - 05/2015)": [
             86.5
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             86.92
          ],
          "Sportauto Wet Handling Test": [
@@ -10912,9 +11017,9 @@
          "Country": "Germany",
          "Introduced_Year": 2014.0,
          "0-100_kph_(s)": 3.3,
-         "100-0_(m)": NaN,
+         "100-0_(m)": 32.0,
          "Top_Speed_(kph)": 320.0,
-         "Curb_Weight_(kg)": 1595.0,
+         "Curb_Weight_(kg)": 1631.0,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -11024,7 +11129,7 @@
             112.2,
             113.3
          ],
-         "Assen": [
+         "Assen Gp": [
             114.11
          ]
       },
@@ -11286,7 +11391,7 @@
          "Toronto Motorsports Park": [
             78.45
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             81.95
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -12777,9 +12882,6 @@
          "Ring Knutstrop (Conf 2)": [
             73.8
          ],
-         "Hockenheim Short": [
-            74.0
-         ],
          "Autocar Dry Handling Track": [
             74.2
          ],
@@ -13348,48 +13450,6 @@
          "N_Trasmission": 8.0
       }
    },
-   "Audi RS7 (4G facelift)": {
-      "Laps": {
-         "Autozeitung Test Track": [
-            98.8
-         ],
-         "Zhejiang Circuit": [
-            105.44
-         ],
-         "Madras Motor Race Track": [
-            119.85
-         ],
-         "Virginia International Raceway Grand East Course (Post 01/2014)": [
-            183.1
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Audi RS7 (4G facelift)",
-         "Type": "Car",
-         "Manufacturer": "Audi",
-         "Model": "RS7 (4G facelift)",
-         "Country": "Germany",
-         "Introduced_Year": 2014.0,
-         "0-100_kph_(s)": 3.5,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 305.0,
-         "Curb_Weight_(kg)": NaN,
-         "Wheelbase_(m)": 2.92,
-         "Length_(m)": 5.01,
-         "Width_(m)": 1.91,
-         "Height_(m)": 1.42,
-         "Engine": "V8 Twin Turbo TFSI 32v",
-         "Displacement_(l)": 4.0,
-         "Power_(ps)": 560.0,
-         "Torque_(Nm)": 700.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "8 speed auto",
-         "Trasmission_Type": "Other",
-         "N_Trasmission": 8.0
-      }
-   },
    "Audi RS7 Sportback": {
       "Laps": {
          "Velo Citta (1.68 Km)": [
@@ -13401,14 +13461,23 @@
          "Killarney": [
             83.65
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             84.3
          ],
          "Autozeitung Test Track": [
             98.8
          ],
+         "Zhejiang Circuit": [
+            105.44
+         ],
+         "Madras Motor Race Track": [
+            119.85
+         ],
          "Ascari": [
             124.91
+         ],
+         "Virginia International Raceway Grand East Course (Post 01/2014)": [
+            183.1
          ]
       },
       "Specs": {
@@ -14098,7 +14167,7 @@
    },
    "Audi S4 (B8)": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             60.41
          ],
          "Wakefield Park": [
@@ -15022,9 +15091,9 @@
          "Country": "Germany",
          "Introduced_Year": 2013.0,
          "0-100_kph_(s)": 5.1,
-         "100-0_(m)": NaN,
+         "100-0_(m)": 34.0,
          "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1920.0,
+         "Curb_Weight_(kg)": 1963.5,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -15906,7 +15975,7 @@
          "Hockenheim Gp": [
             117.7
          ],
-         "Assen": [
+         "Assen Gp": [
             133.1
          ],
          "Sebring International Raceway": [
@@ -16493,6 +16562,42 @@
          "Trasmission_Name": "4 speed manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 4.0
+      }
+   },
+   "Autobianchi A112 Abarth": {
+      "Laps": {
+         "Magny Cours": [
+            125.44
+         ],
+         "Course De Cote": [
+            134.01
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Autobianchi A112 Abarth",
+         "Type": "Car",
+         "Manufacturer": "Autobianchi",
+         "Model": "A112 Abarth",
+         "Country": "Italy",
+         "Introduced_Year": 1979.0,
+         "0-100_kph_(s)": 10.6,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 160.0,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "4 cylinders in line 8 valves",
+         "Displacement_(l)": NaN,
+         "Power_(ps)": 70.0,
+         "Torque_(Nm)": 85.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Front",
+         "Class": "Compact",
+         "Trasmission_Name": "manual 5 gear",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 5.0
       }
    },
    "Autobianchi A112 Abarth (S1)": {
@@ -17706,8 +17811,8 @@
          "Model": "228i",
          "Country": "Germany",
          "Introduced_Year": 2015.0,
-         "0-100_kph_(s)": 5.7,
-         "100-0_(m)": 34.0,
+         "0-100_kph_(s)": 5.4,
+         "100-0_(m)": 33.0,
          "Top_Speed_(kph)": 250.0,
          "Curb_Weight_(kg)": 1499.0,
          "Wheelbase_(m)": NaN,
@@ -18478,6 +18583,9 @@
    },
    "BMW 330e (G20)": {
       "Laps": {
+         "Llandow": [
+            47.2
+         ],
          "Autozeitung Test Track": [
             102.2
          ]
@@ -18787,7 +18895,7 @@
    },
    "BMW 335i (E90)": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             61.8
          ],
          "Hockenheim Short \"Powercar Layout\"": [
@@ -19661,7 +19769,7 @@
    },
    "BMW 535D (F10)": {
       "Laps": {
-         "Assen": [
+         "Assen Gp": [
             134.0
          ]
       },
@@ -19949,7 +20057,7 @@
    },
    "BMW 650i Cabrio": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             99.3
          ]
       },
@@ -20326,6 +20434,9 @@
       "Laps": {
          "Ontario Motor Speedway": [
             114.1
+         ],
+         "Linas-Montlhery (9Km)": [
+            234.0
          ]
       },
       "Specs": {
@@ -20653,7 +20764,7 @@
          "Vairano Handling Course": [
             78.4
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             82.73
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -20752,7 +20863,7 @@
          "Vairano Handling Course": [
             75.31
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             81.72
          ],
          "Eurospeedway Lausitz": [
@@ -20810,6 +20921,9 @@
       "Laps": {
          "Motortrend Figure-8": [
             24.1
+         ],
+         "Llandow": [
+            45.5
          ],
          "Anneau Du Rhin Short": [
             62.42
@@ -20938,7 +21052,7 @@
          "Vairano Handling Course": [
             80.79
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             86.37
          ],
          "Killarney": [
@@ -21623,7 +21737,7 @@
          "Inta": [
             72.36
          ],
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             72.7
          ],
          "Camden Airport (Pre 10/2010)": [
@@ -21669,7 +21783,7 @@
          "Circuit De Nevers Magny-Cours Club": [
             87.4
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             87.67
          ],
          "Sportauto Wet Handling Test": [
@@ -22205,7 +22319,7 @@
          "Top Gear Track": [
             86.5
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.02
          ],
          "Eurospeedway Lausitz": [
@@ -22605,7 +22719,7 @@
          "Anglesey Coastal": [
             79.2
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             82.94,
             83.73
          ],
@@ -23309,7 +23423,7 @@
          "Top Gear Track": [
             87.0
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             88.65
          ],
          "Oschersleben": [
@@ -23384,7 +23498,7 @@
          "Top Gear Track": [
             86.2
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             90.4
          ],
          "Grattan Raceway": [
@@ -24914,7 +25028,7 @@
          "Country": "Germany",
          "Introduced_Year": NaN,
          "0-100_kph_(s)": 8.2,
-         "100-0_(m)": 36.0,
+         "100-0_(m)": 34.0,
          "Top_Speed_(kph)": 210.0,
          "Curb_Weight_(kg)": 1804.5,
          "Wheelbase_(m)": NaN,
@@ -25151,7 +25265,7 @@
    },
    "BMW X5 4.4i": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             73.0
          ],
          "Winton (National Circuit)": [
@@ -26917,9 +27031,9 @@
          "Country": "Germany",
          "Introduced_Year": 2013.0,
          "0-100_kph_(s)": 4.2,
-         "100-0_(m)": 35.0,
+         "100-0_(m)": 34.0,
          "Top_Speed_(kph)": 254.0,
-         "Curb_Weight_(kg)": 1501.0,
+         "Curb_Weight_(kg)": 1514.5,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -28312,6 +28426,72 @@
          "N_Trasmission": 6.0
       }
    },
+   "C 30 CDI AMG Sportcoupe": {
+      "Laps": {
+         "Oschersleben": [
+            118.07
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "C 30 CDI AMG Sportcoupe",
+         "Type": "Car",
+         "Manufacturer": "Mercedes-Benz",
+         "Model": "C 30 CDI AMG Sportcoupe",
+         "Country": "Germany",
+         "Introduced_Year": 2004.0,
+         "0-100_kph_(s)": 6.7,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 250.0,
+         "Curb_Weight_(kg)": 1555.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 5, Turbocharged, Diesel",
+         "Displacement_(l)": 3.0,
+         "Power_(ps)": 231.0,
+         "Torque_(Nm)": 540.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Compact",
+         "Trasmission_Name": "5",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 5.0
+      }
+   },
+   "C 43 AMG 4Matic Coupe": {
+      "Laps": {
+         "Baskerville Raceway": [
+            61.56
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "C 43 AMG 4Matic Coupe",
+         "Type": "Car",
+         "Manufacturer": "Mercedes-Benz",
+         "Model": "C 43 AMG 4Matic Coupe (C205 facelift)",
+         "Country": "Germany",
+         "Introduced_Year": 2018.0,
+         "0-100_kph_(s)": 4.4,
+         "100-0_(m)": 35.0,
+         "Top_Speed_(kph)": 250.0,
+         "Curb_Weight_(kg)": 1749.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "V6 turbo",
+         "Displacement_(l)": 3.0,
+         "Power_(ps)": 390.0,
+         "Torque_(Nm)": 520.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "All",
+         "Class": "Coupe",
+         "Trasmission_Name": "9 speed automatic",
+         "Trasmission_Type": "Automatic",
+         "N_Trasmission": 9.0
+      }
+   },
    "C 43 AMG 4Matic T-Modell": {
       "Laps": {
          "Eurospeedway Lausitz": [
@@ -28378,43 +28558,16 @@
          "N_Trasmission": 9.0
       }
    },
-   "C 63 AMG  Package": {
+   "C 63 AMG  Package ..": {
       "Laps": {
          "Contidrom (3.3 Km)": [
             93.69
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "C 63 AMG  Package",
-         "Type": "Car",
-         "Manufacturer": "Mercedes-Benz",
-         "Model": "C 63 AMG Performance Package",
-         "Country": "Germany",
-         "Introduced_Year": 2011.0,
-         "0-100_kph_(s)": 4.2,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1801.0,
-         "Wheelbase_(m)": 2.76,
-         "Length_(m)": 4.6,
-         "Width_(m)": 1.77,
-         "Height_(m)": 1.43,
-         "Engine": "V8 dual DOHC 32V n/a",
-         "Displacement_(l)": 6.2,
-         "Power_(ps)": 487.0,
-         "Torque_(Nm)": 600.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "Rear",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "7speed AMG MCT-7 with wet clutch",
-         "Trasmission_Type": "Other",
-         "N_Trasmission": 7.0
-      }
-   },
-   "C 63 AMG  Package ..": {
-      "Laps": {
+         ],
          "Rockingham National": [
             99.1
+         ],
+         "Interlagos": [
+            115.6
          ]
       },
       "Specs": {
@@ -28424,9 +28577,9 @@
          "Model": "C 63 AMG Performance Package Plus",
          "Country": "Germany",
          "Introduced_Year": 2009.0,
-         "0-100_kph_(s)": 4.4,
+         "0-100_kph_(s)": 4.2,
          "100-0_(m)": 37.0,
-         "Top_Speed_(kph)": 250.0,
+         "Top_Speed_(kph)": 280.0,
          "Curb_Weight_(kg)": 1777.0,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
@@ -28588,7 +28741,7 @@
       "Specs": {
          "Vehicle_Name": "C60 EVO 03 Peugeot",
          "Type": "Car",
-         "Manufacturer": "Pescarolo Courage ",
+         "Manufacturer": "Pescarolo Courage",
          "Model": "C60 EVO 03 Peugeot",
          "Country": "France",
          "Introduced_Year": NaN,
@@ -28621,7 +28774,7 @@
       "Specs": {
          "Vehicle_Name": "C60 EVO 04 Judd",
          "Type": "Car",
-         "Manufacturer": "Pescarolo Courage ",
+         "Manufacturer": "Pescarolo Courage",
          "Model": "C60 EVO 04 Judd",
          "Country": "France",
          "Introduced_Year": NaN,
@@ -28643,39 +28796,6 @@
          "Trasmission_Name": "Xtrac 6 speed Sequential",
          "Trasmission_Type": "Sequential",
          "N_Trasmission": 6.0
-      }
-   },
-   "C63 AMG  Package": {
-      "Laps": {
-         "Interlagos": [
-            115.6
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "C63 AMG  Package",
-         "Type": "Car",
-         "Manufacturer": "Mercedes-Benz",
-         "Model": "C63 AMG Performance Package (facelift)",
-         "Country": "Germany",
-         "Introduced_Year": 2011.0,
-         "0-100_kph_(s)": 4.2,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 280.0,
-         "Curb_Weight_(kg)": 1730.0,
-         "Wheelbase_(m)": 2.77,
-         "Length_(m)": 4.71,
-         "Width_(m)": 1.8,
-         "Height_(m)": 1.43,
-         "Engine": "V8",
-         "Displacement_(l)": 6.2,
-         "Power_(ps)": 487.0,
-         "Torque_(Nm)": 600.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "Rear",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "7-speed-multi-clutch",
-         "Trasmission_Type": "Other",
-         "N_Trasmission": 7.0
       }
    },
    "C63 AMG Coupe  Pac..": {
@@ -29013,7 +29133,7 @@
          "Hockenheim Short": [
             73.6
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             84.7
          ]
       },
@@ -29436,7 +29556,7 @@
          "Autocar Dry Handling Track": [
             81.9
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             100.05
          ],
          "Kyalami": [
@@ -29487,7 +29607,7 @@
          "Country": "United States",
          "Introduced_Year": 2015.0,
          "0-100_kph_(s)": 5.9,
-         "100-0_(m)": NaN,
+         "100-0_(m)": 36.0,
          "Top_Speed_(kph)": 252.0,
          "Curb_Weight_(kg)": 1701.5,
          "Wheelbase_(m)": 2.91,
@@ -29547,7 +29667,7 @@
          "Nelson Ledges Raceway": [
             80.52
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.2
          ],
          "Top Gear Track": [
@@ -29803,7 +29923,7 @@
    },
    "Cadillac SRX V8": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             74.0
          ]
       },
@@ -29938,7 +30058,7 @@
          "Motortrend Figure-8": [
             24.5
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             85.19
          ],
          "Virginia International Raceway Grand East Course (Post 01/2014)": [
@@ -29980,7 +30100,7 @@
          "Motown Mile": [
             56.83
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             82.7
          ],
          "Milford Road Course": [
@@ -30025,7 +30145,7 @@
          "Dunnville Autodrome": [
             71.58
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             80.67
          ],
          "Willow Springs": [
@@ -31398,7 +31518,7 @@
    },
    "Chevrolet Camaro 2.0T (Mk VI)": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             88.18
          ]
       },
@@ -31431,7 +31551,7 @@
    },
    "Chevrolet Camaro 3.6 (Mk VI)": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             85.19
          ]
       },
@@ -31582,7 +31702,7 @@
          "Hockenheim Short": [
             74.0
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             83.15
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -32065,7 +32185,7 @@
    },
    "Chevrolet Corvette (C4 304 PS)": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             65.9,
             67.36
          ],
@@ -32244,7 +32364,7 @@
          "Las Vegas Motor Speedway Inside Road Course Short": [
             40.0
          ],
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             65.2
          ],
          "Nelson Ledges Raceway": [
@@ -32301,7 +32421,7 @@
          "Waterford Hills": [
             79.59
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             90.35
          ],
          "Willow Springs": [
@@ -32507,7 +32627,7 @@
          "Spring Mountain (Radical Loop Section)": [
             78.61
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             87.29
          ],
          "Grattan Raceway": [
@@ -32728,7 +32848,7 @@
          "Thunderhill Park West": [
             82.83
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             84.55
          ],
          "Grattan Raceway": [
@@ -32844,7 +32964,7 @@
          "Tsukuba": [
             64.55
          ],
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             70.87
          ],
          "Hockenheim Short": [
@@ -33165,7 +33285,7 @@
          "Top Gear Track": [
             80.4
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             81.9
          ],
          "Biķernieki (High Speed)": [
@@ -33448,7 +33568,7 @@
          "Motown Mile": [
             57.43
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             85.71,
             87.24
          ]
@@ -33548,7 +33668,7 @@
    },
    "Chrysler 300 SRT-8 (Mk II)": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             87.74
          ]
       },
@@ -33620,7 +33740,7 @@
          "Inta": [
             76.26
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             87.0
          ],
          "Marcoussis": [
@@ -34212,7 +34332,7 @@
          "Introduced_Year": 1984.0,
          "0-100_kph_(s)": 9.6,
          "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 211.0,
+         "Top_Speed_(kph)": 217.0,
          "Curb_Weight_(kg)": 1659.0,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
@@ -34799,7 +34919,7 @@
    },
    "Cobalt SS Turbocharged Sedan": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             61.7
          ]
       },
@@ -35004,10 +35124,10 @@
             68.3,
             68.7
          ],
-         "Willow Springs - Streets Of Willow Ccw": [
+         "Willow Springs - Streets Of Willow Extended Ccw": [
             76.31
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             76.45,
             82.43
          ],
@@ -35154,6 +35274,9 @@
          "Motortrend Figure-8": [
             23.8
          ],
+         "Hockenheim Short": [
+            73.8
+         ],
          "Autozeitung Test Track": [
             96.3
          ],
@@ -35169,9 +35292,9 @@
          "Country": "United States",
          "Introduced_Year": 2014.0,
          "0-100_kph_(s)": 4.4,
-         "100-0_(m)": 32.0,
-         "Top_Speed_(kph)": 280.0,
-         "Curb_Weight_(kg)": 1428.0,
+         "100-0_(m)": 31.0,
+         "Top_Speed_(kph)": 282.0,
+         "Curb_Weight_(kg)": 1509.0,
          "Wheelbase_(m)": 2.71,
          "Length_(m)": 4.5,
          "Width_(m)": 1.88,
@@ -35427,7 +35550,7 @@
          "Spring Mountain (Radical Loop Section)": [
             75.15
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             80.43,
             84.28
          ],
@@ -35680,9 +35803,6 @@
       "Laps": {
          "Vairano Handling Course": [
             82.18
-         ],
-         "Autozeitung Test Track": [
-            103.6
          ],
          "Balocco": [
             182.26
@@ -36269,7 +36389,7 @@
    },
    "Dodge Caliber SRT4": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             64.4
          ],
          "Ring Knutstrop (Conf 2)": [
@@ -36422,7 +36542,7 @@
          "Kakucs Ring": [
             51.17
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             85.76
          ],
          "Contidrom (3.3 Km)": [
@@ -36464,7 +36584,7 @@
          "Motown Mile": [
             56.37
          ],
-         "Willow Springs - Streets Of Willow Ccw": [
+         "Willow Springs - Streets Of Willow Extended Ccw": [
             88.35
          ],
          "Gingerman Raceway": [
@@ -36506,7 +36626,7 @@
          "Motortrend Figure-8": [
             24.5
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             86.87
          ],
          "Contidrom (3.8 Km)": [
@@ -36653,7 +36773,7 @@
    },
    "Dodge Neon SRT-4": {
       "Laps": {
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             83.65
          ]
       },
@@ -37100,7 +37220,7 @@
          "Auto Club Speedway": [
             53.43
          ],
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             68.56
          ],
          "Nelson Ledges Raceway": [
@@ -37260,7 +37380,7 @@
       "Specs": {
          "Vehicle_Name": "Dome  85C",
          "Type": "Car",
-         "Manufacturer": "Dome ",
+         "Manufacturer": "Dome",
          "Model": "85C",
          "Country": "Japan",
          "Introduced_Year": NaN,
@@ -37293,7 +37413,7 @@
       "Specs": {
          "Vehicle_Name": "Dome  RC82",
          "Type": "Car",
-         "Manufacturer": "Dome ",
+         "Manufacturer": "Dome",
          "Model": "RC82",
          "Country": "Japan",
          "Introduced_Year": NaN,
@@ -37326,7 +37446,7 @@
       "Specs": {
          "Vehicle_Name": "Dome  RL80",
          "Type": "Car",
-         "Manufacturer": "Dome ",
+         "Manufacturer": "Dome",
          "Model": "RL80",
          "Country": "Japan",
          "Introduced_Year": NaN,
@@ -37359,7 +37479,7 @@
       "Specs": {
          "Vehicle_Name": "Dome  RL80/81",
          "Type": "Car",
-         "Manufacturer": "Dome ",
+         "Manufacturer": "Dome",
          "Model": "RL80/81",
          "Country": "Japan",
          "Introduced_Year": NaN,
@@ -37392,7 +37512,7 @@
       "Specs": {
          "Vehicle_Name": "Dome  S101",
          "Type": "Car",
-         "Manufacturer": "Dome ",
+         "Manufacturer": "Dome",
          "Model": "S101",
          "Country": "Japan",
          "Introduced_Year": NaN,
@@ -37425,7 +37545,7 @@
       "Specs": {
          "Vehicle_Name": "Dome  S102",
          "Type": "Car",
-         "Manufacturer": "Dome ",
+         "Manufacturer": "Dome",
          "Model": "S102",
          "Country": "Japan",
          "Introduced_Year": NaN,
@@ -38493,6 +38613,39 @@
          "N_Trasmission": 6.0
       }
    },
+   "Facel-Vega Facellia F2 Coupe": {
+      "Laps": {
+         "Linas-Montlhery 9181 M": [
+            298.0
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Facel-Vega Facellia F2 Coupe",
+         "Type": "Car",
+         "Manufacturer": "Facel-Vega",
+         "Model": "Facellia F2 Coupe",
+         "Country": "France",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": 13.4,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 183.0,
+         "Curb_Weight_(kg)": 1122.5,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 4",
+         "Displacement_(l)": 1.6,
+         "Power_(ps)": 117.0,
+         "Torque_(Nm)": 143.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "4 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 4.0
+      }
+   },
    "Ferrari 246 SP": {
       "Laps": {
          "Circuit De La Sarthe (1932 - 1971)": [
@@ -39225,10 +39378,46 @@
          "N_Trasmission": 8.0
       }
    },
+   "Ferrari 308 GTB": {
+      "Laps": {
+         "Linas-Montlhery (9Km)": [
+            235.1
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Ferrari 308 GTB",
+         "Type": "Car",
+         "Manufacturer": "Ferrari",
+         "Model": "308 GTB",
+         "Country": "Italy",
+         "Introduced_Year": 1975.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 252.0,
+         "Curb_Weight_(kg)": 1205.0,
+         "Wheelbase_(m)": 2.34,
+         "Length_(m)": 4.23,
+         "Width_(m)": 1.72,
+         "Height_(m)": 1.12,
+         "Engine": "V8, DOHC, 16v",
+         "Displacement_(l)": 3.0,
+         "Power_(ps)": 255.0,
+         "Torque_(Nm)": 285.0,
+         "Engine_Layout": "Middle",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
    "Ferrari 308 GTBi": {
       "Laps": {
          "Sugo": [
             117.87
+         ],
+         "Linas-Montlhery (9Km)": [
+            240.0
          ]
       },
       "Specs": {
@@ -39301,6 +39490,9 @@
       "Laps": {
          "Willow Springs": [
             103.7
+         ],
+         "Linas-Montlhery (9Km)": [
+            235.12
          ]
       },
       "Specs": {
@@ -39461,6 +39653,39 @@
          "Wheel_Drive": "Rear",
          "Class": "Convertible",
          "Trasmission_Name": "5-speed Manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Ferrari 328 GTS": {
+      "Laps": {
+         "Linas-Montlhery": [
+            166.6
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Ferrari 328 GTS",
+         "Type": "Car",
+         "Manufacturer": "Ferrari",
+         "Model": "328 GTS",
+         "Country": "Italy",
+         "Introduced_Year": 1985.0,
+         "0-100_kph_(s)": 5.5,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 267.0,
+         "Curb_Weight_(kg)": 1321.5,
+         "Wheelbase_(m)": 2.35,
+         "Length_(m)": 4.25,
+         "Width_(m)": 1.73,
+         "Height_(m)": 1.13,
+         "Engine": "90º V8  4 valves / cylinder, DOHC",
+         "Displacement_(l)": 3.2,
+         "Power_(ps)": 274.0,
+         "Torque_(Nm)": 305.0,
+         "Engine_Layout": "Middle",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "5 speed Manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 5.0
       }
@@ -39936,6 +40161,39 @@
          "N_Trasmission": 5.0
       }
    },
+   "Ferrari 400 GTi": {
+      "Laps": {
+         "Linas-Montlhery (9Km)": [
+            250.39
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Ferrari 400 GTi",
+         "Type": "Car",
+         "Manufacturer": "Ferrari",
+         "Model": "400 GTi",
+         "Country": "Italy",
+         "Introduced_Year": 1979.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 245.0,
+         "Curb_Weight_(kg)": 1815.0,
+         "Wheelbase_(m)": 2.7,
+         "Length_(m)": 4.81,
+         "Width_(m)": 1.8,
+         "Height_(m)": 1.31,
+         "Engine": "V12, DOHC, 24v",
+         "Displacement_(l)": 4.8,
+         "Power_(ps)": 315.0,
+         "Torque_(Nm)": 412.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "Other",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": NaN
+      }
+   },
    "Ferrari 430 Scuderia": {
       "Laps": {
          "Ring Knutstorp": [
@@ -40139,7 +40397,7 @@
          "Dijon-Prenois": [
             82.0
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             82.3
          ],
          "Adria": [
@@ -40571,7 +40829,7 @@
          "Mendig Afb Circuit": [
             101.0
          ],
-         "Assen": [
+         "Assen Gp": [
             104.83
          ],
          "Circuit De Nevers Magny-Cours Gp": [
@@ -40719,10 +40977,46 @@
          "N_Trasmission": 4.0
       }
    },
+   "Ferrari 512 BB": {
+      "Laps": {
+         "Linas-Montlhery (9Km)": [
+            232.0
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Ferrari 512 BB",
+         "Type": "Car",
+         "Manufacturer": "Ferrari",
+         "Model": "512 BB",
+         "Country": "Italy",
+         "Introduced_Year": 1976.0,
+         "0-100_kph_(s)": 5.7,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 302.0,
+         "Curb_Weight_(kg)": 1486.5,
+         "Wheelbase_(m)": 2.5,
+         "Length_(m)": 4.4,
+         "Width_(m)": 1.83,
+         "Height_(m)": 1.12,
+         "Engine": "Flat 12, DOHC, 24v",
+         "Displacement_(l)": 4.9,
+         "Power_(ps)": 360.0,
+         "Torque_(Nm)": 450.0,
+         "Engine_Layout": "Middle",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
    "Ferrari 512 BBi": {
       "Laps": {
          "Ontario Motor Speedway": [
             117.2
+         ],
+         "Linas-Montlhery (9Km)": [
+            232.09
          ]
       },
       "Specs": {
@@ -42118,7 +42412,7 @@
          "Le Mans (Bugatti)": [
             103.26
          ],
-         "Assen": [
+         "Assen Gp": [
             110.81
          ]
       },
@@ -42239,6 +42533,39 @@
          "Trasmission_Name": "7-speed DCT",
          "Trasmission_Type": "Other",
          "N_Trasmission": 7.0
+      }
+   },
+   "Ferrari Mondial 8": {
+      "Laps": {
+         "Linas-Montlhery (9Km)": [
+            250.5
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Ferrari Mondial 8",
+         "Type": "Car",
+         "Manufacturer": "Ferrari",
+         "Model": "Mondial 8",
+         "Country": "Italy",
+         "Introduced_Year": 1980.0,
+         "0-100_kph_(s)": 8.3,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 230.0,
+         "Curb_Weight_(kg)": 1480.0,
+         "Wheelbase_(m)": 2.65,
+         "Length_(m)": 4.58,
+         "Width_(m)": 1.79,
+         "Height_(m)": 1.25,
+         "Engine": "Dino V8, DOHC, 16v",
+         "Displacement_(l)": 2.9,
+         "Power_(ps)": 214.0,
+         "Torque_(Nm)": 245.0,
+         "Engine_Layout": "Middle",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
       }
    },
    "Ferrari SF1000": {
@@ -43128,10 +43455,49 @@
          "N_Trasmission": 6.0
       }
    },
+   "Fiat 127 Sport": {
+      "Laps": {
+         "Magny Cours": [
+            127.55
+         ],
+         "Course De Cote": [
+            140.25
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Fiat 127 Sport",
+         "Type": "Car",
+         "Manufacturer": "Fiat",
+         "Model": "127 Sport",
+         "Country": "Italy",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": 11.2,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 156.0,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 4",
+         "Displacement_(l)": 1.0,
+         "Power_(ps)": 70.0,
+         "Torque_(Nm)": 83.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Front",
+         "Class": "Compact",
+         "Trasmission_Name": "4 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 4.0
+      }
+   },
    "Fiat 130 2900": {
       "Laps": {
          "Auto Motor Und Sport Handling": [
             24.96
+         ],
+         "Linas-Montlhery 9181 M": [
+            283.59
          ]
       },
       "Specs": {
@@ -43141,10 +43507,10 @@
          "Model": "130 2900",
          "Country": "Italy",
          "Introduced_Year": NaN,
-         "0-100_kph_(s)": 13.9,
+         "0-100_kph_(s)": 11.7,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": 187.0,
-         "Curb_Weight_(kg)": 1560.0,
+         "Curb_Weight_(kg)": 1542.5,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -43156,6 +43522,72 @@
          "Engine_Layout": "Front",
          "Wheel_Drive": "Rear",
          "Class": "4-door saloon",
+         "Trasmission_Name": "Other",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": NaN
+      }
+   },
+   "Fiat 130 2900 (140 PS)": {
+      "Laps": {
+         "Linas-Montlhery 9181 M": [
+            299.99
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Fiat 130 2900 (140 PS)",
+         "Type": "Car",
+         "Manufacturer": "Fiat",
+         "Model": "130 2900 (140 PS)",
+         "Country": "Italy",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 179.0,
+         "Curb_Weight_(kg)": 1510.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "V6",
+         "Displacement_(l)": 2.9,
+         "Power_(ps)": 140.0,
+         "Torque_(Nm)": 216.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Fiat 130 Coupe": {
+      "Laps": {
+         "Linas-Montlhery (9Km)": [
+            277.1
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Fiat 130 Coupe",
+         "Type": "Car",
+         "Manufacturer": "Fiat",
+         "Model": "130 Coupe",
+         "Country": "Italy",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": 11.1,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 191.0,
+         "Curb_Weight_(kg)": 1600.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "V6",
+         "Displacement_(l)": 3.2,
+         "Power_(ps)": 165.0,
+         "Torque_(Nm)": 250.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
          "Trasmission_Name": "Other",
          "Trasmission_Type": "Other",
          "N_Trasmission": NaN
@@ -43189,6 +43621,75 @@
          "Engine_Layout": "Front",
          "Wheel_Drive": "Rear",
          "Class": "4-door saloon",
+         "Trasmission_Name": "4 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 4.0
+      }
+   },
+   "Fiat 131 Sport": {
+      "Laps": {
+         "Magny Cours": [
+            122.2
+         ],
+         "Course De Cote": [
+            130.54
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Fiat 131 Sport",
+         "Type": "Car",
+         "Manufacturer": "Fiat",
+         "Model": "131 Sport",
+         "Country": "Italy",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": 9.6,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 181.0,
+         "Curb_Weight_(kg)": 1095.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 4",
+         "Displacement_(l)": 2.0,
+         "Power_(ps)": 115.0,
+         "Torque_(Nm)": 170.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Fiat 1600 S Coupe": {
+      "Laps": {
+         "Linas-Montlhery 9181 M": [
+            293.5
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Fiat 1600 S Coupe",
+         "Type": "Car",
+         "Manufacturer": "Fiat",
+         "Model": "1600 S Coupe",
+         "Country": "Italy",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 175.0,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 4",
+         "Displacement_(l)": 1.6,
+         "Power_(ps)": 90.0,
+         "Torque_(Nm)": 133.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
          "Trasmission_Name": "4 speed manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 4.0
@@ -43240,10 +43741,10 @@
          "Model": "2300 S Coupe",
          "Country": "Italy",
          "Introduced_Year": NaN,
-         "0-100_kph_(s)": NaN,
+         "0-100_kph_(s)": 10.8,
          "100-0_(m)": NaN,
-         "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": NaN,
+         "Top_Speed_(kph)": 195.0,
+         "Curb_Weight_(kg)": 1324.0,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -43810,6 +44311,42 @@
          "Wheel_Drive": "Front",
          "Class": "Compact",
          "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Fiat X1/9 1500": {
+      "Laps": {
+         "Magny Cours": [
+            122.24
+         ],
+         "Course De Cote": [
+            133.02
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Fiat X1/9 1500",
+         "Type": "Car",
+         "Manufacturer": "Fiat",
+         "Model": "X1/9 1500",
+         "Country": "Italy",
+         "Introduced_Year": 1972.0,
+         "0-100_kph_(s)": 10.8,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 180.0,
+         "Curb_Weight_(kg)": 925.0,
+         "Wheelbase_(m)": 2.2,
+         "Length_(m)": 3.97,
+         "Width_(m)": 1.57,
+         "Height_(m)": 1.17,
+         "Engine": "Line 4, 8 valves",
+         "Displacement_(l)": 1.5,
+         "Power_(ps)": 85.0,
+         "Torque_(Nm)": 118.0,
+         "Engine_Layout": "Middle",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "5-Speed-Manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 5.0
       }
@@ -44595,6 +45132,42 @@
          "N_Trasmission": 5.0
       }
    },
+   "Ford Fiesta 1.3 S (Mk I)": {
+      "Laps": {
+         "Magny Cours": [
+            128.35
+         ],
+         "Course De Cote": [
+            140.48
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Ford Fiesta 1.3 S (Mk I)",
+         "Type": "Car",
+         "Manufacturer": "Ford",
+         "Model": "Fiesta 1.3 S (Mk I)",
+         "Country": "United States",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": 13.8,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 150.0,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 4",
+         "Displacement_(l)": 1.3,
+         "Power_(ps)": 66.0,
+         "Torque_(Nm)": 94.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Front",
+         "Class": "Compact",
+         "Trasmission_Name": "4 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 4.0
+      }
+   },
    "Ford Fiesta 1.4": {
       "Laps": {
          "Megara": [
@@ -45059,7 +45632,7 @@
             84.9,
             87.91
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             86.01
          ],
          "Inta Long (Conf 2)": [
@@ -45282,7 +45855,7 @@
          "Rockingham National": [
             85.9
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             88.4,
             89.27
          ],
@@ -45575,7 +46148,7 @@
          "Anneau Du Rhin": [
             85.46
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             91.57
          ],
          "Sportauto Wet Handling Test": [
@@ -46350,7 +46923,7 @@
          "Hockenheim Short": [
             73.2
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             86.1
          ],
          "Laguna Seca (Post 1988)": [
@@ -46501,7 +47074,7 @@
    },
    "Ford Mustang Ecoboost": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             87.32,
             87.85
          ],
@@ -46550,7 +47123,7 @@
          "Velo Citta (1.68 Km)": [
             62.24
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             83.97
          ],
          "Waterford Hills": [
@@ -46694,7 +47267,7 @@
          "Hockenheim Short": [
             73.8
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             84.29
          ],
          "Grand Tour Eboladrome": [
@@ -46786,7 +47359,7 @@
    },
    "Ford Mustang GT 5.0": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             87.76
          ],
          "Grattan Raceway": [
@@ -46828,7 +47401,7 @@
    },
    "Ford Mustang GT 5.0 (426 PS)": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             85.77
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -47219,7 +47792,7 @@
          "Spring Mountain (Radical Loop Section)": [
             81.87
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             83.48,
             87.3
          ],
@@ -47291,7 +47864,7 @@
    },
    "Ford Mustang V6": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.09,
             90.9
          ],
@@ -48684,7 +49257,7 @@
          "Toronto Motorsports Park": [
             83.58
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             88.71
          ]
       },
@@ -49094,10 +49667,10 @@
          "Model": "Giulietta Berlinetta TI",
          "Country": "Italy",
          "Introduced_Year": NaN,
-         "0-100_kph_(s)": 17.8,
+         "0-100_kph_(s)": 16.4,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": 155.0,
-         "Curb_Weight_(kg)": 934.5,
+         "Curb_Weight_(kg)": 962.5,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -49183,10 +49756,10 @@
          "Model": "Giulietta SZ Coda Tronca",
          "Country": "Italy",
          "Introduced_Year": 1961.0,
-         "0-100_kph_(s)": NaN,
+         "0-100_kph_(s)": 12.0,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": 196.0,
-         "Curb_Weight_(kg)": 848.5,
+         "Curb_Weight_(kg)": 864.0,
          "Wheelbase_(m)": 2.25,
          "Length_(m)": 4.0,
          "Width_(m)": 1.5,
@@ -51621,7 +52194,7 @@
          "Toronto Motorsports Park": [
             86.5
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             92.46
          ]
       },
@@ -51723,7 +52296,7 @@
    },
    "Honda Civic Si Sedan (Mk VIII)": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             64.9
          ]
       },
@@ -51903,10 +52476,13 @@
          "Dunnville Autodrome": [
             74.41
          ],
+         "Castle Combe": [
+            81.08
+         ],
          "Bedford Autodrome West (Post 5/2015)": [
             82.5
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             82.88,
             85.07
          ],
@@ -51998,6 +52574,12 @@
          ],
          "Dunnville Autodrome": [
             73.55
+         ],
+         "Donington Park National": [
+            80.13
+         ],
+         "Castle Combe": [
+            80.2
          ],
          "Monticello Motor Club North Course": [
             91.6
@@ -52546,7 +53128,7 @@
    },
    "Honda Integra Type S": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             68.08
          ],
          "Wakefield Park": [
@@ -52633,7 +53215,7 @@
    },
    "Honda NSX (3.0)": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             67.14
          ],
          "Tsukuba": [
@@ -53065,7 +53647,7 @@
          "Top Gear Track": [
             91.6
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             92.59
          ],
          "Twin Ring Motegi East": [
@@ -53458,7 +54040,7 @@
          "Nihonkai Maze": [
             72.4
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             95.67
          ],
          "Willow Springs": [
@@ -53743,7 +54325,7 @@
          "Circuit De Nevers Magny-Cours Club": [
             77.17
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             78.73
          ],
          "Dijon-Prenois": [
@@ -53791,7 +54373,7 @@
          "Circuit De Nevers Magny-Cours Gp": [
             107.52
          ],
-         "Assen": [
+         "Assen Gp": [
             108.0
          ],
          "Estoril": [
@@ -53959,7 +54541,7 @@
    },
    "Hyundai GK Tiburon GT V6": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             69.63
          ],
          "Wakefield Park": [
@@ -53998,7 +54580,7 @@
          "Toronto Motorsports Park": [
             85.0
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.12
          ],
          "Buttonwillow Configuration 13": [
@@ -54336,7 +54918,7 @@
          "Dunnville Autodrome": [
             78.62
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             86.3
          ],
          "Thunderhill Park West": [
@@ -54923,7 +55505,7 @@
    },
    "Infiniti FX45": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             71.0
          ]
       },
@@ -54956,7 +55538,7 @@
    },
    "Infiniti G35 Sport Coupe": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             99.94
          ]
       },
@@ -55088,7 +55670,7 @@
    },
    "Infiniti G37 Sedan": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             61.96
          ]
       },
@@ -55222,6 +55804,42 @@
          "Trasmission_Name": "5 speed manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 5.0
+      }
+   },
+   "Innocenti de Tomaso": {
+      "Laps": {
+         "Magny Cours": [
+            127.9
+         ],
+         "Course De Cote": [
+            138.24
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Innocenti de Tomaso",
+         "Type": "Car",
+         "Manufacturer": "Innocenti",
+         "Model": "de Tomaso",
+         "Country": "Italy",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": 12.4,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 154.0,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 4",
+         "Displacement_(l)": 1.3,
+         "Power_(ps)": 74.0,
+         "Torque_(Nm)": 100.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Front",
+         "Class": "Compact",
+         "Trasmission_Name": "4 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 4.0
       }
    },
    "Insignia OPC Sports Tourer": {
@@ -55468,6 +56086,9 @@
       "Laps": {
          "Modena Aerautodromo (1950-1972)": [
             70.4
+         ],
+         "Linas-Montlhery 9181 M": [
+            261.0
          ]
       },
       "Specs": {
@@ -55538,7 +56159,7 @@
          "Vairano Handling Course": [
             79.61
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             85.21
          ],
          "Nürburgring Gp Sprint": [
@@ -55588,10 +56209,10 @@
          "Model": "F-Type Coupe",
          "Country": "United Kingdom",
          "Introduced_Year": 2014.0,
-         "0-100_kph_(s)": NaN,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": 1577.0,
+         "0-100_kph_(s)": 5.5,
+         "100-0_(m)": 35.0,
+         "Top_Speed_(kph)": 260.0,
+         "Curb_Weight_(kg)": 1645.0,
          "Wheelbase_(m)": 2.62,
          "Length_(m)": 4.47,
          "Width_(m)": 1.92,
@@ -56110,7 +56731,7 @@
          "Country": null,
          "Introduced_Year": 2013.0,
          "0-100_kph_(s)": 4.8,
-         "100-0_(m)": NaN,
+         "100-0_(m)": 35.0,
          "Top_Speed_(kph)": 275.0,
          "Curb_Weight_(kg)": 1677.5,
          "Wheelbase_(m)": 2.62,
@@ -56449,7 +57070,7 @@
    },
    "Jaguar XF 3.0 V6 Diesel": {
       "Laps": {
-         "Assen": [
+         "Assen Gp": [
             134.7
          ]
       },
@@ -56704,7 +57325,7 @@
          "Franciacorta": [
             85.11
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             86.49
          ],
          "Mantorp Park": [
@@ -57419,7 +58040,7 @@
          "Motortrend Figure-8": [
             23.7
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             82.53
          ],
          "Virginia International Raceway Grand East Course (Post 01/2014)": [
@@ -58270,7 +58891,7 @@
          "Vairano Handling Course": [
             81.45
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             88.9
          ],
          "Contidrom (3.3 Km)": [
@@ -58911,6 +59532,9 @@
          ],
          "Ontario Motor Speedway": [
             115.5
+         ],
+         "Linas-Montlhery (9Km)": [
+            225.31
          ]
       },
       "Specs": {
@@ -59302,7 +59926,7 @@
          "Tsukuba": [
             63.23
          ],
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             68.45
          ],
          "Autocar Dry Handling Track": [
@@ -59646,7 +60270,7 @@
          "Circuit De Nevers Magny-Cours Gp": [
             109.92
          ],
-         "Assen": [
+         "Assen Gp": [
             110.48
          ],
          "Virginia International Raceway Grand East Course (Post 01/2014)": [
@@ -61217,10 +61841,10 @@
          "Model": "Flavia Coupe 1.5",
          "Country": "Italy",
          "Introduced_Year": NaN,
-         "0-100_kph_(s)": NaN,
+         "0-100_kph_(s)": 14.6,
          "100-0_(m)": NaN,
-         "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": NaN,
+         "Top_Speed_(kph)": 172.0,
+         "Curb_Weight_(kg)": 1149.0,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -62019,7 +62643,7 @@
    },
    "Lexus LS 460": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             98.31
          ],
          "Kyalami": [
@@ -62103,7 +62727,7 @@
          "Vairano Handling Course": [
             78.78
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             84.05
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -62768,7 +63392,7 @@
    },
    "Lotus Elan": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             70.22
          ],
          "Pembrey (Pre 2017)": [
@@ -62847,7 +63471,7 @@
             87.7
          ],
          "Snetterton 300": [
-            147.66
+            144.24
          ]
       },
       "Specs": {
@@ -63261,6 +63885,9 @@
          ],
          "Winton (National Circuit)": [
             101.11
+         ],
+         "Bedford Autodrome Gt": [
+            162.53
          ]
       },
       "Specs": {
@@ -63304,7 +63931,7 @@
          "Bedford Autodrome West Circuit (06/2008 - 05/2015)": [
             87.7
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.49
          ],
          "Mireval": [
@@ -64079,7 +64706,7 @@
          "Fuji Speedway (Post 2005)": [
             123.2
          ],
-         "Assen": [
+         "Assen Gp": [
             127.5
          ],
          "Virginia International Raceway Grand East Course (Pre 01/2014)": [
@@ -64651,7 +65278,7 @@
          "Luk Driving Center": [
             73.15
          ],
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             73.52
          ],
          "Killarney": [
@@ -65675,6 +66302,39 @@
          "Trasmission_Name": "6",
          "Trasmission_Type": "Other",
          "N_Trasmission": 6.0
+      }
+   },
+   "Maserati 3500 GT": {
+      "Laps": {
+         "Linas-Montlhery 9181 M": [
+            273.0
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Maserati 3500 GT",
+         "Type": "Car",
+         "Manufacturer": "Maserati",
+         "Model": "3500 GT",
+         "Country": "Italy",
+         "Introduced_Year": 1957.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 208.0,
+         "Curb_Weight_(kg)": 1432.0,
+         "Wheelbase_(m)": 2.6,
+         "Length_(m)": 4.76,
+         "Width_(m)": 1.6,
+         "Height_(m)": 1.3,
+         "Engine": "V6",
+         "Displacement_(l)": 3.5,
+         "Power_(ps)": 225.0,
+         "Torque_(Nm)": NaN,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "Other",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": NaN
       }
    },
    "Maserati 450 S Coupe (400 PS)": {
@@ -66940,7 +67600,7 @@
          "Toronto Motorsports Park": [
             94.7
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             99.41
          ],
          "Goodwood": [
@@ -67051,7 +67711,7 @@
          "Raceland": [
             58.54
          ],
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             62.7
          ],
          "Autopartner Test Route": [
@@ -67165,7 +67825,7 @@
          "Inta Long (Conf 2)": [
             89.27
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.51
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -67919,7 +68579,7 @@
          "Gymkhana": [
             44.9
          ],
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             74.96
          ],
          "Pembrey (Pre 2017)": [
@@ -68090,7 +68750,7 @@
          "Bedford Autodrome West Circuit (06/2008 - 05/2015)": [
             95.6
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             95.91
          ],
          "Gotland Ring (Northern Loop)": [
@@ -68207,7 +68867,7 @@
          "Anneau Du Rhin Short": [
             67.4
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.91,
             90.39
          ],
@@ -68253,7 +68913,7 @@
          "Nikko": [
             44.28
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.46
          ],
          "Thunderhill Park West": [
@@ -68421,7 +69081,7 @@
    },
    "Mazda Mazdaspeed Protege": {
       "Laps": {
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             85.25
          ]
       },
@@ -68556,7 +69216,7 @@
    },
    "Mazda RX-7 (255 PS)": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             65.64
          ],
          "Tsukuba": [
@@ -69024,6 +69684,39 @@
          "N_Trasmission": 6.0
       }
    },
+   "Mazda RX-8 (Type S)": {
+      "Laps": {
+         "Bedford Autodrome Gt": [
+            176.19
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Mazda RX-8 (Type S)",
+         "Type": "Car",
+         "Manufacturer": "Mazda",
+         "Model": "RX-8 (Type S)",
+         "Country": "Japan",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": 6.0,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 240.0,
+         "Curb_Weight_(kg)": 1310.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "2 rotor Wankel engine",
+         "Displacement_(l)": 1.3,
+         "Power_(ps)": 250.0,
+         "Torque_(Nm)": 216.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "6 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 6.0
+      }
+   },
    "Mazda RX-8 Challenge": {
       "Laps": {
          "Serres Racing Circuit": [
@@ -69445,7 +70138,7 @@
          "Hockenheim Gp": [
             109.4
          ],
-         "Assen": [
+         "Assen Gp": [
             110.1
          ]
       },
@@ -69924,7 +70617,7 @@
          "Buttonwillow Configuration 1": [
             110.69
          ],
-         "Assen": [
+         "Assen Gp": [
             111.41
          ],
          "Algarve International Circuit Portimao (Grand Prix)": [
@@ -72295,6 +72988,39 @@
          "N_Trasmission": NaN
       }
    },
+   "Mercedes-Benz 250 (W114)": {
+      "Laps": {
+         "Linas-Montlhery 9181 M": [
+            294.99
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Mercedes-Benz 250 (W114)",
+         "Type": "Car",
+         "Manufacturer": "Mercedes-Benz",
+         "Model": "250 (W114)",
+         "Country": "Germany",
+         "Introduced_Year": 1969.0,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 174.0,
+         "Curb_Weight_(kg)": 1360.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 6",
+         "Displacement_(l)": 2.5,
+         "Power_(ps)": 130.0,
+         "Torque_(Nm)": 199.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "4 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 4.0
+      }
+   },
    "Mercedes-Benz 250 SE": {
       "Laps": {
          "Linas-Montlhery 9181 M": [
@@ -72460,6 +73186,39 @@
          "Trasmission_Name": "5-speed Manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 5.0
+      }
+   },
+   "Mercedes-Benz 300SL Roadster": {
+      "Laps": {
+         "Linas-Montlhery 9181 M": [
+            265.0
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Mercedes-Benz 300SL Roadster",
+         "Type": "Car",
+         "Manufacturer": "Mercedes-Benz",
+         "Model": "300SL Roadster",
+         "Country": "Germany",
+         "Introduced_Year": 1957.0,
+         "0-100_kph_(s)": 7.9,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 237.0,
+         "Curb_Weight_(kg)": 1401.5,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "inline6 fuel injection",
+         "Displacement_(l)": 3.0,
+         "Power_(ps)": 215.0,
+         "Torque_(Nm)": 275.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Convertible",
+         "Trasmission_Name": "4",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 4.0
       }
    },
    "Mercedes-Benz 350 SE (W116)": {
@@ -73517,39 +74276,6 @@
          "N_Trasmission": 6.0
       }
    },
-   "Mercedes-Benz C 30 CDI AMG": {
-      "Laps": {
-         "Oschersleben": [
-            118.07
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Mercedes-Benz C 30 CDI AMG",
-         "Type": "Car",
-         "Manufacturer": "Mercedes-Benz",
-         "Model": "C 30 CDI AMG",
-         "Country": "Germany",
-         "Introduced_Year": 2004.0,
-         "0-100_kph_(s)": 6.7,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1555.0,
-         "Wheelbase_(m)": NaN,
-         "Length_(m)": NaN,
-         "Width_(m)": NaN,
-         "Height_(m)": NaN,
-         "Engine": "Inline 5, Turbocharged, Diesel",
-         "Displacement_(l)": 3.0,
-         "Power_(ps)": 231.0,
-         "Torque_(Nm)": 540.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "Rear",
-         "Class": "Compact",
-         "Trasmission_Name": "5",
-         "Trasmission_Type": "Other",
-         "N_Trasmission": 5.0
-      }
-   },
    "Mercedes-Benz C 300 d (W206)": {
       "Laps": {
          "Buddh International Circuit Autox": [
@@ -73684,9 +74410,6 @@
    },
    "Mercedes-Benz C 43 AMG": {
       "Laps": {
-         "Baskerville Raceway": [
-            61.56
-         ],
          "Nelson Ledges Raceway": [
             82.7
          ],
@@ -73700,25 +74423,25 @@
          "Manufacturer": "Mercedes-Benz",
          "Model": "C 43 AMG",
          "Country": "Germany",
-         "Introduced_Year": 2018.0,
-         "0-100_kph_(s)": 4.4,
-         "100-0_(m)": 35.0,
+         "Introduced_Year": 1997.0,
+         "0-100_kph_(s)": 6.5,
+         "100-0_(m)": NaN,
          "Top_Speed_(kph)": 250.0,
-         "Curb_Weight_(kg)": 1749.0,
-         "Wheelbase_(m)": NaN,
-         "Length_(m)": NaN,
-         "Width_(m)": NaN,
-         "Height_(m)": NaN,
-         "Engine": "V6 turbo",
-         "Displacement_(l)": 3.0,
-         "Power_(ps)": 390.0,
-         "Torque_(Nm)": 520.0,
+         "Curb_Weight_(kg)": 1518.0,
+         "Wheelbase_(m)": 2.69,
+         "Length_(m)": 4.52,
+         "Width_(m)": 1.72,
+         "Height_(m)": 1.39,
+         "Engine": "V8, 24v",
+         "Displacement_(l)": 4.3,
+         "Power_(ps)": 306.0,
+         "Torque_(Nm)": 410.0,
          "Engine_Layout": "Front",
-         "Wheel_Drive": "All",
-         "Class": "Coupe",
-         "Trasmission_Name": "9 speed automatic",
-         "Trasmission_Type": "Automatic",
-         "N_Trasmission": 9.0
+         "Wheel_Drive": "Rear",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "5",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 5.0
       }
    },
    "Mercedes-Benz C 43 AMG 4MATIC": {
@@ -73876,7 +74599,7 @@
          "Bedford Autodrome West Circuit (06/2008 - 05/2015)": [
             88.8
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.5
          ],
          "Bedford Autodrome West Circuit (2004 - 06/2008)": [
@@ -74474,7 +75197,7 @@
          "Motown Mile": [
             57.9
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             86.2
          ],
          "Autozeitung Test Track": [
@@ -75117,8 +75840,7 @@
             80.23
          ],
          "Killarney": [
-            84.46,
-            84.9
+            84.46
          ],
          "Circuit De Nevers Magny-Cours Club": [
             85.9
@@ -75324,13 +76046,13 @@
          "Anglesey Coastal": [
             83.6
          ],
+         "Killarney": [
+            84.9
+         ],
          "Top Gear Track": [
             84.9
          ],
-         "Killarney": [
-            85.21
-         ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.6
          ],
          "Sportauto Wet Handling Test": [
@@ -75958,6 +76680,39 @@
          "N_Trasmission": 9.0
       }
    },
+   "Mercedes-Benz S 63 AMG Long": {
+      "Laps": {
+         "Autozeitung Test Track": [
+            100.4
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Mercedes-Benz S 63 AMG Long",
+         "Type": "Car",
+         "Manufacturer": "Mercedes-Benz",
+         "Model": "S 63 AMG Long (W222)",
+         "Country": "Germany",
+         "Introduced_Year": 2013.0,
+         "0-100_kph_(s)": 3.9,
+         "100-0_(m)": 34.0,
+         "Top_Speed_(kph)": 300.0,
+         "Curb_Weight_(kg)": 2034.0,
+         "Wheelbase_(m)": 3.04,
+         "Length_(m)": 5.12,
+         "Width_(m)": 1.9,
+         "Height_(m)": 1.48,
+         "Engine": "V8 Biturbo",
+         "Displacement_(l)": 5.5,
+         "Power_(ps)": 585.0,
+         "Torque_(Nm)": 800.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "AMG SPEEDSHIFT MCT 7-sport",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": 7.0
+      }
+   },
    "Mercedes-Benz S400 BlueHybrid": {
       "Laps": {
          "Balocco": [
@@ -75988,39 +76743,6 @@
          "Class": "4-door saloon",
          "Trasmission_Name": "7-speed automatic",
          "Trasmission_Type": "Automatic",
-         "N_Trasmission": 7.0
-      }
-   },
-   "Mercedes-Benz S63 AMG": {
-      "Laps": {
-         "Autozeitung Test Track": [
-            100.4
-         ]
-      },
-      "Specs": {
-         "Vehicle_Name": "Mercedes-Benz S63 AMG",
-         "Type": "Car",
-         "Manufacturer": "Mercedes-Benz",
-         "Model": "S63 AMG",
-         "Country": "Germany",
-         "Introduced_Year": 2013.0,
-         "0-100_kph_(s)": 3.9,
-         "100-0_(m)": 34.0,
-         "Top_Speed_(kph)": 300.0,
-         "Curb_Weight_(kg)": 1925.0,
-         "Wheelbase_(m)": 3.04,
-         "Length_(m)": 5.12,
-         "Width_(m)": 1.9,
-         "Height_(m)": 1.48,
-         "Engine": "V8 Biturbo",
-         "Displacement_(l)": 5.5,
-         "Power_(ps)": 585.0,
-         "Torque_(Nm)": 800.0,
-         "Engine_Layout": "Front",
-         "Wheel_Drive": "Rear",
-         "Class": "4-door saloon",
-         "Trasmission_Name": "AMG SPEEDSHIFT MCT 7-sport",
-         "Trasmission_Type": "Other",
          "N_Trasmission": 7.0
       }
    },
@@ -77106,7 +77828,7 @@
          "Hockenheim Short": [
             69.8
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             85.11
          ],
          "Nürburgring Nordschleife": [
@@ -77758,13 +78480,13 @@
             85.34,
             96.4
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             90.93
          ],
          "Franciacorta": [
             92.23
          ],
-         "Willow Springs - Streets Of Willow Ccw": [
+         "Willow Springs - Streets Of Willow Extended Ccw": [
             92.37
          ],
          "Bedford Autodrome West Circuit (2004 - 06/2008)": [
@@ -77981,7 +78703,7 @@
    },
    "Mini Cooper S Clubman": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             64.1
          ],
          "Oschersleben": [
@@ -78334,9 +79056,6 @@
          ],
          "Contidrom (3.3 Km)": [
             98.61
-         ],
-         "Autozeitung Test Track": [
-            103.6
          ]
       },
       "Specs": {
@@ -78434,7 +79153,7 @@
          "Grattan Raceway": [
             97.0
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             98.53
          ],
          "Mireval": [
@@ -78496,6 +79215,9 @@
          ],
          "Anglesey Coastal": [
             82.04
+         ],
+         "Donington Park National": [
+            83.42
          ],
          "Mortefontaine": [
             97.01
@@ -78764,7 +79486,7 @@
    },
    "Mitsubishi 3000 GT VR-4": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             66.95
          ],
          "Daimler-Chrysler Proving Ground": [
@@ -78803,7 +79525,7 @@
    },
    "Mitsubishi 3000 GT VR4": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             65.4
          ]
       },
@@ -79239,7 +79961,7 @@
          "Tsukuba": [
             65.1
          ],
-         "Assen": [
+         "Assen Gp": [
             119.45
          ],
          "Reno-Fernley Raceway Conf 1 (2.74 M)": [
@@ -79308,7 +80030,7 @@
    },
    "Mitsubishi Lancer Evo IX MR": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             93.8
          ]
       },
@@ -79908,7 +80630,7 @@
          "El Toro Topgear Us": [
             89.2
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             92.5
          ],
          "Winton (National Circuit)": [
@@ -79971,7 +80693,7 @@
          "Autobild Sportscars Snowy Track": [
             70.0
          ],
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             73.85
          ],
          "Camden Airport (Pre 10/2010)": [
@@ -79986,7 +80708,7 @@
          "Nufenen Pass": [
             89.48
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             91.6
          ],
          "Grattan Raceway": [
@@ -80073,7 +80795,7 @@
    },
    "Mitsubishi Lancer Evo X SE": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             91.4
          ],
          "Mireval": [
@@ -80187,13 +80909,13 @@
          "El Toro": [
             47.16
          ],
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             63.0
          ],
          "Ring Knutstrop (Conf 2)": [
             82.3
          ],
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             87.48
          ]
       },
@@ -81231,7 +81953,7 @@
    },
    "Nissan 300ZX": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             67.1,
             68.07
          ],
@@ -81620,7 +82342,7 @@
          "Top Gear Track": [
             87.5
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             88.3
          ],
          "Grattan Raceway": [
@@ -81953,7 +82675,7 @@
          "Killarney": [
             79.79
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             80.25
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -82057,7 +82779,7 @@
          "Anglesey Coastal": [
             76.9
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             79.55
          ],
          "Franciacorta": [
@@ -82355,7 +83077,7 @@
          "Inta": [
             68.52
          ],
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             68.9
          ],
          "Autocar Dry Handling Track": [
@@ -82406,7 +83128,7 @@
          "Bedford Autodrome West Circuit (06/2008 - 05/2015)": [
             83.6
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             85.09
          ],
          "Anneau Du Rhin": [
@@ -82550,7 +83272,7 @@
          "Rockingham National": [
             77.7
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             79.07
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -82738,7 +83460,7 @@
    },
    "Nissan NISMO 350Z S-Tune": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             93.87
          ],
          "Willow Springs": [
@@ -82810,7 +83532,7 @@
    },
    "Nissan NX": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             71.99
          ]
       },
@@ -83243,7 +83965,7 @@
          "0-100_kph_(s)": 5.2,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": 251.0,
-         "Curb_Weight_(kg)": 1583.5,
+         "Curb_Weight_(kg)": 1595.0,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -83406,7 +84128,7 @@
          "Dunnville Autodrome": [
             76.43
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             84.76
          ],
          "Monticello Motor Club North Course": [
@@ -84918,6 +85640,42 @@
          "Trasmission_Name": "6 speed manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 6.0
+      }
+   },
+   "Opel Kadett 1.3 S (D)": {
+      "Laps": {
+         "Magny Cours": [
+            126.67
+         ],
+         "Course De Cote": [
+            136.9
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Opel Kadett 1.3 S (D)",
+         "Type": "Car",
+         "Manufacturer": "Opel",
+         "Model": "Kadett 1.3 S (D)",
+         "Country": "Germany",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": 11.6,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 165.0,
+         "Curb_Weight_(kg)": 935.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 4",
+         "Displacement_(l)": 1.3,
+         "Power_(ps)": 75.0,
+         "Torque_(Nm)": 101.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": "4 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 4.0
       }
    },
    "Opel Kadett GSI 16V (Type E)": {
@@ -86434,6 +87192,42 @@
          "N_Trasmission": 5.0
       }
    },
+   "Peugeot 104 ZS (72 PS)": {
+      "Laps": {
+         "Magny Cours": [
+            127.0
+         ],
+         "Course De Cote": [
+            134.6
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Peugeot 104 ZS (72 PS)",
+         "Type": "Car",
+         "Manufacturer": "Peugeot",
+         "Model": "104 ZS (72 PS)",
+         "Country": "France",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": 11.9,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 162.0,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 4",
+         "Displacement_(l)": 1.4,
+         "Power_(ps)": 72.0,
+         "Torque_(Nm)": 107.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Front",
+         "Class": "Compact",
+         "Trasmission_Name": "4 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 4.0
+      }
+   },
    "Peugeot 106 GTi/S16": {
       "Laps": {
          "Mira Dry Handling Track": [
@@ -86551,10 +87345,79 @@
          "N_Trasmission": 4.0
       }
    },
+   "Peugeot 205 GTI 1.6 (115 PS)": {
+      "Laps": {
+         "Linas-Montlhery": [
+            188.0
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Peugeot 205 GTI 1.6 (115 PS)",
+         "Type": "Car",
+         "Manufacturer": "Peugeot",
+         "Model": "205 GTI 1.6 (115 PS)",
+         "Country": "France",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 191.0,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 4",
+         "Displacement_(l)": 1.6,
+         "Power_(ps)": 115.0,
+         "Torque_(Nm)": 134.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Front",
+         "Class": "Compact",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Peugeot 205 GTI 1.6 PTS": {
+      "Laps": {
+         "Linas-Montlhery": [
+            183.9
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Peugeot 205 GTI 1.6 PTS",
+         "Type": "Car",
+         "Manufacturer": "Peugeot",
+         "Model": "205 GTI 1.6 PTS (125 PS)",
+         "Country": "France",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 195.0,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 4",
+         "Displacement_(l)": 1.6,
+         "Power_(ps)": 125.0,
+         "Torque_(Nm)": 140.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Front",
+         "Class": "Compact",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 5.0
+      }
+   },
    "Peugeot 205 GTI 1.6l": {
       "Laps": {
          "Castle Combe (Pre 1999)": [
             82.9
+         ],
+         "Linas-Montlhery": [
+            188.09
          ]
       },
       "Specs": {
@@ -86656,6 +87519,39 @@
          "Class": "Compact",
          "Trasmission_Name": "5",
          "Trasmission_Type": "Other",
+         "N_Trasmission": 5.0
+      }
+   },
+   "Peugeot 205 T-16 PTS": {
+      "Laps": {
+         "Linas-Montlhery": [
+            168.3
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Peugeot 205 T-16 PTS",
+         "Type": "Car",
+         "Manufacturer": "Peugeot",
+         "Model": "205 T-16 PTS",
+         "Country": "France",
+         "Introduced_Year": 1985.0,
+         "0-100_kph_(s)": 5.0,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 191.0,
+         "Curb_Weight_(kg)": 1100.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 4 turbo",
+         "Displacement_(l)": 1.8,
+         "Power_(ps)": 300.0,
+         "Torque_(Nm)": 353.0,
+         "Engine_Layout": "Middle",
+         "Wheel_Drive": "All",
+         "Class": "Compact",
+         "Trasmission_Name": "5 speed manual",
+         "Trasmission_Type": "Manual",
          "N_Trasmission": 5.0
       }
    },
@@ -86762,7 +87658,7 @@
          "0-100_kph_(s)": 7.9,
          "100-0_(m)": 36.0,
          "Top_Speed_(kph)": 210.0,
-         "Curb_Weight_(kg)": 1044.0,
+         "Curb_Weight_(kg)": 1047.5,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -86994,9 +87890,9 @@
          "Country": "France",
          "Introduced_Year": 2012.0,
          "0-100_kph_(s)": 6.5,
-         "100-0_(m)": NaN,
+         "100-0_(m)": 37.0,
          "Top_Speed_(kph)": 230.0,
-         "Curb_Weight_(kg)": 1160.0,
+         "Curb_Weight_(kg)": 1183.0,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -87365,6 +88261,9 @@
       "Laps": {
          "Zandvoort Gp (Pre 2020)": [
             155.64
+         ],
+         "Assen Gp": [
+            161.81
          ],
          "Linas-Montlhery": [
             176.3
@@ -87971,7 +88870,7 @@
          "Introduced_Year": 1991.0,
          "0-100_kph_(s)": 7.9,
          "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 229.0,
+         "Top_Speed_(kph)": 237.0,
          "Curb_Weight_(kg)": 1585.0,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
@@ -88624,7 +89523,7 @@
    },
    "Pontiac Solstice": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             95.69
          ],
          "Grattan Raceway": [
@@ -88874,7 +89773,7 @@
             71.0,
             72.4
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             81.87
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -89009,10 +89908,10 @@
          "Bedford Autodrome West (Post 5/2015)": [
             78.17
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             79.4
          ],
-         "Willow Springs - Streets Of Willow Ccw": [
+         "Willow Springs - Streets Of Willow Extended Ccw": [
             79.99
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -89053,7 +89952,7 @@
          "Circuit De Nevers Magny-Cours Gp": [
             114.95
          ],
-         "Assen": [
+         "Assen Gp": [
             120.11
          ],
          "Ncm Motorsports Park Grand Full": [
@@ -89973,7 +90872,7 @@
          "Madras Motor Race Track": [
             121.06
          ],
-         "Assen": [
+         "Assen Gp": [
             127.9
          ],
          "Virginia International Raceway Grand East Course (Post 01/2014)": [
@@ -90069,6 +90968,9 @@
          "Bedford Autodrome West Circuit (06/2008 - 05/2015)": [
             83.6
          ],
+         "Autozeitung Test Track": [
+            97.9
+         ],
          "Eurospeedway Lausitz": [
             98.8
          ],
@@ -90087,9 +90989,9 @@
          "Country": "Germany",
          "Introduced_Year": 2011.0,
          "0-100_kph_(s)": 4.3,
-         "100-0_(m)": NaN,
+         "100-0_(m)": 31.0,
          "Top_Speed_(kph)": 293.0,
-         "Curb_Weight_(kg)": 1400.0,
+         "Curb_Weight_(kg)": 1434.0,
          "Wheelbase_(m)": 2.45,
          "Length_(m)": 4.49,
          "Width_(m)": 1.81,
@@ -90189,7 +91091,7 @@
          "Millbrook Handling Circuit": [
             44.9
          ],
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             64.3
          ],
          "Tsukuba": [
@@ -90249,7 +91151,7 @@
          "Bedford Autodrome West Circuit (2004 - 06/2008)": [
             88.85
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.25
          ],
          "Gingerman Raceway": [
@@ -91342,7 +92244,7 @@
          "Circuit De Nevers Magny-Cours Club": [
             82.98
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             85.6
          ],
          "Contidrom (3.3 Km)": [
@@ -91963,7 +92865,7 @@
          "Autocar Dry Handling Track": [
             69.7
          ],
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             69.77
          ],
          "Ring Knutstrop (Conf 2)": [
@@ -92493,11 +93395,11 @@
          "Castle Combe": [
             73.1
          ],
-         "Willow Springs - Streets Of Willow Ccw": [
+         "Willow Springs - Streets Of Willow Extended Ccw": [
             75.79,
             76.48
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             77.69,
             81.24
          ],
@@ -93134,7 +94036,7 @@
          "Dubai Autodrome International Circuit": [
             107.17
          ],
-         "Assen": [
+         "Assen Gp": [
             109.23
          ],
          "Estoril": [
@@ -93274,13 +94176,13 @@
          "Grand Tour Eboladrome": [
             80.4
          ],
-         "Willow Springs - Streets Of Willow Ccw": [
+         "Willow Springs - Streets Of Willow Extended Ccw": [
             81.47
          ],
          "Thermal Club Raceway": [
             82.64
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             82.72
          ],
          "Sandown": [
@@ -94154,10 +95056,10 @@
          "Model": "911 Targa 4S (991)",
          "Country": "Germany",
          "Introduced_Year": 2014.0,
-         "0-100_kph_(s)": NaN,
-         "100-0_(m)": NaN,
-         "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": 1555.0,
+         "0-100_kph_(s)": 4.6,
+         "100-0_(m)": 32.0,
+         "Top_Speed_(kph)": 294.0,
+         "Curb_Weight_(kg)": 1579.5,
          "Wheelbase_(m)": 2.45,
          "Length_(m)": 4.49,
          "Width_(m)": 1.85,
@@ -94543,7 +95445,7 @@
          "Mantorp Park": [
             90.1
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             90.69
          ],
          "Sportauto Wet Handling Test": [
@@ -94669,7 +95571,7 @@
    },
    "Porsche 911 Turbo 3.3": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             65.73
          ],
          "Roebling Road Raceway": [
@@ -94985,7 +95887,7 @@
          "Magione": [
             79.0
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             79.45
          ],
          "Dijon-Prenois": [
@@ -95334,7 +96236,7 @@
             107.8,
             110.0
          ],
-         "Assen": [
+         "Assen Gp": [
             109.13
          ],
          "Buttonwillow Configuration 13": [
@@ -96610,7 +97512,7 @@
             108.69
          ],
          "Le Mans (Bugatti) (1976-1986)": [
-            118.0
+            118.96
          ],
          "Linas-Montlhery": [
             167.0
@@ -96934,7 +97836,8 @@
             131.76
          ],
          "Thunderhill Park East": [
-            135.52
+            135.52,
+            142.22
          ]
       },
       "Specs": {
@@ -97055,10 +97958,10 @@
          "Model": "Boxster GTS (981)",
          "Country": "Germany",
          "Introduced_Year": 2014.0,
-         "0-100_kph_(s)": 4.6,
-         "100-0_(m)": 33.0,
+         "0-100_kph_(s)": 4.5,
+         "100-0_(m)": 32.0,
          "Top_Speed_(kph)": 279.0,
-         "Curb_Weight_(kg)": 1429.5,
+         "Curb_Weight_(kg)": 1422.0,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -97462,7 +98365,7 @@
          "Top Gear Track": [
             84.9
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             87.1
          ],
          "Le Mans (Bugatti)": [
@@ -98109,7 +99012,7 @@
    },
    "Porsche Cayenne S": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             69.0
          ],
          "Inta": [
@@ -98687,11 +99590,11 @@
          "Vairano Handling Course": [
             75.01
          ],
-         "Willow Springs - Streets Of Willow Ccw": [
+         "Willow Springs - Streets Of Willow Extended Ccw": [
             79.02,
             79.91
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             80.16,
             81.74
          ],
@@ -99072,7 +99975,7 @@
          "Toronto Motorsports Park": [
             81.29
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             87.0
          ],
          "Contidrom (3.8 Km)": [
@@ -99165,10 +100068,10 @@
          "Autocar Wet Handling Track": [
             72.1
          ],
-         "Ring Knutstrop (Conf 2)": [
+         "Laquais": [
             76.0
          ],
-         "Laquais": [
+         "Ring Knutstrop (Conf 2)": [
             76.0
          ],
          "Autocar Dry Handling Track": [
@@ -99183,10 +100086,13 @@
          "Bedford Autodrome West Circuit (2004 - 06/2008)": [
             86.85
          ],
+         "Willow Springs - Streets Of Willow Extended Ccw": [
+            88.28
+         ],
          "Circuit De Nevers Magny-Cours Club": [
             88.35
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             88.91
          ],
          "Sportauto Wet Handling Test": [
@@ -99996,7 +100902,7 @@
          "Bruntingthorpe": [
             78.4
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             82.68
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -100012,7 +100918,8 @@
             86.8
          ],
          "Autozeitung Test Track": [
-            98.7
+            98.7,
+            98.8
          ],
          "Balocco": [
             171.31
@@ -103066,7 +103973,7 @@
          "Introduced_Year": NaN,
          "0-100_kph_(s)": 12.9,
          "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 163.0,
+         "Top_Speed_(kph)": 166.0,
          "Curb_Weight_(kg)": 1020.0,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
@@ -103284,6 +104191,9 @@
    },
    "Renault 5 Alpine": {
       "Laps": {
+         "Magny Cours": [
+            123.01
+         ],
          "Linas-Montlhery (9Km)": [
             269.8
          ]
@@ -103295,7 +104205,7 @@
          "Model": "5 Alpine",
          "Country": "France",
          "Introduced_Year": NaN,
-         "0-100_kph_(s)": NaN,
+         "0-100_kph_(s)": 9.5,
          "100-0_(m)": NaN,
          "Top_Speed_(kph)": 176.0,
          "Curb_Weight_(kg)": NaN,
@@ -103586,6 +104496,9 @@
       "Laps": {
          "Castle Combe (Pre 1999)": [
             77.2
+         ],
+         "Linas-Montlhery": [
+            167.0
          ]
       },
       "Specs": {
@@ -103597,7 +104510,7 @@
          "Introduced_Year": 1985.0,
          "0-100_kph_(s)": 7.2,
          "100-0_(m)": NaN,
-         "Top_Speed_(kph)": 250.0,
+         "Top_Speed_(kph)": 252.0,
          "Curb_Weight_(kg)": 1183.5,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
@@ -107828,7 +108741,7 @@
          "Hockenheim Short": [
             70.5
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             83.0
          ],
          "Laguna Seca (Post 1988)": [
@@ -107867,7 +108780,7 @@
          "Motortrend Figure-8": [
             23.1
          ],
-         "Willow Springs - Streets Of Willow (1.7 Miles)": [
+         "Willow Springs - Streets Of Willow Long": [
             70.5
          ],
          "Thermal Club Raceway": [
@@ -108623,7 +109536,7 @@
          "Toronto Motorsports Park": [
             86.2
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             91.15
          ],
          "Gingerman Raceway": [
@@ -109706,7 +110619,7 @@
          "Bedford Autodrome West Circuit (06/2008 - 05/2015)": [
             88.6
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             89.04
          ],
          "Top Gear Track": [
@@ -109899,10 +110812,10 @@
          "Model": "1000",
          "Country": "France",
          "Introduced_Year": 1961.0,
-         "0-100_kph_(s)": NaN,
+         "0-100_kph_(s)": 29.8,
          "100-0_(m)": NaN,
-         "Top_Speed_(kph)": NaN,
-         "Curb_Weight_(kg)": NaN,
+         "Top_Speed_(kph)": 119.0,
+         "Curb_Weight_(kg)": 750.0,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -111344,7 +112257,7 @@
          "Toronto Motorsports Park": [
             86.6
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             90.32
          ],
          "Circuit De Nevers Magny-Cours Club": [
@@ -111389,7 +112302,7 @@
          "Country": "Japan",
          "Introduced_Year": 2012.0,
          "0-100_kph_(s)": 6.8,
-         "100-0_(m)": 35.0,
+         "100-0_(m)": 33.0,
          "Top_Speed_(kph)": 226.0,
          "Curb_Weight_(kg)": 1250.0,
          "Wheelbase_(m)": 2.57,
@@ -111734,7 +112647,7 @@
          "El Toro": [
             45.56
          ],
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             62.1
          ],
          "Wakefield Park": [
@@ -111945,7 +112858,7 @@
          "Bedford Autodrome West Circuit (06/2008 - 05/2015)": [
             90.2
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             94.1
          ],
          "Serres Racing Circuit": [
@@ -112002,7 +112915,7 @@
    },
    "Subaru Impreza WRX STI (US)": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             94.2
          ]
       },
@@ -112699,7 +113612,7 @@
          "Toronto Motorsports Park": [
             86.33
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             86.75,
             87.33
          ],
@@ -112746,7 +113659,7 @@
    },
    "Subaru WRX  Package": {
       "Laps": {
-         "Willow Springs - Streets Of Willow Ccw": [
+         "Willow Springs - Streets Of Willow Extended Ccw": [
             88.85
          ]
       },
@@ -112791,7 +113704,7 @@
          "Ring Knutstrop (Conf 2)": [
             75.4
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             86.12
          ],
          "Anglesey Coastal": [
@@ -112829,10 +113742,10 @@
          "Model": "WRX STI",
          "Country": "Japan",
          "Introduced_Year": 2014.0,
-         "0-100_kph_(s)": 5.4,
-         "100-0_(m)": 35.0,
+         "0-100_kph_(s)": 5.2,
+         "100-0_(m)": 33.0,
          "Top_Speed_(kph)": 255.0,
-         "Curb_Weight_(kg)": 1536.0,
+         "Curb_Weight_(kg)": 1532.5,
          "Wheelbase_(m)": NaN,
          "Length_(m)": NaN,
          "Width_(m)": NaN,
@@ -113008,7 +113921,7 @@
    },
    "Subaru WRX Special Edition": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             87.4
          ]
       },
@@ -113992,6 +114905,42 @@
          "N_Trasmission": NaN
       }
    },
+   "Talbot Sunbeam 1600 TI": {
+      "Laps": {
+         "Magny Cours": [
+            121.9
+         ],
+         "Course De Cote": [
+            129.45
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Talbot Sunbeam 1600 TI",
+         "Type": "Car",
+         "Manufacturer": "Talbot",
+         "Model": "Sunbeam 1600 TI",
+         "Country": "France",
+         "Introduced_Year": NaN,
+         "0-100_kph_(s)": NaN,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 177.0,
+         "Curb_Weight_(kg)": NaN,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 4",
+         "Displacement_(l)": 1.6,
+         "Power_(ps)": 100.0,
+         "Torque_(Nm)": 135.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Compact",
+         "Trasmission_Name": "4 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 4.0
+      }
+   },
    "Tata Tigor EV": {
       "Laps": {
          "Buddh International Circuit Autox": [
@@ -114115,7 +115064,7 @@
          "Toronto Motorsports Park": [
             75.86
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             81.49,
             83.42,
             83.85,
@@ -114124,7 +115073,7 @@
          "Top Gear Track": [
             81.5
          ],
-         "Willow Springs - Streets Of Willow Ccw": [
+         "Willow Springs - Streets Of Willow Extended Ccw": [
             83.37
          ],
          "Willow Springs": [
@@ -114206,7 +115155,7 @@
          "Velo Citta (1.68 Km)": [
             65.32
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             88.0
          ],
          "Laguna Seca (Post 1988)": [
@@ -114549,7 +115498,7 @@
          "Inta": [
             75.71
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             92.1
          ]
       },
@@ -115179,7 +116128,7 @@
    },
    "Toyota Camry SE V6": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             97.0
          ]
       },
@@ -115422,7 +116371,7 @@
          "Mira Dry Handling Track": [
             45.05
          ],
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             68.75
          ],
          "Ebisu": [
@@ -115984,7 +116933,7 @@
          "Spring Mountain (Radical Loop Section)": [
             89.3
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             90.26
          ],
          "Top Gear Track": [
@@ -116221,7 +117170,7 @@
    },
    "Toyota MR2 2.2": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             72.54
          ]
       },
@@ -116539,7 +117488,7 @@
          "Dunnville Autodrome": [
             72.17
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             82.09
          ],
          "Mortefontaine": [
@@ -116677,7 +117626,7 @@
    },
    "Toyota Supra Twin Turbo": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             65.3
          ],
          "Nelson Ledges Raceway": [
@@ -116963,6 +117912,42 @@
          "N_Trasmission": 5.0
       }
    },
+   "Triumph Spitfire 1500": {
+      "Laps": {
+         "Magny Cours": [
+            129.64
+         ],
+         "Course De Cote": [
+            146.5
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Triumph Spitfire 1500",
+         "Type": "Car",
+         "Manufacturer": "Triumph",
+         "Model": "Spitfire 1500",
+         "Country": "United Kingdom",
+         "Introduced_Year": 1975.0,
+         "0-100_kph_(s)": 13.4,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 155.0,
+         "Curb_Weight_(kg)": 815.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline-4 OHV",
+         "Displacement_(l)": 1.5,
+         "Power_(ps)": 72.0,
+         "Torque_(Nm)": 111.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Convertible",
+         "Trasmission_Name": "4-speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 4.0
+      }
+   },
    "Triumph TR3": {
       "Laps": {
          "Consuma Hill Climb": [
@@ -116992,6 +117977,39 @@
          "Wheel_Drive": "Rear",
          "Class": "Convertible",
          "Trasmission_Name": "4 speed manual",
+         "Trasmission_Type": "Manual",
+         "N_Trasmission": 4.0
+      }
+   },
+   "Triumph TR4": {
+      "Laps": {
+         "Linas-Montlhery 9181 M": [
+            288.4
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Triumph TR4",
+         "Type": "Car",
+         "Manufacturer": "Triumph",
+         "Model": "TR4",
+         "Country": "United Kingdom",
+         "Introduced_Year": 1962.0,
+         "0-100_kph_(s)": 10.5,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 177.0,
+         "Curb_Weight_(kg)": 1015.5,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "4-Cylinder",
+         "Displacement_(l)": NaN,
+         "Power_(ps)": 106.0,
+         "Torque_(Nm)": 174.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Convertible",
+         "Trasmission_Name": "4-Speed Manual",
          "Trasmission_Type": "Manual",
          "N_Trasmission": 4.0
       }
@@ -117938,7 +118956,10 @@
    "VW Golf GTI  1.6 (Mk I)": {
       "Laps": {
          "Magny Cours": [
-            119.5
+            119.3
+         ],
+         "Course De Cote": [
+            128.0
          ],
          "Linas-Montlhery (9Km)": [
             269.8
@@ -117951,7 +118972,7 @@
          "Model": "Golf GTI  1.6 (Mk I)",
          "Country": "Germany",
          "Introduced_Year": 1976.0,
-         "0-100_kph_(s)": 8.2,
+         "0-100_kph_(s)": 7.6,
          "100-0_(m)": 54.0,
          "Top_Speed_(kph)": 185.0,
          "Curb_Weight_(kg)": 842.5,
@@ -118006,7 +119027,7 @@
    },
    "VW Golf GTI (Mk V)": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             63.1
          ],
          "Autocar Wet Handling Track": [
@@ -118114,7 +119135,7 @@
          "Waterford Hills": [
             84.0
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             91.47
          ],
          "Grattan Raceway": [
@@ -118244,7 +119265,7 @@
          "Vairano Handling Course": [
             85.51
          ],
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             88.54
          ],
          "Top Gear Track": [
@@ -119586,7 +120607,7 @@
    },
    "VW Jetta GLI (Mk VI)": {
       "Laps": {
-         "Willow Springs - Streets Of Willow": [
+         "Willow Springs - Streets Of Willow Extended": [
             92.53
          ]
       },
@@ -119691,7 +120712,7 @@
    },
    "VW New Beetle Turbo S": {
       "Laps": {
-         "Streets Of Willow (0.96 Mile)": [
+         "Willow Springs - Streets Of Willow Medium": [
             68.86
          ]
       },
@@ -120714,9 +121735,6 @@
       "Laps": {
          "Contidrom (3.3 Km)": [
             98.28
-         ],
-         "Autozeitung Test Track": [
-            103.5
          ]
       },
       "Specs": {
@@ -121466,6 +122484,39 @@
          "N_Trasmission": 7.0
       }
    },
+   "Volvo 164": {
+      "Laps": {
+         "Linas-Montlhery 9181 M": [
+            309.99
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Volvo 164",
+         "Type": "Car",
+         "Manufacturer": "Volvo",
+         "Model": "164",
+         "Country": "Sweden",
+         "Introduced_Year": 1969.0,
+         "0-100_kph_(s)": 12.5,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 172.0,
+         "Curb_Weight_(kg)": 1350.0,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline 6",
+         "Displacement_(l)": 3.0,
+         "Power_(ps)": 130.0,
+         "Torque_(Nm)": 207.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "4-door saloon",
+         "Trasmission_Name": "Other",
+         "Trasmission_Type": "Other",
+         "N_Trasmission": NaN
+      }
+   },
    "Volvo 740 2.0 Turbo (150 PS)": {
       "Laps": {
          "Linas-Montlhery": [
@@ -121719,6 +122770,39 @@
          "Trasmission_Name": "6",
          "Trasmission_Type": "Other",
          "N_Trasmission": 6.0
+      }
+   },
+   "Volvo P1800 S": {
+      "Laps": {
+         "Linas-Montlhery 9181 M": [
+            297.8
+         ]
+      },
+      "Specs": {
+         "Vehicle_Name": "Volvo P1800 S",
+         "Type": "Car",
+         "Manufacturer": "Volvo",
+         "Model": "P1800 S",
+         "Country": "Sweden",
+         "Introduced_Year": 1963.0,
+         "0-100_kph_(s)": 13.9,
+         "100-0_(m)": NaN,
+         "Top_Speed_(kph)": 176.0,
+         "Curb_Weight_(kg)": 1122.5,
+         "Wheelbase_(m)": NaN,
+         "Length_(m)": NaN,
+         "Width_(m)": NaN,
+         "Height_(m)": NaN,
+         "Engine": "Inline-4",
+         "Displacement_(l)": NaN,
+         "Power_(ps)": 96.0,
+         "Torque_(Nm)": 141.0,
+         "Engine_Layout": "Front",
+         "Wheel_Drive": "Rear",
+         "Class": "Coupe",
+         "Trasmission_Name": null,
+         "Trasmission_Type": "Other",
+         "N_Trasmission": NaN
       }
    },
    "Volvo S 80 V8 AWD": {

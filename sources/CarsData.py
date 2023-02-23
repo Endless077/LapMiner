@@ -49,6 +49,11 @@ class CarsData(Source):
                                     specs_map[category] = intestazione_dict
 
             specs["Vehicle"] = None
+            specs["Layout"] = None
+            specs["Dimensions"] = None
+            specs["Engine"] = None
+            specs["Trasmission"] = None
+            specs["Performance"] = None
             
             if("Layout" in attr):
                 specs["Layout"] = self.get_layout(specs_map)
