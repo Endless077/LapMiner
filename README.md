@@ -63,15 +63,14 @@ Other commands:
   python3 ../path/main/report.py
 ```
 
-the first starts the scav toot.
+the first one starts the scav tool.
 
-the second starts the report toot.
+the second one starts the report tool.
 
 
 ## Documentation
 
-No documentation allowed, contact me for any issue.
-(just read comments)
+No documentation allowed, contact me for any issue (just read comments).
 
 
 ## Authors
