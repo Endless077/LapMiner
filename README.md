@@ -1,42 +1,45 @@
-
 ![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
 
 # LapMiner
 
-LapMiner is an mlti-tool capable of generating a dataset from fastestlap.com, analysing, updating and exporting the data in various intelligible formats.
+LapMiner is a versatile tool designed to generate, analyze, update, and export datasets from fastestlap.com into various intelligible formats.
 
+## Features
+
+- **Data Scraping**: Extract lap time data from fastestlap.com.
+- **Data Analysis**: Analyze the collected data to derive meaningful insights.
+- **Data Export**: Export data in various formats for easy consumption.
+- **Extensibility**: Easily extendable with new tools and functionalities.
 
 ## Acknowledgements
 
-Using a Linux Base system and python version 3.8.10:
+Built on a Linux-based system and Python version 3.8.10:
 
- - [Python](https://www.python.org/)
- - [Requests](https://docs.python-requests.org/en/latest/index.html)
- - [BeutifulSoup4](https://beautiful-soup-4.readthedocs.io/en/latest/)
+- [Python](https://www.python.org/)
+- [Requests](https://docs.python-requests.org/en/latest/index.html)
+- [BeautifulSoup4](https://beautiful-soup-4.readthedocs.io/en/latest/)
 
- See the requirements.txt file for the complete list of dependencies.
-
+See the `requirements.txt` file for the complete list of dependencies.
 
 ## Installation
 
-Install LapMiner: just clone this repository and install python (prefer 3.8.10 or higher version).
+To install LapMiner, clone this repository and ensure Python (version 3.8.10 or higher) is installed.
 
-Then create a virtual environment (needs pip and venv installed):
+Then, create a virtual environment (requires `pip` and `venv`):
 
 ```bash
-  python3 -m venv venv
+python3 -m venv venv
 ```
 
-Activate the venv:
+Activate the virtual environment:
 
 ```bash
   source ../path/venv/bin/activate
 ```
 
-(use "deactivate" command to exit)
+(use the deactivate command to exit the virtual environment)
 
-At last, install all requirements:
+Finally, install all requirements:
 
 ```bash
   pip install -r ../path/requirements.txt
@@ -45,15 +48,15 @@ At last, install all requirements:
 
 ## Usage/Examples
 
-The main usage is:
+The primary usage is:
 
 ```bash
   python3 ../path/main/scrap.py
 ```
 
-this command start the scraping from fastestlasp.com.
+this command initiates scraping from fastestlap.com.
 
-Other commands:
+Additional commands:
 
 ```bash
   python3 ../path/main/scav.py file.csv | vehicle_name source_uri
@@ -63,14 +66,13 @@ Other commands:
   python3 ../path/main/report.py
 ```
 
-the first one starts the scav tool.
-
-the second one starts the report tool.
-
+- The first command starts the scavenging tool.
+- The second command starts the reporting tool.
 
 ## Documentation
 
-No documentation allowed, contact me for any issue (just read comments).
+No formal documentation is available. For any issues, please contact me directly.
+Refer to the comments in the code for guidance.
 
 
 ## Authors
@@ -95,13 +97,14 @@ Thanks to support.
 
 Yes.
 
-#### Does the programme use proxies?
+#### Does the program use proxies?
 
-No, but in utils.py you can implement your own function or fill lists.
+No, but you can implement your own function or fill lists in utils.py.
+(I'm not sure that it is leagal)
 
 #### What is it intended for?
 
-Used in Lap Time Prediction research, it can be extended with new tools.
+You can contribute by submitting issues, bug reports, or suggesting features on the GitHub repository. Feel free to fork the repository and submit pull requests.
 
 #### Other questions?
 
